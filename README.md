@@ -1,6 +1,8 @@
+![](https://img.shields.io/badge/Foundry-v11-informational)
+
 # Foundry 4E Compendium and Tools
 ## Installation
-* You need Foundry v11 and the 4E system.
+* You need [Foundry v11](https://foundryvtt.com/) and the [4E system](https://github.com/EndlesNights/dnd4eBeta).
 * _Foundry Setup_ -> _Add-On Modules_ -> _Install Module_
 * Paste the link below into the _Manifest URL_ box and press _Install_.
 
