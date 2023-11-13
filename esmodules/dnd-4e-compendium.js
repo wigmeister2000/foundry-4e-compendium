@@ -1,0 +1,70 @@
+import { registerConfigurations } from "./config.js";
+import { addCbuilderXMLImportButton } from "./tools/cbuilder_xml_import.js";
+import { addActorContextMenuAdjustMonster, addActorContextMenuMM3Math, addActorFindAndReplace, addFolderContextMenuAdjustMonster, addFolderContextMenuMM3Math } from "./tools/adjust_monster.js";
+import { addBuildEquipmentButton } from "./tools/cbuilder_xml_import.js";
+import { createHPchangeMessage, createSurgeChangeMessage } from "./tools/hp-chat-messages.js";
+import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
+import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
+
+Hooks.once("init", function () {
+    DnD4ECompendium.initialize();
+    registerConfigurations();
+    DnD4ECompendium.registerHotKeys();
+});
+
+export class DnD4ECompendium {
+    static ID = "dnd-4e-compendium";
+    static NAME = "DnD 4e Compendium";
+
+    static SETTINGS = {
+        CBUILDER_IMPORT: "cbuilder-import",
+        BUILD_MAGIC_ITEM: "build-magic-item",
+        MONSTER_ADJUSTMENT: "monster-adjustment",
+        FIND_AND_REPLACE: "actor-find-and-replace",
+        HP_MESSAGES: "hp-messages",
+        SURGE_MESSAGES: "surge-messages",
+        CONDITION_MESSAGES: "condition-messages",
+        ENCOUNTER_DIFFICULTY: "encounter-difficulty",
+        APPEND_DURATION: "append-duration"
+    }
+
+    static initialize() {
+        console.log(this.NAME + " | Initialising the DnD 4e compendium.");
+        Hooks.on("renderSidebarTab", addCbuilderXMLImportButton);
+        Hooks.on("renderSidebarTab", addBuildEquipmentButton);
+        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuAdjustMonster);
+        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuMM3Math);
+        Hooks.on("getActorDirectoryEntryContext", addActorFindAndReplace);
+        Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuAdjustMonster);
+        Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuMM3Math);
+        Hooks.on("preUpdateActor", createHPchangeMessage);
+        Hooks.on("preUpdateActor", createSurgeChangeMessage);
+        Hooks.on("combatStart", createEffectsMessageCombat);
+        Hooks.on("combatRound", createEffectsMessageCombat);
+        Hooks.on("combatTurn", createEffectsMessageCombat);
+    }
+
+    static registerHotKeys() {
+        game.keybindings.register(DnD4ECompendium.ID, "chat-effects-key", {
+            name: `4ECOMPENDIUM.keybindings.${DnD4ECompendium.SETTINGS.CONDITION_MESSAGES}.Name`,
+            hint: `4ECOMPENDIUM.keybindings.${DnD4ECompendium.SETTINGS.CONDITION_MESSAGES}.Hint`,
+            editable: [{
+                key: "KeyQ",
+                modifiers: ["Shift"]
+            }],
+            restricted: true,
+            onUp: () => createEffectsMessageSelected()
+        });
+
+        game.keybindings.register(DnD4ECompendium.ID, "chat-encounter-difficulty-key", {
+            name: `4ECOMPENDIUM.keybindings.${DnD4ECompendium.SETTINGS.ENCOUNTER_DIFFICULTY}.Name`,
+            hint: `4ECOMPENDIUM.keybindings.${DnD4ECompendium.SETTINGS.ENCOUNTER_DIFFICULTY}.Hint`,
+            editable: [{
+                key: "KeyG",
+                modifiers: ["Shift"]
+            }],
+            restricted: true,
+            onUp: () => encounterDifficultyDialogue()
+        });
+    }
+}
