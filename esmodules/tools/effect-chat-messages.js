@@ -85,7 +85,15 @@ export async function createEffectsMessageSelected() {
 
         if (effects && effects.length > 0) {
             const header = `<p><b>${name}</b> has the following temporary effects:</p>`;
-            const message = header + '<table>' + effects.map(x => createEffectLine(x, appendDuration)).join("") + "</table>";
+
+            const effectsLines = [];
+
+            for (const e of effects) {
+                const line = await createEffectLine(e, appendDuration);
+                effectsLines.push(line);
+            }
+
+            const message = header + '<table>' + effectsLines.join("") + "</table>";
             await createMessage(message);
         }
     }

@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.29.11
+- Fixed temporary effects not printing properly
+
 ## Foundry 4e Compendium v1.29.10
 - Fixed some glossary entries with missing text
 - Fixed monster traits with missing text
