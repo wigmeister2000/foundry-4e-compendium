@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.29.12
+- Changed default weapon type of hexblade powers
+
 ## Foundry 4e Compendium v1.29.11
 - Fixed temporary effects not printing properly
 
