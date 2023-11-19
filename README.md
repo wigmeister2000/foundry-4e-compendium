@@ -1,9 +1,9 @@
 ![](https://img.shields.io/badge/Foundry-v11-informational)
 
-# Foundry 4E Compendium and Tools
+# Foundry 4e Compendium and Tools
 
 ## Installation
-* You need [Foundry v11](https://foundryvtt.com/) and the [4E system](https://github.com/EndlesNights/dnd4eBeta).
+* You need [Foundry v11](https://foundryvtt.com/) and the [4e System](https://github.com/EndlesNights/dnd4eBeta).
 * _Foundry Setup_ -> _Add-On Modules_ -> _Install Module_
 * Paste the link below into the _Manifest URL_ box and press _Install_.
 
@@ -14,7 +14,7 @@
 * Auras can be shown with [Token Auras](https://bitbucket.org/Fyorl/token-auras/).
 
 ## Features and Documentation
-* Rule elements compendia.
+* 4e rule elements.
 * Character import from DDI CBuilder.
 * Encounter building and level adjustment tools.
 * Have a look at the _4e Compendium Help_ in the _Compendium Packs_ tab in Foundry.
