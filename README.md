@@ -10,9 +10,13 @@
 [https://pastebin.com/raw/sWwNbhaT](https://pastebin.com/raw/sWwNbhaT)
 
 ## Optional Modules
-* The data is optimized for display with [Fox's 4e Styling](https://github.com/FoxLee/fox-4e-styling/) and auras can be shown with [Token Auras](https://bitbucket.org/Fyorl/token-auras/).
+* The data is optimized for display with [Fox's 4e Styling](https://github.com/FoxLee/fox-4e-styling/).
+* Auras can be shown with [Token Auras](https://bitbucket.org/Fyorl/token-auras/).
 
 ## Features and Documentation
+* Rule elements compendia.
+* Character import from DDI CBuilder.
+* Encounter building and level adjustment tools.
 * Have a look at the _4e Compendium Help_ in the _Compendium Packs_ tab in Foundry.
 
 ## Building from Source
