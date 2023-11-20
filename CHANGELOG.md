@@ -1,6 +1,9 @@
 # Changelog
 
-## Foundry 4e Compnendium v1.29.13
+## Foundry 4e Compendium v1.29.14
+- Damage rolls on monster non-attack powers
+
+## Foundry 4e Compendium v1.29.13
 - Changed ammunition to consumable items
 
 ## Foundry 4e Compendium v1.29.12
