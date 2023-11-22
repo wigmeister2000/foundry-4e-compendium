@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.29.15
+- Fixed ammunition level.
+
 ## Foundry 4e Compendium v1.29.14
 - Damage rolls on monster non-attack powers
 
