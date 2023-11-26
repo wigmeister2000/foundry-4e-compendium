@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.29.16
+- Consumables got lost in a previous update. Fixed.
+
 ## Foundry 4e Compendium v1.29.15
 - Fixed ammunition level.
 
