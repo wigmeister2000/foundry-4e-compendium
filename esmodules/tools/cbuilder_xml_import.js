@@ -803,7 +803,7 @@ function renameItem(item, name) {
 async function setSkills(actor, skills) {
     for (const x of skills) {
         const data = {};
-        data["system.skills." + x + ".value"] = 5;
+        data["system.skills." + x + ".training"] = 5;
 
         await actor.update(data);
     }
