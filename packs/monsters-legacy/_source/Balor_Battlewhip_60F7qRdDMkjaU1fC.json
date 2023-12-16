@@ -96,7 +96,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"attack":{
 					"shareAttackRoll":false,
@@ -118,7 +119,7 @@
 					"baseDiceType":"d8",
 					"detail":"",
 					"formula":"@powBase + 8 + @dmgMod",
-					"critFormula":"@powMax + 8 + @dmgMod",
+					"critFormula":"3d8 + 24 + @dmgMod",
 					"healFormula":""
 				},
 				"miss":{
@@ -150,7 +151,7 @@
 				"subName":"Basic Attack",
 				"prepared":true,
 				"powerType":"inherent",
-				"powerSubtype":"",
+				"powerSubtype":"attack",
 				"useType":"atwill",
 				"actionType":"standard",
 				"requirements":"",
@@ -954,27 +955,27 @@
 	"system":{
 		"abilities":{
 			"str":{
-				"value":"28",
+				"value":28,
 				"chat":"@name uses @label."
 			},
 			"con":{
-				"value":"30",
+				"value":30,
 				"chat":"@name uses @label."
 			},
 			"dex":{
-				"value":"19",
+				"value":19,
 				"chat":"@name uses @label."
 			},
 			"int":{
-				"value":"12",
+				"value":12,
 				"chat":"@name uses @label."
 			},
 			"wis":{
-				"value":"21",
+				"value":21,
 				"chat":"@name uses @label."
 			},
 			"cha":{
-				"value":"14",
+				"value":14,
 				"chat":"@name uses @label."
 			}
 		},
@@ -986,6 +987,10 @@
 				"starting":560,
 				"perlevel":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"misc":0,
 				"autototal":false,
 				"temprest":false,
@@ -1012,6 +1017,11 @@
 						"note":""
 					}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"notes":""
 			}
 		},
@@ -1037,6 +1047,10 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
 				"bonus":[
 					{}
@@ -1054,6 +1068,10 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
 				"bonus":[
 					{}
@@ -1069,6 +1087,10 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
 				"bonus":[
 					{}
@@ -1084,6 +1106,10 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
 				"bonus":[
 					{}
@@ -1102,6 +1128,7 @@
 				"item":0,
 				"power":0,
 				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				]
@@ -1113,6 +1140,7 @@
 				"item":0,
 				"power":0,
 				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				]
@@ -1127,6 +1155,9 @@
 			"epic":"",
 			"race":"",
 			"size":"huge",
+			"origin":"elemental",
+			"type":"humanoid",
+			"other":"Demon",
 			"age":"",
 			"gender":"",
 			"height":"",
@@ -1134,6 +1165,7 @@
 			"alignment":"Chaotic Evil",
 			"deity":"",
 			"secondwind":false,
+			"secondwindEffect":{},
 			"deathsaves":0,
 			"deathsavefail":0,
 			"deathsaveCrit":20,
@@ -1141,6 +1173,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"bloodied":null,
@@ -1149,16 +1186,31 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"surges":{
 				"value":1,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"max":1
 			},
 			"surgeEnv":{
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"secondwindbon":{
@@ -1166,6 +1218,11 @@
 					{}
 				],
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"custom":""
 			},
 			"saves":{
@@ -1182,9 +1239,6 @@
 				"value":[],
 				"custom":""
 			},
-			"origin":"elemental",
-			"type":"humanoid",
-			"other":"Demon",
 			"role":{
 				"primary":"brute",
 				"secondary":"elite",
@@ -1233,6 +1287,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"walk":{
@@ -1241,6 +1300,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"charge":{
@@ -1249,6 +1313,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"run":{
@@ -1257,6 +1326,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"misc":0,
 				"temp":0
 			},
@@ -1266,6 +1340,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"shift":{
@@ -1274,6 +1353,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"notes":"",
@@ -1303,6 +1387,12 @@
 			"acr":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1313,6 +1403,12 @@
 			"arc":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1323,6 +1419,12 @@
 			"ath":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1333,6 +1435,12 @@
 			"blu":{
 				"value":19,
 				"base":19,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1343,6 +1451,12 @@
 			"dip":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1353,6 +1467,12 @@
 			"dun":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1363,6 +1483,12 @@
 			"end":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1373,6 +1499,12 @@
 			"hea":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1383,6 +1515,12 @@
 			"his":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1393,6 +1531,12 @@
 			"ins":{
 				"value":22,
 				"base":22,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1403,6 +1547,12 @@
 			"itm":{
 				"value":19,
 				"base":19,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1413,6 +1563,12 @@
 			"nat":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1423,6 +1579,12 @@
 			"prc":{
 				"value":22,
 				"base":22,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1433,6 +1595,12 @@
 			"rel":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1443,6 +1611,12 @@
 			"stl":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1453,6 +1627,12 @@
 			"stw":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1463,6 +1643,12 @@
 			"thi":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -1471,9 +1657,40 @@
 				"chat":"@name uses @label."
 			}
 		},
+		"skillTraining":{
+			"untrained":{
+				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			},
+			"trained":{
+				"value":5,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			},
+			"expertise":{
+				"value":8,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			}
+		},
 		"passive":{
 			"pasprc":{
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"skill":"prc",
 				"bonus":[
 					{}
@@ -1481,6 +1698,11 @@
 			},
 			"pasins":{
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"skill":"ins",
 				"bonus":[
 					{}
@@ -1492,6 +1714,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1501,6 +1728,25 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
+				"immune":false,
+				"bonus":[
+					{}
+				]
+			},
+			"ongoing":{
+				"value":0,
+				"armour":0,
+				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1510,6 +1756,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1519,6 +1770,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1528,6 +1784,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{
@@ -1542,6 +1803,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1551,6 +1817,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1560,6 +1831,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1569,6 +1845,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1578,6 +1859,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1587,6 +1873,11 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
@@ -1596,11 +1887,25 @@
 				"value":0,
 				"armour":0,
 				"temp":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"immune":false,
 				"bonus":[
 					{}
 				]
 			}
+		},
+		"untypedResistances":{
+			"resistances":[
+				"15 variable (3/encounter)"
+			],
+			"vulnerabilities":[],
+			"immunities":[
+				"fear"
+			]
 		},
 		"encumbrance":{
 			"value":null,
@@ -1626,15 +1931,7 @@
 		"advancedCals":false,
 		"featureSortTypes":"name",
 		"powerGroupTypes":"action",
-		"powerSortTypes":"useType",
-		"untypedResistances":{
-			"immunities":[
-				"fear"
-			],
-			"resistances":[
-				"15 variable (3/encounter)"
-			]
-		}
+		"powerSortTypes":"useType"
 	},
 	"prototypeToken":{
 		"width":3,
@@ -1718,8 +2015,11 @@
 			"saturation":0,
 			"contrast":0
 		},
-		"detectionModes":[]
+		"detectionModes":[],
+		"appendNumber":false,
+		"prependAdjective":false
 	},
 	"folder":"3G4ASqX2R8jwmNbY",
+	"sort":0,
 	"_key":"!actors!60F7qRdDMkjaU1fC"
 }
