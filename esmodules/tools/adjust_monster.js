@@ -43,12 +43,12 @@ export function addActorContextMenuMM3Math(html, entryOptions) {
     }
 }
 
-export function addActorFindAndReplace(html, entryOptions) {
+export function addActorContextMenuFindAndReplace(html, entryOptions) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.FIND_AND_REPLACE)) {
         entryOptions.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.actor-find-and-replace"),
             condition: target => {
-                const id = target.attr("data-document-id")
+                const id = target.attr("data-document-id");
                 const actor = game.actors.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && actor?.type === "NPC";
             },

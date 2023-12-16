@@ -1,10 +1,11 @@
 import { registerConfigurations } from "./config.js";
 import { addCbuilderXMLImportButton } from "./tools/cbuilder_xml_import.js";
-import { addActorContextMenuAdjustMonster, addActorContextMenuMM3Math, addActorFindAndReplace, addFolderContextMenuAdjustMonster, addFolderContextMenuMM3Math } from "./tools/adjust_monster.js";
+import { addActorContextMenuAdjustMonster, addActorContextMenuMM3Math, addActorContextMenuFindAndReplace, addFolderContextMenuAdjustMonster, addFolderContextMenuMM3Math } from "./tools/adjust_monster.js";
 import { addBuildEquipmentButton } from "./tools/cbuilder_xml_import.js";
 import { createHPchangeMessage, createSurgeChangeMessage } from "./tools/hp-chat-messages.js";
 import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
 import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
+import { addActorContextMenuImportEffects, addActorContextMenuCopyID } from "./tools/actor-import-effects.js";
 
 Hooks.once("init", function () {
     DnD4ECompendium.initialize();
@@ -21,6 +22,7 @@ export class DnD4ECompendium {
         BUILD_MAGIC_ITEM: "build-magic-item",
         MONSTER_ADJUSTMENT: "monster-adjustment",
         FIND_AND_REPLACE: "actor-find-and-replace",
+        IMPORT_EFFECTS: "actor-import-effects",
         HP_MESSAGES: "hp-messages",
         SURGE_MESSAGES: "surge-messages",
         CONDITION_MESSAGES: "condition-messages",
@@ -32,9 +34,11 @@ export class DnD4ECompendium {
         console.log(this.NAME + " | Initialising the DnD 4e compendium.");
         Hooks.on("renderSidebarTab", addCbuilderXMLImportButton);
         Hooks.on("renderSidebarTab", addBuildEquipmentButton);
+        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuCopyID);
+        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuImportEffects);
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuAdjustMonster);
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuMM3Math);
-        Hooks.on("getActorDirectoryEntryContext", addActorFindAndReplace);
+        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuFindAndReplace);
         Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuAdjustMonster);
         Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuMM3Math);
         Hooks.on("preUpdateActor", createHPchangeMessage);
