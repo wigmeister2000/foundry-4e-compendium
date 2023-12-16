@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.1
+- Fixed crit damage formulas for powers with extra dice (Howling Strike etc.). 
+- Fixed alternative crit damage for several monsters.
+
 ## Foundry 4e Compendium v1.31
 - Context menu option for cloning effects from one actor to another (including item effects and macros). This is useful upon reimport from CBuilder.
 - Race and class effects use v0.4.39 bonus typing
