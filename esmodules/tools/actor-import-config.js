@@ -3,10 +3,10 @@ import { DnD4ECompendium } from "../dnd-4e-compendium.js";
 /***********************************************************************/
 /* Context menu extensions */
 
-export function addActorContextMenuImportEffects(html, entryOptions) {
-    if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_EFFECTS)) {
+export function addActorContextMenuImportConfig(html, entryOptions) {
+    if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_CONFIG)) {
         entryOptions.push({
-            name: game.i18n.localize("4ECOMPENDIUM.context.actor-import-effects"),
+            name: game.i18n.localize("4ECOMPENDIUM.context.actor-import-config"),
             condition: target => {
                 const id = target.attr("data-document-id");
                 const actor = game.actors.get(id);
@@ -16,14 +16,14 @@ export function addActorContextMenuImportEffects(html, entryOptions) {
             callback: target => {
                 const id = target.attr("data-document-id");
                 const actor = game.actors.get(id);
-                cloneEffectsDialog(actor);
+                importConfigDialog(actor);
             }
         })
     }
 }
 
 export function addActorContextMenuCopyID(html, entryOptions) {
-    if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_EFFECTS)) {
+    if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_CONFIG)) {
         entryOptions.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.actor-copy-id"),
             condition: target => {
@@ -43,22 +43,25 @@ export function addActorContextMenuCopyID(html, entryOptions) {
 /***********************************************************************/
 /* Dialogs */
 
-async function cloneEffectsDialog(actor) {
+async function importConfigDialog(actor) {
     new Dialog({
-        title: game.i18n.localize("4ECOMPENDIUM.actor-import-effects.title"),
-        content: await renderTemplate("modules/" + DnD4ECompendium.ID + "/templates/actor-import-effects.hbs",
+        title: game.i18n.localize("4ECOMPENDIUM.actor-import-config.title"),
+        content: await renderTemplate("modules/" + DnD4ECompendium.ID + "/templates/actor-import-config.hbs",
             {
-                hint1: game.i18n.localize("4ECOMPENDIUM.actor-import-effects.hint1")
+                hint1: game.i18n.localize("4ECOMPENDIUM.actor-import-config.hint1")
             }),
         buttons: {
-            clone: {
+            import: {
                 icon: '<i class="fas fa-right-arrow-to-bracket"></i>',
-                label: "Import Effects",
+                label: "Import",
                 callback: html => {
                     const target = html.find("input[name='target']");
+                    const appearance = html.find("input[name='appearance']")[0].checked;
+                    const images = html.find("input[name='images']")[0].checked;
+                    const effects = html.find("input[name='effects']")[0].checked;
                     const macros = html.find("input[name='macros']")[0].checked;
                     const overwrite = html.find("input[name='overwrite']")[0].checked;
-                    cloneAllEffects(actor, target.val(), overwrite, macros);
+                    importConfig(actor, target.val(), overwrite, appearance, images, effects, macros);
                 }
             },
             no: {
@@ -66,7 +69,7 @@ async function cloneEffectsDialog(actor) {
                 label: "Cancel"
             }
         },
-        default: "clone"
+        default: "import"
     }, {
         width: 400
     }).render(true);
@@ -105,7 +108,7 @@ async function cloneEffects(source, target, overwrite) {
     await target.createEmbeddedDocuments("ActiveEffect", effectsToClone);
 }
 
-async function cloneMacros(source, target) {
+async function cloneMacro(source, target) {
     if (source.type != target.type) {
         return;
     }
@@ -113,17 +116,35 @@ async function cloneMacros(source, target) {
     await target.update({ "system.macro": source.system.macro });
 }
 
-async function cloneAllEffects(actor, targetID, overwrite, macros) {
+async function cloneImage(source, target) {
+    await target.update({
+        "img": source.img
+    });
+}
+
+async function cloneAppearance(source, target) {
+    await target.update({
+        "img": source.img,
+        "prototypeToken": source.prototypeToken
+    });
+}
+
+async function importConfig(actor, targetID, overwrite, appearance, images, effects, macros) {
     const sourceActor = Actor.get(targetID);
 
     if (!sourceActor || !["Player Character", "NPC"].includes(sourceActor.type)) {
         return ui.notifications.error("Actor with the specified ID does not exist.");
     }
 
-    // Clone effects of actor
-    await cloneEffects(sourceActor, actor, overwrite);
+    // Actor
+    if (appearance) {
+        await cloneAppearance(sourceActor, actor);
+    }
+    if (effects) {
+        await cloneEffects(sourceActor, actor, overwrite);
+    }
 
-    // Clone effects and macros of items
+    // Items
     const itemsSource = sourceActor.items.contents;
     const itemsTarget = actor.items.contents;
 
@@ -131,9 +152,14 @@ async function cloneAllEffects(actor, targetID, overwrite, macros) {
         const targets = itemsTarget.filter(t => t.name === source.name);
         if (targets.length > 0) {
             for (const t of targets) {
-                await cloneEffects(source, t, overwrite);
+                if (effects) {
+                    await cloneEffects(source, t, overwrite);
+                }
                 if (macros) {
-                    await cloneMacros(source, t);
+                    await cloneMacro(source, t);
+                }
+                if (images) {
+                    await cloneImage(source, t);
                 }
             }
         }

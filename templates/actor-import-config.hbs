@@ -1,0 +1,27 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+    <div class="form-group">
+        <p class="notes">{{hint1}}</p>
+        <label for="base">ID of Source Actor:</label>
+        <input type="string" name="target" value="">
+    </div>
+    <div class="form-group">
+        <label for="overwrite">Import character appearance?</label>
+        <input type="checkbox" name="appearance" data-dtype="Boolean" checked>
+    </div>
+    <div class="form-group">
+        <label for="overwrite">Import item images?</label>
+        <input type="checkbox" name="images" data-dtype="Boolean" checked>
+    </div>
+    <div class="form-group">
+        <label for="overwrite">Import effects?</label>
+        <input type="checkbox" name="effects" data-dtype="Boolean" checked>
+    </div>
+    <div class="form-group">
+        <label for="overwrite">Overwrite existing effects?</label>
+        <input type="checkbox" name="overwrite" data-dtype="Boolean" checked>
+    </div>
+    <div class="form-group">
+        <label for="macros">Import item macros?</label>
+        <input type="checkbox" name="macros" data-dtype="Boolean" checked>
+    </div>
+</form>

@@ -41,13 +41,13 @@ export function registerConfigurations() {
         onChange: debouncedReload
     });
 
-    game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_EFFECTS, {
-        name: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.IMPORT_EFFECTS}.Name`,
+    game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_CONFIG, {
+        name: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.IMPORT_CONFIG}.Name`,
         default: true,
         type: Boolean,
         scope: 'world',
         config: true,
-        hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.IMPORT_EFFECTS}.Hint`,
+        hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.IMPORT_CONFIG}.Hint`,
         onChange: debouncedReload
     });
 
