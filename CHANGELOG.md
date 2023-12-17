@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.2
+- Additional character config transfer options: Appearance, item images
+
 ## Foundry 4e Compendium v1.31.1
 - Fixed crit damage formulas for powers with extra dice (Howling Strike etc.). 
 - Fixed alternative crit damage for several monsters.
