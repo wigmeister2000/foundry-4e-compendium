@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.3
+- Fixed gouge and khopesh weapon groups
+
 ## Foundry 4e Compendium v1.31.2
 - Additional character config transfer options: Appearance, item images
 
