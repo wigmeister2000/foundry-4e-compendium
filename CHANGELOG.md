@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.4
+- Fixed import of military weapon proficiencies
+
 ## Foundry 4e Compendium v1.31.3
 - Fixed gouge and khopesh weapon groups
 
