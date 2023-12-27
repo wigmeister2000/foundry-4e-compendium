@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.5
+- Optional import of auxiliary actions (Bull rush, Grab etc.)
+
 ## Foundry 4e Compendium v1.31.4
 - Fixed import of military weapon proficiencies
 
