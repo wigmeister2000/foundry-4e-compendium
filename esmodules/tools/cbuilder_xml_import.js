@@ -59,8 +59,9 @@ async function importXMLDialog() {
                 label: "Import",
                 callback: html => {
                     const form = html.find("form")[0];
+                    const core = html.find("input[name='core']")[0].checked;
                     if (!form.data.files.length) { return ui.notifications.error("You did not provide a character file!") };
-                    readTextFromFile(form.data.files[0]).then(xml => parseCharacter(xml));
+                    readTextFromFile(form.data.files[0]).then(xml => parseCharacter(xml, core));
                 }
             },
             no: {
@@ -105,7 +106,7 @@ async function buildEquipmentDialog() {
 /***********************************************************************/
 /* Character parsing */
 
-async function parseCharacter(xml) {
+async function parseCharacter(xml, core = false) {
     try {
         ui.notifications.info("Importing character. Please wait...");
         const parser = new DOMParser();
@@ -225,7 +226,16 @@ async function parseCharacter(xml) {
 
             await setSkills(actor, skills);
             await actor.createEmbeddedDocuments("Item", powerItems);
-            await actor.createEmbeddedDocuments("Item", corePowerItems);
+            if (core) {
+                await actor.createEmbeddedDocuments("Item", corePowerItems);
+            } else {
+                const exceptions = [
+                    "Melee Basic Attack",
+                    "Ranged Basic Attack",
+                    "Ranged Basic Attack Heavy Thrown"
+                ];
+                await actor.createEmbeddedDocuments("Item", corePowerItems.filter(p => exceptions.includes(p.name)));
+            }
             await actor.createEmbeddedDocuments("Item", featItems);
             await actor.createEmbeddedDocuments("Item", raceItems);
             await actor.createEmbeddedDocuments("Item", classItems);
