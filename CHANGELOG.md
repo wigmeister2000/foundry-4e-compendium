@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.6
+- Options for character config transfer: Item descriptions, item values
+
 ## Foundry 4e Compendium v1.31.5
 - Optional import of auxiliary actions (Bull rush, Grab etc.)
 
