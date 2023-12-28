@@ -1,24 +1,31 @@
 <form autocomplete="off" onsubmit="event.preventDefault();">
     <div class="form-group">
-        <p class="notes">{{hint1}}</p>
-        <label for="base">ID of Source Actor:</label>
+        <label for="target">ID of Source Actor:</label>
         <input type="string" name="target" value="">
     </div>
     <div class="form-group">
-        <label for="overwrite">Import character appearance?</label>
+        <label for="appearance">Import character appearance?</label>
         <input type="checkbox" name="appearance" data-dtype="Boolean" checked>
     </div>
     <div class="form-group">
-        <label for="overwrite">Import item images?</label>
-        <input type="checkbox" name="images" data-dtype="Boolean" checked>
-    </div>
-    <div class="form-group">
-        <label for="overwrite">Import effects?</label>
+        <label for="effects">Import effects (including item effects)?</label>
         <input type="checkbox" name="effects" data-dtype="Boolean" checked>
     </div>
     <div class="form-group">
         <label for="overwrite">Overwrite existing effects?</label>
         <input type="checkbox" name="overwrite" data-dtype="Boolean" checked>
+    </div>
+    <div class="form-group">
+        <label for="images">Import item images?</label>
+        <input type="checkbox" name="images" data-dtype="Boolean" checked>
+    </div>
+    <div class="form-group">
+        <label for="descriptions">Import item descriptions?</label>
+        <input type="checkbox" name="descriptions" data-dtype="Boolean" unchecked>
+    </div>
+    <div class="form-group">
+        <label for="data">Import item values?</label>
+        <input type="checkbox" name="data" data-dtype="Boolean" unchecked>
     </div>
     <div class="form-group">
         <label for="macros">Import item macros?</label>

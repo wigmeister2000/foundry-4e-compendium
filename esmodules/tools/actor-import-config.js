@@ -56,12 +56,15 @@ async function importConfigDialog(actor) {
                 label: "Import",
                 callback: html => {
                     const target = html.find("input[name='target']");
-                    const appearance = html.find("input[name='appearance']")[0].checked;
-                    const images = html.find("input[name='images']")[0].checked;
-                    const effects = html.find("input[name='effects']")[0].checked;
-                    const macros = html.find("input[name='macros']")[0].checked;
-                    const overwrite = html.find("input[name='overwrite']")[0].checked;
-                    importConfig(actor, target.val(), overwrite, appearance, images, effects, macros);
+                    const config = {};
+                    config.appearance = html.find("input[name='appearance']")[0].checked;
+                    config.images = html.find("input[name='images']")[0].checked;
+                    config.descriptions = html.find("input[name='descriptions']")[0].checked;
+                    config.data = html.find("input[name='data']")[0].checked;
+                    config.effects = html.find("input[name='effects']")[0].checked;
+                    config.macros = html.find("input[name='macros']")[0].checked;
+                    config.overwrite = html.find("input[name='overwrite']")[0].checked;
+                    importConfig(actor, target.val(), config);
                 }
             },
             no: {
@@ -129,7 +132,18 @@ async function cloneAppearance(source, target) {
     });
 }
 
-async function importConfig(actor, targetID, overwrite, appearance, images, effects, macros) {
+async function cloneSystemData(source, target) {
+    const system = foundry.utils.deepClone(source.system);
+    delete system.description;
+    delete system.macro;
+    await target.update({ "system": system });
+}
+
+async function cloneDescription(source, target) {
+    await target.update({ "system.description": source.system.description });
+}
+
+async function importConfig(actor, targetID, config = {}) {
     const sourceActor = Actor.get(targetID);
 
     if (!sourceActor || !["Player Character", "NPC"].includes(sourceActor.type)) {
@@ -137,11 +151,11 @@ async function importConfig(actor, targetID, overwrite, appearance, images, effe
     }
 
     // Actor
-    if (appearance) {
+    if (config.appearance) {
         await cloneAppearance(sourceActor, actor);
     }
-    if (effects) {
-        await cloneEffects(sourceActor, actor, overwrite);
+    if (config.effects) {
+        await cloneEffects(sourceActor, actor, config.overwrite);
     }
 
     // Items
@@ -152,14 +166,20 @@ async function importConfig(actor, targetID, overwrite, appearance, images, effe
         const targets = itemsTarget.filter(t => t.name === source.name);
         if (targets.length > 0) {
             for (const t of targets) {
-                if (effects) {
-                    await cloneEffects(source, t, overwrite);
+                if (config.effects) {
+                    await cloneEffects(source, t, config.overwrite);
                 }
-                if (macros) {
+                if (config.macros) {
                     await cloneMacro(source, t);
                 }
-                if (images) {
+                if (config.images) {
                     await cloneImage(source, t);
+                }
+                if (config.data) {
+                    await cloneSystemData(source, t);
+                }
+                if (config.descriptions) {
+                    await cloneDescription(source, t);
                 }
             }
         }
