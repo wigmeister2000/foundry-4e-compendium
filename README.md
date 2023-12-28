@@ -6,7 +6,7 @@
 * 4e rule elements.
 * Character import from DDI CBuilder.
 * Encounter building and level adjustment tools.
-* Have a look at the _4e Compendium Help_ in the _Compendium Packs_ tab in Foundry.
+* For a full list of features, have a look at the _4e Compendium Help_ in the _Compendium Packs_ tab in Foundry.
 
 ## Installation
 * You need [Foundry v11](https://foundryvtt.com/) and the [4e System](https://github.com/EndlesNights/dnd4eBeta).
