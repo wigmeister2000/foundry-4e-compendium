@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.7
+- Fixed daily use for several item powers
+
 ## Foundry 4e Compendium v1.31.6
 - Options for character config transfer: Item descriptions, item values
 
