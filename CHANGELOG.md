@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.8
+- Removed charges of consumable powers
+
 ## Foundry 4e Compendium v1.31.7
 - Fixed daily use for several item powers
 
