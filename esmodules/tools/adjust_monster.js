@@ -470,10 +470,6 @@ async function actorFindAndReplace(actor, find, replace, caseSensitive = false, 
 }
 
 async function adjustHP(monster, level, legacy = false) {
-    // Switch off HP chat messages
-    const messageSetting = game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.HP_MESSAGES);
-    await game.settings.set(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.HP_MESSAGES, false);
-
     const secondary = monster.system.details.role.secondary;
     const role = secondary + "-" + monster.system.details.role.primary;
     const scalingFunction = lookup.scalingFunctions[role].HP; // Rescales HP according to MM3
@@ -494,9 +490,6 @@ async function adjustHP(monster, level, legacy = false) {
         "system.attributes.hp.value": newHP,
         "system.attributes.hp.starting": newHP
     });
-
-    // Reset HP chat messages
-    await game.settings.set(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.HP_MESSAGES, messageSetting);
 }
 
 async function adjustXP(monster, level) {
