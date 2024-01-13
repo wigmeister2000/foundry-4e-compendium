@@ -59,18 +59,20 @@ export async function createEffectsMessageCombat(combat, state, time) {
         const token = canvas.tokens.get(combat.turns[state.turn].tokenId);
         const name = token.document.name;
         const effects = token.document.actorLink ? Actor.get(token.document.actorId).effects.map(x => x)?.filter(x => temporaryQ(x)) : token.document.actor.effects?.filter(x => !x.disabled);
-        if (effects && effects.length > 0) {
+        if (effects?.length > 0) {
             const header = `<p><b>Round</b> ${state.round}</p><p><b>${name}</b> has the following temporary effects:</p>`;
 
-            const effectsLines = [];
+            const effectLines = [];
 
             for (const e of effects) {
                 const line = await createEffectLine(e, appendDuration);
-                effectsLines.push(line);
+                effectLines.push(line);
             }
 
-            const message = header + '<table>' + effectsLines.join("") + "</table>";
+            const message = header + '<table>' + effectLines.join("") + "</table>";
             await createMessage(message);
+        } else {
+            await createMessage(`<p><b>Round</b> ${state.round}</p><p><b>${name}</b> has no temporary effects.</p>`);
         }
     }
 }
@@ -78,23 +80,30 @@ export async function createEffectsMessageCombat(combat, state, time) {
 export async function createEffectsMessageSelected() {
     const appendDuration = game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.APPEND_DURATION);
     const tokens = canvas.tokens.controlled;
+    const messageParts = [];
 
-    for (const token of tokens) {
-        const name = token.document.name;
-        const effects = token.document.actorLink ? Actor.get(token.document.actorId).effects.map(x => x)?.filter(x => temporaryQ(x)) : token.document.actor.effects?.filter(x => !x.disabled);
+    if (tokens?.length > 0) {
+        for (const token of tokens) {
+            const name = token.document.name;
+            const effects = token.document.actorLink ? Actor.get(token.document.actorId).effects.map(x => x)?.filter(x => temporaryQ(x)) : token.document.actor.effects?.filter(x => !x.disabled);
 
-        if (effects && effects.length > 0) {
-            const header = `<p><b>${name}</b> has the following temporary effects:</p>`;
+            if (effects && effects.length > 0) {
+                const header = `<p><b>${name}</b> has the following temporary effects:</p>`;
 
-            const effectsLines = [];
+                const effectsLines = [];
 
-            for (const e of effects) {
-                const line = await createEffectLine(e, appendDuration);
-                effectsLines.push(line);
+                for (const e of effects) {
+                    const line = await createEffectLine(e, appendDuration);
+                    effectsLines.push(line);
+                }
+
+                const message = header + '<table>' + effectsLines.join("") + "</table>";
+                messageParts.push(message);
+            } else {
+                messageParts.push(`<p><b>${name}</b> has no temporary effects.</p>`);
             }
-
-            const message = header + '<table>' + effectsLines.join("") + "</table>";
-            await createMessage(message);
         }
+
+        await createMessage(messageParts.join(""));
     }
 }
