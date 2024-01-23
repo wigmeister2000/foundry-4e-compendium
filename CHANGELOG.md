@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.10
+- Added power links to paragon paths and epic destinies
+
 ## Foundry 4e Compendium v1.31.9
 - Improved temporary effects message
 - No messages for HP changes of hidden tokens
