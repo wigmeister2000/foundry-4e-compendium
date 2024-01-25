@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.11
+- Fixed saving throw bonuses of several monsters
+
 ## Foundry 4e Compendium v1.31.10
 - Added power links to paragon paths and epic destinies
 
