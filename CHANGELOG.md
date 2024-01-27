@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.12
+- Fixed drowmesh armor reflex bonus
+
 ## Foundry 4e Compendium v1.31.11
 - Fixed saving throw bonuses of several monsters
 
