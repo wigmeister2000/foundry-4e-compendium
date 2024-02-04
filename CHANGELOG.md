@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.13
+- Fixed accurate implement bonuses
+- Fixed resistances and immunities of traps
+
 ## Foundry 4e Compendium v1.31.12
 - Fixed drowmesh armor reflex bonus
 
