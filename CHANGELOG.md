@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.14
+- Fixed monster healing surges
+
 ## Foundry 4e Compendium v1.31.13
 - Fixed accurate implement bonuses
 - Fixed resistances and immunities of traps
