@@ -425,6 +425,7 @@ async function adjustActor(actor, level, legacy = false, copy = false, copyName 
         await adjustPowers(monster, level, legacy);
         await adjustSkills(monster, level, oldAbilities); // Adjust abilities before this
         await adjustResistances(monster, level);
+        await adjustSurges(monster, level);
         await monster.update({ "system.details.level": level });
     }
 }
@@ -928,4 +929,16 @@ async function adjustResistances(monster, level) {
     await monster.update({
         "system.resistances": newResistances
     });
+}
+
+async function adjustSurges(monster, level) {
+    if (monster.system.details.surges.max > monster.system.details.tier) {
+        // Special NPC. Do nothing.
+    } else {
+        const surges = Math.floor(Math.ceil(level / 10), 3);
+        await monster.update({
+            "system.details.surges.value": surges,
+            "system.details.surges.max": surges
+        });
+    }
 }
