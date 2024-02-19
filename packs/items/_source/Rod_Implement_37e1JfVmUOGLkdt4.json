@@ -1,7 +1,7 @@
 {
 	"name":"Rod Implement",
-	"type":"equipment",
-	"img":"icons/svg/chest.svg",
+	"type":"weapon",
+	"img":"modules/dnd-4e-compendium/icons/weapons/rod.webp",
 	"system":{
 		"description":{
 			"value":"<p>Using a nonmagical implement confers no benefit. You can purchase a magic implement to gain an enhancement bonus to attack rolls and damage rolls with your arcane powers.</p><p>Published in Player's Handbook, page(s) 222, Heroes of the Forgotten Kingdoms, page(s) 336.</p>",
@@ -32,24 +32,24 @@
 			"type":""
 		},
 		"range":{
-			"value":null,
-			"long":null,
+			"value":0,
+			"long":0,
 			"units":""
 		},
 		"uses":{
 			"value":0,
-			"max":0,
-			"per":null
+			"max":"0",
+			"per":""
 		},
 		"consume":{
 			"type":"",
-			"target":null,
+			"target":"",
 			"amount":null
 		},
 		"armour":{
 			"value":10,
 			"type":"other",
-			"subType":"Adventuring Gear",
+			"subType":"",
 			"ac":0,
 			"fort":0,
 			"ref":0,
@@ -74,14 +74,109 @@
 			"author":""
 		},
 		"level":"",
-		"speed":{
-			"value":null,
-			"conditions":""
+		"weaponType":"implement",
+		"weaponHand":"hOff",
+		"properties":{
+			"amm":false,
+			"bru":false,
+			"def":false,
+			"hic":false,
+			"imp":true,
+			"lof":false,
+			"lom":false,
+			"off":false,
+			"rch":false,
+			"rel":false,
+			"sml":false,
+			"spc":false,
+			"thv":false,
+			"tlg":false,
+			"two":false,
+			"ver":false
 		},
-		"strength":0,
-		"stealth":false,
-		"proficient":true,
-		"armourBaseType":""
+		"proficient":false,
+		"proficientI":true,
+		"profBonus":0,
+		"profImpBonus":0,
+		"enhance":0,
+		"isRanged":false,
+		"damageDice":{
+			"parts":[
+				[
+					"",
+					"",
+					""
+				]
+			]
+		},
+		"damage":{
+			"parts":[]
+		},
+		"damageCrit":{
+			"parts":[]
+		},
+		"damageImp":{
+			"parts":[]
+		},
+		"damageCritImp":{
+			"parts":[]
+		},
+		"damageType":{
+			"physical":true
+		},
+		"brutalNum":0,
+		"weaponGroup":{
+			"axe":false,
+			"blowgun":false,
+			"bow":false,
+			"cbow":false,
+			"dragon":false,
+			"flail":false,
+			"garrote":false,
+			"ham":false,
+			"bladeH":false,
+			"bladeL":false,
+			"mace":false,
+			"pik":false,
+			"pole":false,
+			"sling":false,
+			"spear":false,
+			"staff":false,
+			"unarm":false,
+			"whip":false
+		},
+		"attackForm":"@profBonus+@enhance",
+		"attackFormImp":"@profImpBonus+@enhanceImp",
+		"damageForm":"@enhance",
+		"damageFormImp":"@enhanceImp",
+		"critDamageForm":"",
+		"critDamageFormImp":"",
+		"critRange":20,
+		"critRangeImp":20,
+		"weaponBaseType":"rod",
+		"damageTypeWeapon":false,
+		"chatFlavor":"",
+		"implement":{
+			"holyS":false,
+			"ki":false,
+			"orb":false,
+			"rod":true,
+			"staff":false,
+			"tome":false,
+			"totem":false,
+			"wand":false
+		},
+		"brutal":0,
+		"implementGroup":{
+			"holyS":false,
+			"ki":false,
+			"orb":false,
+			"rod":true,
+			"staff":false,
+			"tome":false,
+			"totem":false,
+			"wand":false
+		}
 	},
 	"effects":[],
 	"folder":null,
