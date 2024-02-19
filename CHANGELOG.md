@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.31.15
+- Fixed type of mundane implements
+
 ## Foundry 4e Compendium v1.31.14
 - Fixed monster healing surges
 
