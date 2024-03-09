@@ -1,5 +1,12 @@
 # Changelog
 
+## Foundry 4e Compendium v1.32.1
+- Fixed damage type of Uganon's powers
+
+## Foundry 4e Compendium v1.32
+- Added fantastic terrain
+- Fixed Shadowclaw's shadow jump power
+
 ## Foundry 4e Compendium v1.31.15
 - Fixed type of mundane implements
 
