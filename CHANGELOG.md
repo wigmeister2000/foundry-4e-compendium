@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.32.2
+- Fixed CBuilder import of anakore armor
+
 ## Foundry 4e Compendium v1.32.1
 - Fixed damage type of Uganon's powers
 
