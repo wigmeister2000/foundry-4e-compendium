@@ -708,6 +708,12 @@ lookup.ritual = {}
 lookup.deity = {}
 
 lookup.equipment = {
+	"Anakore Armor +1": "Anakore +1",
+	"Anakore Armor +2": "Anakore +2",
+	"Anakore Armor +3": "Anakore +3",
+	"Anakore Armor +4": "Anakore +4",
+	"Anakore Armor +5": "Anakore +5",
+	"Anakore Armor +6": "Anakore +6",
 	"Double axe": "Double Axe",
 	"Double flail": "Double Flail",
 	"Double sword": "Double Sword",
