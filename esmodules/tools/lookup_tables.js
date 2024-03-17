@@ -3247,7 +3247,7 @@ lookup.scalingFunctions = {
 
 lookup.dc = {
 	"easy": x => 7.36782 + 0.546162 * x,
-	"medium": x => 11.1793 + 0.691657 * x,
+	"moderate": x => 11.1793 + 0.691657 * x,
 	"hard": x => 18.1241 + 0.791991 * x
 }
 
@@ -3312,3 +3312,10 @@ lookup.encounterXP = [ // XP per player character, indexed by level
 	95000,
 	111000
 ]
+
+lookup.monsterType = {
+	"magical": "magical beast",
+	"animate": "animate",
+	"beast": "beast",
+	"humanoid": "humanoid"
+}

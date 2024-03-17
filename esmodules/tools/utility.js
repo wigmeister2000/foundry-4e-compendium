@@ -5,3 +5,7 @@ export function escapeRegExp(string) {
 export function capitalize(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
+
+export function union() {
+    return [...new Set([...arguments].flat())];
+}

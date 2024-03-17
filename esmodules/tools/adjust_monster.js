@@ -1,6 +1,6 @@
 import { DnD4ECompendium } from "../dnd-4e-compendium.js";
 import { lookup } from "./lookup_tables.js";
-import { escapeRegExp, capitalize } from "./utility.js";
+import { escapeRegExp, capitalize, union } from "./utility.js";
 
 /***********************************************************************/
 /* Context menu extensions */
@@ -95,6 +95,44 @@ export function addFolderContextMenuMM3Math(html, entryOptions) {
                 const id = target.parent().attr("data-folder-id");
                 const folder = game.folders.get(id);
                 mm3ifyActorFolder(folder);
+            }
+        })
+    }
+}
+
+export function addActorContextMenuMonsterKnowledge(html, entryOptions) {
+    if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
+        entryOptions.push({
+            name: game.i18n.localize("4ECOMPENDIUM.context.monster-knowledge"),
+            condition: target => {
+                const id = target.attr("data-document-id");
+                const actor = game.actors.get(id);
+                return game.user.hasPermission("ACTOR_CREATE") && actor?.type === "NPC";
+            },
+            icon: '<i class="fas fa-book"></i>',
+            callback: target => {
+                const id = target.attr("data-document-id");
+                const actor = game.actors.get(id);
+                addMonsterKnowledge(actor);
+            }
+        })
+    }
+}
+
+export function addFolderContextMenuMonsterKnowledge(html, entryOptions) {
+    if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
+        entryOptions.push({
+            name: game.i18n.localize("4ECOMPENDIUM.context.monster-knowledge-folder"),
+            condition: target => {
+                const id = target.parent().attr("data-folder-id");
+                const folder = game.folders.get(id);
+                return game.user.hasPermission("ACTOR_CREATE") && folder?.type === "Actor";
+            },
+            icon: '<i class="fas fa-list-ul"></i>',
+            callback: target => {
+                const id = target.parent().attr("data-folder-id");
+                const folder = game.folders.get(id);
+                addMonsterKnowledgeFolder(folder);
             }
         })
     }
@@ -395,6 +433,14 @@ async function mm3ifyActorFolder(folder) {
     for (const actor of folder.contents) {
         if (actor.type === "NPC") {
             await adjustActor(actor, actor.system.details.level, true, true, actor.name + " (MM3)");
+        }
+    }
+}
+
+async function addMonsterKnowledgeFolder(folder) {
+    for (const actor of folder.contents) {
+        if (actor.type === "NPC") {
+            await addMonsterKnowledge(actor);
         }
     }
 }
@@ -845,7 +891,7 @@ async function adjustPowers(monster, level, legacy = false) {
             if (match) {
                 const dc = Number(match.groups.DC);
                 const easyDiff = Math.abs(lookup.dc.easy(monster.system.details.level) - dc);
-                const mediumDiff = Math.abs(lookup.dc.medium(monster.system.details.level) - dc);
+                const mediumDiff = Math.abs(lookup.dc.moderate(monster.system.details.level) - dc);
                 const hardDiff = Math.abs(lookup.dc.hard(monster.system.details.level) - dc);
 
                 const difficulty = [["easy", easyDiff], ["medium", mediumDiff], ["hard", hardDiff]].sort((a, b) => a[1] - b[1])[0][0];
@@ -861,7 +907,7 @@ async function adjustPowers(monster, level, legacy = false) {
             if (detailMatch) {
                 const dc = Number(detailMatch.groups.DC);
                 const easyDiff = Math.abs(lookup.dc.easy(monster.system.details.level) - dc);
-                const mediumDiff = Math.abs(lookup.dc.medium(monster.system.details.level) - dc);
+                const mediumDiff = Math.abs(lookup.dc.moderate(monster.system.details.level) - dc);
                 const hardDiff = Math.abs(lookup.dc.hard(monster.system.details.level) - dc);
 
                 const difficulty = [["easy", easyDiff], ["medium", mediumDiff], ["hard", hardDiff]].sort((a, b) => a[1] - b[1])[0][0];
@@ -941,4 +987,91 @@ async function adjustSurges(monster, level) {
             "system.details.surges.max": surges
         });
     }
+}
+
+async function addMonsterKnowledge(actor) {
+    // Details
+    const dcModerate = Math.round(lookup.dc.moderate(actor.system.details.level));
+    const dcHard = Math.round(lookup.dc.hard(actor.system.details.level));
+    const type = actor.system.details.other ? lookup.monsterType[actor.system.details.type] + " (" + actor.system.details.other.toLowerCase() + ")" : lookup.monsterType[actor.system.details.type];
+
+    const role = ["Level " + actor.system.details.level];
+
+    if (actor.system.details.role.secondary != "standard") {
+        role.push(capitalize(actor.system.details.role.secondary));
+    }
+
+    role.push(capitalize(actor.system.details.role.primary));
+
+    if (actor.system.details.role.leader) {
+        role.push("(Leader)");
+    }
+
+    const keyWords = union(actor.items.contents.map(x => x.system.keyWords).flat().filter(x => x)).join(", ");
+
+    // Resistances and vulnerabilities
+    const resistances = actor.system.untypedResistances.resistances ?? [];
+    const immunities = actor.system.untypedResistances.immunities ?? [];
+    const vulnerabilities = actor.system.untypedResistances.vulnerabilities ?? [];
+
+    for (const [key, value] of Object.entries(actor.system.resistances)) {
+        const type = key === "damage" ? "all damage" : key;
+        if (value.value > 0) {
+            resistances.push(value.value + " " + type);
+        } else if (value.value < 0) {
+            vulnerabilities.push(Math.abs(value.value) + " " + type);
+        } else if (value.immune) {
+            immunities.push(key);
+        }
+    }
+
+    const resistanceString = resistances.join(", ");
+    const immunityString = immunities.join(", ");
+    const vulnerabilityString = vulnerabilities.join(", ");
+
+    // Assemble moderate description
+    const descriptionModerate = [
+        "<h1>" + actor.prototypeToken.name + "</h1>",
+        "<p><b>Role: </b>" + role.join(" "),
+        "<p><b>Type: </b>" + capitalize(actor.system.details.origin) + " " + type + "</p>"
+    ];
+
+    if (keyWords.length) {
+        descriptionModerate.push("<p><b>Keywords: </b>" + keyWords + "</p>");
+    }
+
+    // Assemble hard description
+    const descriptionHard = [...descriptionModerate];
+
+    if (resistanceString) {
+        descriptionHard.push("<p><b>Resistances: </b>" + resistanceString + "</p>");
+    }
+    if (immunityString) {
+        descriptionHard.push("<p><b>Immunities: </b>" + immunityString + "</p>");
+    }
+    if (vulnerabilityString) {
+        descriptionHard.push("<p><b>Vulnerabilities: </b>" + vulnerabilityString + "</p>");
+    }
+
+    // Powers and Traits
+    const powers = actor.items.contents.filter(x => x.type === "power").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
+    const traits = actor.items.contents.filter(x => x.type === "classFeats").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
+    descriptionHard.push("<h2>Traits</h2>" + traits.join(""));
+    descriptionHard.push("<h2>Powers</h2>" + powers.join(""));
+
+    const moderate = {
+        "name": `Monster Knowledge (DC ${dcModerate})`,
+        "type": "destinyFeats",
+        "img": "icons/svg/book.svg",
+        "system.description.value": descriptionModerate.join("")
+    };
+
+    const hard = {
+        "name": `Monster Knowledge (DC ${dcHard})`,
+        "type": "destinyFeats",
+        "img": "icons/svg/book.svg",
+        "system.description.value": descriptionHard.join("")
+    };
+
+    await actor.createEmbeddedDocuments("Item", [moderate, hard]);
 }

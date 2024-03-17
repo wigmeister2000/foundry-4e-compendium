@@ -1,6 +1,6 @@
 import { registerConfigurations } from "./config.js";
 import { addCbuilderXMLImportButton } from "./tools/cbuilder_xml_import.js";
-import { addActorContextMenuAdjustMonster, addActorContextMenuMM3Math, addActorContextMenuFindAndReplace, addFolderContextMenuAdjustMonster, addFolderContextMenuMM3Math } from "./tools/adjust_monster.js";
+import { addActorContextMenuAdjustMonster, addActorContextMenuMM3Math, addActorContextMenuFindAndReplace, addFolderContextMenuAdjustMonster, addFolderContextMenuMM3Math, addActorContextMenuMonsterKnowledge, addFolderContextMenuMonsterKnowledge } from "./tools/adjust_monster.js";
 import { addBuildEquipmentButton } from "./tools/cbuilder_xml_import.js";
 import { createHPchangeMessage, createSurgeChangeMessage } from "./tools/hp-chat-messages.js";
 import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
@@ -38,9 +38,11 @@ export class DnD4ECompendium {
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuImportConfig);
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuAdjustMonster);
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuMM3Math);
+        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuMonsterKnowledge);
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuFindAndReplace);
         Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuAdjustMonster);
         Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuMM3Math);
+        Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuMonsterKnowledge);
         Hooks.on("preUpdateActor", createHPchangeMessage);
         Hooks.on("preUpdateActor", createSurgeChangeMessage);
         Hooks.on("combatStart", createEffectsMessageCombat);
