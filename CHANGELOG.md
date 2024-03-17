@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.33
+- Monster knowledge context menu option
+- Fixed some legacy monster formatting
+
 ## Foundry 4e Compendium v1.32.2
 - Fixed CBuilder import of anakore armor
 
