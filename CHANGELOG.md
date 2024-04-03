@@ -1,5 +1,10 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34
+- Fixed hybrid class descriptions
+- Added missing hybrid class features and hybrid talent options
+- Added flurry of blows damage formula
+
 ## Foundry 4e Compendium v1.33
 - Monster knowledge context menu option
 - Fixed some legacy monster formatting

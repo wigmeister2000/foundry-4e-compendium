@@ -355,6 +355,7 @@ lookup.power = {
 	"Destructive Surprise": "Warlord 01-Destructive Surprise",
 	"Devastation's Wake": "Fighter 19-Devastation's Wake",
 	"Devotion": "Paladin 16-Devotion",
+	"Dig": "Wizard 10-Dig",
 	"Dimensional Cleave": "Swordmage 01-Dimensional Cleave",
 	"Dimensional Step": "Bard 13-Dimensional Step",
 	"Dire Rat Shape": "Wererat-Dire Rat Shape",
