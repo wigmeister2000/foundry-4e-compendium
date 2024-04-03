@@ -13,6 +13,9 @@
 			"chat":"",
 			"unidentified":""
 		},
+		"descriptionGM":{
+			"value":""
+		},
 		"source":"",
 		"activation":{
 			"type":"",
@@ -44,7 +47,8 @@
 			"scope":"global",
 			"launchOrder":"off",
 			"command":"",
-			"author":""
+			"author":"",
+			"autoanimationHook":""
 		},
 		"attack":{
 			"shareAttackRoll":false,
@@ -59,14 +63,14 @@
 		},
 		"hit":{
 			"shareDamageRoll":false,
-			"isDamage":false,
+			"isDamage":true,
 			"isHealing":false,
 			"healSurge":"",
 			"baseQuantity":"",
-			"baseDiceType":"",
+			"baseDiceType":"weapon",
 			"detail":"",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"2 + @chaMod + @dmgMod",
+			"critFormula":"2 + @chaMod + @dmgMod",
 			"healFormula":""
 		},
 		"miss":{
@@ -94,7 +98,7 @@
 			"Psionic"
 		],
 		"level":"",
-		"powersource":"elemental",
+		"powersource":"",
 		"secondPowersource":"",
 		"subName":"Monk Feature",
 		"prepared":true,
@@ -122,7 +126,7 @@
 		},
 		"trigger":"You hit with an attack during your turn.",
 		"requirement":"",
-		"special":"Level 11: One or two creatures\nLevel 21: Each enemy adjacent to you\nYou can use this power only once per round.",
+		"special":"Level 11: One or two creatures\t\tLevel 21: Each enemy adjacent to you\t\tYou can use this power only once per round.",
 		"specialAdd":{
 			"parts":[]
 		},
