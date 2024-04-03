@@ -1,6 +1,6 @@
 # Changelog
 
-## Foundry 4e Compendium v1.34
+## Foundry 4e Compendium v1.33.2
 - Fixed hybrid class descriptions
 - Added missing hybrid class features and hybrid talent options
 - Added flurry of blows damage formula
