@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.33.3
+- Fixed import of Unseen Hand
+
 ## Foundry 4e Compendium v1.33.2
 - Fixed hybrid class descriptions
 - Added missing hybrid class features and hybrid talent options
