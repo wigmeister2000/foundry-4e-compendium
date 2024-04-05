@@ -661,6 +661,7 @@ lookup.power = {
 	"Tumble": "Rogue 02-Tumble",
 	"Twilight Assassin": "Assassin 05-Twilight Assassin",
 	"Unicorn Form": "Legendary Witch 20-Unicorn Form",
+	"Unseen Hand": "Wizard-Unseen Hand",
 	"Unstoppable": "Fighter 02-Unstoppable",
 	"Unwitting Ally": "Shady Dealer 20-Unwitting Ally",
 	"Unyielding": "Fighter 22-Unyielding",
