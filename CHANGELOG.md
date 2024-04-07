@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.33.4
+- Added half-elf power selection features
+
 ## Foundry 4e Compendium v1.33.3
 - Fixed import of Unseen Hand
 
