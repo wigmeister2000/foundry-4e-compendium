@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.33.5
+- Fixed primordial manifestation
+
 ## Foundry 4e Compendium v1.33.4
 - Added half-elf power selection features
 
