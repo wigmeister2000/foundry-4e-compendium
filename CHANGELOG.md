@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34
+- Portable compendium updates
+
 ## Foundry 4e Compendium v1.33.5
 - Fixed primordial manifestation
 
