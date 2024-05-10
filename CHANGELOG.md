@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.1
+- Twin Strike default weapon fix
+
 ## Foundry 4e Compendium v1.34
 - Portable compendium updates
 
