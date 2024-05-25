@@ -656,7 +656,8 @@ async function mergeItems(itemBase, itemEnchantment) {
             lookupMasterworkAC(itemBaseName, itemEnchantment.system.level, itemBase.system.armour.ac);
 
         await itemBase.update({
-            "system.armour.ac": baseAC + itemEnchantment.system.armour.ac,
+            "system.armour.ac": baseAC,
+            "system.armour.enhance": itemEnchantment.system.armour.enhance
         });
     } else if (type === "weapon") {
         await itemBase.update({
