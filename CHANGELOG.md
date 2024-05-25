@@ -1,5 +1,11 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.2
+- dnd4e v0.4.53 support
+- Armor and neck item enhancement bonuses
+- Kusari-gama proficiency
+- Ki focuses and holy symbols use no hand by default
+
 ## Foundry 4e Compendium v1.34.1
 - Twin Strike default weapon fix
 
