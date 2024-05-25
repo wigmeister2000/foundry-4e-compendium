@@ -166,6 +166,7 @@ lookup.proficiency = {
 	"Khopesh": "khopesh",
 	"Ki Focuses": "ki",
 	"Kukri": "kukri",
+	"Kusari-gama": "kusariGama",
 	"Lance": "lance",
 	"Leather": "leather",
 	"Light": "light",
