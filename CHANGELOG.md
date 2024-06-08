@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.3
+- Fixed shadow keyword and power source
+- Fixed necromancy keyword
+
 ## Foundry 4e Compendium v1.34.2
 - dnd4e v0.4.53 support
 - Armor and neck item enhancement bonuses
