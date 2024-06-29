@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.4
+- Use of dnd4e v0.4.52 resistances and vulnerabilities
+- Fixed rescaling of moderate DCs
+
 ## Foundry 4e Compendium v1.34.3
 - Fixed shadow keyword and power source
 - Fixed necromancy keyword
