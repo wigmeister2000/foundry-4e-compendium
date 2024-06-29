@@ -891,10 +891,10 @@ async function adjustPowers(monster, level, legacy = false) {
             if (match) {
                 const dc = Number(match.groups.DC);
                 const easyDiff = Math.abs(lookup.dc.easy(monster.system.details.level) - dc);
-                const mediumDiff = Math.abs(lookup.dc.moderate(monster.system.details.level) - dc);
+                const moderateDiff = Math.abs(lookup.dc.moderate(monster.system.details.level) - dc);
                 const hardDiff = Math.abs(lookup.dc.hard(monster.system.details.level) - dc);
 
-                const difficulty = [["easy", easyDiff], ["medium", mediumDiff], ["hard", hardDiff]].sort((a, b) => a[1] - b[1])[0][0];
+                const difficulty = [["easy", easyDiff], ["moderate", moderateDiff], ["hard", hardDiff]].sort((a, b) => a[1] - b[1])[0][0];
                 const newDC = Math.round(lookup.dc[difficulty](level));
 
                 newDescription = newDescription.replace(/DC (?<DC>\d+)/, "DC " + newDC);
@@ -907,10 +907,10 @@ async function adjustPowers(monster, level, legacy = false) {
             if (detailMatch) {
                 const dc = Number(detailMatch.groups.DC);
                 const easyDiff = Math.abs(lookup.dc.easy(monster.system.details.level) - dc);
-                const mediumDiff = Math.abs(lookup.dc.moderate(monster.system.details.level) - dc);
+                const moderateDiff = Math.abs(lookup.dc.moderate(monster.system.details.level) - dc);
                 const hardDiff = Math.abs(lookup.dc.hard(monster.system.details.level) - dc);
 
-                const difficulty = [["easy", easyDiff], ["medium", mediumDiff], ["hard", hardDiff]].sort((a, b) => a[1] - b[1])[0][0];
+                const difficulty = [["easy", easyDiff], ["moderate", moderateDiff], ["hard", hardDiff]].sort((a, b) => a[1] - b[1])[0][0];
                 const newDC = Math.round(lookup.dc[difficulty](level));
 
                 newHitDetail = newHitDetail.replace(/DC (?<DC>\d+)/, "DC " + newDC);
