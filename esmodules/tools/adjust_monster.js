@@ -953,20 +953,17 @@ async function adjustResistances(monster, level) {
 
     /* Look through all resistances */
     for (const key in newResistances) {
-        if (newResistances[key].bonus.length > 0) {
-            const val = Number(newResistances[key].bonus[0].value);
+        if (newResistances[key].res > 0) {
+            const res = newResistances[key].res;
 
-            if (val > 0) { // Vulnerabilities don't seem to scale with level. Ignore.
-                const offsetFactor = val / scalingFunction(monster.system.details.level);
+            if (res > 0) { // Vulnerabilities don't seem to scale with level. Ignore.
+                const offsetFactor = res / scalingFunction(monster.system.details.level);
                 const targetResistance = Math.round(offsetFactor * scalingFunction(level));
-                newResistances[key].value = 0;
-                if (divisibleQ(val, 5)) { // Check if resistance is on 5 increment scale
-                    newResistances[key].bonus[0].value = (5 * Math.round(targetResistance / 5)).toString();
+                if (divisibleQ(res, 5)) { // Check if resistance is on 5 increment scale
+                    newResistances[key].res = (5 * Math.round(targetResistance / 5));
                 } else {
-                    newResistances[key].bonus[0].value = targetResistance.toString();
+                    newResistances[key].res = targetResistance;
                 }
-            } else {
-                newResistances[key].value = 0; // Reset this to zero, or bonus will apply twice.
             }
         }
     }
