@@ -559,78 +559,77 @@ function makeShortItemPattern(itemName) {
 
 // Import a CBuilder composite item (base item/magic item pair)
 async function importCBMagicItem(actor, compositeItem, compendium, powersCompendium) {
-    let equipCount = Number(compositeItem[0].equipCount);
+    let itemBaseReference = await lookupItems(compendium, [compositeItem[0].name], lookup.equipment, "full");
 
-    // Add the appropriate number of items
-    for (let i = Number(compositeItem[0].count); i > 0; i--) {
-        let itemBaseReference = await lookupItems(compendium, [compositeItem[0].name], lookup.equipment, "full");
+    if (itemBaseReference.length === 0) {
+        // Try with a cleaned name
+        itemBaseReference = await lookupItems(compendium, [makeItemPattern(compositeItem[0].name)], lookup.equipment, "pattern");
+    }
+    if (itemBaseReference.length === 0) {
+        // Try with a short item name (no parentheses)
+        itemBaseReference = await lookupItems(compendium, [makeShortItemPattern(compositeItem[0].name)], lookup.equipment, "pattern");
+    }
+    if (itemBaseReference.length === 0) {
+        // Base item not found
+        return false;
+    }
 
-        if (itemBaseReference.length === 0) {
-            // Try with a cleaned name
-            itemBaseReference = await lookupItems(compendium, [makeItemPattern(compositeItem[0].name)], lookup.equipment, "pattern");
-        }
-        if (itemBaseReference.length === 0) {
-            // Try with a short item name (no parentheses)
-            itemBaseReference = await lookupItems(compendium, [makeShortItemPattern(compositeItem[0].name)], lookup.equipment, "pattern");
-        }
-        if (itemBaseReference.length === 0) {
-            // Base item not found
-            return false;
-        }
+    let itemEnchantmentReference = [];
+    let itemsBase = [];
+    let itemsTemp = [];
 
-        let itemEnchantmentReference = [];
-        let itemsBase = [];
-        let itemsTemp = [];
+    if (itemBaseReference.length > 0) {
+        // Create the base item
+        itemsBase = await actor.createEmbeddedDocuments("Item", [itemBaseReference[0]]);
 
-        if (itemBaseReference.length > 0) {
-            // Create the base item
-            itemsBase = await actor.createEmbeddedDocuments("Item", [itemBaseReference[0]]);
+        // Set the quantity
+        await itemsBase[0].update({ "system.quantity": Number(compositeItem[0].count) });
 
-            // Set equipped status
-            await itemsBase[0].update({ "system.equipped": false });
-            if (equipCount > 0) {
-                await itemsBase[0].update({ "system.equipped": true });
-                equipCount--;
-            }
-        }
+        // Set equipped status
+        await itemsBase[0].update({ "system.equipped": false });
 
-        if (itemsBase.length > 0 && compositeItem.length > 1) {
-            // Modify the base if enchanted
-            itemEnchantmentReference = await lookupItems(compendium, [compositeItem[1].name], lookup.equipment, "full", null, true);
-
-            if (itemEnchantmentReference.length > 0) {
-                // Make a temporary magic item
-                itemsTemp = await actor.createEmbeddedDocuments("Item", [itemEnchantmentReference[0]]);
-
-                // Merge base item and enchantment
-                await mergeItems(itemsBase[0], itemsTemp[0]);
-
-                // Remove the temporary item
-                await actor.deleteEmbeddedDocuments("Item", [itemsTemp[0]["_id"]]);
-            }
-        }
-
-        // Look for associated powers
-        let itemPowers = [];
-
-        if (itemEnchantmentReference.length > 0) { // Get powers from enchantment
-            const powerName = itemEnchantmentReference[0].name.replace(/ \+\d/, "") + " Power";
-            itemPowers = await lookupItems(powersCompendium, [powerName], lookup.power, "startOfStringMany", null);
-            if (itemPowers.length === 0) { // Try without parentheses
-                itemPowers = await lookupItems(powersCompendium, [powerName.replace(/ \([\s\S]*\)/, "")], lookup.power, "startOfStringMany", null);
-            }
-        } else if (itemBaseReference.length > 0) { // Get powers from base 
-            const powerName = itemBaseReference[0].name.replace(/ \+\d/, "") + " Power";
-            itemPowers = await lookupItems(powersCompendium, [powerName], lookup.power, "startOfStringMany", null);
-            if (itemPowers.length === 0) { // Try without parentheses
-                itemPowers = await lookupItems(powersCompendium, [powerName.replace(/ \([\s\S]*\)/, "")], lookup.power, "startOfStringMany", null);
-            }
-        }
-
-        if (itemPowers.length > 0) {
-            await actor.createEmbeddedDocuments("Item", itemPowers);
+        if (Number(compositeItem[0].equipCount) > 0) {
+            await itemsBase[0].update({ "system.equipped": true });
         }
     }
+
+    if (itemsBase.length > 0 && compositeItem.length > 1) {
+        // Modify the base if enchanted
+        itemEnchantmentReference = await lookupItems(compendium, [compositeItem[1].name], lookup.equipment, "full", null, true);
+
+        if (itemEnchantmentReference.length > 0) {
+            // Make a temporary magic item
+            itemsTemp = await actor.createEmbeddedDocuments("Item", [itemEnchantmentReference[0]]);
+
+            // Merge base item and enchantment
+            await mergeItems(itemsBase[0], itemsTemp[0]);
+
+            // Remove the temporary item
+            await actor.deleteEmbeddedDocuments("Item", [itemsTemp[0]["_id"]]);
+        }
+    }
+
+    // Look for associated powers
+    let itemPowers = [];
+
+    if (itemEnchantmentReference.length > 0) { // Get powers from enchantment
+        const powerName = itemEnchantmentReference[0].name.replace(/ \+\d/, "") + " Power";
+        itemPowers = await lookupItems(powersCompendium, [powerName], lookup.power, "startOfStringMany", null);
+        if (itemPowers.length === 0) { // Try without parentheses
+            itemPowers = await lookupItems(powersCompendium, [powerName.replace(/ \([\s\S]*\)/, "")], lookup.power, "startOfStringMany", null);
+        }
+    } else if (itemBaseReference.length > 0) { // Get powers from base 
+        const powerName = itemBaseReference[0].name.replace(/ \+\d/, "") + " Power";
+        itemPowers = await lookupItems(powersCompendium, [powerName], lookup.power, "startOfStringMany", null);
+        if (itemPowers.length === 0) { // Try without parentheses
+            itemPowers = await lookupItems(powersCompendium, [powerName.replace(/ \([\s\S]*\)/, "")], lookup.power, "startOfStringMany", null);
+        }
+    }
+
+    if (itemPowers.length > 0) {
+        await actor.createEmbeddedDocuments("Item", itemPowers);
+    }
+
     return true;
 }
 
