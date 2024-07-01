@@ -717,6 +717,8 @@ lookup.equipment = {
 	"Anakore Armor +4": "Anakore +4",
 	"Anakore Armor +5": "Anakore +5",
 	"Anakore Armor +6": "Anakore +6",
+	"Arrow": "Arrow",
+	"Arrows": "Arrows",
 	"Double axe": "Double Axe",
 	"Double flail": "Double Flail",
 	"Double sword": "Double Sword",
