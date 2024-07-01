@@ -561,13 +561,17 @@ function makeShortItemPattern(itemName) {
 async function importCBMagicItem(actor, compositeItem, compendium, powersCompendium) {
     let itemBaseReference = await lookupItems(compendium, [compositeItem[0].name], lookup.equipment, "full");
 
+    if(itemBaseReference.length === 0 && lookup.equipment[compositeItem[0].name]){
+        return false; // Break if item with lookup name not found
+    }
+
     if (itemBaseReference.length === 0) {
         // Try with a cleaned name
-        itemBaseReference = await lookupItems(compendium, [makeItemPattern(compositeItem[0].name)], lookup.equipment, "pattern");
+        itemBaseReference = await lookupItems(compendium, [makeItemPattern(compositeItem[0].name)], {}, "pattern");
     }
     if (itemBaseReference.length === 0) {
         // Try with a short item name (no parentheses)
-        itemBaseReference = await lookupItems(compendium, [makeShortItemPattern(compositeItem[0].name)], lookup.equipment, "pattern");
+        itemBaseReference = await lookupItems(compendium, [makeShortItemPattern(compositeItem[0].name)], {}, "pattern");
     }
     if (itemBaseReference.length === 0) {
         // Base item not found
@@ -586,10 +590,10 @@ async function importCBMagicItem(actor, compositeItem, compendium, powersCompend
         await itemsBase[0].update({ "system.quantity": Number(compositeItem[0].count) });
 
         // Set equipped status
-        await itemsBase[0].update({ "system.equipped": false });
-
         if (Number(compositeItem[0].equipCount) > 0) {
             await itemsBase[0].update({ "system.equipped": true });
+        } else {
+            await itemsBase[0].update({ "system.equipped": false });
         }
     }
 
@@ -727,8 +731,8 @@ async function buildMagicItem(baseName, enchantmentName) {
 
 // Get a list of items from a compendium
 async function lookupItems(compendium, names, nameLookup, matchType = "partial", postprocessor = null, verbose = false, classes = []) {
-    const selection = {};
-    let items = [];
+    const selection = {}; // Item references
+    let items = []; // Item documents
 
     if (names.length > 0 && names[0]) {
         names.map(
@@ -740,40 +744,45 @@ async function lookupItems(compendium, names, nameLookup, matchType = "partial",
 
                 if (name) {
                     entry = compendium.index.find(x => x.name === name);
-                } else if (matchType === "full") {
-                    entry = compendium.index.find(x => x.name === target);
-                } else if (matchType === "partial") {
-                    const pattern = new RegExp(target.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
-                    entry = compendium.index.filter(x => x.name.match(pattern)).sort(itemSortOrderShortFirst)[0];
-                } else if (matchType === "power" && classes.length > 0) {
-                    const pattern = new RegExp(target.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
-                    const matches = compendium.index.filter(x => x.name.match(pattern)).sort(powerSortOrderLongFirst);
-
-                    // If there are multiple matches for a power, pick a hybrid version only if appropriate. Hybrid powers are listed first (longer names).
-                    if (matches.length > 1) {
-                        const classNames = classes.map(x => x.replace("Class", "").replace("Hybrid", "").trim());
-                        if (classNames.length == 1) { // Not a hybrid character
-                            entry = matches.filter(x => !x.name.match("Hybrid"))[0];
-                        } else if (classNames.length > 1) { // Hybrid character
-                            if (matches[0].name.match(classNames[0]) || matches[0].name.match(classNames[1])) {
-                                entry = matches[0]; // Power comes from a hybrid class
-                            } else if (!matches[0].name.match("Hybrid")) { // Power does not come from a hybrid class. Perhaps multiclass.
-                                entry = matches[0];
-                            } else {
-                                entry = matches[1]; // Power is hybrid, but not from the character's hybrid classes. Take the second match.
-                            }
-                        }
-                    } else {
-                        entry = matches[0];
+                    if (!entry || Object.keys(entry).length === 0) {
+                        return; // Break if item with lookup name is not found
                     }
-                } else if (matchType === "startOfStringMany") { // Return an array of matches that start with the target
-                    const pattern = new RegExp("^" + target.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
-                    entry = compendium.index.filter(x => x.name.match(pattern)); // Array
-                } else if (matchType === "no_parentheses") {
-                    const pattern = target.replace(/\(.*\)/, "").trim();
-                    entry = compendium.index.find(x => x.name === pattern);
-                } else if (matchType === "pattern") {
-                    entry = compendium.index.filter(x => x.name.match(target)).sort(itemSortOrderShortFirst)[0];
+                } else {
+                    if (matchType === "full") {
+                        entry = compendium.index.find(x => x.name === target);
+                    } else if (matchType === "partial") {
+                        const pattern = new RegExp(target.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
+                        entry = compendium.index.filter(x => x.name.match(pattern)).sort(itemSortOrderShortFirst)[0];
+                    } else if (matchType === "power" && classes.length > 0) {
+                        const pattern = new RegExp(target.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
+                        const matches = compendium.index.filter(x => x.name.match(pattern)).sort(powerSortOrderLongFirst);
+
+                        // If there are multiple matches for a power, pick a hybrid version only if appropriate. Hybrid powers are listed first (longer names).
+                        if (matches.length > 1) {
+                            const classNames = classes.map(x => x.replace("Class", "").replace("Hybrid", "").trim());
+                            if (classNames.length == 1) { // Not a hybrid character
+                                entry = matches.filter(x => !x.name.match("Hybrid"))[0];
+                            } else if (classNames.length > 1) { // Hybrid character
+                                if (matches[0].name.match(classNames[0]) || matches[0].name.match(classNames[1])) {
+                                    entry = matches[0]; // Power comes from a hybrid class
+                                } else if (!matches[0].name.match("Hybrid")) { // Power does not come from a hybrid class. Perhaps multiclass.
+                                    entry = matches[0];
+                                } else {
+                                    entry = matches[1]; // Power is hybrid, but not from the character's hybrid classes. Take the second match.
+                                }
+                            }
+                        } else {
+                            entry = matches[0];
+                        }
+                    } else if (matchType === "startOfStringMany") { // Return an array of matches that start with the target
+                        const pattern = new RegExp("^" + target.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
+                        entry = compendium.index.filter(x => x.name.match(pattern)); // Array
+                    } else if (matchType === "no_parentheses") {
+                        const pattern = target.replace(/\(.*\)/, "").trim();
+                        entry = compendium.index.find(x => x.name === pattern);
+                    } else if (matchType === "pattern") {
+                        entry = compendium.index.filter(x => x.name.match(target)).sort(itemSortOrderShortFirst)[0];
+                    }
                 }
 
                 if (entry && Object.keys(entry).length > 0) {
