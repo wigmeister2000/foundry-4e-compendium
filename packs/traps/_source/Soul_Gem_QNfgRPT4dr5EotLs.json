@@ -10,9 +10,12 @@
 			"img":"icons/svg/mystery-man.svg",
 			"system":{
 				"description":{
-					"value":"<p><b>Object</b></p>",
+					"value":"<p class=\"flavour\"><em>The chest opens to reveal a strange, many-faceted gem affixed to the inner lid. Suddenly, the gem emits blasts of blinding light.</em></p>",
 					"chat":"",
 					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
 				},
 				"source":"",
 				"activation":{
@@ -50,7 +53,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"requirements":"",
 				"level":"",
@@ -64,69 +68,7 @@
 			"sort":0,
 			"flags":{},
 			"_id":"nyQt4HxVcI51qPgl",
-			"_key":"!actors.items!nWKYV6zufgroHI9O.nyQt4HxVcI51qPgl"
-		},
-		{
-			"name":"Detect",
-			"type":"raceFeats",
-			"img":"icons/svg/eye.svg",
-			"system":{
-				"description":{
-					"value":"<p>Perception DC 22</p>",
-					"chat":"",
-					"unidentified":""
-				},
-				"source":"",
-				"activation":{
-					"type":"",
-					"cost":0,
-					"condition":""
-				},
-				"duration":{
-					"value":null,
-					"units":""
-				},
-				"target":{
-					"value":null,
-					"width":null,
-					"units":"",
-					"type":""
-				},
-				"range":{
-					"value":null,
-					"long":null,
-					"units":""
-				},
-				"uses":{
-					"value":0,
-					"max":0,
-					"per":null
-				},
-				"consume":{
-					"type":"",
-					"target":null,
-					"amount":null
-				},
-				"macro":{
-					"type":"script",
-					"scope":"global",
-					"launchOrder":"off",
-					"command":"",
-					"author":""
-				},
-				"requirements":"",
-				"level":"",
-				"recharge":{
-					"value":null,
-					"charged":false
-				}
-			},
-			"effects":[],
-			"folder":null,
-			"sort":0,
-			"flags":{},
-			"_id":"qPh4RfUOwVu9BTo3",
-			"_key":"!actors.items!nWKYV6zufgroHI9O.qPh4RfUOwVu9BTo3"
+			"_key":"!actors.items!QNfgRPT4dr5EotLs.nyQt4HxVcI51qPgl"
 		},
 		{
 			"name":"Countermeasures",
@@ -134,9 +76,12 @@
 			"img":"icons/svg/cancel.svg",
 			"system":{
 				"description":{
-					"value":"<ul><li><b>Disable:</b> Thievery DC 39. Failure (34 or less): The trap attacks in a blast that includes the creature's space.</li><li><b>Predict:</b> Arcana DC 39 (minor action). Success: The creature can determine the area of the blast that will occur on the soul gem's next turn.</li></ul>",
+					"value":"<ul><li><strong>Thievery DC 26:</strong> A character can attempt to remove the soul gem from its socket and thereby disable it by making three DC 26 Thievery checks (each as a standard action). Success detaches the gem and disables the trap. Failure causes the gem to explode (close burst 8, 4d10 + 5 radiant damage and stunned [save ends] to all living creatures in burst).</li><li>A character can attack the gem (AC 33, other defenses 29; hp 100; resist 15 all). When reduced to 0 hit points, the gem explodes in a close burst 8, as above. Destroying the gem disables the trap.</li></ul>",
 					"chat":"",
 					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
 				},
 				"source":"",
 				"activation":{
@@ -174,10 +119,11 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"requirements":"",
-				"level":"",
+				"level":null,
 				"recharge":{
 					"value":null,
 					"charged":false
@@ -188,7 +134,7 @@
 			"sort":0,
 			"flags":{},
 			"_id":"cnEIRtFyXiTBh90N",
-			"_key":"!actors.items!nWKYV6zufgroHI9O.cnEIRtFyXiTBh90N"
+			"_key":"!actors.items!QNfgRPT4dr5EotLs.cnEIRtFyXiTBh90N"
 		},
 		{
 			"_id":"3bwEc95IaA7mfp8O",
@@ -201,9 +147,12 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>radiant</b></p><p class=\"power-basics\"><b>Standard Action</b></p><p><b>Close</b> blast 5 (creatures in blast)</p><p class=\"power-basics\"><b>Attack : </b>+29 vs. Fortitude</p><p><b>Hit : </b> The target is stunned and takes ongoing 10 radiant damage (save ends both).</p><p><b>Aftereffect : </b> The target is dazed and takes ongoing 5 radiant damage (save ends both).</p>",
+					"value":"<p class=\"power-basics\"><strong>At-Will ✦ radiant</strong></p><p class=\"power-basics\"><strong>Standard Action</strong></p><p><strong>Close</strong> blast 5</p><p><strong>Target:</strong> All living creatures in blast</p><p class=\"power-basics\"><strong>Attack : </strong>+29 vs. Fortitude</p><p><strong>Hit : </strong>3d10 + 5 radiant damage, and the target takes ongoing 10 radiant damage and is stunned (save ends both).</p><p><strong>Aftereffect : </strong>The target is dazed (save ends).</p><p><strong>Special : </strong>Each round, roll 1d8 to determine the direction of the blast. The blast is centered on one square of the gem's space, starting with the north square and moving clockwise around the gem's space.</p>",
 					"chat":"",
 					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
 				},
 				"source":"",
 				"activation":{
@@ -236,7 +185,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"attack":{
 					"shareAttackRoll":false,
@@ -257,8 +207,8 @@
 					"baseQuantity":"1",
 					"baseDiceType":"flat",
 					"detail":"",
-					"formula":"10 + @dmgMod",
-					"critFormula":"10 + @dmgMod",
+					"formula":"3d10 + 5 + @dmgMod",
+					"critFormula":"35 + @dmgMod",
 					"healFormula":""
 				},
 				"miss":{
@@ -286,10 +236,10 @@
 				"level":"",
 				"powersource":"",
 				"secondPowersource":"",
-				"subName":null,
+				"subName":"",
 				"prepared":true,
 				"powerType":"inherent",
-				"powerSubtype":"",
+				"powerSubtype":"attack",
 				"useType":"atwill",
 				"actionType":"standard",
 				"requirements":"",
@@ -299,7 +249,7 @@
 				"rangeTextShort":"",
 				"rangeText":"",
 				"rangePower":null,
-				"area":5,
+				"area":"5",
 				"rechargeRoll":"",
 				"rechargeCondition":null,
 				"damageShare":false,
@@ -364,11 +314,82 @@
 					"necro":false,
 					"nether":false,
 					"runic":false,
-					"transmutation":false
+					"transmutation":false,
+					"shadow":false
 				},
 				"chatFlavor":""
 			},
-			"_key":"!actors.items!nWKYV6zufgroHI9O.3bwEc95IaA7mfp8O"
+			"_key":"!actors.items!QNfgRPT4dr5EotLs.3bwEc95IaA7mfp8O"
+		},
+		{
+			"name":"Checks & Triggers",
+			"type":"feat",
+			"img":"icons/svg/trap.svg",
+			"system":{
+				"description":{
+					"value":"<p><strong>Perception</strong><br></p><ul><li>DC 31: The barest flicker of light shows through the seams of the closed chest lid.</li></ul><p></p><p><strong>Arcana</strong><br></p><ul><li>DC 31: The light could be anything—possibly a lingering trap, or perhaps even something as potent as a soul gem.</li></ul><p></p><p><strong>Trigger</strong><br>When the chest is opened and a creature is within or moves within 5 squares of the soul gem, it rolls initiative and attacks. The gem can make a free attack anytime a creature tries to retrieve an item from the chest.</p>",
+					"chat":"",
+					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
+				},
+				"source":"",
+				"activation":{
+					"type":"",
+					"cost":0,
+					"condition":""
+				},
+				"duration":{
+					"value":null,
+					"units":""
+				},
+				"target":{
+					"value":null,
+					"width":null,
+					"units":"",
+					"type":""
+				},
+				"range":{
+					"value":null,
+					"long":null,
+					"units":""
+				},
+				"uses":{
+					"value":0,
+					"max":0,
+					"per":null
+				},
+				"consume":{
+					"type":"",
+					"target":null,
+					"amount":null
+				},
+				"macro":{
+					"type":"script",
+					"scope":"global",
+					"launchOrder":"off",
+					"command":"",
+					"author":"",
+					"autoanimationHook":""
+				},
+				"requirements":"",
+				"level":null,
+				"recharge":{
+					"value":null,
+					"charged":false
+				}
+			},
+			"effects":[],
+			"folder":null,
+			"sort":0,
+			"flags":{
+				"core":{
+					"sourceId":"Actor.AkqKBIAJmlPx8PkV.Item.1ZrfbCLTOyVWjQxl"
+				}
+			},
+			"_id":"j0356e6EG45YHnL8",
+			"_key":"!actors.items!QNfgRPT4dr5EotLs.j0356e6EG45YHnL8"
 		}
 	],
 	"effects":[],
@@ -402,12 +423,16 @@
 		},
 		"attributes":{
 			"hp":{
-				"value":175,
+				"value":100,
 				"min":0,
-				"max":175,
-				"starting":175,
+				"max":100,
+				"starting":100,
 				"perlevel":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"misc":0,
 				"autototal":false,
 				"temprest":false,
@@ -434,6 +459,11 @@
 						"note":""
 					}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"notes":""
 			}
 		},
@@ -454,12 +484,17 @@
 		},
 		"defences":{
 			"ac":{
-				"value":40,
+				"value":33,
 				"ability":"",
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
@@ -468,37 +503,47 @@
 				"altability":"",
 				"condition":"Conditional Bonuses.",
 				"chat":"@name defends with armour.",
-				"base":40
+				"base":33
 			},
 			"fort":{
-				"value":38,
+				"value":29,
 				"ability":"",
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
 				"temp":0,
 				"condition":"Conditional Bonuses.",
 				"chat":"@name defends with fortitude.",
-				"base":38
+				"base":29
 			},
 			"ref":{
-				"value":38,
+				"value":29,
 				"ability":"",
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
 				"temp":0,
 				"condition":"Conditional Bonuses.",
 				"chat":"@name defends with reflexes.",
-				"base":38
+				"base":29
 			},
 			"wil":{
 				"value":0,
@@ -506,7 +551,12 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
@@ -524,6 +574,7 @@
 				"item":0,
 				"power":0,
 				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				]
@@ -535,6 +586,7 @@
 				"item":0,
 				"power":0,
 				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				]
@@ -543,12 +595,15 @@
 		"details":{
 			"level":26,
 			"tier":3,
-			"exp":9000,
+			"exp":45000,
 			"class":"",
 			"paragon":"",
 			"epic":"",
 			"race":"",
 			"size":"med",
+			"origin":"aberrant",
+			"type":"animate",
+			"other":"",
 			"age":"",
 			"gender":"",
 			"height":"",
@@ -556,6 +611,7 @@
 			"alignment":"Unaligned",
 			"deity":"",
 			"secondwind":false,
+			"secondwindEffect":{},
 			"deathsaves":0,
 			"deathsavefail":0,
 			"deathsaveCrit":20,
@@ -563,6 +619,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"bloodied":null,
@@ -571,16 +632,31 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"surges":{
 				"value":3,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"max":3
 			},
 			"surgeEnv":{
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"secondwindbon":{
@@ -588,6 +664,11 @@
 					{}
 				],
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"custom":""
 			},
 			"saves":{
@@ -604,12 +685,9 @@
 				"value":[],
 				"custom":""
 			},
-			"origin":"",
-			"type":"",
-			"other":"",
 			"role":{
-				"primary":"",
-				"secondary":"standard",
+				"primary":"artillery",
+				"secondary":"solo",
 				"leader":false
 			},
 			"equipment":""
@@ -650,6 +728,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"walk":{
@@ -658,6 +741,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"charge":{
@@ -666,6 +754,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"run":{
@@ -674,6 +767,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"misc":0,
 				"temp":0
 			},
@@ -683,6 +781,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"shift":{
@@ -691,6 +794,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"notes":"",
@@ -720,6 +828,12 @@
 			"acr":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -730,6 +844,12 @@
 			"arc":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -740,6 +860,12 @@
 			"ath":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -750,6 +876,12 @@
 			"blu":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -760,6 +892,12 @@
 			"dip":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -770,6 +908,12 @@
 			"dun":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -780,6 +924,12 @@
 			"end":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -790,6 +940,12 @@
 			"hea":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -800,6 +956,12 @@
 			"his":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -810,6 +972,12 @@
 			"ins":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -820,6 +988,12 @@
 			"itm":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -830,6 +1004,12 @@
 			"nat":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -840,6 +1020,12 @@
 			"prc":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -850,6 +1036,12 @@
 			"rel":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -860,6 +1052,12 @@
 			"stl":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -870,6 +1068,12 @@
 			"stw":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -880,6 +1084,12 @@
 			"thi":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -888,9 +1098,40 @@
 				"chat":"@name uses @label."
 			}
 		},
+		"skillTraining":{
+			"untrained":{
+				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			},
+			"trained":{
+				"value":5,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			},
+			"expertise":{
+				"value":8,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			}
+		},
 		"passive":{
 			"pasprc":{
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"skill":"prc",
 				"bonus":[
 					{}
@@ -898,6 +1139,11 @@
 			},
 			"pasins":{
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"skill":"ins",
 				"bonus":[
 					{}
@@ -907,121 +1153,154 @@
 		"resistances":{
 			"damage":{
 				"value":0,
+				"res":0,
+				"vuln":0,
 				"armour":0,
-				"temp":0,
 				"immune":false,
 				"bonus":[
 					{}
-				]
+				],
+				"temp":0
 			},
 			"physical":{
 				"value":0,
+				"res":0,
+				"vuln":0,
 				"armour":0,
-				"temp":0,
 				"immune":false,
 				"bonus":[
 					{}
-				]
-			},
-			"acid":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"cold":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"fire":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"force":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"lightning":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"necrotic":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":true,
-				"bonus":[
-					{}
-				]
-			},
-			"poison":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":true,
-				"bonus":[
-					{}
-				]
-			},
-			"psychic":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":true,
-				"bonus":[
-					{}
-				]
-			},
-			"radiant":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"thunder":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
+				],
+				"temp":0
 			},
 			"ongoing":{
 				"value":0,
+				"res":0,
+				"vuln":0,
 				"armour":0,
-				"temp":0,
-				"immune":true,
+				"immune":false,
 				"bonus":[
 					{}
-				]
+				],
+				"temp":0
+			},
+			"acid":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"cold":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"fire":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"force":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"lightning":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"necrotic":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"poison":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"psychic":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"radiant":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"thunder":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
 			}
+		},
+		"untypedResistances":{
+			"resistances":[
+				"15 all"
+			],
+			"vulnerabilities":[],
+			"immunities":[]
 		},
 		"encumbrance":{
 			"value":null,
@@ -1047,16 +1326,7 @@
 		"advancedCals":false,
 		"featureSortTypes":"name",
 		"powerGroupTypes":"action",
-		"powerSortTypes":"useType",
-		"untypedResistances":{
-			"resistances":[
-				"15 all"
-			],
-			"immunities":[
-				"forced movement",
-				"all conditions"
-			]
-		}
+		"powerSortTypes":"useType"
 	},
 	"prototypeToken":{
 		"width":1,

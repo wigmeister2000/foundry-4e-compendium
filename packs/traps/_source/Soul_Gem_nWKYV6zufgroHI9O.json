@@ -14,6 +14,9 @@
 					"chat":"",
 					"unidentified":""
 				},
+				"descriptionGM":{
+					"value":""
+				},
 				"source":"",
 				"activation":{
 					"type":"",
@@ -50,7 +53,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"requirements":"",
 				"level":"",
@@ -76,6 +80,9 @@
 					"chat":"",
 					"unidentified":""
 				},
+				"descriptionGM":{
+					"value":""
+				},
 				"source":"",
 				"activation":{
 					"type":"",
@@ -112,7 +119,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"requirements":"",
 				"level":"",
@@ -138,6 +146,9 @@
 					"chat":"",
 					"unidentified":""
 				},
+				"descriptionGM":{
+					"value":""
+				},
 				"source":"",
 				"activation":{
 					"type":"",
@@ -174,7 +185,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"requirements":"",
 				"level":"",
@@ -204,6 +216,9 @@
 					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>radiant</b></p><p class=\"power-basics\"><b>Standard Action</b></p><p><b>Close</b> blast 5 (creatures in blast)</p><p class=\"power-basics\"><b>Attack : </b>+29 vs. Fortitude</p><p><b>Hit : </b> The target is stunned and takes ongoing 10 radiant damage (save ends both).</p><p><b>Aftereffect : </b> The target is dazed and takes ongoing 5 radiant damage (save ends both).</p>",
 					"chat":"",
 					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
 				},
 				"source":"",
 				"activation":{
@@ -236,7 +251,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"attack":{
 					"shareAttackRoll":false,
@@ -402,12 +418,16 @@
 		},
 		"attributes":{
 			"hp":{
-				"value":100,
+				"value":175,
 				"min":0,
-				"max":100,
+				"max":175,
 				"starting":100,
 				"perlevel":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"misc":0,
 				"autototal":false,
 				"temprest":false,
@@ -434,6 +454,11 @@
 						"note":""
 					}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"notes":""
 			}
 		},
@@ -459,7 +484,12 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
@@ -468,7 +498,7 @@
 				"altability":"",
 				"condition":"Conditional Bonuses.",
 				"chat":"@name defends with armour.",
-				"base":33
+				"base":40
 			},
 			"fort":{
 				"value":29,
@@ -476,14 +506,19 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
 				"temp":0,
 				"condition":"Conditional Bonuses.",
 				"chat":"@name defends with fortitude.",
-				"base":29
+				"base":38
 			},
 			"ref":{
 				"value":29,
@@ -491,14 +526,19 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
 				"temp":0,
 				"condition":"Conditional Bonuses.",
 				"chat":"@name defends with reflexes.",
-				"base":29
+				"base":38
 			},
 			"wil":{
 				"value":0,
@@ -506,7 +546,12 @@
 				"armour":0,
 				"class":0,
 				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"enhance":0,
+				"shield":0,
 				"bonus":[
 					{}
 				],
@@ -524,6 +569,7 @@
 				"item":0,
 				"power":0,
 				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				]
@@ -535,6 +581,7 @@
 				"item":0,
 				"power":0,
 				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				]
@@ -549,6 +596,9 @@
 			"epic":"",
 			"race":"",
 			"size":"med",
+			"origin":"aberrant",
+			"type":"animate",
+			"other":"",
 			"age":"",
 			"gender":"",
 			"height":"",
@@ -556,6 +606,7 @@
 			"alignment":"Unaligned",
 			"deity":"",
 			"secondwind":false,
+			"secondwindEffect":{},
 			"deathsaves":0,
 			"deathsavefail":0,
 			"deathsaveCrit":20,
@@ -563,6 +614,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"bloodied":null,
@@ -571,16 +627,31 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"surges":{
 				"value":3,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"max":3
 			},
 			"surgeEnv":{
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"value":0
 			},
 			"secondwindbon":{
@@ -588,6 +659,11 @@
 					{}
 				],
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"custom":""
 			},
 			"saves":{
@@ -604,15 +680,13 @@
 				"value":[],
 				"custom":""
 			},
-			"origin":"",
-			"type":"",
-			"other":"",
 			"role":{
-				"primary":"",
+				"primary":"artillery",
 				"secondary":"solo",
 				"leader":false
 			},
-			"equipment":""
+			"equipment":"",
+			"isBloodied":false
 		},
 		"languages":{
 			"spoken":{
@@ -650,6 +724,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"walk":{
@@ -658,6 +737,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"charge":{
@@ -666,6 +750,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"run":{
@@ -674,6 +763,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"misc":0,
 				"temp":0
 			},
@@ -683,6 +777,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"shift":{
@@ -691,6 +790,11 @@
 				"bonus":[
 					{}
 				],
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"temp":0
 			},
 			"notes":"",
@@ -720,6 +824,12 @@
 			"acr":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -730,6 +840,12 @@
 			"arc":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -740,6 +856,12 @@
 			"ath":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -750,6 +872,12 @@
 			"blu":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -760,6 +888,12 @@
 			"dip":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -770,6 +904,12 @@
 			"dun":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -780,6 +920,12 @@
 			"end":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -790,6 +936,12 @@
 			"hea":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -800,6 +952,12 @@
 			"his":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -810,6 +968,12 @@
 			"ins":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -820,6 +984,12 @@
 			"itm":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -830,6 +1000,12 @@
 			"nat":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -840,6 +1016,12 @@
 			"prc":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -850,6 +1032,12 @@
 			"rel":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -860,6 +1048,12 @@
 			"stl":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -870,6 +1064,12 @@
 			"stw":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -880,6 +1080,12 @@
 			"thi":{
 				"value":0,
 				"base":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"training":0,
+				"race":0,
+				"untyped":0,
 				"bonus":[
 					{}
 				],
@@ -888,9 +1094,40 @@
 				"chat":"@name uses @label."
 			}
 		},
+		"skillTraining":{
+			"untrained":{
+				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			},
+			"trained":{
+				"value":5,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			},
+			"expertise":{
+				"value":8,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0
+			}
+		},
 		"passive":{
 			"pasprc":{
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"skill":"prc",
 				"bonus":[
 					{}
@@ -898,6 +1135,11 @@
 			},
 			"pasins":{
 				"value":0,
+				"feat":0,
+				"item":0,
+				"power":0,
+				"race":0,
+				"untyped":0,
 				"skill":"ins",
 				"bonus":[
 					{}
@@ -907,121 +1149,157 @@
 		"resistances":{
 			"damage":{
 				"value":0,
+				"res":0,
+				"vuln":0,
 				"armour":0,
-				"temp":0,
 				"immune":false,
 				"bonus":[
 					{}
-				]
+				],
+				"temp":0
 			},
 			"physical":{
 				"value":0,
+				"res":0,
+				"vuln":0,
 				"armour":0,
-				"temp":0,
 				"immune":false,
 				"bonus":[
 					{}
-				]
-			},
-			"acid":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"cold":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"fire":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"force":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"lightning":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"necrotic":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"poison":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"psychic":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"radiant":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
-			},
-			"thunder":{
-				"value":0,
-				"armour":0,
-				"temp":0,
-				"immune":false,
-				"bonus":[
-					{}
-				]
+				],
+				"temp":0
 			},
 			"ongoing":{
 				"value":0,
+				"res":0,
+				"vuln":0,
 				"armour":0,
-				"temp":0,
 				"immune":true,
 				"bonus":[
 					{}
-				]
+				],
+				"temp":0
+			},
+			"acid":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"cold":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"fire":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"force":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"lightning":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"necrotic":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":true,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"poison":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":true,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"psychic":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"radiant":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
+			},
+			"thunder":{
+				"value":0,
+				"res":0,
+				"vuln":0,
+				"armour":0,
+				"immune":false,
+				"bonus":[
+					{}
+				],
+				"temp":0
 			}
+		},
+		"untypedResistances":{
+			"resistances":[
+				"15 all"
+			],
+			"vulnerabilities":[],
+			"immunities":[
+				"forced movement",
+				"all conditions"
+			]
 		},
 		"encumbrance":{
 			"value":null,
@@ -1047,16 +1325,7 @@
 		"advancedCals":false,
 		"featureSortTypes":"name",
 		"powerGroupTypes":"action",
-		"powerSortTypes":"useType",
-		"untypedResistances":{
-			"resistances":[
-				"15 all"
-			],
-			"immunities":[
-				"forced movement",
-				"all conditions"
-			]
-		}
+		"powerSortTypes":"useType"
 	},
 	"prototypeToken":{
 		"width":1,
