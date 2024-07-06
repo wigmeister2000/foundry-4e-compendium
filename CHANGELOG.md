@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.6
+- Fixed Balor crit damage
+- Fixed Soul Gem traps
+
 ## Foundry 4e Compendium v1.34.5
 - Import consumables as stacks
 - Fixed import of items with lookup name
