@@ -1,5 +1,11 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.7
+- Fixed sign of monster vulnerabilities
+- Fixed special crit damage of several monsters
+- Talid uses spiked gauntlet as base weapon
+- Cleaned up some monster powers 
+
 ## Foundry 4e Compendium v1.34.6
 - Fixed Balor crit damage
 - Fixed Soul Gem traps
