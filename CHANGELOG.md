@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.8
+- Fixed import of unnamed characters
+
 ## Foundry 4e Compendium v1.34.7
 - Fixed sign of monster vulnerabilities
 - Fixed special crit damage of several monsters
