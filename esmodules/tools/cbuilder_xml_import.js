@@ -353,6 +353,7 @@ function getDetails(doc) {
     }
 
     details["name"] = getDetail("name");
+    details["name"] = details["name"] === "" ? "Unnamed Character" : details["name"];
     details["level"] = Number(getDetail("Level"));
     details["tier"] = Math.ceil(details["level"] / 3);
     details["height"] = getDetail("Height");
