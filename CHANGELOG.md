@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.9
+- Moved monster resistances to bonus array
+
 ## Foundry 4e Compendium v1.34.8
 - Fixed import of unnamed characters
 
