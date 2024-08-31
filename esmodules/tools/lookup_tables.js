@@ -1400,6 +1400,10 @@ lookup.feat = {
 	"Zehir's Dark Blessing": "Zehir's Dark Blessing [Divinity]"
 }
 
+lookup.godFragment = {}
+
+lookup.godFragmentPower = {}
+
 lookup.feature = {
 	"Acolyte Of The Natural Cycle": "Acolyte Of The Natural Cycle",
 	"Acolyte Of The Natural Cycle (Hybrid)": "Acolyte Of The Natural Cycle (Hybrid)",

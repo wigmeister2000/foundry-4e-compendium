@@ -150,6 +150,7 @@ async function parseCharacter(xml, core = false) {
         const traitNames = Object.values(getRulesElements(doc, "Racial Trait"));
         const backgroundNames = Object.values(getRulesElements(doc, "Background"));
         const deityNames = Object.values(getRulesElements(doc, "Deity"));
+        const godFragmentNames = Object.values(getRulesElements(doc, "God Fragment"));
 
         const powerItems = await lookupItems(compendiumPowers, powerNames, lookup.power, "power", null, false, parseClasses(details.class));
         const corePowerItems = await compendiumCorePowers.getDocuments();
@@ -173,6 +174,8 @@ async function parseCharacter(xml, core = false) {
         const deityItems = await lookupItems(compendiumDeities, deityNames, lookup.deity);
         const pathItems = await lookupItems(compendiumPaths, [details.path], lookup.path);
         const destinyItems = await lookupItems(compendiumDestinies, [details.destiny], lookup.destiny);
+        const godFragmentItems = await lookupItems(compendiumFeats, godFragmentNames, lookup.godFragment);
+        const godFragmentPowerItems = await lookupItems(compendiumPowers, godFragmentNames.map(x => "Feat-" + x), lookup.godFragment);
 
         const actor = await Actor.create({
             "name": details.name,
@@ -246,6 +249,8 @@ async function parseCharacter(xml, core = false) {
             await actor.createEmbeddedDocuments("Item", destinyItems);
             await actor.createEmbeddedDocuments("Item", featureItems);
             await actor.createEmbeddedDocuments("Item", traitItems);
+            await actor.createEmbeddedDocuments("Item", godFragmentItems);
+            await actor.createEmbeddedDocuments("Item", godFragmentPowerItems);
 
             const loot = getLoot(doc);
             const ritualNames = [];
@@ -562,7 +567,7 @@ function makeShortItemPattern(itemName) {
 async function importCBMagicItem(actor, compositeItem, compendium, powersCompendium) {
     let itemBaseReference = await lookupItems(compendium, [compositeItem[0].name], lookup.equipment, "full");
 
-    if(itemBaseReference.length === 0 && lookup.equipment[compositeItem[0].name]){
+    if (itemBaseReference.length === 0 && lookup.equipment[compositeItem[0].name]) {
         return false; // Break if item with lookup name not found
     }
 
