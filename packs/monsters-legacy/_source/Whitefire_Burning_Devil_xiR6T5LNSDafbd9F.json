@@ -365,10 +365,14 @@
 			"_key":"!actors.items!xiR6T5LNSDafbd9F.KdGNHs3nTkUtFSuf"
 		},
 		{
-			"name":"Whitefire Burst",
-			"type":"classFeats",
 			"_id":"SQpnYDitZqCoRyg3",
-			"img":"icons/svg/aura.svg",
+			"name":"Whitefire Burst",
+			"type":"power",
+			"img":"modules/dnd-4e-compendium/icons/powers/will_personal_instant.png",
+			"effects":[],
+			"folder":null,
+			"sort":0,
+			"flags":{},
 			"system":{
 				"description":{
 					"value":"<p>Radiant</p><p><b>Close</b> burst 2</p><p class=\"power-basics\"><b>Trigger: </b> When the whitefire burning devil drops to 0 hit points, </p><p>The target takes ongoing 9 radiant damage (save ends).</p>",
@@ -376,45 +380,177 @@
 					"unidentified":""
 				},
 				"source":"",
+				"activation":{
+					"type":"",
+					"cost":0,
+					"condition":""
+				},
+				"duration":{
+					"value":null,
+					"units":""
+				},
+				"target":"",
+				"range":{
+					"value":null,
+					"long":null,
+					"units":""
+				},
+				"uses":{
+					"value":0,
+					"max":"0",
+					"per":""
+				},
+				"consume":{
+					"type":"",
+					"target":"",
+					"amount":null
+				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":"",
-					"autoanimationHook":""
+					"author":""
 				},
-				"class":"",
-				"hitFistLevel":10,
-				"hitPerLevel":5,
-				"surgePerDay":5,
-				"skills":{
-					"number":2,
-					"choices":[],
-					"value":[]
+				"attack":{
+					"shareAttackRoll":false,
+					"isAttack":false,
+					"ability":"form",
+					"abilityBonus":"",
+					"def":"",
+					"defBonus":0,
+					"formula":" + @atkMod",
+					"damageType":{},
+					"effectType":{}
 				},
-				"def":{
-					"ac":0,
-					"fort":0,
-					"ref":0,
-					"wil":0
+				"hit":{
+					"shareDamageRoll":false,
+					"isDamage":false,
+					"isHealing":false,
+					"healSurge":"",
+					"baseQuantity":"1",
+					"baseDiceType":"flat",
+					"detail":"",
+					"formula":" + @dmgMod",
+					"critFormula":" + @dmgMod",
+					"healFormula":""
 				},
-				"proficiencies":{
-					"weapons":[],
-					"armour":[]
-				}
+				"miss":{
+					"detail":"",
+					"formula":""
+				},
+				"effect":{
+					"detail":""
+				},
+				"damage":{
+					"parts":[]
+				},
+				"damageCrit":{
+					"parts":[]
+				},
+				"damageImp":{
+					"parts":[]
+				},
+				"damageCritImp":{
+					"parts":[]
+				},
+				"keyWords":[],
+				"level":"",
+				"powersource":"",
+				"secondPowersource":"",
+				"subName":null,
+				"prepared":true,
+				"powerType":"inherent",
+				"powerSubtype":"",
+				"useType":"atwill",
+				"actionType":"reaction",
+				"requirements":"",
+				"weaponType":"none",
+				"weaponUse":"none",
+				"rangeType":null,
+				"rangeTextShort":"",
+				"rangeText":"",
+				"rangePower":null,
+				"area":null,
+				"rechargeRoll":"",
+				"rechargeCondition":null,
+				"damageShare":false,
+				"postEffect":false,
+				"postSpecial":false,
+				"autoGenChatPowerCard":false,
+				"sustain":{
+					"actionType":"",
+					"detail":""
+				},
+				"trigger":"",
+				"requirement":"",
+				"special":"",
+				"specialAdd":{
+					"parts":[]
+				},
+				"damageType":{
+					"damage":false,
+					"acid":false,
+					"cold":false,
+					"fire":false,
+					"force":false,
+					"lightning":false,
+					"necrotic":false,
+					"physical":false,
+					"poison":false,
+					"psychic":false,
+					"radiant":false,
+					"thunder":false
+				},
+				"effectHTML":false,
+				"effectType":{
+					"beast":false,
+					"beastForm":false,
+					"charm":false,
+					"conjuration":false,
+					"fear":false,
+					"healing":false,
+					"illusion":false,
+					"invigorating":false,
+					"poison":false,
+					"polymorph":false,
+					"rage":false,
+					"rattling":false,
+					"reliable":false,
+					"sleep":false,
+					"spirit":false,
+					"stance":false,
+					"summoning":false,
+					"teleportation":false,
+					"zone":false,
+					"augmentable":false,
+					"aura":false,
+					"channelDiv":false,
+					"disease":false,
+					"elemental":false,
+					"enchantment":false,
+					"evocation":false,
+					"fullDis":false,
+					"gaze":false,
+					"mount":false,
+					"necro":false,
+					"nether":false,
+					"runic":false,
+					"transmutation":false
+				},
+				"chatFlavor":""
 			},
+			"_key":"!actors.items!xiR6T5LNSDafbd9F.SQpnYDitZqCoRyg3"
+		},
+		{
+			"_id":"yjqgLsczrYiPtH93",
+			"name":"Brilliant Alacrity",
+			"type":"power",
+			"img":"modules/dnd-4e-compendium/icons/powers/will_personal_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
-			"_key":"!actors.items!xiR6T5LNSDafbd9F.SQpnYDitZqCoRyg3"
-		},
-		{
-			"name":"Brilliant Alacrity",
-			"type":"classFeats",
-			"_id":"yjqgLsczrYiPtH93",
-			"img":"icons/svg/aura.svg",
 			"system":{
 				"description":{
 					"value":"<p>RadiantTeleportation</p><p><b>Free</b></p><p class=\"power-basics\"><b>Trigger: </b> When the whitefire burning devil is missed by a fire or radiant attack</p><p>The whitefire burning devil teleports 7 squares. At the end of the movement, the burning devil makes a whiteflame bolt attack against the creature that made the triggering attack.</p>",
@@ -422,38 +558,166 @@
 					"unidentified":""
 				},
 				"source":"",
+				"activation":{
+					"type":"",
+					"cost":0,
+					"condition":""
+				},
+				"duration":{
+					"value":null,
+					"units":""
+				},
+				"target":"",
+				"range":{
+					"value":null,
+					"long":null,
+					"units":""
+				},
+				"uses":{
+					"value":0,
+					"max":"0",
+					"per":""
+				},
+				"consume":{
+					"type":"",
+					"target":"",
+					"amount":null
+				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":"",
-					"autoanimationHook":""
+					"author":""
 				},
-				"class":"",
-				"hitFistLevel":10,
-				"hitPerLevel":5,
-				"surgePerDay":5,
-				"skills":{
-					"number":2,
-					"choices":[],
-					"value":[]
+				"attack":{
+					"shareAttackRoll":false,
+					"isAttack":false,
+					"ability":"form",
+					"abilityBonus":"",
+					"def":"",
+					"defBonus":0,
+					"formula":" + @atkMod",
+					"damageType":{},
+					"effectType":{}
 				},
-				"def":{
-					"ac":0,
-					"fort":0,
-					"ref":0,
-					"wil":0
+				"hit":{
+					"shareDamageRoll":false,
+					"isDamage":false,
+					"isHealing":false,
+					"healSurge":"",
+					"baseQuantity":"1",
+					"baseDiceType":"flat",
+					"detail":"",
+					"formula":" + @dmgMod",
+					"critFormula":" + @dmgMod",
+					"healFormula":""
 				},
-				"proficiencies":{
-					"weapons":[],
-					"armour":[]
-				}
+				"miss":{
+					"detail":"",
+					"formula":""
+				},
+				"effect":{
+					"detail":""
+				},
+				"damage":{
+					"parts":[]
+				},
+				"damageCrit":{
+					"parts":[]
+				},
+				"damageImp":{
+					"parts":[]
+				},
+				"damageCritImp":{
+					"parts":[]
+				},
+				"keyWords":[],
+				"level":"",
+				"powersource":"",
+				"secondPowersource":"",
+				"subName":null,
+				"prepared":true,
+				"powerType":"inherent",
+				"powerSubtype":"",
+				"useType":"atwill",
+				"actionType":"reaction",
+				"requirements":"",
+				"weaponType":"none",
+				"weaponUse":"none",
+				"rangeType":null,
+				"rangeTextShort":"",
+				"rangeText":"",
+				"rangePower":null,
+				"area":null,
+				"rechargeRoll":"",
+				"rechargeCondition":null,
+				"damageShare":false,
+				"postEffect":false,
+				"postSpecial":false,
+				"autoGenChatPowerCard":false,
+				"sustain":{
+					"actionType":"",
+					"detail":""
+				},
+				"trigger":"",
+				"requirement":"",
+				"special":"",
+				"specialAdd":{
+					"parts":[]
+				},
+				"damageType":{
+					"damage":false,
+					"acid":false,
+					"cold":false,
+					"fire":false,
+					"force":false,
+					"lightning":false,
+					"necrotic":false,
+					"physical":false,
+					"poison":false,
+					"psychic":false,
+					"radiant":false,
+					"thunder":false
+				},
+				"effectHTML":false,
+				"effectType":{
+					"beast":false,
+					"beastForm":false,
+					"charm":false,
+					"conjuration":false,
+					"fear":false,
+					"healing":false,
+					"illusion":false,
+					"invigorating":false,
+					"poison":false,
+					"polymorph":false,
+					"rage":false,
+					"rattling":false,
+					"reliable":false,
+					"sleep":false,
+					"spirit":false,
+					"stance":false,
+					"summoning":false,
+					"teleportation":false,
+					"zone":false,
+					"augmentable":false,
+					"aura":false,
+					"channelDiv":false,
+					"disease":false,
+					"elemental":false,
+					"enchantment":false,
+					"evocation":false,
+					"fullDis":false,
+					"gaze":false,
+					"mount":false,
+					"necro":false,
+					"nether":false,
+					"runic":false,
+					"transmutation":false
+				},
+				"chatFlavor":""
 			},
-			"effects":[],
-			"folder":null,
-			"sort":0,
-			"flags":{},
 			"_key":"!actors.items!xiR6T5LNSDafbd9F.yjqgLsczrYiPtH93"
 		}
 	],

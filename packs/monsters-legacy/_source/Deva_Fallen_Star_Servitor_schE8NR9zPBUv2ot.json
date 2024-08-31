@@ -729,10 +729,14 @@
 			"_key":"!actors.items!schE8NR9zPBUv2ot.fLoq6YObU0wDln8m"
 		},
 		{
-			"name":"Fate Manipulation",
-			"type":"classFeats",
 			"_id":"Cyiegd1uNp57Pkft",
-			"img":"icons/svg/aura.svg",
+			"name":"Fate Manipulation",
+			"type":"power",
+			"img":"modules/dnd-4e-compendium/icons/powers/will_personal_instant.png",
+			"effects":[],
+			"folder":null,
+			"sort":0,
+			"flags":{},
 			"system":{
 				"description":{
 					"value":"<p class=\"power-basics\"><b>Trigger: </b> When first bloodied</p><p>The deva fallen star servitor adds 1d8 to or subtracts 1d8 from an attack roll, ability check, or saving throw made by itself or any creature within 10 squares of it.</p>",
@@ -740,45 +744,177 @@
 					"unidentified":""
 				},
 				"source":"",
+				"activation":{
+					"type":"",
+					"cost":0,
+					"condition":""
+				},
+				"duration":{
+					"value":null,
+					"units":""
+				},
+				"target":"",
+				"range":{
+					"value":null,
+					"long":null,
+					"units":""
+				},
+				"uses":{
+					"value":0,
+					"max":"0",
+					"per":""
+				},
+				"consume":{
+					"type":"",
+					"target":"",
+					"amount":null
+				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":"",
-					"autoanimationHook":""
+					"author":""
 				},
-				"class":"",
-				"hitFistLevel":10,
-				"hitPerLevel":5,
-				"surgePerDay":5,
-				"skills":{
-					"number":2,
-					"choices":[],
-					"value":[]
+				"attack":{
+					"shareAttackRoll":false,
+					"isAttack":false,
+					"ability":"form",
+					"abilityBonus":"",
+					"def":"",
+					"defBonus":0,
+					"formula":" + @atkMod",
+					"damageType":{},
+					"effectType":{}
 				},
-				"def":{
-					"ac":0,
-					"fort":0,
-					"ref":0,
-					"wil":0
+				"hit":{
+					"shareDamageRoll":false,
+					"isDamage":false,
+					"isHealing":false,
+					"healSurge":"",
+					"baseQuantity":"1",
+					"baseDiceType":"flat",
+					"detail":"",
+					"formula":" + @dmgMod",
+					"critFormula":" + @dmgMod",
+					"healFormula":""
 				},
-				"proficiencies":{
-					"weapons":[],
-					"armour":[]
-				}
+				"miss":{
+					"detail":"",
+					"formula":""
+				},
+				"effect":{
+					"detail":""
+				},
+				"damage":{
+					"parts":[]
+				},
+				"damageCrit":{
+					"parts":[]
+				},
+				"damageImp":{
+					"parts":[]
+				},
+				"damageCritImp":{
+					"parts":[]
+				},
+				"keyWords":[],
+				"level":"",
+				"powersource":"",
+				"secondPowersource":"",
+				"subName":null,
+				"prepared":true,
+				"powerType":"inherent",
+				"powerSubtype":"",
+				"useType":"atwill",
+				"actionType":"reaction",
+				"requirements":"",
+				"weaponType":"none",
+				"weaponUse":"none",
+				"rangeType":null,
+				"rangeTextShort":"",
+				"rangeText":"",
+				"rangePower":null,
+				"area":null,
+				"rechargeRoll":"",
+				"rechargeCondition":null,
+				"damageShare":false,
+				"postEffect":false,
+				"postSpecial":false,
+				"autoGenChatPowerCard":false,
+				"sustain":{
+					"actionType":"",
+					"detail":""
+				},
+				"trigger":"",
+				"requirement":"",
+				"special":"",
+				"specialAdd":{
+					"parts":[]
+				},
+				"damageType":{
+					"damage":false,
+					"acid":false,
+					"cold":false,
+					"fire":false,
+					"force":false,
+					"lightning":false,
+					"necrotic":false,
+					"physical":false,
+					"poison":false,
+					"psychic":false,
+					"radiant":false,
+					"thunder":false
+				},
+				"effectHTML":false,
+				"effectType":{
+					"beast":false,
+					"beastForm":false,
+					"charm":false,
+					"conjuration":false,
+					"fear":false,
+					"healing":false,
+					"illusion":false,
+					"invigorating":false,
+					"poison":false,
+					"polymorph":false,
+					"rage":false,
+					"rattling":false,
+					"reliable":false,
+					"sleep":false,
+					"spirit":false,
+					"stance":false,
+					"summoning":false,
+					"teleportation":false,
+					"zone":false,
+					"augmentable":false,
+					"aura":false,
+					"channelDiv":false,
+					"disease":false,
+					"elemental":false,
+					"enchantment":false,
+					"evocation":false,
+					"fullDis":false,
+					"gaze":false,
+					"mount":false,
+					"necro":false,
+					"nether":false,
+					"runic":false,
+					"transmutation":false
+				},
+				"chatFlavor":""
 			},
+			"_key":"!actors.items!schE8NR9zPBUv2ot.Cyiegd1uNp57Pkft"
+		},
+		{
+			"_id":"IjpvugG43trizSfo",
+			"name":"Vile Rebirth",
+			"type":"power",
+			"img":"modules/dnd-4e-compendium/icons/powers/will_personal_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
-			"_key":"!actors.items!schE8NR9zPBUv2ot.Cyiegd1uNp57Pkft"
-		},
-		{
-			"name":"Vile Rebirth",
-			"type":"classFeats",
-			"_id":"IjpvugG43trizSfo",
-			"img":"icons/svg/aura.svg",
 			"system":{
 				"description":{
 					"value":"<p class=\"power-basics\"><b>Trigger: </b> When the deva fallen star servitor is reduced to 0 hit points</p><p>The deva fallen star servitor does not die and instead remains at 0 hit points until the start of its next turn, when it regains 25 hit points, loses resistance to radiant damage, and gains the undead keyword.</p>",
@@ -786,38 +922,166 @@
 					"unidentified":""
 				},
 				"source":"",
+				"activation":{
+					"type":"",
+					"cost":0,
+					"condition":""
+				},
+				"duration":{
+					"value":null,
+					"units":""
+				},
+				"target":"",
+				"range":{
+					"value":null,
+					"long":null,
+					"units":""
+				},
+				"uses":{
+					"value":0,
+					"max":"0",
+					"per":""
+				},
+				"consume":{
+					"type":"",
+					"target":"",
+					"amount":null
+				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":"",
-					"autoanimationHook":""
+					"author":""
 				},
-				"class":"",
-				"hitFistLevel":10,
-				"hitPerLevel":5,
-				"surgePerDay":5,
-				"skills":{
-					"number":2,
-					"choices":[],
-					"value":[]
+				"attack":{
+					"shareAttackRoll":false,
+					"isAttack":false,
+					"ability":"form",
+					"abilityBonus":"",
+					"def":"",
+					"defBonus":0,
+					"formula":" + @atkMod",
+					"damageType":{},
+					"effectType":{}
 				},
-				"def":{
-					"ac":0,
-					"fort":0,
-					"ref":0,
-					"wil":0
+				"hit":{
+					"shareDamageRoll":false,
+					"isDamage":false,
+					"isHealing":false,
+					"healSurge":"",
+					"baseQuantity":"1",
+					"baseDiceType":"flat",
+					"detail":"",
+					"formula":" + @dmgMod",
+					"critFormula":" + @dmgMod",
+					"healFormula":""
 				},
-				"proficiencies":{
-					"weapons":[],
-					"armour":[]
-				}
+				"miss":{
+					"detail":"",
+					"formula":""
+				},
+				"effect":{
+					"detail":""
+				},
+				"damage":{
+					"parts":[]
+				},
+				"damageCrit":{
+					"parts":[]
+				},
+				"damageImp":{
+					"parts":[]
+				},
+				"damageCritImp":{
+					"parts":[]
+				},
+				"keyWords":[],
+				"level":"",
+				"powersource":"",
+				"secondPowersource":"",
+				"subName":null,
+				"prepared":true,
+				"powerType":"inherent",
+				"powerSubtype":"",
+				"useType":"atwill",
+				"actionType":"reaction",
+				"requirements":"",
+				"weaponType":"none",
+				"weaponUse":"none",
+				"rangeType":null,
+				"rangeTextShort":"",
+				"rangeText":"",
+				"rangePower":null,
+				"area":null,
+				"rechargeRoll":"",
+				"rechargeCondition":null,
+				"damageShare":false,
+				"postEffect":false,
+				"postSpecial":false,
+				"autoGenChatPowerCard":false,
+				"sustain":{
+					"actionType":"",
+					"detail":""
+				},
+				"trigger":"",
+				"requirement":"",
+				"special":"",
+				"specialAdd":{
+					"parts":[]
+				},
+				"damageType":{
+					"damage":false,
+					"acid":false,
+					"cold":false,
+					"fire":false,
+					"force":false,
+					"lightning":false,
+					"necrotic":false,
+					"physical":false,
+					"poison":false,
+					"psychic":false,
+					"radiant":false,
+					"thunder":false
+				},
+				"effectHTML":false,
+				"effectType":{
+					"beast":false,
+					"beastForm":false,
+					"charm":false,
+					"conjuration":false,
+					"fear":false,
+					"healing":false,
+					"illusion":false,
+					"invigorating":false,
+					"poison":false,
+					"polymorph":false,
+					"rage":false,
+					"rattling":false,
+					"reliable":false,
+					"sleep":false,
+					"spirit":false,
+					"stance":false,
+					"summoning":false,
+					"teleportation":false,
+					"zone":false,
+					"augmentable":false,
+					"aura":false,
+					"channelDiv":false,
+					"disease":false,
+					"elemental":false,
+					"enchantment":false,
+					"evocation":false,
+					"fullDis":false,
+					"gaze":false,
+					"mount":false,
+					"necro":false,
+					"nether":false,
+					"runic":false,
+					"transmutation":false
+				},
+				"chatFlavor":""
 			},
-			"effects":[],
-			"folder":null,
-			"sort":0,
-			"flags":{},
 			"_key":"!actors.items!schE8NR9zPBUv2ot.IjpvugG43trizSfo"
 		}
 	],
