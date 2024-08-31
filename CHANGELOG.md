@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.10
+- Added god fragments
+- Fixed rebuke undead encounter use
+
 ## Foundry 4e Compendium v1.34.9
 - Moved monster resistances to bonus array
 
