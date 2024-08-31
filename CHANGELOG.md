@@ -1,5 +1,11 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.11
+- Fixed triggered powers of some monsters
+- Fixed double digit monster auras
+- Fixed origin of some monsters
+- Added god fragments glossary entry
+
 ## Foundry 4e Compendium v1.34.10
 - Added god fragments
 - Fixed rebuke undead encounter use
