@@ -769,14 +769,14 @@
 			"_id":"LWcxU1ikoYNEjtKg",
 			"name":"Blood Drain",
 			"type":"power",
-			"img":"modules/dnd-4e-compendium/icons/powers/simple_melee.png",
+			"img":"modules/dnd-4e-compendium/icons/powers/augment_melee_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p>Healing</p><p><b>Standard</b></p><p class=\"power-basics\"><b>Trigger: </b> When an adjacent creature becomes bloodied</p><p  class=\"power-basics\">+13 vs Fortitude; 2d12+8 damage, the target is weakened (save ends), and the vampire lord regains 46 hit points.</p>",
+					"value":"<p><b>Recharge</b><b> ✦ </b><b>Healing</b></p><p><b>Standard</b></p><p class=\"power-basics\"><b>Requirements: </b> Requires combat advantage against the target</p><p class=\"power-basics\"><b>Recharge: </b> When an adjacent creature becomes bloodied</p><p  class=\"power-basics\">+13 vs Fortitude; 2d12+8 damage, the target is weakened (save ends), and the vampire lord regains 46 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -797,9 +797,9 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
-					"per":""
+					"value":1,
+					"max":"1",
+					"per":"charges"
 				},
 				"consume":{
 					"type":"",
@@ -865,7 +865,7 @@
 				"prepared":true,
 				"powerType":"inherent",
 				"powerSubtype":"",
-				"useType":"other",
+				"useType":"recharge",
 				"actionType":"standard",
 				"requirements":"",
 				"weaponType":"none",
@@ -876,7 +876,7 @@
 				"rangePower":null,
 				"area":null,
 				"rechargeRoll":"",
-				"rechargeCondition":null,
+				"rechargeCondition": "recharges when an adjacent creature becomes bloodied",
 				"damageShare":false,
 				"postEffect":false,
 				"postSpecial":false,
