@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.12
+- Fix Primal Investiture
+- Fix Nexull blood drain power
+
 ## Foundry 4e Compendium v1.34.11
 - Fixed triggered powers of some monsters
 - Fixed double digit monster auras
