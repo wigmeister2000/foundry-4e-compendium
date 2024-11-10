@@ -1,5 +1,10 @@
 # Changelog
 
+## Foundry 4e Compendium v1.34.13
+- Fixed item power descriptions with special entry
+- Fixed Warlock's Curse description
+- Implemented damage on miss formulas for monsters
+
 ## Foundry 4e Compendium v1.34.12
 - Fix Primal Investiture
 - Fix Nexull blood drain power
