@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35
+- Removed deprecated @atkMod and @dmgMod variables
+- Added macro for updating existing actors and powers
+
 ## Foundry 4e Compendium v1.34.13
 - Fixed item power descriptions with special entry
 - Fixed Warlock's Curse description
