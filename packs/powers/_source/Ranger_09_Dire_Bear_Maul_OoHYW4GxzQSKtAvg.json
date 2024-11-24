@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"weapon",
 			"detail":"1[W] + Strength modifier damage per attack. If both attacks hit, the target is grabbed. When you sustain the grab, the target takes 1[W] + Strength modifier damage from each weapon. You cannot otherwise attack with your weapons while you sustain the grab. If the target is your quarry, it takes a -2 penalty to escape attempts.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

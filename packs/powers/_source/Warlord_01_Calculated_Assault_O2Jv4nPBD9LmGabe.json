@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"weapon",
 			"detail":"1[W] + Strength modifier damage, and one of your allies within 5 squares of you gains a power bonus to damage rolls against the target equal to 1 + your Intelligence modifier until the end of the encounter. You can transfer the bonus to another ally within 5 squares of you as a minor action.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

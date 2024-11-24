@@ -53,7 +53,7 @@
 			"abilityBonus":4,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 4",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 4",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"weapon",
 			"detail":"1[W] damage. If the target is marked by you, it is also weakened and dazed until it is not marked by you.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"d6",
 			"detail":"1d6 + Wisdom modifier fire damage, and ongoing 5 fire damage (save ends). If the target drops to 0 hit points before it saves against the ongoing damage, one creature of your choice within 5 squares of the target regains hit points equal to 5 + your Constitution modifier.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

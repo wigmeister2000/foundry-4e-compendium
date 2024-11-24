@@ -53,7 +53,7 @@
 			"abilityBonus":6,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 6",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 6",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"4",
 			"baseDiceType":"d12",
 			"detail":"4d12 + 10 modifier cold damage, push the target 3 squares, and the target is immobilized (save ends).",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

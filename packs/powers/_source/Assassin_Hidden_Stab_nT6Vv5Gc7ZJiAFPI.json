@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"weapon",
 			"detail":"1[W] damage, and the target is grabbed until the end of your next turn. While the grab persists, the target grants combat advantage, and it takes a -2 penalty to its first escape attempt. If you make a melee weapon attack against the target before the grab ends and your assassin's strike is not expended, you can use that power against the target even if the attack misses.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

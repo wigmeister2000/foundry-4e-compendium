@@ -53,7 +53,7 @@
 			"abilityBonus":6,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 6",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 6",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"d6",
 			"detail":"1d6 + Strength modifier, Constitution modifier, or Dexterity modifier damage, and you knock the target prone.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

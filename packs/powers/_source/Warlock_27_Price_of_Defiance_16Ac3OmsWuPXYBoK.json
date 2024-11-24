@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"3",
 			"baseDiceType":"d8",
 			"detail":"3d8 + Charisma modifier or Constitution modifier force damage, and the target is immobilized until the end of your next turn. You slide the target 5 squares to a square adjacent to one of your allies. That ally can then make a melee basic attack against the target as an opportunity action, gaining a power bonus to the damage roll equal to your Intelligence modifier.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

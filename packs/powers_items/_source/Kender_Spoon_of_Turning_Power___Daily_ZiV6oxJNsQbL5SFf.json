@@ -53,7 +53,7 @@
 			"abilityBonus":5,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 5",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 5",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"d10",
 			"detail":"2d10 + 3 + Charisma or Wisdom modifier radiant damage, and you push the target a number of squares up to 3 + your Charisma or Wisdom modifier. The target is immobilized until the end of your next turn.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

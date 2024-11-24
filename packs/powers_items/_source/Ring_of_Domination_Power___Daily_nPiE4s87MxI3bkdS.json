@@ -53,7 +53,7 @@
 			"abilityBonus":29,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 29",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 29",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"",
 			"detail":"The target is dominated (save ends). Each time the target fails a saving throw to end the effect, you or one ally you can see takes 15 psychic damage. If you've reached at least one milestone today, the target takes a -2 penalty to saving throws to end the effect.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

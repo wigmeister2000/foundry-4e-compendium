@@ -54,7 +54,7 @@
 			"abilityBonus":4,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 4",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 4",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -66,8 +66,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"weapon",
 			"detail":"The target takes necrotic damage equal to the damage you took from the attack.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

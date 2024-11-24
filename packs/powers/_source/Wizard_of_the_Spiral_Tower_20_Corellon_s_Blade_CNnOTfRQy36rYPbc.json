@@ -53,7 +53,7 @@
 			"abilityBonus":4,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 4",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 4",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"3",
 			"baseDiceType":"weapon",
 			"detail":"3[W] + Intelligence modifier radiant damage. In addition, the target is removed from play until the end of your next turn. When the target returns to play, it appears in its former space, or if that space is occupied, the target appears in the nearest unoccupied space (its choice).",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"d10",
 			"detail":"1d10 + Wisdom modifier damage, and the target is affected by your baleful admonishment (save ends). Whenever the target hits with an attack before the baleful admonishment ends, you can take 5 damage as a free action to force the target to reroll the attack and use the second result. If the rerolled attack misses, the target takes 5 + your Constitution modifier damage.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

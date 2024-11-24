@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"weapon",
 			"detail":"2[W] + Strength modifier damage, and you mark the target until the end of your next turn. If the target makes an attack before the end of your next turn that does not include you as a target, one ally adjacent to the target can make a basic attack against it as an immediate interrupt. If the ally's attack hits, the target takes a -2 penalty to the attack roll.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

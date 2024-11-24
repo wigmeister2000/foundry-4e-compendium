@@ -54,7 +54,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -66,8 +66,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"flat",
 			"detail":"5 + ability modifier damage per attack, and the target takes a penalty to attack rolls equal to the number of times you hit it with this power (save ends).",
-			"formula":"5 + @powerMod + @dmgMod",
-			"critFormula":"5 + @powerMod + @wepCritBonus + @dmgMod",
+			"formula":"5 + @powerMod",
+			"critFormula":"5 + @powerMod + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

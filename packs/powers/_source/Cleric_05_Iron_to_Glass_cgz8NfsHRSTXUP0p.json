@@ -54,7 +54,7 @@
 			"abilityBonus":0,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -66,8 +66,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"weapon",
 			"detail":"Until the end of the encounter, the target takes a -4 penalty to melee damage rolls. Whenever the target hits with a melee attack, the penalty worsens by 2 to a maximum of -10.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

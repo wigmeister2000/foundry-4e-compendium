@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"d8",
 			"detail":"2d8 + Dexterity modifier force damage, and any ally's attack made against the target deals extra damage equal to 2 + your Strength modifier until the end of your next turn. Against an unattended object, this attack deals 2d10 extra force damage.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

@@ -53,7 +53,7 @@
 			"abilityBonus":3,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 3",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 3",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"",
 			"detail":"The target cannot use its arms until it succeeds on an Acrobatics or Athletics check (moderate DC of the bands' level) as a move action. Until the effect ends, the target is prevented from doing anything that requires its arms, such as climbing or making a melee attack. When the effect ends, the bands return to you.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

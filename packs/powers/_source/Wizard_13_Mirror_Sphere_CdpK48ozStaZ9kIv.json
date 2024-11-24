@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"d10",
 			"detail":"1d10 + Intelligence modifier psychic damage. The first time the target makes an attack before the end of its next turn, it automatically hits itself with the attack, in addition to hitting or missing the attack's intended targets. The target's resistances and immunities do not apply against that attack.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

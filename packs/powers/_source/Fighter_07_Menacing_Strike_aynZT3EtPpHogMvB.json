@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"weapon",
 			"detail":"1[W] + Strength modifier + Dexterity modifier damage. In addition, whenever an enemy ends its move adjacent to the target, you can slide that enemy 1 square as an opportunity action. This effect lasts until the end of your next turn.",
-			"formula":"@powBase + @powerMod + @dexMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @dexMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @dexMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @dexMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

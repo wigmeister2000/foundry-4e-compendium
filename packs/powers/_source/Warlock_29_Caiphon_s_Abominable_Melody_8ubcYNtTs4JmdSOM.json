@@ -53,7 +53,7 @@
 			"abilityBonus":2,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 2",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 2",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"6",
 			"baseDiceType":"d8",
 			"detail":"6d8 + Charisma modifier psychic damage, and the target is deafened (save ends), blinded (save ends), and slowed (save ends); a separate save is required to relieve each condition. At the beginning of the target's turn, if it is still suffering from any one of the conditions you inflicted upon it, it takes another 1d6 + Charisma modifier psychic damage, and you can slide the target a number of spaces equal to your Charisma modifier. Until the end of the encounter, any time you take damage, roll a d20. If you roll 10 or higher, reduce the damage to 0.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

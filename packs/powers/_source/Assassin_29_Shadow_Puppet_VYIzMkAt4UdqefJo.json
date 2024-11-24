@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"4",
 			"baseDiceType":"d8",
 			"detail":"4d8 + Dexterity modifier psychic damage, and the target is dominated (save ends). Until the target saves against this effect, when any enemy leaves a square adjacent to the target or makes a ranged attack while adjacent to it, you can use an opportunity action to compel the target to make a melee basic attack as a free action against that enemy.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

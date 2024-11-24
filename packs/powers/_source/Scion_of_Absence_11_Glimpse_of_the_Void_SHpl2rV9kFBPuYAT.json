@@ -53,7 +53,7 @@
 			"abilityBonus":6,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 6",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 6",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"",
 			"detail":"The target ceases to exist and can take no actions until the start of your next turn. It has line of sight and line of effect to no creature, and no creature has line of sight or line of effect to it. At the start of your next turn, the target reappears in the space it left, or in the nearest available space if that space is occupied.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

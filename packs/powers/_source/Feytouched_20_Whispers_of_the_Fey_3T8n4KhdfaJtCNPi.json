@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"d8",
 			"detail":"The target must make a basic attack as a free action against its nearest ally (you choose the target if there are multiple possible targets). If it can't make the attack, the target takes 2d8 + Charisma modifier psychic damage After it makes its attack or takes psychic damage, the target is dazed (save ends).",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

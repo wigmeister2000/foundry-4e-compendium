@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"weapon",
 			"detail":"1[W] + Strength modifier + Charisma modifier damage. If this attack reduces the target to 0 hit points, an ally within 5 squares of you can make a basic attack against a different target as an immediate reaction, adding your Charisma modifier to the damage roll. If that ally's attack reduces its target to 0 hit points, a different ally within 5 squares of you gains the same benefit. Repeat until an attack fails to reduce a target to 0 hit points or until you run out of allies within 5 squares.",
-			"formula":"@powBase + @powerMod + @chaMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @chaMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @chaMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @chaMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

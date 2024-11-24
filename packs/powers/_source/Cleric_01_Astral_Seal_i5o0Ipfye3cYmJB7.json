@@ -53,7 +53,7 @@
 			"abilityBonus":2,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 2",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 2",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"",
 			"detail":"Until the end of your next turn, the target takes a -2 penalty to all defenses. The next ally who hits it before the end of your next turn regains hit points equal to 2 + your Charisma modifier.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

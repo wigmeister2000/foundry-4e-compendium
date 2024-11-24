@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"d10",
 			"detail":"2d10 fire damage, and the target becomes insubstantial, deals half damage with its attacks, gains vulnerable 10 fire and ongoing 5 fire damage (save ends all). Fire damage ignores the target's insubstantial quality.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

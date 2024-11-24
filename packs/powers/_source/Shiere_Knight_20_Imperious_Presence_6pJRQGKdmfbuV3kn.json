@@ -53,7 +53,7 @@
 			"abilityBonus":6,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 6",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 6",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"",
 			"detail":"The target is weakened (save ends). The target then moves away from you at its speed as a free action.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

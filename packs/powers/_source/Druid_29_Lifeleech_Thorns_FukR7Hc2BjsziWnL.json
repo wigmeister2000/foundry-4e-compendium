@@ -54,7 +54,7 @@
 			"abilityBonus":0,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -66,8 +66,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"weapon",
 			"detail":"The target is immobilized and weakened and takes ongoing 10 damage (save ends all). You regain hit points equal to your Constitution modifier for each target you hit with this power.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

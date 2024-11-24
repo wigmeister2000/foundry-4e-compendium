@@ -53,7 +53,7 @@
 			"abilityBonus":3,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 3",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 3",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"",
 			"detail":"The target is dazed until the end of your next turn. While dazed, the target takes a -5 penalty to Insight checks to resist Bluff attempts or to recognize effects as illusory, and the target is not aware that this attack has been made against it.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

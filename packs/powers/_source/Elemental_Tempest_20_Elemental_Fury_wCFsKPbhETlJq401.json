@@ -53,7 +53,7 @@
 			"abilityBonus":6,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 6",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 6",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"5",
 			"baseDiceType":"d10",
 			"detail":"5d10 + Constitution modifier acid, cold, force, fire, or lightning damage, and all resistances you have increase by 10 until the end of the encounter.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

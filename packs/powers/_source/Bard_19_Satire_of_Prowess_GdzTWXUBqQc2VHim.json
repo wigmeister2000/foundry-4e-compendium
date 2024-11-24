@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"4",
 			"baseDiceType":"d6",
 			"detail":"4d6 + Charisma modifier psychic damage, and the target is affected by your satire of prowess (save ends). While the target is affected by the satire, the target rolls twice when it makes an attack roll and must use the lower roll, and any attacker rolls twice when it makes an attack roll against the target and must use the higher roll.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

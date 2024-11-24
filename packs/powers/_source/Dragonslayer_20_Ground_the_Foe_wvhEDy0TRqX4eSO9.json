@@ -53,7 +53,7 @@
 			"abilityBonus":2,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 2",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 2",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"5",
 			"baseDiceType":"d6",
 			"detail":"5d6 + Charisma modifier force damage, and the target is knocked prone and immobilized (save ends).",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

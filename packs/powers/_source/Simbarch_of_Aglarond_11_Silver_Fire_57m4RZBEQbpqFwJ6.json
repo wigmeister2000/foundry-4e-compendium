@@ -53,7 +53,7 @@
 			"abilityBonus":8,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 8",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 8",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"d6",
 			"detail":"1d6 + Intelligence modifier damage, and until the end of the encounter, each subsequent time you hit the target with an attack, it takes additional damage equal to onehalf your level.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

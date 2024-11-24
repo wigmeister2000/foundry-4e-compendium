@@ -54,7 +54,7 @@
 			"abilityBonus":0,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -66,8 +66,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"weapon",
 			"detail":"The target is dominated until the end of your next turn. If you or any of your allies attacks the target or any of its allies, or if the target makes an attack, takes damage, or causes one of its allies to take damage, this effect ends. In addition, at the start of each of the target's turns, you can slide it up to 6 squares as a free action.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

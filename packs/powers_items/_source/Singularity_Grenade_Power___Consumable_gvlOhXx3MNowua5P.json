@@ -53,7 +53,7 @@
 			"abilityBonus":14,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 14",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 14",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"d4.",
 			"detail":"Roll 1d4. Then roll that many d4s. Then roll that many d4s and total the result. Each target takes cold and thunder damage equal to the result.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

@@ -54,7 +54,7 @@
 			"abilityBonus":2,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 2",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 2",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -66,8 +66,8 @@
 			"baseQuantity":"",
 			"baseDiceType":"weapon",
 			"detail":"The target is dominated (save ends). Once while the target is dominated by this power, you can use a minor action while adjacent to the target to gain a healing surge and to deal necrotic damage to the target equal to your healing surge value. Doing so ends the domination.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

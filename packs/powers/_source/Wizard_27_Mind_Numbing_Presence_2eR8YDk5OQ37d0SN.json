@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"3",
 			"baseDiceType":"d8",
 			"detail":"3d8 + Intelligence modifier psychic damage, and a burst 3 centered on the target becomes a zone of numbed thought until the end of your next turn. This zone moves with the target. Any enemy that ends its turn in the zone takes 10 psychic damage, and any enemy that enters or leaves the zone becomes dazed until the end of your next turn.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

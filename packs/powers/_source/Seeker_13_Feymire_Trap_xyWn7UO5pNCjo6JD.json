@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"weapon",
 			"detail":"1[W] + 2d6 + Wisdom modifier damage. You teleport the target 3 squares, and it is slowed until the end of its next turn.",
-			"formula":"@powBase + 2d6 + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + 12 + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + 2d6 + @powerMod + @wepDamage",
+			"critFormula":"@powMax + 12 + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

@@ -53,7 +53,7 @@
 			"abilityBonus":4,
 			"def":"wil",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 4",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 4",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"d6",
 			"detail":"The target makes a basic attack against a creature of your choice as a free action. The target gains a +2 power bonus to the attack roll, and on a hit, its attack deals 2d6 extra fire damage.",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

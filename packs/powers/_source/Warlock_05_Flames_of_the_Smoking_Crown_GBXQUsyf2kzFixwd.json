@@ -54,7 +54,7 @@
 			"abilityBonus":0,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -66,8 +66,8 @@
 			"baseQuantity":"1",
 			"baseDiceType":"d10",
 			"detail":"The target is affected by the flames of the smoking crown (save ends). Until the flames end, the target takes ongoing 5 fire damage. Also, whenever the target starts its turn you slide it a number of squares equal to your Intelligence modifier, and each enemy adjacent to the target after the slide takes ongoing 5 fire damage (save ends).",
-			"formula":"@powBase + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @wepDamage",
+			"critFormula":"@powMax + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

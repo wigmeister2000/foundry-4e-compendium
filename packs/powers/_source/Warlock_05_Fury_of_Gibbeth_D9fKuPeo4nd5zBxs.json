@@ -53,7 +53,7 @@
 			"abilityBonus":2,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 2",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 2",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"3",
 			"baseDiceType":"d10",
 			"detail":"3d10 + Intelligence modifier damage, and the target must succeed on an Acrobatics check that has a DC equal to 10 + your Charisma modifier + one-half your level or fall prone. At the start of its turn, the target must succeed on another Acrobatics check (DC as above) or fall prone again (save ends).",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

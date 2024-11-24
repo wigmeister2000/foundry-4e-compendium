@@ -53,7 +53,7 @@
 			"abilityBonus":2,
 			"def":"ac",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 2",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 2",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"weapon",
 			"detail":"2[W] + Strength modifier damage (first attack; main), 2[W] + Strength modifier damage (second attack; off-hand), and 1[W] + Strength modifier (third attack; main). A target hit once is dazed until the end of your next turn. A target hit twice is stunned until the end of your next turn. A target hit three times is weakened and stunned until the end of your next turn.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

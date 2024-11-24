@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"3",
 			"baseDiceType":"weapon",
 			"detail":"3[W] + Strength modifier damage. Until you end your turn in a square not adjacent to the target, when the target makes a close attack, you and each ally adjacent to it can make a melee basic attack against the target as an immediate interrupt. If the target is a dragon, it takes a -1 penalty to the triggering attack for each such melee basic attack that hits.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

@@ -53,7 +53,7 @@
 			"abilityBonus":4,
 			"def":"fort",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod + 4",
+			"formula":"@wepAttack + @powerMod + @lvhalf + 4",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"3",
 			"baseDiceType":"d8",
 			"detail":"3d8 + Constitution modifier poison damage, and the target is dazed and slowed (save ends both). If the target is an aberrant creature, then whenever it uses a psychic attack before the end of the encounter, it takes ongoing 10 poison damage (save ends).",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{

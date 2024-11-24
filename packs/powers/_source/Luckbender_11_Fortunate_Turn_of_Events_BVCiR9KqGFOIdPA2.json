@@ -53,7 +53,7 @@
 			"abilityBonus":0,
 			"def":"ref",
 			"defBonus":0,
-			"formula":"@wepAttack + @powerMod + @lvhalf + @atkMod",
+			"formula":"@wepAttack + @powerMod + @lvhalf",
 			"damageType":{},
 			"effectType":{}
 		},
@@ -65,8 +65,8 @@
 			"baseQuantity":"2",
 			"baseDiceType":"d8",
 			"detail":"2d8 + Charisma modifier damage. The damage is of one type you resist with your Wild Soul class feature (if you have multiple resistances from your Wild Soul feature, choose one type). If you rolled an even number on this attack roll, the target is knocked prone. If you rolled an odd number on this attack roll, you slide the target 3 squares.",
-			"formula":"@powBase + @powerMod + @wepDamage + @dmgMod",
-			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus + @dmgMod",
+			"formula":"@powBase + @powerMod + @wepDamage",
+			"critFormula":"@powMax + @powerMod + @wepDamage + @wepCritBonus",
 			"healFormula":""
 		},
 		"miss":{
