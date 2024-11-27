@@ -8,7 +8,7 @@ export function registerConfigurations() {
         scope: 'world',
         config: true,
         hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.CBUILDER_IMPORT}.Hint`,
-        onChange: debouncedReload
+        onChange: foundry.utils.debouncedReload
     });
 
     game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.BUILD_MAGIC_ITEM, {
@@ -18,7 +18,7 @@ export function registerConfigurations() {
         scope: 'world',
         config: true,
         hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.BUILD_MAGIC_ITEM}.Hint`,
-        onChange: debouncedReload
+        onChange: foundry.utils.debouncedReload
     });
 
     game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT, {
@@ -28,7 +28,7 @@ export function registerConfigurations() {
         scope: 'world',
         config: true,
         hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT}.Hint`,
-        onChange: debouncedReload
+        onChange: foundry.utils.debouncedReload
     });
 
     game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.FIND_AND_REPLACE, {
@@ -38,7 +38,7 @@ export function registerConfigurations() {
         scope: 'world',
         config: true,
         hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.FIND_AND_REPLACE}.Hint`,
-        onChange: debouncedReload
+        onChange: foundry.utils.debouncedReload
     });
 
     game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_CONFIG, {
@@ -48,7 +48,7 @@ export function registerConfigurations() {
         scope: 'world',
         config: true,
         hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.IMPORT_CONFIG}.Hint`,
-        onChange: debouncedReload
+        onChange: foundry.utils.debouncedReload
     });
 
 
