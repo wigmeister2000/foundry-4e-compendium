@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.1
+- Added macro for updating existing actors and powers in compendia
+
 ## Foundry 4e Compendium v1.35
 - Removed deprecated @atkMod and @dmgMod variables
 - Added macro for updating existing actors and powers
