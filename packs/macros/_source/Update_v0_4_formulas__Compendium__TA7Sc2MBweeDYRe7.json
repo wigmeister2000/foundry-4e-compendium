@@ -1,0 +1,13 @@
+{
+	"name":"Update v0.4 formulas (Compendium)",
+	"type":"script",
+	"author":"LQXSXklgUOv6OUGK",
+	"img":"icons/svg/dice-target.svg",
+	"scope":"global",
+	"command":"// This macro loops through all actors and items in a compendium and removes deprecated @dmgMod and @atkMod variables from damage and attack formulas.\n///////////////////////////////////////////\n// BACKUP YOUR WORLD BEFORE RUNNING THIS!!!\n///////////////////////////////////////////\n\nconst compendiumName = \"Enter your compendium name here\";\n\nconst compendium = game.packs.find(x => x.metadata.label === compendiumName);\n\nasync function fixPower(power){\n    await power.update({\n            \"system.attack.formula\": power.system.attack.formula.replace(/\\s*\\+\\s*@atkMod/i, \"\"),\n            \"system.hit.formula\": power.system.hit.formula.replace(/\\s*\\+\\s*@dmgMod/i, \"\"),\n            \"system.hit.critFormula\": power.system.hit.critFormula.replace(/\\s*\\+\\s*@dmgMod/i, \"\")\n            });    \n}\n\nasync function fixCompendium(){\n    \n    if ([\"Actor\", \"Item\"].includes(compendium.documentName)){\n        \n        const wasLocked = compendium.locked;\n        await compendium.configure({locked: false});\n        await compendium.migrate();\n        const documents = await compendium.getDocuments();\n        \n        for (const doc of documents){\n            switch (compendium.documentName){\n                case \"Item\":\n                    if (doc.type === \"power\"){\n                        await fixPower(doc);\n                    }\n                    break;\n                case \"Actor\":\n                    for (const item of doc.items){\n                        if (item.type === \"power\"){\n                            await fixPower(item);\n                        }\n                    }\n                    break;\n            }\n        }\n        \n        await compendium.configure({locked: wasLocked});        \n    }\n};\n\nnew Dialog({\n  title: \"Update v0.4 attack and damage formulas\",\n  content: \"BACKUP YOUR WORLD BEFORE RUNNING THIS!\",\n  buttons: {\n    yes: {\n      label: \"Run\",\n      callback: fixCompendium\n    },\n    close: {\n      label: \"Cancel\"\n    },\n  },\n  default: \"close\",\n  close: () => {}\n}).render(true);",
+	"folder":null,
+	"flags":{},
+	"_id":"TA7Sc2MBweeDYRe7",
+	"sort":0,
+	"_key":"!macros!TA7Sc2MBweeDYRe7"
+}
