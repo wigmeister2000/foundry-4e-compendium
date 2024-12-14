@@ -11,7 +11,7 @@
 			"img":"icons/svg/aura.svg",
 			"system":{
 				"description":{
-					"value":"<p><b>Aura</b> 1</p><p>Orcs inside the aura gain a +1 power bonus to attack rolls.</p>",
+					"value":"<p><strong>Aura</strong> 1; orcs inside the aura gain a +1 power bonus to attack rolls.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -61,7 +61,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Reach</b> 2</p><p  class=\"power-basics\">+10 vs AC; 2d4+4 damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p><strong>Reach</strong> 2; +10 vs AC; 2d4+4 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -82,8 +82,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -241,7 +241,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Healing</b></p><p class=\"power-basics\"><b>Standard</b></p><p>The orc sergeant makes a melee basic attack and regains 11 hit points.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Healing</strong></p><p>The orc sergeant makes a melee basic attack and regains 11 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -292,14 +292,14 @@
 				"hit":{
 					"shareDamageRoll":false,
 					"isDamage":false,
-					"isHealing":false,
+					"isHealing":true,
 					"healSurge":"",
 					"baseQuantity":"1",
 					"baseDiceType":"flat",
 					"detail":"",
 					"formula":"",
 					"critFormula":"",
-					"healFormula":""
+					"healFormula":"11"
 				},
 				"miss":{
 					"detail":"",
@@ -421,7 +421,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b></p><p class=\"power-basics\"><b>Immediate Reaction</b></p><p class=\"power-basics\"><b>Trigger: </b> When orc ally within 5 squares is forcibly moved</p><p>Slide triggering ally 1 square.</p>",
+					"value":"<p><strong>Immediate Reaction, At-Will</strong></p><p><strong>Trigger:</strong> When orc ally within 5 squares is forcibly moved</p><p>Slide triggering ally 1 square.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -442,8 +442,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -830,7 +830,7 @@
 				"secondary":"standard",
 				"leader":true
 			},
-			"equipment":"tattered cloak, chainmail , glaive ."
+			"equipment":"tattered cloak, chainmail, glaive"
 		},
 		"languages":{
 			"spoken":{
