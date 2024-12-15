@@ -11,7 +11,7 @@
 			"img":"icons/svg/aura.svg",
 			"system":{
 				"description":{
-					"value":"<p><b>Aura</b> 10; orcs in the aura can use death strike.</p>",
+					"value":"<p><strong>Aura</strong> 10; orcs in the aura can use <em>death strike</em>.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -61,7 +61,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+10 vs AC; 1d8+3 damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+10 vs AC; 1d8+3 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -82,8 +82,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -241,7 +241,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Healing, Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p>The eye of Gruumsh makes a melee basic attack, spends a healing surge, and regains 13 hit points.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Healing, Weapon</strong></p><p><em>Requires:</em> Bloodied</p><p>The Eye of Gruumsh makes a melee basic attack, spends a healing surge, and regains 13 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -292,14 +292,14 @@
 				"hit":{
 					"shareDamageRoll":false,
 					"isDamage":false,
-					"isHealing":false,
+					"isHealing":true,
 					"healSurge":"1",
 					"baseQuantity":"1",
 					"baseDiceType":"flat",
 					"detail":"",
 					"formula":"",
 					"critFormula":"",
-					"healFormula":""
+					"healFormula":"13"
 				},
 				"miss":{
 					"detail":"",
@@ -422,7 +422,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Trigger: </b> When reduced to 0 hit points, </p><p>The orc makes a melee basic attack.</p>",
+					"value":"<p><strong>Immediate Reaction, At-Will</strong></p><p><strong>Trigger:</strong> When reduced to 0 hit points</p><p>The orc makes a melee basic attack.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -443,8 +443,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -600,7 +600,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Fear</b></p><p class=\"power-basics\"><b>Minor, At-Will</b></p><p><b>Ranged</b> 5</p><p  class=\"power-basics\">+8 vs Will; the target takes a -4 penalty to AC (save ends).</p>",
+					"value":"<p><strong>Minor, At-Will ✦ Fear</strong></p><p><strong>Ranged</strong> 5; +8 vs Will; the target takes a -4 penalty to AC (save ends).</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -621,8 +621,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -780,7 +780,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Recharge</b> 5-6<b> ✦ </b><b>Healing</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Ranged</b> 5</p><p>One orc within range makes a melee basic attack (as a free action) and regains 15 hit points on a hit or 5 hit points on a miss.</p>",
+					"value":"<p><strong>Standard, Recharge</strong> 5-6<strong> ✦ Healing</strong></p><p><strong>Ranged</strong> 5; one orc within range makes a melee basic attack (as a free action) and regains 15 hit points on a hit or 5 hit points on a miss.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -831,14 +831,14 @@
 				"hit":{
 					"shareDamageRoll":false,
 					"isDamage":false,
-					"isHealing":false,
+					"isHealing":true,
 					"healSurge":"",
 					"baseQuantity":"1",
 					"baseDiceType":"flat",
 					"detail":"",
 					"formula":"",
 					"critFormula":"",
-					"healFormula":""
+					"healFormula":"15"
 				},
 				"miss":{
 					"detail":"",
@@ -960,7 +960,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Force</b></p><p class=\"power-basics\"><b>Standard</b></p><p>Area</b> burst 1 within 10</p><p  class=\"power-basics\">+8 vs Reflex; 2d6+3 force damage, and the target is knocked prone. <b>Miss:</b>  Half damage, and the target is not knocked prone.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Force</strong></p><p><strong>Area burst</strong> 1 within 10; +8 vs Reflex; 2d6+3 force damage, and the target is knocked prone.</p><p><em>Miss:</em> Half damage, and the target is not knocked prone.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -1371,7 +1371,7 @@
 				"secondary":"standard",
 				"leader":true
 			},
-			"equipment":"fur cloak, leather armor , spear ."
+			"equipment":"fur cloak, leather armor, spear"
 		},
 		"languages":{
 			"spoken":{
