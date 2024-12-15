@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+10 vs AC; 1d10+5 damage, and the target is marked until the end of the orog scarred champion's next turn.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+10 vs AC; 1d10+5 damage, and the target is marked until the end of the orog scarred champion's next turn.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -36,8 +36,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -188,14 +188,14 @@
 			"_id":"GEPk3HZyTav5sQnw",
 			"name":"Winnowing Slash",
 			"type":"power",
-			"img":"modules/dnd-4e-compendium/icons/powers/simple_melee.png",
+			"img":"modules/dnd-4e-compendium/icons/powers/augment_melee_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p>Weapon</p><p><b>Standard</b></p><p class=\"power-basics\"><b>Trigger: </b> When first bloodied</p><p><b>Close</b> burst 1; +7 vs AC; 2d10+5 damage, and the target is pushed 1 square.</p>",
+					"value":"<p><strong>Standard, Recharge</strong> when first bloodied <strong>✦ Weapon</strong></p><p><em>Requires:</em> Greatsword</p><p><strong>Close burst</strong> 1; +7 vs AC; 2d10+5 damage, and the target is pushed 1 square.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -216,9 +216,9 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
-					"per":""
+					"value":1,
+					"max":"1",
+					"per":"charges"
 				},
 				"consume":{
 					"type":"",
@@ -284,7 +284,7 @@
 				"prepared":true,
 				"powerType":"inherent",
 				"powerSubtype":"",
-				"useType":"other",
+				"useType":"recharge",
 				"actionType":"standard",
 				"requirements":"",
 				"weaponType":"none",
@@ -295,7 +295,7 @@
 				"rangePower":null,
 				"area":null,
 				"rechargeRoll":"",
-				"rechargeCondition":null,
+				"rechargeCondition":"when first bloodied",
 				"damageShare":false,
 				"postEffect":false,
 				"postSpecial":false,
@@ -375,7 +375,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Fear</b></p><p class=\"power-basics\"><b>Minor, At-Will</b></p><p><b>Close</b> blast 5</p><p>One creature; the target becomes the object of the orog's scorn. The orog scarred champion's melee attacks deal an extra 1d10 damage to the target, and if the scarred champion reduces the target to 0 hit points, it regains 16 hit points.</p>",
+					"value":"<p><strong>Minor, At-Will ✦ Fear</strong></p><p><strong>Close blast</strong> 5; one creature; the target becomes the object of the orog's scorn. The orog scarred champion's melee attacks deal an extra 1d10 damage to the target, and if the scarred champion reduces the target to 0 hit points, it regains 16 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -396,8 +396,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -425,15 +425,15 @@
 				},
 				"hit":{
 					"shareDamageRoll":false,
-					"isDamage":false,
-					"isHealing":false,
+					"isDamage":true,
+					"isHealing":true,
 					"healSurge":"",
 					"baseQuantity":"1",
 					"baseDiceType":"d10",
 					"detail":"",
 					"formula":"@powBase",
 					"critFormula":"@powMax",
-					"healFormula":""
+					"healFormula":"16"
 				},
 				"miss":{
 					"detail":"",
@@ -786,7 +786,7 @@
 				"secondary":"standard",
 				"leader":false
 			},
-			"equipment":"greataxe , plate armor ."
+			"equipment":"greataxe, plate armor"
 		},
 		"languages":{
 			"spoken":{
