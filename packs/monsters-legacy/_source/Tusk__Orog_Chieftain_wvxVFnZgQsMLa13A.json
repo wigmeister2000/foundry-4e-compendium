@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Reach</b> 2</p><p  class=\"power-basics\">+12 vs AC; 2d4+7 damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p><strong>Reach</strong> 2; +12 vs AC; 2d4+7 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -36,8 +36,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -195,7 +195,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+12 vs AC; 2d4+7 damage, and Tusk can shift 1 and make a secondary attack.</p><p><b>Secondary Attack</b> +12 vs AC; 4d4+7 damage.</p>",
+					"value":"<p><strong>Standard, At-Will ✦ Weapon</strong></p><p><em>Requires:</em> Falchion</p><p>+12 vs AC; 2d4+7 damage, and Tusk can shift 1 and make a secondary attack.</p><p><em>Secondary Attack:</em> +12 vs AC; 4d4+7 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -216,8 +216,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -368,14 +368,14 @@
 			"_id":"TdE4gWqH59JMuh71",
 			"name":"Skull Harvest",
 			"type":"power",
-			"img":"modules/dnd-4e-compendium/icons/powers/will_melee_instant.png",
+			"img":"modules/dnd-4e-compendium/icons/powers/will_burst_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Close</b> burst 2; +12 vs Reflex; 2d4+7 damage.</p>",
+					"value":"<p><strong>Standard, At-Will ✦ Weapon</strong></p><p><strong>Close burst</strong> 2; +12 vs Reflex; 2d4+7 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -396,8 +396,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -555,7 +555,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Fear, Healing</b></p><p class=\"power-basics\"><b>Minor, At-Will</b></p><p><b>Close</b> blast 5</p><p>One creature; the target becomes the object of the orog's scorn. Tusk's melee attacks deal an extra 2d4 damage to the target, and if he reduces the target to 0 hit points, he heals 34 hit points. Tusk can designate only one target as the object of its scorn at a time.</p>",
+					"value":"<p><strong>Minor, At-Will ✦ Fear, Healing</strong></p><p><strong>Close blast</strong> 5; one creature; the target becomes the object of the orog's scorn. Tusk's melee attacks deal an extra 2d4 damage to the target, and if he reduces the target to 0 hit points, he heals 34 hit points. Tusk can designate only one target as the object of its scorn at a time.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -576,8 +576,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -605,15 +605,15 @@
 				},
 				"hit":{
 					"shareDamageRoll":false,
-					"isDamage":false,
-					"isHealing":false,
+					"isDamage":true,
+					"isHealing":true,
 					"healSurge":"",
 					"baseQuantity":"2",
 					"baseDiceType":"d4",
 					"detail":"",
 					"formula":"@powBase",
 					"critFormula":"@powMax",
-					"healFormula":""
+					"healFormula":"34"
 				},
 				"miss":{
 					"detail":"",
@@ -729,14 +729,14 @@
 			"_id":"6E93UXABVHfFiQRb",
 			"name":"Fearsome Leader",
 			"type":"power",
-			"img":"modules/dnd-4e-compendium/icons/powers/will_personal_instant.png",
+			"img":"modules/dnd-4e-compendium/icons/powers/will_ranged_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b></p><p class=\"power-basics\"><b>Minor, At-Will</b></p><p>Targets one orc or orog</p><p>The target gains a +2 bonus to its next attack roll before the end of Tusk's next turn.</p>",
+					"value":"<p><strong>Minor, At-Will</strong></p><p>Targets one orc or orog; the target gains a +2 bonus to its next attack roll before the end of Tusk's next turn.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -757,8 +757,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -1145,7 +1145,7 @@
 				"secondary":"elite",
 				"leader":false
 			},
-			"equipment":"falchion , plate armor ."
+			"equipment":"falchion, plate armor"
 		},
 		"languages":{
 			"spoken":{
