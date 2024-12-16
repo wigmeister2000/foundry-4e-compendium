@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+5 vs AC; 1d10+2 damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+5 vs AC; 1d10+2 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -36,8 +36,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -188,14 +188,14 @@
 			"_id":"xfJioFKXhc09V64I",
 			"name":"Warrior's Surge",
 			"type":"power",
-			"img":"modules/dnd-4e-compendium/icons/powers/encounter_melee_instant.png",
+			"img":"modules/dnd-4e-compendium/icons/powers/encounter_personal_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Healing, Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+6 vs ; 2d10+3 damage.. The orc bombardier makes a melee basic attack and regains 6 hit points.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Healing, Weapon</strong></p><p><em>Requires:</em> Bloodied</p><p>The orc bombardier makes a melee basic attack and regains 6 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -234,26 +234,26 @@
 				},
 				"attack":{
 					"shareAttackRoll":false,
-					"isAttack":true,
+					"isAttack":false,
 					"ability":"form",
 					"abilityBonus":"",
 					"def":"",
 					"defBonus":0,
-					"formula":"6",
+					"formula":"",
 					"damageType":{},
 					"effectType":{}
 				},
 				"hit":{
 					"shareDamageRoll":false,
 					"isDamage":false,
-					"isHealing":false,
+					"isHealing":true,
 					"healSurge":"",
-					"baseQuantity":"2",
-					"baseDiceType":"d10",
+					"baseQuantity":"1",
+					"baseDiceType":"flat",
 					"detail":"",
-					"formula":"@powBase + 3",
-					"critFormula":"@powMax + 3",
-					"healFormula":""
+					"formula":"",
+					"critFormula":"",
+					"healFormula":"6"
 				},
 				"miss":{
 					"detail":"",
@@ -376,7 +376,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Recharge</b> 4-6<b> ✦ </b><b>Fire</b></p><p class=\"power-basics\"><b>Standard</b></p><p>Area</b> burst 2 within 10</p><p  class=\"power-basics\">+4 vs Reflex; 1d8+3 fire damage, and ongoing 5 fire damage (save ends). On a crit, the orc bombadier knocks the target prone. <b>Miss:</b>  Half damage, and no ongoing damage.</p>",
+					"value":"<p><strong>Standard, Recharge</strong> 4-6 <strong>✦ Fire</strong></p><p><strong>Area burst</strong> 2 within 10; +4 vs Reflex; 1d8+3 fire damage, and ongoing 5 fire damage (save ends). On a crit, the orc bombadier knocks the target prone.</p><p><em>Miss:</em> Half damage, and no ongoing damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -549,14 +549,14 @@
 			"_id":"S1DeFmAjwQ72NMcd",
 			"name":"Detonation",
 			"type":"power",
-			"img":"modules/dnd-4e-compendium/icons/powers/encounter_melee_instant.png",
+			"img":"modules/dnd-4e-compendium/icons/powers/encounter_burst_instant.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Fire</b></p><p class=\"power-basics\">Trigger: </b> When reduced to 0 hit points, encounter</p><p>The orc bombadier must have at least one cinderbomb left; +4 vs Reflex; 1d8+3 fire damage, and ongoing 5 fire damage (save ends)(crit knock prone). <b>Miss:</b>  Half damage, and no ongoing damage.</p>",
+					"value":"<p><strong>No Action, Encounter ✦ Fire</strong></p><p><strong>Trigger:</strong> When reduced to 0 hit points</p><p><strong>Close burst</strong> 2; the orc bombadier must have at least one cinderbomb left; +4 vs Reflex; 1d8+3 fire damage, and ongoing 5 fire damage (save ends) (crit knock prone).</p><p><em>Miss:</em> Half damage, and no ongoing damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -650,11 +650,11 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"closeBurst",
 				"rangeTextShort":"",
 				"rangeText":"",
 				"rangePower":null,
-				"area":null,
+				"area":"2",
 				"rechargeRoll":"",
 				"rechargeCondition":null,
 				"damageShare":false,
@@ -967,7 +967,7 @@
 				"secondary":"standard",
 				"leader":false
 			},
-			"equipment":"3 cinderbombs, everburning torch, battleaxe ."
+			"equipment":"3 cinderbombs, everburning torch, battleaxe"
 		},
 		"languages":{
 			"spoken":{

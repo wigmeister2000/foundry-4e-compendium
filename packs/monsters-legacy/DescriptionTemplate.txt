@@ -1,0 +1,8 @@
+{{ if basic attack }}<p><em>Basic Attack</em></p>{{ end if }}
+<p><strong>{{ Action Type (e.g. Standard) }}, {{ Usage (e.g. At-Will) }}{{ if recharge }}</strong> {{ Recharge text }} <strong>{{ end if }}{{ if has keywords }}✦ {{ Keywords (e.g. Acid) }}{{ end if }}</strong></p>
+{{ if trigger }}<p><strong>Trigger:</strong> {{ Trigger text }}</p>{{ end if }}
+{{ if requires }}<p><em>Requires:</em> {{ Requires text }}</p>{{ end if }}
+<p>{{ if ranged }}<strong>{{ Ranged Type, e.g. Ranged }}</strong> {{ Range Numbers }}; {{ end if }}
+{{ Power one-liner if possible }}</p>
+{{ if miss }}<p><em>Miss:</em> {{ miss text }}</p>{{ end if }}
+{{ if secondary attack }}<p><em>Secondary Attack:</em> {{ secondary attack text }}</p>{{ end if }}

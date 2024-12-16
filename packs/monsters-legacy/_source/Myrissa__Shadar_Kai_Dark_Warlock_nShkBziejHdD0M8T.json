@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+6 vs AC; 1d4+2 damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+6 vs AC; 1d4+2 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -36,8 +36,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -195,7 +195,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Psychic</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Ranged</b> 10</p><p  class=\"power-basics\">+7 vs Will; 1d8+3 psychic damage, or 1d12+3 psychic damage against targets at full hit points.</p>",
+					"value":"<p><strong>Standard, At-Will ✦ Psychic</strong></p><p><strong>Ranged</strong> 10; +7 vs Will; 1d8+3 psychic damage, or 1d12+3 psychic damage against targets at full hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -216,8 +216,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -375,7 +375,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Necrotic</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Close</b> burst 20</p><p  class=\"power-basics\">+7 vs Fortitude; 2d8+3 necrotic damage; affects all creatures suffering from warlock's curse.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Necrotic</strong></p><p><strong>Close burst</strong> 20; +7 vs Fortitude; 2d8+3 necrotic damage; affects all creatures suffering from <em>warlock's curse</em>.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -555,7 +555,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b></p><p class=\"power-basics\"><b>Minor</b></p><p><b>Close</b> st enemy; Myrissa designates target as cursed. Her attacks deal an extra 1d6 damage. A target can have only one curse at a time.</p>",
+					"value":"<p><strong>Minor, At-Will, 1/Round</strong></p><p>Closest enemy; Myrissa designates target as cursed. Her attacks deal an extra 1d6 damage. A target can have only one curse at a time.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -576,9 +576,9 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
-					"per":""
+					"value":1,
+					"max":"1",
+					"per":"round"
 				},
 				"consume":{
 					"type":"",
@@ -605,7 +605,7 @@
 				},
 				"hit":{
 					"shareDamageRoll":false,
-					"isDamage":false,
+					"isDamage":true,
 					"isHealing":false,
 					"healSurge":"",
 					"baseQuantity":"1",
@@ -733,7 +733,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Necrotic, Psychic</b></p><p class=\"power-basics\"><b>Free</b></p><p>Whenever an enemy Myrissa has cursed is reduced to 0 hit points, she adds 1 point to her darkspiral aura. Once per round as a free action, when an enemy makes a melee or ranged attack against her, she can use her darkspiral aura to deal 1d6 necrotic and psychic damage per point in the aura and reset the aura to 0. If her aura deals at least 12 damage, she can reset the aura to 1 instead, but the attack deals half damage.</p>",
+					"value":"<p><strong>Free, At-Will ✦ Necrotic, Psychic</strong></p><p>Whenever an enemy Myrissa has cursed is reduced to 0 hit points, she adds 1 point to her darkspiral aura. Once per round as a free action, when an enemy makes a melee or ranged attack against her, she can use her darkspiral aura to deal 1d6 necrotic and psychic damage per point in the aura and reset the aura to 0. If her aura deals at least 12 damage, she can reset the aura to 1 instead, but the attack deals half damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -754,8 +754,8 @@
 					"units":""
 				},
 				"uses":{
-					"value":0,
-					"max":"0",
+					"value":null,
+					"max":"",
 					"per":""
 				},
 				"consume":{
@@ -783,11 +783,11 @@
 				},
 				"hit":{
 					"shareDamageRoll":false,
-					"isDamage":false,
+					"isDamage":true,
 					"isHealing":false,
 					"healSurge":"",
-					"baseQuantity":"1",
-					"baseDiceType":"d6",
+					"baseQuantity":"0",
+					"baseDiceType":"flat",
 					"detail":"",
 					"formula":"@powBase",
 					"critFormula":"@powMax",
@@ -914,7 +914,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Teleportation</b></p><p class=\"power-basics\"><b>Move</b></p><p>Myrissa teleports 3 squares and becomes insubstantial until the start of her next turn.</p>",
+					"value":"<p><strong>Move, Encounter ✦ Teleportation</strong></p><p>Myrissa teleports 3 squares and becomes insubstantial until the start of her next turn.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -1325,7 +1325,7 @@
 				"secondary":"elite",
 				"leader":false
 			},
-			"equipment":"dagger , leather armor , rod implement ."
+			"equipment":"dagger, leather armor, rod implement"
 		},
 		"languages":{
 			"spoken":{
