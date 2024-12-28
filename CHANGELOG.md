@@ -1,5 +1,15 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.2
+- Fix Lay on Hands uses
+- Fix Crownring of Tchazzar Attack power
+- Fix Dragonborn fury condition on monsters
+- Fix Wand of Accuracy action type
+- Fix use data for at-will powers
+- Fix secondary damage for some monsters
+- Fix some monster formatting
+- Merge [PR#1](https://github.com/wigmeister2000/foundry-4e-compendium/pull/1) from NightB1ade
+
 ## Foundry 4e Compendium v1.35.1
 - Added macro for updating existing actors and powers in compendia
 
