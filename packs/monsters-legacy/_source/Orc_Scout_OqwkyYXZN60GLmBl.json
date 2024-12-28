@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+8 vs AC; 1d8+3 damage (crit +1d8).</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+8 vs AC; 1d8+3 damage (crit 1d8+11).</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -72,7 +72,7 @@
 					"baseDiceType":"d8",
 					"detail":"",
 					"formula":"@powBase + 3",
-					"critFormula":"+1d8",
+					"critFormula":"@powMax + 3 + 1d8",
 					"healFormula":""
 				},
 				"miss":{
@@ -195,7 +195,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Ranged</b> 20/40</p><p  class=\"power-basics\">+7 vs AC; 1d10+2 damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p><strong>Ranged</strong> 20/40; +7 vs AC; 1d10+2 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -375,7 +375,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Healing, Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p>The orc scout makes a melee basic attack and regains 11 hit points.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Healing, Weapon</strong></p><p><em>Requires:</em> Bloodied</p><p>The orc scout makes a melee basic attack and regains 11 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -426,14 +426,14 @@
 				"hit":{
 					"shareDamageRoll":false,
 					"isDamage":false,
-					"isHealing":false,
+					"isHealing":true,
 					"healSurge":"",
 					"baseQuantity":"1",
 					"baseDiceType":"flat",
 					"detail":"",
 					"formula":"",
 					"critFormula":"",
-					"healFormula":""
+					"healFormula":"11"
 				},
 				"miss":{
 					"detail":"",
@@ -556,7 +556,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b></p><p class=\"power-basics\"><b>Immediate Reaction</b></p><p class=\"power-basics\"><b>Trigger: </b> When the orc scout drops an enemy with a ranged attack</p><p>The orc scout draws its scimitar and charges the closest enemy.</p>",
+					"value":"<p><strong>Immediate Reaction, Encounter</strong></p><p><strong>Trigger:</strong> When the orc scout drops an enemy with a ranged attack</p><p>The orc scout draws its scimitar and charges the closest enemy.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -965,7 +965,7 @@
 				"secondary":"standard",
 				"leader":false
 			},
-			"equipment":"arrow x20, leather armor , longbow , scimitar ."
+			"equipment":"arrow x20, leather armor, longbow, scimitar"
 		},
 		"languages":{
 			"spoken":{

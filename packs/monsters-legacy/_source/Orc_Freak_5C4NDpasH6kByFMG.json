@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+6 vs AC; 1d10+3 damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+6 vs AC; 1d10+3 damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -195,7 +195,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p>Make two attacks; +6 vs AC; 1d10+3 damage per attack. If both attacks hit the same target, the target also takes ongoing 5 damage (save ends).</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Weapon</strong></p><p>Make two attacks; +6 vs AC; 1d10+3 damage per attack. If both attacks hit the same target, the target also takes ongoing 5 damage (save ends).</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -375,7 +375,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Healing, Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p>The orc freak makes a melee basic attack and regains 9 hit points.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Healing, Weapon</strong></p><p><em>Requires:</em> Bloodied</p><p>The orc freak makes a melee basic attack and regains 9 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -426,14 +426,14 @@
 				"hit":{
 					"shareDamageRoll":false,
 					"isDamage":false,
-					"isHealing":false,
+					"isHealing":true,
 					"healSurge":"",
 					"baseQuantity":"1",
 					"baseDiceType":"flat",
 					"detail":"",
 					"formula":"",
 					"critFormula":"",
-					"healFormula":""
+					"healFormula":"9"
 				},
 				"miss":{
 					"detail":"",
@@ -787,7 +787,7 @@
 				"secondary":"standard",
 				"leader":false
 			},
-			"equipment":"battleaxe x2, hide armor ."
+			"equipment":"battleaxe x2, hide armor"
 		},
 		"languages":{
 			"spoken":{

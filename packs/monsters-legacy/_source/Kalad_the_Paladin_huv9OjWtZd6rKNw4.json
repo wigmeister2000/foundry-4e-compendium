@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+8 vs AC; 1d12+3 damage,(crit 1d12+18), and the target is marked until the end of Kalad's next turn. if the target moves or makes an attack that does not include Kalad as the target, the target takes 5 radiant damage.</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+8 vs AC; 1d12+3 damage (crit 1d12+18), and the target is marked until the end of Kalad's next turn. If the target moves or makes an attack that does not include Kalad as the target, the target takes 5 radiant damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -72,7 +72,7 @@
 					"baseDiceType":"d12",
 					"detail":"",
 					"formula":"@powBase + 3",
-					"critFormula":"@powMax + 3",
+					"critFormula":"1d12 + 15",
 					"healFormula":""
 				},
 				"miss":{
@@ -195,7 +195,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p>One or two creatures; One or two creatures; +8 vs AC; 1d6+4 damage.. +8 vs. Armor Class, one attack per target; 1d12 + 3 damage (crit 1d12 + 18) damage, and the target is marked until end of Kalad's next turn.</p>",
+					"value":"<p><strong>Standard, At-Will ✦ Weapon</strong></p><p>One or two creatures; +8 vs AC, one attack per target; 1d12+3 damage (crit 1d12+18) damage, and the target is marked until end of Kalad's next turn.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -249,9 +249,9 @@
 					"isHealing":false,
 					"healSurge":"",
 					"baseQuantity":"1",
-					"baseDiceType":"d6",
+					"baseDiceType":"d12",
 					"detail":"",
-					"formula":"@powBase + 4",
+					"formula":"@powBase + 5",
 					"critFormula":"1d12 + 18",
 					"healFormula":""
 				},
@@ -375,7 +375,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Radiant, Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+8 vs AC; 1d12+3 damage (crit 1d12+18) radiant damage, and if Kalad marked the target, he deals an extra 2 radiant damage.</p>",
+					"value":"<p><strong>Standard, At-Will ✦ Radiant, Weapon</strong></p><p>+8 vs AC; 1d12+3 damage (crit 1d12+18) radiant damage, and if Kalad marked the target, he deals an extra 2 radiant damage.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -499,10 +499,10 @@
 					"force":false,
 					"lightning":false,
 					"necrotic":false,
-					"physical":true,
+					"physical":false,
 					"poison":false,
 					"psychic":false,
-					"radiant":false,
+					"radiant":true,
 					"thunder":false
 				},
 				"effectHTML":false,
@@ -556,7 +556,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Daily</b><b> ✦ </b><b>Zone</b></p><p class=\"power-basics\"><b>Standard</b></p><p><b>Close</b> burst 3</p><p>The burst creates a zone that, until the end of the encounter, gives Kalad and allies within it a +1 power bonus to AC.</p>",
+					"value":"<p><strong>Standard, Daily ✦ Zone</strong></p><p><strong>Close burst</strong> 3; the burst creates a zone that, until the end of the encounter, gives Kalad and allies within it a +1 power bonus to AC.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -736,7 +736,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b></p><p class=\"power-basics\"><b>Minor</b></p><p>Kalad applies his Strength modifier as extra damage on his next attack this turn.</p>",
+					"value":"<p><strong>Minor, Encounter</strong></p><p>Kalad applies his Strength modifier as extra damage on his next attack this turn.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -1191,7 +1191,7 @@
 				"secondary":"elite",
 				"leader":false
 			},
-			"equipment":"greataxe , plate armor ."
+			"equipment":"greataxe, plate armor"
 		},
 		"languages":{
 			"spoken":{

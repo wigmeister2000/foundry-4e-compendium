@@ -15,7 +15,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p><i>Basic Attack</i></p><p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p  class=\"power-basics\">+8 vs AC; 1d12+5 damage (crit 1d12+17).</p>",
+					"value":"<p><em>Basic Attack</em></p><p><strong>Standard, At-Will ✦ Weapon</strong></p><p>+8 vs AC; 1d12+5 damage (crit 1d12+17).</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -195,7 +195,7 @@
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>Encounter</b><b> ✦ </b><b>Healing, Weapon</b></p><p class=\"power-basics\"><b>Standard</b></p><p>The orc berserker makes a melee basic attack, spends a healing surge, and regains 16 hit points.</p>",
+					"value":"<p><strong>Standard, Encounter ✦ Healing, Weapon</strong></p><p><em>Requires:</em> Bloodied</p><p>The orc berserker makes a melee basic attack, spends a healing surge, and regains 16 hit points.</p>",
 					"chat":"",
 					"unidentified":""
 				},
@@ -246,14 +246,14 @@
 				"hit":{
 					"shareDamageRoll":false,
 					"isDamage":false,
-					"isHealing":false,
+					"isHealing":true,
 					"healSurge":"1",
 					"baseQuantity":"1",
 					"baseDiceType":"flat",
 					"detail":"",
 					"formula":"",
 					"critFormula":"",
-					"healFormula":""
+					"healFormula":"16"
 				},
 				"miss":{
 					"detail":"",
@@ -607,7 +607,7 @@
 				"secondary":"standard",
 				"leader":false
 			},
-			"equipment":"greataxe , leather armor ."
+			"equipment":"greataxe, leather armor"
 		},
 		"languages":{
 			"spoken":{
