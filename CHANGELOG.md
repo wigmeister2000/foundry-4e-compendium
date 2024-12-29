@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.4
+- Organized traps by level
+
 ## Foundry 4e Compendium v1.35.3
 - Update v0.4 powers macro fixes at-will uses
 - Fixed Kobold Slinger
