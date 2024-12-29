@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.3
+- Update v0.4 powers macro fixes at-will uses
+- Fixed Kobold Slinger
+
 ## Foundry 4e Compendium v1.35.2
 - Fix Lay on Hands uses
 - Fix Crownring of Tchazzar Attack power
