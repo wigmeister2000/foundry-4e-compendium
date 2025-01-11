@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.5
+- Added option for chat messages: resource point change
+- Small fixes for some monsters
+
 ## Foundry 4e Compendium v1.35.4
 - Organized traps by level
 
