@@ -10,9 +10,12 @@
 			"img":"icons/svg/mystery-man.svg",
 			"system":{
 				"description":{
-					"value":"<p><b>Terrain</b></p>",
+					"value":"<p class=\"flavour\"><em>The chamber swirls with dust, as though no one has disturbed the place in a long, long time.</em></p><p><strong>Hazard:</strong> When a creature casts a spell or carries a magic item into an ancient, dusty room, it triggers a temporary unweaving of the strands of time. Although reality reasserts itself a few moments later, the damage to the psyches of those who have glimpsed beyond time takes longer to heal. The dust typically covers 10 contiguous squares in a room.</p>",
 					"chat":"",
 					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
 				},
 				"source":"",
 				"activation":{
@@ -50,7 +53,8 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"requirements":"",
 				"level":"",
@@ -63,18 +67,21 @@
 			"folder":null,
 			"sort":0,
 			"flags":{},
-			"_id":"2QoPLIHcMtirvxyU",
-			"_key":"!actors.items!XHmRgUqrdj3i6Y1h.2QoPLIHcMtirvxyU"
+			"_id":"rMGpmImweKh49XWC",
+			"_key":"!actors.items!5cwRsKF48Q1CUuDZ.rMGpmImweKh49XWC"
 		},
 		{
-			"name":"Detect",
-			"type":"raceFeats",
-			"img":"icons/svg/eye.svg",
+			"name":"Checks & Triggers",
+			"type":"feat",
+			"img":"icons/svg/trap.svg",
 			"system":{
 				"description":{
-					"value":"<p>Perception DC 36</p>",
+					"value":"<p><strong>Perception</strong><br></p><ul><li><p>DC 36: The character notices that the swirling dust appears to glow with a faint luminescence.</p></li></ul><p><strong>Additional Skill:</strong> Arcana</p><ul><li><p>DC 32: The character notices and identifi es the telltale dust glow that often presages entropic collapses.</p></li></ul><p></p><p><strong>Trigger</strong><br>When a character carrying a magic item enters a square that contains the dust, or when a character in a square that contains the dust casts a spell, the hazard attacks.</p>",
 					"chat":"",
 					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
 				},
 				"source":"",
 				"activation":{
@@ -112,10 +119,11 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"requirements":"",
-				"level":"",
+				"level":null,
 				"recharge":{
 					"value":null,
 					"charged":false
@@ -125,23 +133,26 @@
 			"folder":null,
 			"sort":0,
 			"flags":{},
-			"_id":"5VK1x9LnI2ptJbNB",
-			"_key":"!actors.items!XHmRgUqrdj3i6Y1h.5VK1x9LnI2ptJbNB"
+			"_id":"8xPYt6oMn5ec7tU0",
+			"_key":"!actors.items!5cwRsKF48Q1CUuDZ.8xPYt6oMn5ec7tU0"
 		},
 		{
-			"_id":"R0JG4CjFQOHEP6K8",
+			"_id":"SGdwx634KPR5lBMp",
 			"name":"Attack",
 			"type":"power",
-			"img":"modules/dnd-4e-compendium/icons/powers/will_burst_instant.png",
+			"img":"modules/dnd-4e-compendium/icons/powers/simple_burst.png",
 			"effects":[],
 			"folder":null,
 			"sort":0,
 			"flags":{},
 			"system":{
 				"description":{
-					"value":"<p class=\"power-basics\"><b>At-Will</b><b> ✦ </b><b>psychic</b></p><p class=\"power-basics\"><b>Opportunity Action</b></p><p><b>Close</b> burst 5 (creatures in burst)</p><p class=\"power-basics\"><b>Trigger : </b> A creature carrying a magic item enters a square of the hazard's area, or a creature in the area uses an arcane power.</p><p class=\"power-basics\"><b>Attack : </b>+29 vs. Will</p><p><b>Hit : </b> 2d6 + 6 psychic damage.</p><p><b>Miss : </b> Half damage.</p><p><b>Effect : </b> Each target is dazed (save ends).</p><p><b>Special : </b> Immortals, animates, and undead are immune to this hazard.</p>",
+					"value":"<p><strong>Opportunity Action</strong></p><p><strong>Close</strong> burst 5</p><p><strong>Targets:</strong> All creatures in burst</p><p><strong>Attack:</strong> +29 vs. Will</p><p><strong>Hit:</strong> 5d10 + 14 psychic damage and dazed (save ends).</p><p><strong>Miss:</strong> Half damage and dazed (save ends).</p><p><strong>Special:</strong> Immortals, animates, and undead are immune to the effects of an entropic collapse.</p>",
 					"chat":"",
 					"unidentified":""
+				},
+				"descriptionGM":{
+					"value":""
 				},
 				"source":"",
 				"activation":{
@@ -160,9 +171,9 @@
 					"units":""
 				},
 				"uses":{
-					"value":"",
+					"value":null,
 					"max":"",
-					"per":null
+					"per":""
 				},
 				"consume":{
 					"type":"",
@@ -174,11 +185,13 @@
 					"scope":"global",
 					"launchOrder":"off",
 					"command":"",
-					"author":""
+					"author":"",
+					"autoanimationHook":""
 				},
 				"attack":{
 					"shareAttackRoll":false,
 					"isAttack":true,
+					"isBasic":false,
 					"ability":"form",
 					"abilityBonus":"",
 					"def":"wil",
@@ -191,12 +204,12 @@
 					"shareDamageRoll":false,
 					"isDamage":true,
 					"isHealing":false,
-					"healSurge":"",
-					"baseQuantity":"2",
-					"baseDiceType":"d6",
+					"healSurge":"1",
+					"baseQuantity":"5",
+					"baseDiceType":"d10",
 					"detail":"",
-					"formula":"@powBase + 6",
-					"critFormula":"@powMax + 6",
+					"formula":"@powBase + 14",
+					"critFormula":"@powMax + 14",
 					"healFormula":""
 				},
 				"miss":{
@@ -218,17 +231,15 @@
 				"damageCritImp":{
 					"parts":[]
 				},
-				"keyWords":[
-					"psychic"
-				],
+				"keyWords":[],
 				"level":"",
 				"powersource":"",
 				"secondPowersource":"",
-				"subName":null,
+				"subName":"",
 				"prepared":true,
 				"powerType":"inherent",
-				"powerSubtype":"",
-				"useType":"atwill",
+				"powerSubtype":"attack",
+				"useType":"other",
 				"actionType":"opportunity",
 				"requirements":"",
 				"weaponType":"none",
@@ -237,7 +248,7 @@
 				"rangeTextShort":"",
 				"rangeText":"",
 				"rangePower":null,
-				"area":5,
+				"area":"5",
 				"rechargeRoll":"",
 				"rechargeCondition":null,
 				"damageShare":false,
@@ -302,11 +313,12 @@
 					"necro":false,
 					"nether":false,
 					"runic":false,
-					"transmutation":false
+					"transmutation":false,
+					"shadow":false
 				},
 				"chatFlavor":""
 			},
-			"_key":"!actors.items!XHmRgUqrdj3i6Y1h.R0JG4CjFQOHEP6K8"
+			"_key":"!actors.items!5cwRsKF48Q1CUuDZ.SGdwx634KPR5lBMp"
 		}
 	],
 	"effects":[],
