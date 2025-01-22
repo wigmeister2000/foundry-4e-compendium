@@ -824,10 +824,6 @@ async function lookupItems(compendium, names, nameLookup, matchType = "partial",
     return items;
 }
 
-
-
-
-
 // Rename an item
 function renameItem(item, name) {
     item["name"] = name;
