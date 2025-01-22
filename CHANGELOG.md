@@ -1,6 +1,9 @@
 # Changelog
 
 ## Foundry 4e Compendium v1.35.6
+- Merge [PR#2](https://github.com/wigmeister2000/foundry-4e-compendium/pull/2) from mbutler
+
+## Foundry 4e Compendium v1.35.6
 - Fixed instrument implements
 
 ## Foundry 4e Compendium v1.35.5
