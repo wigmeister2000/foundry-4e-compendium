@@ -1,6 +1,9 @@
 # Changelog
 
-## Foundry 4e Compendium v1.35.6
+## Foundry 4e Compendium v1.35.8
+- Fixed variable resistance
+
+## Foundry 4e Compendium v1.35.7
 - Merge [PR#2](https://github.com/wigmeister2000/foundry-4e-compendium/pull/2) from mbutler
 
 ## Foundry 4e Compendium v1.35.6
