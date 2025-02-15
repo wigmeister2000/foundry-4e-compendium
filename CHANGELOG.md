@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.9
+- Fixed basic attack flags
+
 ## Foundry 4e Compendium v1.35.8
 - Fixed variable resistance
 
