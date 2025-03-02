@@ -88,19 +88,20 @@ export async function createResourceChangeMessage(actor, change, options, userId
             let diffResource2 = 0;
             let diffResource3 = 0;
 
-            switch (true) {
-                case change.system?.resources?.hasOwnProperty("primary"):
-                    const newResource1 = change.system.resources.primary.value;
-                    const oldResource1 = actor.system.resources.primary.value;
-                    diffResource1 = newResource1 - oldResource1;
-                case change.system?.resources?.hasOwnProperty("secondary"):
-                    const newResource2 = change.system.resources.secondary.value;
-                    const oldResource2 = actor.system.resources.secondary.value;
-                    diffResource2 = newResource2 - oldResource2;
-                case change.system?.resources?.hasOwnProperty("tertiary"):
-                    const newResource3 = change.system.resources.tertiary.value;
-                    const oldResource3 = actor.system.resources.tertiary.value;
-                    diffResource3 = newResource3 - oldResource3;
+            if (change.system?.resources?.hasOwnProperty("primary")) {
+                const newResource1 = change.system.resources.primary.value;
+                const oldResource1 = actor.system.resources.primary.value;
+                diffResource1 = newResource1 - oldResource1;
+            }
+            if (change.system?.resources?.hasOwnProperty("secondary")) {
+                const newResource2 = change.system.resources.secondary.value;
+                const oldResource2 = actor.system.resources.secondary.value;
+                diffResource2 = newResource2 - oldResource2;
+            }
+            if (change.system?.resources?.hasOwnProperty("tertiary")) {
+                const newResource3 = change.system.resources.tertiary.value;
+                const oldResource3 = actor.system.resources.tertiary.value;
+                diffResource3 = newResource3 - oldResource3;
             }
 
 
@@ -115,7 +116,7 @@ export async function createResourceChangeMessage(actor, change, options, userId
             else if (diffResource1 < 0) {
                 message += `<p>-${Math.abs(diffResource1)} ` + label1 + " point(s)</p>";
             }
-            
+
             if (diffResource2 > 0) {
                 message += `<p>+${diffResource2} ` + label2 + " point(s)</p>";
             }
