@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.11
+- Fixed resistance rescaling
+
 ## Foundry 4e Compendium v1.35.10
 - Fixed resource point use messages
 
