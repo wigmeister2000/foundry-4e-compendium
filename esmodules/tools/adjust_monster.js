@@ -951,19 +951,22 @@ async function adjustResistances(monster, level) {
     const scalingFunction = lookup.scalingFunctions[role].resistance;
     const newResistances = monster.system.resistances;
 
-    /* Look through all resistances */
+    /* Loop through all resistances */
     for (const key in newResistances) {
-        if (newResistances[key].res > 0) {
-            const res = newResistances[key].res;
+        if (newResistances[key].bonus.length > 0 & Number(newResistances[key].bonus[0].value) > 0) { // Vulnerabilities don't seem to scale with level. Ignore.
+            console.log(key)
+            const res = Number(newResistances[key].bonus[0].value);
 
-            if (res > 0) { // Vulnerabilities don't seem to scale with level. Ignore.
-                const offsetFactor = res / scalingFunction(monster.system.details.level);
-                const targetResistance = Math.round(offsetFactor * scalingFunction(level));
-                if (divisibleQ(res, 5)) { // Check if resistance is on 5 increment scale
-                    newResistances[key].res = (5 * Math.round(targetResistance / 5));
-                } else {
-                    newResistances[key].res = targetResistance;
-                }
+            // Reset derived values
+            newResistances[key].res = 0;
+            newResistances[key].vuln = 0;
+
+            const offsetFactor = res / scalingFunction(monster.system.details.level);
+            const targetResistance = Math.round(offsetFactor * scalingFunction(level));
+            if (divisibleQ(res, 5)) { // Check if resistance is on 5 increment scale
+                newResistances[key].bonus[0].value = String((5 * Math.round(targetResistance / 5)));
+            } else {
+                newResistances[key].bonus[0].value = String(targetResistance);
             }
         }
     }
