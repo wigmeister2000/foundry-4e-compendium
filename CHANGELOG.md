@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.12
+- Use Melee 1 for legacy monster powers without explicit range type
+
 ## Foundry 4e Compendium v1.35.11
 - Fixed resistance rescaling
 
