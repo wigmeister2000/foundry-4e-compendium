@@ -1,6 +1,9 @@
 # Changelog
 
 ## Foundry 4e Compendium v1.35.12
+- Merge [PR#4](https://github.com/wigmeister2000/foundry-4e-compendium/pull/4) from mbutler
+
+## Foundry 4e Compendium v1.35.12
 - Use Melee 1 for legacy monster powers without explicit range type
 
 ## Foundry 4e Compendium v1.35.11
