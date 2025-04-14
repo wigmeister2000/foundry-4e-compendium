@@ -510,7 +510,7 @@ function getLoot(doc) {
 
     doc.querySelectorAll("LootTally > loot").forEach(
         x => {
-            if (x.getAttribute("count") === "1") {
+            if (x.getAttribute("count") !== "0") {
                 elements.push(getLootComponents(x))
             }
         }
