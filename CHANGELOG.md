@@ -1,6 +1,9 @@
 # Changelog
 
-## Foundry 4e Compendium v1.35.12
+## Foundry 4e Compendium v1.35.14
+- v0.6 data model updates
+
+## Foundry 4e Compendium v1.35.13
 - Merge [PR#4](https://github.com/wigmeister2000/foundry-4e-compendium/pull/4) from mbutler
 
 ## Foundry 4e Compendium v1.35.12
