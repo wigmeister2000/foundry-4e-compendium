@@ -1,0 +1,13 @@
+{
+	"name":"Update NPC initiative to v0.6 (Compendium)",
+	"type":"script",
+	"command":"// This macro loops through all 4e compendium NPCs in a compendium folder and updates their initiative to the v0.6 data model. The compendium must ONLY contain NPCs from before the update.\n///////////////////////////////////////////\n// BACKUP YOUR WORLD/MODULE BEFORE RUNNING THIS!!!\n///////////////////////////////////////////\n\nconst compendiumName = \"Enter your compendium name here\";\n\nconst compendium = game.packs.find(x => x.metadata.label === compendiumName);\n\nasync function fixInitiative(actor){\n    const base = Math.floor(actor.system.details.level / 2) + actor.system.attributes.init.bonus[0].value;\n    await actor.update({\n        \"system.attributes.init.base\": base,\n        \"system.attributes.init.-=bonus\": null\n        });\n}\n\nasync function fixCompendium(){\n    \n    if ([\"Actor\"].includes(compendium.documentName)){\n        \n        const wasLocked = compendium.locked;\n        await compendium.configure({locked: false});\n        await compendium.migrate();\n        const documents = await compendium.getDocuments();\n        \n        for (const doc of documents){\n            await fixInitiative(doc);\n        }\n        \n        await compendium.configure({locked: wasLocked});        \n    }\n};\n\nnew Dialog({\n  title: \"Update v0.6 NPC initiative\",\n  content: \"BACKUP YOUR WORLD/MODULE BEFORE RUNNING THIS!\",\n  buttons: {\n    yes: {\n      label: \"Run\",\n      callback: fixCompendium\n    },\n    close: {\n      label: \"Cancel\"\n    },\n  },\n  default: \"close\",\n  close: () => {}\n}).render(true);",
+	"img":"icons/svg/dice-target.svg",
+	"author":"LQXSXklgUOv6OUGK",
+	"scope":"global",
+	"folder":null,
+	"flags":{},
+	"_id":"hE5hhwRtBjlv7EuW",
+	"sort":0,
+	"_key":"!macros!hE5hhwRtBjlv7EuW"
+}
