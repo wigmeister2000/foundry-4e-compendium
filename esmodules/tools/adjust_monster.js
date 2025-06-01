@@ -466,6 +466,7 @@ async function adjustActor(actor, level, legacy = false, copy = false, copyName 
         await adjustHP(monster, level, legacy);
         await adjustXP(monster, level);
         await adjustDefences(monster, level, legacy);
+        await adjustInitiative(monster, level, legacy);
         await adjustAbilities(monster, level);
         await adjustPerception(monster, level);
         await adjustPowers(monster, level, legacy);
@@ -606,13 +607,11 @@ async function adjustInitiative(monster, level, legacy = false) {
     const scalingFunction = lookup.scalingFunctions[role].init;
     const referenceFunction = legacy ? lookup.scalingFunctions[role].initLegacy : scalingFunction;
 
-    const offset = monster.system.attributes.init.bonus[0].value - referenceFunction(monster.system.details.level);
-    const newInit = Math.max(Math.round(scalingFunction(level) + offset), 1);
-    const bonus = monster.system.attributes.init.bonus;
-    bonus[0].value = newInit;
+    const offset = monster.system.attributes.init.base - referenceFunction(monster.system.details.level);
+    const newInit = Math.max(Math.round(scalingFunction(level) + offset), 0);
 
     await monster.update({
-        "system.attributes.init.bonus": bonus
+        "system.attributes.init.base": newInit
     });
 }
 
