@@ -1054,20 +1054,22 @@ async function addMonsterKnowledge(actor) {
 
     // Powers and Traits
     const powers = actor.items.contents.filter(x => x.type === "power").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
-    const traits = actor.items.contents.filter(x => x.type === "classFeats").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
+    const traits = actor.items.contents.filter(x => x.type === "feats").filter(x => x.featureType === "class").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
     descriptionHard.push("<h2>Traits</h2>" + traits.join(""));
     descriptionHard.push("<h2>Powers</h2>" + powers.join(""));
 
     const moderate = {
         "name": `Monster Knowledge (DC ${dcModerate})`,
-        "type": "destinyFeats",
+        "type": "feature",
+        "featureType": "destiny",
         "img": "icons/svg/book.svg",
         "system.description.value": descriptionModerate.join("")
     };
 
     const hard = {
         "name": `Monster Knowledge (DC ${dcHard})`,
-        "type": "destinyFeats",
+        "type": "feature",
+        "featureType": "destiny",
         "img": "icons/svg/book.svg",
         "system.description.value": descriptionHard.join("")
     };
