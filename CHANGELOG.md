@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.16
+- Updated monster knowledge tool
+
 ## Foundry 4e Compendium v1.35.15
 - Monster initiative updates to v0.6 data model
 
