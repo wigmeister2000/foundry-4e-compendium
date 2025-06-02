@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -766,23 +767,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 154; <b>Bloodied</b> 77</td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30 (34 against opportunity attacks)</td><td><b>Fort</b> 27</td><td><b>Ref</b> 30</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 12, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+13)<br><b>Con</b> 18 (+12)</td><td><b>Dex</b> 26 (+16)<br><b>Int</b> 17 (+11)</td><td><b>Wis</b> 20 (+13)<br><b>Cha</b> 13 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +21, Bluff +14, Stealth +21</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> short sword  x2.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage.&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage.&lt;/p&gt;]] <12>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blademaster Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The blademaster moves its speed. At any point during its move, the blademaster uses short sword twice. The blademaster cannot use this power while it is immobilized or slowed.&lt;/p&gt;]] ⚔ <b>Blademaster Strike</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The blademaster moves its speed. At any point during its move, the blademaster uses short sword twice. The blademaster cannot use this power while it is immobilized or slowed.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Strike&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The blademaster shifts 10 squares. If the blademaster ends the shift adjacent to a creature against which it has combat advantage, it can use short sword against that creature.&lt;/p&gt;]]  <b>Fey Strike</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The blademaster shifts 10 squares. If the blademaster ends the shift adjacent to a creature against which it has combat advantage, it can use short sword against that creature.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Maintain Mobility&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; An immobilized blademaster is no longer immobilized.&lt;/p&gt;]]  <b>Maintain Mobility</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> An immobilized blademaster is no longer immobilized.</p></tr></td></table>",

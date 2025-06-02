@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Static Storm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"x3ZRpXEtJWBoUfOz",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 44; <b>Bloodied</b> 22<hr><b>Resist</b> 5 variable (1/encounter) <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 15</td><td><b>Ref</b> 17</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 3, fly 3 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+4)<br><b>Con</b> 14 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 7 (0)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 15 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Static Storm&lt;/b&gt; (Lightning, Thunder) aura 2; each enemy that ends its turn within the aura takes 3 lightning and thunder damage. An immobilized enemy instead takes 5 lightning and thunder damage.]] <b>Static Storm</b> (Lightning, Thunder) aura 2; each enemy that ends its turn within the aura takes 3 lightning and thunder damage. An immobilized enemy instead takes 5 lightning and thunder damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Thunder Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs Fortitude; 1d6+4 thunder damage, and if the target is bloodied it is knocked prone. &lt;/p&gt;]] (⚔) <b>Thunder Strike</b> (standard, at-will) ✦ <b>Thunder</b></p><p>[[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Thunder Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs Fortitude&lt;/u&gt;; 1d6+4 thunder damage, and if the target is bloodied it is knocked prone. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Thunder Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs Fortitude; 1d6+4 thunder damage, and if the target is bloodied it is knocked prone. &lt;/p&gt;]] <7.5>  thunder damage, and if the target is bloodied it is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shock Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Fortitude; 1d6+4 lightning damage, and if the target does not end its next turn at least 4 squares from where it started its turn, it takes 3d6+6 lightning damage. &lt;/p&gt;]] ➶ <b>Shock Bolt</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Ranged 10; [[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shock Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+9 vs Fortitude&lt;/u&gt;; 1d6+4 lightning damage, and if the target does not end its next turn at least 4 squares from where it started its turn, it takes 3d6+6 lightning damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shock Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Fortitude; 1d6+4 lightning damage, and if the target does not end its next turn at least 4 squares from where it started its turn, it takes 3d6+6 lightning damage. &lt;/p&gt;]] <7.5>  lightning damage, and if the target does not end its next turn at least 4 squares from where it started its turn, it takes [[/roll 3d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shock Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Fortitude; 1d6+4 lightning damage, and if the target does not end its next turn at least 4 squares from where it started its turn, it takes 3d6+6 lightning damage. &lt;/p&gt;]] <16.5>  lightning damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Storm Shatter&lt;/b&gt; ( when the storm shard drops to 0 hit points, ) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +9 vs Fortitude; 2d6 lightning and thunder damage, and the target is pushed 3 squares and deafened (save ends). &lt;/p&gt;]] ᗕ <b>Storm Shatter</b> ( when the storm shard drops to 0 hit points, ) ✦ <b>Lightning, Thunder</b></p><p>Close burst 3; [[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Storm Shatter&lt;/b&gt; ( when the storm shard drops to 0 hit points, ) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+9 vs Fortitude&lt;/u&gt;; 2d6 lightning and thunder damage, and the target is pushed 3 squares and deafened (save ends). &lt;/p&gt;]]; [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Storm Shatter&lt;/b&gt; ( when the storm shard drops to 0 hit points, ) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +9 vs Fortitude; 2d6 lightning and thunder damage, and the target is pushed 3 squares and deafened (save ends). &lt;/p&gt;]] <7> lightning and thunder damage, and the target is pushed 3 squares and deafened (save ends). </p></tr></td></table>",

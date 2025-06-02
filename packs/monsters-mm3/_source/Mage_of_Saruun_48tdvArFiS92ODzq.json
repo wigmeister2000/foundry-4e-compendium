@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -776,23 +778,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 116; <b>Bloodied</b> 58</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 22</td><td><b>Ref</b> 27</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+6)<br><b>Con</b> 12 (+7)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 22 (+12)</td><td><b>Wis</b> 17 (+9)<br><b>Cha</b> 12 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Dwarven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +17</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> quarterstaff .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mage can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage.&lt;/p&gt;]] <12>  damage.</p><p><i>Effect:</i> The mage can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Empowered Magic Missile&lt;/b&gt; (force, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ranged 10 (one creature). The target takes 10 force damage, and the mage pushes the target up to 2 squares.&lt;/p&gt;]] (➶) <b>Empowered Magic Missile</b> (force, implement) ✦ <b>At-Will</b></p><p><i>Effect:</i> Ranged 10 (one creature). The target takes 10 force damage, and the mage pushes the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Noxious Shroud&lt;/b&gt; (implement, poison, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 6 poison damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The blast creates a zone that lasts until the end of the mage’s next turn. Any creature that ends its turn in the zone is slowed and takes ongoing 5 poison damage (save ends both).&lt;/p&gt;]] ᗕ <b>Noxious Shroud</b> (implement, poison, zone) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Noxious Shroud&lt;/b&gt; (implement, poison, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Noxious Shroud&lt;/b&gt; (implement, poison, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 6 poison damage.&lt;/p&gt;]] <16.5>  poison damage.</p><p><i>Effect:</i> The blast creates a zone that lasts until the end of the mage’s next turn. Any creature that ends its turn in the zone is slowed and takes ongoing 5 poison damage (save ends both).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Cloying Flames&lt;/b&gt; (fire, implement) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (creatures in the burst); +15 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 fire damage, and the target is immobilized and takes ongoing 5 fire damage (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ✻ <b>Cloying Flames</b> (fire, implement) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Area burst 2 within 10 (creatures in the burst); [[/roll 1d20+15[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Cloying Flames&lt;/b&gt; (fire, implement) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (creatures in the burst); &lt;u&gt;+15 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Cloying Flames&lt;/b&gt; (fire, implement) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 fire damage, and the target is immobilized and takes ongoing 5 fire damage (save ends both).&lt;/p&gt;]] <25.5>  fire damage, and the target is immobilized and takes ongoing 5 fire damage (save ends both).</p><p><i>Miss:</i> Half damage.</p></tr></td></table>",

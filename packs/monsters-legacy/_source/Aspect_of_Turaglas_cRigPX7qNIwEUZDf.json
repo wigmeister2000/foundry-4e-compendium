@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -646,10 +647,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -947,23 +948,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 456; <b>Bloodied</b> 228<hr><b>Resist</b> 20 acid, 15 variable (3/encounter) <b>Immune</b> disease, gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 37</td><td><b>Ref</b> 33</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 8 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+20)<br><b>Con</b> 28 (+21)</td><td><b>Dex</b> 22 (+18)<br><b>Int</b> 10 (+12)</td><td><b>Wis</b> 25 (+19)<br><b>Cha</b> 23 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 25<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 1d6+9 damage plus 2d6 acid damage. Reach 3&lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Acid</b></p><p>[[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs AC&lt;/u&gt;; 1d6+9 damage plus 2d6 acid damage. Reach 3&lt;/p&gt;]]; [[/roll 1d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 1d6+9 damage plus 2d6 acid damage. Reach 3&lt;/p&gt;]] <12.5>  damage plus [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 1d6+9 damage plus 2d6 acid damage. Reach 3&lt;/p&gt;]] <7> acid damage. Reach 3</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +29 vs Reflex; 1d4+9 damage, and the target is pulled 2 squares and grabbed. The aspect has two claws, and a claw grabbing a creature is unavailable for claw attacks. &lt;/p&gt;]] ⚔ <b>Claw</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 1d4+9 damage, and the target is pulled 2 squares and grabbed. The aspect has two claws, and a claw grabbing a creature is unavailable for claw attacks. &lt;/p&gt;]]; [[/roll 1d4+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +29 vs Reflex; 1d4+9 damage, and the target is pulled 2 squares and grabbed. The aspect has two claws, and a claw grabbing a creature is unavailable for claw attacks. &lt;/p&gt;]] <11.5>  damage, and the target is pulled 2 squares and grabbed. The aspect has two claws, and a claw grabbing a creature is unavailable for claw attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mauling Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The aspect of Turaglas makes a bite attack and two claw attacks. &lt;/p&gt;]]  <b>Mauling Fury</b> (standard, at-will) </p><p>The aspect of Turaglas makes a bite attack and two claw attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swallow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a bloodied Huge or smaller creature grabbed by the aspect; +29 vs. Fortitude; the target is swallowed and is no longer grabbed. While swallowed, the target is restrained and takes 10 damage and 10 acid damage at the start of the aspect’s turn. The swallowed creature has line of sight and line of effect only to the aspect, and no creature has line of sight or line of effect to the target. The swallowed creature can make melee and close attacks only. If the aspect dies, the target is no longer swallowed and can escape as a move action, ending that action in a square formerly occupied by the aspect. &lt;/p&gt;]]  <b>Swallow</b> (standard, at-will) ✦ <b>Acid, Necrotic</b></p><p>Targets a bloodied Huge or smaller creature grabbed by the aspect; [[/roll 1d20+29[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swallow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a bloodied Huge or smaller creature grabbed by the aspect; &lt;u&gt;+29 vs. Fortitude&lt;/u&gt;; the target is swallowed and is no longer grabbed. While swallowed, the target is restrained and takes 10 damage and 10 acid damage at the start of the aspect’s turn. The swallowed creature has line of sight and line of effect only to the aspect, and no creature has line of sight or line of effect to the target. The swallowed creature can make melee and close attacks only. If the aspect dies, the target is no longer swallowed and can escape as a move action, ending that action in a square formerly occupied by the aspect. &lt;/p&gt;]]; the target is swallowed and is no longer grabbed. While swallowed, the target is restrained and takes 10 damage and 10 acid damage at the start of the aspect’s turn. The swallowed creature has line of sight and line of effect only to the aspect, and no creature has line of sight or line of effect to the target. The swallowed creature can make melee and close attacks only. If the aspect dies, the target is no longer swallowed and can escape as a move action, ending that action in a square formerly occupied by the aspect. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Intercepting Claw&lt;/b&gt; (immediate reaction, when a creature moves or shifts adjacent to the aspect, at-will) &lt;/p&gt;&lt;p&gt;The aspect of Turaglas makes a claw attack. &lt;/p&gt;]]  <b>Intercepting Claw</b> (immediate reaction, when a creature moves or shifts adjacent to the aspect, at-will) </p><p>The aspect of Turaglas makes a claw attack. </p></tr></td></table>",

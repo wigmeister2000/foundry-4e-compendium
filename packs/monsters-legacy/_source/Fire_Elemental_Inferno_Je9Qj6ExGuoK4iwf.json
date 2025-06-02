@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blazing Heat",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8uyCTdV6QSqaBPWF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -459,23 +461,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 170; <b>Bloodied</b> 85<hr><b>Resist</b> 30 fire <b>Immune</b> disease, petrification, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 30</td><td><b>Ref</b> 32</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+11)<br><b>Con</b> 18 (+13)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 8 (+8)</td><td><b>Wis</b> 12 (+10)<br><b>Cha</b> 16 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Blazing Heat&lt;/b&gt; (Fire) aura 3; any creature that enters or starts its turn in the aura takes 10 fi re damage]] <b>Blazing Heat</b> (Fire) aura 3; any creature that enters or starts its turn in the aura takes 10 fi re damage</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Tendril&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +23 vs AC; 1d10+7 fire damage, and target slides 3 squares. &lt;/p&gt;]] (⚔) <b>Fire Tendril</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 3; [[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Tendril&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+23 vs AC&lt;/u&gt;; 1d10+7 fire damage, and target slides 3 squares. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Tendril&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +23 vs AC; 1d10+7 fire damage, and target slides 3 squares. &lt;/p&gt;]] <12.5>  fire damage, and target slides 3 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Inferno&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +22 vs Reflex; 2d8+7 fire damage and the target is immobilized (save ends). The zone is filled with fire and is considered difficult terrain until the end of the encounter. Any creature that enters or starts its turn in the zone takes 10 fire damage. &lt;/p&gt;]] ✻ <b>Inferno</b> (standard, at-will) ✦ <b>Fire, Zone</b></p><p>Area burst 1 within 10; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Inferno&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 2d8+7 fire damage and the target is immobilized (save ends). The zone is filled with fire and is considered difficult terrain until the end of the encounter. Any creature that enters or starts its turn in the zone takes 10 fire damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Inferno&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +22 vs Reflex; 2d8+7 fire damage and the target is immobilized (save ends). The zone is filled with fire and is considered difficult terrain until the end of the encounter. Any creature that enters or starts its turn in the zone takes 10 fire damage. &lt;/p&gt;]] <16>  fire damage and the target is immobilized (save ends). The zone is filled with fire and is considered difficult terrain until the end of the encounter. Any creature that enters or starts its turn in the zone takes 10 fire damage. </p></tr></td></table>",

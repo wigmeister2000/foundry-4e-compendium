@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -467,10 +468,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -722,7 +723,7 @@
 		},
 		{
 			"name":"Untidy Death",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Y0FME4KAp2f3DCdc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -758,7 +759,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 59; <b>Bloodied</b> 29</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 15</td><td><b>Ref</b> 17</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 19 (+6)</td><td><b>Dex</b> 19 (+6)<br><b>Int</b> 8 (+1)</td><td><b>Wis</b> 8 (+1)<br><b>Cha</b> 16 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Any</td></tr><tr><td><b>Skills</b> Dungeoneering +6, Stealth +11, Thievery +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d4+4 damage. &lt;/p&gt;&lt;p&gt;➶ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +9 vs AC; 1d4+4 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d4+4 damage. &lt;/p&gt;]]; [[/roll 1d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d4+4 damage. &lt;/p&gt;]] <6.5>  damage. </p><p>➶ <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 5/10; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+9 vs AC&lt;/u&gt;; 1d4+4 damage. &lt;/p&gt;]]; [[/roll 1d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +9 vs AC; 1d4+4 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grab Bag&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;delver randomly pulls an item from pack and throws it; Ranged 5; +9 vs AC; roll 1d4 for effect: 1: Stone, 1d6 + 4 damage; 2: Alchemist’s Fire, 1d8 + 4 fire damage and 5 fire damage to all creatures adjacent to target; 3: Caltrops, 1d6 + 4 damage and target is slowed (save ends); 4: Healing Flask, target heals 5 hp. &lt;/p&gt;]] ➶ <b>Grab Bag</b> (standard, at-will) </p><p>delver randomly pulls an item from pack and throws it; Ranged 5; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grab Bag&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;delver randomly pulls an item from pack and throws it; Ranged 5; &lt;u&gt;+9 vs AC&lt;/u&gt;; roll 1d4 for effect: 1: Stone, 1d6 + 4 damage; 2: Alchemist’s Fire, 1d8 + 4 fire damage and 5 fire damage to all creatures adjacent to target; 3: Caltrops, 1d6 + 4 damage and target is slowed (save ends); 4: Healing Flask, target heals 5 hp. &lt;/p&gt;]]; roll [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grab Bag&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;delver randomly pulls an item from pack and throws it; Ranged 5; +9 vs AC; roll 1d4 for effect: 1: Stone, 1d6 + 4 damage; 2: Alchemist’s Fire, 1d8 + 4 fire damage and 5 fire damage to all creatures adjacent to target; 3: Caltrops, 1d6 + 4 damage and target is slowed (save ends); 4: Healing Flask, target heals 5 hp. &lt;/p&gt;]] <2.5> for effect: 1: Stone, [[/roll [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grab Bag&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;delver randomly pulls an item from pack and throws it; Ranged 5; +9 vs AC; roll 1d4 for effect: 1: Stone, 1d6 + 4 damage; 2: Alchemist’s Fire, 1d8 + 4 fire damage and 5 fire damage to all creatures adjacent to target; 3: Caltrops, 1d6 + 4 damage and target is slowed (save ends); 4: Healing Flask, target heals 5 hp. &lt;/p&gt;]] <7.5> #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grab Bag&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;delver randomly pulls an item from pack and throws it; Ranged 5; +9 vs AC; roll 1d4 for effect: 1: Stone, 1d6 + 4 damage; 2: Alchemist’s Fire, 1d8 + 4 fire damage and 5 fire damage to all creatures adjacent to target; 3: Caltrops, 1d6 + 4 damage and target is slowed (save ends); 4: Healing Flask, target heals 5 hp. &lt;/p&gt;]] <7.5>  damage; 2: Alchemist’s Fire, [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grab Bag&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;delver randomly pulls an item from pack and throws it; Ranged 5; +9 vs AC; roll 1d4 for effect: 1: Stone, 1d6 + 4 damage; 2: Alchemist’s Fire, 1d8 + 4 fire damage and 5 fire damage to all creatures adjacent to target; 3: Caltrops, 1d6 + 4 damage and target is slowed (save ends); 4: Healing Flask, target heals 5 hp. &lt;/p&gt;]] <8.5>  fire damage and 5 fire damage to all creatures adjacent to target; 3: Caltrops, 1d6 + 4 damage and target is slowed (save ends); 4: Healing Flask, target heals 5 hp. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate reaction, when missed by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The goblin shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate reaction, when missed by a melee attack; at-will) </p><p>The goblin shifts 1 square.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Untidy Death&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the delver is reduced to 0 hit points, it drops everything it carries and its square becomes difficult terrain.&lt;/p&gt;]]  <b>Untidy Death</b></p><p>When the delver is reduced to 0 hit points, it drops everything it carries and its square becomes difficult terrain.</p></tr></td></table>",

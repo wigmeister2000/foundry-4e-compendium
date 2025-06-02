@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Berserker's Threat",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ohlbyYgxpDaIqNwi",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Double Actions",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"IbX1M3RcwqjJBy8V",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Dual Brain",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2NnfUTq68DBjIHKa",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -370,23 +374,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 336; <b>Bloodied</b> 168</td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 31</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+15)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 14 (+10)<br><b>Int</b> 8 (+7)</td><td><b>Wis</b> 17 (+11)<br><b>Cha</b> 11 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p><b>Equipment</b> battleaxe  x2, chainmail .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Berserker’s Threat&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;While in the aura, any enemy that shifts or makes an attack without targeting the ettin provokes an opportunity attack from the ettin. Marked enemies are not subject to this aura.&lt;/p&gt;]] ⌀ <b>Berserker’s Threat</b> ✦ <b>Aura</b> 2</p><p>While in the aura, any enemy that shifts or makes an attack without targeting the ettin provokes an opportunity attack from the ettin. Marked enemies are not subject to this aura.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The ettin makes two initiative checks and takes a full turn on each initiative result. It can take two immediate actions per round but only one between one turn and the next.&lt;/p&gt;]]  <b>Double Actions</b> <b></b></p><p>The ettin makes two initiative checks and takes a full turn on each initiative result. It can take two immediate actions per round but only one between one turn and the next.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dual Brain&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the end of each of its turns, the ettin ends any dazing, stunning, or charm effect on it.&lt;/p&gt;]]  <b>Dual Brain</b> <b></b></p><p>At the end of each of its turns, the ettin ends any dazing, stunning, or charm effect on it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Battleaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +22 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 7 damage.&lt;/p&gt;]] (⚔) <b>Battleaxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+22[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Battleaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+22 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d12 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Battleaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 7 damage.&lt;/p&gt;]] <26.5>  damage.</p></tr></td></table>",

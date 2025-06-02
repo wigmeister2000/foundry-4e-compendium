@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Mindmaster's Thrall",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VOx7woupiy3GBFz2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -634,23 +636,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 22</td><td><b>Ref</b> 22</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (forest walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+8)<br><b>Con</b> 15 (+8)</td><td><b>Dex</b> 11 (+6)<br><b>Int</b> 3 (+2)</td><td><b>Wis</b> 22 (+12)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mindmaster’s Thrall&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the hurler was created by an oblivion moss mindmaster, it acts immediately after its creator’s turn.&lt;/p&gt;]]  <b>Mindmaster’s Thrall</b> <b></b></p><p>If the hurler was created by an oblivion moss mindmaster, it acts immediately after its creator’s turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 8 damage.&lt;/p&gt;]] (⚔) <b>Bash</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 8 damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Simulacrum Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; When the hurler first acts during the encounter, choose one at-will ranged attack power belonging to an enemy that the hurler can see. If the hurler was created by an oblivion moss mindmaster, choose one at-will ranged attack power belonging to the enemy that the mindmaster hit to create the hurler.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target takes damage and is subject to effects as though it were hit by the chosen attack. The damage roll uses the ability score modifier of the creature from whom the power was chosen. The damage does not include any bonuses or penalties to the damage roll that the owner of the power might have. In addition, the hurler gains any benefits from the power’s Hit entry, using the ability score modifiers of the creature from whom the power was chosen but not including any bonuses or penalties.&lt;/p&gt;]] ➶ <b>Simulacrum Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> When the hurler first acts during the encounter, choose one at-will ranged attack power belonging to an enemy that the hurler can see. If the hurler was created by an oblivion moss mindmaster, choose one at-will ranged attack power belonging to the enemy that the mindmaster hit to create the hurler.</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Simulacrum Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target takes damage and is subject to effects as though it were hit by the chosen attack. The damage roll uses the ability score modifier of the creature from whom the power was chosen. The damage does not include any bonuses or penalties to the damage roll that the owner of the power might have. In addition, the hurler gains any benefits from the power’s Hit entry, using the ability score modifiers of the creature from whom the power was chosen but not including any bonuses or penalties.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Memory Deathstorm&lt;/b&gt; (psychic) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The hurler drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 2 (enemies in the burst); +15 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 8 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] ᗕ <b>Memory Deathstorm</b> (psychic) <b></b></p><p><i>Trigger:</i> The hurler drops to 0 hit points.</p><p><i>Attack (No Action):</i> Close burst 2 (enemies in the burst); [[/roll 1d20+15[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Memory Deathstorm&lt;/b&gt; (psychic) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+15 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 8 psychic damage, and the target is dazed (save ends).</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"V83gsLWkFr9hHCzD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Despair",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GMU6KnHl3kycZNTY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1219,23 +1222,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 264; <b>Bloodied</b> 132<br><b>Regeneration</b> 10 (if a dark pharaoh takes fire damage, regeneration doesn’t function until the end of its next turn)<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 22</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 7 (+4)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 11 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Despair&lt;/b&gt; (Fear) aura 5; any enemy within the aura takes a -2 penalty to attack rolls against the dark pharaoh.]] <b>Despair</b> (Fear) aura 5; any enemy within the aura takes a -2 penalty to attack rolls against the dark pharaoh.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+6 necrotic damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+6 necrotic damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+6 necrotic damage. &lt;/p&gt;]] <15>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slamming Fury&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dark pharaoh makes two slam attacks, each one against a different target.&lt;/p&gt;]] ⚔ <b>Slamming Fury</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>The dark pharaoh makes two slam attacks, each one against a different target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Curse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Will; 2d8+6 psychic damage, and each time the target uses an attack power, it takes 5 psychic damage (save ends). Aftereffect: The target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Psychic Curse</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 10; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Curse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+17 vs Will&lt;/u&gt;; 2d8+6 psychic damage, and each time the target uses an attack power, it takes 5 psychic damage (save ends). Aftereffect: The target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Curse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Will; 2d8+6 psychic damage, and each time the target uses an attack power, it takes 5 psychic damage (save ends). Aftereffect: The target is dazed (save ends). &lt;/p&gt;]] <15>  psychic damage, and each time the target uses an attack power, it takes 5 psychic damage (save ends). Aftereffect: The target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;False Faith&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The dark pharaoh assumes a meditative stance. Until the end of its next turn, it gains resist 20 to all damage, and allies in its line of sight gain a +2 bonus to attack rolls. If the dark pharaoh moves, the effect ends.&lt;/p&gt;]]  <b>False Faith</b> (standard; at-will) </p><p>The dark pharaoh assumes a meditative stance. Until the end of its next turn, it gains resist 20 to all damage, and allies in its line of sight gain a +2 bonus to attack rolls. If the dark pharaoh moves, the effect ends.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Block&lt;/b&gt; (immediate interrupt, when an enemy would target the dark pharaoh with an attack, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets the triggering enemy; +17 vs Will; the target designates another target for the attack, or the attack is negated. A negated daily power or encounter power is expended. &lt;/p&gt;]] ➶ <b>Psychic Block</b> (immediate interrupt, when an enemy would target the dark pharaoh with an attack, at-will) ✦ <b>Psychic</b></p><p>Ranged 10; targets the triggering enemy; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Block&lt;/b&gt; (immediate interrupt, when an enemy would target the dark pharaoh with an attack, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets the triggering enemy; &lt;u&gt;+17 vs Will&lt;/u&gt;; the target designates another target for the attack, or the attack is negated. A negated daily power or encounter power is expended. &lt;/p&gt;]]; the target designates another target for the attack, or the attack is negated. A negated daily power or encounter power is expended. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummy\"s Curse&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +17 vs Will; the target contracts mummy rot. &lt;/p&gt;]] ᗕ <b>Mummy\"s Curse</b> ( when reduced to 0 hit points, ) ✦ <b>Disease</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummy\"s Curse&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+17 vs Will&lt;/u&gt;; the target contracts mummy rot. &lt;/p&gt;]]; the target contracts mummy rot. </p></tr></td></table>",

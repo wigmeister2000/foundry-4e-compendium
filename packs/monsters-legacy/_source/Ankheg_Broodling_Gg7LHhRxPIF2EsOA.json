@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -364,7 +365,7 @@
 		},
 		{
 			"name":"Brood Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"iA7CZGSaPxKc8mdp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -400,7 +401,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -456,23 +458,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 2 (tunneling)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (0)<br><b>Con</b> 13 (+1)</td><td><b>Dex</b> 16 (+3)<br><b>Int</b> 1 (null)</td><td><b>Wis</b> 12 (+1)<br><b>Cha</b> 2 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 5<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+5 vs AC; 4 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+5 vs AC&lt;/u&gt;; 4 damage. &lt;/p&gt;]]; 4 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mandible Rip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs AC; 6 damage. If the ankheg broodling makes a critical hit against a target, each creature adjacent to that target takes 3 acid damage. &lt;/p&gt;]] ⚔ <b>Mandible Rip</b> (standard, at-will) ✦ <b>Acid</b></p><p>[[/roll 1d20+4[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mandible Rip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+4 vs AC&lt;/u&gt;; 6 damage. If the ankheg broodling makes a critical hit against a target, each creature adjacent to that target takes 3 acid damage. &lt;/p&gt;]]; 6 damage. If the ankheg broodling makes a critical hit against a target, each creature adjacent to that target takes 3 acid damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Brood Swarm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An ankheg broodling gains a +4 bonus to attack rolls against targets that are grabbed by any ankheg.&lt;/p&gt;]]  <b>Brood Swarm</b></p><p>An ankheg broodling gains a +4 bonus to attack rolls against targets that are grabbed by any ankheg.</p></tr></td></table>",

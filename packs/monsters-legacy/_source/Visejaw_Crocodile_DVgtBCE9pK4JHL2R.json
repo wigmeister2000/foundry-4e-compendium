@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -408,23 +409,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 58; <b>Bloodied</b> 29</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 19</td><td><b>Ref</b> 14</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+6)<br><b>Con</b> 18 (+6)</td><td><b>Dex</b> 12 (+3)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 7 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+4 damage, and the target is grabbed (until escape). The visejaw crocodile cannot make bite attacks while grabbing a creature, but it can use clamping jaws. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d8+4 damage, and the target is grabbed (until escape). The visejaw crocodile cannot make bite attacks while grabbing a creature, but it can use clamping jaws. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+4 damage, and the target is grabbed (until escape). The visejaw crocodile cannot make bite attacks while grabbing a creature, but it can use clamping jaws. &lt;/p&gt;]] <8.5>  damage, and the target is grabbed (until escape). The visejaw crocodile cannot make bite attacks while grabbing a creature, but it can use clamping jaws. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;If a visejaw crocodile begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature; +10 vs AC; 2d8+4 damage. Miss: Half damage. &lt;/p&gt;]] ⚔ <b>Clamping Jaws</b> (standard, at-will) </p><p>If a visejaw crocodile begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature; [[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;If a visejaw crocodile begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature; &lt;u&gt;+10 vs AC&lt;/u&gt;; 2d8+4 damage. Miss: Half damage. &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;If a visejaw crocodile begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature; +10 vs AC; 2d8+4 damage. Miss: Half damage. &lt;/p&gt;]] <13>  damage. Miss: Half damage. </p></tr></td></table>",

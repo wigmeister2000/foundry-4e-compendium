@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -725,7 +726,7 @@
 		},
 		{
 			"name":"Berbalang Sneak Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GI20vqsi6MoNpnYV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -761,7 +762,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -997,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 408; <b>Bloodied</b> 204</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 22</td><td><b>Ref</b> 25</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 22 (+11)<br><b>Int</b> 14 (+7)</td><td><b>Wis</b> 13 (+6)<br><b>Cha</b> 15 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Sacrifice&lt;/b&gt; (standard; the berbalang can cause one of its duplicates to explode in a burst of psychic gore, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 centered on a duplicate; +11 vs Fortitude; 2d8+6 psychic damage, plus the target is dazed (save ends). Miss: No damage, but the target is dazed (save ends). Hit or Miss: The berbalang takes 25 damage. &lt;/p&gt;]] ✻ <b>Sacrifice</b> (standard; the berbalang can cause one of its duplicates to explode in a burst of psychic gore, at-will) ✦ <b>Psychic</b></p><p>Area burst 1 centered on a duplicate; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Sacrifice&lt;/b&gt; (standard; the berbalang can cause one of its duplicates to explode in a burst of psychic gore, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 centered on a duplicate; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; 2d8+6 psychic damage, plus the target is dazed (save ends). Miss: No damage, but the target is dazed (save ends). Hit or Miss: The berbalang takes 25 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Sacrifice&lt;/b&gt; (standard; the berbalang can cause one of its duplicates to explode in a burst of psychic gore, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 centered on a duplicate; +11 vs Fortitude; 2d8+6 psychic damage, plus the target is dazed (save ends). Miss: No damage, but the target is dazed (save ends). Hit or Miss: The berbalang takes 25 damage. &lt;/p&gt;]] <15>  psychic damage, plus the target is dazed (save ends). Miss: No damage, but the target is dazed (save ends). Hit or Miss: The berbalang takes 25 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Absorb Duplicate&lt;/b&gt; (standard) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The berbalang absorbs a duplicate adjacent to it and regains 50 hit points&lt;/p&gt;]]  <b>Absorb Duplicate</b> (standard) ✦ <b>Healing</b></p><p>The berbalang absorbs a duplicate adjacent to it and regains 50 hit points</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Summon Duplicate&lt;/b&gt; (minor; not usable while bloodied; at-will) ✦ &lt;b&gt;Conjuration, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The berbalang manifests an exact duplicate of itself in an unoccupied adjacent square. It can have no more than four duplicates at once, and duplicates cannot summon other duplicates. When a duplicate appears, it makes an initiative check and joins the battle on that initiative count. All damage a duplicate deals is treated as psychic damage.&lt;/p&gt;&lt;p&gt;A duplicate has the same statistics as the berbalang except for its hit points. When the berbalang manifests a duplicate, the berbalang loses one-quarter of its current hit points and the duplicate appears with that quantity of hit points. The berbalang’s maximum number of hit points remains the same.&lt;/p&gt;&lt;p&gt;Duplicates last until the berbalang reaches 0 hit points, absorbs them, or uses sacrifice. A duplicate must stay within 10 squares of the berbalang at all times or it disappears.&lt;/p&gt;]]  <b>Summon Duplicate</b> (minor; not usable while bloodied; at-will) ✦ <b>Conjuration, Psychic</b></p><p>The berbalang manifests an exact duplicate of itself in an unoccupied adjacent square. It can have no more than four duplicates at once, and duplicates cannot summon other duplicates. When a duplicate appears, it makes an initiative check and joins the battle on that initiative count. All damage a duplicate deals is treated as psychic damage.</p><p>A duplicate has the same statistics as the berbalang except for its hit points. When the berbalang manifests a duplicate, the berbalang loses one-quarter of its current hit points and the duplicate appears with that quantity of hit points. The berbalang’s maximum number of hit points remains the same.</p><p>Duplicates last until the berbalang reaches 0 hit points, absorbs them, or uses sacrifice. A duplicate must stay within 10 squares of the berbalang at all times or it disappears.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Berbalang Sneak Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A berbalang or a duplicate that flanks an enemy with another duplicate deals an extra 1d8 damage on melee attacks against that enemy.&lt;/p&gt;]]  <b>Berbalang Sneak Attack</b></p><p>A berbalang or a duplicate that flanks an enemy with another duplicate deals an extra [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Berbalang Sneak Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A berbalang or a duplicate that flanks an enemy with another duplicate deals an extra 1d8 damage on melee attacks against that enemy.&lt;/p&gt;]] <4.5> damage on melee attacks against that enemy.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Psychic Deflection&lt;/b&gt; (immediate reaction, when the berbalang is hit by an attack; at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The berbalang can deflect the damage it takes from an attack to one of its duplicates. Any effects or secondary attacks included in the attack are also deflected to the duplicate. The damage a duplicate takes in this way is considered psychic damage.&lt;/p&gt;]]  <b>Psychic Deflection</b> (immediate reaction, when the berbalang is hit by an attack; at-will) ✦ <b>Psychic</b></p><p>The berbalang can deflect the damage it takes from an attack to one of its duplicates. Any effects or secondary attacks included in the attack are also deflected to the duplicate. The damage a duplicate takes in this way is considered psychic damage.</p></tr></td></table>",

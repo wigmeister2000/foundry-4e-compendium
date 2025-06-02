@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Disquieting Movement",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"S2cYI056dG3uksgO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 96; <b>Bloodied</b> 48</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+5)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 8 (+3)<br><b>Cha</b> 15 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +10, Intimidate +11, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> leather armor , short sword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Disquieting Movement&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scout has a +2 bonus to all defenses during its turn.&lt;/p&gt;]]  <b>Disquieting Movement</b> <b></b></p><p>The scout has a +2 bonus to all defenses during its turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 9 damage, or 2d6 + 14 if the scout has combat advantage against the target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scout shifts 1 square after the attack.&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 9 damage, or 2d6 + 14 if the scout has combat advantage against the target.&lt;/p&gt;]] <16>  damage, or [[/roll 2d6 + 14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 9 damage, or 2d6 + 14 if the scout has combat advantage against the target.&lt;/p&gt;]] <21>  if the scout has combat advantage against the target.</p><p><i>Effect:</i> The scout shifts 1 square after the attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brutal Stab&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature the scout is flanking or one prone creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 5 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] ⚔ <b>Brutal Stab</b> (weapon) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Melee 1 (one creature the scout is flanking or one prone creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brutal Stab&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature the scout is flanking or one prone creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brutal Stab&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 5 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] <15.5>  damage, and ongoing 10 damage (save ends).</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Swift Repositioning&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scout shifts up to half its speed.&lt;/p&gt;]]  <b>Swift Repositioning</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> The scout shifts up to half its speed.</p></tr></td></table>",

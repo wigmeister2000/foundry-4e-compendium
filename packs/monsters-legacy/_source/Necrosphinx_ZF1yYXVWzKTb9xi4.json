@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Ui8hvfzIcs1KT5wP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Despair",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hqtlzZPUJ7sSCjQm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -196,10 +199,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -556,10 +559,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1174,7 +1177,7 @@
 		},
 		{
 			"name":"Sphinx's Challenge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gomPU1TQ7C6RM9Gu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1207,7 +1210,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1263,23 +1267,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 760; <b>Bloodied</b> 380<br><b>Regeneration</b> 10 (if a necrosphinx takes fire damage, regeneration doesn’t function until the end of its next turn)<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 29</td><td><b>Ref</b> 26</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (clumsy), overland flight 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+12)<br><b>Con</b> 16 (+11)</td><td><b>Dex</b> 15 (+10)<br><b>Int</b> 16 (+11)</td><td><b>Wis</b> 19 (+12)<br><b>Cha</b> 16 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +16, History +16, Insight +17, Intimidate +16, Religion +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 27</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Despair&lt;/b&gt; (Fear) aura 5; any enemy within the aura takes a -2 penalty to attack rolls against the necrosphinx.]] <b>Despair</b> (Fear) aura 5; any enemy within the aura takes a -2 penalty to attack rolls against the necrosphinx.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 2d10+5 damage, and the target is marked until the end of the sphinx\"s next turn. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 2d10+5 damage, and the target is marked until the end of the sphinx\"s next turn. &lt;/p&gt;]]; [[/roll 2d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 2d10+5 damage, and the target is marked until the end of the sphinx\"s next turn. &lt;/p&gt;]] <16>  damage, and the target is marked until the end of the sphinx\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Death\"s Pounce&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The necrosphinx moves up to 6 squares and makes two claw attacks, each one against a different target. If an attack hits, that target is knocked prone. If both attacks hit, each target also takes ongoing 5 necrotic damage (save ends)&lt;/p&gt;]] ⚔ <b>Death\"s Pounce</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>The necrosphinx moves up to 6 squares and makes two claw attacks, each one against a different target. If an attack hits, that target is knocked prone. If both attacks hit, each target also takes ongoing 5 necrotic damage (save ends)</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Second Wind&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The necrosphinx spends a healing surge and regains 190 hit points. It gains a +2 bonus to all defenses until the start of its next turn.&lt;/p&gt;]]  <b>Second Wind</b> (standard; encounter) ✦ <b>Healing</b></p><p>The necrosphinx spends a healing surge and regains 190 hit points. It gains a +2 bonus to all defenses until the start of its next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fierce Retort&lt;/b&gt; (immediate interrupt, when a creature marked by the necrosphinx makes a melee attack against it, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; +21 vs AC; 2d10+5 damage, and the target takes ongoing 5 necrotic damage and is marked (save ends both). &lt;/p&gt;]] ⚔ <b>Fierce Retort</b> (immediate interrupt, when a creature marked by the necrosphinx makes a melee attack against it, at-will) ✦ <b>Necrotic</b></p><p>Targets the triggering creature; [[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fierce Retort&lt;/b&gt; (immediate interrupt, when a creature marked by the necrosphinx makes a melee attack against it, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; &lt;u&gt;+21 vs AC&lt;/u&gt;; 2d10+5 damage, and the target takes ongoing 5 necrotic damage and is marked (save ends both). &lt;/p&gt;]]; [[/roll 2d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fierce Retort&lt;/b&gt; (immediate interrupt, when a creature marked by the necrosphinx makes a melee attack against it, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; +21 vs AC; 2d10+5 damage, and the target takes ongoing 5 necrotic damage and is marked (save ends both). &lt;/p&gt;]] <16>  damage, and the target takes ongoing 5 necrotic damage and is marked (save ends both). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Necrotic Roar&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +19 vs Will; the target takes ongoing 5 necrotic damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] ᗕ <b>Necrotic Roar</b> (minor, recharge ⚄⚅) ✦ <b>Fear, Necrotic</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+19[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Necrotic Roar&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+19 vs Will&lt;/u&gt;; the target takes ongoing 5 necrotic damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; the target takes ongoing 5 necrotic damage and a -2 penalty to attack rolls (save ends both). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummies Curse&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +18 vs Will; the target contracts mummy rot. &lt;/p&gt;]] ᗕ <b>Mummies Curse</b> ( when reduced to 0 hit points, ) ✦ <b>Disease</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummies Curse&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+18 vs Will&lt;/u&gt;; the target contracts mummy rot. &lt;/p&gt;]]; the target contracts mummy rot. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sphinx’s Challenge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The necrosphinx poses a question or riddle out of combat. If the challenged creatures refuse to answer or fail to&lt;/p&gt;&lt;p&gt;answer correctly, the necrosphinx gains the following benefits until the end of the encounter: 1 extra action point, an extra use of second wind, a +2 bonus to attack rolls, and a +2 bonus to all defenses.&lt;/p&gt;]]  <b>Sphinx’s Challenge</b></p><p>The necrosphinx poses a question or riddle out of combat. If the challenged creatures refuse to answer or fail to</p><p>answer correctly, the necrosphinx gains the following benefits until the end of the encounter: 1 extra action point, an extra use of second wind, a +2 bonus to attack rolls, and a +2 bonus to all defenses.</p></tr></td></table>",

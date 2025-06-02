@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -544,7 +546,7 @@
 		},
 		{
 			"name":"Trap Sense",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZNU0BM8pKcXxRtzl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -580,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -636,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 11</td><td><b>Ref</b> 13</td><td><b>Will</b> 11</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (null)<br><b>Con</b> 12 (+1)</td><td><b>Dex</b> 16 (+3)<br><b>Int</b> 9 (null)</td><td><b>Wis</b> 12 (+1)<br><b>Cha</b> 10 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +4, Thievery +4</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><p><b>Equipment</b> hide armor , javelin  x3, light shield .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 4 damage. &lt;/p&gt;&lt;p&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +5 vs AC; 4 damage. &lt;/p&gt;]] (⚔) <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+5 vs AC&lt;/u&gt;; 4 damage. &lt;/p&gt;]]; 4 damage. </p><p>(➶) <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+5 vs AC&lt;/u&gt;; 4 damage. &lt;/p&gt;]]; 4 damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shifty&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;The kobold shifts 1 square as a minor action.&lt;/p&gt;]]  <b>Shifty</b> (minor; at-will) </p><p>The kobold shifts 1 square as a minor action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Trap Sense&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The kobold gains a +2 bonus to all defenses against traps.&lt;/p&gt;]]  <b>Trap Sense</b></p><p>The kobold gains a +2 bonus to all defenses against traps.</p></tr></td></table>",

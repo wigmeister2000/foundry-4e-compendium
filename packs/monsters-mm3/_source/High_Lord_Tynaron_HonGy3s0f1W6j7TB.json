@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Lashing Chains",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nD3SX6WviqygA5fN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1002,23 +1004,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 228; <b>Bloodied</b> 114<hr><b>Resist</b> 10 fire, 10 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 23</td><td><b>Ref</b> 22</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+7)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 17 (+8)</td><td><b>Wis</b> 18 (+9)<br><b>Cha</b> 21 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +15, Insight +14, Religion +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 24</td></td></tr></table><p><b>Equipment</b> brazen rod</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Lashing Chains&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Protoplasmic chains surround Tynaron in battle, flailing at nearby foes. Enemies within the aura cannot shift, and any enemy that ends its turn in the aura takes 5 damage.&lt;/p&gt;]] ⌀ <b>Lashing Chains</b> ✦ <b>Aura</b> 2</p><p>Protoplasmic chains surround Tynaron in battle, flailing at nearby foes. Enemies within the aura cannot shift, and any enemy that ends its turn in the aura takes 5 damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Brazen Rod&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage, and ongoing 10 fire damage (save ends). Tynaron slides the target up to 3 squares. &lt;/p&gt;]] (⚔) <b>Brazen Rod</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Brazen Rod&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Brazen Rod&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage, and ongoing 10 fire damage (save ends). Tynaron slides the target up to 3 squares. &lt;/p&gt;]] <10.5>  damage, and ongoing 10 fire damage (save ends). Tynaron slides the target up to 3 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hellfire Bolt&lt;/b&gt; (fire, implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +14 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 fire and necrotic damage, and the target is dazed until the end of Tynaron’s next turn.&lt;/p&gt;]] ➶ <b>Hellfire Bolt</b> (fire, implement, necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+14[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hellfire Bolt&lt;/b&gt; (fire, implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+14 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hellfire Bolt&lt;/b&gt; (fire, implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 fire and necrotic damage, and the target is dazed until the end of Tynaron’s next turn.&lt;/p&gt;]] <14>  fire and necrotic damage, and the target is dazed until the end of Tynaron’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Chains of Dis&lt;/b&gt; (fire, implement) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (creatures in the burst); +14 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 damage, and the target is restrained and takes ongoing 10 fire damage (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ✻ <b>Chains of Dis</b> (fire, implement) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Attack:</i> Area burst 2 within 10 (creatures in the burst); [[/roll 1d20+14[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Chains of Dis&lt;/b&gt; (fire, implement) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (creatures in the burst); &lt;u&gt;+14 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Chains of Dis&lt;/b&gt; (fire, implement) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 damage, and the target is restrained and takes ongoing 10 fire damage (save ends both).&lt;/p&gt;]] <14>  damage, and the target is restrained and takes ongoing 10 fire damage (save ends both).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Infernal Command&lt;/b&gt; (fire) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 5 (one ally in the burst). Tynaron slides the target up to 3 squares, and the target gains 20 temporary hit points. Until those temporary hit points are gone, the target’s melee attacks deal 5 extra fire damage.&lt;/p&gt;]] ᗕ <b>Infernal Command</b> (fire) ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> Close burst 5 (one ally in the burst). Tynaron slides the target up to 3 squares, and the target gains 20 temporary hit points. Until those temporary hit points are gone, the target’s melee attacks deal 5 extra fire damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burning Rebuke&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 3 squares of Tynaron hits him with an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 3 (the triggering enemy); +14 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 fire damage, and the target is weakened until the end of its next turn.&lt;/p&gt;]] ᗕ <b>Burning Rebuke</b> (fire) ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy within 3 squares of Tynaron hits him with an attack.</p><p><i>Attack (Immediate Reaction):</i> Close burst 3 (the triggering enemy); [[/roll 1d20+14[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burning Rebuke&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 3 (the triggering enemy); &lt;u&gt;+14 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burning Rebuke&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 fire damage, and the target is weakened until the end of its next turn.&lt;/p&gt;]] <18>  fire damage, and the target is weakened until the end of its next turn.</p></tr></td></table>",

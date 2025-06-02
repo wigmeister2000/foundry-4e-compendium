@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Guarding Spines",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NAEX0exGy6CP4TpZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Piercing Spines",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UG7gZM1whyNedpXj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -681,23 +684,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 129; <b>Bloodied</b> 64</td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 25</td><td><b>Ref</b> 25</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+11)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 9 (+5)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 13 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Abyssal<br><b>Alignment</b> evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Guarding Spines&lt;/b&gt; (mount) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The doom mastiff’s rider gains a +2 bonus to AC.&lt;/p&gt;]]  <b>Guarding Spines</b> (mount) <b></b></p><p>The doom mastiff’s rider gains a +2 bonus to AC.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Piercing Spines &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever a creature adjacent to the doom mastiff misses it or its rider with a melee attack, that creature takes 10 damage.&lt;/p&gt;]]  <b>Piercing Spines </b> <b></b></p><p>Whenever a creature adjacent to the doom mastiff misses it or its rider with a melee attack, that creature takes 10 damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage.&lt;/p&gt;]] <16>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Loping Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The doom mastiff shifts half its speed and uses bite.&lt;/p&gt;]] ⚔ <b>Loping Bite</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The doom mastiff shifts half its speed and uses bite.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Howl&lt;/b&gt; (fear, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +16 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target takes ongoing 10 psychic damage and grants combat advantage (save ends both). The target cannot save against this effect while it is adjacent to any doom mastiff.&lt;/p&gt;]] ᗕ <b>Terrifying Howl</b> (fear, psychic) ✦ Recharge ⚅</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+16[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Howl&lt;/b&gt; (fear, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+16 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target takes ongoing 10 psychic damage and grants combat advantage (save ends both). The target cannot save against this effect while it is adjacent to any doom mastiff.</p></tr></td></table>",

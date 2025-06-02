@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Phantom on the Wind",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GZeQkHzWli9ayXpE",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -454,23 +456,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 23; <b>Bloodied</b> 11<hr><b>Vulnerable</b> 5 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 0, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+3)<br><b>Con</b> 11 (0)</td><td><b>Dex</b> 17 (+3)<br><b>Int</b> 5 (null)</td><td><b>Wis</b> 11 (0)<br><b>Cha</b> 8 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Primordial<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Phantom on the Wind&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The lesser air elemental becomes invisible whenever it starts its turn without an enemy adjacent to it. The invisibility lasts until the end of its next turn or until it hits or misses with an attack.&lt;/p&gt;]]  <b>Phantom on the Wind</b> <b></b></p><p>The lesser air elemental becomes invisible whenever it starts its turn without an enemy adjacent to it. The invisibility lasts until the end of its next turn or until it hits or misses with an attack.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +6 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 3 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+6[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+6 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 3 damage.&lt;/p&gt;]] <6.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Grasp of Storms&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature that can’t see the elemental); +4 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the elemental grabs the target (escape DC 12) if it does not have a creature grabbed. Until the grab ends, the target takes ongoing 5 damage, and any ranged or melee attacks that hit the elemental deal half damage to the target.&lt;/p&gt;]] ⚔ <b>Grasp of Storms</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature that can’t see the elemental); [[/roll 1d20+4[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Grasp of Storms&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature that can’t see the elemental); &lt;u&gt;+4 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Grasp of Storms&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the elemental grabs the target (escape DC 12) if it does not have a creature grabbed. Until the grab ends, the target takes ongoing 5 damage, and any ranged or melee attacks that hit the elemental deal half damage to the target.&lt;/p&gt;]] <11>  damage, and the elemental grabs the target (escape DC 12) if it does not have a creature grabbed. Until the grab ends, the target takes ongoing 5 damage, and any ranged or melee attacks that hit the elemental deal half damage to the target.</p></tr></td></table>",

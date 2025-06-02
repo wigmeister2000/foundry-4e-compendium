@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Ring of Invisibility",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QU7P6iBebVjyxwdI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Stand the Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Mt4hAUzcWG1xw5O6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Steady-Footed",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DIeafBlw2k7vXj36",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -906,23 +910,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 172; <b>Bloodied</b> 86</td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 30</td><td><b>Ref</b> 29</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+12)<br><b>Con</b> 20 (+14)</td><td><b>Dex</b> 19 (+13)<br><b>Int</b> 16 (+12)</td><td><b>Wis</b> 17 (+12)<br><b>Cha</b> 22 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Elven, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +20, History +17, Insight +17, Stealth +22, Thievery +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 27</td></td></tr></table><p><b>Equipment</b> +4 dagger, ring of invisibility</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ring of Invisibility&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Obmi gains a +4 item bonus to Stealth checks (included in skills).&lt;/p&gt;&lt;p&gt; &lt;b&gt;Ring of Invisibility&lt;/b&gt; (illusion) ✦ &lt;b&gt;Daily&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Obmi becomes invisible until the end of his next turn.&lt;/p&gt;]]  <b>Ring of Invisibility</b> <b></b></p><p>Obmi gains a +4 item bonus to Stealth checks (included in skills).</p><p> <b>Ring of Invisibility</b> (illusion) ✦ <b>Daily</b></p><p><i>Effect:</i> Obmi becomes invisible until the end of his next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand the Ground&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Obmi can move 1 square fewer than the effect specifies when subjected to a pull, a push, or a slide.&lt;/p&gt;]]  <b>Stand the Ground</b> <b></b></p><p>Obmi can move 1 square fewer than the effect specifies when subjected to a pull, a push, or a slide.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Steady-Footed&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Obmi can make a saving throw to avoid falling prone when an attack would knock him prone.&lt;/p&gt;]]  <b>Steady-Footed</b> <b></b></p><p>Obmi can make a saving throw to avoid falling prone when an attack would knock him prone.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 16 damage, or 4d4 + 24 damage if the target is granting combat advantage to Obmi. If Obmi scores a critical hit, he deals 4d6 + 32 damage, or 4d6 + 40 damage if the target is granting combat advantage to him.&lt;/p&gt;]] (⚔) <b>Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 16#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 16 damage, or 4d4 + 24 damage if the target is granting combat advantage to Obmi. If Obmi scores a critical hit, he deals 4d6 + 32 damage, or 4d6 + 40 damage if the target is granting combat advantage to him.&lt;/p&gt;]] <26>  damage, or [[/roll 4d4 + 24#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 16 damage, or 4d4 + 24 damage if the target is granting combat advantage to Obmi. If Obmi scores a critical hit, he deals 4d6 + 32 damage, or 4d6 + 40 damage if the target is granting combat advantage to him.&lt;/p&gt;]] <34>  damage if the target is granting combat advantage to Obmi. If Obmi scores a critical hit, he deals [[/roll 4d6 + 32#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 16 damage, or 4d4 + 24 damage if the target is granting combat advantage to Obmi. If Obmi scores a critical hit, he deals 4d6 + 32 damage, or 4d6 + 40 damage if the target is granting combat advantage to him.&lt;/p&gt;]] <46>  damage, or [[/roll 4d6 + 40#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 16 damage, or 4d4 + 24 damage if the target is granting combat advantage to Obmi. If Obmi scores a critical hit, he deals 4d6 + 32 damage, or 4d6 + 40 damage if the target is granting combat advantage to him.&lt;/p&gt;]] <54>  damage if the target is granting combat advantage to him.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Phase Walk&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when an attack hits Obmi&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Obmi moves up to his speed, and he is insubstantial and has phasing while doing so.&lt;/p&gt;]]  <b>Phase Walk</b> ✦ <b>Recharge</b> when an attack hits Obmi</p><p><i>Effect:</i> Obmi moves up to his speed, and he is insubstantial and has phasing while doing so.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mad Feint&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Obmi must be bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target grants combat advantage to Obmi until the end of Obmi’s current turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Obmi grants combat advantage to the target until the end of Obmi’s next turn.&lt;/p&gt;]] ⚔ <b>Mad Feint</b> ✦ <b>At-Will</b> 1/round</p><p><i>Requirement:</i> Obmi must be bloodied.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mad Feint&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target grants combat advantage to Obmi until the end of Obmi’s current turn.</p><p><i>Miss:</i> Obmi grants combat advantage to the target until the end of Obmi’s next turn.</p></tr></td></table>",

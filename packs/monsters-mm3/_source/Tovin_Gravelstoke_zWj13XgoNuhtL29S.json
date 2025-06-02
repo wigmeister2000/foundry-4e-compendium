@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Stone Cold Slayer",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5W07pqLvE1AIRJxl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -288,7 +290,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -822,23 +825,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 96; <b>Bloodied</b> 48</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 25</td><td><b>Ref</b> 26</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+10)<br><b>Con</b> 12 (+7)</td><td><b>Dex</b> 21 (+11)<br><b>Int</b> 17 (+9)</td><td><b>Wis</b> 17 (+9)<br><b>Cha</b> 14 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +16, Athletics +15, Bluff +13, Insight +14, Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 24</td></td></tr></table><p><b>Equipment</b> crossbow , crossbow bolt  x20, dagger , leather armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stone Cold Slayer&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any creature slain by Tovin is petrified. As long as the creature remains petrified, it cannot be raised from the dead. Tovin can end the effect by touching the petrified creature. The effect can also be ended by spilling one or more drops of Tovin’s blood on the petrified creature.&lt;/p&gt;]]  <b>Stone Cold Slayer</b> <b></b></p><p>Any creature slain by Tovin is petrified. As long as the creature remains petrified, it cannot be raised from the dead. Tovin can end the effect by touching the petrified creature. The effect can also be ended by spilling one or more drops of Tovin’s blood on the petrified creature.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger of Death&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 necrotic damage.&lt;/p&gt;]] (⚔) <b>Dagger of Death</b> (necrotic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger of Death&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger of Death&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 necrotic damage.&lt;/p&gt;]] <20.5>  necrotic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow of Dread&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 damage, and Tovin gains a +4 power bonus to damage rolls against the target until the end of his next turn.&lt;/p&gt;]] (➶) <b>Crossbow of Dread</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow of Dread&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow of Dread&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 damage, and Tovin gains a +4 power bonus to damage rolls against the target until the end of his next turn.&lt;/p&gt;]] <21>  damage, and Tovin gains a +4 power bonus to damage rolls against the target until the end of his next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Poisoned Shot&lt;/b&gt; (necrotic, poison, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 damage, and ongoing 10 necrotic and poison damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is immobilized and takes ongoing 10 necrotic and poison damage (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The power’s other effects end, and the target falls unconscious (save ends).&lt;/p&gt;]] ➶ <b>Poisoned Shot</b> (necrotic, poison, weapon) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Poisoned Shot&lt;/b&gt; (necrotic, poison, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Poisoned Shot&lt;/b&gt; (necrotic, poison, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 damage, and ongoing 10 necrotic and poison damage (save ends).&lt;/p&gt;]] <21>  damage, and ongoing 10 necrotic and poison damage (save ends).</p><p><i>First Failed Saving Throw:</i> The target is immobilized and takes ongoing 10 necrotic and poison damage (save ends both).</p><p><i>Second Failed Saving Throw:</i> The power’s other effects end, and the target falls unconscious (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Escape&lt;/b&gt; (necrotic, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An adjacent enemy attacks Tovin with a melee attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; Melee 1 (triggering enemy). The target takes 5 necrotic damage, and Tovin teleports up to 5 squares.&lt;/p&gt;]]  <b>Shadow Escape</b> (necrotic, teleportation) ✦ <b>Encounter</b></p><p><i>Trigger:</i> An adjacent enemy attacks Tovin with a melee attack.</p><p><i>Effect (Immediate Interrupt):</i> Melee 1 (triggering enemy). The target takes 5 necrotic damage, and Tovin teleports up to 5 squares.</p></tr></td></table>",

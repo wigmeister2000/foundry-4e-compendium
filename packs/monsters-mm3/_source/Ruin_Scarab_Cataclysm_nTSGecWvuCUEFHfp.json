@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Earthshaker",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"roscl84EfpdT3Yum",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Demolition",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zOSHt6AsYVhKZqyD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Unstoppable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5ILKcAmpQPRkZ0Ov",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1082,23 +1086,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 672; <b>Bloodied</b> 336<hr><b>Resist</b> 15 thunder <b>Immune</b> dominated, stunned </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 30</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 2 (tunneling)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+14)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 18 (+12)<br><b>Int</b> 4 (+5)</td><td><b>Wis</b> 21 (+13)<br><b>Cha</b> 15 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Earthshaker&lt;/b&gt; (thunder) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;While in the aura, squares of ground become difficult terrain. While the scarab is bloodied, any enemy that ends its turn in the aura takes 10 thunder damage.&lt;/p&gt;]] ⌀ <b>Earthshaker</b> (thunder) ✦ <b>Aura</b> 3</p><p>While in the aura, squares of ground become difficult terrain. While the scarab is bloodied, any enemy that ends its turn in the aura takes 10 thunder damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Demolition&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scarab deals 2d10 extra damage against objects and structures.&lt;/p&gt;]]  <b>Demolition</b> <b></b></p><p>The scarab deals [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Demolition&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scarab deals 2d10 extra damage against objects and structures.&lt;/p&gt;]] <11> extra damage against objects and structures.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unstoppable&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scarab ignores difficult terrain.&lt;/p&gt;]]  <b>Unstoppable</b> <b></b></p><p>The scarab ignores difficult terrain.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crushing Mandibles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +22 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 15 damage, and the target falls prone.&lt;/p&gt;]] (⚔) <b>Crushing Mandibles</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+22[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crushing Mandibles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+22 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crushing Mandibles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 15 damage, and the target falls prone.&lt;/p&gt;]] <31.5>  damage, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Aftershock&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scarab moves up to its speed and can move through enemy spaces. The first time it enters each enemy’s space during the move, it makes the following attack against that enemy.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (one enemy); +20 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 13 damage.&lt;/p&gt;]] ⚔ <b>Aftershock</b> ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The scarab moves up to its speed and can move through enemy spaces. The first time it enters each enemy’s space during the move, it makes the following attack against that enemy.</p><p><i>Attack:</i> Melee 0 (one enemy); [[/roll 1d20+20[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Aftershock&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (one enemy); &lt;u&gt;+20 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 13#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Aftershock&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 13 damage.&lt;/p&gt;]] <35>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Focused Reverberation&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +20 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 7 thunder damage, and the target is dazed and deafened (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the target is dazed until the end of the scarab’s next turn.&lt;/p&gt;]] ᗕ <b>Focused Reverberation</b> (thunder) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+20[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Focused Reverberation&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+20 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Focused Reverberation&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 7 thunder damage, and the target is dazed and deafened (save ends both).&lt;/p&gt;]] <23.5>  thunder damage, and the target is dazed and deafened (save ends both).</p><p><i>Miss:</i> Half damage, and the target is dazed until the end of the scarab’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Wind Wave&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +20 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 damage, and the scarab pushes the target up to 3 squares.&lt;/p&gt;]] ᗕ <b>Wind Wave</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+20[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Wind Wave&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+20 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Wind Wave&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 damage, and the scarab pushes the target up to 3 squares.&lt;/p&gt;]] <25.5>  damage, and the scarab pushes the target up to 3 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reflective Carapace&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 10 squares of the scarab misses it with an area or a ranged attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The triggering enemy must use the attack against itself.&lt;/p&gt;]]  <b>Reflective Carapace</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy within 10 squares of the scarab misses it with an area or a ranged attack.</p><p><i>Effect (Immediate Reaction):</i> The triggering enemy must use the attack against itself.</p></tr></td></table>",

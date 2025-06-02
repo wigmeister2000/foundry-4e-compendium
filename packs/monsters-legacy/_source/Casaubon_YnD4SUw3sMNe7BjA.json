@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1130,23 +1132,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 88; <b>Bloodied</b> 44</td><td style=\"padding-left: 15px;\"><b>Init</b> +2 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 14</td><td><b>Ref</b> 14</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+1)<br><b>Con</b> 12 (+2)</td><td><b>Dex</b> 13 (+2)<br><b>Int</b> 18 (+5)</td><td><b>Wis</b> 9 (0)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +10, Bluff +6, History +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><p><b>Equipment</b> robes, dagger , spellbook , wand implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d4+1 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d4+1 damage. &lt;/p&gt;]]; [[/roll 1d4+1#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d4+1 damage. &lt;/p&gt;]] <3.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +6 vs Reflex; 3d4+4 force damage. &lt;/p&gt;]] (➶) <b>Magic Missile</b> (standard, at-will) ✦ <b>Force, Implement</b></p><p>Ranged 20; [[/roll 1d20+6[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+6 vs Reflex&lt;/u&gt;; 3d4+4 force damage. &lt;/p&gt;]]; [[/roll 3d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +6 vs Reflex; 3d4+4 force damage. &lt;/p&gt;]] <11.5>  force damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Misdirected Mark&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +7 vs Reflex; 1d8+5 damage, and the target is marked by an ally of Casaubon’s choice within 5 squares of him until the end of his next turn. &lt;/p&gt;]] ➶ <b>Misdirected Mark</b> (standard, encounter) ✦ <b>Implement</b></p><p>Ranged 10; [[/roll 1d20+7[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Misdirected Mark&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+7 vs Reflex&lt;/u&gt;; 1d8+5 damage, and the target is marked by an ally of Casaubon’s choice within 5 squares of him until the end of his next turn. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Misdirected Mark&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +7 vs Reflex; 1d8+5 damage, and the target is marked by an ally of Casaubon’s choice within 5 squares of him until the end of his next turn. &lt;/p&gt;]] <9.5>  damage, and the target is marked by an ally of Casaubon’s choice within 5 squares of him until the end of his next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Maze of Mirrors&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Illusion, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +6 vs Will; until the end of Casaubon’s next turn, the target is immobilized and takes a -4 to attack rolls. &lt;/p&gt;]] ✻ <b>Maze of Mirrors</b> (standard, encounter) ✦ <b>Illusion, Implement</b></p><p>Area burst 1 within 10; [[/roll 1d20+6[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Maze of Mirrors&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Illusion, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+6 vs Will&lt;/u&gt;; until the end of Casaubon’s next turn, the target is immobilized and takes a -4 to attack rolls. &lt;/p&gt;]]; until the end of Casaubon’s next turn, the target is immobilized and takes a -4 to attack rolls. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Light&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; targets one object or unoccupied square; the target sheds bright light that fills the square and all squares within 4 squares of it. The light lasts 5 minutes and can be put out with a free action. Casaubon can have only one light active at a time&lt;/p&gt;]] ➶ <b>Light</b> (minor, at-will) </p><p>Ranged 5; targets one object or unoccupied square; the target sheds bright light that fills the square and all squares within 4 squares of it. The light lasts 5 minutes and can be put out with a free action. Casaubon can have only one light active at a time</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Expeditious Retreat&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;Casaubon shifts twice his speed.&lt;/p&gt;]]  <b>Expeditious Retreat</b> (move; encounter) </p><p>Casaubon shifts twice his speed.</p></tr></td></table>",

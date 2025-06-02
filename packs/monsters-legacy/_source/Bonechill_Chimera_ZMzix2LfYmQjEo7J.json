@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -463,10 +464,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -944,23 +945,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 366; <b>Bloodied</b> 183<hr><b>Resist</b> 10 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 29</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 10 (clumsy), overland flight 15</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+14)<br><b>Con</b> 23 (+13)</td><td><b>Dex</b> 17 (+10)<br><b>Int</b> 5 (+4)</td><td><b>Wis</b> 14 (+9)<br><b>Cha</b> 17 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision,Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lion\"s Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 2d8+7 damage. &lt;/p&gt;]] (⚔) <b>Lion\"s Bite</b> (standard, at-will) </p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lion\"s Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 2d8+7 damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lion\"s Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 2d8+7 damage. &lt;/p&gt;]] <16>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ram\"s Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The chimera makes a charge attack; +19 vs AC; 1d10+11 damage, and the target is pushed 1 square and knocked prone. &lt;/p&gt;]] ⚔ <b>Ram\"s Charge</b> (standard, at-will) </p><p>The chimera makes a charge attack; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ram\"s Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The chimera makes a charge attack; &lt;u&gt;+19 vs AC&lt;/u&gt;; 1d10+11 damage, and the target is pushed 1 square and knocked prone. &lt;/p&gt;]]; [[/roll 1d10+11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ram\"s Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The chimera makes a charge attack; +19 vs AC; 1d10+11 damage, and the target is pushed 1 square and knocked prone. &lt;/p&gt;]] <16.5>  damage, and the target is pushed 1 square and knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Threat&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The chimera makes the following three melee attacks, each one against a different target:&lt;/p&gt;&lt;p&gt;Dragon’s Bite + 18 vs. AC; 3d6 + 7 damage.&lt;/p&gt;&lt;p&gt;Lion’s Bite +18 vs. AC; 2d8 + 7 damage.&lt;/p&gt;&lt;p&gt;Ram’s Gore + 18 vs. AC; 1d10 + 7 damage, and the target is knocked prone.&lt;/p&gt;]] ⚔ <b>Triple Threat</b> (standard, at-will) </p><p>The chimera makes the following three melee attacks, each one against a different target:</p><p>Dragon’s Bite + 18 vs. AC; [[/roll 3d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Threat&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Dragon’s Bite + 18 vs. AC; 3d6 + 7 damage.&lt;/p&gt;]] <17.5>  damage.</p><p>Lion’s Bite [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Threat&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Lion’s Bite &lt;u&gt;+18 vs. AC&lt;/u&gt;; 2d8 + 7 damage.&lt;/p&gt;]]; [[/roll 2d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Threat&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Lion’s Bite +18 vs. AC; 2d8 + 7 damage.&lt;/p&gt;]] <16>  damage.</p><p>Ram’s Gore + 18 vs. AC; [[/roll 1d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Threat&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ram’s Gore + 18 vs. AC; 1d10 + 7 damage, and the target is knocked prone.&lt;/p&gt;]] <12.5>  damage, and the target is knocked prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +16 vs Reflex; 2d6+3 damage, and the target takes ongoing 5 cold damage and is slowed (save ends both). &lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (standard, encounter) ✦ <b>Cold</b></p><p>Close blast 5; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 2d6+3 damage, and the target takes ongoing 5 cold damage and is slowed (save ends both). &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +16 vs Reflex; 2d6+3 damage, and the target takes ongoing 5 cold damage and is slowed (save ends both). &lt;/p&gt;]] <10>  damage, and the target takes ongoing 5 cold damage and is slowed (save ends both). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;The chimera’s breath weapon recharges, and the chimera uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>The chimera’s breath weapon recharges, and the chimera uses it immediately.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -954,23 +955,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 77; <b>Bloodied</b> 38</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 17</td><td><b>Ref</b> 18</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+3)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 11 (+3)<br><b>Int</b> 15 (+5)</td><td><b>Wis</b> 17 (+6)<br><b>Cha</b> 14 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +10, Nature +11</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> roobes, staff implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+1 damage. &lt;/p&gt;]] (⚔) <b>Staff</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d6+1 damage. &lt;/p&gt;]]; [[/roll 1d6+1#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+1 damage. &lt;/p&gt;]] <4.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Beast Curse&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a hexed enemy; +11 vs Fortitude; until the end of the human hexer’s next turn, the target becomes a Tiny animal. While in this form, the target cannot use powers. &lt;/p&gt;]] ➶ <b>Beast Curse</b> (standard, recharge ⚃⚄⚅) ✦ <b>Polymorph</b></p><p>Ranged 10; targets a hexed enemy; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Beast Curse&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a hexed enemy; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; until the end of the human hexer’s next turn, the target becomes a Tiny animal. While in this form, the target cannot use powers. &lt;/p&gt;]]; until the end of the human hexer’s next turn, the target becomes a Tiny animal. While in this form, the target cannot use powers. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Capricious Earth&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 10; targets hexed creatures; +11 vs Will; 1d10+3 damage, and the human hexer slides the target 3 squares and the target is knocked prone. &lt;/p&gt;]] ✻ <b>Capricious Earth</b> (standard, encounter) ✦ <b>Charm, Implement</b></p><p>Area burst 3 within 10; targets hexed creatures; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Capricious Earth&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 10; targets hexed creatures; &lt;u&gt;+11 vs Will&lt;/u&gt;; 1d10+3 damage, and the human hexer slides the target 3 squares and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d10+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Capricious Earth&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 10; targets hexed creatures; +11 vs Will; 1d10+3 damage, and the human hexer slides the target 3 squares and the target is knocked prone. &lt;/p&gt;]] <8.5>  damage, and the human hexer slides the target 3 squares and the target is knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hex&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +11 vs Will; the target is hexed (save ends). While the target is hexed, it takes a -2 penalty to attack rolls and damage rolls against the human hexer. &lt;/p&gt;]] ᗕ <b>Hex</b> (minor, at-will) ✦ <b>Charm, Implement</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hex&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+11 vs Will&lt;/u&gt;; the target is hexed (save ends). While the target is hexed, it takes a -2 penalty to attack rolls and damage rolls against the human hexer. &lt;/p&gt;]]; the target is hexed (save ends). While the target is hexed, it takes a -2 penalty to attack rolls and damage rolls against the human hexer. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Hex Jump&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The human hexer either teleports 5 squares or swaps positions with one hexed creature within 5 squares of it.&lt;/p&gt;]]  <b>Hex Jump</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The human hexer either teleports 5 squares or swaps positions with one hexed creature within 5 squares of it.</p></tr></td></table>",

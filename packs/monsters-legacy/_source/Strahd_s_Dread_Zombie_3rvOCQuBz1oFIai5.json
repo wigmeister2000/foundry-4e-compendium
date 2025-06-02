@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -362,7 +363,7 @@
 		},
 		{
 			"name":"Rise Again",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SD5VXnFc8t6krdCN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -398,7 +399,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -454,23 +456,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 31</td><td><b>Ref</b> 27</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+14)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 15 (+10)<br><b>Int</b> 6 (+6)</td><td><b>Wis</b> 16 (+11)<br><b>Cha</b> 6 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10,Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 8 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 8 damage. &lt;/p&gt;]]; 8 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Zombie Smash&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;+21 vs AC; 8 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Zombie Smash</b> (standard, recharge ⚃⚄⚅) </p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Zombie Smash&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 8 damage, and the target is knocked prone. &lt;/p&gt;]]; 8 damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Rise Again&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a Strahd’s dread zombie is reduced to 0 hit points by an attack that does not deal fire or radiant damage, the creature is not destroyed. The Strahd’s dread zombie falls prone and appears to be destroyed, but instead, the creature returns with 1 hit point at the beginning of its next turn.&lt;/p&gt;]]  <b>Rise Again</b></p><p>If a Strahd’s dread zombie is reduced to 0 hit points by an attack that does not deal fire or radiant damage, the creature is not destroyed. The Strahd’s dread zombie falls prone and appears to be destroyed, but instead, the creature returns with 1 hit point at the beginning of its next turn.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -410,23 +411,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 116; <b>Bloodied</b> 58</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 22</td><td><b>Ref</b> 21</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 2 (0)</td><td><b>Wis</b> 13 (+5)<br><b>Cha</b> 10 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 5 damage, or 3d10 + 10 damage against a prone target, and the target is grabbed (escape DC 17). While the hound has a target grabbed, it can use bite only against that target.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 5 damage, or 3d10 + 10 damage against a prone target, and the target is grabbed (escape DC 17). While the hound has a target grabbed, it can use bite only against that target.&lt;/p&gt;]] <21.5>  damage, or [[/roll 3d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 5 damage, or 3d10 + 10 damage against a prone target, and the target is grabbed (escape DC 17). While the hound has a target grabbed, it can use bite only against that target.&lt;/p&gt;]] <26.5>  damage against a prone target, and the target is grabbed (escape DC 17). While the hound has a target grabbed, it can use bite only against that target.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Pull Down&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the hound); +12 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The grab ends.&lt;/p&gt;]] ⚔ <b>Pull Down</b> ✦ <b>At-Will</b> (1/round)</p><p><i>Attack:</i> Melee 1 (one creature grabbed by the hound); [[/roll 1d20+12[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Pull Down&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the hound); &lt;u&gt;+12 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target falls prone.</p><p><i>Miss:</i> The grab ends.</p></tr></td></table>",

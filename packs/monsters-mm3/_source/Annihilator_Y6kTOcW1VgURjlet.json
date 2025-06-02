@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RhKlH3DzE0MpPYLj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Ooze",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"z1OQMZ4UKqfJRLwb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,7 +336,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -684,23 +688,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 212; <b>Bloodied</b> 106<hr><b>Immune</b> acid, blinded, disease, gaze effects, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 30</td><td><b>Ref</b> 31</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+11)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 25 (+16)<br><b>Int</b> 14 (+11)</td><td><b>Wis</b> 21 (+14)<br><b>Cha</b> 10 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Common, telepathy 5<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Annihilator takes half damage from any damage source, except force damage and psychic damage. Whenever the Annihilator takes psychic damage, it loses this trait until the start of its next turn.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>The Annihilator takes half damage from any damage source, except force damage and psychic damage. Whenever the Annihilator takes psychic damage, it loses this trait until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ooze&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While squeezing, the Annihilator moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.&lt;/p&gt;]]  <b>Ooze</b> <b></b></p><p>While squeezing, the Annihilator moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Caustic Slam&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 15 acid damage, and ongoing 10 acid damage (save ends).&lt;/p&gt;]] (⚔) <b>Caustic Slam</b> (acid) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Caustic Slam&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Caustic Slam&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 15 acid damage, and ongoing 10 acid damage (save ends).&lt;/p&gt;]] <22>  acid damage, and ongoing 10 acid damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Rain&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 15 acid damage, and ongoing 10 acid damage (save ends).&lt;/p&gt;]] (➶) <b>Acid Rain</b> (acid) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Rain&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Rain&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 15 acid damage, and ongoing 10 acid damage (save ends).&lt;/p&gt;]] <22>  acid damage, and ongoing 10 acid damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Corrosive Wave&lt;/b&gt; (acid) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 15 acid damage, and ongoing 10 acid damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and ongoing 5 acid damage (save ends).&lt;/p&gt;]] ᗕ <b>Corrosive Wave</b> (acid) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Corrosive Wave&lt;/b&gt; (acid) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 15#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Corrosive Wave&lt;/b&gt; (acid) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 15 acid damage, and ongoing 10 acid damage (save ends).&lt;/p&gt;]] <25.5>  acid damage, and ongoing 10 acid damage (save ends).</p><p><i>Miss:</i> Half damage, and ongoing 5 acid damage (save ends).</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Flaming Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xUVSZ9hRLG4Yrz7B",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -108,7 +109,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -881,10 +883,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1186,28 +1188,15 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1248; <b>Bloodied</b> 624 ; see also death burst<hr><b>Resist</b> 40 fire, 20 acid, 20 cold, 20 thunder <b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +21 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 41</td><td><b>Ref</b> 38</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 12 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+23)<br><b>Con</b> 32 (+24)</td><td><b>Dex</b> 26 (+21)<br><b>Int</b> 17 (+16)</td><td><b>Wis</b> 27 (+21)<br><b>Cha</b> 19 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Bluff +22, Insight +26, Intimidate +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 6<br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Flaming Body&lt;/b&gt; (Fire) aura 2 (aura 3 while the balor is bloodied); enemies that start their turns in the aura takes 20 fire damage (30 fire damage while the balor is bloodied).]] <b>Flaming Body</b> (Fire) aura 2 (aura 3 while the balor is bloodied); enemies that start their turns in the aura takes 20 fire damage (30 fire damage while the balor is bloodied).</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lightning Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d10+10 lightning damage, or 3d10 + 40 lightning damage on a critical hit. &lt;/p&gt;]] (⚔) <b>Lightning Sword</b> (standard, at-will) ✦ <b>Lightning, Weapon</b></p><p>Reach 3; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lightning Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+32 vs AC&lt;/u&gt;; 3d10+10 lightning damage, or 3d10 + 40 lightning damage on a critical hit. &lt;/p&gt;]]; [[/roll 3d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lightning Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d10+10 lightning damage, or 3d10 + 40 lightning damage on a critical hit. &lt;/p&gt;]] <26.5>  lightning damage, or [[/roll 3d10 + 40#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lightning Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d10+10 lightning damage, or 3d10 + 40 lightning damage on a critical hit. &lt;/p&gt;]] <56.5>  lightning damage on a critical hit. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flame Whip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 5; +30 vs Reflex; 3d8+5 fire damage, and ongoing 10 fire damage (save ends). Also, the target is pulled into an unoccupied space adjacent to the balor. &lt;/p&gt;]] ⚔ <b>Flame Whip</b> (standard, at-will) ✦ <b>Fire, Weapon</b></p><p>Reach 5; [[/roll 1d20+30[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flame Whip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 5; &lt;u&gt;+30 vs Reflex&lt;/u&gt;; 3d8+5 fire damage, and ongoing 10 fire damage (save ends). Also, the target is pulled into an unoccupied space adjacent to the balor. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flame Whip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 5; +30 vs Reflex; 3d8+5 fire damage, and ongoing 10 fire damage (save ends). Also, the target is pulled into an unoccupied space adjacent to the balor. &lt;/p&gt;]] <18.5>  fire damage, and ongoing 10 fire damage (save ends). Also, the target is pulled into an unoccupied space adjacent to the balor. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Balor Fury&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +31 vs Reflex; 5d10+15 fire and lightning damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] ᗕ <b>Balor Fury</b> (standard, at-will) ✦ <b>Fire, Lightning, Weapon</b></p><p>Close burst 3; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Balor Fury&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 5d10+15 fire and lightning damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 5d10+15#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Balor Fury&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +31 vs Reflex; 5d10+15 fire and lightning damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <42.5>  fire and lightning damage, and ongoing 10 fire damage (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fireburst Step&lt;/b&gt; (move, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +30 vs Fortitude; 2d10+10 fire damage, and the target is dazed (save ends). The balor teleports 5 squares. &lt;/p&gt;]] ᗕ <b>Fireburst Step</b> (move, recharge ⚄⚅) ✦ <b>Fire, Teleportation</b></p><p>Close burst 1; [[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fireburst Step&lt;/b&gt; (move, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+30 vs Fortitude&lt;/u&gt;; 2d10+10 fire damage, and the target is dazed (save ends). The balor teleports 5 squares. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fireburst Step&lt;/b&gt; (move, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +30 vs Fortitude; 2d10+10 fire damage, and the target is dazed (save ends). The balor teleports 5 squares. &lt;/p&gt;]] <21>  fire damage, and the target is dazed (save ends). The balor teleports 5 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The balor explodes in a burst of flame; close burst 10; +29 vs Reflex; 10d10 fire damage. Miss: Half damage. The balor and its weapons are completely destroyed. &lt;/p&gt;]] ᗕ <b>Death Burst</b> ( when reduced to 0 hit points, ) ✦ <b>Fire</b></p><p>The balor explodes in a burst of flame; close burst 10; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The balor explodes in a burst of flame; close burst 10; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 10d10 fire damage. Miss: Half damage. The balor and its weapons are completely destroyed. &lt;/p&gt;]]; [[/roll 10d10 #&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The balor explodes in a burst of flame; close burst 10; +29 vs Reflex; 10d10 fire damage. Miss: Half damage. The balor and its weapons are completely destroyed. &lt;/p&gt;]] <55> fire damage. Miss: Half damage. The balor and its weapons are completely destroyed. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Demonic Accuracy&lt;/b&gt; (free, when the balor misses with an attack; encounter) &lt;/p&gt;&lt;p&gt;The balor rerolls the attack and gains a +5 bonus to the roll.&lt;/p&gt;]]  <b>Demonic Accuracy</b> (free, when the balor misses with an attack; encounter) </p><p>The balor rerolls the attack and gains a +5 bonus to the roll.</p></tr></td></table>",

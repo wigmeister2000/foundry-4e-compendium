@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -414,23 +415,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 20 cold, 20 fire, 20 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 36</td><td><b>Ref</b> 35</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+19)<br><b>Con</b> 23 (+17)</td><td><b>Dex</b> 24 (+18)<br><b>Int</b> 3 (+7)</td><td><b>Wis</b> 24 (+18)<br><b>Cha</b> 3 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> (understands Common and Primordial)<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 7 damage, and ongoing 2 cold damage (save ends). This ongoing cold damage stacks with that of other drudges, to a maximum of ongoing 10 cold damage (a single save ends all). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 7 damage, and ongoing 2 cold damage (save ends). This ongoing cold damage stacks with that of other drudges, to a maximum of ongoing 10 cold damage (a single save ends all). &lt;/p&gt;]]; 7 damage, and ongoing 2 cold damage (save ends). This ongoing cold damage stacks with that of other drudges, to a maximum of ongoing 10 cold damage (a single save ends all). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Elemental Dissipation&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +24 vs Reflex; targets enemies; 10 cold, fire, and lightning damage. &lt;/p&gt;]] ᗕ <b>Elemental Dissipation</b> ( when reduced to 0 hit points, ) ✦ <b>Cold, Fire, Lightning</b></p><p>Close burst 1; [[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Elemental Dissipation&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+24 vs Reflex&lt;/u&gt;; targets enemies; 10 cold, fire, and lightning damage. &lt;/p&gt;]]; targets enemies; 10 cold, fire, and lightning damage. </p></tr></td></table>",

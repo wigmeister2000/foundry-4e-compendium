@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -545,7 +546,7 @@
 		},
 		{
 			"name":"Sense Master",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"75BGFyDoL03zRYc6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -581,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 118; <b>Bloodied</b> 59</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 26</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+9)<br><b>Con</b> 14 (+8)</td><td><b>Dex</b> 21 (+11)<br><b>Int</b> 12 (+7)</td><td><b>Wis</b> 13 (+7)<br><b>Cha</b> 7 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Dungeoneering +12, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> pickaxe</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pickaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+5 damage. &lt;/p&gt;]] (⚔) <b>Pickaxe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pickaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pickaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Curse Carrier&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Charm, Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +15 vs Will; the target is cursed with twisted domination. &lt;/p&gt;]] ᗕ <b>Curse Carrier</b> ( when reduced to 0 hit points, ) ✦ <b>Charm, Polymorph</b></p><p>Close burst 1; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Curse Carrier&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Charm, Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+15 vs Will&lt;/u&gt;; the target is cursed with twisted domination. &lt;/p&gt;]]; the target is cursed with twisted domination. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sense Master&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A twisted one can sense the distance and direction of the creature or remains whose tomb it is driven to guard.&lt;/p&gt;]]  <b>Sense Master</b></p><p>A twisted one can sense the distance and direction of the creature or remains whose tomb it is driven to guard.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Careful Weave&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;An adjacent enemy slides into the twisted miner’s space, and the twisted miner shifts 2 squares.&lt;/p&gt;]]  <b>Careful Weave</b> (move; at-will) </p><p>An adjacent enemy slides into the twisted miner’s space, and the twisted miner shifts 2 squares.</p></tr></td></table>",

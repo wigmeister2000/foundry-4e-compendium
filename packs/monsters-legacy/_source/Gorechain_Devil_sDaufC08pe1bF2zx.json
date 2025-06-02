@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Grasping Chains",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AEgItk0qVNa6hzfi",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 298; <b>Bloodied</b> 149<hr><b>Resist</b> 10 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 21</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 15 (+8)</td><td><b>Wis</b> 15 (+8)<br><b>Cha</b> 13 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Grasping Chains&lt;/b&gt; aura 3; any enemy that starts its turn within the aura must make a DC 21 Athletics check or Acrobatics check in order to leave the aura. If the check fails, the enemy cannot attempt to leave the aura again until the start of its next turn.]] <b>Grasping Chains</b> aura 3; any enemy that starts its turn within the aura must make a DC 21 Athletics check or Acrobatics check in order to leave the aura. If the check fails, the enemy cannot attempt to leave the aura again until the start of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gorechain Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d12+4 damage. &lt;/p&gt;]] (⚔) <b>Gorechain Strike</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 3; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gorechain Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d12+4 damage. &lt;/p&gt;]]; [[/roll 2d12+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gorechain Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d12+4 damage. &lt;/p&gt;]] <17>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Gorechain Flail&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;The gorechain devil makes a gorechain strike attack against each enemy within reach.&lt;/p&gt;]] ⚔ <b>Gorechain Flail</b> (standard, recharge ⚅</p><p>The gorechain devil makes a gorechain strike attack against each enemy within reach.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Gorechain Takeover&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +13 vs Fortitude; 3d6+5 damage, and the target is dominated (save ends). The dominated condition ends if the target is more than 3 squares away from the gorechain devil at the start of the target’s turn. &lt;/p&gt;]] ⚔ <b>Gorechain Takeover</b> (standard, recharge ⚄⚅) ✦ <b>Charm</b></p><p>Reach 3; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Gorechain Takeover&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 3d6+5 damage, and the target is dominated (save ends). The dominated condition ends if the target is more than 3 squares away from the gorechain devil at the start of the target’s turn. &lt;/p&gt;]]; [[/roll 3d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Gorechain Takeover&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +13 vs Fortitude; 3d6+5 damage, and the target is dominated (save ends). The dominated condition ends if the target is more than 3 squares away from the gorechain devil at the start of the target’s turn. &lt;/p&gt;]] <15.5>  damage, and the target is dominated (save ends). The dominated condition ends if the target is more than 3 squares away from the gorechain devil at the start of the target’s turn. </p></tr></td></table>",

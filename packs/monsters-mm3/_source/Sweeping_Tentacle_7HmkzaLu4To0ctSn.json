@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Unhindered",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"mYEUMP1yJpBWxniq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -454,23 +457,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Immune</b> blinded, gaze, teleportation </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 2 (+2)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 12 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unhindered&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the sweeping tentacle moves, it pulls with it any creature grabbed by it. In addition, the creature remains grabbed, and the tentacle does not provoke an opportunity attack from the grabbed creature.&lt;/p&gt;]]  <b>Unhindered</b> <b></b></p><p>When the sweeping tentacle moves, it pulls with it any creature grabbed by it. In addition, the creature remains grabbed, and the tentacle does not provoke an opportunity attack from the grabbed creature.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Seize&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 13 damage, and the tentacle grabs the target.&lt;/p&gt;]] (⚔) <b>Seize</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Seize&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 13 damage, and the tentacle grabs the target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Suffocating Grab&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the tentacle); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 13 damage, and the target falls prone.&lt;/p&gt;]] (⚔) <b>Suffocating Grab</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature grabbed by the tentacle); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Suffocating Grab&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the tentacle); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 13 damage, and the target falls prone.</p></tr></td></table>",

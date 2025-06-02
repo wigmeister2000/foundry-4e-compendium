@@ -1,0 +1,13 @@
+{
+	"name":"Update NPC initiative to v0.6",
+	"type":"script",
+	"command":"// This macro loops through all 4e compendium NPCs in a folder and updates their initiative to the v0.6 data model. The folder must ONLY contain NPCs from before the update.\n///////////////////////////////////////////\n// BACKUP YOUR WORLD BEFORE RUNNING THIS!!!\n///////////////////////////////////////////\n\nconst folderName = \"Enter your folder name here\"\n\nconst actors = game.actors.folders.contents.filter(x => x.name === folderName)[0].contents;\nconsole.log(actors);\n\nasync function fixInitiative(){\n    for (const actor of actors){\n        const base = Math.floor(actor.system.details.level / 2) + actor.system.attributes.init.bonus[0].value;\n        await actor.update({\n            \"system.attributes.init.base\": base,\n            \"system.attributes.init.-=bonus\": null\n            });\n    }\n}\n\nnew Dialog({\n  title: \"Update v0.6 NPC initiative\",\n  content: \"BACKUP YOUR WORLD BEFORE RUNNING THIS!\",\n  buttons: {\n    yes: {\n      label: \"Run\",\n      callback: fixInitiative\n    },\n    close: {\n      label: \"Cancel\"\n    },\n  },\n  default: \"close\",\n  close: () => {}\n}).render(true);",
+	"img":"icons/svg/dice-target.svg",
+	"author":"LQXSXklgUOv6OUGK",
+	"scope":"global",
+	"folder":null,
+	"flags":{},
+	"_id":"aZxHJ2SWcO9lJ4sM",
+	"sort":0,
+	"_key":"!macros!aZxHJ2SWcO9lJ4sM"
+}

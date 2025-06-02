@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Spreading Madness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"U6gn5QIF2NOKhzBd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Aquatic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"bqBSpExz1cO4QG60",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -502,23 +505,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 23</td><td><b>Ref</b> 23</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+8)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 1 (+1)</td><td><b>Wis</b> 13 (+7)<br><b>Cha</b> 22 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Spreading Madness&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Enemies within the aura gain vulnerable 5 psychic.&lt;/p&gt;]] ⌀ <b>Spreading Madness</b> ✦ <b>Aura</b> 1</p><p>Enemies within the aura gain vulnerable 5 psychic.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aquatic &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mad one can breathe underwater. In aquatic combat, it gains a +2 bonus to attack rolls against nonaquatic creatures.&lt;/p&gt;]]  <b>Aquatic </b> <b></b></p><p>The mad one can breathe underwater. In aquatic combat, it gains a +2 bonus to attack rolls against nonaquatic creatures.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 10 damage, and the mad one shifts 1 square.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 10 damage, and the mad one shifts 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Eldritch Scream&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); +15 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5 psychic damage.&lt;/p&gt;]] ᗕ <b>Eldritch Scream</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 3 (enemies in the blast); [[/roll 1d20+15[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Eldritch Scream&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); &lt;u&gt;+15 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 5 psychic damage.</p></tr></td></table>",

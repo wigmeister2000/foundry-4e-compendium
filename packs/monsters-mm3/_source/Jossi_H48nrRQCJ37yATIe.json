@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Fancy Footwork",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HU3hr2DbsSd9jEzA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 55; <b>Bloodied</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 18</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+2)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 15 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +11, Bluff +9, Stealth +11, Thievery +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> dagger , leather armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fancy Footwork&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Jossi deals 1d6 extra damage until the end of her turn whenever she shifts as a move action.&lt;/p&gt;]]  <b>Fancy Footwork</b> <b></b></p><p>Jossi deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fancy Footwork&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Jossi deals 1d6 extra damage until the end of her turn whenever she shifts as a move action.&lt;/p&gt;]] <3.5> extra damage until the end of her turn whenever she shifts as a move action.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 7 damage.&lt;/p&gt;]] (⚔) <b>Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d4 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 7 damage.&lt;/p&gt;]] <12>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Juggling Slash&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +7 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 7 damage, and Jossi slides the target 2 squares and shifts 2 squares.&lt;/p&gt;]] ⚔ <b>Juggling Slash</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+7[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Juggling Slash&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+7 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d4 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Juggling Slash&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 7 damage, and Jossi slides the target 2 squares and shifts 2 squares.&lt;/p&gt;]] <12>  damage, and Jossi slides the target 2 squares and shifts 2 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Distracting Toss&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy makes a melee attack against Jossi.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Jossi shifts her speed to a square where she has any cover or any concealment and makes a Stealth check to become hidden, with a +5 bonus to the roll.&lt;/p&gt;]]  <b>Distracting Toss</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Trigger:</i> An enemy makes a melee attack against Jossi.</p><p><i>Effect (Immediate Reaction):</i> Jossi shifts her speed to a square where she has any cover or any concealment and makes a Stealth check to become hidden, with a +5 bonus to the roll.</p></tr></td></table>",

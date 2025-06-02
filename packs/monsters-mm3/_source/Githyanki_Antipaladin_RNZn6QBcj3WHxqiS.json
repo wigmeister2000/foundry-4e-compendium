@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Antipaladin Grace",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"luTIVfmxWZ1z0Pdb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 220; <b>Bloodied</b> 110</td><td style=\"padding-left: 15px;\"><b>Init</b> +20</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 36</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+19)<br><b>Con</b> 20 (+17)</td><td><b>Dex</b> 23 (+18)<br><b>Int</b> 12 (+13)</td><td><b>Wis</b> 17 (+15)<br><b>Cha</b> 28 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +18, Insight +20, Intimidate +26</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 30</td></td></tr></table><p><b>Equipment</b> silver bastard sword, heavy shield , plate armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Antipaladin Grace&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The githyanki ignores penalties to attack rolls. Its attacks never trigger enemy attacks.&lt;/p&gt;]]  <b>Antipaladin Grace</b> <b></b></p><p>The githyanki ignores penalties to attack rolls. Its attacks never trigger enemy attacks.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Bastard Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +29 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 21 damage, and the target cannot spend healing surges (save ends).&lt;/p&gt;]] (⚔) <b>Silver Bastard Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+29[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Bastard Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+29 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 21#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Bastard Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 21 damage, and the target cannot spend healing surges (save ends).&lt;/p&gt;]] <32>  damage, and the target cannot spend healing surges (save ends).</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mindwalk&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The githyanki teleports up to 10 squares.&lt;/p&gt;]]  <b>Mindwalk</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> The githyanki teleports up to 10 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Psionic Bonds&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +27 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target falls prone, and it is immobilized (save ends).&lt;/p&gt;]] ➶ <b>Psionic Bonds</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+27[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Psionic Bonds&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+27 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target falls prone, and it is immobilized (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Planar Vengeance&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy unable to spend healing surges while affected by silver bastard sword either willingly leaves a square adjacent to the githyanki or uses an attack power that does not include the githyanki as a target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Opportunity Action):&lt;/i&gt; Mindwalk recharges, and the githyanki can use it. The githyanki can then use silver bastard sword against the triggering enemy.&lt;/p&gt;]]  <b>Planar Vengeance</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy unable to spend healing surges while affected by silver bastard sword either willingly leaves a square adjacent to the githyanki or uses an attack power that does not include the githyanki as a target.</p><p><i>Effect (Opportunity Action):</i> Mindwalk recharges, and the githyanki can use it. The githyanki can then use silver bastard sword against the triggering enemy.</p></tr></td></table>",

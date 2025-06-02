@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Zombification",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MmoUq25yCxp4e8aJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Deep Cover",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1nRgiAM9pv46U8Jk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1040,23 +1043,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 75; <b>Bloodied</b> 37</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 17</td><td><b>Ref</b> 19</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+6)<br><b>Con</b> 11 (+3)</td><td><b>Dex</b> 10 (+3)<br><b>Int</b> 12 (+4)</td><td><b>Wis</b> 10 (+3)<br><b>Cha</b> 20 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Zombification&lt;/b&gt; (healing) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Whenever an undead ally in the aura dies, it does not die but instead falls unconscious until the start of its next turn, when it returns with 1 hit point. A creature adjacent to an unconscious undead creature can perform a coup de grace as a minor action to prevent it from returning.&lt;/p&gt;]] ⌀ <b>Zombification</b> (healing) ✦ <b>Aura</b> 3</p><p>Whenever an undead ally in the aura dies, it does not die but instead falls unconscious until the start of its next turn, when it returns with 1 hit point. A creature adjacent to an unconscious undead creature can perform a coup de grace as a minor action to prevent it from returning.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Deep Cover&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Kur uses change shape to look like an undead creature, other undead creatures treat Kur as if he were undead.&lt;/p&gt;]]  <b>Deep Cover</b> <b></b></p><p>When Kur uses change shape to look like an undead creature, other undead creatures treat Kur as if he were undead.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +12 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+12[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+12 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 damage.&lt;/p&gt;]] <15>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Barreling Bolt&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +10 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 force damage, and the target falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Kur pushes the target up to 2 squares.&lt;/p&gt;]] ➶ <b>Barreling Bolt</b> (force) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+10[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Barreling Bolt&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+10 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Barreling Bolt&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 force damage, and the target falls prone.&lt;/p&gt;]] <12>  force damage, and the target falls prone.</p><p><i>Effect:</i> Kur pushes the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Draining Lash&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); +10 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 necrotic damage, and the target is slowed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is slowed and weakened (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Each undead ally in the burst deals 5 extra necrotic damage until the end of Kur’s next turn.&lt;/p&gt;]] ✻ <b>Draining Lash</b> (necrotic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 2 within 10 (enemies in the burst); [[/roll 1d20+10[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Draining Lash&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); &lt;u&gt;+10 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Draining Lash&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 necrotic damage, and the target is slowed (save ends).&lt;/p&gt;]] <9.5>  necrotic damage, and the target is slowed (save ends).</p><p><i>First Failed Saving Throw:</i> The target is slowed and weakened (save ends both).</p><p><i>Effect:</i> Each undead ally in the burst deals 5 extra necrotic damage until the end of Kur’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Kur alters his physical form to appear as a Medium living or undead humanoid until he uses change shape again or until he drops to 0 hit points. To assume a specific individual’s form, Kur must have seen that individual. Other creatures can make a DC 28 Insight check to discern that the form is a disguise.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> Kur alters his physical form to appear as a Medium living or undead humanoid until he uses change shape again or until he drops to 0 hit points. To assume a specific individual’s form, Kur must have seen that individual. Other creatures can make a DC 28 Insight check to discern that the form is a disguise.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Undead Empathy&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy’s attack damages Kur while at least one undead ally is within 3 squares of him.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The damage this attack deals to Kur is reduced by 5, and an undead ally within 3 squares of him takes 5 damage.&lt;/p&gt;]]  <b>Undead Empathy</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy’s attack damages Kur while at least one undead ally is within 3 squares of him.</p><p><i>Effect (Immediate Interrupt):</i> The damage this attack deals to Kur is reduced by 5, and an undead ally within 3 squares of him takes 5 damage.</p></tr></td></table>",

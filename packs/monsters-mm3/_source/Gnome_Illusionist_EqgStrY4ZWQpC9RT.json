@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -957,23 +958,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 57; <b>Bloodied</b> 28</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 15</td><td><b>Ref</b> 17</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+3)<br><b>Con</b> 15 (+5)</td><td><b>Dex</b> 14 (+5)<br><b>Int</b> 18 (+7)</td><td><b>Wis</b> 13 (+4)<br><b>Cha</b> 20 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Bluff +13, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> gnarled staff (quarterstaff),  robes.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gnarled Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 6 damage.&lt;/p&gt;]] (⚔) <b>Gnarled Staff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gnarled Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gnarled Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 6 damage.&lt;/p&gt;]] <10.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Bedazzle&lt;/b&gt; (illusion, implement, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); +11 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 radiant damage, and the target grants combat advantage (save ends).&lt;/p&gt;]] ✻ <b>Bedazzle</b> (illusion, implement, radiant) ✦ <b>At-Will</b></p><p><i>Attack:</i> Area burst 1 within 10 (enemies in the burst); [[/roll 1d20+11[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Bedazzle&lt;/b&gt; (illusion, implement, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); &lt;u&gt;+11 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Bedazzle&lt;/b&gt; (illusion, implement, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 radiant damage, and the target grants combat advantage (save ends).&lt;/p&gt;]] <12>  radiant damage, and the target grants combat advantage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;See Me Not&lt;/b&gt; (illusion, implement, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 psychic damage, and the target cannot see the gnome (save ends).&lt;/p&gt;]] ᗕ <b>See Me Not</b> (illusion, implement, psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 3 (enemies in the blast); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;See Me Not&lt;/b&gt; (illusion, implement, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;See Me Not&lt;/b&gt; (illusion, implement, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 psychic damage, and the target cannot see the gnome (save ends).&lt;/p&gt;]] <17>  psychic damage, and the target cannot see the gnome (save ends).</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;There, Not There&lt;/b&gt; (illusion, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gnome teleports up to 5 squares and creates two duplicates of itself within 5 squares of its destination space. The duplicates last until the gnome attacks or until they are destroyed. Each duplicate has 1 hit point and the same ability scores and defenses as the gnome. The gnome can use its actions to have a duplicate act in any way it could, except that the duplicates cannot use powers and cannot flank.&lt;/p&gt;]]  <b>There, Not There</b> (illusion, teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> The gnome teleports up to 5 squares and creates two duplicates of itself within 5 squares of its destination space. The duplicates last until the gnome attacks or until they are destroyed. Each duplicate has 1 hit point and the same ability scores and defenses as the gnome. The gnome can use its actions to have a duplicate act in any way it could, except that the duplicates cannot use powers and cannot flank.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Veil&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gnome can disguise itself and up to three allies within 5 squares of it to appear as any Small or Medium creatures. A creature can see through the disguise with a successful Insight check opposed by the gnome’s Bluff check.&lt;/p&gt;]]  <b>Veil</b> (illusion) ✦ <b>At-Will</b></p><p><i>Effect:</i> The gnome can disguise itself and up to three allies within 5 squares of it to appear as any Small or Medium creatures. A creature can see through the disguise with a successful Insight check opposed by the gnome’s Bluff check.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -410,23 +411,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 31</td><td><b>Ref</b> 31</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 3 (while within the Astral Sea)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+16)<br><b>Con</b> 20 (+15)</td><td><b>Dex</b> 23 (+16)<br><b>Int</b> 20 (+15)</td><td><b>Wis</b> 20 (+15)<br><b>Cha</b> 26 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p><b>Equipment</b> broadsword , scale armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Inspiring Cut&lt;/b&gt; (standard; requires broadsword, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 11 damage, and one ally within 5 squares of the quom desperate rolls to recharge one of its powers. &lt;/p&gt;]] (⚔) <b>Inspiring Cut</b> (standard; requires broadsword, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Inspiring Cut&lt;/b&gt; (standard; requires broadsword, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 11 damage, and one ally within 5 squares of the quom desperate rolls to recharge one of its powers. &lt;/p&gt;]]; 11 damage, and one ally within 5 squares of the quom desperate rolls to recharge one of its powers. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Cosmic Vengeance&lt;/b&gt; ( when the quom desperate drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 3; any enemy in the burst grants combat advantage until the end of its next turn&lt;/p&gt;]] ᗕ <b>Cosmic Vengeance</b> ( when the quom desperate drops to 0 hit points, ) </p><p>Close burst 3; any enemy in the burst grants combat advantage until the end of its next turn</p></tr></td></table>",

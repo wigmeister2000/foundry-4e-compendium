@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -951,23 +952,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 46; <b>Bloodied</b> 23</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 14</td><td><b>Ref</b> 16</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+2)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 14 (+3)<br><b>Int</b> 19 (+5)</td><td><b>Wis</b> 16 (+4)<br><b>Cha</b> 13 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +10, History +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> robes, quarterstaff .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 7 damage.&lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 7 damage.&lt;/p&gt;]] <11.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shock Staff&lt;/b&gt; (lightning, weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 12 lightning damage, and the target is dazed until the end of the hobgoblin’s next turn.&lt;/p&gt;]] ⚔ <b>Shock Staff</b> (lightning, weapon) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shock Staff&lt;/b&gt; (lightning, weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shock Staff&lt;/b&gt; (lightning, weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 12 lightning damage, and the target is dazed until the end of the hobgoblin’s next turn.&lt;/p&gt;]] <16.5>  lightning damage, and the target is dazed until the end of the hobgoblin’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Force Lure&lt;/b&gt; (force) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +7 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 force damage, and the hobgoblin slides the target up to 3 squares.&lt;/p&gt;]] ➶ <b>Force Lure</b> (force) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+7[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Force Lure&lt;/b&gt; (force) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+7 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Force Lure&lt;/b&gt; (force) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 force damage, and the hobgoblin slides the target up to 3 squares.&lt;/p&gt;]] <17>  force damage, and the hobgoblin slides the target up to 3 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Force Pulse&lt;/b&gt; (force) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +7 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 force damage, and the target is pushes 1 square and knocked prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Force Pulse</b> (force) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+7[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Force Pulse&lt;/b&gt; (force) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+7 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Force Pulse&lt;/b&gt; (force) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 force damage, and the target is pushes 1 square and knocked prone.&lt;/p&gt;]] <17>  force damage, and the target is pushes 1 square and knocked prone.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hobgoblin Resilience&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The hobgoblin is subjected to an effect that a save can end.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The hobgoblin makes a saving throw against the triggering effect.&lt;/p&gt;]]  <b>Hobgoblin Resilience</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The hobgoblin is subjected to an effect that a save can end.</p><p><i>Effect (Immediate Reaction):</i> The hobgoblin makes a saving throw against the triggering effect.</p></tr></td></table>",

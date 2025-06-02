@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Wooden Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ITnyiQ9N8dDMvh0S",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -635,23 +637,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 122; <b>Bloodied</b> 61<hr><b>Resist</b> 10 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (forest walk, ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+10)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 17 (+9)</td><td><b>Wis</b> 18 (+10)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Nature +15, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wooden Body&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the rimeneedle takes fire damage, it also takes ongoing 5 fire damage (save ends).&lt;/p&gt;]]  <b>Wooden Body</b> <b></b></p><p>Whenever the rimeneedle takes fire damage, it also takes ongoing 5 fire damage (save ends).</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 damage.&lt;/p&gt;]] <20>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tree Stomp&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The rimeneedle shifts up to its speed and can move through enemies’ spaces during this movement. At any point during that movement, it uses slam once. If the attack hits, the target also falls prone.&lt;/p&gt;]] ⚔ <b>Tree Stomp</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The rimeneedle shifts up to its speed and can move through enemies’ spaces during this movement. At any point during that movement, it uses slam once. If the attack hits, the target also falls prone.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Winter\"s Step&lt;/b&gt; (cold, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Before the attack, the rimeneedle can teleport up to 5 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 9 cold damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Winter\"s Step</b> (cold, teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> Before the attack, the rimeneedle can teleport up to 5 squares.</p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Winter\"s Step&lt;/b&gt; (cold, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Winter\"s Step&lt;/b&gt; (cold, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 9 cold damage.&lt;/p&gt;]] <20>  cold damage.</p><p><i>Miss:</i> Half damage.</p></tr></td></table>",

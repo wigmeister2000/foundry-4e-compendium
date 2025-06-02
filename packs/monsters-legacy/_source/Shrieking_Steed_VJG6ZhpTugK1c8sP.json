@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Soul-Chilling Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qkixymWznwMhtb3H",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -589,7 +591,7 @@
 		},
 		{
 			"name":"Tandem Mount",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1pjiCUFMGkrw8amD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -625,7 +627,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -681,23 +684,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 160; <b>Bloodied</b> 80<hr><b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +20</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 29</td><td><b>Ref</b> 28</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+16)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 24 (+15)<br><b>Int</b> 5 (+5)</td><td><b>Wis</b> 24 (+15)<br><b>Cha</b> 17 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Understands Common and Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +23, Athletics +24, Endurance +23</td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision,Darkvision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Soul-Chilling Presence&lt;/b&gt; (Fear) aura 4; living creatures within the aura take a -4 penalty to Will.]] <b>Soul-Chilling Presence</b> (Fear) aura 4; living creatures within the aura take a -4 penalty to Will.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +21 vs AC; 2d6+8 damage. &lt;/p&gt;]] (⚔) <b>Kick</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+21 vs AC&lt;/u&gt;; 2d6+8 damage. &lt;/p&gt;]]; [[/roll 2d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +21 vs AC; 2d6+8 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Wail&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; +26 vs Fortitude; 4d8+8 psychic and thunder damage, and the target is dazed until the end of the steed\"s next turn. The steed\"s rider is immune. &lt;/p&gt;]] ᗕ <b>Horrid Wail</b> (standard, recharge ⚅</p><p>Close burst 3; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Wail&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; 4d8+8 psychic and thunder damage, and the target is dazed until the end of the steed\"s next turn. The steed\"s rider is immune. &lt;/p&gt;]]; [[/roll 4d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Wail&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; +26 vs Fortitude; 4d8+8 psychic and thunder damage, and the target is dazed until the end of the steed\"s next turn. The steed\"s rider is immune. &lt;/p&gt;]] <26>  psychic and thunder damage, and the target is dazed until the end of the steed\"s next turn. The steed\"s rider is immune. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Hellish Gate&lt;/b&gt; (minor; when mounted by a friendly rider of 16th level or higher; encounter) ✦ &lt;b&gt;Mount, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The steed and its rider teleport 5 squares.&lt;/p&gt;]]  <b>Hellish Gate</b> (minor; when mounted by a friendly rider of 16th level or higher; encounter) ✦ <b>Mount, Teleportation</b></p><p>The steed and its rider teleport 5 squares.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tandem Mount&lt;/b&gt;✦ &lt;b&gt;Mount&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When mounted by a friendly rider of 16th level or higher, when the steed’s rider spends an action point to gain an extra action, the steed can also take an extra move action.&lt;/p&gt;]]  <b>Tandem Mount</b>✦ <b>Mount</b></p><p>When mounted by a friendly rider of 16th level or higher, when the steed’s rider spends an action point to gain an extra action, the steed can also take an extra move action.</p></tr></td></table>",

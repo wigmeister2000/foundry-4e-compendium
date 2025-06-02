@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 71; <b>Bloodied</b> 35</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 19</td><td><b>Ref</b> 18</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 4 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+6)<br><b>Con</b> 15 (+5)</td><td><b>Dex</b> 14 (+5)<br><b>Int</b> 3 (null)</td><td><b>Wis</b> 11 (+3)<br><b>Cha</b> 6 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] (⚔) <b>Claws</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] <14>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shifting Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The drake can shift 1 square before or after the attack.&lt;/p&gt;]] ⚔ <b>Shifting Strike</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shifting Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shifting Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] <14>  damage.</p><p><i>Effect:</i> The drake can shift 1 square before or after the attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ravenous&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The drake must be bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The drake shifts up to 2 squares to a square closer to a bloodied enemy.&lt;/p&gt;]]  <b>Ravenous</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The drake must be bloodied</p><p><i>Effect:</i> The drake shifts up to 2 squares to a square closer to a bloodied enemy.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Life Sap",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"cszAdVSg8L6C9mqW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -335,10 +337,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -516,10 +518,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -593,7 +595,7 @@
 		},
 		{
 			"name":"Bloodied Degeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gRhLCnN4KDibt80e",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -629,7 +631,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -685,23 +688,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 214; <b>Bloodied</b> 107<hr><b>Resist</b> 15 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 32</td><td><b>Ref</b> 29</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+16)<br><b>Con</b> 14 (+11)</td><td><b>Dex</b> 18 (+13)<br><b>Int</b> 14 (+11)</td><td><b>Wis</b> 19 (+13)<br><b>Cha</b> 12 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Life Sap&lt;/b&gt; (Healing, Necrotic) aura 1; any living enemy that starts its turn within the aura takes 5 necrotic damage. Each round, if at least one enemy is damaged by the aura, the blaspheme imperfect keeper regains 5 hit points.]] <b>Life Sap</b> (Healing, Necrotic) aura 1; any living enemy that starts its turn within the aura takes 5 necrotic damage. Each round, if at least one enemy is damaged by the aura, the blaspheme imperfect keeper regains 5 hit points.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 2d12+11 necrotic damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 2d12+11 necrotic damage. &lt;/p&gt;]]; [[/roll 2d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 2d12+11 necrotic damage. &lt;/p&gt;]] <24>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Deadly Clutch&lt;/b&gt; (standard; requires free hand, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs Reflex; 2d12+11 necrotic damage, and the target is grabbed. &lt;/p&gt;]] ⚔ <b>Deadly Clutch</b> (standard; requires free hand, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Deadly Clutch&lt;/b&gt; (standard; requires free hand, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d12+11 necrotic damage, and the target is grabbed. &lt;/p&gt;]]; [[/roll 2d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Deadly Clutch&lt;/b&gt; (standard; requires free hand, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs Reflex; 2d12+11 necrotic damage, and the target is grabbed. &lt;/p&gt;]] <24>  necrotic damage, and the target is grabbed. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Life Drain&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the blaspheme imperfect keeper; +20 vs Fortitude; 2d10+9 necrotic damage, and the target loses a healing surge, and the blaspheme imperfect keeper regains 15 hit points. &lt;/p&gt;]] ⚔ <b>Life Drain</b> (standard, at-will) ✦ <b>Healing, Necrotic</b></p><p>Targets a creature grabbed by the blaspheme imperfect keeper; [[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Life Drain&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the blaspheme imperfect keeper; &lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 2d10+9 necrotic damage, and the target loses a healing surge, and the blaspheme imperfect keeper regains 15 hit points. &lt;/p&gt;]]; [[/roll 2d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Life Drain&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the blaspheme imperfect keeper; +20 vs Fortitude; 2d10+9 necrotic damage, and the target loses a healing surge, and the blaspheme imperfect keeper regains 15 hit points. &lt;/p&gt;]] <20>  necrotic damage, and the target loses a healing surge, and the blaspheme imperfect keeper regains 15 hit points. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodied Degeneration&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The blaspheme imperfect keeper’s body begins to degenerate, and it enters a state of bloodlust. The blaspheme gains vulnerable 5 to all damage and deals 3d6 extra damage on a hit.&lt;/p&gt;]]  <b>Bloodied Degeneration</b> (while bloodied) </p><p>The blaspheme imperfect keeper’s body begins to degenerate, and it enters a state of bloodlust. The blaspheme gains vulnerable 5 to all damage and deals [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodied Degeneration&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The blaspheme imperfect keeper’s body begins to degenerate, and it enters a state of bloodlust. The blaspheme gains vulnerable 5 to all damage and deals 3d6 extra damage on a hit.&lt;/p&gt;]] <10.5> extra damage on a hit.</p></tr></td></table>",

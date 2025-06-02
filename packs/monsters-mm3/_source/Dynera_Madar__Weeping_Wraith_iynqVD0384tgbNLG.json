@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Weeping Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gjSpf2VKNZrT5JGE",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 44; <b>Bloodied</b> 22<hr><b>Resist</b> insubstantial <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 16</td><td><b>Ref</b> 16</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 9 (+1)</td><td><b>Dex</b> 11 (+2)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 10 (+2)<br><b>Cha</b> 16 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +7</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Weeping Aura&lt;/b&gt; (psychic) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Living creatures within the aura take a -1 penalty to all defenses.&lt;/p&gt;]] ⌀ <b>Weeping Aura</b> (psychic) ✦ <b>Aura</b> 2</p><p>Living creatures within the aura take a -1 penalty to all defenses.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sorrowful Touch&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 3 necrotic damage, and the target is grief stricken (save ends). While grief stricken, the target gains vulnerable psychic 5 and is dazed.&lt;/p&gt;]] (⚔) <b>Sorrowful Touch</b> (necrotic, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sorrowful Touch&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sorrowful Touch&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 3 necrotic damage, and the target is grief stricken (save ends). While grief stricken, the target gains vulnerable psychic 5 and is dazed.&lt;/p&gt;]] <6.5>  necrotic damage, and the target is grief stricken (save ends). While grief stricken, the target gains vulnerable psychic 5 and is dazed.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Woeful Blast&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 psychic damage, and the target takes a -2 penalty to attack rolls (save ends).&lt;/p&gt;]] ➶ <b>Woeful Blast</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Woeful Blast&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Woeful Blast&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 psychic damage, and the target takes a -2 penalty to attack rolls (save ends).&lt;/p&gt;]] <8.5>  psychic damage, and the target takes a -2 penalty to attack rolls (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Woeful Shriek&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Dynera is first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 5 (enemies in the burst); +8 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 psychic damage, and the target is grief stricken (save ends). While grief stricken, the target gains vulnerable psychic 5 and is dazed.&lt;/p&gt;]] ᗕ <b>Woeful Shriek</b> (psychic) ✦ <b>Encounter</b></p><p><i>Trigger:</i> Dynera is first bloodied</p><p><i>Attack (Immediate Reaction):</i> Close burst 5 (enemies in the burst); [[/roll 1d20+8[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Woeful Shriek&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+8 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Woeful Shriek&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 psychic damage, and the target is grief stricken (save ends). While grief stricken, the target gains vulnerable psychic 5 and is dazed.&lt;/p&gt;]] <13>  psychic damage, and the target is grief stricken (save ends). While grief stricken, the target gains vulnerable psychic 5 and is dazed.</p></tr></td></table>",

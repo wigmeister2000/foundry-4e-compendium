@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Crate Form",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"YuQUlF4Z7shITG06",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Hide in Plain Sight",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LdS3ImwCZ9VD7uW0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -500,23 +502,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 68; <b>Bloodied</b> 34<hr><b>Vulnerable</b> 5 fire <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 17</td><td><b>Ref</b> 17</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"></td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+1)<br><b>Con</b> 10 (+1)</td><td><b>Dex</b> 11 (+1)<br><b>Int</b> 7 (null)</td><td><b>Wis</b> 10 (+1)<br><b>Cha</b> 3 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Crate Form&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The crate cannot make basic attacks or manipulate objects. All melee attacks against the crate are made with combat advantage.&lt;/p&gt;]]  <b>Crate Form</b> <b></b></p><p>The crate cannot make basic attacks or manipulate objects. All melee attacks against the crate are made with combat advantage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hide in Plain Sight&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the crate is first encountered, a creature must succeed on a DC 21 Perception check to discern it is a creature rather than an object.&lt;/p&gt;]]  <b>Hide in Plain Sight</b> <b></b></p><p>When the crate is first encountered, a creature must succeed on a DC 21 Perception check to discern it is a creature rather than an object.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Conjure Skeleton&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The crate disgorges a skeleton, which appears in the nearest unoccupied square and acts immediately after the crate in the initiative order. Such a skeleton cannot move more than 10 squares from the crate and disappears when it drops to 0 hit points or at the end of the encounter.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Special:&lt;/i&gt; The crate can have up to three skeletons disgorged at a time. Such skeletons are worth no XP.&lt;/p&gt;]]  <b>Conjure Skeleton</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The crate disgorges a skeleton, which appears in the nearest unoccupied square and acts immediately after the crate in the initiative order. Such a skeleton cannot move more than 10 squares from the crate and disappears when it drops to 0 hit points or at the end of the encounter.</p><p><i>Special:</i> The crate can have up to three skeletons disgorged at a time. Such skeletons are worth no XP.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Crate Hop&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The crate shifts 1 square and takes 1d6 damage.&lt;/p&gt;]]  <b>Crate Hop</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The crate shifts 1 square and takes [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Crate Hop&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The crate shifts 1 square and takes 1d6 damage.&lt;/p&gt;]] <3.5> damage.</p></tr></td></table>",

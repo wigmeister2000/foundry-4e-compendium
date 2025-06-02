@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -186,7 +187,7 @@
 		},
 		{
 			"name":"Spiritual Connection",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"58F0zBTR1Xp2hyiv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -222,7 +223,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -278,23 +280,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 10 necrotic, insubstantial <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 32</td><td><b>Ref</b> 33</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 6 (+8)<br><b>Con</b> 22 (+16)</td><td><b>Dex</b> 25 (+17)<br><b>Int</b> 6 (+8)</td><td><b>Wis</b> 6 (+8)<br><b>Cha</b> 20 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs Reflex; 12 necrotic damage. &lt;/p&gt;]] (⚔) <b>Shadow Touch</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs Reflex&lt;/u&gt;; 12 necrotic damage. &lt;/p&gt;]]; 12 necrotic damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spiritual Connection&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The time wraith marks the target from which it was created until the time wraith is destroyed, or the mark is otherwise superseded or ended. A target cannot produce another time wraith while so marked. When the time wraith is reduced to 0 hit points, the target from which it originated is dazed until the end of that target’s next turn.&lt;/p&gt;]]  <b>Spiritual Connection</b></p><p>The time wraith marks the target from which it was created until the time wraith is destroyed, or the mark is otherwise superseded or ended. A target cannot produce another time wraith while so marked. When the time wraith is reduced to 0 hit points, the target from which it originated is dazed until the end of that target’s next turn.</p></tr></td></table>",

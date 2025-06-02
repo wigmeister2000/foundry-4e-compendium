@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Nt6Mbfg1AExnZdoQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -508,10 +510,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -763,7 +765,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kTq9JsxS1ML2GcgP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -799,7 +801,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1035,23 +1038,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 280; <b>Bloodied</b> 140<br><b>Regeneration</b> 10<hr><b>Resist</b> 5 acid <b>Vulnerable</b> acid, fire (if Mulraargo takes acid or fire damage, his regeneration does not function until the end of his next turn) </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 25</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+11)<br><b>Con</b> 21 (+11)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 8 (+5)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 6 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +16, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +12 vs AC; 2d10+7 damage; see also rending strike. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+12 vs AC&lt;/u&gt;; 2d10+7 damage; see also rending strike. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +12 vs AC; 2d10+7 damage; see also rending strike. &lt;/p&gt;]] <18>  damage; see also rending strike. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Mulraargo makes two claw attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>Mulraargo makes two claw attacks</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Engulf&lt;/b&gt; (standard; usable only in ooze form, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Reflex; the target is grabbed. Mulraargo can move normally while grabbing a target, pulling the grabbed target with him. He can grab only one target at a time. Sustain Minor: Mulraargo sustains the grab and the target takes 10 acid damage. &lt;/p&gt;]] ⚔ <b>Engulf</b> (standard; usable only in ooze form, at-will) ✦ <b>Acid</b></p><p>[[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Engulf&lt;/b&gt; (standard; usable only in ooze form, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs Reflex&lt;/u&gt;; the target is grabbed. Mulraargo can move normally while grabbing a target, pulling the grabbed target with him. He can grab only one target at a time. Sustain Minor: Mulraargo sustains the grab and the target takes 10 acid damage. &lt;/p&gt;]]; the target is grabbed. Mulraargo can move normally while grabbing a target, pulling the grabbed target with him. He can grab only one target at a time. Sustain Minor: Mulraargo sustains the grab and the target takes 10 acid damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rending Stirke&lt;/b&gt; (free, when mulraargo’s attack bloodies an enemy, at-will) &lt;/p&gt;&lt;p&gt;Mulraargo makes a claw attack. If the attack hits, the target also takes a -2 penalty to all defenses (save ends)&lt;/p&gt;]] ⚔ <b>Rending Stirke</b> (free, when mulraargo’s attack bloodies an enemy, at-will) </p><p>Mulraargo makes a claw attack. If the attack hits, the target also takes a -2 penalty to all defenses (save ends)</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Mulraargo drops to 0 hit points due to an attack that does not deal acid or fire damage, he starts his next turn with 10 hit points.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If Mulraargo drops to 0 hit points due to an attack that does not deal acid or fire damage, he starts his next turn with 10 hit points.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ooze Form&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Mulraargo can alter his physical form to appear as a pool of black sludge. While in sludge form, the troll gains the benefits of the ooze keyword.&lt;/p&gt;]]  <b>Ooze Form</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>Mulraargo can alter his physical form to appear as a pool of black sludge. While in sludge form, the troll gains the benefits of the ooze keyword.</p></tr></td></table>",

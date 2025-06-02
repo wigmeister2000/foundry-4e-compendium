@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -954,23 +955,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 314; <b>Bloodied</b> 157</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 38</td><td><b>Ref</b> 30</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+8)<br><b>Con</b> 21 (+13)</td><td><b>Dex</b> 12 (+9)<br><b>Int</b> 14 (+10)</td><td><b>Wis</b> 9 (+7)<br><b>Cha</b> 21 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Deep Speech<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Arcana +20, History +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> robes, keys to trapdoor in area 4, the secret door in area 14, the door to area 18, and the secret doors in area 19/20 and 20/22, orb implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disrupting Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 2d8+3 necrotic damage, and the target regains only half the number of hit points granted by healing powers (save ends). &lt;/p&gt;]] (⚔) <b>Disrupting Claws</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disrupting Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 2d8+3 necrotic damage, and the target regains only half the number of hit points granted by healing powers (save ends). &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disrupting Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 2d8+3 necrotic damage, and the target regains only half the number of hit points granted by healing powers (save ends). &lt;/p&gt;]] <12>  necrotic damage, and the target regains only half the number of hit points granted by healing powers (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Distortion Field&lt;/b&gt; (standard; sustain minor, recharges when first bloodied) ✦ &lt;b&gt;Conjuration, Psychic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; a rippling field of energy causes disturbing reality distortions; enemies that start their turns in the zone take 5 psychic damage and -2 to defenses until the start of their next turn. The distortion field moves with Malachi. While the field persists, Malachi gains +5 to checks to escape a grab and +5 saving throws against the immobilized, restrained, and slowed conditions. Sustain Minor: The zone persists.&lt;/p&gt;]] ᗕ <b>Distortion Field</b> (standard; sustain minor, recharges when first bloodied) ✦ <b>Conjuration, Psychic, Zone</b></p><p>Close burst 2; a rippling field of energy causes disturbing reality distortions; enemies that start their turns in the zone take 5 psychic damage and -2 to defenses until the start of their next turn. The distortion field moves with Malachi. While the field persists, Malachi gains +5 to checks to escape a grab and +5 saving throws against the immobilized, restrained, and slowed conditions. Sustain Minor: The zone persists.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unraveling Blast&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +18 vs Will; 2d10+7 psychic damage, and ongoing 10 psychic damage (save ends). If the target has created any effect that has a duration (save ends, until end of turn, until end of encounter) or can be sustained, that effect ends. Miss: 1d10+7 psychic damage and ongoing 5 psychic damage (save ends). &lt;/p&gt;]] ᗕ <b>Unraveling Blast</b> (standard, encounter) ✦ <b>Psychic</b></p><p>Close blast 3; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unraveling Blast&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+18 vs Will&lt;/u&gt;; 2d10+7 psychic damage, and ongoing 10 psychic damage (save ends). If the target has created any effect that has a duration (save ends, until end of turn, until end of encounter) or can be sustained, that effect ends. Miss: 1d10+7 psychic damage and ongoing 5 psychic damage (save ends). &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unraveling Blast&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +18 vs Will; 2d10+7 psychic damage, and ongoing 10 psychic damage (save ends). If the target has created any effect that has a duration (save ends, until end of turn, until end of encounter) or can be sustained, that effect ends. Miss: 1d10+7 psychic damage and ongoing 5 psychic damage (save ends). &lt;/p&gt;]] <18>  psychic damage, and ongoing 10 psychic damage (save ends). If the target has created any effect that has a duration (save ends, until end of turn, until end of encounter) or can be sustained, that effect ends. Miss: [[/roll 1d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unraveling Blast&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +18 vs Will; 2d10+7 psychic damage, and ongoing 10 psychic damage (save ends). If the target has created any effect that has a duration (save ends, until end of turn, until end of encounter) or can be sustained, that effect ends. Miss: 1d10+7 psychic damage and ongoing 5 psychic damage (save ends). &lt;/p&gt;]] <12.5>  psychic damage and ongoing 5 psychic damage (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Psychic Assault&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; targets enemies; +18 vs Reflex; 1d10+7 psychic damage. &lt;/p&gt;]] ✻ <b>Psychic Assault</b> (minor 1/round, at-will) ✦ <b>Psychic</b></p><p>Area burst 1 within 10; targets enemies; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Psychic Assault&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; targets enemies; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 1d10+7 psychic damage. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Psychic Assault&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; targets enemies; +18 vs Reflex; 1d10+7 psychic damage. &lt;/p&gt;]] <12.5>  psychic damage. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mindbending Jaunt&lt;/b&gt; (move; recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Malachi teleports 5 squares. Malachi can choose a creature that he starts or arrives adjacent to, forcing that creature to make a melee basic attack against another adjacent creature as a free action.&lt;/p&gt;]]  <b>Mindbending Jaunt</b> (move; recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>Malachi teleports 5 squares. Malachi can choose a creature that he starts or arrives adjacent to, forcing that creature to make a melee basic attack against another adjacent creature as a free action.</p></tr></td></table>",

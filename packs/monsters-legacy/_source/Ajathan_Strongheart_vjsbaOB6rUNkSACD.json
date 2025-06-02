@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -951,23 +952,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 180; <b>Bloodied</b> 90</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 20</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+5)<br><b>Con</b> 10 (+4)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 20 (+9)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 16 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Any</td></tr><tr><td><b>Skills</b> Arcana +14, Bluff +12, History +14, Streetwise +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> robes, dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d4+5 damage, and the target is slowed until the end of Ajathan’s next turn. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 1d4+5 damage, and the target is slowed until the end of Ajathan’s next turn. &lt;/p&gt;]]; [[/roll 1d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d4+5 damage, and the target is slowed until the end of Ajathan’s next turn. &lt;/p&gt;]] <7.5>  damage, and the target is slowed until the end of Ajathan’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Charm Ray&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Will; two targets; the target is dominated (save ends). &lt;/p&gt;]] ➶ <b>Charm Ray</b> (standard, recharge ⚄⚅) ✦ <b>Charm</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Charm Ray&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Will&lt;/u&gt;; two targets; the target is dominated (save ends). &lt;/p&gt;]]; two targets; the target is dominated (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dual Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ajathan makes a phantom bolt attack against one creature and a teleporting bolt attack against another creature. &lt;/p&gt;]] ➶ <b>Dual Bolt</b> (standard, at-will) </p><p>Ajathan makes a phantom bolt attack against one creature and a teleporting bolt attack against another creature. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Phantom Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Illusion, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex; 1d8+7 psychic damage, and Ajathan slides the target 1 square. &lt;/p&gt;]] ➶ <b>Phantom Bolt</b> (standard, at-will) ✦ <b>Illusion, Psychic</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Phantom Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Illusion, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 1d8+7 psychic damage, and Ajathan slides the target 1 square. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Phantom Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Illusion, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex; 1d8+7 psychic damage, and Ajathan slides the target 1 square. &lt;/p&gt;]] <11.5>  psychic damage, and Ajathan slides the target 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Teleporting Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex; 1d8+7 damage, and the target is teleported up to 3 squares. The target cannot be teleported into an unsafe space. &lt;/p&gt;]] ➶ <b>Teleporting Bolt</b> (standard, at-will) ✦ <b>Teleportation</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Teleporting Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 1d8+7 damage, and the target is teleported up to 3 squares. The target cannot be teleported into an unsafe space. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Teleporting Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex; 1d8+7 damage, and the target is teleported up to 3 squares. The target cannot be teleported into an unsafe space. &lt;/p&gt;]] <11.5>  damage, and the target is teleported up to 3 squares. The target cannot be teleported into an unsafe space. </p></tr></td></table>",

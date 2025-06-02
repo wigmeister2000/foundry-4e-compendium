@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -463,10 +464,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -540,7 +541,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"mYU2M3an81jwOurP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -576,7 +577,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -586,7 +588,7 @@
 		},
 		{
 			"name":"Chain Form",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RE0Kd73fP9LI5FC2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -622,7 +624,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -632,7 +635,7 @@
 		},
 		{
 			"name":"Stable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"otE3mZx8jvIRUSz9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -668,7 +671,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -724,23 +728,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 248; <b>Bloodied</b> 124<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 29</td><td><b>Ref</b> 24</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 6 (+4)</td><td><b>Wis</b> 17 (+9)<br><b>Cha</b> 6 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whipping Chain&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee 3; +17 vs AC; 1d10+6 damage, and the target is grabbed. The chain guardian can grab 2 creatures at a time. &lt;/p&gt;]] (⚔) <b>Whipping Chain</b> (standard, at-will) </p><p>Melee 3; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whipping Chain&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee 3; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d10+6 damage, and the target is grabbed. The chain guardian can grab 2 creatures at a time. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whipping Chain&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee 3; +17 vs AC; 1d10+6 damage, and the target is grabbed. The chain guardian can grab 2 creatures at a time. &lt;/p&gt;]] <11.5>  damage, and the target is grabbed. The chain guardian can grab 2 creatures at a time. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crushing Chain&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature the chain guardian has grabbed; +18 vs Fortitude; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] ⚔ <b>Crushing Chain</b> (standard, at-will) </p><p>Targets a creature the chain guardian has grabbed; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crushing Chain&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature the chain guardian has grabbed; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crushing Chain&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature the chain guardian has grabbed; +18 vs Fortitude; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] <11.5>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chain Burst&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Burst 3; +15 vs Reflex; 2d10+6 damage, and the target is pulled 2 squares and grabbed. The chain guardian can damage all creatures in the burst, but it can still grab only 2 creatures at a time. &lt;/p&gt;]] ᗕ <b>Chain Burst</b> (standard, recharge ⚃⚄⚅) </p><p>Burst 3; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chain Burst&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Burst 3; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 2d10+6 damage, and the target is pulled 2 squares and grabbed. The chain guardian can damage all creatures in the burst, but it can still grab only 2 creatures at a time. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chain Burst&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Burst 3; +15 vs Reflex; 2d10+6 damage, and the target is pulled 2 squares and grabbed. The chain guardian can damage all creatures in the burst, but it can still grab only 2 creatures at a time. &lt;/p&gt;]] <17>  damage, and the target is pulled 2 squares and grabbed. The chain guardian can damage all creatures in the burst, but it can still grab only 2 creatures at a time. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This creature can make opportunity attacks against all enemies within its reach (3 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>This creature can make opportunity attacks against all enemies within its reach (3 squares).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Chain Form&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chain guardian can appear as normal chain, allowing it to make a Stealth check at +4 to hide in plain sight before an encounter begins.&lt;/p&gt;]]  <b>Chain Form</b></p><p>The chain guardian can appear as normal chain, allowing it to make a Stealth check at +4 to hide in plain sight before an encounter begins.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chain guardian ignores difficult terrain.&lt;/p&gt;]]  <b>Stable</b></p><p>The chain guardian ignores difficult terrain.</p></tr></td></table>",

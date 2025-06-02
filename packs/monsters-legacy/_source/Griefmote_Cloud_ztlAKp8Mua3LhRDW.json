@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Cold Spot",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yFGD63LVAoSJ1plx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -650,23 +652,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 65; <b>Bloodied</b> 32<hr><b>Resist</b> 10 cold, insubstantial <b>Vulnerable</b> 10 against close and area attacks <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 18</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 4 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 5 (+1)<br><b>Con</b> 11 (+4)</td><td><b>Dex</b> 21 (+9)<br><b>Int</b> 4 (+1)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Cold Spot&lt;/b&gt; (cold) aura 1; each enemy that starts its turn within the aura takes 5 cold damage]] <b>Cold Spot</b> (cold) aura 1; each enemy that starts its turn within the aura takes 5 cold damage</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chilling Assault&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs Fortitude; 1d8+5 necrotic damage, and the target gains vulnerable 5 cold (save ends). &lt;/p&gt;]] (⚔) <b>Chilling Assault</b> (standard, at-will) ✦ <b>Cold, Necrotic</b></p><p>[[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chilling Assault&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs Fortitude&lt;/u&gt;; 1d8+5 necrotic damage, and the target gains vulnerable 5 cold (save ends). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chilling Assault&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs Fortitude; 1d8+5 necrotic damage, and the target gains vulnerable 5 cold (save ends). &lt;/p&gt;]] <9.5>  necrotic damage, and the target gains vulnerable 5 cold (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Feast of Sorrows&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +11 vs Fortitude; 1d6+5 necrotic damage plus 1d8 cold damage, and the target gains vulnerable 5 necrotic (save ends). &lt;/p&gt;]] ᗕ <b>Feast of Sorrows</b> (standard, recharge ⚄⚅) ✦ <b>Cold, Necrotic</b></p><p>Close burst 2; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Feast of Sorrows&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; 1d6+5 necrotic damage plus 1d8 cold damage, and the target gains vulnerable 5 necrotic (save ends). &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Feast of Sorrows&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +11 vs Fortitude; 1d6+5 necrotic damage plus 1d8 cold damage, and the target gains vulnerable 5 necrotic (save ends). &lt;/p&gt;]] <8.5>  necrotic damage plus [[/roll 1d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Feast of Sorrows&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +11 vs Fortitude; 1d6+5 necrotic damage plus 1d8 cold damage, and the target gains vulnerable 5 necrotic (save ends). &lt;/p&gt;]] <4.5> cold damage, and the target gains vulnerable 5 necrotic (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Invisibility&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The griefmote cloud becomes invisible until the end of its next turn or until it attacks.&lt;/p&gt;]]  <b>Invisibility</b> (minor; at-will) ✦ <b>Illusion</b></p><p>The griefmote cloud becomes invisible until the end of its next turn or until it attacks.</p></tr></td></table>",

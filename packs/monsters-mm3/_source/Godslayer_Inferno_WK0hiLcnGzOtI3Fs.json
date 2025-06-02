@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Elemental Inferno",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UbKkvlPrfJLV1uXH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -996,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 194; <b>Bloodied</b> 97<hr><b>Resist</b> 15 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +24</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 40</td><td><b>Ref</b> 42</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+20)<br><b>Con</b> 26 (+22)</td><td><b>Dex</b> 30 (+24)<br><b>Int</b> 13 (+15)</td><td><b>Wis</b> 24 (+21)<br><b>Cha</b> 21 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Elemental Inferno&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Enemies within the aura do not benefit from fire resistance and cannot save against effects that include ongoing fire damage.&lt;/p&gt;]] ⌀ <b>Elemental Inferno</b> ✦ <b>Aura</b> 2</p><p>Enemies within the aura do not benefit from fire resistance and cannot save against effects that include ongoing fire damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Claw&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +31 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 20 fire damage (save ends).&lt;/p&gt;]] (⚔) <b>Fiery Claw</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+31[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Claw&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+31 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 20 fire damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fire Bolt&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one or two creatures); +31 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 25 fire damage (save ends).&lt;/p&gt;]] (➶) <b>Fire Bolt</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one or two creatures); [[/roll 1d20+31[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fire Bolt&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one or two creatures); &lt;u&gt;+31 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 25 fire damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cloying Flames&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Each enemy within 10 squares taking ongoing fire damage immediately takes fire damage equal to its ongoing fire damage.&lt;/p&gt;]]  <b>Cloying Flames</b> (fire) ✦ <b>At-Will</b></p><p><i>Effect:</i> Each enemy within 10 squares taking ongoing fire damage immediately takes fire damage equal to its ongoing fire damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Godsbane Inferno&lt;/b&gt; (fire) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); +31 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10+5 fire damage, and ongoing 15 fire damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Aftereffect:&lt;/i&gt; Ongoing 10 fire damage (save ends).&lt;/p&gt;]] ✻ <b>Godsbane Inferno</b> (fire) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Area burst 2 within 10 (enemies in the burst); [[/roll 1d20+31[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Godsbane Inferno&lt;/b&gt; (fire) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); &lt;u&gt;+31 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Godsbane Inferno&lt;/b&gt; (fire) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10+5 fire damage, and ongoing 15 fire damage (save ends).&lt;/p&gt;]] <16>  fire damage, and ongoing 15 fire damage (save ends).</p><p><i>Aftereffect:</i> Ongoing 10 fire damage (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Unfettered Apocalypse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy scores a critical hit against the inferno or the inferno is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The inferno creates a duplicate of itself, which appears in the nearest unoccupied square. The duplicate has the same hit points as the inferno, is considered to have expended the same powers as the inferno, and acts during the inferno’s turn. Any effects on the inferno do not transfer to the duplicate. At the end of the inferno’s next turn, the duplicate disappears.&lt;/p&gt;]]  <b>Unfettered Apocalypse</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy scores a critical hit against the inferno or the inferno is first bloodied.</p><p><i>Effect (No Action):</i> The inferno creates a duplicate of itself, which appears in the nearest unoccupied square. The duplicate has the same hit points as the inferno, is considered to have expended the same powers as the inferno, and acts during the inferno’s turn. Any effects on the inferno do not transfer to the duplicate. At the end of the inferno’s next turn, the duplicate disappears.</p></tr></td></table>",

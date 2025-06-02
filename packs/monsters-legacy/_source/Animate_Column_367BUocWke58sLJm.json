@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -649,10 +650,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -772,23 +773,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 243; <b>Bloodied</b> 121</td><td style=\"padding-left: 15px;\"><b>Init</b> +23</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 40</td><td><b>Ref</b> 38</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+23)<br><b>Con</b> 27 (+21)</td><td><b>Dex</b> 26 (+21)<br><b>Int</b> 12 (+14)</td><td><b>Wis</b> 18 (+17)<br><b>Cha</b> 16 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Endurance +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> bastard sword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10 damage; Effect: target is marked until the end of the animate column’s next turn. &lt;/p&gt;]] (⚔) <b>Bastard Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 2d10 + 10 damage; Effect: target is marked until the end of the animate column’s next turn. &lt;/p&gt;]]; [[/roll 2d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10 damage; Effect: target is marked until the end of the animate column’s next turn. &lt;/p&gt;]] <21>  damage; Effect: target is marked until the end of the animate column’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Paralyzing Strike&lt;/b&gt; (standard; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10 damage, and if the target is marked, it’s immobilized (save ends). &lt;/p&gt;]] ⚔ <b>Paralyzing Strike</b> (standard; requires a bastard sword, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Paralyzing Strike&lt;/b&gt; (standard; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 2d10 + 10 damage, and if the target is marked, it’s immobilized (save ends). &lt;/p&gt;]]; [[/roll 2d10 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Paralyzing Strike&lt;/b&gt; (standard; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10 damage, and if the target is marked, it’s immobilized (save ends). &lt;/p&gt;]] <21>  damage, and if the target is marked, it’s immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Terror Smash&lt;/b&gt; (standard; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10  damage, and all enemies that can see the animate column are marked by it until the end of its next turn. &lt;/p&gt;]] ⚔ <b>Terror Smash</b> (standard; requires a bastard sword, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Terror Smash&lt;/b&gt; (standard; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 2d10 + 10  damage, and all enemies that can see the animate column are marked by it until the end of its next turn. &lt;/p&gt;]]; [[/roll 2d10 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Terror Smash&lt;/b&gt; (standard; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10  damage, and all enemies that can see the animate column are marked by it until the end of its next turn. &lt;/p&gt;]] <21>   damage, and all enemies that can see the animate column are marked by it until the end of its next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Smash Back&lt;/b&gt; (immediate interrupt, when an opponent first enters an adjacent square; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10 damage, and the target is pushed 2 squares. &lt;/p&gt;]] ⚔ <b>Smash Back</b> (immediate interrupt, when an opponent first enters an adjacent square; requires a bastard sword, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Smash Back&lt;/b&gt; (immediate interrupt, when an opponent first enters an adjacent square; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 2d10 + 10 damage, and the target is pushed 2 squares. &lt;/p&gt;]]; [[/roll 2d10 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Smash Back&lt;/b&gt; (immediate interrupt, when an opponent first enters an adjacent square; requires a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10 + 10 damage, and the target is pushed 2 squares. &lt;/p&gt;]] <21>  damage, and the target is pushed 2 squares. </p></tr></td></table>",

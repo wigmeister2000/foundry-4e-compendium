@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -288,10 +289,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -365,7 +366,7 @@
 		},
 		{
 			"name":"Unshakable Grasp",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"k6tExQew7iSlpG8g",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -401,7 +402,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -457,23 +459,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 30 fire <b>Immune</b> poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 35</td><td><b>Ref</b> 37</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+17)<br><b>Con</b> 21 (+16)</td><td><b>Dex</b> 26 (+19)<br><b>Int</b> 5 (+8)</td><td><b>Wis</b> 18 (+15)<br><b>Cha</b> 11 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unyielding Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs Reflex; 9 fire and poison damage, and the target is grabbed. The smoke hound cannot make unyielding bite attacks while it has a creature grabbed. Sustain Minor: The smoke hound sustains the grab, and the target takes 13 fire damage. &lt;/p&gt;]] (⚔) <b>Unyielding Bite</b> (standard, at-will) ✦ <b>Fire, Poison</b></p><p>[[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unyielding Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs Reflex&lt;/u&gt;; 9 fire and poison damage, and the target is grabbed. The smoke hound cannot make unyielding bite attacks while it has a creature grabbed. Sustain Minor: The smoke hound sustains the grab, and the target takes 13 fire damage. &lt;/p&gt;]]; 9 fire and poison damage, and the target is grabbed. The smoke hound cannot make unyielding bite attacks while it has a creature grabbed. Sustain Minor: The smoke hound sustains the grab, and the target takes 13 fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tongue of Smoke&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the smoke hound; +26 vs Fortitude; the smoke hound moves half its speed and moves the target with it. &lt;/p&gt;]] ⚔ <b>Tongue of Smoke</b> (standard, at-will) </p><p>Targets a creature grabbed by the smoke hound; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tongue of Smoke&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the smoke hound; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; the smoke hound moves half its speed and moves the target with it. &lt;/p&gt;]]; the smoke hound moves half its speed and moves the target with it. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unshakable Grasp&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A creature grabbed by a smoke hound grants combat advantage until the grab ends.&lt;/p&gt;]]  <b>Unshakable Grasp</b></p><p>A creature grabbed by a smoke hound grants combat advantage until the grab ends.</p></tr></td></table>",

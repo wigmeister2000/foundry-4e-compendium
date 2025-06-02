@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -590,23 +591,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 132; <b>Bloodied</b> 66<hr><b>Resist</b> 20 poison, 10 variable (2/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 27</td><td><b>Ref</b> 24</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 17 (+9)<br><b>Int</b> 10 (+6)</td><td><b>Wis</b> 19 (+10)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Intimidate +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> trident .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d8+6 damage, and the mezzodemon slides the target 2 squares. &lt;/p&gt;]] (⚔) <b>Trident</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d8+6 damage, and the mezzodemon slides the target 2 squares. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d8+6 damage, and the mezzodemon slides the target 2 squares. &lt;/p&gt;]] <10.5>  damage, and the mezzodemon slides the target 2 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Poison Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; targets enemies; +17 vs Fortitude; 2d8+5 poison damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] ᗕ <b>Poison Breath</b> (standard, recharge ⚄⚅) ✦ <b>Poison</b></p><p>Close blast 3; targets enemies; [[/roll 1d20+17[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Poison Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; targets enemies; &lt;u&gt;+17 vs Fortitude&lt;/u&gt;; 2d8+5 poison damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Poison Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; targets enemies; +17 vs Fortitude; 2d8+5 poison damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <14>  poison damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Beastly Command&lt;/b&gt; (minor 1/round; at-will) &lt;/p&gt;&lt;p&gt;One allied elemental beast within 5 squares of the mezzodemon beastlord makes a melee attack as a free action.&lt;/p&gt;]]  <b>Beastly Command</b> (minor 1/round; at-will) </p><p>One allied elemental beast within 5 squares of the mezzodemon beastlord makes a melee attack as a free action.</p></tr></td></table>",

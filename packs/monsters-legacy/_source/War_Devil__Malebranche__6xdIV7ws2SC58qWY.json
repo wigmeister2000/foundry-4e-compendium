@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -946,23 +948,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 255; <b>Bloodied</b> 127<hr><b>Resist</b> 30 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 34</td><td><b>Ref</b> 32</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+19)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 23 (+17)<br><b>Int</b> 15 (+13)</td><td><b>Wis</b> 19 (+15)<br><b>Cha</b> 18 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +20</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p><b>Equipment</b> trident</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 1d6+8 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 1d6+8 damage. &lt;/p&gt;]]; [[/roll 1d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 1d6+8 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 4d8+8 damage and ongoing 5 damage (save ends), and and the target slides into any square adjacent to the war devil and is knocked prone. &lt;/p&gt;]] (⚔) <b>Trident</b> (standard, recharge ⚃⚄⚅) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 4d8+8 damage and ongoing 5 damage (save ends), and and the target slides into any square adjacent to the war devil and is knocked prone. &lt;/p&gt;]]; [[/roll 4d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 4d8+8 damage and ongoing 5 damage (save ends), and and the target slides into any square adjacent to the war devil and is knocked prone. &lt;/p&gt;]] <26>  damage and ongoing 5 damage (save ends), and and the target slides into any square adjacent to the war devil and is knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Besieged Foe&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged sight; the war devil marks an enemy; allies of the war devil gain a +2 bonus to attack rolls made against the target until the encounter ends or the war devil marks a new target.&lt;/p&gt;]] ➶ <b>Besieged Foe</b> (minor, at-will) </p><p>Ranged sight; the war devil marks an enemy; allies of the war devil gain a +2 bonus to attack rolls made against the target until the encounter ends or the war devil marks a new target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Fiendish Tactics &lt;/b&gt; (minor, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; affects up to 2 allied devils of the war devil’s level or lower; each target can take a move action or make a basic attack.&lt;/p&gt;]] ➶ <b>Fiendish Tactics </b> (minor, recharge ⚄⚅) </p><p>Ranged 10; affects up to 2 allied devils of the war devil’s level or lower; each target can take a move action or make a basic attack.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Devilish Transposition &lt;/b&gt; (move, at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; the war devil and an allied devil within range swap positions&lt;/p&gt;]] ➶ <b>Devilish Transposition </b> (move, at-will) ✦ <b>Teleportation</b></p><p>Ranged 20; the war devil and an allied devil within range swap positions</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -545,7 +546,7 @@
 		},
 		{
 			"name":"Web Walker",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AFwx5szmehDiv0fd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -581,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 232; <b>Bloodied</b> 116</td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 27</td><td><b>Ref</b> 29</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 6 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+12)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 24 (+14)<br><b>Int</b> 3 (+3)</td><td><b>Wis</b> 13 (+8)<br><b>Cha</b> 6 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +17</td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 10<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d10+6 damage, and the target is slowed and takes ongoing 10 poison damage (save ends both). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Poison</b></p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d10+6 damage, and the target is slowed and takes ongoing 10 poison damage (save ends both). &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d10+6 damage, and the target is slowed and takes ongoing 10 poison damage (save ends both). &lt;/p&gt;]] <11.5>  damage, and the target is slowed and takes ongoing 10 poison damage (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Acidic poison Spray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +18 vs Reflex; 2d8+6 acid and poison damage, and the target is slowed and takes ongoing 10 acid and poison damage (save ends both). &lt;/p&gt;]] ᗕ <b>Acidic poison Spray</b> (standard, at-will) ✦ <b>Acid, Poison</b></p><p>Close blast 5; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Acidic poison Spray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 2d8+6 acid and poison damage, and the target is slowed and takes ongoing 10 acid and poison damage (save ends both). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Acidic poison Spray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +18 vs Reflex; 2d8+6 acid and poison damage, and the target is slowed and takes ongoing 10 acid and poison damage (save ends both). &lt;/p&gt;]] <15>  acid and poison damage, and the target is slowed and takes ongoing 10 acid and poison damage (save ends both). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bristle Blast&lt;/b&gt; (minor, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 5; +18 vs Fortitude; the target is blinded and dazed until the start of the bristle spider\"s next turn. &lt;/p&gt;]] ᗕ <b>Bristle Blast</b> (minor, recharge ⚃⚄⚅) </p><p>Close blast 5; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bristle Blast&lt;/b&gt; (minor, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; the target is blinded and dazed until the start of the bristle spider\"s next turn. &lt;/p&gt;]]; the target is blinded and dazed until the start of the bristle spider\"s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Web Walker&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A bristle spider ignores the effects of spider webs and spider swarms.&lt;/p&gt;]]  <b>Web Walker</b></p><p>A bristle spider ignores the effects of spider webs and spider swarms.</p></tr></td></table>",

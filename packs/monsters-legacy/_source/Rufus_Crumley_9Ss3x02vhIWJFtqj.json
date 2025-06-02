@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -773,23 +775,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 188; <b>Bloodied</b> 94</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 20</td><td><b>Ref</b> 24</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+4)<br><b>Con</b> 14 (+6)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 22 (+10)</td><td><b>Wis</b> 19 (+8)<br><b>Cha</b> 14 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Infernal, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +16, Religion +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> patched robes, staff, dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d4+3 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d4+3 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 1d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d4+3 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <5.5>  damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Fortitude; 1d6+6 necrotic damage, and the target is slowed until the end of Rufus\"s next turn. &lt;/p&gt;]] (➶) <b>Ray of Rot</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 1d6+6 necrotic damage, and the target is slowed until the end of Rufus\"s next turn. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Fortitude; 1d6+6 necrotic damage, and the target is slowed until the end of Rufus\"s next turn. &lt;/p&gt;]] <9.5>  necrotic damage, and the target is slowed until the end of Rufus\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;A Grave Wind&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +14 vs Fortitude; 2d8+6 necrotic damage. A swirling cloud of souls appear in the area and remains until the end of Rufus\"s next turn. It grants concealment, and any creature that starts its turn in the area takes 6 necrotic damage. &lt;/p&gt;]] ✻ <b>A Grave Wind</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Area burst 2 within 10; [[/roll 1d20+14[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;A Grave Wind&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; &lt;u&gt;+14 vs Fortitude&lt;/u&gt;; 2d8+6 necrotic damage. A swirling cloud of souls appear in the area and remains until the end of Rufus\"s next turn. It grants concealment, and any creature that starts its turn in the area takes 6 necrotic damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;A Grave Wind&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +14 vs Fortitude; 2d8+6 necrotic damage. A swirling cloud of souls appear in the area and remains until the end of Rufus\"s next turn. It grants concealment, and any creature that starts its turn in the area takes 6 necrotic damage. &lt;/p&gt;]] <15>  necrotic damage. A swirling cloud of souls appear in the area and remains until the end of Rufus\"s next turn. It grants concealment, and any creature that starts its turn in the area takes 6 necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Invisibility&lt;/b&gt; (standard; sustain standard; encounter) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Rufus can turn invisible until the end of his next turn.&lt;/p&gt;]]  <b>Invisibility</b> (standard; sustain standard; encounter) ✦ <b>Illusion</b></p><p>Rufus can turn invisible until the end of his next turn.</p></tr></td></table>",

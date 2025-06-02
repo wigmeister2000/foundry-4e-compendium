@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Harrier Rooks",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hEdQ190ADFaRB4Gm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"V3hJmK4AlD9v6ZxF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Juggernaut",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6z4qdawKvOmusblX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Instinctive Warfare",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9NcLoIndMisQwxgJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -190,7 +194,7 @@
 		},
 		{
 			"name":"Living Vehicle",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"s4UIn1Rm89hHYoMN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -226,7 +230,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -640,23 +645,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 600; <b>Bloodied</b> 300<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 29</td><td><b>Ref</b> 25</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+14)<br><b>Con</b> 22 (+13)</td><td><b>Dex</b> 10 (+7)<br><b>Int</b> 4 (+4)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 5 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Harrier Rooks&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;The aura is lightly obscured to enemies.&lt;/p&gt;]] ⌀ <b>Harrier Rooks</b> ✦ <b>Aura</b> 5</p><p>The aura is lightly obscured to enemies.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the rookery.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the rookery.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Juggernaut&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rookery ignores difficult terrain and provokes no opportunity attacks. It cannot squeeze or grab.&lt;/p&gt;]]  <b>Juggernaut</b> <b></b></p><p>The rookery ignores difficult terrain and provokes no opportunity attacks. It cannot squeeze or grab.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Instinctive Warfare&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A rookery that starts its turn dominated ignores the condition long enough to use trample as a free action. A rookery that starts its turn stunned ignores the condition long enough to use arbalest volley as a free action.&lt;/p&gt;]]  <b>Instinctive Warfare</b> <b></b></p><p>A rookery that starts its turn dominated ignores the condition long enough to use trample as a free action. A rookery that starts its turn stunned ignores the condition long enough to use arbalest volley as a free action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Living Vehicle&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Creatures can enter the rookery’s space by climbing onto it (DC 20) or moving through any of its entrances (one at the base and one on top). Creatures in the rookery’s space move with the rookery as if it were a vehicle.&lt;/p&gt;]]  <b>Living Vehicle</b> <b></b></p><p>Creatures can enter the rookery’s space by climbing onto it (DC 20) or moving through any of its entrances (one at the base and one on top). Creatures in the rookery’s space move with the rookery as if it were a vehicle.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Arbalest Volley&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 20 (enemies in the burst); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 damage.&lt;/p&gt;]] ᗕ <b>Arbalest Volley</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 20 (enemies in the burst); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Arbalest Volley&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 20 (enemies in the burst); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Arbalest Volley&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 damage.&lt;/p&gt;]] <18>  damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The rookery moves up to its speed and can move through enemies’ spaces during the move. Each time the rookery enters an enemy’s space for the first time during the move, it makes the following attack against that enemy. Enemies already in the rookery’s space when it uses this power cannot be targets of the power.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (enemy in the space); +18 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 damage, and the target falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The rookery slides the target up to 4 squares to a square adjacent to the rookery.&lt;/p&gt;]] ⚔ <b>Trample</b> ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> The rookery moves up to its speed and can move through enemies’ spaces during the move. Each time the rookery enters an enemy’s space for the first time during the move, it makes the following attack against that enemy. Enemies already in the rookery’s space when it uses this power cannot be targets of the power.</p><p><i>Attack:</i> Melee 0 (enemy in the space); [[/roll 1d20+18[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (enemy in the space); &lt;u&gt;+18 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 damage, and the target falls prone.&lt;/p&gt;]] <20>  damage, and the target falls prone.</p><p><i>Miss:</i> The rookery slides the target up to 4 squares to a square adjacent to the rookery.</p></tr></td></table>",

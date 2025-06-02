@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Fell Blade",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KXampR39A7IiETBG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -467,23 +469,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 129; <b>Bloodied</b> 64<hr><b>Resist</b> 15 cold, 15 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 26</td><td><b>Ref</b> 25</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 6 (+4)</td><td><b>Wis</b> 19 (+10)<br><b>Cha</b> 10 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> bastard sword , scale armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fell Blade&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The fell skeleton deals full damage against insubstantial enemies.&lt;/p&gt;]]  <b>Fell Blade</b> <b></b></p><p>The fell skeleton deals full damage against insubstantial enemies.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fell Sword&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 6 damage plus 10 cold damage, and the target is slowed and cannot shift until the end of the fell skeleton’s next turn.&lt;/p&gt;]] (⚔) <b>Fell Sword</b> (cold, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fell Sword&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fell Sword&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 6 damage plus 10 cold damage, and the target is slowed and cannot shift until the end of the fell skeleton’s next turn.&lt;/p&gt;]] <11.5>  damage plus 10 cold damage, and the target is slowed and cannot shift until the end of the fell skeleton’s next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fell Vengeance&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy adjacent to the fell skeleton attacks an ally of the skeleton and does not include the skeleton as a target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The fell skeleton makes a basic attack against the triggering enemy.&lt;/p&gt;]]  <b>Fell Vengeance</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy adjacent to the fell skeleton attacks an ally of the skeleton and does not include the skeleton as a target.</p><p><i>Effect (Immediate Reaction):</i> The fell skeleton makes a basic attack against the triggering enemy.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"eE3m5VkANGR6SLWs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Street Agility",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vG0WXPiLf7lFHdR9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -682,23 +685,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 95; <b>Bloodied</b> 47</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 20</td><td><b>Ref</b> 22</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+7)<br><b>Con</b> 15 (+6)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 18 (+8)<br><b>Cha</b> 12 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +14, Athletics +12, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> leather armor , quarterstaff .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The drifter deals 1d8 extra damage against any target granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b> <b></b></p><p>The drifter deals [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The drifter deals 1d8 extra damage against any target granting combat advantage to it.&lt;/p&gt;]] <4.5> extra damage against any target granting combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Street Agility&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The drifter ignores difficult terrain that consists of rubble, debris, uneven pavement, or similar terrain.&lt;/p&gt;]]  <b>Street Agility</b> <b></b></p><p>The drifter ignores difficult terrain that consists of rubble, debris, uneven pavement, or similar terrain.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 damage, and the drifter can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 damage, and the drifter can slide the target 1 square.&lt;/p&gt;]] <17>  damage, and the drifter can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spinning Knockdown&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 damage, and the drifter slides the target up to 2 squares and knocks it prone.&lt;/p&gt;]] ᗕ <b>Spinning Knockdown</b> (weapon) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 1 (enemies in the burst); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spinning Knockdown&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spinning Knockdown&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 damage, and the drifter slides the target up to 2 squares and knocks it prone.&lt;/p&gt;]] <17>  damage, and the drifter slides the target up to 2 squares and knocks it prone.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Staff Vault&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The drifter jumps up to its speed, moving vertically or horizontally. It provokes opportunity attacks only for leaving the square it occupied before this movement.&lt;/p&gt;]]  <b>Staff Vault</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> The drifter jumps up to its speed, moving vertically or horizontally. It provokes opportunity attacks only for leaving the square it occupied before this movement.</p></tr></td></table>",

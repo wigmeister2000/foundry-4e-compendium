@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 28; <b>Bloodied</b> 14<hr><b>Resist</b> 5 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 15</td><td><b>Ref</b> 11</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+3)<br><b>Con</b> 12 (+1)</td><td><b>Dex</b> 8 (null)<br><b>Int</b> 1 (null)</td><td><b>Wis</b> 10 (0)<br><b>Cha</b> 3 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +6 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 2 damage, and the zombie grabs the target.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+6[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+6 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 2 damage, and the zombie grabs the target.&lt;/p&gt;]] <9>  damage, and the zombie grabs the target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Salt Feast&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one bloodied creature); +6 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 2 damage, and the zombie grabs the target. The target takes a -4 penalty to attempts to escape the grab. Each time the target attempts to escape and fails, it takes 5 damage.&lt;/p&gt;]] ⚔ <b>Salt Feast</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one bloodied creature); [[/roll 1d20+6[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Salt Feast&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one bloodied creature); &lt;u&gt;+6 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Salt Feast&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 2 damage, and the zombie grabs the target. The target takes a -4 penalty to attempts to escape the grab. Each time the target attempts to escape and fails, it takes 5 damage.&lt;/p&gt;]] <9>  damage, and the zombie grabs the target. The target takes a -4 penalty to attempts to escape the grab. Each time the target attempts to escape and fails, it takes 5 damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Zombie Weakness&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A creature scores a critical hit against the zombie.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The zombie drops to 0 hit points.&lt;/p&gt;]]  <b>Zombie Weakness</b> <b></b></p><p><i>Trigger:</i> A creature scores a critical hit against the zombie.</p><p><i>Effect (No Action):</i> The zombie drops to 0 hit points.</p></tr></td></table>",

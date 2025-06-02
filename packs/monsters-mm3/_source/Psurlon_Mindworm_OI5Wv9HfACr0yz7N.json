@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Whispering Meme",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Hh12acOIzRd5ySl3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Armored Mind",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"igfIuHY6bqQVodtr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1055,23 +1058,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 181; <b>Bloodied</b> 90<hr><b>Resist</b> 10 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 30</td><td><b>Ref</b> 29</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+14)<br><b>Con</b> 21 (+14)</td><td><b>Dex</b> 18 (+13)<br><b>Int</b> 14 (+11)</td><td><b>Wis</b> 22 (+15)<br><b>Cha</b> 16 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, telepathy 10<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +18, Thievery +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Whispering Meme&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;The mindworm slides any enemy that starts its turn within the aura 1 square.&lt;/p&gt;]] ⌀ <b>Whispering Meme</b> ✦ <b>Aura</b> 5</p><p>The mindworm slides any enemy that starts its turn within the aura 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Armored Mind&lt;/b&gt; (charm) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mindworm makes saving throws against effects that dominate, including effects that don’t normally end on a save, at both the start and the end of its turn. When it saves against such an effect, the creature that dominated the mindworm is dominated by it (save ends).&lt;/p&gt;]]  <b>Armored Mind</b> (charm) <b></b></p><p>The mindworm makes saving throws against effects that dominate, including effects that don’t normally end on a save, at both the start and the end of its turn. When it saves against such an effect, the creature that dominated the mindworm is dominated by it (save ends).</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Claw&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage plus 2d8 psychic damage, and the target takes a -2 penalty to AC until the end of the mindworm’s next turn.&lt;/p&gt;]] (⚔) <b>Psychic Claw</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Claw&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Claw&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage plus 2d8 psychic damage, and the target takes a -2 penalty to AC until the end of the mindworm’s next turn.&lt;/p&gt;]] <9> + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Claw&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage plus 2d8 psychic damage, and the target takes a -2 penalty to AC until the end of the mindworm’s next turn.&lt;/p&gt;]] <18>  damage plus 2d8 psychic damage, and the target takes a -2 penalty to AC until the end of the mindworm’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Referred Pain&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +23 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 9 psychic damage, and the target is slowed until the end of the mindworm’s next turn.&lt;/p&gt;]] ᗕ <b>Referred Pain</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+23[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Referred Pain&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+23 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Referred Pain&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 9 psychic damage, and the target is slowed until the end of the mindworm’s next turn.&lt;/p&gt;]] <27>  psychic damage, and the target is slowed until the end of the mindworm’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ego Control&lt;/b&gt; (charm, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +23 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 8 psychic damage, and the target is dominated (save ends).&lt;/p&gt;]] ➶ <b>Ego Control</b> (charm, psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+23[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ego Control&lt;/b&gt; (charm, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+23 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d10 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ego Control&lt;/b&gt; (charm, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 8 psychic damage, and the target is dominated (save ends).&lt;/p&gt;]] <41>  psychic damage, and the target is dominated (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mindworm alters its physical form to appear as a Small or a Medium humanoid until it uses change shape again or until it drops to 0 hit points. The creature retains its statistics in its new form. Its clothing, armor, and other possessions do not change. To assume a specific individual’s form, it must have seen that individual. Other creatures can make a DC 38 Insight check to discern that the form is a disguise.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> The mindworm alters its physical form to appear as a Small or a Medium humanoid until it uses change shape again or until it drops to 0 hit points. The creature retains its statistics in its new form. Its clothing, armor, and other possessions do not change. To assume a specific individual’s form, it must have seen that individual. Other creatures can make a DC 38 Insight check to discern that the form is a disguise.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Psionic Augment&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The mindworm hits with psychic claw.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The triggering attack deals 2d8 extra psychic damage.&lt;/p&gt;]]  <b>Psionic Augment</b> (psychic) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The mindworm hits with psychic claw.</p><p><i>Effect (Free Action):</i> The triggering attack deals [[/roll 2d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Psionic Augment&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The triggering attack deals 2d8 extra psychic damage.&lt;/p&gt;]] <9> extra psychic damage.</p></tr></td></table>",

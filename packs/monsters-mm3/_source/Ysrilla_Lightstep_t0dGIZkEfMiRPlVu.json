@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Wild Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zr3DBwiOKca9Qfge",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -994,23 +996,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 137; <b>Bloodied</b> 68</td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 27</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+7)<br><b>Con</b> 17 (+10)</td><td><b>Dex</b> 19 (+11)<br><b>Int</b> 23 (+13)</td><td><b>Wis</b> 19 (+11)<br><b>Cha</b> 16 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +15, Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p><b>Equipment</b> bone armor, curved bone dagger, bone scimitar</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wild Step&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ysrilla ignores difficult terrain when she shifts.&lt;/p&gt;]]  <b>Wild Step</b> <b></b></p><p>Ysrilla ignores difficult terrain when she shifts.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 4 damage.&lt;/p&gt;]] (⚔) <b>Scimitar</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 4 damage.&lt;/p&gt;]] <22>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Curved Bone Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] ⚔ <b>Curved Bone Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Curved Bone Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Curved Bone Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] <14>  damage, and ongoing 10 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Two-Weapon Fighting&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ysrilla uses scimitar and curved bone dagger against the same target.&lt;/p&gt;]] ⚔ <b>Two-Weapon Fighting</b> (weapon) ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> Ysrilla uses scimitar and curved bone dagger against the same target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Show Some Respect!&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ysrilla shifts up to her speed and makes the following attack once at any point during the movement.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 4 damage, and the target is dazed until the end of its next turn and falls prone.&lt;/p&gt;]] ⚔ <b>Show Some Respect!</b> ✦ <b>Recharge</b> if the power misses</p><p><i>Effect:</i> Ysrilla shifts up to her speed and makes the following attack once at any point during the movement.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Show Some Respect!&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Show Some Respect!&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 4 damage, and the target is dazed until the end of its next turn and falls prone.&lt;/p&gt;]] <22>  damage, and the target is dazed until the end of its next turn and falls prone.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Tactical Retreat&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ysrilla ends any effect on herself that is slowing or immobilizing her, and then shifts up to her speed. If she is not adjacent to an enemy at the end of this first shift, she can shift up to her speed a second time.&lt;/p&gt;]]  <b>Tactical Retreat</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> Ysrilla ends any effect on herself that is slowing or immobilizing her, and then shifts up to her speed. If she is not adjacent to an enemy at the end of this first shift, she can shift up to her speed a second time.</p></tr></td></table>",

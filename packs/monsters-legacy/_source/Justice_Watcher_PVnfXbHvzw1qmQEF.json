@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -291,10 +293,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -472,10 +474,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -773,23 +775,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 125; <b>Bloodied</b> 62</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 23</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 15 (+7)</td><td><b>Dex</b> 16 (+8)<br><b>Int</b> 10 (+5)</td><td><b>Wis</b> 11 (+5)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> bastard sword , holy symbol , scale armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Radiant Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 2d10+6 radiant damage. &lt;/p&gt;]] (⚔) <b>Radiant Sword</b> (standard, at-will) ✦ <b>Radiant, Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Radiant Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 2d10+6 radiant damage. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Radiant Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 2d10+6 radiant damage. &lt;/p&gt;]] <17>  radiant damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Searing Justice&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Implement, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs Reflex; 3d8+6 radiant damage, and the target is dazed until end of the watcher’s next turn. &lt;/p&gt;]] (➶) <b>Searing Justice</b> (standard, recharge ⚄⚅) ✦ <b>Implement, Radiant</b></p><p>[[/roll 1d20+11[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Searing Justice&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Implement, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs Reflex&lt;/u&gt;; 3d8+6 radiant damage, and the target is dazed until end of the watcher’s next turn. &lt;/p&gt;]]; [[/roll 3d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Searing Justice&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Implement, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs Reflex; 3d8+6 radiant damage, and the target is dazed until end of the watcher’s next turn. &lt;/p&gt;]] <19.5>  radiant damage, and the target is dazed until end of the watcher’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brilliant Cut&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one or two creatures; +11 vs Fortitude; 2d10+6 damage, and the target takes ongoing 5 radiant damage (save ends). &lt;/p&gt;]] ⚔ <b>Brilliant Cut</b> (standard, encounter) ✦ <b>Radiant, Weapon</b></p><p>Targets one or two creatures; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brilliant Cut&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one or two creatures; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; 2d10+6 damage, and the target takes ongoing 5 radiant damage (save ends). &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brilliant Cut&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one or two creatures; +11 vs Fortitude; 2d10+6 damage, and the target takes ongoing 5 radiant damage (save ends). &lt;/p&gt;]] <17>  damage, and the target takes ongoing 5 radiant damage (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Pitiless Guardian&lt;/b&gt; (immediate reaction, when the watcher or an ally adjacent to the watcher is hit by a melee attack; recharges when the watcher is first bloodied) &lt;/p&gt;&lt;p&gt;The watcher makes a melee basic attack against the attacker.&lt;/p&gt;]]  <b>Pitiless Guardian</b> (immediate reaction, when the watcher or an ally adjacent to the watcher is hit by a melee attack; recharges when the watcher is first bloodied) </p><p>The watcher makes a melee basic attack against the attacker.</p></tr></td></table>",

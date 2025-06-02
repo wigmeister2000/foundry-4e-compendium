@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1078,7 +1079,7 @@
 		},
 		{
 			"name":"Fear of Annihilation",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1POulJYeoj3nQLi4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1114,7 +1115,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1124,7 +1126,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"YGOUS3JFibvDtNT6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1160,7 +1162,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1216,23 +1219,10 @@
 				"max":10
 			},
 			"init":{
-				"value":1,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":1
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 60; <b>Bloodied</b> 30<hr><b>Vulnerable</b> 10 fire <b>Immune</b> blinded, gaze, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +-1 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 14</td><td><b>Ref</b> 13</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"></td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+1)<br><b>Con</b> 14 (+2)</td><td><b>Dex</b> 8 (null)<br><b>Int</b> 12 (+1)</td><td><b>Wis</b> 14 (+2)<br><b>Cha</b> 17 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Roots&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +5 vs Reflex; 1d6+3 damage, and the target is grabbed. The voice can grab up to two creatures at one time. &lt;/p&gt;]] (⚔) <b>Grasping Roots</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Roots&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+5 vs Reflex&lt;/u&gt;; 1d6+3 damage, and the target is grabbed. The voice can grab up to two creatures at one time. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Roots&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +5 vs Reflex; 1d6+3 damage, and the target is grabbed. The voice can grab up to two creatures at one time. &lt;/p&gt;]] <6.5>  damage, and the target is grabbed. The voice can grab up to two creatures at one time. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Lance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; one or two creatures in burst; +5 vs Will; 1d6+3 psychic damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Psychic Lance</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Close burst 10; one or two creatures in burst; [[/roll 1d20+5[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Lance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; one or two creatures in burst; &lt;u&gt;+5 vs Will&lt;/u&gt;; 1d6+3 psychic damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Lance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; one or two creatures in burst; +5 vs Will; 1d6+3 psychic damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]] <6.5>  psychic damage, and the target is dazed until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Insidious Whispers&lt;/b&gt; (standard, recharges when the voice has no spawned twig blights) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; enemies in burst; +5 vs Will; 1d6+3 psychic damage, and the target makes a melee basic attack against a creature the voice chooses. &lt;/p&gt;]] ᗕ <b>Insidious Whispers</b> (standard, recharges when the voice has no spawned twig blights) ✦ <b>Psychic</b></p><p>Close burst 3; enemies in burst; [[/roll 1d20+5[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Insidious Whispers&lt;/b&gt; (standard, recharges when the voice has no spawned twig blights) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; enemies in burst; &lt;u&gt;+5 vs Will&lt;/u&gt;; 1d6+3 psychic damage, and the target makes a melee basic attack against a creature the voice chooses. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Insidious Whispers&lt;/b&gt; (standard, recharges when the voice has no spawned twig blights) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; enemies in burst; +5 vs Will; 1d6+3 psychic damage, and the target makes a melee basic attack against a creature the voice chooses. &lt;/p&gt;]] <6.5>  psychic damage, and the target makes a melee basic attack against a creature the voice chooses. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twisted Nature&lt;/b&gt; (minor; 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 10; targets a twig blight ally; the target makes a melee basic attack with a +2 bonus to the attack roll. &lt;/p&gt;]] ➶ <b>Twisted Nature</b> (minor; 1/round, at-will) </p><p>Reach 10; targets a twig blight ally; the target makes a melee basic attack with a +2 bonus to the attack roll. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blightborn Calling&lt;/b&gt; (minor, recharge ⚂⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 5; The voice spawns four blightborn twig blights in unoccupied squares within the burst, and the twig blights act immediately. The twig blights remain until destroyed or until the end of the encounter. The twig blights act on the voice’s turn. The voice can have up to six twig blights at a time. &lt;/p&gt;]] ᗕ <b>Blightborn Calling</b> (minor, recharge ⚂⚃⚄⚅) </p><p>Close burst 5; The voice spawns four blightborn twig blights in unoccupied squares within the burst, and the twig blights act immediately. The twig blights remain until destroyed or until the end of the encounter. The twig blights act on the voice’s turn. The voice can have up to six twig blights at a time. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Cry&lt;/b&gt; (free, when damaged by an attack, recharges when a bloodthorn vine drops to 0 hit points) &lt;/p&gt;&lt;p&gt;Close burst 10; targets non-minion allies; the target gains 10 temporary hit points and a +1 bonus to attack rolls until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Abyssal Cry</b> (free, when damaged by an attack, recharges when a bloodthorn vine drops to 0 hit points) </p><p>Close burst 10; targets non-minion allies; the target gains 10 temporary hit points and a +1 bonus to attack rolls until the end of its next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fear of Annihilation&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The voice gains a +4 bonus to damage rolls.&lt;/p&gt;]]  <b>Fear of Annihilation</b> (while bloodied) </p><p>The voice gains a +4 bonus to damage rolls.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The voice can make opportunity attacks against all enemies within its reach (3 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>The voice can make opportunity attacks against all enemies within its reach (3 squares).</p></tr></td></table>",

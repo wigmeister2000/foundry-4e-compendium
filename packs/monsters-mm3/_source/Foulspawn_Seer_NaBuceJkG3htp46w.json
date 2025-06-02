@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Foul Insight",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jaVZQ7TOiptR5YSl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -996,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 86; <b>Bloodied</b> 43</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 25</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+5)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 22 (+11)</td><td><b>Wis</b> 8 (+4)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 10<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> staff implement .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Foul Insight&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 10&lt;/p&gt;&lt;p&gt;Any ally in the aura that can hear the seer gains a +2 power bonus to one attack roll, skill check, ability check, or saving throw on its turn.&lt;/p&gt;]] ⌀ <b>Foul Insight</b> ✦ <b>Aura</b> 10</p><p>Any ally in the aura that can hear the seer gains a +2 power bonus to one attack roll, skill check, ability check, or saving throw on its turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage, and the seer can push the target 1 square.&lt;/p&gt;]] (⚔) <b>Twisted Staff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage, and the seer can push the target 1 square.&lt;/p&gt;]] <19>  damage, and the seer can push the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Warp Orb&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +16 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage, and the target is slowed (save ends). If the target is already slowed, it is instead dazed (save ends).&lt;/p&gt;]] ➶ <b>Warp Orb</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+16[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Warp Orb&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+16 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Warp Orb&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage, and the target is slowed (save ends). If the target is already slowed, it is instead dazed (save ends).&lt;/p&gt;]] <14>  psychic damage, and the target is slowed (save ends). If the target is already slowed, it is instead dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Distortion Blast&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +14 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 8 damage, and the target is dazed (save ends). If the target is aberrant, the damage is halved.&lt;/p&gt;]] ᗕ <b>Distortion Blast</b> ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+14[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Distortion Blast&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+14 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Distortion Blast&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 8 damage, and the target is dazed (save ends). If the target is aberrant, the damage is halved.&lt;/p&gt;]] <21.5>  damage, and the target is dazed (save ends). If the target is aberrant, the damage is halved.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Teleport&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The seer teleports up to 3 squares.&lt;/p&gt;]]  <b>Teleport</b> (teleportation) ✦ <b>At-Will</b></p><p><i>Effect:</i> The seer teleports up to 3 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bend Space&lt;/b&gt; (teleportation) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An attack hits the seer.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The seer teleports up to 3 squares.&lt;/p&gt;]]  <b>Bend Space</b> (teleportation) ✦ Recharge ⚄ ⚅</p><p><i>Trigger:</i> An attack hits the seer.</p><p><i>Effect (Immediate Interrupt):</i> The seer teleports up to 3 squares.</p></tr></td></table>",

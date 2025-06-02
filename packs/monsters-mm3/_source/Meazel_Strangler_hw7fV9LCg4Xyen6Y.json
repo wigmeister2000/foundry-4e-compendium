@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Wretched Curse of Baalzebul",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SptoXwcDLy7GICnP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 125; <b>Bloodied</b> 62<hr><b>Immune</b> disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 24</td><td><b>Ref</b> 26</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+9)<br><b>Con</b> 13 (+7)</td><td><b>Dex</b> 20 (+11)<br><b>Int</b> 11 (+6)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 11 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +14, Stealth +16, Thievery +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> garrote , leather armor , short sword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Wretched Curse of Baalzebul&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura is affected by the curse of Baalzebul until the end of its next turn. While a creature is affected by the curse of Baalzebul, it takes a -2 penalty to all defenses and gains vulnerable 5 to all damage. In addition, any ally of that creature that starts its turn adjacent to the cursed creature becomes affected by the curse of Baalzebul until the end of its next turn. Multiple curses do not stack.&lt;/p&gt;]] ⌀ <b>Wretched Curse of Baalzebul</b> ✦ <b>Aura</b> 1</p><p>Any enemy that starts its turn within the aura is affected by the curse of Baalzebul until the end of its next turn. While a creature is affected by the curse of Baalzebul, it takes a -2 penalty to all defenses and gains vulnerable 5 to all damage. In addition, any ally of that creature that starts its turn adjacent to the cursed creature becomes affected by the curse of Baalzebul until the end of its next turn. Multiple curses do not stack.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 damage.&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 damage.&lt;/p&gt;]] <17>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Garrote&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The strangler must not have a creature grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the strangler); +16 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage, and the strangler grabs the target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Standard:&lt;/i&gt; The strangler sustains the grab, and the target takes 3d10 + 5 damage.&lt;/p&gt;]] ⚔ <b>Garrote</b> (weapon) ✦ <b>At-Will</b></p><p><i>Requirement:</i> The strangler must not have a creature grabbed.</p><p><i>Attack:</i> Melee 1 (one creature granting combat advantage to the strangler); [[/roll 1d20+16[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Garrote&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the strangler); &lt;u&gt;+16 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Garrote&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage, and the strangler grabs the target.&lt;/p&gt;]] <10.5>  damage, and the strangler grabs the target.</p><p><i>Sustain Standard:</i> The strangler sustains the grab, and the target takes [[/roll 3d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Garrote&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Standard:&lt;/i&gt; The strangler sustains the grab, and the target takes 3d10 + 5 damage.&lt;/p&gt;]] <21.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Plague Touch&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the target is blinded and takes ongoing 5 necrotic damage (save ends both).&lt;/p&gt;]] ⚔ <b>Plague Touch</b> (necrotic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Plague Touch&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Plague Touch&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the target is blinded and takes ongoing 5 necrotic damage (save ends both).&lt;/p&gt;]] <12>  damage, and the target is blinded and takes ongoing 5 necrotic damage (save ends both).</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drag to the Feast&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The strangler moves its speed, pulling a creature it has grabbed with it. In addition, the creature remains grabbed, and the strangler does not provoke an opportunity attack from the grabbed creature. Any opportunity attacks against the strangler for this movement that miss the meazel instead hit the grabbed creature.&lt;/p&gt;]]  <b>Drag to the Feast</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The strangler moves its speed, pulling a creature it has grabbed with it. In addition, the creature remains grabbed, and the strangler does not provoke an opportunity attack from the grabbed creature. Any opportunity attacks against the strangler for this movement that miss the meazel instead hit the grabbed creature.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Baphomet's Boon",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Y5jBOZaPpSxUzAgM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -334,10 +336,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -996,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 354; <b>Bloodied</b> 177</td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 34</td><td><b>Fort</b> 35</td><td><b>Ref</b> 29</td><td><b>Will</b> 32</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+18)<br><b>Con</b> 25 (+16)</td><td><b>Dex</b> 12 (+10)<br><b>Int</b> 18 (+13)</td><td><b>Wis</b> 15 (+11)<br><b>Cha</b> 23 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Dungeoneering +16, Intimidate +20, Nature +18, Religion +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p><b>Equipment</b> robes, Baphomet symbol, morningstar .</p><p>[[/roll 0#&lt;b&gt;Baphomet’s Boon&lt;/b&gt; aura 10; allies who start their turns in the aura gain a +2 bonus to attack rolls when charging.]] <b>Baphomet’s Boon</b> aura 10; allies who start their turns in the aura gain a +2 bonus to attack rolls when charging.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bonecrusher Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d10+9 damage, and the target is weakened until the end of Oostarix\"s next turn. &lt;/p&gt;]] (⚔) <b>Bonecrusher Morningstar</b> (standard, at-will) ✦ <b>Fear, Weapon</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bonecrusher Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 1d10+9 damage, and the target is weakened until the end of Oostarix\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bonecrusher Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d10+9 damage, and the target is weakened until the end of Oostarix\"s next turn. &lt;/p&gt;]] <14.5>  damage, and the target is weakened until the end of Oostarix\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Oostarix makes a charge attack; +23 vs AC; 2d6+9 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Goring Charge</b> (standard, at-will) </p><p>Oostarix makes a charge attack; [[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Oostarix makes a charge attack; &lt;u&gt;+23 vs AC&lt;/u&gt;; 2d6+9 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Oostarix makes a charge attack; +23 vs AC; 2d6+9 damage, and the target is knocked prone. &lt;/p&gt;]] <16>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Savage Infection&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +22 vs Will; 1d6+7 psychic damage, the target takes ongoing 5 psychic damage and at the start of the target\"s turn it makes a melee basic attack against one random adjacent creature (save ends both). If this attack hits, it deals normal damage and the target of the basic attack gains the same condition (save ends). &lt;/p&gt;]] ➶ <b>Savage Infection</b> (standard, at-will) ✦ <b>Charm, Psychic</b></p><p>Ranged 10; [[/roll 1d20+22[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Savage Infection&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+22 vs Will&lt;/u&gt;; 1d6+7 psychic damage, the target takes ongoing 5 psychic damage and at the start of the target\"s turn it makes a melee basic attack against one random adjacent creature (save ends both). If this attack hits, it deals normal damage and the target of the basic attack gains the same condition (save ends). &lt;/p&gt;]]; [[/roll 1d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Savage Infection&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +22 vs Will; 1d6+7 psychic damage, the target takes ongoing 5 psychic damage and at the start of the target\"s turn it makes a melee basic attack against one random adjacent creature (save ends both). If this attack hits, it deals normal damage and the target of the basic attack gains the same condition (save ends). &lt;/p&gt;]] <10.5>  psychic damage, the target takes ongoing 5 psychic damage and at the start of the target\"s turn it makes a melee basic attack against one random adjacent creature (save ends both). If this attack hits, it deals normal damage and the target of the basic attack gains the same condition (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flood&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +22 vs Will; 1d10+7 necrotic damage, and the target makes a melee basic attack against one of its adjacent allies as a free action. Miss: Half damage, and the target does not make an attack. &lt;/p&gt;]] ᗕ <b>Unholy Flood</b> (standard, recharges when first bloodied) ✦ <b>Necrotic</b></p><p>Close blast 5; [[/roll 1d20+22[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flood&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+22 vs Will&lt;/u&gt;; 1d10+7 necrotic damage, and the target makes a melee basic attack against one of its adjacent allies as a free action. Miss: Half damage, and the target does not make an attack. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flood&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +22 vs Will; 1d10+7 necrotic damage, and the target makes a melee basic attack against one of its adjacent allies as a free action. Miss: Half damage, and the target does not make an attack. &lt;/p&gt;]] <12.5>  necrotic damage, and the target makes a melee basic attack against one of its adjacent allies as a free action. Miss: Half damage, and the target does not make an attack. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ferocity&lt;/b&gt; ( when reduced to 0 hit points) &lt;/p&gt;&lt;p&gt;Oostarix makes a melee basic attack.&lt;/p&gt;]]  <b>Ferocity</b> ( when reduced to 0 hit points) </p><p>Oostarix makes a melee basic attack.</p></tr></td></table>",

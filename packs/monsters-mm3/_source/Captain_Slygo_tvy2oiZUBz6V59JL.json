@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Survival Instinct",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Wv6m5xQYRZFwUc9y",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 31; <b>Bloodied</b> 15<b>; Surge</b> 7</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 14</td><td><b>Ref</b> 17</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 11 (+2)</td><td><b>Dex</b> 17 (+5)<br><b>Int</b> 12 (+3)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 14 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +11, Stealth +12, Thievery +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> leather coat, 3 exploding bottles, key to hidden treasure chest, short sword .</p><p>[[/roll 0#&lt;b&gt;Healing Surges&lt;/b&gt; 6]] <b>Healing Surges</b> 6</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Survival Instinct&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While bloodied, Slygo gains a +2 power bonus to all defenses.&lt;/p&gt;]]  <b>Survival Instinct</b> <b></b></p><p>While bloodied, Slygo gains a +2 power bonus to all defenses.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage, or 2d6 + 5 if the target is granting combat advantage to Slygo.&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage, or 2d6 + 5 if the target is granting combat advantage to Slygo.&lt;/p&gt;]] <8.5>  damage, or [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage, or 2d6 + 5 if the target is granting combat advantage to Slygo.&lt;/p&gt;]] <12>  if the target is granting combat advantage to Slygo.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Exploding Bottle&lt;/b&gt; (fire, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); +10 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 5 fire damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The burst creates a zone that lasts until the end of the encounter. Any creature that ends its turn in the zone takes 3 fire damage.&lt;/p&gt;]] ✻ <b>Exploding Bottle</b> (fire, zone) ✦ <b>At-Will</b></p><p><i>Attack:</i> Area burst 1 within 10 (creatures in the burst); [[/roll 1d20+10[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Exploding Bottle&lt;/b&gt; (fire, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); &lt;u&gt;+10 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 5 fire damage (save ends).</p><p><i>Effect:</i> The burst creates a zone that lasts until the end of the encounter. Any creature that ends its turn in the zone takes 3 fire damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sly Goblin Tactics&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy misses Slygo with an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Slygo can shift up to 3 squares.&lt;/p&gt;]]  <b>Sly Goblin Tactics</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy misses Slygo with an attack.</p><p><i>Effect (Immediate Reaction):</i> Slygo can shift up to 3 squares.</p></tr></td></table>",

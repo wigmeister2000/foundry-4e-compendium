@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -288,10 +289,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"6",
 				"rechargeCondition":"",
@@ -767,23 +768,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 184; <b>Bloodied</b> 92</td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 22</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+10)<br><b>Con</b> 20 (+9)</td><td><b>Dex</b> 17 (+7)<br><b>Int</b> 14 (+6)</td><td><b>Wis</b> 18 (+8)<br><b>Cha</b> 21 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +11, History +13, Intimidate +14, Religion +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> flail , heavy shield , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail of Dread&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d10+6 damage, the target is marked until the end of the hobgoblin hand of Bane’s next turn, and the hand of Bane makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +10 vs Will; the target takes a -2 penalty to all defenses until the end of the encounter or until the hand of Bane dies. &lt;/p&gt;]] (⚔) <b>Flail of Dread</b> (standard, at-will) ✦ <b>Fear, Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail of Dread&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d10+6 damage, the target is marked until the end of the hobgoblin hand of Bane’s next turn, and the hand of Bane makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail of Dread&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d10+6 damage, the target is marked until the end of the hobgoblin hand of Bane’s next turn, and the hand of Bane makes a secondary attack against the same target. &lt;/p&gt;]] <11.5>  damage, the target is marked until the end of the hobgoblin hand of Bane’s next turn, and the hand of Bane makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+10[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail of Dread&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+10 vs Will&lt;/u&gt;; the target takes a -2 penalty to all defenses until the end of the encounter or until the hand of Bane dies. &lt;/p&gt;]]; the target takes a -2 penalty to all defenses until the end of the encounter or until the hand of Bane dies. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flail of Tyranny&lt;/b&gt; (standard; requires flail, recharge ⚅&lt;/p&gt;&lt;p&gt;+12 vs AC; 2d10+6 damage, and the target is stunned until the end of the hobgoblin hand of Bane’s next turn. &lt;/p&gt;]] ⚔ <b>Flail of Tyranny</b> (standard; requires flail, recharge ⚅</p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flail of Tyranny&lt;/b&gt; (standard; requires flail, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 2d10+6 damage, and the target is stunned until the end of the hobgoblin hand of Bane’s next turn. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flail of Tyranny&lt;/b&gt; (standard; requires flail, recharge ⚅&lt;/p&gt;&lt;p&gt;+12 vs AC; 2d10+6 damage, and the target is stunned until the end of the hobgoblin hand of Bane’s next turn. &lt;/p&gt;]] <17>  damage, and the target is stunned until the end of the hobgoblin hand of Bane’s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bane’s Blessing&lt;/b&gt; ( when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;The hobgoblin hand of Bane gains a +4 bonus to damage rolls for the rest of the encounter.&lt;/p&gt;]]  <b>Bane’s Blessing</b> ( when first bloodied; encounter) </p><p>The hobgoblin hand of Bane gains a +4 bonus to damage rolls for the rest of the encounter.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Hobgoblin Resilience&lt;/b&gt; (immediate reaction, when the hobgoblin hand of bane suffers an effect that a save can end; encounter) &lt;/p&gt;&lt;p&gt;The hobgoblin hand of Bane rolls a saving throw against the triggering effect.&lt;/p&gt;]]  <b>Hobgoblin Resilience</b> (immediate reaction, when the hobgoblin hand of bane suffers an effect that a save can end; encounter) </p><p>The hobgoblin hand of Bane rolls a saving throw against the triggering effect.</p></tr></td></table>",

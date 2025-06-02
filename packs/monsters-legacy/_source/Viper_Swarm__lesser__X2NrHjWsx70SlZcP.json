@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"iw9mtd1OIWL3YXaS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -410,7 +412,7 @@
 		},
 		{
 			"name":"Serpentine Movement",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZcaxYITUb5Oj6P8N",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -446,7 +448,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -502,23 +505,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 56; <b>Bloodied</b> 28</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 17</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, climb 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 16 (+5)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 10 (+2)<br><b>Cha</b> 6 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm Attack&lt;/b&gt; aura 1; each enemy that starts its turn within the aura takes 3 poison damage.]] <b>Swarm Attack</b> aura 1; each enemy that starts its turn within the aura takes 3 poison damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Fangs&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 1d6+3 damage, and the swarm makes a secondary attack against the target. Secondary Attack: +9 vs. Fortitude; the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;&lt;p&gt;⚔ &lt;b&gt;Swarm of Fangs&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The viper swarm makes a swarm of fangs attack and shifts its speed.&lt;/p&gt;]] (⚔) <b>Swarm of Fangs</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Fangs&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 1d6+3 damage, and the swarm makes a secondary attack against the target. Secondary Attack: +9 vs. Fortitude; the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Fangs&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 1d6+3 damage, and the swarm makes a secondary attack against the target. Secondary Attack: +9 vs. Fortitude; the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;]] <6.5>  damage, and the swarm makes a secondary attack against the target. Secondary Attack: +9 vs. Fortitude; the target takes ongoing 5 poison damage (save ends). </p><p>⚔ <b>Swarm of Fangs</b> (standard, recharge ⚃⚄⚅) </p><p>The viper swarm makes a swarm of fangs attack and shifts its speed.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Serpentine Movement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The viper swarm ignores difficult terrain.&lt;/p&gt;]]  <b>Serpentine Movement</b></p><p>The viper swarm ignores difficult terrain.</p></tr></td></table>",

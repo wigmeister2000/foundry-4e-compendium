@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -769,23 +770,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 258; <b>Bloodied</b> 129<hr><b>Immune</b> gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 28</td><td><b>Ref</b> 25</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+11)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 1 (+1)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 1 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 20<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+4 damage, and the target is marked (save ends). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 2d6+4 damage, and the target is marked (save ends). &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+4 damage, and the target is marked (save ends). &lt;/p&gt;]] <11>  damage, and the target is marked (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs ; 2d8+6 damage.. The iridescent ooze makes a slam attack against two different targets.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>+18 vs ; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs ; 2d8+6 damage.. The iridescent ooze makes a slam attack against two different targets.&lt;/p&gt;]] <15>  damage.. The iridescent ooze makes a slam attack against two different targets.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Alluring Colors&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; +18 vs Will; the target is pulled 2 squares. If the target is marked by the iridescent ooze, it is pulled 4 squares. Any creature marked by the iridescent ooze and in a square adjacent to the iridescent ooze is grabbed and gains ongoing 10 acid damage (escape ends both). &lt;/p&gt;]] ᗕ <b>Alluring Colors</b> (standard, at-will) ✦ <b>Acid, Charm</b></p><p>Close burst 1; targets enemies; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Alluring Colors&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; &lt;u&gt;+18 vs Will&lt;/u&gt;; the target is pulled 2 squares. If the target is marked by the iridescent ooze, it is pulled 4 squares. Any creature marked by the iridescent ooze and in a square adjacent to the iridescent ooze is grabbed and gains ongoing 10 acid damage (escape ends both). &lt;/p&gt;]]; the target is pulled 2 squares. If the target is marked by the iridescent ooze, it is pulled 4 squares. Any creature marked by the iridescent ooze and in a square adjacent to the iridescent ooze is grabbed and gains ongoing 10 acid damage (escape ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Prismatic Shock&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +18 vs Will; 1d10+5 damage, and the target is dazed until the end of the iridescent ooze\"s next turn. &lt;/p&gt;]] ᗕ <b>Prismatic Shock</b> (standard, recharges when first bloodied) ✦ <b>Radiant</b></p><p>Close burst 2; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Prismatic Shock&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+18 vs Will&lt;/u&gt;; 1d10+5 damage, and the target is dazed until the end of the iridescent ooze\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Prismatic Shock&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +18 vs Will; 1d10+5 damage, and the target is dazed until the end of the iridescent ooze\"s next turn. &lt;/p&gt;]] <10.5>  damage, and the target is dazed until the end of the iridescent ooze\"s next turn. </p></tr></td></table>",

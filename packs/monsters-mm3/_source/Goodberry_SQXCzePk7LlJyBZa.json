@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -768,23 +769,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 42; <b>Bloodied</b> 21</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 12</td><td><b>Ref</b> 12</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 16 (+5)<br><b>Int</b> 9 (+1)</td><td><b>Wis</b> 20 (+7)<br><b>Cha</b> 14 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Good</td></tr><tr><td><b>Skills</b> Acrobatics +10, Nature +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> chainmail .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage.&lt;/p&gt;]] (⚔) <b>Kick</b> (illusion) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage.&lt;/p&gt;]] <12.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Blast of Wind&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +9 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, Goodberry slides the target up to 5 squares, and the target falls prone.&lt;/p&gt;]] ➶ <b>Blast of Wind</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+9[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Blast of Wind&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+9 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Blast of Wind&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, Goodberry slides the target up to 5 squares, and the target falls prone.&lt;/p&gt;]] <12>  damage, Goodberry slides the target up to 5 squares, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Golden Slumbers&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 20 (surprised enemies in the burst); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target falls unconscious (save ends).&lt;/p&gt;]] ✻ <b>Golden Slumbers</b> ✦ <b>Encounter</b></p><p><i>Attack:</i> Area burst 1 within 20 (surprised enemies in the burst); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Golden Slumbers&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 20 (surprised enemies in the burst); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target falls unconscious (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fade from Sight&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Goodberry ends its turn and becomes invisible until the end of its next turn or it hits or misses with an attack.&lt;/p&gt;]]  <b>Fade from Sight</b> (illusion) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> Goodberry ends its turn and becomes invisible until the end of its next turn or it hits or misses with an attack.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Soul Shot",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2uBw18RjNtYLgxzG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Vital Aim",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9wRFdKtQsaqCSvY2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,7 +336,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -862,23 +866,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 123; <b>Bloodied</b> 61</td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 27</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+9)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 11 (+7)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 12 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +18, Athletics +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> arrow  x40, chainmail , longbow , short sword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Shot&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the sniper hits a target that is adjacent to one of the sniper’s allies, the target cannot benefit from resistances until the end of its next turn.&lt;/p&gt;]]  <b>Soul Shot</b> <b></b></p><p>Whenever the sniper hits a target that is adjacent to one of the sniper’s allies, the target cannot benefit from resistances until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vital Aim&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While the sniper has temporary hit points, it can score a critical hit on a roll of 18–20.&lt;/p&gt;]]  <b>Vital Aim</b> <b></b></p><p>While the sniper has temporary hit points, it can score a critical hit on a roll of 18–20.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 13 damage, and the sniper can shift 1 square.&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 13 damage, and the sniper can shift 1 square.&lt;/p&gt;]] <20>  damage, and the sniper can shift 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 13 damage.&lt;/p&gt;]] (➶) <b>Longbow</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 13 damage.&lt;/p&gt;]] <24>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Life Pierce&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 13 damage, and the sniper gains 15 temporary hit points.&lt;/p&gt;]] ➶ <b>Life Pierce</b> (weapon) ✦ <b>Recharge</b> if the power misses</p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Life Pierce&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 13#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Life Pierce&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 13 damage, and the sniper gains 15 temporary hit points.&lt;/p&gt;]] <29.5>  damage, and the sniper gains 15 temporary hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Bloodied Feast&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy bloodies the sniper.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Life pierce recharges, and the sniper uses it against the triggering enemy with a +2 bonus to the attack roll. The sniper does not provoke opportunity attacks for this use of life pierce.&lt;/p&gt;]] ➶ <b>Bloodied Feast</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy bloodies the sniper.</p><p><i>Effect (Immediate Reaction):</i> Life pierce recharges, and the sniper uses it against the triggering enemy with a +2 bonus to the attack roll. The sniper does not provoke opportunity attacks for this use of life pierce.</p></tr></td></table>",

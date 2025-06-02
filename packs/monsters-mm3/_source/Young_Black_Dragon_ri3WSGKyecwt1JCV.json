@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Acidic Blood",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"n9cCMwsRTmkDVGYd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Aquatic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"P1U9bJaHYC8igw6V",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Instinctive Devouring",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OX6YNWlgVhbF0nSp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Action Recovery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0TYXfodBpE4UjSWw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -245,7 +249,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1308,23 +1313,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 208; <b>Bloodied</b> 104<hr><b>Resist</b> 10 acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 18</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7 (swamp walk), fly 7, swim 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+5)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 20 (+7)<br><b>Int</b> 12 (+3)</td><td><b>Wis</b> 15 (+4)<br><b>Cha</b> 10 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Acidic Blood &lt;/b&gt; (acid) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the dragon takes damage while it is bloodied, each creature adjacent to it takes 5 acid damage.&lt;/p&gt;]]  <b>Acidic Blood </b> (acid) <b></b></p><p>Whenever the dragon takes damage while it is bloodied, each creature adjacent to it takes 5 acid damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aquatic&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon can breathe underwater. In aquatic combat, it gains a +2 bonus to attack rolls against nonaquatic creatures.&lt;/p&gt;]]  <b>Aquatic</b> <b></b></p><p>The dragon can breathe underwater. In aquatic combat, it gains a +2 bonus to attack rolls against nonaquatic creatures.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Instinctive Devouring&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;On an initiative of 10 + its initiative check, the dragon can use a free action to charge or to use bite. If the dragon cannot use a free action to make this attack due to a dominating or stunning effect, then that effect ends instead of the dragon making the attack.&lt;/p&gt;]]  <b>Instinctive Devouring</b> <b></b></p><p>On an initiative of 10 + its initiative check, the dragon can use a free action to charge or to use bite. If the dragon cannot use a free action to make this attack due to a dominating or stunning effect, then that effect ends instead of the dragon making the attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Action Recovery&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the dragon ends its turn, any dazing, stunning, or dominating effect on it ends.&lt;/p&gt;]]  <b>Action Recovery</b> <b></b></p><p>Whenever the dragon ends its turn, any dazing, stunning, or dominating effect on it ends.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 damage, and ongoing 5 acid damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; 5 acid damage.&lt;/p&gt;]] (⚔) <b>Bite</b> (acid) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 damage, and ongoing 5 acid damage (save ends).&lt;/p&gt;]] <13>  damage, and ongoing 5 acid damage (save ends).</p><p><i>Miss:</i> 5 acid damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one or two creatures); +9 vs. AC.  If the dragon targets only one creature, it can make this attack twice against that creature&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage.&lt;/p&gt;]] ⚔ <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one or two creatures); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one or two creatures); &lt;u&gt;+9 vs. AC&lt;/u&gt;.  If the dragon targets only one creature, it can make this attack twice against that creature&lt;/p&gt;]].  If the dragon targets only one creature, it can make this attack twice against that creature</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage.&lt;/p&gt;]] <12>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (acid) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +7 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 acid damage, and ongoing 5 acid damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (acid) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+7[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (acid) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+7 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (acid) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 acid damage, and ongoing 5 acid damage (save ends).&lt;/p&gt;]] <12>  acid damage, and ongoing 5 acid damage (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shroud of Gloom&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 5 (enemies in the burst). Each target gains vulnerable 5 acid and takes a -2 penalty to attack rolls until the end of the encounter. A character can use a standard action to attempt a DC 10 Heal check to end this effect on himself or herself or an adjacent ally.&lt;/p&gt;]]  <b>Shroud of Gloom</b> ✦ Recharge ⚅</p><p><i>Effect:</i> Close burst 5 (enemies in the burst). Each target gains vulnerable 5 acid and takes a -2 penalty to attack rolls until the end of the encounter. A character can use a standard action to attempt a DC 10 Heal check to end this effect on himself or herself or an adjacent ally.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Sweep&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy misses the dragon with a melee attack. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Opportunity Action):&lt;/i&gt; Melee 3 (the triggering enemy); +7 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 2 damage, and the target falls prone. In addition, each of the target’s allies adjacent to the target takes 5 damage.&lt;/p&gt;]] ⚔ <b>Tail Sweep</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy misses the dragon with a melee attack. </p><p><i>Attack (Opportunity Action):</i> Melee 3 (the triggering enemy); [[/roll 1d20+7[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Sweep&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Opportunity Action):&lt;/i&gt; Melee 3 (the triggering enemy); &lt;u&gt;+7 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Sweep&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 2 damage, and the target falls prone. In addition, each of the target’s allies adjacent to the target takes 5 damage.&lt;/p&gt;]] <5.5>  damage, and the target falls prone. In addition, each of the target’s allies adjacent to the target takes 5 damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The dragon is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Breath weapon recharges, and the dragon uses it.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The dragon is first bloodied.</p><p><i>Effect (Free Action):</i> Breath weapon recharges, and the dragon uses it.</p></tr></td></table>",

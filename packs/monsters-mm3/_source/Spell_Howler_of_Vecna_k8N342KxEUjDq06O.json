@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -421,7 +423,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1132,23 +1135,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 130; <b>Bloodied</b> 65</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 28</td><td><b>Ref</b> 30</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+11)<br><b>Con</b> 16 (+12)</td><td><b>Dex</b> 13 (+10)<br><b>Int</b> 22 (+15)</td><td><b>Wis</b> 15 (+11)<br><b>Cha</b> 18 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Maddening Touch&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 psychic damage.&lt;/p&gt;]] (⚔) <b>Maddening Touch</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Maddening Touch&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Maddening Touch&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 psychic damage.&lt;/p&gt;]] <21>  psychic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Force&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +23 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 15 force damage.&lt;/p&gt;]] (➶) <b>Word of Force</b> (force) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+23[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Force&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+23 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Force&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 15 force damage.&lt;/p&gt;]] <26>  force damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Doom&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The spell howler must be affected by horrific visage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +23 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 psychic damage, and the target is dazed until the end of the spell howler’s next turn.&lt;/p&gt;]] (➶) <b>Word of Doom</b> (psychic) ✦ <b>At-Will</b></p><p><i>Requirement:</i> The spell howler must be affected by horrific visage.</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+23[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Doom&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+23 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Doom&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 psychic damage, and the target is dazed until the end of the spell howler’s next turn.&lt;/p&gt;]] <15>  psychic damage, and the target is dazed until the end of the spell howler’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Word of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage. The spell howler slides the target up to 3 squares, and the target makes a basic attack as a free action against a creature of the spell howler’s choice.&lt;/p&gt;]] ⚔ <b>Word of Madness</b> (psychic) ✦ <b>Recharge</b> if the power misses</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Word of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Word of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage. The spell howler slides the target up to 3 squares, and the target makes a basic attack as a free action against a creature of the spell howler’s choice.&lt;/p&gt;]] <14>  psychic damage. The spell howler slides the target up to 3 squares, and the target makes a basic attack as a free action against a creature of the spell howler’s choice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Word of Pain&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +23 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 10 necrotic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ➶ <b>Word of Pain</b> (necrotic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+23[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Word of Pain&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+23 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Word of Pain&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 10 necrotic damage.&lt;/p&gt;]] <32>  necrotic damage.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrific Visage&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The spell howler is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 2 (enemies in the burst); +22 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 psychic damage, and the spell howler pushes the target up to 3 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Until the end of the encounter, the spell howler cannot use any powers except maddening touch and word of doom.&lt;/p&gt;]] ᗕ <b>Horrific Visage</b> (psychic) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The spell howler is first bloodied.</p><p><i>Attack (No Action):</i> Close burst 2 (enemies in the burst); [[/roll 1d20+22[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrific Visage&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+22 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrific Visage&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 psychic damage, and the spell howler pushes the target up to 3 squares.&lt;/p&gt;]] <11>  psychic damage, and the spell howler pushes the target up to 3 squares.</p><p><i>Effect:</i> Until the end of the encounter, the spell howler cannot use any powers except maddening touch and word of doom.</p></tr></td></table>",

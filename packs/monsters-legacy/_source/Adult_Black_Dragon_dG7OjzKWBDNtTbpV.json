@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -643,10 +645,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1486,23 +1488,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 560; <b>Bloodied</b> 280<hr><b>Resist</b> 20 acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 24</td><td><b>Ref</b> 26</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (hover), overland flight 10, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+9)<br><b>Con</b> 16 (+8)</td><td><b>Dex</b> 22 (+11)<br><b>Int</b> 14 (+7)</td><td><b>Wis</b> 16 (+8)<br><b>Cha</b> 12 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Nature +13, Stealth +21</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 1d8+4 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Acid</b></p><p>Reach 2; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+16 vs AC&lt;/u&gt;; 1d8+4 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 1d8+4 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] <8.5>  damage, and ongoing 5 acid damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 1d6+4 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+16 vs AC&lt;/u&gt;; 1d6+4 damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 1d6+4 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The dragon makes two claw attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The dragon makes two claw attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +13 vs Reflex; 2d8+3 acid damage, and the target takes ongoing 5 acid damage and takes a –4 penalty to AC (save ends both).. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Acid</b></p><p>Close blast 5; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 2d8+3 acid damage, and the target takes ongoing 5 acid damage and takes a –4 penalty to AC (save ends both).. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +13 vs Reflex; 2d8+3 acid damage, and the target takes ongoing 5 acid damage and takes a –4 penalty to AC (save ends both).. &lt;/p&gt;]] <12>  acid damage, and the target takes ongoing 5 acid damage and takes a –4 penalty to AC (save ends both).. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cloud of Darkness&lt;/b&gt; (standard; sustain minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; this power creates a zone of darkness that remains in place until the end of the dragon’s next turn. The zone blocks line of sight for all creatures except the dragon. Any creature entirely within the area (except the dragon) is blinded&lt;/p&gt;]] ᗕ <b>Cloud of Darkness</b> (standard; sustain minor, recharge ⚃⚄⚅) ✦ <b>Zone</b></p><p>Close burst 2; this power creates a zone of darkness that remains in place until the end of the dragon’s next turn. The zone blocks line of sight for all creatures except the dragon. Any creature entirely within the area (except the dragon) is blinded</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +13 vs Will; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+13[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+13 vs Will&lt;/u&gt;; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slash&lt;/b&gt; (immediate reaction, when a melee attack misses the dragon, at-will) &lt;/p&gt;&lt;p&gt;The dragon uses its tail to attack the target; reach 2; targets the enemy that missed it; +16 vs AC; 1d8+6 damage, and the target is pushed 1 square. &lt;/p&gt;]] ⚔ <b>Tail Slash</b> (immediate reaction, when a melee attack misses the dragon, at-will) </p><p>The dragon uses its tail to attack the target; reach 2; targets the enemy that missed it; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slash&lt;/b&gt; (immediate reaction, when a melee attack misses the dragon, at-will) &lt;/p&gt;&lt;p&gt;The dragon uses its tail to attack the target; reach 2; targets the enemy that missed it; &lt;u&gt;+16 vs AC&lt;/u&gt;; 1d8+6 damage, and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slash&lt;/b&gt; (immediate reaction, when a melee attack misses the dragon, at-will) &lt;/p&gt;&lt;p&gt;The dragon uses its tail to attack the target; reach 2; targets the enemy that missed it; +16 vs AC; 1d8+6 damage, and the target is pushed 1 square. &lt;/p&gt;]] <10.5>  damage, and the target is pushed 1 square. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon’s breath weapon recharges, and the dragon uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) ✦ <b>Acid</b></p><p>The dragon’s breath weapon recharges, and the dragon uses it immediately.</p></tr></td></table>",

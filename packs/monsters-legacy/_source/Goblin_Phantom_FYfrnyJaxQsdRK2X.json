@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -186,7 +187,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7yIPw0ujbUfhpkKv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -222,7 +223,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -410,7 +412,7 @@
 		},
 		{
 			"name":"Phantom Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GRbfULJsN8KgHY69",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -446,7 +448,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -502,23 +505,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 36; <b>Bloodied</b> 18<hr><b>Resist</b> insubstantial <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 14</td><td><b>Ref</b> 16</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"></td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+3)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 11 (+2)<br><b>Cha</b> 17 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Phantom Weapon&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs Reflex; 1d8 + 2 necrotic damage.. &lt;/p&gt;]] (⚔) <b>Phantom Weapon</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+9[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Phantom Weapon&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs Reflex&lt;/u&gt;; 1d8 + 2 necrotic damage.. &lt;/p&gt;]]; [[/roll 1d8 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Phantom Weapon&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs Reflex; 1d8 + 2 necrotic damage.. &lt;/p&gt;]] <6.5>  necrotic damage.. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A goblin phantom deals 1d8 extra necrotic damage against any creature that grants combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A goblin phantom deals [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A goblin phantom deals 1d8 extra necrotic damage against any creature that grants combat advantage to it.&lt;/p&gt;]] <4.5> extra necrotic damage against any creature that grants combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Phantom Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a target has an ally of the goblin phantom adjacent to it, the goblin phantom has combat advantage against that target.&lt;/p&gt;]]  <b>Phantom Tactics</b></p><p>If a target has an ally of the goblin phantom adjacent to it, the goblin phantom has combat advantage against that target.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate reaction, when missed by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The goblin phantom shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate reaction, when missed by a melee attack; at-will) </p><p>The goblin phantom shifts 1 square.</p></tr></td></table>",

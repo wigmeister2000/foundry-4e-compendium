@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EKiNlguafwqQserp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -634,23 +636,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 44; <b>Bloodied</b> 22<hr><b>Immune</b> fire, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 14</td><td><b>Ref</b> 16</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+2)<br><b>Con</b> 12 (+2)</td><td><b>Dex</b> 17 (+4)<br><b>Int</b> 8 (0)</td><td><b>Wis</b> 11 (+1)<br><b>Cha</b> 14 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mephit regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the mephit takes cold or psychic damage, its regeneration does not function on its next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>The mephit regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the mephit takes cold or psychic damage, its regeneration does not function on its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the mephit can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Claws</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the mephit can slide the target 1 square.&lt;/p&gt;]] <11>  damage, and the mephit can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blinding Cloud&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +6 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage, the target is blinded until the end of the mephit’s next turn.&lt;/p&gt;]] ᗕ <b>Blinding Cloud</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blinding Cloud&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blinding Cloud&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage, the target is blinded until the end of the mephit’s next turn.&lt;/p&gt;]] <8.5>  damage, the target is blinded until the end of the mephit’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dust Cloud&lt;/b&gt; (zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 1; the burst creates a zone of thick dust that lasts until the end of the mephit’s next turn. The zone is lightly obscured.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; The zone persists.&lt;/p&gt;]] ᗕ <b>Dust Cloud</b> (zone) ✦ <b>Encounter</b></p><p><i>Effect:</i> Close burst 1; the burst creates a zone of thick dust that lasts until the end of the mephit’s next turn. The zone is lightly obscured.</p><p><i>Sustain Minor:</i> The zone persists.</p></tr></td></table>",

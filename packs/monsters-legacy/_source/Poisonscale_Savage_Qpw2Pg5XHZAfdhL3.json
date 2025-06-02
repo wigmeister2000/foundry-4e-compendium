@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Aura of Poison",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SkxqpHc43LulgRXG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"4",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -335,10 +338,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -639,23 +642,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 45; <b>Bloodied</b> 22</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 13</td><td><b>Fort</b> 16</td><td><b>Ref</b> 15</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (swamp walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 15 (+3)</td><td><b>Dex</b> 14 (+3)<br><b>Int</b> 8 (0)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 8 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +9</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> greatclub , javelin .</p><p>[[/roll 0#&lt;b&gt;Aura of Poison&lt;/b&gt; aura 1; each enemy within the aura takes a -2 penalty to saving throws against ongoing poison damage.]] <b>Aura of Poison</b> aura 1; each enemy within the aura takes a -2 penalty to saving throws against ongoing poison damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 2d6+3 damage. &lt;/p&gt;]] (⚔) <b>Greatclub</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+5 vs AC&lt;/u&gt;; 2d6+3 damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 2d6+3 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Javelin&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +5 vs AC; 1d6+3 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] ➶ <b>Javelin</b> (standard, encounter) ✦ <b>Poison, Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Javelin&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+5 vs AC&lt;/u&gt;; 1d6+3 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Javelin&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +5 vs AC; 1d6+3 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <6.5>  damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Poison Tail&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs AC; the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;]] (⚔) <b>Poison Tail</b> (minor, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+4[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Poison Tail&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+4 vs AC&lt;/u&gt;; the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;]]; the target takes ongoing 5 poison damage (save ends). </p></tr></td></table>",

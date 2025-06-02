@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"guX5fRHc2TzjM1Lq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -276,23 +278,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 53; <b>Bloodied</b> 26<hr><b>Resist</b> half damage from melee and ranged attack <b>Vulnerable</b> 10 against close and area attacks <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 16</td><td><b>Ref</b> 17</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+4)<br><b>Con</b> 13 (+3)</td><td><b>Dex</b> 16 (+5)<br><b>Int</b> 3 (null)</td><td><b>Wis</b> 10 (+2)<br><b>Cha</b> 6 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 10<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm Attack&lt;/b&gt; aura 1; the crawling claw swarm makes a swarm of claws attack as a free action against any enemy that starts its turn within the aura.]] <b>Swarm Attack</b> aura 1; the crawling claw swarm makes a swarm of claws attack as a free action against any enemy that starts its turn within the aura.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs Reflex; 1d8+5 damage, and the target is immobilized. &lt;/p&gt;]] (⚔) <b>Swarm of Claws</b> (standard, at-will) </p><p>[[/roll 1d20+9[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs Reflex&lt;/u&gt;; 1d8+5 damage, and the target is immobilized. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs Reflex; 1d8+5 damage, and the target is immobilized. &lt;/p&gt;]] <9.5>  damage, and the target is immobilized. </p></tr></td></table>",

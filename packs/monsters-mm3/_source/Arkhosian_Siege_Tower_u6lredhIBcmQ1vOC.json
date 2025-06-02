@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HVrNTuQJLfe2ajoq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Juggernaut",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9lQmGchIjb3xukTU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Living Building",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NaH38IEThtO4LuAn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Rough Ride",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SIzMrc8vfwYkjHQs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -772,23 +776,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 336; <b>Bloodied</b> 168<hr><b>Resist</b> 15 to all damage from outside the tower <b>Immune</b> charm, disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 28</td><td><b>Ref</b> 25</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+13)<br><b>Con</b> 28 (+15)</td><td><b>Dex</b> 20 (+11)<br><b>Int</b> 1 (+1)</td><td><b>Wis</b> 13 (+7)<br><b>Cha</b> 10 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the siege tower.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the siege tower.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Juggernaut&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The siege tower ignores difficult terrain and does not provoke opportunity attacks. It cannot squeeze, make opportunity attacks, or grab creatures.&lt;/p&gt;]]  <b>Juggernaut</b> <b></b></p><p>The siege tower ignores difficult terrain and does not provoke opportunity attacks. It cannot squeeze, make opportunity attacks, or grab creatures.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Living Building&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The tower can end its movement in other creatures’ spaces, and other creatures can end their movements in its space. The tower is 30 feet high (Athletics DC 20 to climb it). It has two levels, each with a 15-foot-high ceiling. The lower level has two reinforced iron doors (break DC 25), which the tower can open or close as a minor action. While the doors are closed, line of effect and line of sight cannot be traced from outside the tower to creatures on the lower level. The upper level has arrow slits and can be reached by either of two ladders from the lower level. Creatures inside the tower or on its exterior move with it as if it were a vehicle.&lt;/p&gt;]]  <b>Living Building</b> <b></b></p><p>The tower can end its movement in other creatures’ spaces, and other creatures can end their movements in its space. The tower is 30 feet high (Athletics DC 20 to climb it). It has two levels, each with a 15-foot-high ceiling. The lower level has two reinforced iron doors (break DC 25), which the tower can open or close as a minor action. While the doors are closed, line of effect and line of sight cannot be traced from outside the tower to creatures on the lower level. The upper level has arrow slits and can be reached by either of two ladders from the lower level. Creatures inside the tower or on its exterior move with it as if it were a vehicle.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Rough Ride&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While the tower is bloodied, it is slowed, and creatures inside it take a -2 penalty to attack rolls.&lt;/p&gt;]]  <b>Rough Ride</b> <b></b></p><p>While the tower is bloodied, it is slowed, and creatures inside it take a -2 penalty to attack rolls.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Dragon\"s Head&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 20 (creatures in the burst outside the tower); +16 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 7 fire damage, and ongoing 10 fire damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ✻ <b>Dragon\"s Head</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Area burst 1 within 20 (creatures in the burst outside the tower); [[/roll 1d20+16[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Dragon\"s Head&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 20 (creatures in the burst outside the tower); &lt;u&gt;+16 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d12 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Dragon\"s Head&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 7 fire damage, and ongoing 10 fire damage (save ends).&lt;/p&gt;]] <13.5>  fire damage, and ongoing 10 fire damage (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crush&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The siege tower moves up to its speed and can enter enemies’ spaces during this movement. When the tower enters a nonflying creature’s space for the first time during this movement, the tower makes the following attack against that creature.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (creature in the square); +16 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 6 damage. The creature falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The creature falls prone.&lt;/p&gt;]] ⚔ <b>Crush</b> ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> The siege tower moves up to its speed and can enter enemies’ spaces during this movement. When the tower enters a nonflying creature’s space for the first time during this movement, the tower makes the following attack against that creature.</p><p><i>Attack:</i> Melee 0 (creature in the square); [[/roll 1d20+16[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crush&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (creature in the square); &lt;u&gt;+16 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d12 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crush&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 6 damage. The creature falls prone.&lt;/p&gt;]] <25.5>  damage. The creature falls prone.</p><p><i>Miss:</i> The creature falls prone.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Collapse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The tower drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The tower is destroyed. Its space becomes difficult terrain until the end of the encounter. Creatures inside the tower fall prone in the tower’s space, and the tower makes the following attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (creatures in the burst); +16 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 17 damage, and the target falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Collapse</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The tower drops to 0 hit points.</p><p><i>Effect (No Action):</i> The tower is destroyed. Its space becomes difficult terrain until the end of the encounter. Creatures inside the tower fall prone in the tower’s space, and the tower makes the following attack.</p><p><i>Attack:</i> Close burst 1 (creatures in the burst); [[/roll 1d20+16[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Collapse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (creatures in the burst); &lt;u&gt;+16 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 17#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Collapse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 17 damage, and the target falls prone.&lt;/p&gt;]] <39>  damage, and the target falls prone.</p><p><i>Miss:</i> Half damage.</p></tr></td></table>",

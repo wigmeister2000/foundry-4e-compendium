@@ -107,10 +107,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +285,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -540,7 +540,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"oJUrPdj9FzKnM2gh",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -576,7 +576,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -634,21 +635,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 50; <b>Bloodied</b> 25</td><td style=\"padding-left: 15px;\"><b>Init</b> +as conjurer</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 33</td><td><b>Ref</b> 35</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+15)<br><b>Con</b> 17 (+13)</td><td><b>Dex</b> 24 (+17)<br><b>Int</b> 6 (+8)</td><td><b>Wis</b> 20 (+15)<br><b>Cha</b> 10 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, (cannot speak)<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +22, Athletics +20, Stealth +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision,Low-light vision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 2d8+9 damage, and Guenhwyvar shifts 1 square. &lt;/p&gt;]] ⚔ <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 2d8+9 damage, and Guenhwyvar shifts 1 square. &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 2d8+9 damage, and Guenhwyvar shifts 1 square. &lt;/p&gt;]] <18>  damage, and Guenhwyvar shifts 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a prone creature; +26 vs AC; 2d10+10 damage, and the target is grabbed (until escape). &lt;/p&gt;]] ⚔ <b>Bite</b> (standard, at-will) </p><p>Targets a prone creature; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a prone creature; &lt;u&gt;+26 vs AC&lt;/u&gt;; 2d10+10 damage, and the target is grabbed (until escape). &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a prone creature; +26 vs AC; 2d10+10 damage, and the target is grabbed (until escape). &lt;/p&gt;]] <21>  damage, and the target is grabbed (until escape). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Charging Pounce&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;When Guenhwyvar charges and hits with her claw, she deals 2d8 extra damage and the target falls prone&lt;/p&gt;]] ⚔ <b>Charging Pounce</b> (standard, at-will) </p><p>When Guenhwyvar charges and hits with her claw, she deals [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Charging Pounce&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;When Guenhwyvar charges and hits with her claw, she deals 2d8 extra damage and the target falls prone&lt;/p&gt;]] <9> extra damage and the target falls prone</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Guenhwyvar hits a creature with her claw attack and the creature is granting combat advantage to her, the target falls prone.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>When Guenhwyvar hits a creature with her claw attack and the creature is granting combat advantage to her, the target falls prone.</p></tr></td></table>",

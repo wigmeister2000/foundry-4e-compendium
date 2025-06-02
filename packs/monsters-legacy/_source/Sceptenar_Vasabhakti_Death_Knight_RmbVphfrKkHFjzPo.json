@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Marshal Undead",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vfUTS6GXDQNrkP1c",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -108,7 +109,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -358,10 +360,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -549,10 +551,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1217,28 +1219,15 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 398; <b>Bloodied</b> 199<hr><b>Resist</b> 15 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 38</td><td><b>Ref</b> 35</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+18)<br><b>Con</b> 15 (+13)</td><td><b>Dex</b> 14 (+13)<br><b>Int</b> 18 (+15)</td><td><b>Wis</b> 14 (+13)<br><b>Cha</b> 24 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> soulsword (katana), heavy shield , plate armor .</p><p>[[/roll 0#&lt;b&gt;Marshal Undead&lt;/b&gt; aura 10; lower-level undead allies in the aura gain a +2 bonus to their attack rolls.]] <b>Marshal Undead</b> aura 10; lower-level undead allies in the aura gain a +2 bonus to their attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Soulsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 1d8+9 damage plus 5 necrotic damage (plus an extra 2d6 necrotic damage on a critical hit). &lt;/p&gt;]] (⚔) <b>Soulsword</b> (standard, at-will) ✦ <b>Necrotic, Weapon</b></p><p>[[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Soulsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+29 vs AC&lt;/u&gt;; 1d8+9 damage plus 5 necrotic damage (plus an extra 2d6 necrotic damage on a critical hit). &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Soulsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 1d8+9 damage plus 5 necrotic damage (plus an extra 2d6 necrotic damage on a critical hit). &lt;/p&gt;]] <13.5>  damage plus 5 necrotic damage (plus an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Soulsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 1d8+9 damage plus 5 necrotic damage (plus an extra 2d6 necrotic damage on a critical hit). &lt;/p&gt;]] <7> necrotic damage on a critical hit). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Valiant Strike&lt;/b&gt; (standard; requires soulsword, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC;  (with a +1 bonus to the attack roll for each adjacent ally)2d8+9 damage plus 5 necrotic damage. &lt;/p&gt;]] ⚔ <b>Valiant Strike</b> (standard; requires soulsword, at-will) ✦ <b>Necrotic, Weapon</b></p><p>[[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Valiant Strike&lt;/b&gt; (standard; requires soulsword, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+29 vs AC&lt;/u&gt;;  (with a +1 bonus to the attack roll for each adjacent ally)2d8+9 damage plus 5 necrotic damage. &lt;/p&gt;]];  (with a +1 bonus to the attack roll for each adjacent ally)[[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Valiant Strike&lt;/b&gt; (standard; requires soulsword, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC;  (with a +1 bonus to the attack roll for each adjacent ally)2d8+9 damage plus 5 necrotic damage. &lt;/p&gt;]] <18>  damage plus 5 necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Terrifying Smite&lt;/b&gt; (standard; requires soulsword, encounter) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 2d8+9 damage plus 5 necrotic damage, and the target is pushed 2 squares and can\"t move closer to Sceptenar Vasabhakti on its next turn. &lt;/p&gt;]] ⚔ <b>Terrifying Smite</b> (standard; requires soulsword, encounter) ✦ <b>Fear, Weapon</b></p><p>[[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Terrifying Smite&lt;/b&gt; (standard; requires soulsword, encounter) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+29 vs AC&lt;/u&gt;; 2d8+9 damage plus 5 necrotic damage, and the target is pushed 2 squares and can\"t move closer to Sceptenar Vasabhakti on its next turn. &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Terrifying Smite&lt;/b&gt; (standard; requires soulsword, encounter) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 2d8+9 damage plus 5 necrotic damage, and the target is pushed 2 squares and can\"t move closer to Sceptenar Vasabhakti on its next turn. &lt;/p&gt;]] <18>  damage plus 5 necrotic damage, and the target is pushed 2 squares and can\"t move closer to Sceptenar Vasabhakti on its next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +24 vs Reflex; 6d8+13 fire and necrotic damage to living creatures. Undead creatures within the area (including Sceptenar Vasabhakti) deal 2d6 extra fire damage with melee attacks until the end of Sceptenar Vasabhakti\"s next turn. &lt;/p&gt;]] ᗕ <b>Unholy Flames</b> (standard, recharge ⚄⚅) ✦ <b>Fire, Necrotic</b></p><p>Close burst 2; [[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+24 vs Reflex&lt;/u&gt;; 6d8+13 fire and necrotic damage to living creatures. Undead creatures within the area (including Sceptenar Vasabhakti) deal 2d6 extra fire damage with melee attacks until the end of Sceptenar Vasabhakti\"s next turn. &lt;/p&gt;]]; [[/roll 6d8+13#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +24 vs Reflex; 6d8+13 fire and necrotic damage to living creatures. Undead creatures within the area (including Sceptenar Vasabhakti) deal 2d6 extra fire damage with melee attacks until the end of Sceptenar Vasabhakti\"s next turn. &lt;/p&gt;]] <40>  fire and necrotic damage to living creatures. Undead creatures within the area (including Sceptenar Vasabhakti) deal [[/roll 2d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +24 vs Reflex; 6d8+13 fire and necrotic damage to living creatures. Undead creatures within the area (including Sceptenar Vasabhakti) deal 2d6 extra fire damage with melee attacks until the end of Sceptenar Vasabhakti\"s next turn. &lt;/p&gt;]] <7> extra fire damage with melee attacks until the end of Sceptenar Vasabhakti\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Second Wind&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Sceptenar Vasabhakti spends a healing surge and regains 99 hit points. Sceptenar Vasabhakti gains a +2 bonus to all defenses until the start of her next turn.&lt;/p&gt;]]  <b>Second Wind</b> (standard; encounter) ✦ <b>Healing</b></p><p>Sceptenar Vasabhakti spends a healing surge and regains 99 hit points. Sceptenar Vasabhakti gains a +2 bonus to all defenses until the start of her next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Divine Challenge&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets one creature in burst; the target is marked until Sceptenar Vasabhakti uses this power against another target. If the target makes an attack that doesn’t include Sceptenar Vasabhakti as a target, the target takes a -2 penalty to attack rolls and 16 necrotic damage&lt;/p&gt;]] ᗕ <b>Divine Challenge</b> (minor, at-will) ✦ <b>Necrotic</b></p><p>Close burst 5; targets one creature in burst; the target is marked until Sceptenar Vasabhakti uses this power against another target. If the target makes an attack that doesn’t include Sceptenar Vasabhakti as a target, the target takes a -2 penalty to attack rolls and 16 necrotic damage</p></tr></td></table>",

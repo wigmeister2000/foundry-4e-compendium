@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -111,10 +112,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -415,23 +416,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 284; <b>Bloodied</b> 142<br><b>Regeneration</b> special (see Resist)<hr><b>Resist</b> 10 cold (if the wight takes cold damage, it gains regeneration 5 until it takes fire or radiant damage, or until the end of the encounter), 10 necrotic <b>Vulnerable</b> 5 fire, 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 25</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 22 (+13)</td><td><b>Dex</b> 19 (+11)<br><b>Int</b> 10 (+7)</td><td><b>Wis</b> 14 (+9)<br><b>Cha</b> 21 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> heavy shield , longsword , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blightfire Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 2d8+6 necrotic damage, and the target is immobilized and takes ongoing 10 cold and necrotic damage (save ends both). If this attack hits a creature taking ongoing cold or necrotic damage, the icewight warrior also drains a healing surge. &lt;/p&gt;]] (⚔) <b>Blightfire Longsword</b> (standard, at-will) ✦ <b>Cold, Necrotic, Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blightfire Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 2d8+6 necrotic damage, and the target is immobilized and takes ongoing 10 cold and necrotic damage (save ends both). If this attack hits a creature taking ongoing cold or necrotic damage, the icewight warrior also drains a healing surge. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blightfire Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 2d8+6 necrotic damage, and the target is immobilized and takes ongoing 10 cold and necrotic damage (save ends both). If this attack hits a creature taking ongoing cold or necrotic damage, the icewight warrior also drains a healing surge. &lt;/p&gt;]] <15>  necrotic damage, and the target is immobilized and takes ongoing 10 cold and necrotic damage (save ends both). If this attack hits a creature taking ongoing cold or necrotic damage, the icewight warrior also drains a healing surge. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Soul Harvest&lt;/b&gt; (standard; requires an immobilized, restrained, or helpless target, recharge ⚃⚄⚅) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +18 vs Fortitude; 2d8+7 necrotic damage, and the icewight warrior and all undead allies within 2 squares regain 10 hit points. &lt;/p&gt;]] ➶ <b>Soul Harvest</b> (standard; requires an immobilized, restrained, or helpless target, recharge ⚃⚄⚅) ✦ <b>Healing, Necrotic</b></p><p>Ranged 5; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Soul Harvest&lt;/b&gt; (standard; requires an immobilized, restrained, or helpless target, recharge ⚃⚄⚅) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 2d8+7 necrotic damage, and the icewight warrior and all undead allies within 2 squares regain 10 hit points. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Soul Harvest&lt;/b&gt; (standard; requires an immobilized, restrained, or helpless target, recharge ⚃⚄⚅) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +18 vs Fortitude; 2d8+7 necrotic damage, and the icewight warrior and all undead allies within 2 squares regain 10 hit points. &lt;/p&gt;]] <16>  necrotic damage, and the icewight warrior and all undead allies within 2 squares regain 10 hit points. </p></tr></td></table>",

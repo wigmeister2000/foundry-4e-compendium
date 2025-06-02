@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -737,7 +738,7 @@
 		},
 		{
 			"name":"Angelic Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"dPTfpE1rS6FZgGl0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -773,7 +774,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -829,23 +831,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 173; <b>Bloodied</b> 86<hr><b>Resist</b> 15 radiant <b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 34</td><td><b>Ref</b> 36</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, fly 12 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+17)<br><b>Con</b> 19 (+16)</td><td><b>Dex</b> 22 (+18)<br><b>Int</b> 24 (+19)</td><td><b>Wis</b> 25 (+19)<br><b>Cha</b> 27 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Insight +23, Religion +23</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 29 | Insight 33</td></td></tr></table><p><b>Equipment</b> quarterstaff .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 1d6+8 damage plus 1d10 thunder damage. &lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (standard, at-will) ✦ <b>Thunder, Weapon</b></p><p>Reach 2; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+31 vs AC&lt;/u&gt;; 1d6+8 damage plus 1d10 thunder damage. &lt;/p&gt;]]; [[/roll 1d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 1d6+8 damage plus 1d10 thunder damage. &lt;/p&gt;]] <11.5>  damage plus [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 1d6+8 damage plus 1d10 thunder damage. &lt;/p&gt;]] <5.5> thunder damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Thunder Crack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +29 vs Fortitude; 2d12+8 thunder damage, and the target is knocked prone. &lt;/p&gt;]] ➶ <b>Thunder Crack</b> (standard, at-will) ✦ <b>Thunder</b></p><p>Ranged 20; [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Thunder Crack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;; 2d12+8 thunder damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Thunder Crack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +29 vs Fortitude; 2d12+8 thunder damage, and the target is knocked prone. &lt;/p&gt;]] <21>  thunder damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunder Wing&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +29 vs Fortitude; 2d6+8 thunder damage, and the angel of thunder pushes the target 2 squares. Effect: The angel of thunder shifts 2 squares. &lt;/p&gt;]] ᗕ <b>Thunder Wing</b> (standard, at-will) ✦ <b>Thunder</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunder Wing&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;; 2d6+8 thunder damage, and the angel of thunder pushes the target 2 squares. Effect: The angel of thunder shifts 2 squares. &lt;/p&gt;]]; [[/roll 2d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunder Wing&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +29 vs Fortitude; 2d6+8 thunder damage, and the angel of thunder pushes the target 2 squares. Effect: The angel of thunder shifts 2 squares. &lt;/p&gt;]] <15>  thunder damage, and the angel of thunder pushes the target 2 squares. Effect: The angel of thunder shifts 2 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dancing Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one, two, or three enemies in range; +29 vs Reflex; 3d12+8 lightning damage. &lt;/p&gt;]] ➶ <b>Dancing Lightning</b> (standard, recharge ⚄⚅) ✦ <b>Lightning</b></p><p>Ranged 20; targets one, two, or three enemies in range; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dancing Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one, two, or three enemies in range; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 3d12+8 lightning damage. &lt;/p&gt;]]; [[/roll 3d12+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dancing Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one, two, or three enemies in range; +29 vs Reflex; 3d12+8 lightning damage. &lt;/p&gt;]] <27.5>  lightning damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Angelic Presence&lt;/b&gt; (while not bloodied) &lt;/p&gt;&lt;p&gt;Any attack against the angel of thunder takes a -2 penalty to the attack roll.&lt;/p&gt;]]  <b>Angelic Presence</b> (while not bloodied) </p><p>Any attack against the angel of thunder takes a -2 penalty to the attack roll.</p></tr></td></table>",

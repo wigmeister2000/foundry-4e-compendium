@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -290,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -725,7 +726,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kcbVf1mrwJhU4WMR",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -761,7 +762,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -995,23 +997,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 118; <b>Bloodied</b> 59</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 22</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+12)<br><b>Con</b> 14 (+8)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 11 (+6)</td><td><b>Wis</b> 11 (+6)<br><b>Cha</b> 13 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Dungeoneering +10, Intimidate +13, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> chainmail , light shield , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+6 damage, and the target is marked until the end of the spiderguard\"s next turn. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+6 damage, and the target is marked until the end of the spiderguard\"s next turn. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+6 damage, and the target is marked until the end of the spiderguard\"s next turn. &lt;/p&gt;]] <10.5>  damage, and the target is marked until the end of the spiderguard\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spider Bite Strike&lt;/b&gt; (standard; requires longsword, encounter) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Reflex; 2d8+6 damage, and the target takes ongoing 5 poison damage (save ends) and is dazed until the end of the spiderguard’s next turn. &lt;/p&gt;]] ⚔ <b>Spider Bite Strike</b> (standard; requires longsword, encounter) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spider Bite Strike&lt;/b&gt; (standard; requires longsword, encounter) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d8+6 damage, and the target takes ongoing 5 poison damage (save ends) and is dazed until the end of the spiderguard’s next turn. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spider Bite Strike&lt;/b&gt; (standard; requires longsword, encounter) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Reflex; 2d8+6 damage, and the target takes ongoing 5 poison damage (save ends) and is dazed until the end of the spiderguard’s next turn. &lt;/p&gt;]] <15>  damage, and the target takes ongoing 5 poison damage (save ends) and is dazed until the end of the spiderguard’s next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Combat Opportunist&lt;/b&gt; (immediate reaction, when adjacent creature shifts, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Make a longsword attack against the triggering creature, and that creature immediately ends its movement.&lt;/p&gt;]] ⚔ <b>Combat Opportunist</b> (immediate reaction, when adjacent creature shifts, at-will) ✦ <b>Weapon</b></p><p>Make a longsword attack against the triggering creature, and that creature immediately ends its movement.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Reflex; until the end of the drow spiderguard’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]] ➶ <b>Darkfire</b> (minor, encounter) </p><p>Ranged 10; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; until the end of the drow spiderguard’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]]; until the end of the drow spiderguard’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Lolth\"s Guidance&lt;/b&gt; (minor; recharge ⚅) &lt;/p&gt;&lt;p&gt;The spiderguard gains combat advantage against an adjacent creature until the end of its next turn.&lt;/p&gt;]]  <b>Lolth\"s Guidance</b> (minor; recharge ⚅) </p><p>The spiderguard gains combat advantage against an adjacent creature until the end of its next turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A spiderguard deals an extra 2d6 damage on melee and ranged attacks against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A spiderguard deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A spiderguard deals an extra 2d6 damage on melee and ranged attacks against any target it has combat advantage against.&lt;/p&gt;]] <7> damage on melee and ranged attacks against any target it has combat advantage against.</p></tr></td></table>",

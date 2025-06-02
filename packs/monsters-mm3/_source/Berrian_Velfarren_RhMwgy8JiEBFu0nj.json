@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -756,7 +757,7 @@
 				"uses":{
 					"value":4,
 					"max":"4",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -948,23 +949,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 172; <b>Bloodied</b> 86</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2 (+7 against charm effects)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 19</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+7)<br><b>Con</b> 14 (+6)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 16 (+7)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 18 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Nature +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> chainmail , light shield , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage and Berrian can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Longsword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage and Berrian can slide the target 1 square.&lt;/p&gt;]] <15>  damage and Berrian can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spirit Vines&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +11 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, Berrian slides the target up to 6 squares, and the target is restrained (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Berrian slides the target up to 3 squares.&lt;/p&gt;]] ᗕ <b>Spirit Vines</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+11[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spirit Vines&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+11 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spirit Vines&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, Berrian slides the target up to 6 squares, and the target is restrained (save ends).&lt;/p&gt;]] <16>  damage, Berrian slides the target up to 6 squares, and the target is restrained (save ends).</p><p><i>Miss:</i> Berrian slides the target up to 3 squares.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Berrian teleports up to 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> Berrian teleports up to 5 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Beguiling Glance&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (one creature in the blast); +11 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target makes a melee basic attack against a creature adjacent to it of Berrian’s choice.&lt;/p&gt;]] ᗕ <b>Beguiling Glance</b> (charm) ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Close blast 3 (one creature in the blast); [[/roll 1d20+11[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Beguiling Glance&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (one creature in the blast); &lt;u&gt;+11 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target makes a melee basic attack against a creature adjacent to it of Berrian’s choice.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bound to the Deck&lt;/b&gt; ✦ &lt;b&gt;4/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Berrian rolls initiative or his hit point total first drops to 129, 86, or 43.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Berrian draws a new card from among the cards in his possession and uses the power associated with that card.&lt;/p&gt;]]  <b>Bound to the Deck</b> ✦ <b>4/Encounter</b></p><p><i>Trigger:</i> Berrian rolls initiative or his hit point total first drops to 129, 86, or 43.</p><p><i>Effect (No Action):</i> Berrian draws a new card from among the cards in his possession and uses the power associated with that card.</p></tr></td></table>",

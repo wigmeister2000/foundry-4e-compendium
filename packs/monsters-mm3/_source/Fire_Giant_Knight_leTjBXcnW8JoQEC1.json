@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Fiery Defender",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VfnevAmoihICX1sa",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -640,23 +642,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 182; <b>Bloodied</b> 91<hr><b>Resist</b> 15 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 34</td><td><b>Ref</b> 29</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+16)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 14 (+11)<br><b>Int</b> 10 (+9)</td><td><b>Wis</b> 10 (+9)<br><b>Cha</b> 14 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> light shield , longsword , plate armor , throwing hammer  x3.</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Fiery Defender&lt;/b&gt; (fire) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;While in the aura, an unmarked enemy that uses an attack power that fails to target a creature that has this aura active takes 15 fire damage.&lt;/p&gt;]] ⌀ <b>Fiery Defender</b> (fire) ✦ <b>Aura</b> 2</p><p>While in the aura, an unmarked enemy that uses an attack power that fails to target a creature that has this aura active takes 15 fire damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 16 fire damage.&lt;/p&gt;]] (⚔) <b>Longsword</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 16#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 16 fire damage.&lt;/p&gt;]] <27>  fire damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Throwing Hammer&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 16 fire damage, and the target falls prone.&lt;/p&gt;]] ➶ <b>Throwing Hammer</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Throwing Hammer&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 16#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Throwing Hammer&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 16 fire damage, and the target falls prone.&lt;/p&gt;]] <25>  fire damage, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flame\"s Lure&lt;/b&gt; (fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +22 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The giant slides the target up to 3 squares into a space adjacent to the giant, and the target takes ongoing 15 fire damage (save ends).&lt;/p&gt;]] ᗕ <b>Flame\"s Lure</b> (fire) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+22[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flame\"s Lure&lt;/b&gt; (fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+22 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The giant slides the target up to 3 squares into a space adjacent to the giant, and the target takes ongoing 15 fire damage (save ends).</p></tr></td></table>",

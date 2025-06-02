@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Chilling Wail",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2E0MZTYVyh5GKzxu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -815,23 +817,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 58; <b>Bloodied</b> 29<hr><b>Resist</b> 5 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 15</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+6)<br><b>Con</b> 18 (+6)</td><td><b>Dex</b> 16 (+5)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 18 (+6)<br><b>Cha</b> 15 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Intimidate +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Chilling Wail&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Any enemy that ends its turn within the aura takes 5 psychic damage and takes a -2 penalty to defenses until the end of its next turn.&lt;/p&gt;]] ⌀ <b>Chilling Wail</b> ✦ <b>Aura</b> 3</p><p>Any enemy that ends its turn within the aura takes 5 psychic damage and takes a -2 penalty to defenses until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage.&lt;/p&gt;]] <8.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hurl Boulder&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (creatures in the burst); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 3 damage.&lt;/p&gt;]] ✻ <b>Hurl Boulder</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 1 within 5 (creatures in the burst); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hurl Boulder&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (creatures in the burst); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hurl Boulder&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 3 damage.&lt;/p&gt;]] <8.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearsome Howl&lt;/b&gt; (fear, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 4 (enemies in the blast); +7 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 thunder damage, and the yeti pushes the target 3 squares.&lt;/p&gt;]] ᗕ <b>Fearsome Howl</b> (fear, thunder) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 4 (enemies in the blast); [[/roll 1d20+7[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearsome Howl&lt;/b&gt; (fear, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 4 (enemies in the blast); &lt;u&gt;+7 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearsome Howl&lt;/b&gt; (fear, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 thunder damage, and the yeti pushes the target 3 squares.&lt;/p&gt;]] <8.5>  thunder damage, and the yeti pushes the target 3 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Piercing Shriek&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +7 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage, and if the target ends its next turn within 5 squares of the yeti, it takes 5 thunder damage.&lt;/p&gt;]] ᗕ <b>Piercing Shriek</b> (thunder) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+7[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Piercing Shriek&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+7 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Piercing Shriek&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage, and if the target ends its next turn within 5 squares of the yeti, it takes 5 thunder damage.&lt;/p&gt;]] <10.5>  damage, and if the target ends its next turn within 5 squares of the yeti, it takes 5 thunder damage.</p></tr></td></table>",

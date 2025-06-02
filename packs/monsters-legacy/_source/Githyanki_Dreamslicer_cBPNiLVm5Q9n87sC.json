@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -779,23 +780,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 128; <b>Bloodied</b> 64</td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>Save</b> +2 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 29</td><td><b>Ref</b> 30</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+15)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 25 (+16)<br><b>Int</b> 17 (+12)</td><td><b>Wis</b> 12 (+10)<br><b>Cha</b> 11 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> History +17, Insight +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 25</td></td></tr></table><p><b>Equipment</b> robes, overcoat, silver longsword</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8+5 damage plus 1d10 psychic damage. &lt;/p&gt;]] (⚔) <b>Silver Longsword</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 1d8+5 damage plus 1d10 psychic damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8+5 damage plus 1d10 psychic damage. &lt;/p&gt;]] <9.5>  damage plus [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8+5 damage plus 1d10 psychic damage. &lt;/p&gt;]] <5.5> psychic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Mindslice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +21 vs Will; 2d10+5 psychic damage. &lt;/p&gt;]] ➶ <b>Mindslice</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 10; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Mindslice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+21 vs Will&lt;/u&gt;; 2d10+5 psychic damage. &lt;/p&gt;]]; [[/roll 2d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Mindslice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +21 vs Will; 2d10+5 psychic damage. &lt;/p&gt;]] <16>  psychic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Psychic Barrage&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +21 vs Will; 1d8+5 psychic damage, and ongoing 5 psychic damage (save ends), and the target can’t use daily or encounter powers (save ends). &lt;/p&gt;]] ✻ <b>Psychic Barrage</b> (standard, recharge ⚅</p><p>Area burst 1 within 20; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Psychic Barrage&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; &lt;u&gt;+21 vs Will&lt;/u&gt;; 1d8+5 psychic damage, and ongoing 5 psychic damage (save ends), and the target can’t use daily or encounter powers (save ends). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Psychic Barrage&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +21 vs Will; 1d8+5 psychic damage, and ongoing 5 psychic damage (save ends), and the target can’t use daily or encounter powers (save ends). &lt;/p&gt;]] <9.5>  psychic damage, and ongoing 5 psychic damage (save ends), and the target can’t use daily or encounter powers (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Telekinetic Leap&lt;/b&gt; (move, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; the githyanki dreamslicer or an ally within range can fly up to 5 squares.&lt;/p&gt;]] ➶ <b>Telekinetic Leap</b> (move, encounter) </p><p>Ranged 10; the githyanki dreamslicer or an ally within range can fly up to 5 squares.</p></tr></td></table>",

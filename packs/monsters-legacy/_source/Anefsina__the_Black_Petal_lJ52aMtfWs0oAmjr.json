@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1314,23 +1316,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 252; <b>Bloodied</b> 126</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 26</td><td><b>Ref</b> 28</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+6)<br><b>Con</b> 14 (+8)</td><td><b>Dex</b> 12 (+7)<br><b>Int</b> 20 (+11)</td><td><b>Wis</b> 13 (+7)<br><b>Cha</b> 18 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +16, History +16, Insight +12</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 22</td></td></tr></table><p><b>Equipment</b> robes, dagger , potion of healing , symbol of power  +4 .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dager&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d4+6 damage. &lt;/p&gt;]] (⚔) <b>Dager</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dager&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 1d4+6 damage. &lt;/p&gt;]]; [[/roll 1d4+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dager&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d4+6 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Slashing Darkness&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; targets two enemies within range; +20 vs Reflex; 2d6+9 necrotic damage. &lt;/p&gt;]] (➶) <b>Slashing Darkness</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 5; targets two enemies within range; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Slashing Darkness&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; targets two enemies within range; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d6+9 necrotic damage. &lt;/p&gt;]]; [[/roll 2d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Slashing Darkness&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; targets two enemies within range; +20 vs Reflex; 2d6+9 necrotic damage. &lt;/p&gt;]] <16>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Cold Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Reflex; 2d6+9 cold damage, and the target is slowed (save ends). &lt;/p&gt;]] ➶ <b>Cold Ray</b> (standard, at-will) ✦ <b>Cold</b></p><p>Ranged 10; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Cold Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d6+9 cold damage, and the target is slowed (save ends). &lt;/p&gt;]]; [[/roll 2d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Cold Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Reflex; 2d6+9 cold damage, and the target is slowed (save ends). &lt;/p&gt;]] <16>  cold damage, and the target is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Life Trap&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +20 vs Fortitude; 3d10+9 necrotic damage, the target is stunned until the end of Anefsina\"s next turn, and Anefsina regains 15 hit points. &lt;/p&gt;]] ➶ <b>Life Trap</b> (standard, encounter) ✦ <b>Healing, Necrotic</b></p><p>Ranged 5; [[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Life Trap&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 3d10+9 necrotic damage, the target is stunned until the end of Anefsina\"s next turn, and Anefsina regains 15 hit points. &lt;/p&gt;]]; [[/roll 3d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Life Trap&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +20 vs Fortitude; 3d10+9 necrotic damage, the target is stunned until the end of Anefsina\"s next turn, and Anefsina regains 15 hit points. &lt;/p&gt;]] <25.5>  necrotic damage, the target is stunned until the end of Anefsina\"s next turn, and Anefsina regains 15 hit points. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shackles of Death&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets two enemies within range; +20 vs Fortitude; 2d8+9 necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). While taking this ongoing damage, the target cannot spend healing surges. &lt;/p&gt;]] ➶ <b>Shackles of Death</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Ranged 10; targets two enemies within range; [[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shackles of Death&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets two enemies within range; &lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 2d8+9 necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). While taking this ongoing damage, the target cannot spend healing surges. &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shackles of Death&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets two enemies within range; +20 vs Fortitude; 2d8+9 necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). While taking this ongoing damage, the target cannot spend healing surges. &lt;/p&gt;]] <18>  necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). While taking this ongoing damage, the target cannot spend healing surges. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blackfire&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +20 vs Reflex; 2d8+12 necrotic damage, and the target takes ongoing 10 fire damage (save ends). &lt;/p&gt;]] ᗕ <b>Blackfire</b> (standard, recharge ⚄⚅) ✦ <b>Fire, Necrotic</b></p><p>Close blast 5; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blackfire&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d8+12 necrotic damage, and the target takes ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+12#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blackfire&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +20 vs Reflex; 2d8+12 necrotic damage, and the target takes ongoing 10 fire damage (save ends). &lt;/p&gt;]] <21>  necrotic damage, and the target takes ongoing 10 fire damage (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Anefsina teleports up to 5 squares.&lt;/p&gt;]]  <b>Shadow Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>Anefsina teleports up to 5 squares.</p></tr></td></table>",

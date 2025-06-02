@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Shadow Movement",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TyFSH8xYlCDXaIk1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -457,23 +459,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 25 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +23</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 35</td><td><b>Ref</b> 39</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+18)<br><b>Con</b> 18 (+16)</td><td><b>Dex</b> 29 (+21)<br><b>Int</b> 18 (+16)</td><td><b>Wis</b> 26 (+20)<br><b>Cha</b> 14 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><p><b>Equipment</b> theater mask, leather armor , short sword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shadow Movement&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While moving, the slayer is invisible.&lt;/p&gt;]]  <b>Shadow Movement</b> <b></b></p><p>While moving, the slayer is invisible.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Sword&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +30 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 15 damage, plus 10 necrotic damage if the target is granting combat advantage to the slayer.&lt;/p&gt;]] (⚔) <b>Shadow Sword</b> (necrotic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+30[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Sword&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+30 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 15 damage, plus 10 necrotic damage if the target is granting combat advantage to the slayer.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Death Riposte&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy is adjacent to the slayer when the slayer drops below 1 hit point.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The slayer uses shadow sword against the triggering enemy. If the attack hits, the slayer regains 1 hit point.&lt;/p&gt;]] ⚔ <b>Death Riposte</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy is adjacent to the slayer when the slayer drops below 1 hit point.</p><p><i>Effect (Free Action):</i> The slayer uses shadow sword against the triggering enemy. If the attack hits, the slayer regains 1 hit point.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Despair",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GQoVEJTKfUisv8Px",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -818,23 +821,10 @@
 				"max":10
 			},
 			"init":{
-				"value":28,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":13,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":28
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 386; <b>Bloodied</b> 193<hr><b>Resist</b> 30 necrotic, insubstantial <b>Vulnerable</b> 15 radiant <b>Immune</b> disease, fear, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +28 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 42</td><td><b>Ref</b> 44</td><td><b>Will</b> 42</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+23)<br><b>Con</b> 28 (+24)</td><td><b>Dex</b> 32 (+26)<br><b>Int</b> 10 (+15)</td><td><b>Wis</b> 16 (+18)<br><b>Cha</b> 27 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +31</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Despair&lt;/b&gt; (Psychic) aura 5; an enemy that starts its turn in the aura takes 10 psychic damage and is slowed.]] <b>Despair</b> (Psychic) aura 5; an enemy that starts its turn in the aura takes 10 psychic damage and is slowed.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+35 vs AC; 2d8 + 10 necrotic damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+35 vs AC&lt;/u&gt;; 2d8 + 10 necrotic damage. &lt;/p&gt;]]; [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+35 vs AC; 2d8 + 10 necrotic damage. &lt;/p&gt;]] <19>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Scream of Doom&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs Will; 3d8 + 10 psychic damage. &lt;/p&gt;]] (➶) <b>Scream of Doom</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 20; [[/roll 1d20+33[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Scream of Doom&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+33 vs Will&lt;/u&gt;; 3d8 + 10 psychic damage. &lt;/p&gt;]]; [[/roll 3d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Scream of Doom&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs Will; 3d8 + 10 psychic damage. &lt;/p&gt;]] <23.5>  psychic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Screams of the Damned&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +33 vs Fortitude; 5d12 + 10 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Screams of the Damned</b> (standard, recharge ⚄⚅) ✦ <b>Psychic</b></p><p>Close burst 10; [[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Screams of the Damned&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; &lt;u&gt;+33 vs Fortitude&lt;/u&gt;; 5d12 + 10 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 5d12 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Screams of the Damned&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +33 vs Fortitude; 5d12 + 10 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] <42.5>  psychic damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Rattle&lt;/b&gt; ( when the deathshrieker is reduced to 0 hp, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +33 vs Fortitude; 5d12 + 10 necrotic damage, and the target is weakened. &lt;/p&gt;]] ᗕ <b>Death Rattle</b> ( when the deathshrieker is reduced to 0 hp, ) ✦ <b>Necrotic</b></p><p>Close burst 10; [[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Rattle&lt;/b&gt; ( when the deathshrieker is reduced to 0 hp, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; &lt;u&gt;+33 vs Fortitude&lt;/u&gt;; 5d12 + 10 necrotic damage, and the target is weakened. &lt;/p&gt;]]; [[/roll 5d12 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Rattle&lt;/b&gt; ( when the deathshrieker is reduced to 0 hp, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +33 vs Fortitude; 5d12 + 10 necrotic damage, and the target is weakened. &lt;/p&gt;]] <42.5>  necrotic damage, and the target is weakened. </p></tr></td></table>",

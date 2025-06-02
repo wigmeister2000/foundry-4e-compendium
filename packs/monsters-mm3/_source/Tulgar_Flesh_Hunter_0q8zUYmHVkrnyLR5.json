@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"On the Hunt",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2VpZfqXcaOvl0te5",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -995,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 209; <b>Bloodied</b> 104</td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 34</td><td><b>Ref</b> 35</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7 (forest walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+18)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 26 (+19)<br><b>Int</b> 23 (+17)</td><td><b>Wis</b> 23 (+17)<br><b>Cha</b> 20 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Stealth +24</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> handaxe  x4, hide armor , spear .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;On the Hunt&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the flesh hunter hits an enemy, until the end of its next turn the flesh hunter does not provoke opportunity attacks when it moves.&lt;/p&gt;]]  <b>On the Hunt</b> <b></b></p><p>Whenever the flesh hunter hits an enemy, until the end of its next turn the flesh hunter does not provoke opportunity attacks when it moves.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +27 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage.&lt;/p&gt;]] (⚔) <b>Spear</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+27[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+27 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage.&lt;/p&gt;]] <19>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5/10 (one creature); +27 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 damage.&lt;/p&gt;]] (➶) <b>Handaxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5/10 (one creature); [[/roll 1d20+27[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5/10 (one creature); &lt;u&gt;+27 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 damage.&lt;/p&gt;]] <15>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔➶ &lt;b&gt;Hunter’s Onslaught&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The flesh hunter uses spear and then uses handaxe against a different target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Special:&lt;/i&gt; Using handaxe as part of this power does not provoke opportunity attacks. When charging, the flesh hunter can use this power in place of a spear attack.&lt;/p&gt;]] ⚔➶ <b>Hunter’s Onslaught</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The flesh hunter uses spear and then uses handaxe against a different target.</p><p><i>Special:</i> Using handaxe as part of this power does not provoke opportunity attacks. When charging, the flesh hunter can use this power in place of a spear attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rotting Strike&lt;/b&gt; (necrotic, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +27 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 damage, and the target is dazed and takes ongoing 10 necrotic damage (save ends both).&lt;/p&gt;]] ⚔ <b>Rotting Strike</b> (necrotic, weapon) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+27[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rotting Strike&lt;/b&gt; (necrotic, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+27 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rotting Strike&lt;/b&gt; (necrotic, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 damage, and the target is dazed and takes ongoing 10 necrotic damage (save ends both).&lt;/p&gt;]] <17>  damage, and the target is dazed and takes ongoing 10 necrotic damage (save ends both).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unbroken Spirit&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The flesh hunter drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The flesh hunter’s nearest ally gains 10 temporary hit points and a +2 bonus to attack rolls, damage rolls, and all defenses until the end of its next turn.&lt;/p&gt;]]  <b>Unbroken Spirit</b> <b></b></p><p><i>Trigger:</i> The flesh hunter drops to 0 hit points.</p><p><i>Effect (No Action):</i> The flesh hunter’s nearest ally gains 10 temporary hit points and a +2 bonus to attack rolls, damage rolls, and all defenses until the end of its next turn.</p></tr></td></table>",

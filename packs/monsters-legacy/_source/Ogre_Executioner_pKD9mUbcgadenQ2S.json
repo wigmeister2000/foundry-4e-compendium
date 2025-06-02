@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -366,7 +367,7 @@
 		},
 		{
 			"name":"Finish Him",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"E9gcuA8Vrzkf4Fy3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +403,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -458,23 +460,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 173; <b>Bloodied</b> 86</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 28</td><td><b>Ref</b> 20</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+16)<br><b>Con</b> 23 (+13)</td><td><b>Dex</b> 12 (+8)<br><b>Int</b> 8 (+6)</td><td><b>Wis</b> 14 (+9)<br><b>Cha</b> 8 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> executioner\"s blade, hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Executioner\"s Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 1d12+9 damage, and the target is knocked prone. On a critical hit, the target takes ongoing 10 damage (save ends). &lt;/p&gt;]] (⚔) <b>Executioner\"s Blade</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Executioner\"s Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d12+9 damage, and the target is knocked prone. On a critical hit, the target takes ongoing 10 damage (save ends). &lt;/p&gt;]]; [[/roll 1d12+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Executioner\"s Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 1d12+9 damage, and the target is knocked prone. On a critical hit, the target takes ongoing 10 damage (save ends). &lt;/p&gt;]] <15.5>  damage, and the target is knocked prone. On a critical hit, the target takes ongoing 10 damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Cut&lt;/b&gt; (standard; requires executioner\"s blade, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;reach 2; +17 vs AC; 3d12+9 damage, and the target is dazed (save ends). &lt;/p&gt;]] ⚔ <b>Savage Cut</b> (standard; requires executioner\"s blade, encounter) ✦ <b>Weapon</b></p><p>reach 2; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Cut&lt;/b&gt; (standard; requires executioner\"s blade, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;reach 2; &lt;u&gt;+17 vs AC&lt;/u&gt;; 3d12+9 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 3d12+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Cut&lt;/b&gt; (standard; requires executioner\"s blade, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;reach 2; +17 vs AC; 3d12+9 damage, and the target is dazed (save ends). &lt;/p&gt;]] <28.5>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Finish Him&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Against prone, immobilized, or restrained targets, the ogre executioner can score critical hits on attack rolls of natural 19 or 20.&lt;/p&gt;]]  <b>Finish Him</b></p><p>Against prone, immobilized, or restrained targets, the ogre executioner can score critical hits on attack rolls of natural 19 or 20.</p></tr></td></table>",

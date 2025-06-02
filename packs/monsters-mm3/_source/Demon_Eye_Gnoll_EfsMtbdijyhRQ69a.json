@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Abyssal Mind",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DMZWiGKwreqR7n5d",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Pack Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Q5GRLurMgxsoiXc3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -502,23 +505,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 62; <b>Bloodied</b> 31</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 20</td><td><b>Ref</b> 20</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+7)<br><b>Con</b> 14 (+5)</td><td><b>Dex</b> 18 (+7)<br><b>Int</b> 9 (+2)</td><td><b>Wis</b> 15 (+5)<br><b>Cha</b> 7 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> glaive , leather armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Abyssal Mind&lt;/b&gt; (charm, psychic, psychic) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;While the gnoll is bloodied, any enemy that ends its turn in the aura and can see the gnoll takes 5 psychic damage. If the enemy is dazed, it must also make a basic attack against its nearest ally as a free action.&lt;/p&gt;]] ⌀ <b>Abyssal Mind</b> (charm, psychic, psychic) ✦ <b>Aura</b> 3</p><p>While the gnoll is bloodied, any enemy that ends its turn in the aura and can see the gnoll takes 5 psychic damage. If the enemy is dazed, it must also make a basic attack against its nearest ally as a free action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Attack&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnoll’s attacks deal 5 extra damage to any enemy that has two or more of the gnoll’s allies adjacent to it.&lt;/p&gt;]]  <b>Pack Attack</b> <b></b></p><p>The gnoll’s attacks deal 5 extra damage to any enemy that has two or more of the gnoll’s allies adjacent to it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +12 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 5 damage, or 6d4 + 15 if the target cannot see the gnoll.&lt;/p&gt;]] (⚔) <b>Glaive</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+12[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+12 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 5 damage, or 6d4 + 15 if the target cannot see the gnoll.&lt;/p&gt;]] <15>  damage, or [[/roll 6d4 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 5 damage, or 6d4 + 15 if the target cannot see the gnoll.&lt;/p&gt;]] <30>  if the target cannot see the gnoll.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Stare into the Abyss&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst that can see the gnoll); +10 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dazed until the end of the gnoll’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gnoll becomes invisible to the targets until the end of its next turn.&lt;/p&gt;]] ᗕ <b>Stare into the Abyss</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 3 (enemies in the burst that can see the gnoll); [[/roll 1d20+10[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Stare into the Abyss&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst that can see the gnoll); &lt;u&gt;+10 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dazed until the end of the gnoll’s next turn.</p><p><i>Effect:</i> The gnoll becomes invisible to the targets until the end of its next turn.</p></tr></td></table>",

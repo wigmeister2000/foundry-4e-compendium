@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UgHIEM8FyTCmOkSV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -635,23 +637,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 58; <b>Bloodied</b> 29<br><b>Regeneration</b> 5<hr><b>Resist</b> 5 lightning, 5 thunder </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 19</td><td><b>Ref</b> 18</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 6, overland flight 12</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+7)<br><b>Con</b> 20 (+8)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 11 (+3)</td><td><b>Wis</b> 13 (+4)<br><b>Cha</b> 21 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 2d6+4 lightning damage. &lt;/p&gt;]] (⚔) <b>Sting</b> (standard, at-will) ✦ <b>Lightning</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 2d6+4 lightning damage. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 2d6+4 lightning damage. &lt;/p&gt;]] <11>  lightning damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Thunderbolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +10 vs Reflex; 2d6+5 thunder damage. &lt;/p&gt;]] ✻ <b>Thunderbolt</b> (standard, at-will) ✦ <b>Thunder</b></p><p>Area burst 2 within 10; [[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Thunderbolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; &lt;u&gt;+10 vs Reflex&lt;/u&gt;; 2d6+5 thunder damage. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Thunderbolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +10 vs Reflex; 2d6+5 thunder damage. &lt;/p&gt;]] <12>  thunder damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Discharge&lt;/b&gt; (immediate reaction, when an enemy hits the abishai with a melee attack, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +12 vs Reflex; 1d6+5 lightning damage, and the triggering enemy is pushed 1 square and stunned until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Lightning Discharge</b> (immediate reaction, when an enemy hits the abishai with a melee attack, encounter) ✦ <b>Lightning</b></p><p>Close burst 1; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Discharge&lt;/b&gt; (immediate reaction, when an enemy hits the abishai with a melee attack, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; 1d6+5 lightning damage, and the triggering enemy is pushed 1 square and stunned until the end of its next turn. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Discharge&lt;/b&gt; (immediate reaction, when an enemy hits the abishai with a melee attack, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +12 vs Reflex; 1d6+5 lightning damage, and the triggering enemy is pushed 1 square and stunned until the end of its next turn. &lt;/p&gt;]] <8.5>  lightning damage, and the triggering enemy is pushed 1 square and stunned until the end of its next turn. </p></tr></td></table>",

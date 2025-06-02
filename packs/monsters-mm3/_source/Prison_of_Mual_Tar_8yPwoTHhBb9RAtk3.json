@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Cloying Chains",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NR8SbmZOntIzf2Qy",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Agent of Divine Will",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"oTcRhrg8WtDPfjJq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -856,23 +859,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 242; <b>Bloodied</b> 121<hr><b>Resist</b> 15 force </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 39</td><td><b>Ref</b> 38</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+22)<br><b>Con</b> 26 (+21)</td><td><b>Dex</b> 24 (+20)<br><b>Int</b> 11 (+13)</td><td><b>Wis</b> 18 (+17)<br><b>Cha</b> 15 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Cloying Chains&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura is marked by the prison of Mual-Tar until the start of the enemy’s next turn.&lt;/p&gt;]] ⌀ <b>Cloying Chains</b> ✦ <b>Aura</b> 5</p><p>Any enemy that starts its turn within the aura is marked by the prison of Mual-Tar until the start of the enemy’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Agent of Divine Will&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The prison of Mual-Tar ignores insubstantial, concealment, and cover (but not total concealment or superior cover).&lt;/p&gt;]]  <b>Agent of Divine Will</b> <b></b></p><p>The prison of Mual-Tar ignores insubstantial, concealment, and cover (but not total concealment or superior cover).</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fettering Lash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); +31 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8+21 damage. If the target makes an attack that doesn’t include the prison of Mual-Tar before the end of the target’s next turn, the prison of Mual-Tar pulls the target 10 squares to the nearest square as a free action.&lt;/p&gt;]] (⚔) <b>Fettering Lash</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 4 (one creature); [[/roll 1d20+31[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fettering Lash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); &lt;u&gt;+31 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8+21#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fettering Lash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8+21 damage. If the target makes an attack that doesn’t include the prison of Mual-Tar before the end of the target’s next turn, the prison of Mual-Tar pulls the target 10 squares to the nearest square as a free action.&lt;/p&gt;]] <34.5>  damage. If the target makes an attack that doesn’t include the prison of Mual-Tar before the end of the target’s next turn, the prison of Mual-Tar pulls the target 10 squares to the nearest square as a free action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The prison of Mual-Tar uses fettering lash twice, making each attack against a different target.&lt;/p&gt;]] ⚔ <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The prison of Mual-Tar uses fettering lash twice, making each attack against a different target.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reactive Coils&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy pushes, pulls, or slides the prison of Mual-Tar.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The prison of Mual-Tar pulls the triggering enemy 10 squares to a square adjacent to the prison of Mual-Tar. The triggering enemy is immobilized until the end of its next turn.&lt;/p&gt;]]  <b>Reactive Coils</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy pushes, pulls, or slides the prison of Mual-Tar.</p><p><i>Effect (Immediate Reaction):</i> The prison of Mual-Tar pulls the triggering enemy 10 squares to a square adjacent to the prison of Mual-Tar. The triggering enemy is immobilized until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Unfettered Apocalypse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy scores a critical hit against the prison of Mual-Tar or the prison of Mual-Tar is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The prison of Mual-Tar creates a duplicate of itself, which appears in the nearest unoccupied squares. The duplicate has the same hit points as the prison of Mual-Tar, is considered to have expended the same powers as the prison of Mual-Tar, and acts during the prison of Mual-Tar’s next turn. Any effects on the prison of Mual-Tar do not transfer to the duplicate. At the end of the prison of Mual-Tar’s next turn, the duplicate disappears.&lt;/p&gt;]]  <b>Unfettered Apocalypse</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy scores a critical hit against the prison of Mual-Tar or the prison of Mual-Tar is first bloodied.</p><p><i>Effect (No Action):</i> The prison of Mual-Tar creates a duplicate of itself, which appears in the nearest unoccupied squares. The duplicate has the same hit points as the prison of Mual-Tar, is considered to have expended the same powers as the prison of Mual-Tar, and acts during the prison of Mual-Tar’s next turn. Any effects on the prison of Mual-Tar do not transfer to the duplicate. At the end of the prison of Mual-Tar’s next turn, the duplicate disappears.</p></tr></td></table>",

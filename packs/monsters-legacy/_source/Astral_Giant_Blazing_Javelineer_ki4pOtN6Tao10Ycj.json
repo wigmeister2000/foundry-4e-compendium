@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -726,7 +728,7 @@
 		},
 		{
 			"name":"Astral Resonance",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RIdua1ZYOpckj59C",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -762,7 +764,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -996,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 144; <b>Bloodied</b> 72<hr><b>Resist</b> 10 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 29</td><td><b>Ref</b> 28</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 see also astral leap</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+16)<br><b>Con</b> 24 (+16)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 18 (+13)</td><td><b>Wis</b> 18 (+13)<br><b>Cha</b> 20 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> javelin  x5.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 1d8 + 4 damage + 2d8 radiant damage. &lt;/p&gt;]] (⚔) <b>Javelin</b> (standard, at-will) ✦ <b>Radiant</b></p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 1d8 + 4 damage + 2d8 radiant damage. &lt;/p&gt;]]; [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 1d8 + 4 damage + 2d8 radiant damage. &lt;/p&gt;]] <8.5>  damage + [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 1d8 + 4 damage + 2d8 radiant damage. &lt;/p&gt;]] <9> radiant damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Blazing Throw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +26 vs AC; 2d8 + 5 damage, and the target grants combat advantage and takes ongoing 5 radiant damage (save ends both). &lt;/p&gt;]] (➶) <b>Blazing Throw</b> (standard, at-will) ✦ <b>Radiant</b></p><p>Ranged 10/20; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Blazing Throw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+26 vs AC&lt;/u&gt;; 2d8 + 5 damage, and the target grants combat advantage and takes ongoing 5 radiant damage (save ends both). &lt;/p&gt;]]; [[/roll 2d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Blazing Throw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +26 vs AC; 2d8 + 5 damage, and the target grants combat advantage and takes ongoing 5 radiant damage (save ends both). &lt;/p&gt;]] <14>  damage, and the target grants combat advantage and takes ongoing 5 radiant damage (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Winds&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +22 vs Reflex; 3d8 + 4 radiant damage, and the astral giant blazing javelineer pushes the target 3 squares. &lt;/p&gt;]] ᗕ <b>Astral Winds</b> (standard, encounter) ✦ <b>Radiant</b></p><p>Close burst 2; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Winds&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 3d8 + 4 radiant damage, and the astral giant blazing javelineer pushes the target 3 squares. &lt;/p&gt;]]; [[/roll 3d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Winds&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +22 vs Reflex; 3d8 + 4 radiant damage, and the astral giant blazing javelineer pushes the target 3 squares. &lt;/p&gt;]] <17.5>  radiant damage, and the astral giant blazing javelineer pushes the target 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Brilliant Lance&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20; +22 vs Reflex; 2d8 + 9 damage, and the target is blinded until the end of the astral giant blazing javelineer’s next turn. &lt;/p&gt;]] ✻ <b>Brilliant Lance</b> (standard, recharge ⚃⚄⚅) ✦ <b>Radiant</b></p><p>Area burst 2 within 20; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Brilliant Lance&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 2d8 + 9 damage, and the target is blinded until the end of the astral giant blazing javelineer’s next turn. &lt;/p&gt;]]; [[/roll 2d8 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Brilliant Lance&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20; +22 vs Reflex; 2d8 + 9 damage, and the target is blinded until the end of the astral giant blazing javelineer’s next turn. &lt;/p&gt;]] <18>  damage, and the target is blinded until the end of the astral giant blazing javelineer’s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Astral Resonance&lt;/b&gt;&lt;/p&gt;&lt;p&gt;As long as an astral giant has an unbloodied astral giant ally within 10 squares of it, it gains a +2 bonus to attack rolls.&lt;/p&gt;]]  <b>Astral Resonance</b></p><p>As long as an astral giant has an unbloodied astral giant ally within 10 squares of it, it gains a +2 bonus to attack rolls.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Astral Leap&lt;/b&gt; (move; only within the astral sea; recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The astral giant blazing javelineer flies 10 squares.&lt;/p&gt;]]  <b>Astral Leap</b> (move; only within the astral sea; recharges when first bloodied) </p><p>The astral giant blazing javelineer flies 10 squares.</p></tr></td></table>",

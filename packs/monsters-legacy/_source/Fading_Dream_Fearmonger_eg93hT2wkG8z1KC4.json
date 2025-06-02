@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -955,23 +957,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 122; <b>Bloodied</b> 61<hr><b>Resist</b> 5 psychic <b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>Save</b> +5 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 27</td><td><b>Ref</b> 27</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+10)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 21 (+13)<br><b>Int</b> 18 (+12)</td><td><b>Wis</b> 18 (+12)<br><b>Cha</b> 24 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +20, Intimidate +25, Stealth +18, Thievery +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dreamblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 2d6+5 damage, and the target takes ongoing 5 psychic damage (save ends). &lt;/p&gt;]] (⚔) <b>Dreamblade</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dreamblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 2d6+5 damage, and the target takes ongoing 5 psychic damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dreamblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 2d6+5 damage, and the target takes ongoing 5 psychic damage (save ends). &lt;/p&gt;]] <12>  damage, and the target takes ongoing 5 psychic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Nightmare Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +21 vs Will; 1d8+5 psychic damage, the fearmonger pushes the target 3 squares, and the target takes ongoing 5 psychic damage (save ends). &lt;/p&gt;]] (➶) <b>Nightmare Bolt</b> (standard, at-will) ✦ <b>Fear, Psychic</b></p><p>Ranged 20; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Nightmare Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+21 vs Will&lt;/u&gt;; 1d8+5 psychic damage, the fearmonger pushes the target 3 squares, and the target takes ongoing 5 psychic damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Nightmare Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +21 vs Will; 1d8+5 psychic damage, the fearmonger pushes the target 3 squares, and the target takes ongoing 5 psychic damage (save ends). &lt;/p&gt;]] <9.5>  psychic damage, the fearmonger pushes the target 3 squares, and the target takes ongoing 5 psychic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Humbling Terror&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a creature taking ongoing psychic damage; +21 vs Will; 3d10+7 psychic damage, and the target is knocked prone (save ends). &lt;/p&gt;]] ➶ <b>Humbling Terror</b> (standard, encounter) ✦ <b>Fear, Psychic</b></p><p>Ranged 10; targets a creature taking ongoing psychic damage; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Humbling Terror&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a creature taking ongoing psychic damage; &lt;u&gt;+21 vs Will&lt;/u&gt;; 3d10+7 psychic damage, and the target is knocked prone (save ends). &lt;/p&gt;]]; [[/roll 3d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Humbling Terror&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a creature taking ongoing psychic damage; +21 vs Will; 3d10+7 psychic damage, and the target is knocked prone (save ends). &lt;/p&gt;]] <23.5>  psychic damage, and the target is knocked prone (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Terrifying Vision&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a creature taking ongoing psychic damage; +21 vs Will; 2d8+7 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Terrifying Vision</b> (standard, recharge ⚃⚄⚅) ✦ <b>Fear, Psychic</b></p><p>Ranged 10; targets a creature taking ongoing psychic damage; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Terrifying Vision&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a creature taking ongoing psychic damage; &lt;u&gt;+21 vs Will&lt;/u&gt;; 2d8+7 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Terrifying Vision&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a creature taking ongoing psychic damage; +21 vs Will; 2d8+7 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] <16>  psychic damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dark Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Fading Dream fearmonger teleports 5 squares and gains a +2 bonus to all defenses until the end of its next turn.&lt;/p&gt;]]  <b>Dark Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The Fading Dream fearmonger teleports 5 squares and gains a +2 bonus to all defenses until the end of its next turn.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Draconic Majesty",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kbIYTtyWKEpqv7dD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"37",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -297,7 +299,8 @@
 					"defBonus":0,
 					"formula":"37",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1853,7 +1856,7 @@
 		},
 		{
 			"name":"Majestic Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"U7g9Af1kXWy85COI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1889,7 +1892,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1945,23 +1949,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1425; <b>Bloodied</b> 712<hr><b>Resist</b> 35 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 46</td><td><b>Ref</b> 40</td><td><b>Will</b> 44</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, burrow 10, fly 12 (hover), overland flight 20</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 33 (+26)<br><b>Con</b> 29 (+24)</td><td><b>Dex</b> 20 (+20)<br><b>Int</b> 24 (+22)</td><td><b>Wis</b> 25 (+22)<br><b>Cha</b> 26 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Giant, Primordial, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Diplomacy +28, Insight +27, Intimidate +28, Nature +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 20<br><b>Passive</b> Perception 32 | Insight 37</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Draconic Majesty&lt;/b&gt; aura 6; any dragon ally within the aura gains a +4 bonus to attack rolls and to all defenses.]] <b>Draconic Majesty</b> aura 6; any dragon ally within the aura gains a +4 bonus to attack rolls and to all defenses.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d10+11 damage plus 6d6 fire damage, and the target is weakened (save ends). A target that is already weakened is stunned instead. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 4; [[/roll 1d20+37[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+37 vs AC&lt;/u&gt;; 2d10+11 damage plus 6d6 fire damage, and the target is weakened (save ends). A target that is already weakened is stunned instead. &lt;/p&gt;]]; [[/roll 2d10+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d10+11 damage plus 6d6 fire damage, and the target is weakened (save ends). A target that is already weakened is stunned instead. &lt;/p&gt;]] <22>  damage plus [[/roll 6d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d10+11 damage plus 6d6 fire damage, and the target is weakened (save ends). A target that is already weakened is stunned instead. &lt;/p&gt;]] <21> fire damage, and the target is weakened (save ends). A target that is already weakened is stunned instead. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 3d4+11 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 4; [[/roll 1d20+37[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+37 vs AC&lt;/u&gt;; 3d4+11 damage. &lt;/p&gt;]]; [[/roll 3d4+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 3d4+11 damage. &lt;/p&gt;]] <18.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Nefermandias makes two claw attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>Nefermandias makes two claw attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +36 vs Reflex; 5d10+9 fire damage, and the target is blinded (save ends). Miss: Half damage, and the target is not blinded. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Fire</b></p><p>Close blast 10; [[/roll 1d20+36[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; &lt;u&gt;+36 vs Reflex&lt;/u&gt;; 5d10+9 fire damage, and the target is blinded (save ends). Miss: Half damage, and the target is not blinded. &lt;/p&gt;]]; [[/roll 5d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +36 vs Reflex; 5d10+9 fire damage, and the target is blinded (save ends). Miss: Half damage, and the target is not blinded. &lt;/p&gt;]] <36.5>  fire damage, and the target is blinded (save ends). Miss: Half damage, and the target is not blinded. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +36 vs Will; the target is stunned until the end of Nefermandias’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+36[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+36 vs Will&lt;/u&gt;; the target is stunned until the end of Nefermandias’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of Nefermandias’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Wilting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +36 vs Fortitude; 4d10+9 damage (on a critical hit, the target is also weakened; if it is already weakened, it is stunned instead). &lt;/p&gt;]] ᗕ <b>Horrid Wilting</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Close blast 5; [[/roll 1d20+36[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Wilting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+36 vs Fortitude&lt;/u&gt;; 4d10+9 damage (on a critical hit, the target is also weakened; if it is already weakened, it is stunned instead). &lt;/p&gt;]]; [[/roll 4d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Wilting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +36 vs Fortitude; 4d10+9 damage (on a critical hit, the target is also weakened; if it is already weakened, it is stunned instead). &lt;/p&gt;]] <31>  damage (on a critical hit, the target is also weakened; if it is already weakened, it is stunned instead). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sandstorm&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 20; targets enemies; +36 vs Reflex; 4d10+11 damage, and the target slides 5 squares. This power creates an area of swirling sand that remains in place until the end of Nefermandias’s next turn. The area blocks line of sight for all creatures except the dragon. &lt;/p&gt;]] ᗕ <b>Sandstorm</b> (standard, encounter) </p><p>Close burst 20; targets enemies; [[/roll 1d20+36[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sandstorm&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 20; targets enemies; &lt;u&gt;+36 vs Reflex&lt;/u&gt;; 4d10+11 damage, and the target slides 5 squares. This power creates an area of swirling sand that remains in place until the end of Nefermandias’s next turn. The area blocks line of sight for all creatures except the dragon. &lt;/p&gt;]]; [[/roll 4d10+11#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sandstorm&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 20; targets enemies; +36 vs Reflex; 4d10+11 damage, and the target slides 5 squares. This power creates an area of swirling sand that remains in place until the end of Nefermandias’s next turn. The area blocks line of sight for all creatures except the dragon. &lt;/p&gt;]] <33>  damage, and the target slides 5 squares. This power creates an area of swirling sand that remains in place until the end of Nefermandias’s next turn. The area blocks line of sight for all creatures except the dragon. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wall of Sound&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Conjuration, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area wall 10 within 20; this power creates a wall of contiguous squares filled with swirling, superheated sand that remains in place until the end of the encounter or until it is destroyed. The wall can be up to 10 squares long and up to 3 squares high. Any creature that starts its turn adjacent to the wall takes 3d6 + 8 fire damage. The wall blocks line of sight and prevents movement&lt;/p&gt;&lt;p&gt;As a standard action, a creature can attack the wall; each square has 100 hit points. Any creature that makes a melee attack against the wall takes 3d10 fire damage&lt;/p&gt;]] ⚔ <b>Wall of Sound</b> (standard, recharge ⚄⚅) ✦ <b>Conjuration, Fire</b></p><p>Area wall 10 within 20; this power creates a wall of contiguous squares filled with swirling, superheated sand that remains in place until the end of the encounter or until it is destroyed. The wall can be up to 10 squares long and up to 3 squares high. Any creature that starts its turn adjacent to the wall takes [[/roll 3d6 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wall of Sound&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Conjuration, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area wall 10 within 20; this power creates a wall of contiguous squares filled with swirling, superheated sand that remains in place until the end of the encounter or until it is destroyed. The wall can be up to 10 squares long and up to 3 squares high. Any creature that starts its turn adjacent to the wall takes 3d6 + 8 fire damage. The wall blocks line of sight and prevents movement&lt;/p&gt;]] <18.5>  fire damage. The wall blocks line of sight and prevents movement</p><p>As a standard action, a creature can attack the wall; each square has 100 hit points. Any creature that makes a melee attack against the wall takes [[/roll 3d10 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wall of Sound&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Conjuration, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;As a standard action, a creature can attack the wall; each square has 100 hit points. Any creature that makes a melee attack against the wall takes 3d10 fire damage&lt;/p&gt;]] <16.5> fire damage</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;Nefermandias’s breath weapon recharges, and the dragon uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>Nefermandias’s breath weapon recharges, and the dragon uses it immediately.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Hellish Accuracy&lt;/b&gt; (encounter) &lt;/p&gt;&lt;p&gt;Nefermandias scores a critical hit on a roll of 19 or 20 with his breath weapon, horrid wilting, and sandstorm powers (a roll of 19 is not an automatic hit, however).&lt;/p&gt;]]  <b>Hellish Accuracy</b> (encounter) </p><p>Nefermandias scores a critical hit on a roll of 19 or 20 with his breath weapon, horrid wilting, and sandstorm powers (a roll of 19 is not an automatic hit, however).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Majestic Presence&lt;/b&gt;✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An enemy cannot attack Nefermandias unless it first makes a successful DC 29 Charisma check or Nefermandias attacks that enemy first.&lt;/p&gt;]]  <b>Majestic Presence</b>✦ <b>Fear</b></p><p>An enemy cannot attack Nefermandias unless it first makes a successful DC 29 Charisma check or Nefermandias attacks that enemy first.</p></tr></td></table>",

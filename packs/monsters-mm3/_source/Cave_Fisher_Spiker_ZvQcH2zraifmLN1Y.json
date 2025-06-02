@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Camouflage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qDeIf5EFLnhtVl0W",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Sniper",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kr10tT92UL5qxlgF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,7 +334,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -678,23 +682,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 37; <b>Bloodied</b> 18</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 5 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+3)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 17 (+4)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 5 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Camouflage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The spiker gains a +2 bonus to all defenses against ranged and area attacks. &lt;/p&gt;]]  <b>Camouflage</b> <b></b></p><p>The spiker gains a +2 bonus to all defenses against ranged and area attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sniper&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the spiker is hidden and misses with a ranged attack, it remains hidden.&lt;/p&gt;]]  <b>Sniper</b> <b></b></p><p>Whenever the spiker is hidden and misses with a ranged attack, it remains hidden.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pincers&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 3 damage.&lt;/p&gt;]] (⚔) <b>Pincers</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pincers&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pincers&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 3 damage.&lt;/p&gt;]] <8.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Filament Spike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +8 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 4 damage.&lt;/p&gt;]] (➶) <b>Filament Spike</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+8[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Filament Spike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+8 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Filament Spike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 4 damage.&lt;/p&gt;]] <9.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Filament Wrap&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +8 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is immobilized and takes ongoing 5 damage (save ends both).&lt;/p&gt;]] ➶ <b>Filament Wrap</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+8[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Filament Wrap&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+8 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is immobilized and takes ongoing 5 damage (save ends both).</p></tr></td></table>",

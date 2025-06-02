@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -776,23 +777,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 56; <b>Bloodied</b> 28<hr><b>Resist</b> 5 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 16</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 16 (+5)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 16 (+5)</td><td><b>Wis</b> 10 (+2)<br><b>Cha</b> 18 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +10, Religion +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d6 necrotic damage, and an immobilized target loses a healing surge. When it causes the loss of a healing surge, the Skullborn deathlock wight regains 5 hit points.. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Healing, Necrotic</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d6 necrotic damage, and an immobilized target loses a healing surge. When it causes the loss of a healing surge, the Skullborn deathlock wight regains 5 hit points.. &lt;/p&gt;]]; [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d6 necrotic damage, and an immobilized target loses a healing surge. When it causes the loss of a healing surge, the Skullborn deathlock wight regains 5 hit points.. &lt;/p&gt;]] <3.5> necrotic damage, and an immobilized target loses a healing surge. When it causes the loss of a healing surge, the Skullborn deathlock wight regains 5 hit points.. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Skullborn Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +8 vs Reflex; 1d6 + 4 cold and necrotic damage, and the target is immobilized (save ends).. &lt;/p&gt;]] ➶ <b>Skullborn Bolt</b> (standard, at-will) ✦ <b>Cold, Necrotic</b></p><p>Ranged 20; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Skullborn Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 1d6 + 4 cold and necrotic damage, and the target is immobilized (save ends).. &lt;/p&gt;]]; [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Skullborn Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +8 vs Reflex; 1d6 + 4 cold and necrotic damage, and the target is immobilized (save ends).. &lt;/p&gt;]] <7.5>  cold and necrotic damage, and the target is immobilized (save ends).. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrific Visage&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +7 vs Will; 2d6 + 4 psychic damage, and the target is pushed 3 squares. targets enemies&lt;/p&gt;]] ᗕ <b>Horrific Visage</b> (standard, recharges when first bloodied) ✦ <b>Fear, Psychic</b></p><p>Close blast 5; [[/roll 1d20+7[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrific Visage&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+7 vs Will&lt;/u&gt;; 2d6 + 4 psychic damage, and the target is pushed 3 squares. targets enemies&lt;/p&gt;]]; [[/roll 2d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrific Visage&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +7 vs Will; 2d6 + 4 psychic damage, and the target is pushed 3 squares. targets enemies&lt;/p&gt;]] <11>  psychic damage, and the target is pushed 3 squares. targets enemies</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Reanimate&lt;/b&gt; (minor; recharges when first bloodied) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;targets one destroyed undead creature of a level no higher than the Skullborn deathlock wight’s level + 2; Ranged 10; the target regains 10 hit points and stands as a free action. This power does not affect minions.&lt;/p&gt;]]  <b>Reanimate</b> (minor; recharges when first bloodied) ✦ <b>Healing, Necrotic</b></p><p>targets one destroyed undead creature of a level no higher than the Skullborn deathlock wight’s level + 2; Ranged 10; the target regains 10 hit points and stands as a free action. This power does not affect minions.</p></tr></td></table>",

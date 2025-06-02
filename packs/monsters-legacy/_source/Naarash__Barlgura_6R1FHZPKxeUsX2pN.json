@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -463,10 +464,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -643,10 +644,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1122,23 +1123,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 360; <b>Bloodied</b> 180<hr><b>Resist</b> 10 variable (1/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 2 | <b>Save</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 24</td><td><b>Ref</b> 19</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+10)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 6 (+2)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 12 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d8+6 damage, or 2d8+6 damage if the barlgura is bloodied. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d8+6 damage, or 2d8+6 damage if the barlgura is bloodied. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d8+6 damage, or 2d8+6 damage if the barlgura is bloodied. &lt;/p&gt;]] <10.5>  damage, or [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d8+6 damage, or 2d8+6 damage if the barlgura is bloodied. &lt;/p&gt;]] <15>  damage if the barlgura is bloodied. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs ; 2d6+5 damage.. The barlgura makes two slam attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>+9 vs ; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs ; 2d6+5 damage.. The barlgura makes two slam attacks.&lt;/p&gt;]] <12>  damage.. The barlgura makes two slam attacks.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Demonic Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;Naarash makes a frenzied slam attack against the enemy; +14 vs AC; 1d8+8 damage. &lt;/p&gt;]] ⚔ <b>Demonic Frenzy</b> (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) </p><p>Naarash makes a frenzied slam attack against the enemy; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Demonic Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;Naarash makes a frenzied slam attack against the enemy; &lt;u&gt;+14 vs AC&lt;/u&gt;; 1d8+8 damage. &lt;/p&gt;]]; [[/roll 1d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Demonic Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;Naarash makes a frenzied slam attack against the enemy; +14 vs AC; 1d8+8 damage. &lt;/p&gt;]] <12.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bloodied Torment&lt;/b&gt; (immediate reaction, when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;Naarash recharges and uses tormenting howl.&lt;/p&gt;]]  <b>Bloodied Torment</b> (immediate reaction, when first bloodied; encounter) </p><p>Naarash recharges and uses tormenting howl.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Naarash explodes in a burst of flame; close burst 10; +10 vs Reflex; 2d8+5 fire damage. Miss: Half damage. The demon and the Eye of Naarash are destroyed. &lt;/p&gt;]] ᗕ <b>Death Burst</b> ( when reduced to 0 hit points, ) ✦ <b>Fire</b></p><p>Naarash explodes in a burst of flame; close burst 10; [[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Naarash explodes in a burst of flame; close burst 10; &lt;u&gt;+10 vs Reflex&lt;/u&gt;; 2d8+5 fire damage. Miss: Half damage. The demon and the Eye of Naarash are destroyed. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Naarash explodes in a burst of flame; close burst 10; +10 vs Reflex; 2d8+5 fire damage. Miss: Half damage. The demon and the Eye of Naarash are destroyed. &lt;/p&gt;]] <14>  fire damage. Miss: Half damage. The demon and the Eye of Naarash are destroyed. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Tormenting Howl&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;All enemies within 5 squares of Naarash take a -2 penalty to attack rolls until the end of its next turn.&lt;/p&gt;]]  <b>Tormenting Howl</b> (minor; encounter) </p><p>All enemies within 5 squares of Naarash take a -2 penalty to attack rolls until the end of its next turn.</p></tr></td></table>",

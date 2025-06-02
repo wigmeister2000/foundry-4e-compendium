@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Deflective Defender",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MnUIJ89twhNjSlxZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Implacable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"IHaSxyrNBJtAKEo6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -862,23 +865,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 52; <b>Bloodied</b> 26<b>; Surge</b> 13</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 17</td><td><b>Ref</b> 17</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+5)<br><b>Con</b> 19 (+6)</td><td><b>Dex</b> 16 (+5)<br><b>Int</b> 12 (+3)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 12 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> short sword .</p><p>[[/roll 0#&lt;b&gt;Healing Surges&lt;/b&gt; 13]] <b>Healing Surges</b> 13</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Implacable&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An enemy cannot enter the monodrone’s space by any means.&lt;/p&gt;]] ⌀ <b>Implacable</b> <b></b></p><p>An enemy cannot enter the monodrone’s space by any means.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage.&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage.&lt;/p&gt;]] <8.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wall Tactic&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Until the start of the monodrone’s next turn, it is immobilized and gains a +5 power bonus to all defenses.&lt;/p&gt;]]  <b>Wall Tactic</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Until the start of the monodrone’s next turn, it is immobilized and gains a +5 power bonus to all defenses.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Wrath&lt;/b&gt; (stance) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The monodrone assumes the battle wrath stance. Until the stance ends, the monodrone gains a +2 power bonus to the damage rolls of basic attacks using a weapon.&lt;/p&gt;]]  <b>Battle Wrath</b> (stance) ✦ <b>At-Will</b></p><p><i>Effect:</i> The monodrone assumes the battle wrath stance. Until the stance ends, the monodrone gains a +2 power bonus to the damage rolls of basic attacks using a weapon.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Defend the Line&lt;/b&gt; (stance) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The monodrone assumes the defend the line stance. Until the stance ends, whenever the monodrone hits an enemy with a basic attack using a weapon, the enemy is slowed until the end of the monodrone’s next turn.&lt;/p&gt;]]  <b>Defend the Line</b> (stance) ✦ <b>At-Will</b></p><p><i>Effect:</i> The monodrone assumes the defend the line stance. Until the stance ends, whenever the monodrone hits an enemy with a basic attack using a weapon, the enemy is slowed until the end of the monodrone’s next turn.</p></tr></td></table>",

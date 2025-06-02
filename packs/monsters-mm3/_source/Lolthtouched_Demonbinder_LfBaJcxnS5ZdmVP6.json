@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Cunning Deception",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"i0sudILY3mOUwFqB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -996,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 247; <b>Bloodied</b> 123</td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 39</td><td><b>Ref</b> 37</td><td><b>Will</b> 41</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+18)<br><b>Con</b> 23 (+19)</td><td><b>Dex</b> 18 (+17)<br><b>Int</b> 23 (+19)</td><td><b>Wis</b> 25 (+20)<br><b>Cha</b> 28 (+22)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Elven<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Bluff +27, Diplomacy +27, Insight +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 30 | Insight 35</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Cunning Deception&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Enemies in the aura take a -2 penalty to all defenses.&lt;/p&gt;]] ⌀ <b>Cunning Deception</b> ✦ <b>Aura</b> 2</p><p>Enemies in the aura take a -2 penalty to all defenses.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Abyssal Blade&lt;/b&gt; (fear, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +32 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 22 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The demonbinder slides the target up to 2 squares.&lt;/p&gt;]] (⚔) <b>Abyssal Blade</b> (fear, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+32[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Abyssal Blade&lt;/b&gt; (fear, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+32 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 22#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Abyssal Blade&lt;/b&gt; (fear, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 22 damage.&lt;/p&gt;]] <35.5>  damage.</p><p><i>Effect:</i> The demonbinder slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Claws of the Glabrezu&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +30 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 22 damage, and the target is restrained (save ends).&lt;/p&gt;]] ➶ <b>Claws of the Glabrezu</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+30[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Claws of the Glabrezu&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+30 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 22#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Claws of the Glabrezu&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 22 damage, and the target is restrained (save ends).&lt;/p&gt;]] <35>  damage, and the target is restrained (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blades of the Marilith&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The demonbinder uses abyssal blade four times and can shift 1 square after each attack.&lt;/p&gt;]] ⚔ <b>Blades of the Marilith</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The demonbinder uses abyssal blade four times and can shift 1 square after each attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Screech of the Vrock&lt;/b&gt; (fear, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +30 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 22 psychic damage, and the demonbinder pushes the target up to 5 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The demonbinder pushes the target up to 2 squares.&lt;/p&gt;]] ᗕ <b>Screech of the Vrock</b> (fear, psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Screech of the Vrock&lt;/b&gt; (fear, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+30 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 22#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Screech of the Vrock&lt;/b&gt; (fear, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 22 psychic damage, and the demonbinder pushes the target up to 5 squares.&lt;/p&gt;]] <35.5>  psychic damage, and the demonbinder pushes the target up to 5 squares.</p><p><i>Miss:</i> The demonbinder pushes the target up to 2 squares.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Demon Gate&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The demonbinder teleports up to 10 squares.&lt;/p&gt;]]  <b>Demon Gate</b> (teleportation) ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> The demonbinder teleports up to 10 squares.</p></tr></td></table>",

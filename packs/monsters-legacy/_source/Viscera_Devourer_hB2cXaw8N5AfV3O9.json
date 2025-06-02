@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -543,7 +544,7 @@
 		},
 		{
 			"name":"Visceral Ward",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6xFnMtu2Wdz83UJi",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -579,7 +580,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -635,23 +637,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 124; <b>Bloodied</b> 62<hr><b>Resist</b> 15 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 26</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+10)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 12 (+7)</td><td><b>Wis</b> 9 (+5)<br><b>Cha</b> 17 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; 1d10+4 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 1d10+4 damage. &lt;/p&gt;]]; [[/roll 1d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; 1d10+4 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hungry Viscera &lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; the creature wraps a viscera tendril around the target; 1d4 + 5 damage, and the target is grabbed (until escape). A viscera devourer has four tendrils and can grab up to four creatures at once, or multiple tendrils can grab a single target (the target takes a -2 penalty to escape checks per additional tendril grabbing it). &lt;/p&gt;]] ⚔ <b>Hungry Viscera </b> (minor, at-will) </p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hungry Viscera &lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; the creature wraps a viscera tendril around the target; 1d4 + 5 damage, and the target is grabbed (until escape). A viscera devourer has four tendrils and can grab up to four creatures at once, or multiple tendrils can grab a single target (the target takes a -2 penalty to escape checks per additional tendril grabbing it). &lt;/p&gt;]]; the creature wraps a viscera tendril around the target; [[/roll 1d4 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hungry Viscera &lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; the creature wraps a viscera tendril around the target; 1d4 + 5 damage, and the target is grabbed (until escape). A viscera devourer has four tendrils and can grab up to four creatures at once, or multiple tendrils can grab a single target (the target takes a -2 penalty to escape checks per additional tendril grabbing it). &lt;/p&gt;]] <7.5>  damage, and the target is grabbed (until escape). A viscera devourer has four tendrils and can grab up to four creatures at once, or multiple tendrils can grab a single target (the target takes a -2 penalty to escape checks per additional tendril grabbing it). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Devour Viscera&lt;/b&gt; (minor 1/round; at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The viscera devourer draws life energy from every living target it is grabbing. A grabbed target takes 5 necrotic damage per viscera tendril grabbing it, and the viscera devourer regains the same amount of hit points.&lt;/p&gt;]]  <b>Devour Viscera</b> (minor 1/round; at-will) ✦ <b>Healing, Necrotic</b></p><p>The viscera devourer draws life energy from every living target it is grabbing. A grabbed target takes 5 necrotic damage per viscera tendril grabbing it, and the viscera devourer regains the same amount of hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Visceral Ward&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The viscera devourer gains a +2 bonus to all defenses while it is grabbing one or more creatures.&lt;/p&gt;]]  <b>Visceral Ward</b></p><p>The viscera devourer gains a +2 bonus to all defenses while it is grabbing one or more creatures.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -467,10 +468,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -1492,23 +1493,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 905; <b>Bloodied</b> 452<hr><b>Resist</b> 30 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, fear, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 34</td><td><b>Ref</b> 33</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 10 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+15)<br><b>Con</b> 21 (+14)</td><td><b>Dex</b> 19 (+13)<br><b>Int</b> 20 (+14)</td><td><b>Wis</b> 18 (+13)<br><b>Cha</b> 20 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +19, Insight +18, Intimidate +19</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 28</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d8+8 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d8+8 damage. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d8+8 damage. &lt;/p&gt;]] <17>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Nightmare Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+23 vs ; 3d6+8 damage.. The dracolich makes a bite attack against each of two different targets.&lt;/p&gt;]] ⚔ <b>Nightmare Fury</b> (standard, at-will) </p><p>+23 vs ; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Nightmare Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+23 vs ; 3d6+8 damage.. The dracolich makes a bite attack against each of two different targets.&lt;/p&gt;]] <18.5>  damage.. The dracolich makes a bite attack against each of two different targets.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +24 vs Will; the target falls unconscious (save ends). Each Failed Saving Throw: The target takes 10 psychic damage and loses its lowest-level, unused encounter power until the end of the encounter. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Psychic, Sleep</b></p><p>Close blast 5; [[/roll 1d20+24[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+24 vs Will&lt;/u&gt;; the target falls unconscious (save ends). Each Failed Saving Throw: The target takes 10 psychic damage and loses its lowest-level, unused encounter power until the end of the encounter. &lt;/p&gt;]]; the target falls unconscious (save ends). Each Failed Saving Throw: The target takes 10 psychic damage and loses its lowest-level, unused encounter power until the end of the encounter. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Nightmare Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +24 vs Will; the target is immobilized (save ends). First Failed Saving Throw: The target falls unconscious (save ends). &lt;/p&gt;]] ᗕ <b>Nightmare Presence</b> (standard, encounter) ✦ <b>Fear, Sleep</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+24[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Nightmare Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+24 vs Will&lt;/u&gt;; the target is immobilized (save ends). First Failed Saving Throw: The target falls unconscious (save ends). &lt;/p&gt;]]; the target is immobilized (save ends). First Failed Saving Throw: The target falls unconscious (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Nightmare Roar&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +24 vs Will; 2d8+8 psychic damage, and the target is pushed 5 squares and is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Nightmare Roar</b> (standard, recharge ⚃⚄⚅) ✦ <b>Fear, Psychic</b></p><p>Close burst 5; [[/roll 1d20+24[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Nightmare Roar&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+24 vs Will&lt;/u&gt;; 2d8+8 psychic damage, and the target is pushed 5 squares and is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Nightmare Roar&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +24 vs Will; 2d8+8 psychic damage, and the target is pushed 5 squares and is dazed (save ends). &lt;/p&gt;]] <17>  psychic damage, and the target is pushed 5 squares and is dazed (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Nightmare Gaze&lt;/b&gt; (immediate interrupt, when an enemy attacks the dreambreath, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dreambreath dracolich fixes the target with its gaze; ranged 10; targets the triggering enemy; +24 vs Will; 2d6+6 psychic damage, and the target makes a melee or ranged basic attack (dragon’s choice) as a free action against a randomly chosen adjacent ally. &lt;/p&gt;]] ➶ <b>Nightmare Gaze</b> (immediate interrupt, when an enemy attacks the dreambreath, recharge ⚄⚅) ✦ <b>Fear, Gaze, Psychic</b></p><p>The dreambreath dracolich fixes the target with its gaze; ranged 10; targets the triggering enemy; [[/roll 1d20+24[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Nightmare Gaze&lt;/b&gt; (immediate interrupt, when an enemy attacks the dreambreath, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dreambreath dracolich fixes the target with its gaze; ranged 10; targets the triggering enemy; &lt;u&gt;+24 vs Will&lt;/u&gt;; 2d6+6 psychic damage, and the target makes a melee or ranged basic attack (dragon’s choice) as a free action against a randomly chosen adjacent ally. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Nightmare Gaze&lt;/b&gt; (immediate interrupt, when an enemy attacks the dreambreath, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dreambreath dracolich fixes the target with its gaze; ranged 10; targets the triggering enemy; +24 vs Will; 2d6+6 psychic damage, and the target makes a melee or ranged basic attack (dragon’s choice) as a free action against a randomly chosen adjacent ally. &lt;/p&gt;]] <13>  psychic damage, and the target makes a melee or ranged basic attack (dragon’s choice) as a free action against a randomly chosen adjacent ally. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Psychic, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dreambreath dracolich’s breath weapon recharges, and the dracolich uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) ✦ <b>Psychic, Sleep</b></p><p>The dreambreath dracolich’s breath weapon recharges, and the dracolich uses it immediately.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Nightmare Walk&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;The dreambreath dracolich moves up to its speed. It gains the insubstantial and phasing qualities during this move.&lt;/p&gt;]]  <b>Nightmare Walk</b> (move; at-will) </p><p>The dreambreath dracolich moves up to its speed. It gains the insubstantial and phasing qualities during this move.</p></tr></td></table>",

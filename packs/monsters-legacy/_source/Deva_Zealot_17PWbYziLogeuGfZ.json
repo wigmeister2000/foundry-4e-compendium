@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -911,7 +912,7 @@
 		},
 		{
 			"name":"Skirmish",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"t15zuwZFlpTNohse",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -947,7 +948,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1003,23 +1005,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 135; <b>Bloodied</b> 67<hr><b>Resist</b> 10 necrotic, 10 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 27</td><td><b>Will</b> 25 ; +1 to all defenses against bloodied enemies</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+12)<br><b>Con</b> 15 (+9)</td><td><b>Dex</b> 22 (+13)<br><b>Int</b> 14 (+9)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 20 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +18, Religion +16, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> falchion , leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 4d4+5 damage (crit 8d4 + 21) plus 1d6 radiant damage. &lt;/p&gt;]] (⚔) <b>Falchion</b> (standard, at-will) ✦ <b>Radiant, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 4d4+5 damage (crit 8d4 + 21) plus 1d6 radiant damage. &lt;/p&gt;]]; [[/roll 4d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 4d4+5 damage (crit 8d4 + 21) plus 1d6 radiant damage. &lt;/p&gt;]] <15>  damage (crit [[/roll 8d4 + 21#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 4d4+5 damage (crit 8d4 + 21) plus 1d6 radiant damage. &lt;/p&gt;]] <41> ) plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 4d4+5 damage (crit 8d4 + 21) plus 1d6 radiant damage. &lt;/p&gt;]] <3.5> radiant damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Path of Virtue&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The deva zealot shifts half its speed and makes one falchion attack against each enemy within reach during the move&lt;/p&gt;]] ⚔ <b>Path of Virtue</b> (standard, encounter) </p><p>The deva zealot shifts half its speed and makes one falchion attack against each enemy within reach during the move</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dazzling Soul&lt;/b&gt; (minor; recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The deva zealot gains concealment until the start of its next turn, and any other square within 6 squares of the zealot is illuminated by bright light. Any square within 12 squares of the zealot is illuminated by dim light.&lt;/p&gt;]]  <b>Dazzling Soul</b> (minor; recharge ⚃⚄⚅) </p><p>The deva zealot gains concealment until the start of its next turn, and any other square within 6 squares of the zealot is illuminated by bright light. Any square within 12 squares of the zealot is illuminated by dim light.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Radiant Retribution&lt;/b&gt; (free, when an enemy hits the deva zealot on the zealot’s turn; at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The triggering enemy takes half the attack’s damage as radiant damage.&lt;/p&gt;]]  <b>Radiant Retribution</b> (free, when an enemy hits the deva zealot on the zealot’s turn; at-will) ✦ <b>Radiant</b></p><p>The triggering enemy takes half the attack’s damage as radiant damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Memory of A Thousand Lifetimes&lt;/b&gt; (free, when the deva zealot makes an attack roll, a skill check, or an ability check and dislikes the result; encounter) &lt;/p&gt;&lt;p&gt;The zealot adds 1d6 to the triggering roll.&lt;/p&gt;]]  <b>Memory of A Thousand Lifetimes</b> (free, when the deva zealot makes an attack roll, a skill check, or an ability check and dislikes the result; encounter) </p><p>The zealot adds [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Memory of A Thousand Lifetimes&lt;/b&gt; (free, when the deva zealot makes an attack roll, a skill check, or an ability check and dislikes the result; encounter) &lt;/p&gt;&lt;p&gt;The zealot adds 1d6 to the triggering roll.&lt;/p&gt;]] <3.5> to the triggering roll.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish&lt;/b&gt;✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a deva zealot ends its move at least 4 squares from the square where it started the move, its attacks deal 1d6 extra radiant damage until the start of its next turn.&lt;/p&gt;]]  <b>Skirmish</b>✦ <b>Radiant</b></p><p>If a deva zealot ends its move at least 4 squares from the square where it started the move, its attacks deal [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish&lt;/b&gt;✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a deva zealot ends its move at least 4 squares from the square where it started the move, its attacks deal 1d6 extra radiant damage until the start of its next turn.&lt;/p&gt;]] <3.5> extra radiant damage until the start of its next turn.</p></tr></td></table>",

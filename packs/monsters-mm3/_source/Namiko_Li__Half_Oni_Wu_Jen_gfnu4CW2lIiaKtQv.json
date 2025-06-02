@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Corrupting Serenity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"u3vCLqFK2tEHp6i9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1179,23 +1181,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 204; <b>Bloodied</b> 102</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 20</td><td><b>Ref</b> 23</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+6)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 19 (+9)<br><b>Int</b> 21 (+10)</td><td><b>Wis</b> 17 (+8)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +15, Religion +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Corrupting Serenity&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of her turn, Namiko can make a saving throw against one effect that a save can end. If she saves, the effect ends on Namiko, and she can transfer it to an enemy adjacent to her. If her saving throw fails, Namiko can still make a saving throw against the effect at the end of her turn.&lt;/p&gt;]]  <b>Corrupting Serenity</b> <b></b></p><p>At the start of her turn, Namiko can make a saving throw against one effect that a save can end. If she saves, the effect ends on Namiko, and she can transfer it to an enemy adjacent to her. If her saving throw fails, Namiko can still make a saving throw against the effect at the end of her turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Oni’s Touch&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +13 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 7 fire and necrotic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Namiko can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Oni’s Touch</b> (fire, necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+13[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Oni’s Touch&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+13 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Oni’s Touch&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 7 fire and necrotic damage.&lt;/p&gt;]] <17.5>  fire and necrotic damage.</p><p><i>Effect:</i> Namiko can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Beshadowed Mind&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one or two creatures); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 7 necrotic and psychic damage, and the target can’t see more than 2 squares away from itself (save ends).&lt;/p&gt;]] ➶ <b>Beshadowed Mind</b> (necrotic, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one or two creatures); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Beshadowed Mind&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one or two creatures); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Beshadowed Mind&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 7 necrotic and psychic damage, and the target can’t see more than 2 squares away from itself (save ends).&lt;/p&gt;]] <17.5>  necrotic and psychic damage, and the target can’t see more than 2 squares away from itself (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Wu Jen’s Prophecy&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Namiko chooses one of her allies within 10 squares of her (the ally cannot be an elite or a solo). The target is weakened when attacking any enemy other than the chosen ally. This effect lasts until the end of the encounter or until the chosen ally drops to 0 hit points.&lt;/p&gt;]] ➶ <b>Wu Jen’s Prophecy</b> (charm) ✦ <b>Recharge</b> if the power misses</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Wu Jen’s Prophecy&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Namiko chooses one of her allies within 10 squares of her (the ally cannot be an elite or a solo). The target is weakened when attacking any enemy other than the chosen ally. This effect lasts until the end of the encounter or until the chosen ally drops to 0 hit points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Deep Shadow&lt;/b&gt; (necrotic, zone) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Area burst 1 within 10. The burst creates a zone that lasts until the end of Namiko’s next turn. The zone is difficult terrain for her enemies. Any enemy that enters the zone or ends its turn there takes 10 necrotic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; The zone persists until the end of Namiko’s next turn, and Namiko can move the zone up to 4 squares.&lt;/p&gt;]] ✻ <b>Deep Shadow</b> (necrotic, zone) ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> Area burst 1 within 10. The burst creates a zone that lasts until the end of Namiko’s next turn. The zone is difficult terrain for her enemies. Any enemy that enters the zone or ends its turn there takes 10 necrotic damage.</p><p><i>Sustain Minor:</i> The zone persists until the end of Namiko’s next turn, and Namiko can move the zone up to 4 squares.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Shield&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Namiko teleports up to 3 squares and becomes insubstantial until the start of her next turn.&lt;/p&gt;]]  <b>Shadow Shield</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> Namiko teleports up to 3 squares and becomes insubstantial until the start of her next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Augury&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An attack hits Namiko while she is bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; Shadow shield recharges, and Namiko uses it.&lt;/p&gt;]]  <b>Shadow Augury</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An attack hits Namiko while she is bloodied.</p><p><i>Effect (Immediate Interrupt):</i> Shadow shield recharges, and Namiko uses it.</p></tr></td></table>",

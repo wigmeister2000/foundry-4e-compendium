@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Lurking Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"CB31rnw9Dbt4TuPN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -632,23 +634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 107; <b>Bloodied</b> 53<hr><b>Immune</b> petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 22</td><td><b>Ref</b> 19</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+10)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 5 (+1)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Lurking Presence&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The hornstone gargoyle gains a +10 bonus to Stealth checks against enemies’ passive Perception.&lt;/p&gt;]]  <b>Lurking Presence</b> <b></b></p><p>The hornstone gargoyle gains a +10 bonus to Stealth checks against enemies’ passive Perception.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 damage, and the gargoyle can use skewering drag as a free action.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 damage, and the gargoyle can use skewering drag as a free action.&lt;/p&gt;]] <16>  damage, and the gargoyle can use skewering drag as a free action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Impaling Charge&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gargoyle charges and makes the following attack in place of a melee basic attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 5 damage, and the target is grabbed and takes ongoing 5 damage until the grab ends.&lt;/p&gt;]] ⚔ <b>Impaling Charge</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The gargoyle charges and makes the following attack in place of a melee basic attack.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Impaling Charge&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Impaling Charge&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 5 damage, and the target is grabbed and takes ongoing 5 damage until the grab ends.&lt;/p&gt;]] <18>  damage, and the target is grabbed and takes ongoing 5 damage until the grab ends.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skewering Drag&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gargoyle moves half its speed, pulling a creature grabbed by the gargoyle with it. The gargoyle and the creature grabbed by it do not provoke opportunity attacks from each other for this movement.&lt;/p&gt;]]  <b>Skewering Drag</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The gargoyle moves half its speed, pulling a creature grabbed by the gargoyle with it. The gargoyle and the creature grabbed by it do not provoke opportunity attacks from each other for this movement.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -951,23 +952,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 77; <b>Bloodied</b> 38</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 18</td><td><b>Ref</b> 19</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+4)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 14 (+5)<br><b>Int</b> 19 (+7)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 13 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Endurance +9, Insight +11</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 21</td></td></tr></table><p><b>Equipment</b> dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d4+2 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d4+2 damage. &lt;/p&gt;]]; [[/roll 1d4+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d4+2 damage. &lt;/p&gt;]] <4.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Disrupting Warp&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 2d6+5 force damage, and the Hand of Orien teleports the target 1 square. &lt;/p&gt;]] ➶ <b>Disrupting Warp</b> (standard, at-will) ✦ <b>Force, Teleportation</b></p><p>Ranged 10; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Disrupting Warp&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Will&lt;/u&gt;; 2d6+5 force damage, and the Hand of Orien teleports the target 1 square. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Disrupting Warp&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 2d6+5 force damage, and the Hand of Orien teleports the target 1 square. &lt;/p&gt;]] <12>  force damage, and the Hand of Orien teleports the target 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Painful Jaunt&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 3d8+5 damage, and the Hand of Orien causes the target and one ally within range to swap positions. &lt;/p&gt;]] ➶ <b>Painful Jaunt</b> (standard, recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>Ranged 10; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Painful Jaunt&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Will&lt;/u&gt;; 3d8+5 damage, and the Hand of Orien causes the target and one ally within range to swap positions. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Painful Jaunt&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 3d8+5 damage, and the Hand of Orien causes the target and one ally within range to swap positions. &lt;/p&gt;]] <18.5>  damage, and the Hand of Orien causes the target and one ally within range to swap positions. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Temporal Disruption&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +9 vs Will; the target is dazed and slowed (save ends both). Aftereffect: The target is slowed (save ends). &lt;/p&gt;]] ✻ <b>Temporal Disruption</b> (standard, encounter) </p><p>Area burst 1 within 10; [[/roll 1d20+9[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Temporal Disruption&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+9 vs Will&lt;/u&gt;; the target is dazed and slowed (save ends both). Aftereffect: The target is slowed (save ends). &lt;/p&gt;]]; the target is dazed and slowed (save ends both). Aftereffect: The target is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dimension Hop&lt;/b&gt; (standard; recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Hand of Orien teleports 3 squares an gains a +2 bonus to all defenses until the start of its next turn.&lt;/p&gt;]]  <b>Dimension Hop</b> (standard; recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>The Hand of Orien teleports 3 squares an gains a +2 bonus to all defenses until the start of its next turn.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Foul Insight",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"loSfEgyG2QBZKuY6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 95; <b>Bloodied</b> 47</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 21</td><td><b>Ref</b> 26</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+6)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 23 (+12)</td><td><b>Wis</b> 8 (+5)<br><b>Cha</b> 19 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 10<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> staff implement .</p><p>[[/roll 0#&lt;b&gt;Foul Insight&lt;/b&gt; aura 10; allies in the aura that can hear the foulspawn seer gain a +2 power bonus to one attack roll, skill check, ability check, or saving throw on their turn.]] <b>Foul Insight</b> aura 10; allies in the aura that can hear the foulspawn seer gain a +2 power bonus to one attack roll, skill check, ability check, or saving throw on their turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d8+6 damage, and the target is pushed 1 square. &lt;/p&gt;]] (⚔) <b>Twisted Staff</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 1d8+6 damage, and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d8+6 damage, and the target is pushed 1 square. &lt;/p&gt;]] <10.5>  damage, and the target is pushed 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Warp Orb&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Reflex; 1d8+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Warp Orb</b> (standard, at-will) </p><p>Ranged 10; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Warp Orb&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 1d8+6 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Warp Orb&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Reflex; 1d8+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] <10.5>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Distortion Blast &lt;/b&gt; (standard, daily) &lt;/p&gt;&lt;p&gt;Close blast 5; +15 vs Fortitude; 2d8+6 damage, and the target is dazed (save ends). Aberrant creatures take half damage. &lt;/p&gt;]] ᗕ <b>Distortion Blast </b> (standard, daily) </p><p>Close blast 5; [[/roll 1d20+15[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Distortion Blast &lt;/b&gt; (standard, daily) &lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+15 vs Fortitude&lt;/u&gt;; 2d8+6 damage, and the target is dazed (save ends). Aberrant creatures take half damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Distortion Blast &lt;/b&gt; (standard, daily) &lt;/p&gt;&lt;p&gt;Close blast 5; +15 vs Fortitude; 2d8+6 damage, and the target is dazed (save ends). Aberrant creatures take half damage. &lt;/p&gt;]] <15>  damage, and the target is dazed (save ends). Aberrant creatures take half damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bend Space&lt;/b&gt; (immediate interrupt, when hit by an attack; recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The foulspawn seer teleports 3 squares.&lt;/p&gt;]]  <b>Bend Space</b> (immediate interrupt, when hit by an attack; recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>The foulspawn seer teleports 3 squares.</p></tr></td></table>",

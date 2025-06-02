@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Wild Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WFNx1tryRs8dfQo9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 20</td><td><b>Ref</b> 19</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7 (forest walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+6)<br><b>Con</b> 14 (+5)</td><td><b>Dex</b> 15 (+5)<br><b>Int</b> 10 (+3)</td><td><b>Wis</b> 13 (+4)<br><b>Cha</b> 11 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> quarterstaff .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wild Step&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The acolyte ignores difficult terrain whenever it shifts.&lt;/p&gt;]]  <b>Wild Step</b> <b></b></p><p>The acolyte ignores difficult terrain whenever it shifts.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The acolyte must be in beast form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +12 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 7 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The acolyte can shift 1 square before or after the attack.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The acolyte must be in beast form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+12[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+12 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 7 damage.</p><p><i>Effect:</i> The acolyte can shift 1 square before or after the attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The acolyte must be in humanoid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +12 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5 damage.&lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Requirement:</i> The acolyte must be in humanoid form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+12[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+12 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 5 damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The acolyte alters its physical form to appear as a Medium beast until it uses change shape again or until it dies. It can also use this power to return to its humanoid form.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> The acolyte alters its physical form to appear as a Medium beast until it uses change shape again or until it dies. It can also use this power to return to its humanoid form.</p></tr></td></table>",

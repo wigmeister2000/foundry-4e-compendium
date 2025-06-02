@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Shadow Dweller",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"euf2bzyahU7pHSFJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -994,23 +996,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 103; <b>Bloodied</b> 51<hr><b>Resist</b> half necrotic damage <b>Vulnerable</b> 5 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 22</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+8)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 17 (+9)<br><b>Int</b> 12 (+7)</td><td><b>Wis</b> 12 (+7)<br><b>Cha</b> 22 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +12, Bluff +17, Intimidate +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shadow Dweller&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The satyr has partial concealment. Whenever the satyr gains concealment from dim light, the satyr is instead invisible.&lt;/p&gt;]]  <b>Shadow Dweller</b> <b></b></p><p>The satyr has partial concealment. Whenever the satyr gains concealment from dim light, the satyr is instead invisible.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, ongoing 10 necrotic damage (save ends), and 3d8 extra damage to a dazed or dominated target.&lt;/p&gt;]] (⚔) <b>Claws</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, ongoing 10 necrotic damage (save ends), and 3d8 extra damage to a dazed or dominated target.&lt;/p&gt;]] <11>  damage, ongoing 10 necrotic damage (save ends), and [[/roll 3d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, ongoing 10 necrotic damage (save ends), and 3d8 extra damage to a dazed or dominated target.&lt;/p&gt;]] <13.5> extra damage to a dazed or dominated target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Words of Enchantment&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the satyr uses claws&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +16 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated until the end of the satyr’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The target is dazed until the end of the satyr’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The satyr slides the target up to 5 squares to a square adjacent to itself.&lt;/p&gt;]] ➶ <b>Words of Enchantment</b> (charm) ✦ <b>Recharge</b> when the satyr uses claws</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+16[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Words of Enchantment&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the satyr uses claws&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+16 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated until the end of the satyr’s next turn.</p><p><i>Miss:</i> The target is dazed until the end of the satyr’s next turn.</p><p><i>Effect:</i> The satyr slides the target up to 5 squares to a square adjacent to itself.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Lure Away&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The satyr must have a creature dominated.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The satyr shifts up to its speed, and an adjacent creature that the satyr is dominating is pulled along with it, staying adjacent to the satyr during the movement.&lt;/p&gt;]]  <b>Lure Away</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The satyr must have a creature dominated.</p><p><i>Effect:</i> The satyr shifts up to its speed, and an adjacent creature that the satyr is dominating is pulled along with it, staying adjacent to the satyr during the movement.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Charmed Target&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A melee or ranged attack targets the satyr while it is adjacent to a creature dominated or dazed by the satyr’s words of enchantment.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The triggering attack instead targets the creature affected by the satyr’s words of enchantment.&lt;/p&gt;]]  <b>Charmed Target</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> A melee or ranged attack targets the satyr while it is adjacent to a creature dominated or dazed by the satyr’s words of enchantment.</p><p><i>Effect (Free Action):</i> The triggering attack instead targets the creature affected by the satyr’s words of enchantment.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Retreat to the Shadows&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The satyr is bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The satyr teleports up to 10 squares and becomes invisible until it hits or misses with an attack or until the end of its next turn.&lt;/p&gt;]]  <b>Retreat to the Shadows</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The satyr is bloodied.</p><p><i>Effect (Immediate Reaction):</i> The satyr teleports up to 10 squares and becomes invisible until it hits or misses with an attack or until the end of its next turn.</p></tr></td></table>",

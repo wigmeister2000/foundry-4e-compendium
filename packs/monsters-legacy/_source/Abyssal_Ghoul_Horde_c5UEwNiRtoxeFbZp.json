@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"F8nvLbgki0aG6xrO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -634,23 +636,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 240; <b>Bloodied</b> 120<hr><b>Resist</b> 10 necrotic, half damage from melee and ranged attacks <b>Vulnerable</b> 10 damage from close and area attacks <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 34</td><td><b>Ref</b> 33</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+17)<br><b>Con</b> 20 (+15)</td><td><b>Dex</b> 22 (+16)<br><b>Int</b> 16 (+13)</td><td><b>Wis</b> 17 (+13)<br><b>Cha</b> 13 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +21</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm Attack&lt;/b&gt; aura 1; the abyssal ghoul horde makes a melee basic attack as a free action against any enemy that starts its turn within the aura.]] <b>Swarm Attack</b> aura 1; the abyssal ghoul horde makes a melee basic attack as a free action against any enemy that starts its turn within the aura.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horde of Fangs&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+24 vs AC; 3d8+7 damage, and the target is immobilized (save ends). An immobilized target takes an extra 3d6 damage. &lt;/p&gt;]] (⚔) <b>Horde of Fangs</b> (standard, at-will) </p><p>[[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horde of Fangs&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs AC&lt;/u&gt;; 3d8+7 damage, and the target is immobilized (save ends). An immobilized target takes an extra 3d6 damage. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horde of Fangs&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+24 vs AC; 3d8+7 damage, and the target is immobilized (save ends). An immobilized target takes an extra 3d6 damage. &lt;/p&gt;]] <20.5>  damage, and the target is immobilized (save ends). An immobilized target takes an extra [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horde of Fangs&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+24 vs AC; 3d8+7 damage, and the target is immobilized (save ends). An immobilized target takes an extra 3d6 damage. &lt;/p&gt;]] <10.5> damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Sprays of Dead Blood&lt;/b&gt; ( when the horde is damaged, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +21 vs Reflex; 10 necrotic damage. &lt;/p&gt;]] ᗕ <b>Sprays of Dead Blood</b> ( when the horde is damaged, ) ✦ <b>Necrotic</b></p><p>Close burst 1; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Sprays of Dead Blood&lt;/b&gt; ( when the horde is damaged, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 10 necrotic damage. &lt;/p&gt;]]; 10 necrotic damage. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Ghoul Stragglers&lt;/b&gt; ( when the horde takes forced movement and when it is reduced to 0 hit points, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Each square the ghoul horde formerly occupied now contains one abyssal ghoul hungerer, which acts just after the horde&lt;/p&gt;]] ᗕ <b>Ghoul Stragglers</b> ( when the horde takes forced movement and when it is reduced to 0 hit points, ) ✦ <b>Necrotic</b></p><p>Each square the ghoul horde formerly occupied now contains one abyssal ghoul hungerer, which acts just after the horde</p></tr></td></table>",

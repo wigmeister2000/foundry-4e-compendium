@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dune Diver",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"X4nKNIadykmZBcFD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Sensitive to Light",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"iERvS3yXtg52ZFIC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -680,23 +683,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 94; <b>Bloodied</b> 47</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 (earth walk), burrow 6 (loose earth only)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+8)<br><b>Con</b> 14 (+6)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 8 (+3)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 8 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision , tremorsense 5<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dune Diver&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dune king can charge while burrowing.&lt;/p&gt;]]  <b>Dune Diver</b> <b></b></p><p>The dune king can charge while burrowing.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sensitive to Light&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the dune king is exposed to direct sunlight or takes radiant damage, it takes a -2 penalty to attack rolls until the end of its next turn.&lt;/p&gt;]]  <b>Sensitive to Light</b> <b></b></p><p>When the dune king is exposed to direct sunlight or takes radiant damage, it takes a -2 penalty to attack rolls until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 6 damage, and the target is slowed (save ends). If the target is already slowed, it is instead immobilized (save ends).&lt;/p&gt;]] (⚔) <b>Claw</b> (poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 6 damage, and the target is slowed (save ends). If the target is already slowed, it is instead immobilized (save ends).&lt;/p&gt;]] <17>  damage, and the target is slowed (save ends). If the target is already slowed, it is instead immobilized (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sand Eruption&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The dune king must be underground.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The dune king moves 4 squares to a square that is not underground. When it first enters a square that is not underground during this movement, it makes the following attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +11 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 3 damage, and the dune king slides the target 2 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Each anakore in the burst can shift 3 squares as a free action. The area of the burst becomes difficult terrain until the end of the encounter.&lt;/p&gt;]] ᗕ <b>Sand Eruption</b> ✦ Recharge ⚄ ⚅</p><p><i>Requirement:</i> The dune king must be underground.</p><p><i>Effect:</i> The dune king moves 4 squares to a square that is not underground. When it first enters a square that is not underground during this movement, it makes the following attack.</p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+11[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sand Eruption&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+11 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sand Eruption&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 3 damage, and the dune king slides the target 2 squares.&lt;/p&gt;]] <25>  damage, and the dune king slides the target 2 squares.</p><p><i>Effect:</i> Each anakore in the burst can shift 3 squares as a free action. The area of the burst becomes difficult terrain until the end of the encounter.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sand Slide&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The dune king shifts 1 square.&lt;/p&gt;]]  <b>Sand Slide</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The dune king shifts 1 square.</p></tr></td></table>",

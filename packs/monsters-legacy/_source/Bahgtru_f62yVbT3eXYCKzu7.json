@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -718,7 +719,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZBDcOm7kweAWIyGT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -754,7 +755,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -990,23 +992,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 528; <b>Bloodied</b> 264</td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 39</td><td><b>Ref</b> 34</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (10 while charging)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 33 (+22)<br><b>Con</b> 24 (+18)</td><td><b>Dex</b> 21 (+16)<br><b>Int</b> 6 (+9)</td><td><b>Wis</b> 9 (+10)<br><b>Cha</b> 19 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +27, Intimidate +20</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> hide armor</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Punch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 3d8+11 damage. &lt;/p&gt;]] (⚔) <b>Punch</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Punch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 3d8+11 damage. &lt;/p&gt;]]; [[/roll 3d8+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Punch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 3d8+11 damage. &lt;/p&gt;]] <24.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Bahgtru makes two punch attacks against dazed or stunned targets&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>Bahgtru makes two punch attacks against dazed or stunned targets</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammer Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 2d10+11 damage, and the target is dazed until the end of Bahgtru’s next turn. &lt;/p&gt;]] ⚔ <b>Hammer Fist</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammer Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 2d10+11 damage, and the target is dazed until the end of Bahgtru’s next turn. &lt;/p&gt;]]; [[/roll 2d10+11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammer Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 2d10+11 damage, and the target is dazed until the end of Bahgtru’s next turn. &lt;/p&gt;]] <22>  damage, and the target is dazed until the end of Bahgtru’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Backfist Bowl Away&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 2d8+11 damage, and the target is pushed 10 squares, knocked prone, and dazed until the end of Bahgtru’s next turn. If the target ends this movement adjacent to any of Bahgtru’s enemies, Bahgtru makes a secondary attack. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; Targets enemies adjacent to the target; +24 vs. Reflex; 2d8 + 11 damage, and the secondary target is dazed until the end of Bahgtru’s next turn&lt;/p&gt;]] ⚔ <b>Backfist Bowl Away</b> (standard, recharge ⚄⚅) </p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Backfist Bowl Away&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 2d8+11 damage, and the target is pushed 10 squares, knocked prone, and dazed until the end of Bahgtru’s next turn. If the target ends this movement adjacent to any of Bahgtru’s enemies, Bahgtru makes a secondary attack. &lt;/p&gt;]]; [[/roll 2d8+11#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Backfist Bowl Away&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 2d8+11 damage, and the target is pushed 10 squares, knocked prone, and dazed until the end of Bahgtru’s next turn. If the target ends this movement adjacent to any of Bahgtru’s enemies, Bahgtru makes a secondary attack. &lt;/p&gt;]] <20>  damage, and the target is pushed 10 squares, knocked prone, and dazed until the end of Bahgtru’s next turn. If the target ends this movement adjacent to any of Bahgtru’s enemies, Bahgtru makes a secondary attack. </p><p><i>Secondary Attack</i> Targets enemies adjacent to the target; [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Backfist Bowl Away&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; Targets enemies adjacent to the target; &lt;u&gt;+24 vs. Reflex&lt;/u&gt;; 2d8 + 11 damage, and the secondary target is dazed until the end of Bahgtru’s next turn&lt;/p&gt;]]; [[/roll 2d8 + 11#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Backfist Bowl Away&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; Targets enemies adjacent to the target; +24 vs. Reflex; 2d8 + 11 damage, and the secondary target is dazed until the end of Bahgtru’s next turn&lt;/p&gt;]] <20>  damage, and the secondary target is dazed until the end of Bahgtru’s next turn</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Warrior\"s Surge&lt;/b&gt; (standard; usable only while bloodied; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Bahgtru makes a melee basic attack. On a hit, he regains 132 hit points.&lt;/p&gt;]]  <b>Warrior\"s Surge</b> (standard; usable only while bloodied; encounter) ✦ <b>Healing</b></p><p>Bahgtru makes a melee basic attack. On a hit, he regains 132 hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Bahgtru can make opportunity attacks against all enemies within his reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>Bahgtru can make opportunity attacks against all enemies within his reach (2 squares).</p></tr></td></table>",

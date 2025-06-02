@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -901,7 +902,7 @@
 		},
 		{
 			"name":"Icebound Footing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hmG1XwxKqzCstbvM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -937,7 +938,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -993,23 +995,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 182; <b>Bloodied</b> 91<hr><b>Resist</b> 15 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 32</td><td><b>Ref</b> 29</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+14)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 16 (+12)<br><b>Int</b> 10 (+9)</td><td><b>Wis</b> 25 (+16)<br><b>Cha</b> 22 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +14, Heal +21, Intimidate +20</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> chainmail , flail .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 2d12+4 cold damage. &lt;/p&gt;]] (⚔) <b>Freezing Flail</b> (standard, at-will) ✦ <b>Cold, Weapon</b></p><p>Reach 2; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d12+4 cold damage. &lt;/p&gt;]]; [[/roll 2d12+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 2d12+4 cold damage. &lt;/p&gt;]] <17>  cold damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Freezing Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +22 vs Reflex; 2d12+4 cold damage, and the target is immobilized (save ends). &lt;/p&gt;]] ➶ <b>Freezing Bolt</b> (standard, at-will) ✦ <b>Cold</b></p><p>Ranged 20; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Freezing Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 2d12+4 cold damage, and the target is immobilized (save ends). &lt;/p&gt;]]; [[/roll 2d12+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Freezing Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +22 vs Reflex; 2d12+4 cold damage, and the target is immobilized (save ends). &lt;/p&gt;]] <17>  cold damage, and the target is immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Wall of Frost&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area wall 12 within 10; the frost giant ice shaper conjures a wall of swirling snow that lasts until the end of the ice shaper’s next turn. The wall is 6 squares high and blocks line of sight. The wall’s space is lightly obscured and is difficult terrain. A creature that starts its turn adjacent to the wall takes 5 cold damage, and a creature that enters a square of the wall or starts its turn there takes 15 cold damage. Sustain Minor: The wall persists.&lt;/p&gt;]] ✻ <b>Wall of Frost</b> (standard, recharge ⚅</p><p>Area wall 12 within 10; the frost giant ice shaper conjures a wall of swirling snow that lasts until the end of the ice shaper’s next turn. The wall is 6 squares high and blocks line of sight. The wall’s space is lightly obscured and is difficult terrain. A creature that starts its turn adjacent to the wall takes 5 cold damage, and a creature that enters a square of the wall or starts its turn there takes 15 cold damage. Sustain Minor: The wall persists.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Ice Armor&lt;/b&gt; (standard; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;One ally within 10 squares of the frost giant ice shaper gains resist 10 to all damage until the end of the ice shaper’s next turn.&lt;/p&gt;]]  <b>Ice Armor</b> (standard; recharge ⚄⚅) </p><p>One ally within 10 squares of the frost giant ice shaper gains resist 10 to all damage until the end of the ice shaper’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ice Slide&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +22 vs Fortitude; the frost giant ice shaper slides the target 3 squares. &lt;/p&gt;]] ➶ <b>Ice Slide</b> (minor 1/round, at-will) </p><p>Ranged 10; [[/roll 1d20+22[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ice Slide&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+22 vs Fortitude&lt;/u&gt;; the frost giant ice shaper slides the target 3 squares. &lt;/p&gt;]]; the frost giant ice shaper slides the target 3 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Icebound Footing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect pulls, pushes, or slides a frost giant ice shaper, the ice shaper moves 2 squares less than the effect specifies. Also, an ice shaper can make a saving throw to avoid being knocked prone.&lt;/p&gt;]]  <b>Icebound Footing</b></p><p>When an effect pulls, pushes, or slides a frost giant ice shaper, the ice shaper moves 2 squares less than the effect specifies. Also, an ice shaper can make a saving throw to avoid being knocked prone.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -724,7 +725,7 @@
 		},
 		{
 			"name":"Pity is for the Weak",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gNy7d5r3FL1fWAeE",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -760,7 +761,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -994,23 +996,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 89; <b>Bloodied</b> 44</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 20</td><td><b>Ref</b> 21</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+5)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 12 (+5)</td><td><b>Wis</b> 13 (+5)<br><b>Cha</b> 17 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> leather armor , rapier .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d8+5 damage. &lt;/p&gt;]] (⚔) <b>Rapier</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d8+5 damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d8+5 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rush of the River&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 3d8+5 damage, and the genasi tempest can shift up to 2 squares before or after making this attack. &lt;/p&gt;]] ⚔ <b>Rush of the River</b> (standard, recharge ⚃⚄⚅) ✦ <b>Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rush of the River&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 3d8+5 damage, and the genasi tempest can shift up to 2 squares before or after making this attack. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rush of the River&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 3d8+5 damage, and the genasi tempest can shift up to 2 squares before or after making this attack. &lt;/p&gt;]] <18.5>  damage, and the genasi tempest can shift up to 2 squares before or after making this attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Thundering Earth&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +11 vs Fortitude; 2d10+4 thunder damage, and the target is pushed 2 squares. &lt;/p&gt;]] ᗕ <b>Thundering Earth</b> (standard, encounter) ✦ <b>Thunder</b></p><p>Close blast 3; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Thundering Earth&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; 2d10+4 thunder damage, and the target is pushed 2 squares. &lt;/p&gt;]]; [[/roll 2d10+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Thundering Earth&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +11 vs Fortitude; 2d10+4 thunder damage, and the target is pushed 2 squares. &lt;/p&gt;]] <15>  thunder damage, and the target is pushed 2 squares. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earthshock&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Close burst 2; affects one creature in burst that is touching the ground; +13 vs Fortitude; target is knocked prone. &lt;/p&gt;]] ᗕ <b>Earthshock</b> (minor, encounter) </p><p>Close burst 2; affects one creature in burst that is touching the ground; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earthshock&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Close burst 2; affects one creature in burst that is touching the ground; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; target is knocked prone. &lt;/p&gt;]]; target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pity is for the Weak&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The genasi tempest deals an extra 2d6 damage on melee and ranged attacks against any target it has combat&lt;/p&gt;&lt;p&gt;advantage against.&lt;/p&gt;]]  <b>Pity is for the Weak</b></p><p>The genasi tempest deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pity is for the Weak&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The genasi tempest deals an extra 2d6 damage on melee and ranged attacks against any target it has combat&lt;/p&gt;]] <7> damage on melee and ranged attacks against any target it has combat</p><p>advantage against.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Swiftcurrent&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The genasi tempest shifts up to 6 squares over ground or liquid terrain, taking no penalties for squeezing. The genasi tempest can move through enemy spaces, ignore difficult terrain, and take no damage if the surface it moves across would normally deal damage to it.&lt;/p&gt;]]  <b>Swiftcurrent</b> (move; encounter) </p><p>The genasi tempest shifts up to 6 squares over ground or liquid terrain, taking no penalties for squeezing. The genasi tempest can move through enemy spaces, ignore difficult terrain, and take no damage if the surface it moves across would normally deal damage to it.</p></tr></td></table>",

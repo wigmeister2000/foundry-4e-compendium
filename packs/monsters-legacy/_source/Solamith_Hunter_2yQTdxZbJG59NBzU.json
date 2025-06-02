@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UisAxVM6CrhyHLwv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"37",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 208; <b>Bloodied</b> 104<br><b>Regeneration</b> 20 (if the solamith takes cold damage, regeneration doesn’t function on its next turn)<hr><b>Resist</b> 20 fire, 20 force, 20 thunder </td><td style=\"padding-left: 15px;\"><b>Init</b> +24</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 41</td><td><b>Ref</b> 42</td><td><b>Will</b> 41</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+23)<br><b>Con</b> 22 (+21)</td><td><b>Dex</b> 29 (+24)<br><b>Int</b> 12 (+16)</td><td><b>Wis</b> 26 (+23)<br><b>Cha</b> 10 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 33 | Insight 33</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +37 vs AC; 2d8+10 fire damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 2; [[/roll 1d20+37[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+37 vs AC&lt;/u&gt;; 2d8+10 fire damage. &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +37 vs AC; 2d8+10 fire damage. &lt;/p&gt;]] <19>  fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The solamith chooses one of the following attacks, taking damage as it hurls parts of itself at enemies. The solamith cannot reduce itself to 0 hit points or fewer in this fashion.&lt;/p&gt;&lt;p&gt;* Area burst 1 within 20; +33 vs. Reflex; 3d8 + 10 fire and necrotic damage. The solamith takes 8 damage.&lt;/p&gt;&lt;p&gt;* Area burst 2 within 20; +33 vs. Reflex; 4d8 + 10 fire and necrotic damage. The solamith takes 16 damage.&lt;/p&gt;&lt;p&gt;* Area burst 3 within 20; +33 vs. Reflex; 5d10 + 9 fire and necrotic damage. The solamith takes 32 damage&lt;/p&gt;]] ✻ <b>Soulfire</b> (standard, at-will) ✦ <b>Fire, Necrotic</b></p><p>The solamith chooses one of the following attacks, taking damage as it hurls parts of itself at enemies. The solamith cannot reduce itself to 0 hit points or fewer in this fashion.</p><p>* Area burst 1 within 20; [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;* Area burst 1 within 20; &lt;u&gt;+33 vs. Reflex&lt;/u&gt;; 3d8 + 10 fire and necrotic damage. The solamith takes 8 damage.&lt;/p&gt;]]; [[/roll 3d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;* Area burst 1 within 20; +33 vs. Reflex; 3d8 + 10 fire and necrotic damage. The solamith takes 8 damage.&lt;/p&gt;]] <23.5>  fire and necrotic damage. The solamith takes 8 damage.</p><p>* Area burst 2 within 20; [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;* Area burst 2 within 20; &lt;u&gt;+33 vs. Reflex&lt;/u&gt;; 4d8 + 10 fire and necrotic damage. The solamith takes 16 damage.&lt;/p&gt;]]; [[/roll 4d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;* Area burst 2 within 20; +33 vs. Reflex; 4d8 + 10 fire and necrotic damage. The solamith takes 16 damage.&lt;/p&gt;]] <28>  fire and necrotic damage. The solamith takes 16 damage.</p><p>* Area burst 3 within 20; [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;* Area burst 3 within 20; &lt;u&gt;+33 vs. Reflex&lt;/u&gt;; 5d10 + 9 fire and necrotic damage. The solamith takes 32 damage&lt;/p&gt;]]; [[/roll 5d10 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;* Area burst 3 within 20; +33 vs. Reflex; 5d10 + 9 fire and necrotic damage. The solamith takes 32 damage&lt;/p&gt;]] <36.5>  fire and necrotic damage. The solamith takes 32 damage</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Soulfire Retort&lt;/b&gt; (immediate reaction, when the solamith takes damage from a melee attack, recharges when first bloodied) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +33 vs Reflex; 2d8+10 fire and necrotic damage, and the target is pushed 2 squares. &lt;/p&gt;]] ᗕ <b>Soulfire Retort</b> (immediate reaction, when the solamith takes damage from a melee attack, recharges when first bloodied) ✦ <b>Fire, Necrotic</b></p><p>Close blast 3; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Soulfire Retort&lt;/b&gt; (immediate reaction, when the solamith takes damage from a melee attack, recharges when first bloodied) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 2d8+10 fire and necrotic damage, and the target is pushed 2 squares. &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Soulfire Retort&lt;/b&gt; (immediate reaction, when the solamith takes damage from a melee attack, recharges when first bloodied) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +33 vs Reflex; 2d8+10 fire and necrotic damage, and the target is pushed 2 squares. &lt;/p&gt;]] <19>  fire and necrotic damage, and the target is pushed 2 squares. </p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -773,23 +774,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 175; <b>Bloodied</b> 87<hr><b>Resist</b> 10 fire, 10 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 33</td><td><b>Ref</b> 39</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+14)<br><b>Con</b> 19 (+16)</td><td><b>Dex</b> 16 (+15)<br><b>Int</b> 30 (+22)</td><td><b>Wis</b> 26 (+20)<br><b>Cha</b> 21 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +25</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><p><b>Equipment</b> robes, wand implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Knock Back&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs Fortitude; 2d8+10 damage, and the library researcher pushes the target 3 squares. &lt;/p&gt;]] (⚔) <b>Knock Back</b> (standard, at-will) ✦ <b>Implement</b></p><p>[[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Knock Back&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs Fortitude&lt;/u&gt;; 2d8+10 damage, and the library researcher pushes the target 3 squares. &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Knock Back&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs Fortitude; 2d8+10 damage, and the library researcher pushes the target 3 squares. &lt;/p&gt;]] <19>  damage, and the library researcher pushes the target 3 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Barrage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +28 vs Reflex; 2d6+9 force damage. If a target is hit by two or more of the attacks, the target is knocked prone. &lt;/p&gt;]] ➶ <b>Force Barrage</b> (standard, at-will) ✦ <b>Force, Implement</b></p><p>Ranged 20; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Barrage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 2d6+9 force damage. If a target is hit by two or more of the attacks, the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Barrage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +28 vs Reflex; 2d6+9 force damage. If a target is hit by two or more of the attacks, the target is knocked prone. &lt;/p&gt;]] <16>  force damage. If a target is hit by two or more of the attacks, the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Prism Bomb&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 2 within 20; each target in the burst is subject to the following attacks:&lt;/p&gt;&lt;p&gt;+28 vs. Fortitude; 2d10 + 9 poison damage.&lt;/p&gt;&lt;p&gt;+28 vs. Reflex; 2d10 + 9 lightning damage.&lt;/p&gt;&lt;p&gt;+28 vs. Will; The target is stunned (save ends)&lt;/p&gt;]] ⚔ <b>Prism Bomb</b> (standard, recharge ⚅</p><p>Area burst 2 within 20; each target in the burst is subject to the following attacks:</p><p>[[/roll 1d20+28[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Prism Bomb&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs. Fortitude&lt;/u&gt;; 2d10 + 9 poison damage.&lt;/p&gt;]]; [[/roll 2d10 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Prism Bomb&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+28 vs. Fortitude; 2d10 + 9 poison damage.&lt;/p&gt;]] <20>  poison damage.</p><p>[[/roll 1d20+28[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Prism Bomb&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs. Reflex&lt;/u&gt;; 2d10 + 9 lightning damage.&lt;/p&gt;]]; [[/roll 2d10 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Prism Bomb&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+28 vs. Reflex; 2d10 + 9 lightning damage.&lt;/p&gt;]] <20>  lightning damage.</p><p>[[/roll 1d20+28[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Prism Bomb&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs. Will&lt;/u&gt;; The target is stunned (save ends)&lt;/p&gt;]]; The target is stunned (save ends)</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Cinder Cloud&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Implement, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +28 vs Reflex; 3d10+9 fire damage, and the target takes ongoing 10 fire damage (save ends). Sustain Minor: The zone persists. &lt;/p&gt;]] ✻ <b>Cinder Cloud</b> (standard, encounter) ✦ <b>Fire, Implement, Zone</b></p><p>Area burst 1 within 10; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Cinder Cloud&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Implement, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 3d10+9 fire damage, and the target takes ongoing 10 fire damage (save ends). Sustain Minor: The zone persists. &lt;/p&gt;]]; [[/roll 3d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Cinder Cloud&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Implement, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +28 vs Reflex; 3d10+9 fire damage, and the target takes ongoing 10 fire damage (save ends). Sustain Minor: The zone persists. &lt;/p&gt;]] <25.5>  fire damage, and the target takes ongoing 10 fire damage (save ends). Sustain Minor: The zone persists. </p></tr></td></table>",

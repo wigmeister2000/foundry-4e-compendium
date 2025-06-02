@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"THqB2Ran39k7rlAN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Mindmaster's Thrall",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5YpLaAMefm09vZJu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -678,23 +681,10 @@
 				"max":10
 			},
 			"init":{
-				"value":14,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":14
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +14</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 23</td><td><b>Ref</b> 25</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (forest walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+9)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 22 (+12)<br><b>Int</b> 3 (+2)</td><td><b>Wis</b> 20 (+11)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The creeper deals 2 extra damage against any creature granting combat advantage to it. &lt;/p&gt;]]  <b>Combat Advantage</b> <b></b></p><p>The creeper deals 2 extra damage against any creature granting combat advantage to it. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mindmaster’s Thrall &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the creeper was created by an oblivion moss mindmaster, it acts immediately after its creator’s turn.&lt;/p&gt;]]  <b>Mindmaster’s Thrall </b> <b></b></p><p>If the creeper was created by an oblivion moss mindmaster, it acts immediately after its creator’s turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 10 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The creeper shifts 2 squares.&lt;/p&gt;]] (⚔) <b>Tendril Strike</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 10 damage.</p><p><i>Effect:</i> The creeper shifts 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Simulacrum Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; When the creeper first acts during the encounter, choose one at-will melee attack power belonging to an enemy that the creeper can see. If the creeper was created by an oblivion moss mindmaster, choose one at-will melee attack power belonging to the enemy that the mindmaster hit to create the creeper.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target takes damage and is subject to effects as though it were hit by the chosen attack. The damage roll uses the ability score modifier of the creature from whom the power was chosen. The damage does not include any bonuses or penalties to the damage roll that the owner of the power might have. In addition, the creeper gains any benefits from the power’s Hit entry, using the ability score modifiers of the creature from whom the power was chosen but not including any bonuses or penalties.&lt;/p&gt;]] ⚔ <b>Simulacrum Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> When the creeper first acts during the encounter, choose one at-will melee attack power belonging to an enemy that the creeper can see. If the creeper was created by an oblivion moss mindmaster, choose one at-will melee attack power belonging to the enemy that the mindmaster hit to create the creeper.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Simulacrum Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target takes damage and is subject to effects as though it were hit by the chosen attack. The damage roll uses the ability score modifier of the creature from whom the power was chosen. The damage does not include any bonuses or penalties to the damage roll that the owner of the power might have. In addition, the creeper gains any benefits from the power’s Hit entry, using the ability score modifiers of the creature from whom the power was chosen but not including any bonuses or penalties.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mossy Slide&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An attack misses the creeper.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The creeper shifts 2 squares.&lt;/p&gt;]]  <b>Mossy Slide</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An attack misses the creeper.</p><p><i>Effect (Immediate Reaction):</i> The creeper shifts 2 squares.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dissonant Gibberish",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"m5wfMiO1BG0su9XV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -819,23 +821,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 74; <b>Bloodied</b> 37</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 19</td><td><b>Ref</b> 19</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 (7 while bloodied)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+5)<br><b>Con</b> 18 (+7)</td><td><b>Dex</b> 15 (+5)<br><b>Int</b> 19 (+7)</td><td><b>Wis</b> 9 (+2)<br><b>Cha</b> 15 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Deep Speech<br><b>Alignment</b> Unaligned or chaotic evil</td></tr><tr><td><b>Skills</b> Bluff +10, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> warhammer .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Dissonant Gibberish&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;While Galt is bloodied, enemies in the aura have vulnerable 5 psychic and take a -2 penalty to saving throws.&lt;/p&gt;]] ⌀ <b>Dissonant Gibberish</b> ✦ <b>Aura</b> 5</p><p>While Galt is bloodied, enemies in the aura have vulnerable 5 psychic and take a -2 penalty to saving throws.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whipping Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Galt can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Whipping Warhammer</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whipping Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whipping Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;]] <9.5>  damage.</p><p><i>Effect:</i> Galt can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Transmute the Unwilling&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +9 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage, and the target is slowed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The target is slowed until the end of its next turn.&lt;/p&gt;]] ➶ <b>Transmute the Unwilling</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+9[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Transmute the Unwilling&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+9 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Transmute the Unwilling&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage, and the target is slowed (save ends).&lt;/p&gt;]] <14>  psychic damage, and the target is slowed (save ends).</p><p><i>Miss:</i> The target is slowed until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Weave Nightmares&lt;/b&gt; (illusion, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 4 psychic damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the target is dazed until the end of its next turn.&lt;/p&gt;]] ᗕ <b>Weave Nightmares</b> (illusion, psychic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Weave Nightmares&lt;/b&gt; (illusion, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Weave Nightmares&lt;/b&gt; (illusion, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 4 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] <14.5>  psychic damage, and the target is dazed (save ends).</p><p><i>Miss:</i> Half damage, and the target is dazed until the end of its next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Twist Space&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Galt teleports up to 3 squares. He can teleport into the space of another creature. If he does so, that creature teleports to the space that Galt just left and grants combat advantage until the end of its next turn.&lt;/p&gt;]]  <b>Twist Space</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> Galt teleports up to 3 squares. He can teleport into the space of another creature. If he does so, that creature teleports to the space that Galt just left and grants combat advantage until the end of its next turn.</p></tr></td></table>",

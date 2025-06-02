@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Nullifying Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pZGt8QS5m1RX6Y0s",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Indomitable Spirit",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4Ybhp1duR9I2GmX3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Magic Item Mastery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LywQ9ZM3rbaSHJYn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"25",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1266,23 +1270,10 @@
 				"max":10
 			},
 			"init":{
-				"value":19,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":19
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 312; <b>Bloodied</b> 156</td><td style=\"padding-left: 15px;\"><b>Init</b> +19 | <b>AP</b> 1 | <b>Save</b> +2 (+5 against charm effects)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 32</td><td><b>Ref</b> 35</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+14)<br><b>Con</b> 18 (+15)</td><td><b>Dex</b> 19 (+15)<br><b>Int</b> 27 (+19)</td><td><b>Wis</b> 18 (+15)<br><b>Cha</b> 24 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +24, Stealth +20, Thievery +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Nullifying Aura&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Enemies in the aura cannot use magic item powers, other than powers of consumable items.&lt;/p&gt;]] ⌀ <b>Nullifying Aura</b> ✦ <b>Aura</b> 5</p><p>Enemies in the aura cannot use magic item powers, other than powers of consumable items.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indomitable Spirit&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any dominating or stunning effect on the Trinket Lord ends at the start of his turn.&lt;/p&gt;]]  <b>Indomitable Spirit</b> <b></b></p><p>Any dominating or stunning effect on the Trinket Lord ends at the start of his turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Magic Item Mastery&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the Trinket Lord attacks, choose two of the following damage types: acid, cold, fire, force, lightning, necrotic, psychic, thunder, or radiant. The damage dealt by the attack changes to the chosen types.&lt;/p&gt;]]  <b>Magic Item Mastery</b> <b></b></p><p>Whenever the Trinket Lord attacks, choose two of the following damage types: acid, cold, fire, force, lightning, necrotic, psychic, thunder, or radiant. The damage dealt by the attack changes to the chosen types.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔)(➶) &lt;b&gt;Activate Magic Item&lt;/b&gt; (varies) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 or Ranged 10 (one creature); +25 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 9 damage.&lt;/p&gt;]] (⚔)(➶) <b>Activate Magic Item</b> (varies) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 or Ranged 10 (one creature); [[/roll 1d20+25[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔)(➶) &lt;b&gt;Activate Magic Item&lt;/b&gt; (varies) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 or Ranged 10 (one creature); &lt;u&gt;+25 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔)(➶) &lt;b&gt;Activate Magic Item&lt;/b&gt; (varies) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 9 damage.&lt;/p&gt;]] <30>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔➶ &lt;b&gt;Gnomish Tactics&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The Trinket Lord must be invisible.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The Trinket Lord uses activate magic item twice.&lt;/p&gt;]] ⚔➶ <b>Gnomish Tactics</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The Trinket Lord must be invisible.</p><p><i>Effect:</i> The Trinket Lord uses activate magic item twice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sunder Relic&lt;/b&gt; (varies) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +25 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 damage, and ongoing 15 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and ongoing 5 damage (save ends).&lt;/p&gt;]] ᗕ <b>Sunder Relic</b> (varies) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+25[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sunder Relic&lt;/b&gt; (varies) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+25 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sunder Relic&lt;/b&gt; (varies) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 damage, and ongoing 15 damage (save ends).&lt;/p&gt;]] <25.5>  damage, and ongoing 15 damage (save ends).</p><p><i>Miss:</i> Half damage, and ongoing 5 damage (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Elusive Invisibility&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The Trinket Lord becomes invisible until the end of his current turn or until he hits or misses with an attack.&lt;/p&gt;]]  <b>Elusive Invisibility</b> (illusion) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> The Trinket Lord becomes invisible until the end of his current turn or until he hits or misses with an attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The Trinket Lord alters his physical form to appear as a Tiny fox until he uses change shape again or until he drops to 0 hit points. While in this form, he takes no penalty to Stealth checks for moving up to his speed, and he gains a +10 power bonus to Stealth checks. He can make no attacks in this form.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> The Trinket Lord alters his physical form to appear as a Tiny fox until he uses change shape again or until he drops to 0 hit points. While in this form, he takes no penalty to Stealth checks for moving up to his speed, and he gains a +10 power bonus to Stealth checks. He can make no attacks in this form.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fey Resolve&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The Trinket Lord is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Sunder relic recharges, and the Trinket Lord uses it. He then becomes invisible until the end of his next turn or until he hits or misses with an attack.&lt;/p&gt;]] ᗕ <b>Fey Resolve</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The Trinket Lord is first bloodied.</p><p><i>Effect (Free Action):</i> Sunder relic recharges, and the Trinket Lord uses it. He then becomes invisible until the end of his next turn or until he hits or misses with an attack.</p></tr></td></table>",

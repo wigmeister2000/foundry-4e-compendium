@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Impel the Accursed Legion",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"T8eAzK3jEnWwixPO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Force of Unmatched Power",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"e1c7yTnt8wskmM6b",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -515,7 +518,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1048,23 +1052,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 584; <b>Bloodied</b> 292<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 28</td><td><b>Ref</b> 27</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+14)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 20 (+12)<br><b>Int</b> 13 (+8)</td><td><b>Wis</b> 21 (+12)<br><b>Cha</b> 16 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> whip .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Impel the Accursed Legion&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;On an initiative of 10 + the Grim Lasher’s initiative, one Accursed Legion warrior of the Grim Lasher’s choice must use a free action to charge or make a basic attack against a creature the Grim Lasher chooses.&lt;/p&gt;]]  <b>Impel the Accursed Legion</b> <b></b></p><p>On an initiative of 10 + the Grim Lasher’s initiative, one Accursed Legion warrior of the Grim Lasher’s choice must use a free action to charge or make a basic attack against a creature the Grim Lasher chooses.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Force of Unmatched Power&lt;/b&gt; (psychic) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the Grim Lasher is dominated or stunned by an attack, it is instead dazed until the end of its next turn, and the attacker takes 15 psychic damage.&lt;/p&gt;]]  <b>Force of Unmatched Power</b> (psychic) <b></b></p><p>Whenever the Grim Lasher is dominated or stunned by an attack, it is instead dazed until the end of its next turn, and the attacker takes 15 psychic damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Burning Whip&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and 2d8 fire damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The Grim Lasher slides the target up to 2 squares.&lt;/p&gt;]] (⚔) <b>Burning Whip</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Burning Whip&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Burning Whip&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and 2d8 fire damage.&lt;/p&gt;]] <14>  damage, and [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Burning Whip&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and 2d8 fire damage.&lt;/p&gt;]] <9> fire damage.</p><p><i>Effect:</i> The Grim Lasher slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Whip Storm&lt;/b&gt; (fire, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one, two, or three creatures); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 7 damage, and 2d8 fire damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The Grim Lasher slides each target up to 2 squares.&lt;/p&gt;]] ⚔ <b>Whip Storm</b> (fire, weapon) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Melee 3 (one, two, or three creatures); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Whip Storm&lt;/b&gt; (fire, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one, two, or three creatures); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Whip Storm&lt;/b&gt; (fire, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 7 damage, and 2d8 fire damage.&lt;/p&gt;]] <17>  damage, and [[/roll 2d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Whip Storm&lt;/b&gt; (fire, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 7 damage, and 2d8 fire damage.&lt;/p&gt;]] <9> fire damage.</p><p><i>Effect:</i> The Grim Lasher slides each target up to 2 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Grim Lasher\"s Command&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +18 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 psychic damage, and the target must use a free action to move as close to the Grim Lasher as the target’s speed allows, avoiding hindering terrain.&lt;/p&gt;]] (➶) <b>Grim Lasher\"s Command</b> (charm, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+18[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Grim Lasher\"s Command&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+18 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Grim Lasher\"s Command&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 psychic damage, and the target must use a free action to move as close to the Grim Lasher as the target’s speed allows, avoiding hindering terrain.&lt;/p&gt;]] <18.5>  psychic damage, and the target must use a free action to move as close to the Grim Lasher as the target’s speed allows, avoiding hindering terrain.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;String Them Up&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and 3d8 fire damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The Grim Lasher lifts the target up to 2 squares into the air, and the target is restrained there (save ends). Until this effect ends, each time the Grim Lasher is hit by an attack, the target takes 4d8 fire damage.&lt;/p&gt;]] ⚔ <b>String Them Up</b> (fire, weapon) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;String Them Up&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;String Them Up&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and 3d8 fire damage.&lt;/p&gt;]] <14>  damage, and [[/roll 3d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;String Them Up&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 damage, and 3d8 fire damage.&lt;/p&gt;]] <13.5> fire damage.</p><p><i>Miss:</i> Half damage.</p><p><i>Effect:</i> The Grim Lasher lifts the target up to 2 squares into the air, and the target is restrained there (save ends). Until this effect ends, each time the Grim Lasher is hit by an attack, the target takes [[/roll 4d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;String Them Up&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The Grim Lasher lifts the target up to 2 squares into the air, and the target is restrained there (save ends). Until this effect ends, each time the Grim Lasher is hit by an attack, the target takes 4d8 fire damage.&lt;/p&gt;]] <18> fire damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Retreat&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The Grim Lasher is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The Grim Lasher teleports to a location of its choosing that it has visited in the last 24 hours. The location doesn’t need to be in line of sight.&lt;/p&gt;]]  <b>Retreat</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The Grim Lasher is first bloodied.</p><p><i>Effect (Free Action):</i> The Grim Lasher teleports to a location of its choosing that it has visited in the last 24 hours. The location doesn’t need to be in line of sight.</p></tr></td></table>",

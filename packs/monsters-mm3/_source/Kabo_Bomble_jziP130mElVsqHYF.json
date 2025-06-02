@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Adept",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"C9WvAzaDVUSuK4FM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Daggerburg Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"s4ERfOLDUTth51bP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -862,23 +865,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 116; <b>Bloodied</b> 58</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 22</td><td><b>Ref</b> 20</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+9)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 17 (+7)<br><b>Int</b> 6 (+2)</td><td><b>Wis</b> 8 (+3)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> chainmail , morningstar , spiked gauntlet .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Adept&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of an encounter, Kabo’s attacks deal 1d10 extra damage against any enemy that has not yet acted during the encounter.&lt;/p&gt;]]  <b>Combat Adept</b> <b></b></p><p>At the start of an encounter, Kabo’s attacks deal [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Adept&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of an encounter, Kabo’s attacks deal 1d10 extra damage against any enemy that has not yet acted during the encounter.&lt;/p&gt;]] <5.5> extra damage against any enemy that has not yet acted during the encounter.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Daggerburg Tactics&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever an enemy misses Kabo with a melee attack, he gains combat advantage against that enemy until the end of his next turn.&lt;/p&gt;]]  <b>Daggerburg Tactics</b> <b></b></p><p>Whenever an enemy misses Kabo with a melee attack, he gains combat advantage against that enemy until the end of his next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 damage.&lt;/p&gt;]] (⚔) <b>Morningstar</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 damage.&lt;/p&gt;]] <21>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 damage. On a critical hit, the target is also dazed (save ends).&lt;/p&gt;]] ⚔ <b>Spiked Gauntlet</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 damage. On a critical hit, the target is also dazed (save ends).&lt;/p&gt;]] <20.5>  damage. On a critical hit, the target is also dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Furious Attack&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Kabo uses morningstar and spiked gauntlet. If both attacks hit the same target, the target is dazed until the end of Kabo’s next turn.&lt;/p&gt;]] ⚔ <b>Furious Attack</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> Kabo uses morningstar and spiked gauntlet. If both attacks hit the same target, the target is dazed until the end of Kabo’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roar&lt;/b&gt; (fear) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +12 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target takes a -2 penalty to all defenses (save ends).&lt;/p&gt;]] ᗕ <b>Roar</b> (fear) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+12[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roar&lt;/b&gt; (fear) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+12 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target takes a -2 penalty to all defenses (save ends).</p></tr></td></table>",

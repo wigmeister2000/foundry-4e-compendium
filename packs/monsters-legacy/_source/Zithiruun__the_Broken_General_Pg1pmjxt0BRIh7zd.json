@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -252,7 +253,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -683,10 +685,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -938,7 +940,7 @@
 		},
 		{
 			"name":"Mind Over Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Md6HFjzlBfgT5Ea4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -974,7 +976,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -984,7 +987,7 @@
 		},
 		{
 			"name":"Mind Shock",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VJ61ufTZwLxGFC74",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1020,7 +1023,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1254,23 +1258,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 280; <b>Bloodied</b> 140<hr><b>Resist</b> 10 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2 (+4 against charm effects)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 26</td><td><b>Ref</b> 29</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 6 (+5)<br><b>Con</b> 6 (+5)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 19 (+11)</td><td><b>Wis</b> 15 (+9)<br><b>Cha</b> 20 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> History +16, Insight +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 24</td></td></tr></table><p><b>Equipment</b> body harness, two silver sabers, hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+6 damage, plus 1d8 psychic damage. &lt;/p&gt;]] (⚔) <b>Silver Saber</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+6 damage, plus 1d8 psychic damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+6 damage, plus 1d8 psychic damage. &lt;/p&gt;]] <10.5>  damage, plus [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+6 damage, plus 1d8 psychic damage. &lt;/p&gt;]] <4.5> psychic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Thrown Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10 if thrown; +19 vs AC; 1d8+6 damage plus 1d8 psychic damage.&lt;/p&gt;&lt;p&gt;Special: If thrown, the weapon returns to Zithiruun’s hand immediately after the attack is resolved. &lt;/p&gt;]] (➶) <b>Thrown Saber</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>Ranged 5/10 if thrown; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Thrown Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10 if thrown; &lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+6 damage plus 1d8 psychic damage.&lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Thrown Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10 if thrown; +19 vs AC; 1d8+6 damage plus 1d8 psychic damage.&lt;/p&gt;]] <10.5>  damage plus [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Thrown Saber&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10 if thrown; +19 vs AC; 1d8+6 damage plus 1d8 psychic damage.&lt;/p&gt;]] <4.5> psychic damage.</p><p>Special: If thrown, the weapon returns to Zithiruun’s hand immediately after the attack is resolved. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Silver Barrage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Zithiruun makes two silver saber attacks.&lt;/p&gt;]] ⚔ <b>Silver Barrage</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>Zithiruun makes two silver saber attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Silver Flurry&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+6 damage plus 2d8 psychic damage. &lt;/p&gt;]] ⚔ <b>Silver Flurry</b> (standard, recharge ⚄⚅) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Silver Flurry&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+6 damage plus 2d8 psychic damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Silver Flurry&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+6 damage plus 2d8 psychic damage. &lt;/p&gt;]] <15>  damage plus [[/roll 2d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Silver Flurry&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+6 damage plus 2d8 psychic damage. &lt;/p&gt;]] <9> psychic damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Psionic Aim&lt;/b&gt; (immediate reaction, when an ally within 5 squares misses with an attack; encounter) &lt;/p&gt;&lt;p&gt;The ally can reroll the attack, keeping the second result.&lt;/p&gt;]]  <b>Psionic Aim</b> (immediate reaction, when an ally within 5 squares misses with an attack; encounter) </p><p>The ally can reroll the attack, keeping the second result.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mind Over Body&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Due to the psionic energy of the harness and armor he wears, Zithiruun uses Charisma in place of Wisdom for determining hit points and Fortitude defense. (He still uses Constitution for other purposes such as Endurance checks.)&lt;/p&gt;]]  <b>Mind Over Body</b></p><p>Due to the psionic energy of the harness and armor he wears, Zithiruun uses Charisma in place of Wisdom for determining hit points and Fortitude defense. (He still uses Constitution for other purposes such as Endurance checks.)</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mind Shock&lt;/b&gt;✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Zithiruun damages a target with his silver saber, thrown saber, silver flurry, or silver barrage attacks, the target cannot make opportunity attacks until the end of Zithiruun’s next turn.&lt;/p&gt;]]  <b>Mind Shock</b>✦ <b>Charm</b></p><p>Whenever Zithiruun damages a target with his silver saber, thrown saber, silver flurry, or silver barrage attacks, the target cannot make opportunity attacks until the end of Zithiruun’s next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Telekinetic Leap&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;Zithiruun can fly 5 squares.&lt;/p&gt;]]  <b>Telekinetic Leap</b> (move; at-will) </p><p>Zithiruun can fly 5 squares.</p></tr></td></table>",

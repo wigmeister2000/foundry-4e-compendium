@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -362,7 +363,7 @@
 		},
 		{
 			"name":"Beat Them When They're Down",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZiIMvjHJTPYeLkNo",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -398,7 +399,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -408,7 +410,7 @@
 		},
 		{
 			"name":"Guard Area",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3IRGeBPVJwrYOT6g",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -444,7 +446,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -500,23 +503,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 129; <b>Bloodied</b> 64<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 23</td><td><b>Ref</b> 17</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 19 (+9)</td><td><b>Dex</b> 8 (+4)<br><b>Int</b> 5 (+2)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 13 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hammer Hand&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 3d6+5 damage. &lt;/p&gt;]] (⚔) <b>Hammer Hand</b> (standard, at-will) </p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hammer Hand&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 3d6+5 damage. &lt;/p&gt;]]; [[/roll 3d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hammer Hand&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 3d6+5 damage. &lt;/p&gt;]] <15.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammering Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The marching hammer can use this power as a part of a charge; +13 vs AC; 3d6+5 damage, plus target is knocked prone. &lt;/p&gt;]] ⚔ <b>Hammering Charge</b> (standard, at-will) </p><p>The marching hammer can use this power as a part of a charge; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammering Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The marching hammer can use this power as a part of a charge; &lt;u&gt;+13 vs AC&lt;/u&gt;; 3d6+5 damage, plus target is knocked prone. &lt;/p&gt;]]; [[/roll 3d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammering Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The marching hammer can use this power as a part of a charge; +13 vs AC; 3d6+5 damage, plus target is knocked prone. &lt;/p&gt;]] <15.5>  damage, plus target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Beat Them When They\"re Down&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The marching hammer deals 1d6 extra damage when attacking a prone enemy.&lt;/p&gt;]]  <b>Beat Them When They\"re Down</b></p><p>The marching hammer deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Beat Them When They\"re Down&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The marching hammer deals 1d6 extra damage when attacking a prone enemy.&lt;/p&gt;]] <3.5> extra damage when attacking a prone enemy.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Guard Area&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A marching hammer can make a hammering charge attack against any creature in its guarded area, even if the power hasn’t recharged. If the marching hammer uses a charge attack to make its hammering charge, its speed increases to 8 when making that charge.&lt;/p&gt;]]  <b>Guard Area</b></p><p>A marching hammer can make a hammering charge attack against any creature in its guarded area, even if the power hasn’t recharged. If the marching hammer uses a charge attack to make its hammering charge, its speed increases to 8 when making that charge.</p></tr></td></table>",

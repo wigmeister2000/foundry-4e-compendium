@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -768,23 +769,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 116; <b>Bloodied</b> 58<hr><b>Immune</b> chaos phage </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 27</td><td><b>Ref</b> 28</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+9)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 17 (+10)<br><b>Int</b> 23 (+13)</td><td><b>Wis</b> 19 (+11)<br><b>Cha</b> 16 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +14, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Havoc Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d8+6 damage, the gray slaad havoc slides the target 2 squares, and the target is exposed to chaos phage (page 142). &lt;/p&gt;]] (⚔) <b>Havoc Claw</b> (standard, at-will) ✦ <b>Disease</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Havoc Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 1d8+6 damage, the gray slaad havoc slides the target 2 squares, and the target is exposed to chaos phage (page 142). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Havoc Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d8+6 damage, the gray slaad havoc slides the target 2 squares, and the target is exposed to chaos phage (page 142). &lt;/p&gt;]] <10.5>  damage, the gray slaad havoc slides the target 2 squares, and the target is exposed to chaos phage (page 142). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Havoc Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; +20 vs Reflex; 2d8+6 damage, and the gray slaad havoc slides the target 3 squares. If the attack scores a critical hit, the gray slaad havoc can repeat it once as free action. &lt;/p&gt;]] ➶ <b>Havoc Bolt</b> (standard, at-will) </p><p>Ranged 20; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Havoc Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d8+6 damage, and the gray slaad havoc slides the target 3 squares. If the attack scores a critical hit, the gray slaad havoc can repeat it once as free action. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Havoc Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; +20 vs Reflex; 2d8+6 damage, and the gray slaad havoc slides the target 3 squares. If the attack scores a critical hit, the gray slaad havoc can repeat it once as free action. &lt;/p&gt;]] <15>  damage, and the gray slaad havoc slides the target 3 squares. If the attack scores a critical hit, the gray slaad havoc can repeat it once as free action. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fog of Chaos&lt;/b&gt; (immediate interrupt, when hit by a ranged attack, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 20; targets the triggering attacker; +20 vs Will; the triggering attack instead targets one of the target’s allies of its choice. &lt;/p&gt;]] ᗕ <b>Fog of Chaos</b> (immediate interrupt, when hit by a ranged attack, recharge ⚃⚄⚅) </p><p>Close burst 20; targets the triggering attacker; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fog of Chaos&lt;/b&gt; (immediate interrupt, when hit by a ranged attack, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 20; targets the triggering attacker; &lt;u&gt;+20 vs Will&lt;/u&gt;; the triggering attack instead targets one of the target’s allies of its choice. &lt;/p&gt;]]; the triggering attack instead targets one of the target’s allies of its choice. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Reality Shift&lt;/b&gt; (move, at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets one creature in burst; +20 vs Will; (no attack roll required against an ally); the gray slaad havoc teleports the target to any space within the burst. &lt;/p&gt;]] ᗕ <b>Reality Shift</b> (move, at-will) ✦ <b>Teleportation</b></p><p>Close burst 10; targets one creature in burst; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Reality Shift&lt;/b&gt; (move, at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets one creature in burst; &lt;u&gt;+20 vs Will&lt;/u&gt;; (no attack roll required against an ally); the gray slaad havoc teleports the target to any space within the burst. &lt;/p&gt;]]; (no attack roll required against an ally); the gray slaad havoc teleports the target to any space within the burst. </p></tr></td></table>",

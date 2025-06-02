@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -408,23 +409,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 13</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1, fly 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (null)<br><b>Con</b> 10 (0)</td><td><b>Dex</b> 15 (+2)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 12 (+1)<br><b>Cha</b> 6 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 3<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 4 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 4 damage. &lt;/p&gt;]]; 4 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Flyby Attack&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The tainted bat flies 6 squares and makes one melee basic attack at any point during that movement. It doesn’t provoke opportunity attacks when moving away from the target of the attack.&lt;/p&gt;]]  <b>Flyby Attack</b> (standard; at-will) </p><p>The tainted bat flies 6 squares and makes one melee basic attack at any point during that movement. It doesn’t provoke opportunity attacks when moving away from the target of the attack.</p></tr></td></table>",

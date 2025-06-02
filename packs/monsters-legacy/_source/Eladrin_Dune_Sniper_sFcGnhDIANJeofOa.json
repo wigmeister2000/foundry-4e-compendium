@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -544,7 +546,7 @@
 		},
 		{
 			"name":"Sniper",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MTOjHRXJqEoy3mn7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -580,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -996,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 61; <b>Bloodied</b> 30</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>Save</b> +5 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 22</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 see also dust form and fey step</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+6)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 22 (+9)<br><b>Int</b> 14 (+5)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 13 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +14, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> arrows (30) , leather armor , longbow , scimitar .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8+6 damage (crit 1d8+14). &lt;/p&gt;]] (⚔) <b>Scimitar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d8+6 damage (crit 1d8+14). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8+6 damage (crit 1d8+14). &lt;/p&gt;]] <10.5>  damage (crit [[/roll 1d8+14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8+6 damage (crit 1d8+14). &lt;/p&gt;]] <18.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; +12 vs AC; 1d10+5 damage. &lt;/p&gt;]] (➶) <b>Longbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 20/40; [[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; &lt;u&gt;+12 vs AC&lt;/u&gt;; 1d10+5 damage. &lt;/p&gt;]]; [[/roll 1d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; +12 vs AC; 1d10+5 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Rapid Shot&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The eladrin dune sniper makes two longbow attacks&lt;/p&gt;]] ➶ <b>Rapid Shot</b> (standard, at-will) </p><p>The eladrin dune sniper makes two longbow attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dust Form&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The eladrin dune sniper becomes insubstantial and gains a fly speed of 8 (hover). It can enter and move through a porous obstacle that would otherwise prevent movement (such as a door or cracked window). Sustain Standard: The effect persists.&lt;/p&gt;]]  <b>Dust Form</b> (standard; encounter) ✦ <b>Polymorph</b></p><p>The eladrin dune sniper becomes insubstantial and gains a fly speed of 8 (hover). It can enter and move through a porous obstacle that would otherwise prevent movement (such as a door or cracked window). Sustain Standard: The effect persists.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sniper&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an eladrin dune sniper makes a ranged attack from hiding and misses, it is still considered to be hiding.&lt;/p&gt;]]  <b>Sniper</b></p><p>When an eladrin dune sniper makes a ranged attack from hiding and misses, it is still considered to be hiding.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The eladrin dune sniper can teleport 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The eladrin dune sniper can teleport 5 squares.</p></tr></td></table>",

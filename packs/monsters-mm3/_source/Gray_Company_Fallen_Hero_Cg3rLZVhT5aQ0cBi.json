@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Grim Solidarity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DnwzHauE1mIt7b4X",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -457,23 +459,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 89; <b>Bloodied</b> 44<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 19</td><td><b>Ref</b> 17</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+6)<br><b>Con</b> 19 (+7)</td><td><b>Dex</b> 14 (+5)<br><b>Int</b> 10 (+3)</td><td><b>Wis</b> 13 (+4)<br><b>Cha</b> 10 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> breastplate, heavy shield , longsword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Grim Solidarity&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the fallen hero starts its turn adjacent to a creature that has grim solidarity, it can make a saving throw against one effect that a save can end.&lt;/p&gt;]]  <b>Grim Solidarity</b> <b></b></p><p>If the fallen hero starts its turn adjacent to a creature that has grim solidarity, it can make a saving throw against one effect that a save can end.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 4 necrotic damage, and the target gains vulnerable 5 necrotic until the end of the fallen hero’s next turn.&lt;/p&gt;]] (⚔) <b>Longsword</b> (necrotic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 4 necrotic damage, and the target gains vulnerable 5 necrotic until the end of the fallen hero’s next turn.&lt;/p&gt;]] <17.5>  necrotic damage, and the target gains vulnerable 5 necrotic until the end of the fallen hero’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Nerath\"s Vengeance&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The fallen hero uses longsword against each enemy adjacent to it.&lt;/p&gt;]] ⚔ <b>Nerath\"s Vengeance</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> The fallen hero uses longsword against each enemy adjacent to it.</p></tr></td></table>",

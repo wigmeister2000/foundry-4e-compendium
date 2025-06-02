@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Soulcatcher",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vZbVkSHqge9f2chu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -588,7 +590,7 @@
 		},
 		{
 			"name":"Battle Fervor",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ADNmci2b5g1tyFrV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -624,7 +626,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1170,7 +1173,7 @@
 		},
 		{
 			"name":"Soul Shroud",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"dhyiCrzec0sY97vl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1206,7 +1209,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1262,23 +1266,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 434; <b>Bloodied</b> 217<hr><b>Resist</b> 20 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 39</td><td><b>Ref</b> 33</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+20)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 20 (+16)<br><b>Int</b> 12 (+12)</td><td><b>Wis</b> 16 (+14)<br><b>Cha</b> 15 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> heavy shield , mace , plate armor .</p><p>[[/roll 0#&lt;b&gt;Soulcatcher&lt;/b&gt; aura 5; a creature that dies within the aura bestows one soul shard to Bahlik Gur (see soul shroud).]] <b>Soulcatcher</b> aura 5; a creature that dies within the aura bestows one soul shard to Bahlik Gur (see soul shroud).</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 2d8+6 damage, and the target is marked. &lt;/p&gt;]] (⚔) <b>Mace</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+29 vs AC&lt;/u&gt;; 2d8+6 damage, and the target is marked. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 2d8+6 damage, and the target is marked. &lt;/p&gt;]] <15>  damage, and the target is marked. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Bahlik Gur makes two mace attacks. If he hits two different targets with them, he gains a +2 bonus to his next attack roll. &lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>Bahlik Gur makes two mace attacks. If he hits two different targets with them, he gains a +2 bonus to his next attack roll. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Press the Attack&lt;/b&gt; (move, at-will) &lt;/p&gt;&lt;p&gt;Close burst 10; targets 1 ally; the target can take a move action as a free action. &lt;/p&gt;]] ᗕ <b>Press the Attack</b> (move, at-will) </p><p>Close burst 10; targets 1 ally; the target can take a move action as a free action. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Fervor&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Bahlik Gur scores critical hits on attack rolls 19-20.&lt;/p&gt;]]  <b>Battle Fervor</b></p><p>Bahlik Gur scores critical hits on attack rolls 19-20.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Shroud&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The soul shroud contains soul shards that swirl around Bahlik Gur to protect and empower him. At the start of an encounter, the soul shroud contains four soul shards. While the soul shroud is depleted of soul shards, Bahlik Gur takes a –2 penalty to attack rolls.&lt;/p&gt;]]  <b>Soul Shroud</b></p><p>The soul shroud contains soul shards that swirl around Bahlik Gur to protect and empower him. At the start of an encounter, the soul shroud contains four soul shards. While the soul shroud is depleted of soul shards, Bahlik Gur takes a –2 penalty to attack rolls.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Death Guardian&lt;/b&gt; (immediate interrupt, when an enemy marked by bahlik gur makes an attack that does not include bahlik gur) &lt;/p&gt;&lt;p&gt;Bahlik Gur makes a mace attack against the enemy.&lt;/p&gt;]]  <b>Death Guardian</b> (immediate interrupt, when an enemy marked by bahlik gur makes an attack that does not include bahlik gur) </p><p>Bahlik Gur makes a mace attack against the enemy.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Shield&lt;/b&gt; (free, when an ally within 5 squares is targeted by an attack) &lt;/p&gt;&lt;p&gt;Bahlik Gur expends one soul shard and the ally gains a +4 bonus to all defenses against the attack.&lt;/p&gt;]]  <b>Soul Shield</b> (free, when an ally within 5 squares is targeted by an attack) </p><p>Bahlik Gur expends one soul shard and the ally gains a +4 bonus to all defenses against the attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Consume Soul Shard&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Bahlik Gur expends one soul shard and regains 20 hit points.&lt;/p&gt;]]  <b>Consume Soul Shard</b> (minor; at-will) ✦ <b>Healing</b></p><p>Bahlik Gur expends one soul shard and regains 20 hit points.</p></tr></td></table>",

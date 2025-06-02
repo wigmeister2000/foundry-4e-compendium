@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Winter's Chill",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"h6gnSBqt7IvpRlFZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -167,10 +169,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -523,10 +525,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"6",
 				"rechargeCondition":"",
@@ -1136,7 +1138,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4ibP8yj3OgNxu9An",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1172,7 +1174,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1228,23 +1231,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 980; <b>Bloodied</b> 490<hr><b>Resist</b> 15 lightning, 15 thunder <b>Immune</b> cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 2 | <b>Save</b> +5 (+10 against charm effects)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 39</td><td><b>Ref</b> 40</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover), teleport 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+20)<br><b>Con</b> 29 (+22)</td><td><b>Dex</b> 30 (+23)<br><b>Int</b> 24 (+20)</td><td><b>Wis</b> 26 (+21)<br><b>Cha</b> 23 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Acrobatics +28, Arcana +25, Endurance +27, Intimidate +24, Nature +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><p><b>Equipment</b> sword of black ice  +6 .</p><p>[[/roll 0#&lt;b&gt;Winter\"s Chill&lt;/b&gt; (Cold) aura 5; any enemy that enters or starts its turn in the aura takes 10 cold damage and is slowed until the end of its next turn.]] <b>Winter\"s Chill</b> (Cold) aura 5; any enemy that enters or starts its turn in the aura takes 10 cold damage and is slowed until the end of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sword of Black Ice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 2d8+12 damage plus 2d8 poison damage (crit 28 plus 16 poison damage +6d10 cold damage), and the target is dazed until the end of its next turn. &lt;/p&gt;]] (⚔) <b>Sword of Black Ice</b> (standard, at-will) ✦ <b>Cold, Poison, Weapon</b></p><p>[[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sword of Black Ice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs AC&lt;/u&gt;; 2d8+12 damage plus 2d8 poison damage (crit 28 plus 16 poison damage +6d10 cold damage), and the target is dazed until the end of its next turn. &lt;/p&gt;]]; [[/roll 2d8+12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sword of Black Ice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 2d8+12 damage plus 2d8 poison damage (crit 28 plus 16 poison damage +6d10 cold damage), and the target is dazed until the end of its next turn. &lt;/p&gt;]] <21>  damage plus [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sword of Black Ice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 2d8+12 damage plus 2d8 poison damage (crit 28 plus 16 poison damage +6d10 cold damage), and the target is dazed until the end of its next turn. &lt;/p&gt;]] <9> poison damage (crit 28 plus 16 poison damage +[[/roll 6d10 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sword of Black Ice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 2d8+12 damage plus 2d8 poison damage (crit 28 plus 16 poison damage +6d10 cold damage), and the target is dazed until the end of its next turn. &lt;/p&gt;]] <33> cold damage), and the target is dazed until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sweeping Black Ice&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Koliada makes a Sword of Black Ice attack against each enemy adjacent to her.&lt;/p&gt;]] ⚔ <b>Sweeping Black Ice</b> (standard, at-will) </p><p>Koliada makes a Sword of Black Ice attack against each enemy adjacent to her.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Charge&lt;/b&gt; (standard; recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Koliada can teleport 8 squares and make a melee basic attack.&lt;/p&gt;]]  <b>Fey Charge</b> (standard; recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>Koliada can teleport 8 squares and make a melee basic attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Winter\"s Mistress&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;Koliada considers creatures encased in Koliada’s ice as allies for flanking purposes.&lt;/p&gt;]]  <b>Winter\"s Mistress</b> (standard; encounter) </p><p>Koliada considers creatures encased in Koliada’s ice as allies for flanking purposes.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Freezing Touch&lt;/b&gt; (minor 1/round, recharge ⚅&lt;/p&gt;&lt;p&gt;Target creatures slowed by the winter’s chill aura; +29 vs Fortitude; 2d6+9 Target creatures slowed by the winter’s chill aura; +29 vs. Fortitude; 2d6 + 9 cold damage, and ongoing 10 cold damage and the target is immobilized (save ends both). First Failed Saving Throw: The target takes ongoing 10 cold damage and is restrained instead of immobilized (save ends). Second Failed Saving Throw: The target is encased in Koliada’s ice until the end of the encounter. A creature encased in Koliada’s ice cannot take actions, gains resist 10 all, and is unaware of its surroundings. See also winter’s mistress, below. &lt;/p&gt;]] ⚔ <b>Freezing Touch</b> (minor 1/round, recharge ⚅</p><p>Target creatures slowed by the winter’s chill aura; [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Freezing Touch&lt;/b&gt; (minor 1/round, recharge ⚅&lt;/p&gt;&lt;p&gt;Target creatures slowed by the winter’s chill aura; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;; 2d6+9 Target creatures slowed by the winter’s chill aura; +29 vs. Fortitude; 2d6 + 9 cold damage, and ongoing 10 cold damage and the target is immobilized (save ends both). First Failed Saving Throw: The target takes ongoing 10 cold damage and is restrained instead of immobilized (save ends). Second Failed Saving Throw: The target is encased in Koliada’s ice until the end of the encounter. A creature encased in Koliada’s ice cannot take actions, gains resist 10 all, and is unaware of its surroundings. See also winter’s mistress, below. &lt;/p&gt;]]; [[/roll 2d6+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Freezing Touch&lt;/b&gt; (minor 1/round, recharge ⚅&lt;/p&gt;&lt;p&gt;Target creatures slowed by the winter’s chill aura; +29 vs Fortitude; 2d6+9 Target creatures slowed by the winter’s chill aura; +29 vs. Fortitude; 2d6 + 9 cold damage, and ongoing 10 cold damage and the target is immobilized (save ends both). First Failed Saving Throw: The target takes ongoing 10 cold damage and is restrained instead of immobilized (save ends). Second Failed Saving Throw: The target is encased in Koliada’s ice until the end of the encounter. A creature encased in Koliada’s ice cannot take actions, gains resist 10 all, and is unaware of its surroundings. See also winter’s mistress, below. &lt;/p&gt;]] <16>  Target creatures slowed by the winter’s chill aura; +29 vs. Fortitude; [[/roll 2d6 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Freezing Touch&lt;/b&gt; (minor 1/round, recharge ⚅&lt;/p&gt;&lt;p&gt;Target creatures slowed by the winter’s chill aura; +29 vs Fortitude; 2d6+9 Target creatures slowed by the winter’s chill aura; +29 vs. Fortitude; 2d6 + 9 cold damage, and ongoing 10 cold damage and the target is immobilized (save ends both). First Failed Saving Throw: The target takes ongoing 10 cold damage and is restrained instead of immobilized (save ends). Second Failed Saving Throw: The target is encased in Koliada’s ice until the end of the encounter. A creature encased in Koliada’s ice cannot take actions, gains resist 10 all, and is unaware of its surroundings. See also winter’s mistress, below. &lt;/p&gt;]] <16>  cold damage, and ongoing 10 cold damage and the target is immobilized (save ends both). First Failed Saving Throw: The target takes ongoing 10 cold damage and is restrained instead of immobilized (save ends). Second Failed Saving Throw: The target is encased in Koliada’s ice until the end of the encounter. A creature encased in Koliada’s ice cannot take actions, gains resist 10 all, and is unaware of its surroundings. See also winter’s mistress, below. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Chill of Black Ice&lt;/b&gt; (free action, when koliada hits a creature with sword of black ice; encounter) &lt;/p&gt;&lt;p&gt;The target is stunned (save ends).&lt;/p&gt;]]  <b>Chill of Black Ice</b> (free action, when koliada hits a creature with sword of black ice; encounter) </p><p>The target is stunned (save ends).</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Koliada hits a creature that grants her combat advantage, that creature takes 2d6 extra cold damage loses any cold resistance (save ends).&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>When Koliada hits a creature that grants her combat advantage, that creature takes [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Koliada hits a creature that grants her combat advantage, that creature takes 2d6 extra cold damage loses any cold resistance (save ends).&lt;/p&gt;]] <7> extra cold damage loses any cold resistance (save ends).</p></tr></td></table>",

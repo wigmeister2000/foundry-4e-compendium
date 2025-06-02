@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -547,7 +548,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pPjVg7KBOGrqZ0fm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -583,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 196; <b>Bloodied</b> 98</td><td style=\"padding-left: 15px;\"><b>Init</b> +20</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 32</td><td><b>Ref</b> 35</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+15)<br><b>Con</b> 20 (+15)</td><td><b>Dex</b> 26 (+18)<br><b>Int</b> 14 (+12)</td><td><b>Wis</b> 23 (+16)<br><b>Cha</b> 18 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> spiked gauntlet  x2.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 2d6+11 damage. &lt;/p&gt;]] (⚔) <b>Spiked Gauntlet</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 2d6+11 damage. &lt;/p&gt;]]; [[/roll 2d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 2d6+11 damage. &lt;/p&gt;]] <18>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bereaving Strike&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The sorrowsworn fleshripper teleports 5 squares and makes a spiked gauntlet attack with combat advantage.&lt;/p&gt;]] ⚔ <b>Bereaving Strike</b> (standard, recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>The sorrowsworn fleshripper teleports 5 squares and makes a spiked gauntlet attack with combat advantage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Corpse Dance&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The sorrowsworn initiate fleshripper shifts 8 squares and makes three spiked gauntlet attacks at any point during the move, dealing an extra 1d8 psychic damage on each attack. Each attack must be made against a different target.&lt;/p&gt;]] ⚔ <b>Corpse Dance</b> (standard, recharge ⚄⚅) ✦ <b>Psychic, Weapon</b></p><p>The sorrowsworn initiate fleshripper shifts 8 squares and makes three spiked gauntlet attacks at any point during the move, dealing an extra [[/roll 1d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Corpse Dance&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The sorrowsworn initiate fleshripper shifts 8 squares and makes three spiked gauntlet attacks at any point during the move, dealing an extra 1d8 psychic damage on each attack. Each attack must be made against a different target.&lt;/p&gt;]] <4.5> psychic damage on each attack. Each attack must be made against a different target.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The sorrowsworn fleshripper deals an extra 2d8 psychic damage to a target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b>✦ <b>Psychic</b></p><p>The sorrowsworn fleshripper deals an extra [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The sorrowsworn fleshripper deals an extra 2d8 psychic damage to a target it has combat advantage against.&lt;/p&gt;]] <9> psychic damage to a target it has combat advantage against.</p></tr></td></table>",

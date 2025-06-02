@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -950,23 +951,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 290; <b>Bloodied</b> 145</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 27</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 when mounted on steppe pony)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+15)<br><b>Con</b> 17 (+10)</td><td><b>Dex</b> 19 (+11)<br><b>Int</b> 14 (+9)</td><td><b>Wis</b> 15 (+9)<br><b>Cha</b> 18 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +20, Endurance +15, Nature +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> longspear .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d8+6 damage (crit 3d10 + 26). &lt;/p&gt;]] (⚔) <b>Longspear</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+6 damage (crit 3d10 + 26). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d8+6 damage (crit 3d10 + 26). &lt;/p&gt;]] <15>  damage (crit [[/roll 3d10 + 26#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d8+6 damage (crit 3d10 + 26). &lt;/p&gt;]] <42.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Saddleback Skewer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While mounted; Oshikam charges and makes a longspear attack. On a hit, the target is knocked prone, and Oshikam makes another longspear attack against a different target within reach&lt;/p&gt;]] ⚔ <b>Saddleback Skewer</b> (standard, at-will) ✦ <b>Weapon</b></p><p>While mounted; Oshikam charges and makes a longspear attack. On a hit, the target is knocked prone, and Oshikam makes another longspear attack against a different target within reach</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Jolting Hex&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Will; 2d8+6 lightning damage, and the target is marked until the end of Oshikam’s next turn. Using this power does not provoke opportunity attacks. &lt;/p&gt;]] ➶ <b>Jolting Hex</b> (minor, recharge ⚃⚄⚅) ✦ <b>Lightning</b></p><p>Ranged 10; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Jolting Hex&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+20 vs Will&lt;/u&gt;; 2d8+6 lightning damage, and the target is marked until the end of Oshikam’s next turn. Using this power does not provoke opportunity attacks. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Jolting Hex&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Will; 2d8+6 lightning damage, and the target is marked until the end of Oshikam’s next turn. Using this power does not provoke opportunity attacks. &lt;/p&gt;]] <15>  lightning damage, and the target is marked until the end of Oshikam’s next turn. Using this power does not provoke opportunity attacks. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vaegould Retribution&lt;/b&gt; (immediate reaction, when an ally within 5 squares is reduced to 0 hit points, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +18 vs Fortitude; 1d10+6 thunder damage, and the target is knocked prone. &lt;/p&gt;]] ᗕ <b>Vaegould Retribution</b> (immediate reaction, when an ally within 5 squares is reduced to 0 hit points, at-will) ✦ <b>Thunder</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vaegould Retribution&lt;/b&gt; (immediate reaction, when an ally within 5 squares is reduced to 0 hit points, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 1d10+6 thunder damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vaegould Retribution&lt;/b&gt; (immediate reaction, when an ally within 5 squares is reduced to 0 hit points, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +18 vs Fortitude; 1d10+6 thunder damage, and the target is knocked prone. &lt;/p&gt;]] <11.5>  thunder damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Call of the Warlord&lt;/b&gt; ( when bloodied) &lt;/p&gt;&lt;p&gt;At the start of its turn, the vaegould warlord calls into battle four additional vaegould warriors.&lt;/p&gt;]]  <b>Call of the Warlord</b> ( when bloodied) </p><p>At the start of its turn, the vaegould warlord calls into battle four additional vaegould warriors.</p></tr></td></table>",

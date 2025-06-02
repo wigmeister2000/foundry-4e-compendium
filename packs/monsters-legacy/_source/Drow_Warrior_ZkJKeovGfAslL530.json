@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -291,10 +292,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -546,7 +547,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nyFdicV0YJBkCr5I",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +583,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -592,7 +594,7 @@
 		},
 		{
 			"name":"Drow Poison",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qNIH6YkhVlCB0gyW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -628,7 +630,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -684,23 +687,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 83; <b>Bloodied</b> 41</td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 20</td><td><b>Ref</b> 22</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+7)<br><b>Con</b> 11 (+5)</td><td><b>Dex</b> 19 (+9)<br><b>Int</b> 13 (+6)</td><td><b>Wis</b> 13 (+6)<br><b>Cha</b> 12 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Dungeoneering +11, Intimidate +8, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> chainmail , crossbow , crossbow bolts (20) , rapier .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+4 damage and the drow warrior makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +13 vs Fortitude; see drow poison for the effect. &lt;/p&gt;]] (⚔) <b>Rapier</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 1d8+4 damage and the drow warrior makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+4 damage and the drow warrior makes a secondary attack against the same target. &lt;/p&gt;]] <8.5>  damage and the drow warrior makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; see drow poison for the effect. &lt;/p&gt;]]; see drow poison for the effect. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10/20; +14 vs AC; 1d6+4 damage, and the drow warrior makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary attack&lt;/i&gt; +13 vs Fortitude; see drow poison for the effect. &lt;/p&gt;]] ➶ <b>Hand Crossbow</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>Range 10/20; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10/20; &lt;u&gt;+14 vs AC&lt;/u&gt;; 1d6+4 damage, and the drow warrior makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10/20; +14 vs AC; 1d6+4 damage, and the drow warrior makes a secondary attack against the same target. &lt;/p&gt;]] <7.5>  damage, and the drow warrior makes a secondary attack against the same target. </p><p><i>Secondary attack</i> [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary attack&lt;/i&gt; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; see drow poison for the effect. &lt;/p&gt;]]; see drow poison for the effect. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Range 10; +12 vs Reflex; until the end of the drow warrior’s next turn, the target grants combat advantage to all attacks, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]] ➶ <b>Darkfire</b> (minor, encounter) </p><p>Range 10; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Range 10; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; until the end of the drow warrior’s next turn, the target grants combat advantage to all attacks, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]]; until the end of the drow warrior’s next turn, the target grants combat advantage to all attacks, and the target cannot benefit from invisibility or concealment. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The drow warrior deals an extra 2d6 damage on melee and ranged attacks against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The drow warrior deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The drow warrior deals an extra 2d6 damage on melee and ranged attacks against any target it has combat advantage against.&lt;/p&gt;]] <7> damage on melee and ranged attacks against any target it has combat advantage against.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drow Poison&lt;/b&gt;✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A creature hit by a weapon coated in drow poison takes a -2 penalty to attack rolls (save ends). First Failed Save: The target is also weakened (save ends). Second Failed Save: The target falls unconscious until the end of the encounter.&lt;/p&gt;]]  <b>Drow Poison</b>✦ <b>Poison</b></p><p>A creature hit by a weapon coated in drow poison takes a -2 penalty to attack rolls (save ends). First Failed Save: The target is also weakened (save ends). Second Failed Save: The target falls unconscious until the end of the encounter.</p></tr></td></table>",

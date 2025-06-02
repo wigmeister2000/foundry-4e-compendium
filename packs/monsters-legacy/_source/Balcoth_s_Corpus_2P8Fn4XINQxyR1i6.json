@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Titanic Heat",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DzYnby5XgdFw78jO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1134,7 +1137,7 @@
 		},
 		{
 			"name":"Mindless Rage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"R0n1a7IczHe92fol",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1170,7 +1173,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1226,23 +1230,10 @@
 				"max":10
 			},
 			"init":{
-				"value":19,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":19
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 952; <b>Bloodied</b> 476<hr><b>Vulnerable</b> cold (Balcoth’s corpus’s speed is 4 until the end of its next turn) <b>Immune</b> fear, fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +19 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 39</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (cannot shift)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 33 (+23)<br><b>Con</b> 30 (+22)</td><td><b>Dex</b> 24 (+19)<br><b>Int</b> 3 (+8)</td><td><b>Wis</b> 14 (+14)<br><b>Cha</b> 6 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +28, Endurance +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 20<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Titanic Heat&lt;/b&gt; (Fire) aura 5; any enemy that starts its turn in the aura takes 10 fire damage.]] <b>Titanic Heat</b> (Fire) aura 5; any enemy that starts its turn in the aura takes 10 fire damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smash&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 3d10+9 damage, and Balcoth pushes the target 3 squares and knocks the target prone. &lt;/p&gt;]] (⚔) <b>Smash</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smash&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+28 vs AC&lt;/u&gt;; 3d10+9 damage, and Balcoth pushes the target 3 squares and knocks the target prone. &lt;/p&gt;]]; [[/roll 3d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smash&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 3d10+9 damage, and Balcoth pushes the target 3 squares and knocks the target prone. &lt;/p&gt;]] <25.5>  damage, and Balcoth pushes the target 3 squares and knocks the target prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurled Magma&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +26 vs Reflex; 3d12+7 fire damage (crit 43 damage and the target is immobilized until the end of Balcoth’s next turn). &lt;/p&gt;]] (➶) <b>Hurled Magma</b> (standard, at-will) ✦ <b>Fire</b></p><p>Ranged 20; [[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurled Magma&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+26 vs Reflex&lt;/u&gt;; 3d12+7 fire damage (crit 43 damage and the target is immobilized until the end of Balcoth’s next turn). &lt;/p&gt;]]; [[/roll 3d12+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurled Magma&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +26 vs Reflex; 3d12+7 fire damage (crit 43 damage and the target is immobilized until the end of Balcoth’s next turn). &lt;/p&gt;]] <26.5>  fire damage (crit 43 damage and the target is immobilized until the end of Balcoth’s next turn). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Balcoth’s corpus moves its speed and can move through enemies’ spaces. It makes a stomp attack against any two enemies whose space it enters for the first time during this move, and then makes a smash or hurled magma attack after moving&lt;/p&gt;]] ⚔ <b>Trample</b> (standard, at-will) </p><p>Balcoth’s corpus moves its speed and can move through enemies’ spaces. It makes a stomp attack against any two enemies whose space it enters for the first time during this move, and then makes a smash or hurled magma attack after moving</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Magma Burst&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +26 vs Reflex; 4d8+10 fire damage plus ongoing 20 fire damage (save ends). First Failed Save: The target is also restrained (save ends). &lt;/p&gt;]] ᗕ <b>Magma Burst</b> (standard, recharge ⚄⚅) ✦ <b>Fire</b></p><p>Close burst 5; [[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Magma Burst&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+26 vs Reflex&lt;/u&gt;; 4d8+10 fire damage plus ongoing 20 fire damage (save ends). First Failed Save: The target is also restrained (save ends). &lt;/p&gt;]]; [[/roll 4d8+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Magma Burst&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +26 vs Reflex; 4d8+10 fire damage plus ongoing 20 fire damage (save ends). First Failed Save: The target is also restrained (save ends). &lt;/p&gt;]] <28>  fire damage plus ongoing 20 fire damage (save ends). First Failed Save: The target is also restrained (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Stomp&lt;/b&gt; (minor; 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 2d10+10 damage, plus 2d10 extra damage against a prone target. &lt;/p&gt;]] ⚔ <b>Stomp</b> (minor; 1/round, at-will) </p><p>Reach 2; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Stomp&lt;/b&gt; (minor; 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+28 vs AC&lt;/u&gt;; 2d10+10 damage, plus 2d10 extra damage against a prone target. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Stomp&lt;/b&gt; (minor; 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 2d10+10 damage, plus 2d10 extra damage against a prone target. &lt;/p&gt;]] <21>  damage, plus [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Stomp&lt;/b&gt; (minor; 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 2d10+10 damage, plus 2d10 extra damage against a prone target. &lt;/p&gt;]] <11> extra damage against a prone target. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Provoked Backhand&lt;/b&gt; (immediate reaction, when an enemy hits balcoth with a melee attack, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Reach 3; targets triggering enemy; +28 vs AC; 4d10+10 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Provoked Backhand</b> (immediate reaction, when an enemy hits balcoth with a melee attack, recharges when first bloodied) </p><p>Reach 3; targets triggering enemy; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Provoked Backhand&lt;/b&gt; (immediate reaction, when an enemy hits balcoth with a melee attack, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Reach 3; targets triggering enemy; &lt;u&gt;+28 vs AC&lt;/u&gt;; 4d10+10 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 4d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Provoked Backhand&lt;/b&gt; (immediate reaction, when an enemy hits balcoth with a melee attack, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Reach 3; targets triggering enemy; +28 vs AC; 4d10+10 damage, and the target is knocked prone. &lt;/p&gt;]] <32>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mindless Rage&lt;/b&gt; ( while bloodied) &lt;/p&gt;&lt;p&gt;Balcoth’s corpus deals 5 extra damage with every attack.&lt;/p&gt;]]  <b>Mindless Rage</b> ( while bloodied) </p><p>Balcoth’s corpus deals 5 extra damage with every attack.</p></tr></td></table>",

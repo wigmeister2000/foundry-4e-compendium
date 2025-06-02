@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Crumbled Stone",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tBN5ZR46dcIMgl2m",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -990,23 +992,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 632; <b>Bloodied</b> 316<hr><b>Immune</b> petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 33</td><td><b>Ref</b> 27</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+14)<br><b>Con</b> 22 (+14)</td><td><b>Dex</b> 8 (+7)<br><b>Int</b> 11 (+8)</td><td><b>Wis</b> 12 (+9)<br><b>Cha</b> 13 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Crumbled Stone&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While Stonefang is bloodied, he has a +2 bonus to speed, takes no movement or attack penalties for squeezing, and doesn’t grant combat advantage while squeezing.&lt;/p&gt;]]  <b>Crumbled Stone</b> <b></b></p><p>While Stonefang is bloodied, he has a +2 bonus to speed, takes no movement or attack penalties for squeezing, and doesn’t grant combat advantage while squeezing.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 14 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 14 damage.&lt;/p&gt;]] <30.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Stonefang makes two melee basic attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Stonefang makes two melee basic attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Rock&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 7 damage, and the target is dazed (save ends).&lt;/p&gt;]] ➶ <b>Hurl Rock</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Rock&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Rock&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 7 damage, and the target is dazed (save ends).&lt;/p&gt;]] <23.5>  damage, and the target is dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earth Shock&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (creatures in the burst); +19 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 8 damage, and the target is stunned until the end of Stonefang’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Earth Shock</b> ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 2 (creatures in the burst); [[/roll 1d20+19[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earth Shock&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (creatures in the burst); &lt;u&gt;+19 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earth Shock&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 8 damage, and the target is stunned until the end of Stonefang’s next turn.&lt;/p&gt;]] <30>  damage, and the target is stunned until the end of Stonefang’s next turn.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Stonefang’s Control&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy hits Stonefang with an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst sight (the triggering creature); +18 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated until the end of Stonefang’s next turn.&lt;/p&gt;]] ᗕ <b>Stonefang’s Control</b> (charm) ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy hits Stonefang with an attack.</p><p><i>Attack (Immediate Reaction):</i> Close burst sight (the triggering creature); [[/roll 1d20+18[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Stonefang’s Control&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst sight (the triggering creature); &lt;u&gt;+18 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated until the end of Stonefang’s next turn.</p></tr></td></table>",

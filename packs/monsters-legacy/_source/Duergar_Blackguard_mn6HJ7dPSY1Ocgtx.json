@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -772,23 +773,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 260; <b>Bloodied</b> 130<hr><b>Resist</b> 10 fire, 10 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 27</td><td><b>Ref</b> 25</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 11 (+6)<br><b>Int</b> 19 (+10)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 18 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Dwarven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Dungeoneering +15, Intimidate +15, Religion +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> heavy shield , plate armor , warhammer .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blighted Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 2d10+3 damage, and the duergar blackguard makes a secondary attack against the target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +16 vs Fortitude; the target takes ongoing 5 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] (⚔) <b>Blighted Warhammer</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blighted Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs AC&lt;/u&gt;; 2d10+3 damage, and the duergar blackguard makes a secondary attack against the target. &lt;/p&gt;]]; [[/roll 2d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blighted Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 2d10+3 damage, and the duergar blackguard makes a secondary attack against the target. &lt;/p&gt;]] <14>  damage, and the duergar blackguard makes a secondary attack against the target. </p><p><i>Secondary Attack</i> [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blighted Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; the target takes ongoing 5 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; the target takes ongoing 5 poison damage and a -2 penalty to attack rolls (save ends both). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Darkfire Mark&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets one enemy; until the end of the duergar blackguard’s next turn, the target is marked and gains no benefit from any concealment. In addition, if the target ends its next turn farther from the blackguard than it began the turn, or if it does not make an attack roll against the blackguard during its next turn, the target takes 10 fire and necrotic damage&lt;/p&gt;]] ᗕ <b>Darkfire Mark</b> (minor 1/round, at-will) ✦ <b>Fire, Necrotic</b></p><p>Close burst 10; targets one enemy; until the end of the duergar blackguard’s next turn, the target is marked and gains no benefit from any concealment. In addition, if the target ends its next turn farther from the blackguard than it began the turn, or if it does not make an attack roll against the blackguard during its next turn, the target takes 10 fire and necrotic damage</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Quill Burst&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets one enemy; +18 vs AC; 1d8+4 damage, and the target takes ongoing 5 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] ᗕ <b>Quill Burst</b> (minor, recharge ⚃⚄⚅) ✦ <b>Poison</b></p><p>Close burst 3; targets one enemy; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Quill Burst&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets one enemy; &lt;u&gt;+18 vs AC&lt;/u&gt;; 1d8+4 damage, and the target takes ongoing 5 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Quill Burst&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets one enemy; +18 vs AC; 1d8+4 damage, and the target takes ongoing 5 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] <8.5>  damage, and the target takes ongoing 5 poison damage and a -2 penalty to attack rolls (save ends both). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Infernal Footwork&lt;/b&gt; (immediate reaction, when an enemy adjacent to the duergar blackguard moves or shifts away from it; at-will) &lt;/p&gt;&lt;p&gt;The blackguard shifts 2 squares and must end the shift in a space adjacent to the triggering enemy. If the triggering enemy is marked by the duergar blackguard, the blackguard then uses blighted warhammer against the target as a free action.&lt;/p&gt;]]  <b>Infernal Footwork</b> (immediate reaction, when an enemy adjacent to the duergar blackguard moves or shifts away from it; at-will) </p><p>The blackguard shifts 2 squares and must end the shift in a space adjacent to the triggering enemy. If the triggering enemy is marked by the duergar blackguard, the blackguard then uses blighted warhammer against the target as a free action.</p></tr></td></table>",

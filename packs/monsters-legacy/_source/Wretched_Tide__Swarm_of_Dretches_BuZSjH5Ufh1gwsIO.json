@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"M3l6Oc95KnxZ2aev",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -331,10 +333,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -588,7 +590,7 @@
 		},
 		{
 			"name":"Abyssal Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"58BJgmHryP4s2hIb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -624,7 +626,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -634,7 +637,7 @@
 		},
 		{
 			"name":"Swarm Grab",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EjcXq4ZaDfdiwQlu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -670,7 +673,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -726,23 +730,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 384; <b>Bloodied</b> 192<hr><b>Resist</b> half damage from melee and ranged attacks, 10 variable (1/encounter) <b>Vulnerable</b> 10 against close and area attacks </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 21</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+6)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 8 (+3)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 8 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm Attack&lt;/b&gt; aura 1; an enemy that starts its turn within the aura takes 5 damage.]] <b>Swarm Attack</b> aura 1; an enemy that starts its turn within the aura takes 5 damage.</p><hr><table><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Claws&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature that is not grabbed by the wretched tide; +16 vs AC; 2d6+7 damage, and the target is grabbed. A creature grabbed by the wretched tide cannot make opportunity attacks against it. &lt;/p&gt;]] (⚔) <b>Swarm of Claws</b> (minor, at-will) </p><p>Targets a creature that is not grabbed by the wretched tide; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Claws&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature that is not grabbed by the wretched tide; &lt;u&gt;+16 vs AC&lt;/u&gt;; 2d6+7 damage, and the target is grabbed. A creature grabbed by the wretched tide cannot make opportunity attacks against it. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Claws&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature that is not grabbed by the wretched tide; +16 vs AC; 2d6+7 damage, and the target is grabbed. A creature grabbed by the wretched tide cannot make opportunity attacks against it. &lt;/p&gt;]] <14>  damage, and the target is grabbed. A creature grabbed by the wretched tide cannot make opportunity attacks against it. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Engulf&lt;/b&gt; (minor; must not have a creature restrained, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the wretched tide; +10 vs Fortitude; the target is pulled into the center square of the wretched tide’s space and takes ongoing 10 damage and is restrained (save ends both). While the target is restrained, it remains at the center of the wretched tide’s space when the swarm moves, it cannot make opportunity attacks, and the target doesn’t have line of sight or line of effect to anything other than the swarm. When the target saves, it slides to a square of its choice that is adjacent to the swarm. &lt;/p&gt;]] ⚔ <b>Engulf</b> (minor; must not have a creature restrained, at-will) </p><p>Targets a creature grabbed by the wretched tide; [[/roll 1d20+10[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Engulf&lt;/b&gt; (minor; must not have a creature restrained, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the wretched tide; &lt;u&gt;+10 vs Fortitude&lt;/u&gt;; the target is pulled into the center square of the wretched tide’s space and takes ongoing 10 damage and is restrained (save ends both). While the target is restrained, it remains at the center of the wretched tide’s space when the swarm moves, it cannot make opportunity attacks, and the target doesn’t have line of sight or line of effect to anything other than the swarm. When the target saves, it slides to a square of its choice that is adjacent to the swarm. &lt;/p&gt;]]; the target is pulled into the center square of the wretched tide’s space and takes ongoing 10 damage and is restrained (save ends both). While the target is restrained, it remains at the center of the wretched tide’s space when the swarm moves, it cannot make opportunity attacks, and the target doesn’t have line of sight or line of effect to anything other than the swarm. When the target saves, it slides to a square of its choice that is adjacent to the swarm. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vile Death&lt;/b&gt; ( when the wretch tide drops to 0 hit points, ) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +10 vs Fortitude; 3d8+5 poison damage. &lt;/p&gt;]] ᗕ <b>Vile Death</b> ( when the wretch tide drops to 0 hit points, ) ✦ <b>Poison</b></p><p>Close burst 2; [[/roll 1d20+10[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vile Death&lt;/b&gt; ( when the wretch tide drops to 0 hit points, ) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+10 vs Fortitude&lt;/u&gt;; 3d8+5 poison damage. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vile Death&lt;/b&gt; ( when the wretch tide drops to 0 hit points, ) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +10 vs Fortitude; 3d8+5 poison damage. &lt;/p&gt;]] <18.5>  poison damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Abyssal Fury&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The wretched tide gains one extra minor action per turn.&lt;/p&gt;]]  <b>Abyssal Fury</b> (while bloodied) </p><p>The wretched tide gains one extra minor action per turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swarm Grab&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wretched tide does not need to spend a minor action to sustain a grab, and if the wretched tide moves away from a creature that it has grabbed, the grab does not end unless the wretched tide is no longer adjacent to the grabbed creature.&lt;/p&gt;]]  <b>Swarm Grab</b></p><p>The wretched tide does not need to spend a minor action to sustain a grab, and if the wretched tide moves away from a creature that it has grabbed, the grab does not end unless the wretched tide is no longer adjacent to the grabbed creature.</p></tr></td></table>",

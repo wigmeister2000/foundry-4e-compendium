@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Hyrsam's Song",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pxM3l1JGuKtFCDhc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Revel Leader",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vC5EN1rAJXfaKU0o",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,7 +334,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1044,23 +1048,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 215; <b>Bloodied</b> 107</td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 34</td><td><b>Ref</b> 35</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+15)<br><b>Con</b> 23 (+17)</td><td><b>Dex</b> 24 (+18)<br><b>Int</b> 21 (+16)</td><td><b>Wis</b> 22 (+17)<br><b>Cha</b> 27 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +24, Diplomacy +24, Stealth +23, Thievery +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> fiddle, fiddlestick, horn of revelry</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Hyrsam\"s Song&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Any ally that starts its turn in the aura can make a saving throw against one effect that a save can end. Any enemy in the aura cannot take actions during Hyrsam’s turn. This aura deactivates if Hyrsam cannot take actions.&lt;/p&gt;]] ⌀ <b>Hyrsam\"s Song</b> ✦ <b>Aura</b> 5</p><p>Any ally that starts its turn in the aura can make a saving throw against one effect that a save can end. Any enemy in the aura cannot take actions during Hyrsam’s turn. This aura deactivates if Hyrsam cannot take actions.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Revel Leader&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Hyrsam is not deafened, at the start of each of his turns, he can make a saving throw against one effect that a save can end. He can make a saving throw to end being slowed, immobilized, or restrained, even if the effect does not normally end on a save.&lt;/p&gt;]]  <b>Revel Leader</b> <b></b></p><p>If Hyrsam is not deafened, at the start of each of his turns, he can make a saving throw against one effect that a save can end. He can make a saving throw to end being slowed, immobilized, or restrained, even if the effect does not normally end on a save.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiddlestick&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Hyrsam shifts up to half his speed before the attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +28 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 18 damage.&lt;/p&gt;]] (⚔) <b>Fiddlestick</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Hyrsam shifts up to half his speed before the attack.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+28[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiddlestick&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+28 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 18#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiddlestick&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 18 damage.&lt;/p&gt;]] <31.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Discordant Note&lt;/b&gt; (psychic, thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +26 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 19 psychic and thunder damage.&lt;/p&gt;]] (➶) <b>Discordant Note</b> (psychic, thunder) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+26[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Discordant Note&lt;/b&gt; (psychic, thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+26 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 19#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Discordant Note&lt;/b&gt; (psychic, thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 19 psychic and thunder damage.&lt;/p&gt;]] <30>  psychic and thunder damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Hyrsam makes two basic attacks.&lt;/p&gt;]]  <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Hyrsam makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Irresistible Dance&lt;/b&gt; (charm, psychic, thunder) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +26 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 19 psychic and thunder damage, and the target is dazed until the end of Hyrsam’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The target moves its speed as a free action.&lt;/p&gt;]] ᗕ <b>Irresistible Dance</b> (charm, psychic, thunder) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+26[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Irresistible Dance&lt;/b&gt; (charm, psychic, thunder) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+26 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 19#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Irresistible Dance&lt;/b&gt; (charm, psychic, thunder) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 19 psychic and thunder damage, and the target is dazed until the end of Hyrsam’s next turn.&lt;/p&gt;]] <23.5>  psychic and thunder damage, and the target is dazed until the end of Hyrsam’s next turn.</p><p><i>Miss:</i> Half damage.</p><p><i>Effect:</i> The target moves its speed as a free action.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Music Never Dies&lt;/b&gt; (healing, teleportation) ✦ &lt;b&gt;Daily&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Hyrsam is not deafened and drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; All effects on Hyrsam end, he regains all his hit points, and he teleports up to 20 squares without needing to see his destination.&lt;/p&gt;]]  <b>Music Never Dies</b> (healing, teleportation) ✦ <b>Daily</b></p><p><i>Trigger:</i> Hyrsam is not deafened and drops to 0 hit points.</p><p><i>Effect (No Action):</i> All effects on Hyrsam end, he regains all his hit points, and he teleports up to 20 squares without needing to see his destination.</p></tr></td></table>",

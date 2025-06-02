@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Airstrider",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hs7qDaVCGviTWR5X",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1172,23 +1174,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 110; <b>Bloodied</b> 55<b>; Surge</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35 (2)</td><td><b>Fort</b> 34</td><td><b>Ref</b> 36</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+12)<br><b>Con</b> 16 (+14)</td><td><b>Dex</b> 12 (+12)<br><b>Int</b> 24 (+18)</td><td><b>Wis</b> 20 (+16)<br><b>Cha</b> 12 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +23, History +23, Nature +21, Religion +23</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> robes, thunderhawk symbol, airstriders, staff implement .</p><p>[[/roll 0#&lt;b&gt;Healing Surges&lt;/b&gt; 9]] <b>Healing Surges</b> 9</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Airstrider&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Emeth takes no damage from any fall and always lands on his feet.&lt;/p&gt;]]  <b>Airstrider</b> <b></b></p><p>Emeth takes no damage from any fall and always lands on his feet.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +28 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 damage.&lt;/p&gt;]] (⚔) <b>Staff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+28[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+28 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 12 damage.&lt;/p&gt;]] <21>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunderwave&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +26 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 18 thunder damage, and Emeth pushes the target up to 5 squares.&lt;/p&gt;]] ᗕ <b>Thunderwave</b> (thunder) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+26[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunderwave&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+26 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 18#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunderwave&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 18 thunder damage, and Emeth pushes the target up to 5 squares.&lt;/p&gt;]] <25>  thunder damage, and Emeth pushes the target up to 5 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Protective Fog&lt;/b&gt; (zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Area burst 2 within 5; the burst creates a zone that lasts until the end of Emeth’s next turn. Any enemy treats the zone as heavily obscured and difficult terrain.&lt;/p&gt;]] ✻ <b>Protective Fog</b> (zone) ✦ <b>At-Will</b></p><p><i>Effect:</i> Area burst 2 within 5; the burst creates a zone that lasts until the end of Emeth’s next turn. Any enemy treats the zone as heavily obscured and difficult terrain.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Rapid Flight&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ranged 10 (one creature). Until the end of Emeth’s next turn, the target gains a fly speed equal to its speed + 2 and can hover.&lt;/p&gt;]] ➶ <b>Rapid Flight</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Ranged 10 (one creature). Until the end of Emeth’s next turn, the target gains a fly speed equal to its speed + 2 and can hover.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Walk On Air&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Emeth flies up to his speed + 2, but he must end each turn on a solid surface or fall.&lt;/p&gt;]]  <b>Walk On Air</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Emeth flies up to his speed + 2, but he must end each turn on a solid surface or fall.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Float&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Emeth falls.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Emeth instead hovers in place until the end of his next turn or until he ends this effect as a free action.&lt;/p&gt;]]  <b>Float</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> Emeth falls.</p><p><i>Effect (Free Action):</i> Emeth instead hovers in place until the end of his next turn or until he ends this effect as a free action.</p></tr></td></table>",

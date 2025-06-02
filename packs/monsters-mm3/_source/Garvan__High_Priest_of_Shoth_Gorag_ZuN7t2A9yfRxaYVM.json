@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Mind Mire",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"sq0jxJUbZHPM94O8",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -818,23 +820,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 228; <b>Bloodied</b> 114</td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 24</td><td><b>Ref</b> 23</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+8)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 12 (+6)<br><b>Int</b> 16 (+8)</td><td><b>Wis</b> 13 (+6)<br><b>Cha</b> 21 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +13, Intimidate +15, Religion +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> chainmail ,  heavy mace.</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Mind Mire&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn in the aura is slowed until the start of its next turn.&lt;/p&gt;]] ⌀ <b>Mind Mire</b> ✦ <b>Aura</b> 2</p><p>Any enemy that starts its turn in the aura is slowed until the start of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heavy Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 8 damage.&lt;/p&gt;]] (⚔) <b>Heavy Mace</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heavy Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heavy Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 8 damage.&lt;/p&gt;]] <19>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind-Bending Whispers&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +14 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target takes ongoing 15 psychic damage and is dazed (save ends both).&lt;/p&gt;]] ᗕ <b>Mind-Bending Whispers</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+14[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind-Bending Whispers&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+14 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target takes ongoing 15 psychic damage and is dazed (save ends both).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Compelling Whispers&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 2 (dazed enemies in the burst); Garvan slides the target up to 3 squares.&lt;/p&gt;]] ᗕ <b>Compelling Whispers</b> (charm) ✦ <b>At-Will</b> (1/round)</p><p><i>Effect:</i> Close burst 2 (dazed enemies in the burst); Garvan slides the target up to 3 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Grasping Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one or two creatures); +14 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Garvan slides the target up to 3 squares. If Garvan slides a target adjacent to him, he can use heavy mace against it once as a free action.&lt;/p&gt;]] ⚔ <b>Grasping Tentacles</b> ✦ <b>At-Will</b> (1/round)</p><p><i>Attack:</i> Melee 3 (one or two creatures); [[/roll 1d20+14[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Grasping Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one or two creatures); &lt;u&gt;+14 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Garvan slides the target up to 3 squares. If Garvan slides a target adjacent to him, he can use heavy mace against it once as a free action.</p></tr></td></table>",

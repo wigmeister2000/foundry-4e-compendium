@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Marsh Mist",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2aDmEyx43sUp1KBT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 53; <b>Bloodied</b> 26</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 15</td><td><b>Ref</b> 15</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (swamp walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+3)<br><b>Con</b> 13 (+3)</td><td><b>Dex</b> 12 (+3)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 17 (+5)<br><b>Cha</b> 11 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Nature +10, Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> spear .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Marsh Mist&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 10&lt;/p&gt;&lt;p&gt;While in the aura, the marsh mystic’s allies cannot be surprised and have a +5 power bonus to Perception checks and Stealth checks.&lt;/p&gt;]] ⌀ <b>Marsh Mist</b> ✦ <b>Aura</b> 10</p><p>While in the aura, the marsh mystic’s allies cannot be surprised and have a +5 power bonus to Perception checks and Stealth checks.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage, and the marsh mystic can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Spear</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage, and the marsh mystic can slide the target 1 square.&lt;/p&gt;]] <12>  damage, and the marsh mystic can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Fastlight Shock&lt;/b&gt; (lightning, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +7 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 lightning and radiant damage, and the target is immobilized until the end of the marsh mystic’s next turn. If the target was already immobilized, it is instead dazed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The target is slowed until the end of the marsh mystic’s next turn.&lt;/p&gt;]] ➶ <b>Fastlight Shock</b> (lightning, radiant) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+7[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Fastlight Shock&lt;/b&gt; (lightning, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+7 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Fastlight Shock&lt;/b&gt; (lightning, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 lightning and radiant damage, and the target is immobilized until the end of the marsh mystic’s next turn. If the target was already immobilized, it is instead dazed.&lt;/p&gt;]] <13>  lightning and radiant damage, and the target is immobilized until the end of the marsh mystic’s next turn. If the target was already immobilized, it is instead dazed.</p><p><i>Miss:</i> The target is slowed until the end of the marsh mystic’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Bog Cloud&lt;/b&gt; (poison) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); +7 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 poison damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the target grants combat advantage (save ends).&lt;/p&gt;]] ✻ <b>Bog Cloud</b> (poison) ✦ <b>Encounter</b></p><p><i>Attack:</i> Area burst 1 within 10 (creatures in the burst); [[/roll 1d20+7[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Bog Cloud&lt;/b&gt; (poison) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); &lt;u&gt;+7 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Bog Cloud&lt;/b&gt; (poison) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 poison damage, and the target is dazed (save ends).&lt;/p&gt;]] <12>  poison damage, and the target is dazed (save ends).</p><p><i>Miss:</i> Half damage, and the target grants combat advantage (save ends).</p></tr></td></table>",

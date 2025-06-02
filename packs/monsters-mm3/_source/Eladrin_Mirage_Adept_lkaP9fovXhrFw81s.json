@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -775,23 +776,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 80; <b>Bloodied</b> 40</td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>Save</b> +5 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 20</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+4)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 19 (+7)</td><td><b>Wis</b> 13 (+4)<br><b>Cha</b> 16 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +12, History +12, Nature +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> dagger , leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (psychic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +12 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 psychic damage, and the target is slowed until the end of its next turn.&lt;/p&gt;]] (⚔) <b>Dagger</b> (psychic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+12[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (psychic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+12 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (psychic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 4 psychic damage, and the target is slowed until the end of its next turn.&lt;/p&gt;]] <14>  psychic damage, and the target is slowed until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Deluding Whispers&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +11 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 psychic damage, and the adept slides the target 3 squares. Until the end of the target’s next turn, the target cannot see creatures that are not adjacent to it.&lt;/p&gt;]] ➶ <b>Deluding Whispers</b> (charm, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+11[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Deluding Whispers&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+11 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Deluding Whispers&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 psychic damage, and the adept slides the target 3 squares. Until the end of the target’s next turn, the target cannot see creatures that are not adjacent to it.&lt;/p&gt;]] <15>  psychic damage, and the adept slides the target 3 squares. Until the end of the target’s next turn, the target cannot see creatures that are not adjacent to it.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Phantom Foes&lt;/b&gt; (illusion, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 20 (enemies in the burst); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 psychic damage, and the target is confused (save ends). While confused, whenever it targets an enemy with a melee or a ranged attack and one of its allies is also within range of that attack, roll a d20; on a result of 10 or higher, the target instead makes the attack against its nearest ally in range.&lt;/p&gt;]] ✻ <b>Phantom Foes</b> (illusion, psychic) ✦ Recharge ⚅</p><p><i>Attack:</i> Area burst 2 within 20 (enemies in the burst); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Phantom Foes&lt;/b&gt; (illusion, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 20 (enemies in the burst); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Phantom Foes&lt;/b&gt; (illusion, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 psychic damage, and the target is confused (save ends). While confused, whenever it targets an enemy with a melee or a ranged attack and one of its allies is also within range of that attack, roll a d20; on a result of 10 or higher, the target instead makes the attack against its nearest ally in range.&lt;/p&gt;]] <18.5>  psychic damage, and the target is confused (save ends). While confused, whenever it targets an enemy with a melee or a ranged attack and one of its allies is also within range of that attack, roll a [[/roll d20#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Phantom Foes&lt;/b&gt; (illusion, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 psychic damage, and the target is confused (save ends). While confused, whenever it targets an enemy with a melee or a ranged attack and one of its allies is also within range of that attack, roll a d20; on a result of 10 or higher, the target instead makes the attack against its nearest ally in range.&lt;/p&gt;]] <10.5> ; on a result of 10 or higher, the target instead makes the attack against its nearest ally in range.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The adept teleports 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> The adept teleports 5 squares.</p></tr></td></table>",

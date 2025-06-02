@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -773,23 +774,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 44; <b>Bloodied</b> 22<hr><b>Resist</b> 5 psychic <b>Immune</b> charm, disease, fear, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+1)<br><b>Con</b> 12 (+2)</td><td><b>Dex</b> 14 (+3)<br><b>Int</b> 9 (0)</td><td><b>Wis</b> 13 (+2)<br><b>Cha</b> 18 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, telepathy 10<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Diplomacy +10, Insight +7</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Slam&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 6 psychic damage, and the target takes a -2 penalty to Will until the end of the magen’s next turn.&lt;/p&gt;]] (⚔) <b>Psychic Slam</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Slam&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d4 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Slam&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 6 psychic damage, and the target takes a -2 penalty to Will until the end of the magen’s next turn.&lt;/p&gt;]] <11>  psychic damage, and the target takes a -2 penalty to Will until the end of the magen’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Suggestion&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one enemy); +6 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The magen slides the target up to 3 squares. The target must then use a free action to make a melee basic attack against a creature of the magen’s choice.&lt;/p&gt;]] ➶ <b>Suggestion</b> (charm) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one enemy); [[/roll 1d20+6[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Suggestion&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one enemy); &lt;u&gt;+6 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The magen slides the target up to 3 squares. The target must then use a free action to make a melee basic attack against a creature of the magen’s choice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Overwhelming Command&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +6 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Aftereffect:&lt;/i&gt; Ongoing 5 psychic damage (save ends).&lt;/p&gt;]] ➶ <b>Overwhelming Command</b> (charm, psychic) ✦ <b>Recharge</b> if the power misses</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+6[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Overwhelming Command&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+6 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated (save ends).</p><p><i>Aftereffect:</i> Ongoing 5 psychic damage (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Magic Feedback&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An arcane attack hits the magen.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Close burst 5 (enemies in the burst); ongoing 5 psychic damage (save ends).&lt;/p&gt;]] ᗕ <b>Magic Feedback</b> (psychic) ✦ <b>Encounter</b></p><p><i>Trigger:</i> An arcane attack hits the magen.</p><p><i>Effect (Immediate Reaction):</i> Close burst 5 (enemies in the burst); ongoing 5 psychic damage (save ends).</p></tr></td></table>",

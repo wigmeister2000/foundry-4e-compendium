@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Pit of Despair",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FjwNkOs8R2CnzaKY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3CFr4hSYkam685Zd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Double Actions",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"m1uxyo0it634ZGYv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Dual Brain",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FwqzkacoELHOJnvp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -245,7 +249,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -938,7 +943,7 @@
 				"uses":{
 					"value":3,
 					"max":"3",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -1130,23 +1135,10 @@
 				"max":10
 			},
 			"init":{
-				"value":26,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":26
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 546; <b>Bloodied</b> 273</td><td style=\"padding-left: 15px;\"><b>Init</b> +26 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 40</td><td><b>Ref</b> 40</td><td><b>Will</b> 44</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, swim 8, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 34 (+27)<br><b>Con</b> 25 (+22)</td><td><b>Dex</b> 29 (+24)<br><b>Int</b> 19 (+19)</td><td><b>Wis</b> 20 (+20)<br><b>Cha</b> 31 (+25)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Intimidate +30</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Pit of Despair&lt;/b&gt; (fear) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any enemy within the aura that misses with an attack takes a -2 penalty to attack rolls against the abyssal wurm until the end of the enemy’s next turn.&lt;/p&gt;]] ⌀ <b>Pit of Despair</b> (fear) ✦ <b>Aura</b> 2</p><p>Any enemy within the aura that misses with an attack takes a -2 penalty to attack rolls against the abyssal wurm until the end of the enemy’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the abyssal wurm.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the abyssal wurm.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of combat, the abyssal wurm makes two initiative checks. Each check corresponds to one of its heads, and the wurm takes a turn on both initiative counts. It has a full set of actions on each of its turns, and its ability to take an immediate action refreshes on each turn.&lt;/p&gt;]]  <b>Double Actions</b> <b></b></p><p>At the start of combat, the abyssal wurm makes two initiative checks. Each check corresponds to one of its heads, and the wurm takes a turn on both initiative counts. It has a full set of actions on each of its turns, and its ability to take an immediate action refreshes on each turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dual Brain&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the end of each of its turns, the abyssal wurm saves against effects that include the dazed or stunned condition and against charm effects.&lt;/p&gt;]]  <b>Dual Brain</b> <b></b></p><p>At the end of each of its turns, the abyssal wurm saves against effects that include the dazed or stunned condition and against charm effects.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +35 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 11 damage.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+35[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+35 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 11 damage.&lt;/p&gt;]] <38>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (varies) ✦ &lt;b&gt;Recharge 6 , or recharge 5 while bloodied&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +33 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 12 acid, cold, fire, lightning, or thunder damage, and the target takes a -4 penalty to AC (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The wurm dissolves into a torrent of elements and flows with its breath weapon. The wurm moves instantaneously from its current location to a square adjacent to the area of the blast.&lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (varies) ✦ <b>Recharge 6 , or recharge 5 while bloodied</b></p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (varies) ✦ &lt;b&gt;Recharge 6 , or recharge 5 while bloodied&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+33 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d12 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (varies) ✦ &lt;b&gt;Recharge 6 , or recharge 5 while bloodied&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 12 acid, cold, fire, lightning, or thunder damage, and the target takes a -4 penalty to AC (save ends).&lt;/p&gt;]] <38>  acid, cold, fire, lightning, or thunder damage, and the target takes a -4 penalty to AC (save ends).</p><p><i>Effect:</i> The wurm dissolves into a torrent of elements and flows with its breath weapon. The wurm moves instantaneously from its current location to a square adjacent to the area of the blast.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Suicidal Presence&lt;/b&gt; (charm) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); +33 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated until the end of its next turn. For its action, the dominated creature uses one of its at-will powers of the wurm’s choice against itself.&lt;/p&gt;]] ᗕ <b>Suicidal Presence</b> (charm) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 5 (enemies in the burst); [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Suicidal Presence&lt;/b&gt; (charm) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+33 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated until the end of its next turn. For its action, the dominated creature uses one of its at-will powers of the wurm’s choice against itself.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The wurm is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The wurm’s breath weapon recharges, and the wurm uses it.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The wurm is first bloodied.</p><p><i>Effect (Free Action):</i> The wurm’s breath weapon recharges, and the wurm uses it.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;3/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The wurm takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The wurm gains resist 20 to the triggering damage type until the end of the encounter or until it uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>3/Encounter</b></p><p><i>Trigger:</i> The wurm takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The wurm gains resist 20 to the triggering damage type until the end of the encounter or until it uses variable resistance again.</p></tr></td></table>",

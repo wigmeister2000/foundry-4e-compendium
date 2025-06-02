@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Suffocating Fume",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WC5TASJNPgGbLjp2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1058,10 +1061,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1181,23 +1184,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 464; <b>Bloodied</b> 232<hr><b>Immune</b> disease, fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 35</td><td><b>Ref</b> 39</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (hover); see also ride the smoke</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+13)<br><b>Con</b> 24 (+19)</td><td><b>Dex</b> 19 (+16)<br><b>Int</b> 28 (+21)</td><td><b>Wis</b> 21 (+17)<br><b>Cha</b> 26 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +26, Bluff +25, Diplomacy +25, Insight +22</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 27 | Insight 32</td></td></tr></table><p><b>Equipment</b> ashen rapier</p><p>[[/roll 0#&lt;b&gt;Suffocating Fume&lt;/b&gt; aura 2; each living enemy that enters or starts its turn within the aura begins to cough uncontrollably. Until the start of its next turn, it grants combat advantage and cannot spend healing surges.]] <b>Suffocating Fume</b> aura 2; each living enemy that enters or starts its turn within the aura begins to cough uncontrollably. Until the start of its next turn, it grants combat advantage and cannot spend healing surges.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ashen Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs Reflex; 2d10+10 damage, and Ehkahk slides the target 1 square and can then shift 1 square as a free action. &lt;/p&gt;]] (⚔) <b>Ashen Rapier</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ashen Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+29 vs Reflex&lt;/u&gt;; 2d10+10 damage, and Ehkahk slides the target 1 square and can then shift 1 square as a free action. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ashen Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs Reflex; 2d10+10 damage, and Ehkahk slides the target 1 square and can then shift 1 square as a free action. &lt;/p&gt;]] <21>  damage, and Ehkahk slides the target 1 square and can then shift 1 square as a free action. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ashen Plume&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; targets one or two creatures; +29 vs Fortitude; 1d10+10 fire and poison damage, and the target is blinded (save ends). &lt;/p&gt;]] (➶) <b>Ashen Plume</b> (standard, at-will) ✦ <b>Fire, Poison</b></p><p>Ranged 15; targets one or two creatures; [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ashen Plume&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; targets one or two creatures; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;; 1d10+10 fire and poison damage, and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 1d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ashen Plume&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; targets one or two creatures; +29 vs Fortitude; 1d10+10 fire and poison damage, and the target is blinded (save ends). &lt;/p&gt;]] <15.5>  fire and poison damage, and the target is blinded (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Consuming Smoke&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Poison, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; +31 vs Fortitude; 1d10+10 fire damage, and the target disappears until the start of Ehkahk’s next turn. The target reappears prone in a space of Ehkahk’s choice within 15 squares of him that does not include hindering terrain, and Ehkahk makes a secondary attack that is a close burst 1 centered on the target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; +28 vs Fortitude; 3d10+10 poison damage. The area within the burst is heavily obscured by thick smoke until the start of Ehkahk’s next turn. &lt;/p&gt;]] ➶ <b>Consuming Smoke</b> (standard, recharge ⚃⚄⚅) ✦ <b>Fire, Poison, Teleportation</b></p><p>Ranged 15; [[/roll 1d20+31[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Consuming Smoke&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Poison, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; &lt;u&gt;+31 vs Fortitude&lt;/u&gt;; 1d10+10 fire damage, and the target disappears until the start of Ehkahk’s next turn. The target reappears prone in a space of Ehkahk’s choice within 15 squares of him that does not include hindering terrain, and Ehkahk makes a secondary attack that is a close burst 1 centered on the target. &lt;/p&gt;]]; [[/roll 1d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Consuming Smoke&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Poison, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; +31 vs Fortitude; 1d10+10 fire damage, and the target disappears until the start of Ehkahk’s next turn. The target reappears prone in a space of Ehkahk’s choice within 15 squares of him that does not include hindering terrain, and Ehkahk makes a secondary attack that is a close burst 1 centered on the target. &lt;/p&gt;]] <15.5>  fire damage, and the target disappears until the start of Ehkahk’s next turn. The target reappears prone in a space of Ehkahk’s choice within 15 squares of him that does not include hindering terrain, and Ehkahk makes a secondary attack that is a close burst 1 centered on the target. </p><p><i>Secondary Attack:</i> [[/roll 1d20+28[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Consuming Smoke&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Poison, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; &lt;u&gt;+28 vs Fortitude&lt;/u&gt;; 3d10+10 poison damage. The area within the burst is heavily obscured by thick smoke until the start of Ehkahk’s next turn. &lt;/p&gt;]]; [[/roll 3d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Consuming Smoke&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Poison, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; +28 vs Fortitude; 3d10+10 poison damage. The area within the burst is heavily obscured by thick smoke until the start of Ehkahk’s next turn. &lt;/p&gt;]] <26.5>  poison damage. The area within the burst is heavily obscured by thick smoke until the start of Ehkahk’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Venomous Vapors&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three area bursts 1 within 15 that do not overlap; +28 vs Reflex; 4d8+10 fire and poison damage, and the target is blinded (save ends). Miss: Half damage, and the target is blinded until the end of Ehkahk’s next turn. &lt;/p&gt;]] ✻ <b>Venomous Vapors</b> (standard, encounter) ✦ <b>Fire, Poison</b></p><p>Three area bursts 1 within 15 that do not overlap; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Venomous Vapors&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three area bursts 1 within 15 that do not overlap; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 4d8+10 fire and poison damage, and the target is blinded (save ends). Miss: Half damage, and the target is blinded until the end of Ehkahk’s next turn. &lt;/p&gt;]]; [[/roll 4d8+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Venomous Vapors&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three area bursts 1 within 15 that do not overlap; +28 vs Reflex; 4d8+10 fire and poison damage, and the target is blinded (save ends). Miss: Half damage, and the target is blinded until the end of Ehkahk’s next turn. &lt;/p&gt;]] <28>  fire and poison damage, and the target is blinded (save ends). Miss: Half damage, and the target is blinded until the end of Ehkahk’s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Choking Kennel&lt;/b&gt; (minor, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Four smoke hounds appear, each in an unoccupied space within 15 squares of Ehkahk. The smoke hounds take their turns immediately after Ehkahk’s initiative count. They remain until they are killed, until Ehkahk uses a free action to dismiss them, or until the end of the encounter. Characters do not gain experience points for killing smoke hounds summoned by this power&lt;/p&gt;]] ➶ <b>Choking Kennel</b> (minor, recharges when first bloodied) </p><p>Four smoke hounds appear, each in an unoccupied space within 15 squares of Ehkahk. The smoke hounds take their turns immediately after Ehkahk’s initiative count. They remain until they are killed, until Ehkahk uses a free action to dismiss them, or until the end of the encounter. Characters do not gain experience points for killing smoke hounds summoned by this power</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Ride the Smoke&lt;/b&gt; (move, recharge ⚄⚅) ✦ &lt;b&gt;Teleportation, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 4 within 20; the burst creates a zone of thick smoke that lasts until the end of Ehkahk’s next turn. Ehkahk and each adjacent ally of his choice teleport to spaces of his choice within the zone. The zone’s area is heavily obscured to enemies&lt;/p&gt;]] ✻ <b>Ride the Smoke</b> (move, recharge ⚄⚅) ✦ <b>Teleportation, Zone</b></p><p>Area burst 4 within 20; the burst creates a zone of thick smoke that lasts until the end of Ehkahk’s next turn. Ehkahk and each adjacent ally of his choice teleport to spaces of his choice within the zone. The zone’s area is heavily obscured to enemies</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"r0TVUwi6dqWuS3YO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -409,7 +411,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"JmGSybdLK7PsnCqx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -445,7 +447,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -455,7 +458,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TqPLhdbNMX1jpVk4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -491,7 +494,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -501,7 +505,7 @@
 		},
 		{
 			"name":"Vicious Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"03X7UDOZAaCNqiyd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -537,7 +541,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -593,23 +598,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 242; <b>Bloodied</b> 121<br><b>Regeneration</b> 20<hr><b>Vulnerable</b> acid or fire (if the battlesworn war troll defender takes acid or fire damage, its regeneration doesn’t function until the end of its next turn) </td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 40</td><td><b>Ref</b> 36</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+23)<br><b>Con</b> 26 (+21)</td><td><b>Dex</b> 22 (+19)<br><b>Int</b> 12 (+14)</td><td><b>Wis</b> 22 (+19)<br><b>Cha</b> 14 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +28, Endurance +26</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p><b>Equipment</b> flail , heavy shield , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 3d10+10 damage, and the battlesworn war troll defender slides the target 1 square. &lt;/p&gt;]] (⚔) <b>Flail</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+29 vs AC&lt;/u&gt;; 3d10+10 damage, and the battlesworn war troll defender slides the target 1 square. &lt;/p&gt;]]; [[/roll 3d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 3d10+10 damage, and the battlesworn war troll defender slides the target 1 square. &lt;/p&gt;]] <26.5>  damage, and the battlesworn war troll defender slides the target 1 square. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Not So Fast&lt;/b&gt; (immediate interrupt, when an enemy within reach shifts away from the battlesworn war troll defender, ) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +27 vs Reflex; 3d10+10 damage, and the target is knocked prone and immobilized until the end of its next turn. &lt;/p&gt;]] ⚔ <b>Not So Fast</b> (immediate interrupt, when an enemy within reach shifts away from the battlesworn war troll defender, ) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+27[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Not So Fast&lt;/b&gt; (immediate interrupt, when an enemy within reach shifts away from the battlesworn war troll defender, ) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+27 vs Reflex&lt;/u&gt;; 3d10+10 damage, and the target is knocked prone and immobilized until the end of its next turn. &lt;/p&gt;]]; [[/roll 3d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Not So Fast&lt;/b&gt; (immediate interrupt, when an enemy within reach shifts away from the battlesworn war troll defender, ) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +27 vs Reflex; 3d10+10 damage, and the target is knocked prone and immobilized until the end of its next turn. &lt;/p&gt;]] <26.5>  damage, and the target is knocked prone and immobilized until the end of its next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A battlesworn war troll defender can make opportunity attacks against all enemies within its reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>A battlesworn war troll defender can make opportunity attacks against all enemies within its reach (2 squares).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a battlesworn war troll defender is reduced to 0 hit points by an attack that doesn’t deal acid or fire damage, it falls prone and remains at 0 hit points until the start of its next turn, when it regains 35 hit points. If an attack deals acid or fire damage to the defender while it’s at 0 hit points, it is destroyed.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If a battlesworn war troll defender is reduced to 0 hit points by an attack that doesn’t deal acid or fire damage, it falls prone and remains at 0 hit points until the start of its next turn, when it regains 35 hit points. If an attack deals acid or fire damage to the defender while it’s at 0 hit points, it is destroyed.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vicious Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A battlesworn war troll defender deals 2d10 extra damage against targets that are marking it.&lt;/p&gt;]]  <b>Vicious Tactics</b></p><p>A battlesworn war troll defender deals [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vicious Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A battlesworn war troll defender deals 2d10 extra damage against targets that are marking it.&lt;/p&gt;]] <11> extra damage against targets that are marking it.</p></tr></td></table>",

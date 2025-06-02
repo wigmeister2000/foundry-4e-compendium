@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -544,7 +546,7 @@
 		},
 		{
 			"name":"Death Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"B4qoNpO3IKrPWVyT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -580,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -636,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 69; <b>Bloodied</b> 34</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 18</td><td><b>Ref</b> 18</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+6)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 9 (+2)</td><td><b>Wis</b> 11 (+3)<br><b>Cha</b> 10 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Acrobatics +11, Athletics +11</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> 2 throwing axes, leather armor , longspear .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d8+6 damage, and the abyssal marauder shifts 1 square. &lt;/p&gt;]] (⚔) <b>Longspear</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d8+6 damage, and the abyssal marauder shifts 1 square. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d8+6 damage, and the abyssal marauder shifts 1 square. &lt;/p&gt;]] <10.5>  damage, and the abyssal marauder shifts 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Throwing Axe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +11 vs AC; 1d6+6 damage, and the abyssal marauder shifts 1 square. &lt;/p&gt;]] (➶) <b>Throwing Axe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 5/10; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Throwing Axe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d6+6 damage, and the abyssal marauder shifts 1 square. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Throwing Axe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +11 vs AC; 1d6+6 damage, and the abyssal marauder shifts 1 square. &lt;/p&gt;]] <9.5>  damage, and the abyssal marauder shifts 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔➶ &lt;b&gt;Howling Charge&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The abyssal marauder makes a throwing axe attack and then charges the target of that attack.&lt;/p&gt;]] ⚔➶ <b>Howling Charge</b> (standard, encounter) </p><p>The abyssal marauder makes a throwing axe attack and then charges the target of that attack.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Death Fury&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While bloodied, an abyssal marauder can make two longspear attacks as a standard action, each with a -2 penalty to the attack roll. The marauder cannot use its throwing axe or howling charge while it is bloodied.&lt;/p&gt;]]  <b>Death Fury</b></p><p>While bloodied, an abyssal marauder can make two longspear attacks as a standard action, each with a -2 penalty to the attack roll. The marauder cannot use its throwing axe or howling charge while it is bloodied.</p></tr></td></table>",

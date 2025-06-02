@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -301,10 +302,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -568,7 +569,7 @@
 		},
 		{
 			"name":"Slayer",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"XzSkO9GpDrUafJ63",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -604,7 +605,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -660,23 +662,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 510; <b>Bloodied</b> 255<hr><b>Resist</b> 30 lightning, 30 thunder </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 36</td><td><b>Ref</b> 31</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+20)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 19 (+15)<br><b>Int</b> 10 (+11)</td><td><b>Wis</b> 22 (+17)<br><b>Cha</b> 16 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> greatsword , heavy shield .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +26 vs AC; 4d6+9 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]] (⚔) <b>Greatsword</b> (standard, at-will) ✦ <b>Lightning, Weapon</b></p><p>Reach 3; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+26 vs AC&lt;/u&gt;; 4d6+9 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]]; [[/roll 4d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +26 vs AC; 4d6+9 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]] <23>  damage, plus [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +26 vs AC; 4d6+9 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]] <9> lightning damage; see also slayer. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Awesome Blow &lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The godslayer makes a greatsword attack. If the attack hits, it makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +26 vs Fortitude; the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] ⚔ <b>Awesome Blow </b> (standard, at-will) ✦ <b>Lightning, Weapon</b></p><p>The godslayer makes a greatsword attack. If the attack hits, it makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Awesome Blow &lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; the target is pushed 3 squares and knocked prone. &lt;/p&gt;]]; the target is pushed 3 squares and knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 1d10+7 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]] ⚔ <b>Bite</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Reach 2; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+24 vs AC&lt;/u&gt;; 1d10+7 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 1d10+7 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]] <12.5>  damage, plus [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 1d10+7 damage, plus 2d8 lightning damage; see also slayer. &lt;/p&gt;]] <9> lightning damage; see also slayer. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slayer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The bluespawn godslayer deals +10 damage against dragons, dragonborn, and immortals.&lt;/p&gt;]]  <b>Slayer</b></p><p>The bluespawn godslayer deals +10 damage against dragons, dragonborn, and immortals.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Adept",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OgsjZY6fQlXmJdru",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -456,23 +458,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 85; <b>Bloodied</b> 42</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 19</td><td><b>Ref</b> 17</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+8)<br><b>Con</b> 15 (+5)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 10 (+3)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 10 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> greataxe , hide armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Adept&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of an encounter, the slayer’s attacks deal 1d10 extra damage against any enemy that has not yet acted during the encounter.&lt;/p&gt;]]  <b>Combat Adept</b> <b></b></p><p>At the start of an encounter, the slayer’s attacks deal [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Adept&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of an encounter, the slayer’s attacks deal 1d10 extra damage against any enemy that has not yet acted during the encounter.&lt;/p&gt;]] <5.5> extra damage against any enemy that has not yet acted during the encounter.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 3 damage, or 2d12 +8 while the slayer is bloodied. If this attack bloodies the target, the target takes 5 extra damage.&lt;/p&gt;]] (⚔) <b>Greataxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 3 damage, or 2d12 +8 while the slayer is bloodied. If this attack bloodies the target, the target takes 5 extra damage.&lt;/p&gt;]] <16>  damage, or [[/roll 2d12 +8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 3 damage, or 2d12 +8 while the slayer is bloodied. If this attack bloodies the target, the target takes 5 extra damage.&lt;/p&gt;]] <21>  while the slayer is bloodied. If this attack bloodies the target, the target takes 5 extra damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Hobgoblin Resilience&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The slayer is subjected to an effect that a save can end.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The slayer makes a saving throw against the triggering effect.&lt;/p&gt;]]  <b>Hobgoblin Resilience</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The slayer is subjected to an effect that a save can end.</p><p><i>Effect (Immediate Reaction):</i> The slayer makes a saving throw against the triggering effect.</p></tr></td></table>",

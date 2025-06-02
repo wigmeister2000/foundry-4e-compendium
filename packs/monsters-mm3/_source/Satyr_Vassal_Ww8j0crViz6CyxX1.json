@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Cold Wind Song",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"x3Yhwdzl5OH7Fp9R",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -819,23 +822,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 136; <b>Bloodied</b> 68<hr><b>Resist</b> 5 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 19</td><td><b>Ref</b> 21</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+6)<br><b>Con</b> 14 (+6)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 19 (+8)</td><td><b>Wis</b> 17 (+7)<br><b>Cha</b> 18 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Nature +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> arrow  x30, longbow .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Cold Wind Song&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;The satyr gains a +5 power bonus to all defenses against attacks made by creatures outside the aura.&lt;/p&gt;]] ⌀ <b>Cold Wind Song</b> ✦ <b>Aura</b> 5</p><p>The satyr gains a +5 power bonus to all defenses against attacks made by creatures outside the aura.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 7 damage, and the target falls prone.&lt;/p&gt;]] (⚔) <b>Gore</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 7 damage, and the target falls prone.&lt;/p&gt;]] <11.5>  damage, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;North Wind Bow&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one or two creatures); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 cold damage, and the satyr pushes the target up to 3 squares.&lt;/p&gt;]] (➶) <b>North Wind Bow</b> (cold, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one or two creatures); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;North Wind Bow&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one or two creatures); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;North Wind Bow&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 cold damage, and the satyr pushes the target up to 3 squares.&lt;/p&gt;]] <16>  cold damage, and the satyr pushes the target up to 3 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Diving Dragon Shot&lt;/b&gt; (cold, weapon, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 20 (creatures in the burst); +13 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 cold damage, and the target is slowed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The burst creates a zone that lasts until the end of the encounter. Any creature that ends its turn in the zone takes 5 cold damage.&lt;/p&gt;]] ✻ <b>Diving Dragon Shot</b> (cold, weapon, zone) ✦ <b>Encounter</b></p><p><i>Attack:</i> Area burst 2 within 20 (creatures in the burst); [[/roll 1d20+13[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Diving Dragon Shot&lt;/b&gt; (cold, weapon, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 20 (creatures in the burst); &lt;u&gt;+13 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Diving Dragon Shot&lt;/b&gt; (cold, weapon, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 cold damage, and the target is slowed (save ends).&lt;/p&gt;]] <12>  cold damage, and the target is slowed (save ends).</p><p><i>Miss:</i> Half damage.</p><p><i>Effect:</i> The burst creates a zone that lasts until the end of the encounter. Any creature that ends its turn in the zone takes 5 cold damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bitter Vengeance&lt;/b&gt; (cold) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 5 squares of the satyr hits it with an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Close burst 5 (triggering enemy in the burst). The target takes 10 cold damage, and the satyr pushes it up to 2 squares.&lt;/p&gt;]]  <b>Bitter Vengeance</b> (cold) ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy within 5 squares of the satyr hits it with an attack.</p><p><i>Effect (Free Action):</i> Close burst 5 (triggering enemy in the burst). The target takes 10 cold damage, and the satyr pushes it up to 2 squares.</p></tr></td></table>",

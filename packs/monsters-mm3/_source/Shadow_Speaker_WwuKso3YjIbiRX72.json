@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -950,23 +952,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 70; <b>Bloodied</b> 35</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 16</td><td><b>Ref</b> 18</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+3)<br><b>Con</b> 14 (+5)</td><td><b>Dex</b> 18 (+7)<br><b>Int</b> 15 (+5)</td><td><b>Wis</b> 18 (+7)<br><b>Cha</b> 13 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Arcana +10, Religion +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> 3 jars of Shadowfell soil, short sword , wand implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] <14>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Curse&lt;/b&gt; (implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +9 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 necrotic damage, and the target grants combat advantage and takes 5 damage each time it provokes an opportunity attack (save ends both).&lt;/p&gt;]] (➶) <b>Shadow Curse</b> (implement, necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+9[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Curse&lt;/b&gt; (implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+9 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Curse&lt;/b&gt; (implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 necrotic damage, and the target grants combat advantage and takes 5 damage each time it provokes an opportunity attack (save ends both).&lt;/p&gt;]] <14>  necrotic damage, and the target grants combat advantage and takes 5 damage each time it provokes an opportunity attack (save ends both).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Choking Shadow&lt;/b&gt; (implement, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 11 necrotic damage, and the target is immobilized until the end of the speaker’s next turn.&lt;/p&gt;]] ➶ <b>Choking Shadow</b> (implement, necrotic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Choking Shadow&lt;/b&gt; (implement, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 11#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Choking Shadow&lt;/b&gt; (implement, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 11 necrotic damage, and the target is immobilized until the end of the speaker’s next turn.&lt;/p&gt;]] <21.5>  necrotic damage, and the target is immobilized until the end of the speaker’s next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dark Step&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The speaker moves 4 squares, gains a +4 bonus to AC against opportunity attacks provoked by this movement, and gains combat advantage against each creature that it ends its move adjacent to until the end of the shadow speaker’s next turn.&lt;/p&gt;]]  <b>Dark Step</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The speaker moves 4 squares, gains a +4 bonus to AC against opportunity attacks provoked by this movement, and gains combat advantage against each creature that it ends its move adjacent to until the end of the shadow speaker’s next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Killing Dark&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The speaker drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Each enemy adjacent to the speaker is blinded until the end of his or her next turn.&lt;/p&gt;]]  <b>Killing Dark</b> <b></b></p><p><i>Trigger:</i> The speaker drops to 0 hit points.</p><p><i>Effect (No Action):</i> Each enemy adjacent to the speaker is blinded until the end of his or her next turn.</p></tr></td></table>",

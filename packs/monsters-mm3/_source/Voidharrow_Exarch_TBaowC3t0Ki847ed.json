@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -767,23 +768,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 225; <b>Bloodied</b> 112<hr><b>Resist</b> 15 necrotic, 15 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +20</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 37</td><td><b>Ref</b> 35</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+21)<br><b>Con</b> 25 (+19)</td><td><b>Dex</b> 22 (+18)<br><b>Int</b> 12 (+13)</td><td><b>Wis</b> 12 (+13)<br><b>Cha</b> 24 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Plague Blade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +29 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 21 damage, and the target grants combat advantage and has vulnerable 5 to all damage until it hits the exarch with an attack (save ends both).&lt;/p&gt;&lt;p&gt;&lt;/p&gt;]] (⚔) <b>Plague Blade</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+29[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Plague Blade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+29 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 21#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Plague Blade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 21 damage, and the target grants combat advantage and has vulnerable 5 to all damage until it hits the exarch with an attack (save ends both).&lt;/p&gt;]] <32>  damage, and the target grants combat advantage and has vulnerable 5 to all damage until it hits the exarch with an attack (save ends both).</p><p></p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Whirling Plague Blade&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The exarch uses plague blade twice. If the exarch is bloodied, it uses plague blade three times.&lt;/p&gt;]]  <b>Whirling Plague Blade</b> ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The exarch uses plague blade twice. If the exarch is bloodied, it uses plague blade three times.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Psychic Chains&lt;/b&gt; (psychic, teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 5 squares of the exarch makes an attack that doesn’t include the exarch as a target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 5 (the triggering enemy); +27 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The exarch teleports the target to a square adjacent to itself and then uses plague blade against the target.&lt;/p&gt;]] ⚔ <b>Psychic Chains</b> (psychic, teleportation) ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy within 5 squares of the exarch makes an attack that doesn’t include the exarch as a target.</p><p><i>Attack (Immediate Reaction):</i> Melee 5 (the triggering enemy); [[/roll 1d20+27[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Psychic Chains&lt;/b&gt; (psychic, teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 5 (the triggering enemy); &lt;u&gt;+27 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The exarch teleports the target to a square adjacent to itself and then uses plague blade against the target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vengeance Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An adjacent enemy shifts or willingly teleports.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Opportunity Action):&lt;/i&gt; The exarch uses plague blade against the triggering enemy.&lt;/p&gt;]]  <b>Vengeance Strike</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An adjacent enemy shifts or willingly teleports.</p><p><i>Effect (Opportunity Action):</i> The exarch uses plague blade against the triggering enemy.</p></tr></td></table>",

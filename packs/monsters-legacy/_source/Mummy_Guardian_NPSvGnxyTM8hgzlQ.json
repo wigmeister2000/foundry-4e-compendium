@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LzMUoceK0xOh8mW6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Despair",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RK6QSJgVjyH2stPk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -199,10 +202,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -322,23 +325,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 108; <b>Bloodied</b> 54<br><b>Regeneration</b> 10 (if the mummy guardian takes radiant damage, regeneration doesn’t function on its next turn)<hr><b>Resist</b> necrotic <b>Vulnerable</b> 5 fire <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 18</td><td><b>Ref</b> 16</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+7)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 6 (+2)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 16 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Despair&lt;/b&gt; (Fear) aura 5; An enemy takes a -2 penalty on attack rolls against the mummy guardian until it damages the mummy guardian.]] <b>Despair</b> (Fear) aura 5; An enemy takes a -2 penalty on attack rolls against the mummy guardian until it damages the mummy guardian.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rotting Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+3 necrotic damage, and the target contracts mummy rot. &lt;/p&gt;]] (⚔) <b>Rotting Slam</b> (standard, at-will) ✦ <b>Disease, Necrotic</b></p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rotting Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 2d8+3 necrotic damage, and the target contracts mummy rot. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rotting Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+3 necrotic damage, and the target contracts mummy rot. &lt;/p&gt;]] <12>  necrotic damage, and the target contracts mummy rot. </p></tr></td></table>",

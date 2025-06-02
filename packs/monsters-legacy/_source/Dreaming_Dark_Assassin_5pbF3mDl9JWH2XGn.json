@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Repulsion",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jD1LPra8Eu5dHi9x",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -513,10 +515,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -952,7 +954,7 @@
 		},
 		{
 			"name":"Dual Mind",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6zXVymuhBqS37GwZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -988,7 +990,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1044,23 +1047,10 @@
 				"max":10
 			},
 			"init":{
-				"value":14,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":14
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 276; <b>Bloodied</b> 138</td><td style=\"padding-left: 15px;\"><b>Init</b> +14 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 25</td><td><b>Ref</b> 30</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+9)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 20 (+12)<br><b>Int</b> 24 (+14)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 22 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Quori, telepathy 10<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +18, Diplomacy +18, Insight +17, Intimidate +18, Stealth +17</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 27</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Repulsion&lt;/b&gt; aura 3; while a Dreaming Dark assassin is bloodied, each enemy (including a flying enemy) treats the area within the aura as difficult terrain.]] <b>Repulsion</b> aura 3; while a Dreaming Dark assassin is bloodied, each enemy (including a flying enemy) treats the area within the aura as difficult terrain.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Nightmare Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Reflex; 2d8+5 damage, and ongoing 10 psychic damage (save ends). &lt;/p&gt;]] (⚔) <b>Nightmare Touch</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Nightmare Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d8+5 damage, and ongoing 10 psychic damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Nightmare Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Reflex; 2d8+5 damage, and ongoing 10 psychic damage (save ends). &lt;/p&gt;]] <14>  damage, and ongoing 10 psychic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Nightmare Flurry&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The assassin makes two nightmare touch attacks&lt;/p&gt;]] ⚔ <b>Nightmare Flurry</b> (standard, at-will) </p><p>The assassin makes two nightmare touch attacks</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Primal Fear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies taking ongoing psychic damage; +17 vs Will; 1d8+5 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Primal Fear</b> (standard, at-will) ✦ <b>Fear, Psychic</b></p><p>Close burst 3; targets enemies taking ongoing psychic damage; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Primal Fear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies taking ongoing psychic damage; &lt;u&gt;+17 vs Will&lt;/u&gt;; 1d8+5 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Primal Fear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies taking ongoing psychic damage; +17 vs Will; 1d8+5 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] <9.5>  psychic damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Escape&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +17 vs Will; 3d8+5 psychic damage. The assassin teleports 10 squares after the attack. &lt;/p&gt;]] ᗕ <b>Psychic Escape</b> (standard, recharge ⚃⚄⚅) ✦ <b>Psychic, Teleportation</b></p><p>Close burst 1; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Escape&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+17 vs Will&lt;/u&gt;; 3d8+5 psychic damage. The assassin teleports 10 squares after the attack. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Escape&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +17 vs Will; 3d8+5 psychic damage. The assassin teleports 10 squares after the attack. &lt;/p&gt;]] <18.5>  psychic damage. The assassin teleports 10 squares after the attack. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slayer\"s Puppets&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Will; the target is dominated (save ends). &lt;/p&gt;]] ⚔ <b>Slayer\"s Puppets</b> (minor 1/round, at-will) ✦ <b>Charm</b></p><p>[[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slayer\"s Puppets&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs Will&lt;/u&gt;; the target is dominated (save ends). &lt;/p&gt;]]; the target is dominated (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dual Mind&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any creature that attacks an assassin’s Will must make two attack rolls and use the lower result.&lt;/p&gt;]]  <b>Dual Mind</b></p><p>Any creature that attacks an assassin’s Will must make two attack rolls and use the lower result.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Troglodyte Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aLP5JzUHseuf6Yx8",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -513,10 +516,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -590,7 +593,7 @@
 		},
 		{
 			"name":"Slimecoated",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SsJEtTrAV0uLXngk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -626,7 +629,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -636,7 +640,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QFz9AGkjDunPCh2a",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -672,7 +676,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -728,23 +733,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 98; <b>Bloodied</b> 49</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 21</td><td><b>Will</b> 20 ; see also slimecoated</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+7)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 19 (+8)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +12, Endurance +13, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> javelin  x6, spear .</p><p>[[/roll 0#&lt;b&gt;Troglodyte Stench&lt;/b&gt; aura 1; each living enemy within the aura takes a -2 penalty to attack rolls.]] <b>Troglodyte Stench</b> aura 1; each living enemy within the aura takes a -2 penalty to attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+8 damage. &lt;/p&gt;]] (⚔) <b>Spear</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 1d8+8 damage. &lt;/p&gt;]]; [[/roll 1d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+8 damage. &lt;/p&gt;]] <12.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +14 vs AC; 1d6+9 damage. &lt;/p&gt;]] (➶) <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+14 vs AC&lt;/u&gt;; 1d6+9 damage. &lt;/p&gt;]]; [[/roll 1d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +14 vs AC; 1d6+9 damage. &lt;/p&gt;]] <12.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Leap&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The troglodyte savage charges; +15 vs AC; 2d8+8 damage. During the charge, the troglodyte savage ignores difficult terrain and hindering terrain, and its movement does not provoke opportunity attacks. &lt;/p&gt;]] ⚔ <b>Savage Leap</b> (standard, recharge ⚃⚄⚅) </p><p>The troglodyte savage charges; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Leap&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The troglodyte savage charges; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d8+8 damage. During the charge, the troglodyte savage ignores difficult terrain and hindering terrain, and its movement does not provoke opportunity attacks. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Leap&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The troglodyte savage charges; +15 vs AC; 2d8+8 damage. During the charge, the troglodyte savage ignores difficult terrain and hindering terrain, and its movement does not provoke opportunity attacks. &lt;/p&gt;]] <17>  damage. During the charge, the troglodyte savage ignores difficult terrain and hindering terrain, and its movement does not provoke opportunity attacks. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slimecoated&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The troglodyte savage has a +4 bonus to escape attempts. In addition, it has a +4 bonus to AC and Reflex when targeted by an attack while it is moving.&lt;/p&gt;]]  <b>Slimecoated</b></p><p>The troglodyte savage has a +4 bonus to escape attempts. In addition, it has a +4 bonus to AC and Reflex when targeted by an attack while it is moving.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A troglodyte savage deals 1d8 extra damage against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A troglodyte savage deals [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A troglodyte savage deals 1d8 extra damage against any target it has combat advantage against.&lt;/p&gt;]] <4.5> extra damage against any target it has combat advantage against.</p></tr></td></table>",

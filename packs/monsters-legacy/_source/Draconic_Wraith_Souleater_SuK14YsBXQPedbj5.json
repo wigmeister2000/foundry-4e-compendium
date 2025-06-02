@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1m2Ez8oGwsu3xqFh",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Cloud of Death",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2RwHXey9Sqi7z8Qs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1037,23 +1040,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 136; <b>Bloodied</b> 68<br><b>Regeneration</b> 10 (if the draconic wraith takes radiant damage, regeneration does not function until the end of its next turn)<hr><b>Resist</b> 10 necrotic, insubstantial <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 32</td><td><b>Ref</b> 30</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+15)<br><b>Con</b> 21 (+14)</td><td><b>Dex</b> 19 (+13)<br><b>Int</b> 10 (+9)</td><td><b>Wis</b> 21 (+14)<br><b>Cha</b> 13 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Cloud of Death&lt;/b&gt; aura 2; enemies in the aura cannot spend healing surges. Enemies treat the area within the aura as difficult terrain.]] <b>Cloud of Death</b> aura 2; enemies in the aura cannot spend healing surges. Enemies treat the area within the aura as difficult terrain.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 1d12+6 necrotic damage. &lt;/p&gt;]] (⚔) <b>Shadow Bite</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 2; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+24 vs AC&lt;/u&gt;; 1d12+6 necrotic damage. &lt;/p&gt;]]; [[/roll 1d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 1d12+6 necrotic damage. &lt;/p&gt;]] <12.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fell Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +22 vs Reflex; 1d12+6 necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] ᗕ <b>Fell Breath</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Close blast 5; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fell Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 1d12+6 necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 1d12+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fell Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +22 vs Reflex; 1d12+6 necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] <12.5>  necrotic damage, and the target takes ongoing 10 necrotic damage (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Steal Volition&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Close burst 5; targets one creature within the burst; automatic hit; the target is slowed (save ends)&lt;/p&gt;]] ᗕ <b>Steal Volition</b> (minor 1/round, at-will) </p><p>Close burst 5; targets one creature within the burst; automatic hit; the target is slowed (save ends)</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Soul Feast&lt;/b&gt; (free, when the souleater bloodied an enemy with its bite or fell breath attack; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The target loses 1 healing surge, and the souleater regains 34 hit points.&lt;/p&gt;]]  <b>Soul Feast</b> (free, when the souleater bloodied an enemy with its bite or fell breath attack; encounter) ✦ <b>Healing</b></p><p>The target loses 1 healing surge, and the souleater regains 34 hit points.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Strike&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The souleater shifts 8 squares and can make a melee basic attack either before, during, or after the move.&lt;/p&gt;]]  <b>Shadow Strike</b> (move; encounter) </p><p>The souleater shifts 8 squares and can make a melee basic attack either before, during, or after the move.</p></tr></td></table>",

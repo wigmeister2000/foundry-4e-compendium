@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -367,7 +369,7 @@
 		},
 		{
 			"name":"Drow Inspiration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1Pt7cR3NaWeq96g8",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -403,7 +405,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -413,7 +416,7 @@
 		},
 		{
 			"name":"Goblin Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9pv5SsIiaoRVJCtO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -449,7 +452,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -505,23 +509,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 25</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+10)<br><b>Con</b> 14 (+8)</td><td><b>Dex</b> 21 (+11)<br><b>Int</b> 8 (+5)</td><td><b>Wis</b> 19 (+10)<br><b>Cha</b> 9 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> crossbow bolt  x10, hand crossbow , leather armor , war pick .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stringing Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 7 poison damage, and if the target is affected by ongoing poison damage, that ongoing damage increases by 5. &lt;/p&gt;]] (⚔) <b>Stringing Pick</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stringing Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 7 poison damage, and if the target is affected by ongoing poison damage, that ongoing damage increases by 5. &lt;/p&gt;]]; 7 poison damage, and if the target is affected by ongoing poison damage, that ongoing damage increases by 5. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +17 vs AC; 5 damage (7 if the Lolthbound goblin slave moved 3 or more squares during its turn). &lt;/p&gt;]] (➶) <b>Hand Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+17 vs AC&lt;/u&gt;; 5 damage (7 if the Lolthbound goblin slave moved 3 or more squares during its turn). &lt;/p&gt;]]; 5 damage (7 if the Lolthbound goblin slave moved 3 or more squares during its turn). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drow Inspiration&lt;/b&gt; (while within 5 squares of a drow ally) &lt;/p&gt;&lt;p&gt;The Lolthbound goblin slave gains a +2 bonus to attack rolls and all defenses.&lt;/p&gt;]]  <b>Drow Inspiration</b> (while within 5 squares of a drow ally) </p><p>The Lolthbound goblin slave gains a +2 bonus to attack rolls and all defenses.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Lolthbound goblin slave shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b></p><p>The Lolthbound goblin slave shifts 1 square.</p></tr></td></table>",

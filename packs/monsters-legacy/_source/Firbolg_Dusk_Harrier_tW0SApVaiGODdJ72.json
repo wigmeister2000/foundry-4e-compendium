@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QRgr42LPOMUD8bKs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -284,7 +286,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -510,10 +513,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1347,23 +1350,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 322; <b>Bloodied</b> 161<br><b>Regeneration</b> 5<hr><b>Vulnerable</b> necrotic (if Pyradan takes necrotic damage, his regeneration doesn’t function on his next turn) </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2; +4 against charm effects, immobilized, restrained, and slowed</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 29</td><td><b>Ref</b> 30</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 25 (+13)<br><b>Int</b> 13 (+7)</td><td><b>Wis</b> 18 (+10)<br><b>Cha</b> 15 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +19, Athletics +20, Intimidate +15, Nature +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d10+5 damage. &lt;/p&gt;]] (⚔) <b>Spear</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d10+5 damage. &lt;/p&gt;]]; [[/roll 2d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d10+5 damage. &lt;/p&gt;]] <16>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +22 vs AC; 2d8+5 damage. &lt;/p&gt;]] (➶) <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +22 vs AC; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs  or  (whichever is lower); . The dusk harrier makes two spear attacks, and slides one target it hits 1 square. The dusk harrier then shifts 3 squares&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>+16 vs  or  (whichever is lower); . The dusk harrier makes two spear attacks, and slides one target it hits 1 square. The dusk harrier then shifts 3 squares</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forest of Spears&lt;/b&gt; (standard, recharges when first bloodied)) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +22 vs AC; 2d10+5 damage, and the target is either slowed or takes ongoing 10 damage (save ends both). On a critical hit, the target takes both effects. &lt;/p&gt;]] ⚔ <b>Forest of Spears</b> (standard, recharges when first bloodied)) ✦ <b>Weapon</b></p><p>Close burst 2; targets enemies; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forest of Spears&lt;/b&gt; (standard, recharges when first bloodied)) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d10+5 damage, and the target is either slowed or takes ongoing 10 damage (save ends both). On a critical hit, the target takes both effects. &lt;/p&gt;]]; [[/roll 2d10+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forest of Spears&lt;/b&gt; (standard, recharges when first bloodied)) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +22 vs AC; 2d10+5 damage, and the target is either slowed or takes ongoing 10 damage (save ends both). On a critical hit, the target takes both effects. &lt;/p&gt;]] <16>  damage, and the target is either slowed or takes ongoing 10 damage (save ends both). On a critical hit, the target takes both effects. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Moonfire&lt;/b&gt; (minor 1/round, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Will; until the end of the dusk harrier’s next turn, the target cannot benefit from invisibility or concealment, and the dusk harrier gains combat advantage against the target. &lt;/p&gt;]] ➶ <b>Moonfire</b> (minor 1/round, recharge ⚃⚄⚅) </p><p>Ranged 10; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Moonfire&lt;/b&gt; (minor 1/round, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+20 vs Will&lt;/u&gt;; until the end of the dusk harrier’s next turn, the target cannot benefit from invisibility or concealment, and the dusk harrier gains combat advantage against the target. &lt;/p&gt;]]; until the end of the dusk harrier’s next turn, the target cannot benefit from invisibility or concealment, and the dusk harrier gains combat advantage against the target. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Deadly Flanker&lt;/b&gt; (encounter) &lt;/p&gt;&lt;p&gt;When an ally flanks with the dusk harrier, that ally deals 1d8 extra damage with attacks against the flanked creature.&lt;/p&gt;]]  <b>Deadly Flanker</b> (encounter) </p><p>When an ally flanks with the dusk harrier, that ally deals [[/roll 1d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Deadly Flanker&lt;/b&gt; (encounter) &lt;/p&gt;&lt;p&gt;When an ally flanks with the dusk harrier, that ally deals 1d8 extra damage with attacks against the flanked creature.&lt;/p&gt;]] <4.5> extra damage with attacks against the flanked creature.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Harrier\"s Flank&lt;/b&gt; (immediate reaction, when an ally moves adjacent to a creature within 2 squares of the dusk harrier; at-will) &lt;/p&gt;&lt;p&gt;The dusk harrier shifts 2 squares. It must end this shift in a flanking position with the ally that triggered this power.&lt;/p&gt;]]  <b>Harrier\"s Flank</b> (immediate reaction, when an ally moves adjacent to a creature within 2 squares of the dusk harrier; at-will) </p><p>The dusk harrier shifts 2 squares. It must end this shift in a flanking position with the ally that triggered this power.</p></tr></td></table>",

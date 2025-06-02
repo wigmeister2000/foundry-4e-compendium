@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Wild Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zLvki761lOgptdmH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -996,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 55; <b>Bloodied</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +9</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 17</td><td><b>Ref</b> 19</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+5)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 23 (+9)<br><b>Int</b> 13 (+4)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 13 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +10, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> obsidian short sword, bone bow, 20 bone arrows</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wild Step&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The raid leader ignores difficult terrain when it shifts.&lt;/p&gt;]]  <b>Wild Step</b> <b></b></p><p>The raid leader ignores difficult terrain when it shifts.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Obsidian Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the raid leader shifts 1 square.&lt;/p&gt;]] (⚔) <b>Obsidian Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Obsidian Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Obsidian Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the raid leader shifts 1 square.&lt;/p&gt;]] <12>  damage, and the raid leader shifts 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bone Bow&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 damage.&lt;/p&gt;]] (➶) <b>Bone Bow</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bone Bow&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bone Bow&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 damage.&lt;/p&gt;]] <16>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Harrying Shot&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 damage, and until the end of the raid leader’s next turn, its allies gain combat advantage against the target while adjacent to the target.&lt;/p&gt;]] ➶ <b>Harrying Shot</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Harrying Shot&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Harrying Shot&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 5 damage, and until the end of the raid leader’s next turn, its allies gain combat advantage against the target while adjacent to the target.&lt;/p&gt;]] <16>  damage, and until the end of the raid leader’s next turn, its allies gain combat advantage against the target while adjacent to the target.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Focus on the Pain&lt;/b&gt; (weapon) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; One ally within 20 squares of the raid leader takes 5 damage and makes a saving throw with a +2 bonus.&lt;/p&gt;]]  <b>Focus on the Pain</b> (weapon) ✦ Recharge ⚅</p><p><i>Hit:</i> One ally within 20 squares of the raid leader takes 5 damage and makes a saving throw with a +2 bonus.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Elven Accuracy&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The raid leader rerolls one of its attack rolls and uses the second result.&lt;/p&gt;]]  <b>Elven Accuracy</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The raid leader rerolls one of its attack rolls and uses the second result.</p></tr></td></table>",

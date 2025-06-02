@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -471,10 +472,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -954,23 +955,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 212; <b>Bloodied</b> 106</td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+10)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 16 (+8)<br><b>Int</b> 12 (+6)</td><td><b>Wis</b> 12 (+6)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +14, Insight +11, Stealth +13, Thievery +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 21</td></td></tr></table><p><b>Equipment</b> morningstar .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 1d12+6 damage, and a Medium or smaller target is pushed 1 square. &lt;/p&gt;]] (⚔) <b>Morningstar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 1d12+6 damage, and a Medium or smaller target is pushed 1 square. &lt;/p&gt;]]; [[/roll 1d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 1d12+6 damage, and a Medium or smaller target is pushed 1 square. &lt;/p&gt;]] <12.5>  damage, and a Medium or smaller target is pushed 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Hypnotic Breath&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Charm, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +13 vs Will;    the target is dazed (save ends). First Failed Save: The target falls unconscious (no save). &lt;/p&gt;]] ᗕ <b>Hypnotic Breath</b> (standard, recharges when first bloodied) ✦ <b>Charm, Sleep</b></p><p>Close blast 5; [[/roll 1d20+13[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Hypnotic Breath&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Charm, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+13 vs Will&lt;/u&gt;;    the target is dazed (save ends). First Failed Save: The target falls unconscious (no save). &lt;/p&gt;]];    the target is dazed (save ends). First Failed Save: The target falls unconscious (no save). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devour Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Affects an unconscious target only; +15 vs AC; 2d10+5 psychic damage, and the oni night haunter regains 10 hit points. This attack does not wake the unconscious target. &lt;/p&gt;]] ⚔ <b>Devour Soul</b> (standard, at-will) ✦ <b>Healing, Psychic</b></p><p>Affects an unconscious target only; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devour Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Affects an unconscious target only; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d10+5 psychic damage, and the oni night haunter regains 10 hit points. This attack does not wake the unconscious target. &lt;/p&gt;]]; [[/roll 2d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devour Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Affects an unconscious target only; +15 vs AC; 2d10+5 psychic damage, and the oni night haunter regains 10 hit points. This attack does not wake the unconscious target. &lt;/p&gt;]] <16>  psychic damage, and the oni night haunter regains 10 hit points. This attack does not wake the unconscious target. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Gaseous Form&lt;/b&gt; (standard; sustain standard; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The oni night haunter becomes insubstantial and gains a fly speed of 8 (hover). It can enter and move through a porous obstacle that would otherwise prevent movement (such as a door or a cracked window).&lt;/p&gt;]]  <b>Gaseous Form</b> (standard; sustain standard; encounter) ✦ <b>Polymorph</b></p><p>The oni night haunter becomes insubstantial and gains a fly speed of 8 (hover). It can enter and move through a porous obstacle that would otherwise prevent movement (such as a door or a cracked window).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Deceptive Veil&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The oni night haunter can disguise itself to appear as an elderly Medium or Large humanoid. A successful Insight check (opposed by the oni’s Bluff check) pierces the disguise.&lt;/p&gt;]]  <b>Deceptive Veil</b> (minor; at-will) ✦ <b>Illusion</b></p><p>The oni night haunter can disguise itself to appear as an elderly Medium or Large humanoid. A successful Insight check (opposed by the oni’s Bluff check) pierces the disguise.</p></tr></td></table>",

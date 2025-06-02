@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Flaming Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vLU7Vk0lcHodDTr4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -335,10 +338,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -998,23 +1001,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 374; <b>Bloodied</b> 187<hr><b>Resist</b> 15 variable (2/encounter) <b>Vulnerable</b> 15 radiant <b>Immune</b> disease, fire, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 31</td><td><b>Ref</b> 31</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+16)<br><b>Con</b> 27 (+17)</td><td><b>Dex</b> 19 (+13)<br><b>Int</b> 10 (+9)</td><td><b>Wis</b> 15 (+11)<br><b>Cha</b> 20 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Flaming Aura&lt;/b&gt; (Fire) aura 1; any creature that enters or starts its turn in the aura takes 15 fire damage.]] <b>Flaming Aura</b> (Fire) aura 1; any creature that enters or starts its turn in the aura takes 15 fire damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +24 vs AC; 1d8+9 fire damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 4; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+24 vs AC&lt;/u&gt;; 1d8+9 fire damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +24 vs AC; 1d8+9 fire damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <13.5>  fire damage, and ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Double Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 3d6+8 damage.. The immolith inferno makes two claw attacks.&lt;/p&gt;]] (⚔) <b>Double Claw</b> (standard, at-will) ✦ <b>Fire</b></p><p>[[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Double Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs AC&lt;/u&gt;; 3d6+8 damage.. The immolith inferno makes two claw attacks.&lt;/p&gt;]]; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Double Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 3d6+8 damage.. The immolith inferno makes two claw attacks.&lt;/p&gt;]] <18.5>  damage.. The immolith inferno makes two claw attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fiery Grab&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The immolith inferno makes a claw attack (see above) against a Large or smaller target. On a hit, the target slides into a square adjacent to the immolith and is grabbed (until escape). While grabbed, the target loses any resistance it has to fire. The immolith can hold up to five grabbed creatures using this power&lt;/p&gt;]] ⚔ <b>Fiery Grab</b> (standard, at-will) ✦ <b>Fire</b></p><p>The immolith inferno makes a claw attack (see above) against a Large or smaller target. On a hit, the target slides into a square adjacent to the immolith and is grabbed (until escape). While grabbed, the target loses any resistance it has to fire. The immolith can hold up to five grabbed creatures using this power</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Deathfire Rebuke&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +23 vs Will; the target is pushed 4 squares, falls prone at the end of the push, and takes ongoing 10 fire damage (save ends). &lt;/p&gt;]] ➶ <b>Deathfire Rebuke</b> (minor, at-will) ✦ <b>Fire</b></p><p>Ranged 10; [[/roll 1d20+23[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Deathfire Rebuke&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+23 vs Will&lt;/u&gt;; the target is pushed 4 squares, falls prone at the end of the push, and takes ongoing 10 fire damage (save ends). &lt;/p&gt;]]; the target is pushed 4 squares, falls prone at the end of the push, and takes ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Selfish Vigor&lt;/b&gt; (minor 1/round; recharge ⚄⚅) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The immolith inferno regains 20 hit points.&lt;/p&gt;]]  <b>Selfish Vigor</b> (minor 1/round; recharge ⚄⚅) ✦ <b>Healing</b></p><p>The immolith inferno regains 20 hit points.</p></tr></td></table>",

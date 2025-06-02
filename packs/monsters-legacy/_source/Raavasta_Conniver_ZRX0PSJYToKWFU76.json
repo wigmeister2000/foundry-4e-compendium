@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1132,23 +1133,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 428; <b>Bloodied</b> 214<hr><b>Resist</b> 15 psychic, 15 variable (2/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 35</td><td><b>Ref</b> 38</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+13)<br><b>Con</b> 22 (+17)</td><td><b>Dex</b> 20 (+16)<br><b>Int</b> 28 (+20)</td><td><b>Wis</b> 23 (+17)<br><b>Cha</b> 25 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> All<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +23, Diplomacy +23, Insight +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 6<br><b>Passive</b> Perception 27 | Insight 32</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws of Blindness&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 1d6+5 damage, and the target is blinded (save ends). &lt;/p&gt;]] (⚔) <b>Claws of Blindness</b> (standard, at-will) </p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws of Blindness&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 1d6+5 damage, and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws of Blindness&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 1d6+5 damage, and the target is blinded (save ends). &lt;/p&gt;]] <8.5>  damage, and the target is blinded (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Stab&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +28 vs Will; 5d6+9 psychic damage, and the target moves its speed away from the raavasta conniver. &lt;/p&gt;]] ᗕ <b>Mind Stab</b> (standard, encounter) ✦ <b>Fear, Psychic</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+28[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Stab&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+28 vs Will&lt;/u&gt;; 5d6+9 psychic damage, and the target moves its speed away from the raavasta conniver. &lt;/p&gt;]]; [[/roll 5d6+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Stab&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +28 vs Will; 5d6+9 psychic damage, and the target moves its speed away from the raavasta conniver. &lt;/p&gt;]] <26.5>  psychic damage, and the target moves its speed away from the raavasta conniver. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Bind&lt;/b&gt; (minor, recharges when enforce contract is used) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged sight; +27 vs ; 4d12+8 damage.. the target chooses to take ongoing 20 psychic damage (save ends) or be dominated (save ends)&lt;/p&gt;]] ➶ <b>Bind</b> (minor, recharges when enforce contract is used) ✦ <b>Charm, Psychic</b></p><p>Ranged sight; +27 vs ; [[/roll 4d12+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Bind&lt;/b&gt; (minor, recharges when enforce contract is used) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged sight; +27 vs ; 4d12+8 damage.. the target chooses to take ongoing 20 psychic damage (save ends) or be dominated (save ends)&lt;/p&gt;]] <34>  damage.. the target chooses to take ongoing 20 psychic damage (save ends) or be dominated (save ends)</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A raavasta conniver can alter its physical form to take on the appearance of any Medium humanoid, including a unique individual.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>A raavasta conniver can alter its physical form to take on the appearance of any Medium humanoid, including a unique individual.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Enforce Contract&lt;/b&gt; (immediate reaction, when an enemy\"s melee or ranged attack targets the raavasta conniver; recharges when bind is used) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The attack targets the creature affected by the raavasta conniver’s bind power instead of the raavasta conniver. Using this power ends the bind effect on that creature.&lt;/p&gt;]]  <b>Enforce Contract</b> (immediate reaction, when an enemy\"s melee or ranged attack targets the raavasta conniver; recharges when bind is used) ✦ <b>Charm</b></p><p>The attack targets the creature affected by the raavasta conniver’s bind power instead of the raavasta conniver. Using this power ends the bind effect on that creature.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Vanish &lt;/b&gt; (immediate reaction, when an enemy hits the raavasta conniver; recharge ⚄⚅) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The raavasta conniver shifts 3 squares and is invisible until the end of its next turn or until it attacks.&lt;/p&gt;]]  <b>Vanish </b> (immediate reaction, when an enemy hits the raavasta conniver; recharge ⚄⚅) ✦ <b>Illusion</b></p><p>The raavasta conniver shifts 3 squares and is invisible until the end of its next turn or until it attacks.</p></tr></td></table>",

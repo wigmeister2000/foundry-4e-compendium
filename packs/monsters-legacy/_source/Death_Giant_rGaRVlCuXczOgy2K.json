@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Soulcatcher",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"CNBzPbatDuMG6lUs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"25",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -592,7 +594,7 @@
 		},
 		{
 			"name":"Soul Shroud",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OWzNTJH3yLM2ma5E",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -628,7 +630,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -684,23 +687,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 255; <b>Bloodied</b> 127<hr><b>Resist</b> 15 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 34</td><td><b>Fort</b> 37</td><td><b>Ref</b> 33</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+20)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 20 (+16)<br><b>Int</b> 12 (+12)</td><td><b>Wis</b> 16 (+14)<br><b>Cha</b> 15 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> chainmail , greataxe .</p><p>[[/roll 0#&lt;b&gt;Soulcatcher&lt;/b&gt; aura 5; a creature that dies within the aura bestows one soul shard to the death giant (see soul shroud).]] <b>Soulcatcher</b> aura 5; a creature that dies within the aura bestows one soul shard to the death giant (see soul shroud).</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +25 vs AC; 4d6+9 damage (crit 4d6+33). &lt;/p&gt;]] (⚔) <b>Greataxe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+25[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+25 vs AC&lt;/u&gt;; 4d6+9 damage (crit 4d6+33). &lt;/p&gt;]]; [[/roll 4d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +25 vs AC; 4d6+9 damage (crit 4d6+33). &lt;/p&gt;]] <23>  damage (crit [[/roll 4d6+33#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +25 vs AC; 4d6+9 damage (crit 4d6+33). &lt;/p&gt;]] <47> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Soulfire Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +23 vs Reflex; 2d8+5 necrotic damage. The death giant must expend one soul shard to use this power. &lt;/p&gt;]] ᗕ <b>Soulfire Burst</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Close burst 1; [[/roll 1d20+23[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Soulfire Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+23 vs Reflex&lt;/u&gt;; 2d8+5 necrotic damage. The death giant must expend one soul shard to use this power. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Soulfire Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +23 vs Reflex; 2d8+5 necrotic damage. The death giant must expend one soul shard to use this power. &lt;/p&gt;]] <14>  necrotic damage. The death giant must expend one soul shard to use this power. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Consume Soul Shard&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The death giant expends one soul shard and regains 20 hit points.&lt;/p&gt;]]  <b>Consume Soul Shard</b> (minor; at-will) ✦ <b>Healing</b></p><p>The death giant expends one soul shard and regains 20 hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Shroud&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The soul shroud contains soul shards that swirl around the death giant to protect and empower it. At the beginning of an encounter, the soul shroud contains 4 soul shards. While the soul shroud is depleted of soul shards, the death giant takes a -2 penalty to attack rolls.&lt;/p&gt;]]  <b>Soul Shroud</b></p><p>The soul shroud contains soul shards that swirl around the death giant to protect and empower it. At the beginning of an encounter, the soul shroud contains 4 soul shards. While the soul shroud is depleted of soul shards, the death giant takes a -2 penalty to attack rolls.</p></tr></td></table>",

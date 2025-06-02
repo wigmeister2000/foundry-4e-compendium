@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -949,23 +950,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 116; <b>Bloodied</b> 58</td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 27</td><td><b>Ref</b> 28</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 20 (+12)</td><td><b>Wis</b> 23 (+13)<br><b>Cha</b> 20 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Intimidate +17, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> unicorn horn dagger</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horn Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 10 damage.&lt;/p&gt;]] (⚔) <b>Horn Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horn Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horn Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 10 damage.&lt;/p&gt;]] <20>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Backstab&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the hunter); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 10 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] ⚔ <b>Backstab</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature granting combat advantage to the hunter); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Backstab&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the hunter); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d4 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Backstab&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d4 + 10 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] <20>  damage, and ongoing 10 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The hunter charges and makes the following attack in place of a melee basic attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 damage, and the target falls prone.&lt;/p&gt;]] ⚔ <b>Goring Charge</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The hunter charges and makes the following attack in place of a melee basic attack.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 damage, and the target falls prone.&lt;/p&gt;]] <21>  damage, and the target falls prone.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Heart of the Unicorn&lt;/b&gt; (illusion, teleportation) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the hunter uses backstab&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The hunter teleports 6 squares and becomes invisible until the end of its next turn or until it makes a melee attack roll.&lt;/p&gt;]]  <b>Heart of the Unicorn</b> (illusion, teleportation) ✦ <b>Recharge</b> when the hunter uses backstab</p><p><i>Effect:</i> The hunter teleports 6 squares and becomes invisible until the end of its next turn or until it makes a melee attack roll.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shardhorn Ferocity&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The hunter drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The hunter uses horn dagger. If the attack hits, the target is dazed until the end of the target’s next turn.&lt;/p&gt;]] ⚔ <b>Shardhorn Ferocity</b> <b></b></p><p><i>Trigger:</i> The hunter drops to 0 hit points.</p><p><i>Effect (Immediate Interrupt):</i> The hunter uses horn dagger. If the attack hits, the target is dazed until the end of the target’s next turn.</p></tr></td></table>",

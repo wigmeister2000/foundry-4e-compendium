@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -902,7 +903,7 @@
 		},
 		{
 			"name":"Reactive Stealth",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5i0LgFWS4ZCGDXfb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -938,7 +939,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -994,23 +996,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 132; <b>Bloodied</b> 66</td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 26</td><td><b>Ref</b> 24</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 15 (+8)</td><td><b>Wis</b> 18 (+10)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +17, Endurance +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> chainmail , war pick .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 2d8+5 damage (crit 4d8 + 21), and the target is marked until the end of the gnome caravan guard’s next turn. &lt;/p&gt;]] (⚔) <b>War Pick</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs AC&lt;/u&gt;; 2d8+5 damage (crit 4d8 + 21), and the target is marked until the end of the gnome caravan guard’s next turn. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 2d8+5 damage (crit 4d8 + 21), and the target is marked until the end of the gnome caravan guard’s next turn. &lt;/p&gt;]] <14>  damage (crit [[/roll 4d8 + 21#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 2d8+5 damage (crit 4d8 + 21), and the target is marked until the end of the gnome caravan guard’s next turn. &lt;/p&gt;]] <39> ), and the target is marked until the end of the gnome caravan guard’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Binding Strike&lt;/b&gt; (standard; requires a war pick, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs Reflex; 2d8+5 damage (crit 4d8 + 21). In addition, the target is marked until it ends its turn in a square that is not adjacent to the caravan guard. Until the mark ends, the target cannot shift unless it ends the shift in a square adjacent to the caravan guard. &lt;/p&gt;]] ⚔ <b>Binding Strike</b> (standard; requires a war pick, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Binding Strike&lt;/b&gt; (standard; requires a war pick, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs Reflex&lt;/u&gt;; 2d8+5 damage (crit 4d8 + 21). In addition, the target is marked until it ends its turn in a square that is not adjacent to the caravan guard. Until the mark ends, the target cannot shift unless it ends the shift in a square adjacent to the caravan guard. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Binding Strike&lt;/b&gt; (standard; requires a war pick, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs Reflex; 2d8+5 damage (crit 4d8 + 21). In addition, the target is marked until it ends its turn in a square that is not adjacent to the caravan guard. Until the mark ends, the target cannot shift unless it ends the shift in a square adjacent to the caravan guard. &lt;/p&gt;]] <14>  damage (crit [[/roll 4d8 + 21#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Binding Strike&lt;/b&gt; (standard; requires a war pick, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs Reflex; 2d8+5 damage (crit 4d8 + 21). In addition, the target is marked until it ends its turn in a square that is not adjacent to the caravan guard. Until the mark ends, the target cannot shift unless it ends the shift in a square adjacent to the caravan guard. &lt;/p&gt;]] <39> ). In addition, the target is marked until it ends its turn in a square that is not adjacent to the caravan guard. Until the mark ends, the target cannot shift unless it ends the shift in a square adjacent to the caravan guard. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Stone Call&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; +18 vs Reflex; the target is pulled 4 squares. &lt;/p&gt;]] ➶ <b>Stone Call</b> (minor, encounter) </p><p>Ranged 5; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Stone Call&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; the target is pulled 4 squares. &lt;/p&gt;]]; the target is pulled 4 squares. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fade Away&lt;/b&gt; (immediate reaction, when the gnome caravan guard takes damage; encounter) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnome caravan guard turns invisible until it attacks or until the end of its next turn.&lt;/p&gt;]]  <b>Fade Away</b> (immediate reaction, when the gnome caravan guard takes damage; encounter) ✦ <b>Illusion</b></p><p>The gnome caravan guard turns invisible until it attacks or until the end of its next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Merge With Stone&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The gnome caravan guard moves 3 squares or shifts 1 square, and can pass into and through squares occupied by obstacles made of stone. If the obstacle is larger than it is, the caravan guard can end its movement in such a square. If it does, it remains alive and aware of its surroundings, but it cannot be seen or attacked. The only actions it can take are to make Perception checks or to shift 1 square into an unoccupied square as a move action.&lt;/p&gt;]]  <b>Merge With Stone</b> (move; encounter) </p><p>The gnome caravan guard moves 3 squares or shifts 1 square, and can pass into and through squares occupied by obstacles made of stone. If the obstacle is larger than it is, the caravan guard can end its movement in such a square. If it does, it remains alive and aware of its surroundings, but it cannot be seen or attacked. The only actions it can take are to make Perception checks or to shift 1 square into an unoccupied square as a move action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reactive Stealth&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a gnome has cover or concealment when it makes an initiative check at the start of an encounter, it can make a Stealth check to become hidden.&lt;/p&gt;]]  <b>Reactive Stealth</b></p><p>If a gnome has cover or concealment when it makes an initiative check at the start of an encounter, it can make a Stealth check to become hidden.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Warmaster's Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1BIvQRbm5irk0LKw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -335,10 +337,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -412,7 +414,7 @@
 		},
 		{
 			"name":"Pack Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FiDUWylNg1tPXa0A",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -448,7 +450,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -682,23 +685,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 107; <b>Bloodied</b> 53</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 20</td><td><b>Ref</b> 19</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+6)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 10 (+4)<br><b>Int</b> 14 (+6)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 13 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Intimidate +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> hide armor , wicked fang  +3 .</p><p>[[/roll 0#&lt;b&gt;Warmaster\"s Aura&lt;/b&gt; aura 5; the gnoll warmaster gains a +1 bonus to AC and all defenses for each ally within the aura (maximum +5)]] <b>Warmaster\"s Aura</b> aura 5; the gnoll warmaster gains a +1 bonus to AC and all defenses for each ally within the aura (maximum +5)</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wicked Fang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+8 damage (crit 3d8+24), or 2d8+10 (crit 3d8+26) damage while bloodied. &lt;/p&gt;]] (⚔) <b>Wicked Fang</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wicked Fang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 2d8+8 damage (crit 3d8+24), or 2d8+10 (crit 3d8+26) damage while bloodied. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wicked Fang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+8 damage (crit 3d8+24), or 2d8+10 (crit 3d8+26) damage while bloodied. &lt;/p&gt;]] <17>  damage (crit [[/roll 3d8+24#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wicked Fang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+8 damage (crit 3d8+24), or 2d8+10 (crit 3d8+26) damage while bloodied. &lt;/p&gt;]] <37.5> ), or [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wicked Fang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+8 damage (crit 3d8+24), or 2d8+10 (crit 3d8+26) damage while bloodied. &lt;/p&gt;]] <19>  (crit [[/roll 3d8+26#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wicked Fang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+8 damage (crit 3d8+24), or 2d8+10 (crit 3d8+26) damage while bloodied. &lt;/p&gt;]] <39.5> ) damage while bloodied. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forward the Wicked Fang&lt;/b&gt; (standard; requires wicked fang, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 4d8+8 damage (crit 3d8 + 40), or 4d8 + 10 damage (crit 3d8 + 42) while bloodied, and all gnoll allies within the warmaster’s aura make a basic attack; see also pack attack. &lt;/p&gt;]] ⚔ <b>Forward the Wicked Fang</b> (standard; requires wicked fang, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forward the Wicked Fang&lt;/b&gt; (standard; requires wicked fang, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 4d8+8 damage (crit 3d8 + 40), or 4d8 + 10 damage (crit 3d8 + 42) while bloodied, and all gnoll allies within the warmaster’s aura make a basic attack; see also pack attack. &lt;/p&gt;]]; [[/roll 4d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forward the Wicked Fang&lt;/b&gt; (standard; requires wicked fang, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 4d8+8 damage (crit 3d8 + 40), or 4d8 + 10 damage (crit 3d8 + 42) while bloodied, and all gnoll allies within the warmaster’s aura make a basic attack; see also pack attack. &lt;/p&gt;]] <26>  damage (crit [[/roll 3d8 + 40#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forward the Wicked Fang&lt;/b&gt; (standard; requires wicked fang, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 4d8+8 damage (crit 3d8 + 40), or 4d8 + 10 damage (crit 3d8 + 42) while bloodied, and all gnoll allies within the warmaster’s aura make a basic attack; see also pack attack. &lt;/p&gt;]] <53.5> ), or [[/roll 4d8 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forward the Wicked Fang&lt;/b&gt; (standard; requires wicked fang, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 4d8+8 damage (crit 3d8 + 40), or 4d8 + 10 damage (crit 3d8 + 42) while bloodied, and all gnoll allies within the warmaster’s aura make a basic attack; see also pack attack. &lt;/p&gt;]] <28>  damage (crit [[/roll 3d8 + 42#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Forward the Wicked Fang&lt;/b&gt; (standard; requires wicked fang, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 4d8+8 damage (crit 3d8 + 40), or 4d8 + 10 damage (crit 3d8 + 42) while bloodied, and all gnoll allies within the warmaster’s aura make a basic attack; see also pack attack. &lt;/p&gt;]] <55.5> ) while bloodied, and all gnoll allies within the warmaster’s aura make a basic attack; see also pack attack. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnoll warmaster deals an extra 5 damage on melee attacks against an enemy that has two or more of the gnoll warmaster’s allies adjacent to it.&lt;/p&gt;]]  <b>Pack Attack</b></p><p>The gnoll warmaster deals an extra 5 damage on melee attacks against an enemy that has two or more of the gnoll warmaster’s allies adjacent to it.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wicked Fang Power&lt;/b&gt; (free, when an attack with the weapon keyword hits; daily) &lt;/p&gt;&lt;p&gt;The target also takes ongoing 13 damage (save ends).&lt;/p&gt;]]  <b>Wicked Fang Power</b> (free, when an attack with the weapon keyword hits; daily) </p><p>The target also takes ongoing 13 damage (save ends).</p></tr></td></table>",

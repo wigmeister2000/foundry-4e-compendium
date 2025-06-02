@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -592,23 +593,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 226; <b>Bloodied</b> 113<hr><b>Immune</b> acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 37</td><td><b>Ref</b> 29</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 see also crushing surge</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+21)<br><b>Con</b> 26 (+20)</td><td><b>Dex</b> 12 (+13)<br><b>Int</b> 6 (+10)</td><td><b>Wis</b> 6 (+10)<br><b>Cha</b> 6 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +29 vs AC; 2d6 + 9 damage, and ongoing 5 acid damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Acid</b></p><p>Reach 3; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+29 vs AC&lt;/u&gt;; 2d6 + 9 damage, and ongoing 5 acid damage. &lt;/p&gt;]]; [[/roll 2d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +29 vs AC; 2d6 + 9 damage, and ongoing 5 acid damage. &lt;/p&gt;]] <16>  damage, and ongoing 5 acid damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acid Burst&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 4; +27 vs Reflex; 4d12 + 9 acid damage. &lt;/p&gt;]] ᗕ <b>Acid Burst</b> (standard, encounter) ✦ <b>Acid</b></p><p>Close burst 4; [[/roll 1d20+27[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acid Burst&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 4; &lt;u&gt;+27 vs Reflex&lt;/u&gt;; 4d12 + 9 acid damage. &lt;/p&gt;]]; [[/roll 4d12 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acid Burst&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 4; +27 vs Reflex; 4d12 + 9 acid damage. &lt;/p&gt;]] <35>  acid damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Surge&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 2d6 + 9 damage, and ongoing 5 acid damage, and the target is pushed 2 squares. It makes secondary attacks against any other targets in its path; +27 vs. Reflex; the target is pushed 2 squares. As part of this attack it can only attack any given target once. The corrupture moves up to 8 squares and can move through opponent’s squares as part of the movement. It makes the following attack against the first creature whose space it moves through&lt;/p&gt;]] ⚔ <b>Crushing Surge</b> (standard, recharge ⚄⚅) ✦ <b>Acid</b></p><p>[[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Surge&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+29 vs AC&lt;/u&gt;; 2d6 + 9 damage, and ongoing 5 acid damage, and the target is pushed 2 squares. It makes secondary attacks against any other targets in its path; +27 vs. Reflex; the target is pushed 2 squares. As part of this attack it can only attack any given target once. The corrupture moves up to 8 squares and can move through opponent’s squares as part of the movement. It makes the following attack against the first creature whose space it moves through&lt;/p&gt;]]; [[/roll 2d6 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Surge&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 2d6 + 9 damage, and ongoing 5 acid damage, and the target is pushed 2 squares. It makes secondary attacks against any other targets in its path; +27 vs. Reflex; the target is pushed 2 squares. As part of this attack it can only attack any given target once. The corrupture moves up to 8 squares and can move through opponent’s squares as part of the movement. It makes the following attack against the first creature whose space it moves through&lt;/p&gt;]] <16>  damage, and ongoing 5 acid damage, and the target is pushed 2 squares. It makes secondary attacks against any other targets in its path; +27 vs. Reflex; the target is pushed 2 squares. As part of this attack it can only attack any given target once. The corrupture moves up to 8 squares and can move through opponent’s squares as part of the movement. It makes the following attack against the first creature whose space it moves through</p></tr></td></table>",

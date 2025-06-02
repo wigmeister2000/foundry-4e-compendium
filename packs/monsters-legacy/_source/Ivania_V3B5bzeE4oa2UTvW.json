@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1080,7 +1081,7 @@
 		},
 		{
 			"name":"Double Actions",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"diJ8ZSFw3lstzQNX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1116,7 +1117,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1126,7 +1128,7 @@
 		},
 		{
 			"name":"Dual Brain",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WDdxfkiAaEYy6oRn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1162,7 +1164,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1172,7 +1175,7 @@
 		},
 		{
 			"name":"Twin Threat",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LvqEUHJeBP5fs7ON",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1208,7 +1211,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1264,23 +1268,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 820; <b>Bloodied</b> 410<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> ++15 (see also double actions) | <b>AP</b> 2 | <b>Save</b> +5; see also dual brain</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 32</td><td><b>Ref</b> 28</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+16)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 21 (+13)<br><b>Int</b> 18 (+12)</td><td><b>Wis</b> 17 (+11)<br><b>Cha</b> 24 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +21, Insight +16, Intimidate +20, Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 26</td></td></tr></table><p><b>Equipment</b> dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d10+6 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 1d10+6 damage. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d10+6 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; two targets; +20 vs Reflex; 2d8+7 necrotic damage. If the target is affected by ongoing necrotic damage, the shadow ray deals an extra 2d6 necrotic damage. &lt;/p&gt;]] ➶ <b>Shadow Ray</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 20; two targets; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; two targets; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d8+7 necrotic damage. If the target is affected by ongoing necrotic damage, the shadow ray deals an extra 2d6 necrotic damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; two targets; +20 vs Reflex; 2d8+7 necrotic damage. If the target is affected by ongoing necrotic damage, the shadow ray deals an extra 2d6 necrotic damage. &lt;/p&gt;]] <16>  necrotic damage. If the target is affected by ongoing necrotic damage, the shadow ray deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; two targets; +20 vs Reflex; 2d8+7 necrotic damage. If the target is affected by ongoing necrotic damage, the shadow ray deals an extra 2d6 necrotic damage. &lt;/p&gt;]] <7> necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Flesh Bond&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 20; two adjacent targets; +20 vs Fortitude; 3d10+6 damage. If the attack hits both targets, each target is restrained until both have saved against this effect. &lt;/p&gt;]] ➶ <b>Flesh Bond</b> (standard, recharge ⚄⚅) </p><p>Ranged 20; two adjacent targets; [[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Flesh Bond&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 20; two adjacent targets; &lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 3d10+6 damage. If the attack hits both targets, each target is restrained until both have saved against this effect. &lt;/p&gt;]]; [[/roll 3d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Flesh Bond&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 20; two adjacent targets; +20 vs Fortitude; 3d10+6 damage. If the attack hits both targets, each target is restrained until both have saved against this effect. &lt;/p&gt;]] <22.5>  damage. If the attack hits both targets, each target is restrained until both have saved against this effect. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Cloak of Shadowy Flight&lt;/b&gt; (minor; recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ivania and the Ghoul teleport 5 squares and gain concealment until the Ghoul’s next turn.&lt;/p&gt;]]  <b>Cloak of Shadowy Flight</b> (minor; recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>Ivania and the Ghoul teleport 5 squares and gain concealment until the Ghoul’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;Ivania and the Ghoul gain a +1 power bonus to the next attack roll one of them makes against an enemy that hit them since either’s last turn. If the attack hits and deals damage, the attack deals an extra 5 damage.&lt;/p&gt;]]  <b>Infernal Wrath</b> (minor; encounter) </p><p>Ivania and the Ghoul gain a +1 power bonus to the next attack roll one of them makes against an enemy that hit them since either’s last turn. If the attack hits and deals damage, the attack deals an extra 5 damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spin Strike&lt;/b&gt; (immediate reaction, when an enemy moves to flank ivania and the ghoul) &lt;/p&gt;&lt;p&gt;Ivania and the Ghoul make either a dagger or a bite attack against the flanking enemy.&lt;/p&gt;]]  <b>Spin Strike</b> (immediate reaction, when an enemy moves to flank ivania and the ghoul) </p><p>Ivania and the Ghoul make either a dagger or a bite attack against the flanking enemy.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ivania and the Ghoul each roll initiative, each has a turn during a round, and each has a full set of actions (standard, move, minor) on each turn. One set of actions and initiative corresponds to Ivania and her powers. The other set of actions and initiative corresponds to the Ghoul and his powers. Ivania and the Ghoul’s ability to take immediate actions refreshes on each initiative.&lt;/p&gt;]]  <b>Double Actions</b></p><p>Ivania and the Ghoul each roll initiative, each has a turn during a round, and each has a full set of actions (standard, move, minor) on each turn. One set of actions and initiative corresponds to Ivania and her powers. The other set of actions and initiative corresponds to the Ghoul and his powers. Ivania and the Ghoul’s ability to take immediate actions refreshes on each initiative.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dual Brain&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the end of a turn, Ivania and the Ghoul automatically save against the dazed and stunned conditions and against charm effects that a save can end.&lt;/p&gt;]]  <b>Dual Brain</b></p><p>At the end of a turn, Ivania and the Ghoul automatically save against the dazed and stunned conditions and against charm effects that a save can end.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Twin Threat&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an enemy provokes an opportunity attack from Ivania and the Ghoul, Ivania and the Ghoul make a dagger attack and a bite attack against the enemy, respectively.&lt;/p&gt;]]  <b>Twin Threat</b></p><p>When an enemy provokes an opportunity attack from Ivania and the Ghoul, Ivania and the Ghoul make a dagger attack and a bite attack against the enemy, respectively.</p></tr></td></table>",

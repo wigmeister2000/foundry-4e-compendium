@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Soul Defiler",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"K0MHNPjucvyb7QW9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -467,7 +470,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1905,23 +1909,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1072; <b>Bloodied</b> 536<hr><b>Resist</b> 20 fire, 20 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 43</td><td><b>Ref</b> 40</td><td><b>Will</b> 43</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 31 (+25)<br><b>Con</b> 20 (+20)</td><td><b>Dex</b> 20 (+20)<br><b>Int</b> 26 (+23)</td><td><b>Wis</b> 19 (+19)<br><b>Cha</b> 28 (+24)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> All, telepathy 10<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Arcana +28, History +28, Insight +24</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 5,Darkvision<br><b>Passive</b> Perception 29 | Insight 34</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Soul Defiler&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Whenever an enemy starts its turn within the aura, the enemy takes 10 necrotic damage and Dregoth makes a saving throw.&lt;/p&gt;]] ⌀ <b>Soul Defiler</b> (necrotic) ✦ <b>Aura</b> 3</p><p>Whenever an enemy starts its turn within the aura, the enemy takes 10 necrotic damage and Dregoth makes a saving throw.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +35 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 2 damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;]] (⚔) <b>Bite</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+35[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+35 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d12 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 2 damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;]] <28>  damage, and ongoing 10 necrotic damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +35 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 7 damage, and the target takes ongoing 10 cold damage and is slowed (save ends both).&lt;/p&gt;]] (⚔) <b>Claw</b> (cold) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+35[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+35 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 7 damage, and the target takes ongoing 10 cold damage and is slowed (save ends both).&lt;/p&gt;]] <28>  damage, and the target takes ongoing 10 cold damage and is slowed (save ends both).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Defiling Gaze&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +34 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 4 necrotic damage, and the target is dazed (save ends).&lt;/p&gt;]] (➶) <b>Defiling Gaze</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+34[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Defiling Gaze&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+34 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d10 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Defiling Gaze&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 4 necrotic damage, and the target is dazed (save ends).&lt;/p&gt;]] <37>  necrotic damage, and the target is dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔➶ &lt;b&gt;Dread King\"s Wrath&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Dregoth uses bite once and claw once, or uses claw twice.&lt;/p&gt;]] ⚔➶ <b>Dread King\"s Wrath</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Dregoth uses bite once and claw once, or uses claw twice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (cold, fear, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +34 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 8 cold damage plus 2d10 + 8 necrotic damage, and the target is immobilized and takes a -4 penalty to AC and Fortitude (save ends both).&lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (cold, fear, necrotic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+34[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (cold, fear, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+34 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll [[/roll 2d10 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (cold, fear, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 8 cold damage plus 2d10 + 8 necrotic damage, and the target is immobilized and takes a -4 penalty to AC and Fortitude (save ends both).&lt;/p&gt;]] <19> #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (cold, fear, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 8 cold damage plus 2d10 + 8 necrotic damage, and the target is immobilized and takes a -4 penalty to AC and Fortitude (save ends both).&lt;/p&gt;]] <19>  cold damage plus 2d10 + 8 necrotic damage, and the target is immobilized and takes a -4 penalty to AC and Fortitude (save ends both).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Supreme Defiling&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (creatures in the burst); +34 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 4 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Special:&lt;/i&gt; Dregoth can score a critical hit with this attack on a roll of 17-20.&lt;/p&gt;]] ᗕ <b>Supreme Defiling</b> ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 3 (creatures in the burst); [[/roll 1d20+34[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Supreme Defiling&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (creatures in the burst); &lt;u&gt;+34 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d10 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Supreme Defiling&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 4 damage.&lt;/p&gt;]] <37>  damage.</p><p><i>Special:</i> Dregoth can score a critical hit with this attack on a roll of 17-20.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Nightmare Travel&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Dregoth becomes insubstantial and is phasing, and he shifts 8 squares. If Dregoth enters a creature’s square, he knocks the creature prone and the creature takes 15 psychic damage.&lt;/p&gt;]]  <b>Nightmare Travel</b> (psychic) ✦ <b>Encounter</b></p><p><i>Effect:</i> Dregoth becomes insubstantial and is phasing, and he shifts 8 squares. If Dregoth enters a creature’s square, he knocks the creature prone and the creature takes 15 psychic damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Dregoth alters his physical form to appear as a Medium male dragonborn or a gray-scaled, dragonlike humanoid until he uses change shape again or until he drops to 0 hit points. He retains his statistics in his new form. His clothing, armor, and other possessions do not change. To assume a specific individual’s form, he must have seen that individual. Other creatures can make a DC 47 Insight check to discern that the form is a disguise.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> Dregoth alters his physical form to appear as a Medium male dragonborn or a gray-scaled, dragonlike humanoid until he uses change shape again or until he drops to 0 hit points. He retains his statistics in his new form. His clothing, armor, and other possessions do not change. To assume a specific individual’s form, he must have seen that individual. Other creatures can make a DC 47 Insight check to discern that the form is a disguise.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Spellmaster&lt;/b&gt; ✦ &lt;b&gt;Recharge 5, 6, or when first bloodied&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Dregoth regains the use of an expended encounter power.&lt;/p&gt;]]  <b>Spellmaster</b> ✦ <b>Recharge 5, 6, or when first bloodied</b></p><p><i>Effect:</i> Dregoth regains the use of an expended encounter power.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Riposte&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Dregoth is hit by a creature within 4 squares of him.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 4 (the triggering creature); +34 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 9 damage, and ongoing 15 fire and necrotic damage (save ends), and Dregoth slides the target 5 squares.&lt;/p&gt;]] ⚔ <b>Tail Riposte</b> (fire, necrotic) ✦ <b>At-Will</b></p><p><i>Trigger:</i> Dregoth is hit by a creature within 4 squares of him.</p><p><i>Attack (Immediate Reaction):</i> Melee 4 (the triggering creature); [[/roll 1d20+34[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Riposte&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 4 (the triggering creature); &lt;u&gt;+34 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Riposte&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 9 damage, and ongoing 15 fire and necrotic damage (save ends), and Dregoth slides the target 5 squares.&lt;/p&gt;]] <23>  damage, and ongoing 15 fire and necrotic damage (save ends), and Dregoth slides the target 5 squares.</p></tr></td></table>",

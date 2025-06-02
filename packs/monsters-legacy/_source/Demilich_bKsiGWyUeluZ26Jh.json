@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8scP6BLdYVOxvjp9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Intruding Terror",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6oz21c9nMNka34QC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"25",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1175,7 +1178,7 @@
 		},
 		{
 			"name":"Soul Gems",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ItYkdEehjZvxnL5M",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1211,7 +1214,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1221,7 +1225,7 @@
 		},
 		{
 			"name":"Indestructible",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RlLWq4atrSOwnm1F",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1257,7 +1261,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1313,23 +1318,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 800; <b>Bloodied</b> 400<br><b>Regeneration</b> 20 (if a demilich takes radiant damage, regeneration doesn’t function until the end of its next turn)<hr><b>Resist</b> 10 necrotic, 10 psychic <b>Immune</b> disease, poison. sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 35</td><td><b>Ref</b> 32</td><td><b>Will</b> 32</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 12 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+13)<br><b>Con</b> 24 (+17)</td><td><b>Dex</b> 16 (+13)<br><b>Int</b> 15 (+12)</td><td><b>Wis</b> 17 (+13)<br><b>Cha</b> 27 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +17, Insight +18, Religion +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 28</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Intruding Terror&lt;/b&gt; (Fear) aura 2; enemies within the aura take a -2 penalty to attack rolls.]] <b>Intruding Terror</b> (Fear) aura 2; enemies within the aura take a -2 penalty to attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +25 vs AC; 3d6+8 necrotic damage. &lt;/p&gt;]] (⚔) <b>Shadow Ray</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 20; [[/roll 1d20+25[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+25 vs AC&lt;/u&gt;; 3d6+8 necrotic damage. &lt;/p&gt;]]; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +25 vs AC; 3d6+8 necrotic damage. &lt;/p&gt;]] <18.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twin Rays&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The demilich makes two shadow ray attacks&lt;/p&gt;]] ➶ <b>Twin Rays</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>The demilich makes two shadow ray attacks</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Drain Soul&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +25 vs Fortitude; the target is dazed and restrained (save ends both). First Failed Saving Throw: The target is instead stunned and restrained (save ends both). Second Failed Saving Throw: The target dies, and its soul is trapped in one of the demilich’s soul gems until the demilich is destroyed. &lt;/p&gt;]] ➶ <b>Drain Soul</b> (standard, at-will) </p><p>Ranged 5; [[/roll 1d20+25[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Drain Soul&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+25 vs Fortitude&lt;/u&gt;; the target is dazed and restrained (save ends both). First Failed Saving Throw: The target is instead stunned and restrained (save ends both). Second Failed Saving Throw: The target dies, and its soul is trapped in one of the demilich’s soul gems until the demilich is destroyed. &lt;/p&gt;]]; the target is dazed and restrained (save ends both). First Failed Saving Throw: The target is instead stunned and restrained (save ends both). Second Failed Saving Throw: The target dies, and its soul is trapped in one of the demilich’s soul gems until the demilich is destroyed. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Obsidian Eye&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Gaze, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +25 vs Fortitude; the target takes ongoing 10 necrotic damage. &lt;/p&gt;]] ➶ <b>Obsidian Eye</b> (minor, at-will) ✦ <b>Gaze, Necrotic</b></p><p>Ranged 20; [[/roll 1d20+25[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Obsidian Eye&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Gaze, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+25 vs Fortitude&lt;/u&gt;; the target takes ongoing 10 necrotic damage. &lt;/p&gt;]]; the target takes ongoing 10 necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Consume Soul&lt;/b&gt; (minor; expends a trapped soul; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The demilich regains 200 hit points.&lt;/p&gt;]]  <b>Consume Soul</b> (minor; expends a trapped soul; encounter) ✦ <b>Healing</b></p><p>The demilich regains 200 hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Soul Shriveling Pulse&lt;/b&gt; (immediate reaction, when a creature fails a saving throw against drain soul, at-will) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +25 vs Will; 3d6+5 necrotic damage, and the target takes a -2 penalty to saving throws (save ends). &lt;/p&gt;]] ᗕ <b>Soul Shriveling Pulse</b> (immediate reaction, when a creature fails a saving throw against drain soul, at-will) ✦ <b>Fear, Necrotic</b></p><p>Close burst 5; [[/roll 1d20+25[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Soul Shriveling Pulse&lt;/b&gt; (immediate reaction, when a creature fails a saving throw against drain soul, at-will) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+25 vs Will&lt;/u&gt;; 3d6+5 necrotic damage, and the target takes a -2 penalty to saving throws (save ends). &lt;/p&gt;]]; [[/roll 3d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Soul Shriveling Pulse&lt;/b&gt; (immediate reaction, when a creature fails a saving throw against drain soul, at-will) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +25 vs Will; 3d6+5 necrotic damage, and the target takes a -2 penalty to saving throws (save ends). &lt;/p&gt;]] <15.5>  necrotic damage, and the target takes a -2 penalty to saving throws (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Gems&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The demilich’s six soul gems can each hold the soul of one of its victims. At the beginning of an encounter, the soul gems contain two souls. Crushing a gem after the demilich is defeated releases the soul to the Shadowfell.&lt;/p&gt;]]  <b>Soul Gems</b></p><p>The demilich’s six soul gems can each hold the soul of one of its victims. At the beginning of an encounter, the soul gems contain two souls. Crushing a gem after the demilich is defeated releases the soul to the Shadowfell.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a demilich is reduced to 0 hit points or fewer, its skull (but not the soul gems) crumbles into dust, but it is not destroyed. It reappears in 1d10 days within 1 square of its phylactery, unless the phylactery is also found and destroyed.&lt;/p&gt;]]  <b>Indestructible</b></p><p>When a demilich is reduced to 0 hit points or fewer, its skull (but not the soul gems) crumbles into dust, but it is not destroyed. It reappears in [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a demilich is reduced to 0 hit points or fewer, its skull (but not the soul gems) crumbles into dust, but it is not destroyed. It reappears in 1d10 days within 1 square of its phylactery, unless the phylactery is also found and destroyed.&lt;/p&gt;]] <5.5> days within 1 square of its phylactery, unless the phylactery is also found and destroyed.</p></tr></td></table>",

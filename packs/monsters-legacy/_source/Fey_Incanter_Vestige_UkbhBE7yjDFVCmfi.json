@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -366,7 +367,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1gREdv6k5rOBc4Gh",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +403,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 91; <b>Bloodied</b> 45<hr><b>Resist</b> 15 necrotic, insubstantial <b>Vulnerable</b> 10 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 32</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+10)<br><b>Con</b> 16 (+12)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 26 (+17)</td><td><b>Wis</b> 22 (+15)<br><b>Cha</b> 20 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Humility&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +21 vs Will; 1d8+5 necrotic damage, ongoing 5 necrotic damage, and the target must roll saving throws twice taking the lower of the two results (save ends both). &lt;/p&gt;]] (➶) <b>Ray of Humility</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 5; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Humility&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+21 vs Will&lt;/u&gt;; 1d8+5 necrotic damage, ongoing 5 necrotic damage, and the target must roll saving throws twice taking the lower of the two results (save ends both). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Humility&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +21 vs Will; 1d8+5 necrotic damage, ongoing 5 necrotic damage, and the target must roll saving throws twice taking the lower of the two results (save ends both). &lt;/p&gt;]] <9.5>  necrotic damage, ongoing 5 necrotic damage, and the target must roll saving throws twice taking the lower of the two results (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ray of Spring\"s Rejection&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +21 vs Will; 2d8+6 necrotic damage, and the target grants combat advantage to the fey-incanter vestige (save ends). &lt;/p&gt;]] ➶ <b>Ray of Spring\"s Rejection</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Ranged 5; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ray of Spring\"s Rejection&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+21 vs Will&lt;/u&gt;; 2d8+6 necrotic damage, and the target grants combat advantage to the fey-incanter vestige (save ends). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ray of Spring\"s Rejection&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +21 vs Will; 2d8+6 necrotic damage, and the target grants combat advantage to the fey-incanter vestige (save ends). &lt;/p&gt;]] <15>  necrotic damage, and the target grants combat advantage to the fey-incanter vestige (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The fey-incanter vestige deals 2d8 extra necrotic damage to any target granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b>✦ <b>Necrotic</b></p><p>The fey-incanter vestige deals [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The fey-incanter vestige deals 2d8 extra necrotic damage to any target granting combat advantage to it.&lt;/p&gt;]] <9> extra necrotic damage to any target granting combat advantage to it.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The fey-incanter vestige teleports 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The fey-incanter vestige teleports 5 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Maniacal Dash&lt;/b&gt; (move; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The fey-incanter vestige shifts 6 squares.&lt;/p&gt;]]  <b>Maniacal Dash</b> (move; recharge ⚄⚅) </p><p>The fey-incanter vestige shifts 6 squares.</p></tr></td></table>",

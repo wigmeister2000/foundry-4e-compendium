@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dragonborn Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Cpm4hEHJVI5qtyZk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -802,7 +804,7 @@
 				"uses":{
 					"value":2,
 					"max":"2",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -1176,23 +1178,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 30; <b>Bloodied</b> 15<b>; Surge</b> 8</td><td style=\"padding-left: 15px;\"><b>Init</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 17</td><td><b>Ref</b> 13</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+5)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 12 (+2)<br><b>Int</b> 10 (+1)</td><td><b>Wis</b> 8 (0)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Lawful Good</td></tr><tr><td><b>Skills</b> History +6, Intimidate +9</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><p><b>Equipment</b> adventurer\"s kit , chainmail , longspear .</p><p>[[/roll 0#&lt;b&gt;Healing Surges&lt;/b&gt; 8]] <b>Healing Surges</b> 8</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dragonborn Fury&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ghesh gains a +1 bonus to attack rolls while he is bloodied.&lt;/p&gt;]]  <b>Dragonborn Fury</b> <b></b></p><p>Ghesh gains a +1 bonus to attack rolls while he is bloodied.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage.&lt;/p&gt;]] (⚔) <b>Longspear</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage.&lt;/p&gt;]] <10.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Viper\"s Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; If the target shifts before the start of Ghesh’s next turn, it provokes an opportunity attack from an ally of Ghesh’s choice.&lt;/p&gt;]] ⚔ <b>Viper\"s Strike</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Viper\"s Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Viper\"s Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage.&lt;/p&gt;]] <10.5>  damage.</p><p><i>Effect:</i> If the target shifts before the start of Ghesh’s next turn, it provokes an opportunity attack from an ally of Ghesh’s choice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hammer and Anvil&lt;/b&gt; (weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +8 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage. One ally adjacent to the target uses a free action to make a melee basic attack against the target. The ally gains a +3 bonus to his or her damage roll.&lt;/p&gt;]] ⚔ <b>Hammer and Anvil</b> (weapon) ✦ <b>Encounter</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+8[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hammer and Anvil&lt;/b&gt; (weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+8 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hammer and Anvil&lt;/b&gt; (weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage. One ally adjacent to the target uses a free action to make a melee basic attack against the target. The ally gains a +3 bonus to his or her damage roll.&lt;/p&gt;]] <10.5>  damage. One ally adjacent to the target uses a free action to make a melee basic attack against the target. The ally gains a +3 bonus to his or her damage roll.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Knight\"s Move&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ranged 10 (one ally). The target takes a move action.&lt;/p&gt;]] ➶ <b>Knight\"s Move</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> Ranged 10 (one ally). The target takes a move action.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Healing Word&lt;/b&gt; (healing) ✦ &lt;b&gt;2/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 5 (Ghesh or one ally in the burst). The target spends a healing surge.&lt;/p&gt;]] ᗕ <b>Healing Word</b> (healing) ✦ <b>2/Encounter</b></p><p><i>Effect:</i> Close burst 5 (Ghesh or one ally in the burst). The target spends a healing surge.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (fire) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +6 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 2 fire damage.&lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (fire) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (fire) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 2#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (fire) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 2 fire damage.&lt;/p&gt;]] <5.5>  fire damage.</p></tr></td></table>",

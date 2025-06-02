@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -949,23 +951,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 44; <b>Bloodied</b> 22</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 17</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+3)<br><b>Con</b> 14 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 15 (+4)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 10 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> 4 fire bombs, caltrops, handaxe  x2, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 9 damage.&lt;/p&gt;&lt;p&gt;(➶) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 9 damage.&lt;/p&gt;]] (⚔) <b>Handaxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 9 damage.&lt;/p&gt;]] <12.5>  damage.</p><p>(➶) <b>Handaxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 9 damage.&lt;/p&gt;]] <12.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Fire Bomb&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); +9 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 fire damage.&lt;/p&gt;]] ✻ <b>Fire Bomb</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Area burst 1 within 10 (creatures in the burst); [[/roll 1d20+9[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Fire Bomb&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); &lt;u&gt;+9 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Fire Bomb&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 fire damage.&lt;/p&gt;]] <9.5>  fire damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Blazing Fury&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The grenadier drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Each creature adjacent to the grenadier takes 5 fire damage, and the grenadier uses fire bomb.&lt;/p&gt;]] ✻ <b>Blazing Fury</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The grenadier drops to 0 hit points.</p><p><i>Effect (Free Action):</i> Each creature adjacent to the grenadier takes 5 fire damage, and the grenadier uses fire bomb.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Caltrops&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy ends its movement adjacent to the grenadier.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The grenadier shifts up to 2 squares and drops caltrops in a close blast 3, which must include the enemy’s space. Until the end of the encounter, any creature that enters the blast’s area or ends its turn there takes 5 damage and is slowed (save ends).&lt;/p&gt;]]  <b>Caltrops</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy ends its movement adjacent to the grenadier.</p><p><i>Effect (Immediate Reaction):</i> The grenadier shifts up to 2 squares and drops caltrops in a close blast 3, which must include the enemy’s space. Until the end of the encounter, any creature that enters the blast’s area or ends its turn there takes 5 damage and is slowed (save ends).</p></tr></td></table>",

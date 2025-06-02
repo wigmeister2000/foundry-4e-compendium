@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -252,7 +253,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -301,10 +303,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -479,10 +481,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -962,23 +964,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 128; <b>Bloodied</b> 64</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 28</td><td><b>Ref</b> 26</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+12)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 16 (+11)<br><b>Int</b> 14 (+10)</td><td><b>Wis</b> 19 (+12)<br><b>Cha</b> 15 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 6<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> leather armor , quarterstaff .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d4+4 damage, plus 1d8 thunder damage. &lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (standard, at-will) ✦ <b>Thunder, Weapon</b></p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d4+4 damage, plus 1d8 thunder damage. &lt;/p&gt;]]; [[/roll 2d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d4+4 damage, plus 1d8 thunder damage. &lt;/p&gt;]] <9>  damage, plus [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d4+4 damage, plus 1d8 thunder damage. &lt;/p&gt;]] <4.5> thunder damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Tempest Orb&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 20; +20 vs Reflex; 2d8+6 lightning and thunder damage. &lt;/p&gt;]] (➶) <b>Tempest Orb</b> (standard, at-will) ✦ <b>Lightning, Thunder</b></p><p>Range 20; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Tempest Orb&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 20; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d8+6 lightning and thunder damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Tempest Orb&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 20; +20 vs Reflex; 2d8+6 lightning and thunder damage. &lt;/p&gt;]] <15>  lightning and thunder damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Storm Burst &lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Lightning, Thunder, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; the power creates a zone that lasts until the end of the encounter. Enemies within the zone at the start of their turns take 2d8 lightning damage. Uncovered flames are doused and ongoing fire damage ends immediately within the zone.&lt;/p&gt;]] ✻ <b>Storm Burst </b> (standard, encounter) ✦ <b>Lightning, Thunder, Zone</b></p><p>Area burst 2 within 10; the power creates a zone that lasts until the end of the encounter. Enemies within the zone at the start of their turns take [[/roll 2d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Storm Burst &lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Lightning, Thunder, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; the power creates a zone that lasts until the end of the encounter. Enemies within the zone at the start of their turns take 2d8 lightning damage. Uncovered flames are doused and ongoing fire damage ends immediately within the zone.&lt;/p&gt;]] <9> lightning damage. Uncovered flames are doused and ongoing fire damage ends immediately within the zone.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Evil Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Range 20; +20 vs Fortitude; the target gains vulnerable 5 to thunder damage and vulnerable 5 to lightning damage (save ends both effects). &lt;/p&gt;]] ➶ <b>Evil Eye</b> (minor, at-will) </p><p>Range 20; [[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Evil Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Range 20; &lt;u&gt;+20 vs Fortitude&lt;/u&gt;; the target gains vulnerable 5 to thunder damage and vulnerable 5 to lightning damage (save ends both effects). &lt;/p&gt;]]; the target gains vulnerable 5 to thunder damage and vulnerable 5 to lightning damage (save ends both effects). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Wind Flight&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;The cyclops storm shaman gains a fly speed of 8 (hover) until the end of its next turn. If it doesn’t land before then, it crashes.&lt;/p&gt;]]  <b>Wind Flight</b> (minor; encounter) </p><p>The cyclops storm shaman gains a fly speed of 8 (hover) until the end of its next turn. If it doesn’t land before then, it crashes.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LRm9duGpCFHWreVf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -446,7 +448,7 @@
 				"uses":{
 					"value":3,
 					"max":"3",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"",

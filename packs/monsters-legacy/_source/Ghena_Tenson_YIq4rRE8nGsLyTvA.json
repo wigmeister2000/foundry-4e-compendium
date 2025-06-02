@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -950,23 +952,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 44; <b>Bloodied</b> 22</td><td style=\"padding-left: 15px;\"><b>Init</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 15</td><td><b>Ref</b> 18</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+1)<br><b>Con</b> 12 (+2)</td><td><b>Dex</b> 13 (+2)<br><b>Int</b> 18 (+5)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +10, History +10, Religion +10</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> robes, staff, adventurer\"s kit , spellbook .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 1d8 damage. &lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+5 vs AC&lt;/u&gt;; 1d8 damage. &lt;/p&gt;]]; [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 1d8 damage. &lt;/p&gt;]] <4.5> damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missiles&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +7 vs AC; 2d4+4 force damage. This power counts as a ranged basic attack. &lt;/p&gt;]] (➶) <b>Magic Missiles</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 20; [[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missiles&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+7 vs AC&lt;/u&gt;; 2d4+4 force damage. This power counts as a ranged basic attack. &lt;/p&gt;]]; [[/roll 2d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missiles&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +7 vs AC; 2d4+4 force damage. This power counts as a ranged basic attack. &lt;/p&gt;]] <9>  force damage. This power counts as a ranged basic attack. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Cloud of Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +7 vs Reflex; 1d6+4 force damage. The power\"s area is filled with sharp daggers of force. Any creature that enters the area or starts its turn there takes 2 force damage. The cloud remains in place until the end of Ghena\"s next turn. &lt;/p&gt;]] ✻ <b>Cloud of Daggers</b> (standard, at-will) ✦ <b>Force</b></p><p>Area burst 1 within 10; [[/roll 1d20+7[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Cloud of Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+7 vs Reflex&lt;/u&gt;; 1d6+4 force damage. The power\"s area is filled with sharp daggers of force. Any creature that enters the area or starts its turn there takes 2 force damage. The cloud remains in place until the end of Ghena\"s next turn. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Cloud of Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +7 vs Reflex; 1d6+4 force damage. The power\"s area is filled with sharp daggers of force. Any creature that enters the area or starts its turn there takes 2 force damage. The cloud remains in place until the end of Ghena\"s next turn. &lt;/p&gt;]] <7.5>  force damage. The power\"s area is filled with sharp daggers of force. Any creature that enters the area or starts its turn there takes 2 force damage. The cloud remains in place until the end of Ghena\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Color Spray&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +7 vs Will; 1d6+4 radiant damage, and the target is dazed until the end of Ghena\"s next turn. &lt;/p&gt;]] ᗕ <b>Color Spray</b> (standard, encounter) ✦ <b>Radiant</b></p><p>Close blast 5; [[/roll 1d20+7[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Color Spray&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+7 vs Will&lt;/u&gt;; 1d6+4 radiant damage, and the target is dazed until the end of Ghena\"s next turn. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Color Spray&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +7 vs Will; 1d6+4 radiant damage, and the target is dazed until the end of Ghena\"s next turn. &lt;/p&gt;]] <7.5>  radiant damage, and the target is dazed until the end of Ghena\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shield&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;Ghena gains a +4 power bonus to AC and Reflex defense until the end of her next turn.&lt;/p&gt;]]  <b>Shield</b> (standard; encounter) </p><p>Ghena gains a +4 power bonus to AC and Reflex defense until the end of her next turn.</p></tr></td></table>",

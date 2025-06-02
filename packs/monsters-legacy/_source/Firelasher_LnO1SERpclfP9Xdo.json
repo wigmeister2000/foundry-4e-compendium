@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -546,7 +547,7 @@
 		},
 		{
 			"name":"Mutable Shape",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2mkAnu30oXsRFLdw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +583,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 108; <b>Bloodied</b> 54<hr><b>Resist</b> 25 fire <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 25</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+5)<br><b>Con</b> 12 (+6)</td><td><b>Dex</b> 21 (+10)<br><b>Int</b> 7 (+3)</td><td><b>Wis</b> 11 (+5)<br><b>Cha</b> 8 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +14 vs Reflex; 2d8+5 fire damage. &lt;/p&gt;]] (⚔) <b>Fire Lash</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 2; [[/roll 1d20+14[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+14 vs Reflex&lt;/u&gt;; 2d8+5 fire damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +14 vs Reflex; 2d8+5 fire damage. &lt;/p&gt;]] <14>  fire damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wildfire Cyclone&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +14 vs Reflex; 2d6+5 fire damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is neither pushed nor knocked prone. &lt;/p&gt;]] ᗕ <b>Wildfire Cyclone</b> (standard, recharge ⚄⚅) ✦ <b>Fire</b></p><p>Close burst 2; [[/roll 1d20+14[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wildfire Cyclone&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+14 vs Reflex&lt;/u&gt;; 2d6+5 fire damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is neither pushed nor knocked prone. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wildfire Cyclone&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +14 vs Reflex; 2d6+5 fire damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is neither pushed nor knocked prone. &lt;/p&gt;]] <12>  fire damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is neither pushed nor knocked prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Whirlwind Dash&lt;/b&gt; (standard; recharge ⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The firelasher can move up to twice its speed. It can move through spaces occupied by other creatures without provoking opportunity attacks. It must end its move in an unoccupied space. Any creature whose space the firelasher enters takes 10 fire damage.&lt;/p&gt;]]  <b>Whirlwind Dash</b> (standard; recharge ⚅) ✦ <b>Fire</b></p><p>The firelasher can move up to twice its speed. It can move through spaces occupied by other creatures without provoking opportunity attacks. It must end its move in an unoccupied space. Any creature whose space the firelasher enters takes 10 fire damage.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mutable Shape&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The firelasher can squeeze through spaces as though it were a Medium creature.&lt;/p&gt;]]  <b>Mutable Shape</b></p><p>The firelasher can squeeze through spaces as though it were a Medium creature.</p></tr></td></table>",

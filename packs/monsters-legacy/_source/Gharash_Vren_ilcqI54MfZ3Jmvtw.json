@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -906,7 +907,7 @@
 		},
 		{
 			"name":"Dragonborn Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"i5R4EMXS2AVDIKuB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -942,7 +943,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1178,23 +1180,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 101; <b>Bloodied</b> 50</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 22</td><td><b>Ref</b> 19</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+10)<br><b>Con</b> 13 (+6)</td><td><b>Dex</b> 10 (+5)<br><b>Int</b> 12 (+6)</td><td><b>Wis</b> 11 (+5)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +15, History +7, Intimidate +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> +3 dwarven chainmail, bastard sword , light shield .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC;  (+18 while bloodied)1d10+8 damage. &lt;/p&gt;]] (⚔) <b>Bastard Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;;  (+18 while bloodied)1d10+8 damage. &lt;/p&gt;]];  (+18 while bloodied)[[/roll 1d10+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC;  (+18 while bloodied)1d10+8 damage. &lt;/p&gt;]] <13.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Viper\"s Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC;  (+18 while bloodied)1d10+8 damage. If the target shifts before the end of Gharash Vren\"s next turn, it provokes an opportunity attack from an ally of Vren\"s choice. &lt;/p&gt;]] ⚔ <b>Viper\"s Strike</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Viper\"s Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;;  (+18 while bloodied)1d10+8 damage. If the target shifts before the end of Gharash Vren\"s next turn, it provokes an opportunity attack from an ally of Vren\"s choice. &lt;/p&gt;]];  (+18 while bloodied)[[/roll 1d10+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Viper\"s Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC;  (+18 while bloodied)1d10+8 damage. If the target shifts before the end of Gharash Vren\"s next turn, it provokes an opportunity attack from an ally of Vren\"s choice. &lt;/p&gt;]] <13.5>  damage. If the target shifts before the end of Gharash Vren\"s next turn, it provokes an opportunity attack from an ally of Vren\"s choice. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sunder Armor&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC;  (+18 while bloodied)2d10+8 damage. Until the end of Gharash Vren\"s next turn, any attack roll against the target can score a critical hit on a roll of 18-20. &lt;/p&gt;]] ⚔ <b>Sunder Armor</b> (standard, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sunder Armor&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;;  (+18 while bloodied)2d10+8 damage. Until the end of Gharash Vren\"s next turn, any attack roll against the target can score a critical hit on a roll of 18-20. &lt;/p&gt;]];  (+18 while bloodied)[[/roll 2d10+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sunder Armor&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC;  (+18 while bloodied)2d10+8 damage. Until the end of Gharash Vren\"s next turn, any attack roll against the target can score a critical hit on a roll of 18-20. &lt;/p&gt;]] <19>  damage. Until the end of Gharash Vren\"s next turn, any attack roll against the target can score a critical hit on a roll of 18-20. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Inspiring Word&lt;/b&gt; (minor, twice per encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; Gharash Vren or one ally in burst; target spends a healing surge and regains an additional 2d6 hit points.&lt;/p&gt;]] ᗕ <b>Inspiring Word</b> (minor, twice per encounter) ✦ <b>Healing</b></p><p>Close burst 5; Gharash Vren or one ally in burst; target spends a healing surge and regains an additional [[/roll 2d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Inspiring Word&lt;/b&gt; (minor, twice per encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; Gharash Vren or one ally in burst; target spends a healing surge and regains an additional 2d6 hit points.&lt;/p&gt;]] <7> hit points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +12 vs Reflex;  (+13 while bloodied)1d6+4 lightning damage. &lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (minor, encounter) ✦ <b>Fire</b></p><p>Close blast 3; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+12 vs Reflex&lt;/u&gt;;  (+13 while bloodied)1d6+4 lightning damage. &lt;/p&gt;]];  (+13 while bloodied)[[/roll 1d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +12 vs Reflex;  (+13 while bloodied)1d6+4 lightning damage. &lt;/p&gt;]] <7.5>  lightning damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dragonborn Fury&lt;/b&gt; (only while bloodied) &lt;/p&gt;&lt;p&gt;A dragonborn gains a +1 racial bonus to attack rolls while bloodied.&lt;/p&gt;]]  <b>Dragonborn Fury</b> (only while bloodied) </p><p>A dragonborn gains a +1 racial bonus to attack rolls while bloodied.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dwarven Armor&lt;/b&gt; (free; daily) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Gharash Vren regains 25 hit points.&lt;/p&gt;]]  <b>Dwarven Armor</b> (free; daily) ✦ <b>Healing</b></p><p>Gharash Vren regains 25 hit points.</p></tr></td></table>",

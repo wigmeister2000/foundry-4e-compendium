@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -362,7 +363,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5ceSFK6a9X8un3q4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -398,7 +399,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -586,7 +588,7 @@
 		},
 		{
 			"name":"Pack Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"18xACM6LGanI2JvY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -622,7 +624,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -678,23 +681,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 30; <b>Bloodied</b> 15</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 9 (null)<br><b>Con</b> 14 (+2)</td><td><b>Dex</b> 17 (+3)<br><b>Int</b> 5 (null)</td><td><b>Wis</b> 9 (null)<br><b>Cha</b> 10 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception NaN | Insight NaN</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+1 damage, and the target is slowed (save ends). &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 1d6+1 damage, and the target is slowed (save ends). &lt;/p&gt;]]; [[/roll 1d6+1#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+1 damage, and the target is slowed (save ends). &lt;/p&gt;]] <4.5>  damage, and the target is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard; usable only while bloodied, at-will) &lt;/p&gt;&lt;p&gt;The witherling makes two claw attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard; usable only while bloodied, at-will) </p><p>The witherling makes two claw attacks</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A witherling deals 1d6 extra damage on attacks against any creature granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A witherling deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A witherling deals 1d6 extra damage on attacks against any creature granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage on attacks against any creature granting combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A witherling’s melee attacks deal 2 extra damage against any enemy that has two or more of the witherling’s allies adjacent to it.&lt;/p&gt;]]  <b>Pack Attack</b></p><p>A witherling’s melee attacks deal 2 extra damage against any enemy that has two or more of the witherling’s allies adjacent to it.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blood Dance&lt;/b&gt; (minor; usable only while bloodied; at-will) &lt;/p&gt;&lt;p&gt;The witherling shifts 2 squares.&lt;/p&gt;]]  <b>Blood Dance</b> (minor; usable only while bloodied; at-will) </p><p>The witherling shifts 2 squares.</p></tr></td></table>",

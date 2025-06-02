@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -770,23 +772,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 142; <b>Bloodied</b> 71</td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 31</td><td><b>Ref</b> 32</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 3 (while within the Astral Sea)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+13)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 25 (+16)<br><b>Int</b> 19 (+13)</td><td><b>Wis</b> 22 (+15)<br><b>Cha</b> 19 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +18, Insight +20</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 30</td></td></tr></table><p><b>Equipment</b> cutlass (short sword), javelin  x5, scale armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cutlass&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 10 damage.&lt;/p&gt;]] (⚔) <b>Cutlass</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cutlass&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cutlass&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 10 damage.&lt;/p&gt;]] <23.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10/20 (one creature); +26 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 14 damage.&lt;/p&gt;]] (➶) <b>Javelin</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10/20 (one creature); [[/roll 1d20+26[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10/20 (one creature); &lt;u&gt;+26 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 14#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 14 damage.&lt;/p&gt;]] <27.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Harpooning Javelin&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10/20 (one creature); +26 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 14 damage. The harpoonist pulls the target up to 3 squares, and the target is immobilized (save ends). Each Failed Saving Throw: The harpoonist pulls the target up to 3 squares.&lt;/p&gt;]] ➶ <b>Harpooning Javelin</b> (weapon) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 10/20 (one creature); [[/roll 1d20+26[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Harpooning Javelin&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10/20 (one creature); &lt;u&gt;+26 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 14#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Harpooning Javelin&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 14 damage. The harpoonist pulls the target up to 3 squares, and the target is immobilized (save ends). Each Failed Saving Throw: The harpoonist pulls the target up to 3 squares.&lt;/p&gt;]] <27.5>  damage. The harpoonist pulls the target up to 3 squares, and the target is immobilized (save ends). Each Failed Saving Throw: The harpoonist pulls the target up to 3 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Harpoonist\"s Determination&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 5 squares of the harpoonist, or one that is immobilized by harpooning javelin, scores a critical hit.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The harpoonist can make a basic attack, shift 1 square, pull a creature immobilized by harpooning javelin up to 3 squares, or move up to its speed.&lt;/p&gt;]]  <b>Harpoonist\"s Determination</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy within 5 squares of the harpoonist, or one that is immobilized by harpooning javelin, scores a critical hit.</p><p><i>Effect (Free Action):</i> The harpoonist can make a basic attack, shift 1 square, pull a creature immobilized by harpooning javelin up to 3 squares, or move up to its speed.</p></tr></td></table>",

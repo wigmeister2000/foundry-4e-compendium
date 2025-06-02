@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Deranging Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AZ49gOtCycJPdT82",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Starshriek Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"p0Hyft1WXETM6zQ9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,7 +334,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1180,7 +1184,7 @@
 		},
 		{
 			"name":"Skyfall Charge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TftK3xrRmZIiJkLP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1216,7 +1220,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1272,23 +1277,10 @@
 				"max":10
 			},
 			"init":{
-				"value":19,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":19
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 156; <b>Bloodied</b> 78<hr><b>Resist</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +19</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 31</td><td><b>Ref</b> 27</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, jump 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+16)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 23 (+14)<br><b>Int</b> 6 (+6)</td><td><b>Wis</b> 3 (+4)<br><b>Cha</b> 20 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Common and Primordial<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> greatsword .</p><p>[[/roll 0#&lt;b&gt;Deranging Aura&lt;/b&gt; (Charm) aura 5; enemies within the aura take a -2 penalty to attack rolls and gain a +2 bonus to damage rolls. Each enemy whose attack misses the shardsoul avatar must make a melee basic attack against the nearest ally within reach as a free action.]] <b>Deranging Aura</b> (Charm) aura 5; enemies within the aura take a -2 penalty to attack rolls and gain a +2 bonus to damage rolls. Each enemy whose attack misses the shardsoul avatar must make a melee basic attack against the nearest ally within reach as a free action.</p><p>[[/roll 0#&lt;b&gt;Starshriek Aura&lt;/b&gt; (Psychic) aura 1; an enemy that starts its turn in the aura takes 5 psychic damage.]] <b>Starshriek Aura</b> (Psychic) aura 1; an enemy that starts its turn in the aura takes 5 psychic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d6+8 damage, and the target is marked until the end of the shardsoul avatar\"s next turn. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d6+8 damage, and the target is marked until the end of the shardsoul avatar\"s next turn. &lt;/p&gt;]]; [[/roll 2d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d6+8 damage, and the target is marked until the end of the shardsoul avatar\"s next turn. &lt;/p&gt;]] <15>  damage, and the target is marked until the end of the shardsoul avatar\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ironfell Beam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +19 vs Reflex; 1d10+6 radiant damage, and the target slides 1 square. &lt;/p&gt;]] (➶) <b>Ironfell Beam</b> (standard, at-will) ✦ <b>Radiant</b></p><p>Ranged 10; [[/roll 1d20+19[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ironfell Beam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+19 vs Reflex&lt;/u&gt;; 1d10+6 radiant damage, and the target slides 1 square. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ironfell Beam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +19 vs Reflex; 1d10+6 radiant damage, and the target slides 1 square. &lt;/p&gt;]] <11.5>  radiant damage, and the target slides 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Slaying Frenzy&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The shardsoul avatar makes two claw attacks. If either attack hits a target marked by the shardsoul avatar, or if both attacks hit the same target, that target is also dazed until the end of the avatar\"s next turn&lt;/p&gt;]] ⚔ <b>Slaying Frenzy</b> (standard, recharge ⚃⚄⚅) </p><p>The shardsoul avatar makes two claw attacks. If either attack hits a target marked by the shardsoul avatar, or if both attacks hit the same target, that target is also dazed until the end of the avatar\"s next turn</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Meteor Stomp&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +21 vs Fortitude; 1d4+8 damage plus 1d6 radiant damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is not pushed or knocked prone. &lt;/p&gt;]] ᗕ <b>Meteor Stomp</b> (standard, encounter) ✦ <b>Radiant</b></p><p>Close burst 5; [[/roll 1d20+21[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Meteor Stomp&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+21 vs Fortitude&lt;/u&gt;; 1d4+8 damage plus 1d6 radiant damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is not pushed or knocked prone. &lt;/p&gt;]]; [[/roll 1d4+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Meteor Stomp&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +21 vs Fortitude; 1d4+8 damage plus 1d6 radiant damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is not pushed or knocked prone. &lt;/p&gt;]] <10.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Meteor Stomp&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +21 vs Fortitude; 1d4+8 damage plus 1d6 radiant damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is not pushed or knocked prone. &lt;/p&gt;]] <3.5> radiant damage, and the target is pushed 1 square and knocked prone. Miss: Half damage, and the target is not pushed or knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shardsoul Realease&lt;/b&gt; ( when reduced to 0 hit points, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; affects one other shardsoul of the shardsoul avatar\"s level or lower; the target can take one extra standard action on each of its next two turns.&lt;/p&gt;]] ⚔ <b>Shardsoul Realease</b> ( when reduced to 0 hit points, encounter) </p><p>Ranged 10; affects one other shardsoul of the shardsoul avatar\"s level or lower; the target can take one extra standard action on each of its next two turns.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skyfall Charge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a shardsoul avatar charges, it deals an extra 2d6 damage.&lt;/p&gt;]]  <b>Skyfall Charge</b></p><p>When a shardsoul avatar charges, it deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skyfall Charge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a shardsoul avatar charges, it deals an extra 2d6 damage.&lt;/p&gt;]] <7> damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Focused Killer&lt;/b&gt; (immediate interrupt, when an adjacent enemy marked by the shardsoul avatar shifts; at-will) &lt;/p&gt;&lt;p&gt;The shardsoul avatar makes a claw attack against that enemy.&lt;/p&gt;]]  <b>Focused Killer</b> (immediate interrupt, when an adjacent enemy marked by the shardsoul avatar shifts; at-will) </p><p>The shardsoul avatar makes a claw attack against that enemy.</p></tr></td></table>",

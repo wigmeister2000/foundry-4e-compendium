@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1124,23 +1126,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 700; <b>Bloodied</b> 350<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 30</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 can\"t shift</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+13)<br><b>Con</b> 25 (+14)</td><td><b>Dex</b> 10 (+7)<br><b>Int</b> 3 (+3)</td><td><b>Wis</b> 8 (+6)<br><b>Cha</b> 3 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 5<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC; 2d10+6 damage, and the target slides 2 squares or is knocked prone. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+18 vs AC&lt;/u&gt;; 2d10+6 damage, and the target slides 2 squares or is knocked prone. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC; 2d10+6 damage, and the target slides 2 squares or is knocked prone. &lt;/p&gt;]] <17>  damage, and the target slides 2 squares or is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Gleamshard&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +26 vs AC; 3d6+7 force damage, and the target slides 2 squares or is knocked prone. &lt;/p&gt;]] (➶) <b>Gleamshard</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 20; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Gleamshard&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+26 vs AC&lt;/u&gt;; 3d6+7 force damage, and the target slides 2 squares or is knocked prone. &lt;/p&gt;]]; [[/roll 3d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Gleamshard&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +26 vs AC; 3d6+7 force damage, and the target slides 2 squares or is knocked prone. &lt;/p&gt;]] <17.5>  force damage, and the target slides 2 squares or is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The treasure golem makes two basic attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The treasure golem makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Blast&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 3; +22 vs Fortitude; 2d10+7 damage, and prone targets cannot stand until the end of the golem’s next turn. Miss: Half damage. Effect: The golem bursts into its component pieces, filling the area and gaining insubstantial until the start of its next turn, when it reappears within 5 squares of its last space. &lt;/p&gt;]] ᗕ <b>Horrid Blast</b> (standard, recharge ⚄⚅) </p><p>Close burst 3; [[/roll 1d20+22[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Blast&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+22 vs Fortitude&lt;/u&gt;; 2d10+7 damage, and prone targets cannot stand until the end of the golem’s next turn. Miss: Half damage. Effect: The golem bursts into its component pieces, filling the area and gaining insubstantial until the start of its next turn, when it reappears within 5 squares of its last space. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Horrid Blast&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 3; +22 vs Fortitude; 2d10+7 damage, and prone targets cannot stand until the end of the golem’s next turn. Miss: Half damage. Effect: The golem bursts into its component pieces, filling the area and gaining insubstantial until the start of its next turn, when it reappears within 5 squares of its last space. &lt;/p&gt;]] <18>  damage, and prone targets cannot stand until the end of the golem’s next turn. Miss: Half damage. Effect: The golem bursts into its component pieces, filling the area and gaining insubstantial until the start of its next turn, when it reappears within 5 squares of its last space. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Weight of Greed&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +15 vs Reflex; 1d10+7 psychic damage, and the target is dominated until the end of the golem’s next turn. Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Weight of Greed</b> (standard, recharges when first bloodied) ✦ <b>Psychic</b></p><p>Close burst 3; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Weight of Greed&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d10+7 psychic damage, and the target is dominated until the end of the golem’s next turn. Miss: Half damage. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Weight of Greed&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +15 vs Reflex; 1d10+7 psychic damage, and the target is dominated until the end of the golem’s next turn. Miss: Half damage. &lt;/p&gt;]] <12.5>  psychic damage, and the target is dominated until the end of the golem’s next turn. Miss: Half damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Berserk Attacks&lt;/b&gt; (immediate reaction; usable when damaged by an attack while bloodied, at-will) &lt;/p&gt;&lt;p&gt;The treasure golem makes two basic attacks against random targets.&lt;/p&gt;]] ⚔ <b>Berserk Attacks</b> (immediate reaction; usable when damaged by an attack while bloodied, at-will) </p><p>The treasure golem makes two basic attacks against random targets.</p></tr></td></table>",

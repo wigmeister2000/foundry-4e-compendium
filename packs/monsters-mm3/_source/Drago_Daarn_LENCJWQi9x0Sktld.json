@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Stand the Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SHQBa8qNKivdkbnA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -818,23 +821,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 79; <b>Bloodied</b> 39</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 22</td><td><b>Ref</b> 21</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+6)<br><b>Con</b> 19 (+8)</td><td><b>Dex</b> 11 (+4)<br><b>Int</b> 17 (+7)</td><td><b>Wis</b> 15 (+6)<br><b>Cha</b> 16 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +12, Dungeoneering +11, Streetwise +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> robes, potion of vitality, handaxe , spellbook .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand the Ground&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Drago can move 1 square fewer than the effect specifies when subjected to a pull, a push, or a slide. In addition, he can make a saving throw to avoid falling prone when an attack would knock him prone.&lt;/p&gt;]]  <b>Stand the Ground</b> <b></b></p><p>Drago can move 1 square fewer than the effect specifies when subjected to a pull, a push, or a slide. In addition, he can make a saving throw to avoid falling prone when an attack would knock him prone.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 damage.&lt;/p&gt;]] (⚔) <b>Handaxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 damage.&lt;/p&gt;]] <17>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ice Ray&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +14 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 7 cold damage, and the target is slowed and takes ongoing 5 cold damage (save ends both).&lt;/p&gt;]] (➶) <b>Ice Ray</b> (cold) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+14[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ice Ray&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+14 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ice Ray&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 7 cold damage, and the target is slowed and takes ongoing 5 cold damage (save ends both).&lt;/p&gt;]] <12.5>  cold damage, and the target is slowed and takes ongoing 5 cold damage (save ends both).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Necroflame Pillar&lt;/b&gt; (fire, necrotic, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); +14 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 fire and necrotic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The burst creates a 20-foot-high zone of black flame that deals 5 fire and necrotic damage to any enemy that ends its turn there. The zone lasts until the end of Drago’s next turn. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; The zone persists until the end of Drago’s next turn, and he can move the zone up to 3 squares as a move action.&lt;/p&gt;]] ✻ <b>Necroflame Pillar</b> (fire, necrotic, zone) ✦ <b>Encounter</b></p><p><i>Attack:</i> Area burst 1 within 10 (enemies in the burst); [[/roll 1d20+14[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Necroflame Pillar&lt;/b&gt; (fire, necrotic, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); &lt;u&gt;+14 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Necroflame Pillar&lt;/b&gt; (fire, necrotic, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 fire and necrotic damage.&lt;/p&gt;]] <17>  fire and necrotic damage.</p><p><i>Effect:</i> The burst creates a 20-foot-high zone of black flame that deals 5 fire and necrotic damage to any enemy that ends its turn there. The zone lasts until the end of Drago’s next turn. </p><p><i>Sustain Minor:</i> The zone persists until the end of Drago’s next turn, and he can move the zone up to 3 squares as a move action.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shield&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Drago is hit by an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; Drago gains a +4 power bonus to AC and Reflex until the end of his next turn.&lt;/p&gt;]]  <b>Shield</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> Drago is hit by an attack.</p><p><i>Effect (Immediate Interrupt):</i> Drago gains a +4 power bonus to AC and Reflex until the end of his next turn.</p></tr></td></table>",

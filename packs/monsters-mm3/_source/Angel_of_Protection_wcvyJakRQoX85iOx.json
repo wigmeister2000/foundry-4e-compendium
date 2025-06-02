@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Angelic Shield",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"bUENOWFJxSovqnId",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Angelic Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZoVKrlG3E6fshW2J",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -503,23 +506,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 141; <b>Bloodied</b> 70<hr><b>Resist</b> 10 radiant <b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 26</td><td><b>Ref</b> 24</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+13)<br><b>Con</b> 21 (+12)</td><td><b>Dex</b> 17 (+10)<br><b>Int</b> 12 (+8)</td><td><b>Wis</b> 19 (+11)<br><b>Cha</b> 14 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Insight +16</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 26</td></td></tr></table><p><b>Equipment</b> greatsword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Angelic Shield&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;While the angel is not bloodied and within 5 squares of its ward, squares in the aura are difficult terrain for enemies.&lt;/p&gt;]] ⌀ <b>Angelic Shield</b> ✦ <b>Aura</b> 5</p><p>While the angel is not bloodied and within 5 squares of its ward, squares in the aura are difficult terrain for enemies.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Angelic Presence&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While the angel is not bloodied, attack rolls against it take a -2 penalty.&lt;/p&gt;]]  <b>Angelic Presence</b> <b></b></p><p>While the angel is not bloodied, attack rolls against it take a -2 penalty.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (radiant, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11  radiant damage.&lt;/p&gt;]] (⚔) <b>Greatsword</b> (radiant, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (radiant, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (radiant, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11  radiant damage.&lt;/p&gt;]] <22>   radiant damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ward&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ranged 5 (one creature). The angel designates the target as its ward. While the angel is within 5 squares of the target, the target takes half damage from melee attacks and ranged attacks against it, and the angel takes an equal amount of damage. While the angel is adjacent to the target, the target gains a +2 bonus to AC. A creature can be the ward of only one angel at a time. If multiple angels designate the same creature as their wards, it becomes the ward of the last angel to designate it as such.&lt;/p&gt;]]  <b>Ward</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Ranged 5 (one creature). The angel designates the target as its ward. While the angel is within 5 squares of the target, the target takes half damage from melee attacks and ranged attacks against it, and the angel takes an equal amount of damage. While the angel is adjacent to the target, the target gains a +2 bonus to AC. A creature can be the ward of only one angel at a time. If multiple angels designate the same creature as their wards, it becomes the ward of the last angel to designate it as such.</p></tr></td></table>",

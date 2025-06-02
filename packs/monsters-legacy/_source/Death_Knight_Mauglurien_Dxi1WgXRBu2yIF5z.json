@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Undead Warlord",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wsd9ItOhp8KG3PCW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -999,23 +1001,10 @@
 				"max":10
 			},
 			"init":{
-				"value":14,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":14
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 422; <b>Bloodied</b> 211<hr><b>Resist</b> 15 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +14 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 35</td><td><b>Ref</b> 31</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+19)<br><b>Con</b> 19 (+15)</td><td><b>Dex</b> 13 (+12)<br><b>Int</b> 18 (+15)</td><td><b>Wis</b> 14 (+13)<br><b>Cha</b> 24 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Dwarven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +22, Endurance +18, Intimidate +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> Boneshredder (+5 vicious battleaxe, soul weapon), Ebon Rider battle standard, light shield , plate armor .</p><p>[[/roll 0#&lt;b&gt;Undead Warlord&lt;/b&gt; aura 10; any ally within the aura gains +5 to initiative.]] <b>Undead Warlord</b> aura 10; any ally within the aura gains +5 to initiative.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Boneshredder&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2d10+10 necrotic damage (crit 5d12 + 30). &lt;/p&gt;]] (⚔) <b>Boneshredder</b> (standard, at-will) ✦ <b>Necrotic, Weapon</b></p><p>[[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Boneshredder&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2d10+10 necrotic damage (crit 5d12 + 30). &lt;/p&gt;]] <21>  necrotic damage (crit [[/roll 5d12 + 30#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Boneshredder&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2d10+10 necrotic damage (crit 5d12 + 30). &lt;/p&gt;]] <62.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Black Anvil&lt;/b&gt; (standard; requires boneshredder, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2d10+10 necrotic damage (crit 5d12 + 30 ), and an ally adjacent to target makes a melee basic attack against it as a free action with a +5 damage bonus. &lt;/p&gt;]] ⚔ <b>Black Anvil</b> (standard; requires boneshredder, at-will) ✦ <b>Necrotic, Weapon</b></p><p>[[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Black Anvil&lt;/b&gt; (standard; requires boneshredder, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2d10+10 necrotic damage (crit 5d12 + 30 ), and an ally adjacent to target makes a melee basic attack against it as a free action with a +5 damage bonus. &lt;/p&gt;]] <21>  necrotic damage (crit [[/roll 5d12 + 30#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Black Anvil&lt;/b&gt; (standard; requires boneshredder, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;2d10+10 necrotic damage (crit 5d12 + 30 ), and an ally adjacent to target makes a melee basic attack against it as a free action with a +5 damage bonus. &lt;/p&gt;]] <62.5>  ), and an ally adjacent to target makes a melee basic attack against it as a free action with a +5 damage bonus. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2 or close blast 5; +26 vs Reflex; 6d8+4 necrotic and fire damage to all living creatures; undead creatures within the burst (including Mauglurien) deal an extra 2d6 fire damage with melee attacks until the end of Mauglurien’s next turn. &lt;/p&gt;]] ᗕ <b>Unholy Flames</b> (standard, recharge ⚄⚅) ✦ <b>Fire, Necrotic</b></p><p>Close burst 2 or close blast 5; [[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2 or close blast 5; &lt;u&gt;+26 vs Reflex&lt;/u&gt;; 6d8+4 necrotic and fire damage to all living creatures; undead creatures within the burst (including Mauglurien) deal an extra 2d6 fire damage with melee attacks until the end of Mauglurien’s next turn. &lt;/p&gt;]]; [[/roll 6d8+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2 or close blast 5; +26 vs Reflex; 6d8+4 necrotic and fire damage to all living creatures; undead creatures within the burst (including Mauglurien) deal an extra 2d6 fire damage with melee attacks until the end of Mauglurien’s next turn. &lt;/p&gt;]] <31>  necrotic and fire damage to all living creatures; undead creatures within the burst (including Mauglurien) deal an extra [[/roll 2d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unholy Flames&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2 or close blast 5; +26 vs Reflex; 6d8+4 necrotic and fire damage to all living creatures; undead creatures within the burst (including Mauglurien) deal an extra 2d6 fire damage with melee attacks until the end of Mauglurien’s next turn. &lt;/p&gt;]] <7> fire damage with melee attacks until the end of Mauglurien’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Ebon Rider Banner&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; each ally in the burst regains 20 hit points and gains a +4 bonus to its next attack roll.&lt;/p&gt;]] ⚔ <b>Ebon Rider Banner</b> (standard, encounter) ✦ <b>Healing</b></p><p>Close burst 5; each ally in the burst regains 20 hit points and gains a +4 bonus to its next attack roll.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Weapon&lt;/b&gt; (minor; recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Mauglurien’s melee attacks target Reflex instead of AC until the start of his next turn.&lt;/p&gt;]]  <b>Shadow Weapon</b> (minor; recharges when first bloodied) </p><p>Mauglurien’s melee attacks target Reflex instead of AC until the start of his next turn.</p></tr></td></table>",

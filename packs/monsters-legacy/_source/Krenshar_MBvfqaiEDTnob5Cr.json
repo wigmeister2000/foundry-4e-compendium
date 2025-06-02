@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Fearsome Visage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MOymPINjEz6xbRfu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 55; <b>Bloodied</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 16</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+4)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 15 (+4)<br><b>Int</b> 15 (+4)</td><td><b>Wis</b> 15 (+4)<br><b>Cha</b> 15 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Intimidate +5, Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Fearsome Visage&lt;/b&gt; aura 5; each enemy within the aura takes a -2 penalty to saving throws against fear effects.]] <b>Fearsome Visage</b> aura 5; each enemy within the aura takes a -2 penalty to saving throws against fear effects.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hooking Swipe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+8 vs AC; 1d6+4 damage, and the target is knocked prone. &lt;/p&gt;]] (⚔) <b>Hooking Swipe</b> (standard, at-will) </p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hooking Swipe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d6+4 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hooking Swipe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+8 vs AC; 1d6+4 damage, and the target is knocked prone. &lt;/p&gt;]] <7.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roaring Skull&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +7 vs Will; 1d8+4 thunder damage, and the target is dazed (save ends). If the target was already dazed, it is also weakened as long as it remains dazed. &lt;/p&gt;]] ᗕ <b>Roaring Skull</b> (standard, recharge ⚄⚅) ✦ <b>Fear, Thunder</b></p><p>Close blast 5; [[/roll 1d20+7[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roaring Skull&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+7 vs Will&lt;/u&gt;; 1d8+4 thunder damage, and the target is dazed (save ends). If the target was already dazed, it is also weakened as long as it remains dazed. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roaring Skull&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +7 vs Will; 1d8+4 thunder damage, and the target is dazed (save ends). If the target was already dazed, it is also weakened as long as it remains dazed. &lt;/p&gt;]] <8.5>  thunder damage, and the target is dazed (save ends). If the target was already dazed, it is also weakened as long as it remains dazed. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Unnerving Skull&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fear, Gaze&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets one creature; +8 vs Will; the target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Unnerving Skull</b> (minor 1/round, at-will) ✦ <b>Fear, Gaze</b></p><p>Close burst 5; targets one creature; [[/roll 1d20+8[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Unnerving Skull&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fear, Gaze&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets one creature; &lt;u&gt;+8 vs Will&lt;/u&gt;; the target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target takes a -2 penalty to attack rolls (save ends). </p></tr></td></table>",

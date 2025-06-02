@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -949,23 +950,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 42; <b>Bloodied</b> 21</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (0)<br><b>Con</b> 10 (+1)</td><td><b>Dex</b> 17 (+4)<br><b>Int</b> 12 (+2)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 19 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +10, Nature +7, Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wind Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +6 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the sylph slides the target up to 2 squares.&lt;/p&gt;]] (⚔) <b>Wind Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wind Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wind Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the sylph slides the target up to 2 squares.&lt;/p&gt;]] <11>  damage, and the sylph slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Wind Blast&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); +6 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage, and the sylph pushes the target up to 2 squares.&lt;/p&gt;]] ᗕ <b>Wind Blast</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 3 (enemies in the blast); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Wind Blast&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Wind Blast&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage, and the sylph pushes the target up to 2 squares.&lt;/p&gt;]] <8.5>  damage, and the sylph pushes the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Thunderstorm&lt;/b&gt; (lightning, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); +6 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 lightning and thunder damage, and the target falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ✻ <b>Thunderstorm</b> (lightning, thunder) ✦ <b>Encounter</b></p><p><i>Attack:</i> Area burst 2 within 10 (enemies in the burst); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Thunderstorm&lt;/b&gt; (lightning, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Thunderstorm&lt;/b&gt; (lightning, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 lightning and thunder damage, and the target falls prone.&lt;/p&gt;]] <8.5>  lightning and thunder damage, and the target falls prone.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mist Form&lt;/b&gt; (polymorph) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The sylph takes on mist form, becoming insubstantial until the end of its next turn.&lt;/p&gt;]]  <b>Mist Form</b> (polymorph) ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The sylph takes on mist form, becoming insubstantial until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The sylph alters its physical form to appear as a Tiny, Small, or Medium humanoid until it uses change shape again or until it dies, at which point it reverts to normal form. To assume a specific individual’s form, the sylph must have seen that individual. Other creatures can make a DC 26 Insight check to discern that the form is a disguise.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> The sylph alters its physical form to appear as a Tiny, Small, or Medium humanoid until it uses change shape again or until it dies, at which point it reverts to normal form. To assume a specific individual’s form, the sylph must have seen that individual. Other creatures can make a DC 26 Insight check to discern that the form is a disguise.</p></tr></td></table>",

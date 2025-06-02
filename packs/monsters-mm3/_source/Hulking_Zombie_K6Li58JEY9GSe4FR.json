@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Zombie Weakness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"w5DMoP3FgKEsn7Gh",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -632,23 +634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":1,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":1
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 70; <b>Bloodied</b> 35<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +1</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 18</td><td><b>Ref</b> 14</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+7)<br><b>Con</b> 20 (+7)</td><td><b>Dex</b> 8 (+1)<br><b>Int</b> 1 (null)</td><td><b>Wis</b> 8 (+1)<br><b>Cha</b> 3 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Zombie Weakness&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A critical hit automatically reduces the zombie to 0 hit points.&lt;/p&gt;]]  <b>Zombie Weakness</b> <b></b></p><p>A critical hit automatically reduces the zombie to 0 hit points.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 2 damage, or 2d12 + 7 against a prone target or one that is grabbed by another creature.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 2 damage, or 2d12 + 7 against a prone target or one that is grabbed by another creature.&lt;/p&gt;]] <15>  damage, or [[/roll 2d12 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 2 damage, or 2d12 + 7 against a prone target or one that is grabbed by another creature.&lt;/p&gt;]] <20>  against a prone target or one that is grabbed by another creature.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Zombie Rush&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The zombie charges and makes the following attack in place of a basic melee attack&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +7 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 2 damage, and the zombie pushes the target 1 square and knocks it prone.&lt;/p&gt;]] ⚔ <b>Zombie Rush</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The zombie charges and makes the following attack in place of a basic melee attack</p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+7[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Zombie Rush&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+7 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Zombie Rush&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 2 damage, and the zombie pushes the target 1 square and knocks it prone.&lt;/p&gt;]] <15>  damage, and the zombie pushes the target 1 square and knocks it prone.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Deathless Hunger&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The zombie is reduced to 0 hit points, but not by a critical hit.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Roll a d20. On a 15 or higher, the zombie is instead reduced to 1 hit point.&lt;/p&gt;]]  <b>Deathless Hunger</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The zombie is reduced to 0 hit points, but not by a critical hit.</p><p><i>Effect (No Action):</i> Roll a [[/roll d20#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Deathless Hunger&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Roll a d20. On a 15 or higher, the zombie is instead reduced to 1 hit point.&lt;/p&gt;]] <10.5> . On a 15 or higher, the zombie is instead reduced to 1 hit point.</p></tr></td></table>",

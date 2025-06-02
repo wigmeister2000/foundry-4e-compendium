@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -364,7 +365,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"fboaUezQ4u05yGrX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -400,7 +401,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -588,7 +590,7 @@
 		},
 		{
 			"name":"Slippery Phasing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QshjyPncJoxXpzEZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -624,7 +626,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -680,23 +683,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 166; <b>Bloodied</b> 83<hr><b>Resist</b> 10 necrotic, insubstantial <b>Immune</b> disease, gaze, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 27</td><td><b>Ref</b> 32</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+11)<br><b>Con</b> 17 (+11)</td><td><b>Dex</b> 26 (+16)<br><b>Int</b> 2 (+4)</td><td><b>Wis</b> 15 (+10)<br><b>Cha</b> 11 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +21</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Sink&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +19 vs Fortitude; 3d6+5 necrotic damage, and the target is weakened (save ends). In addition, the spirit ooze gains phasing until the end of its next turn. &lt;/p&gt;]] (⚔) <b>Spirit Sink</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 2; [[/roll 1d20+19[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Sink&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs Fortitude&lt;/u&gt;; 3d6+5 necrotic damage, and the target is weakened (save ends). In addition, the spirit ooze gains phasing until the end of its next turn. &lt;/p&gt;]]; [[/roll 3d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Sink&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +19 vs Fortitude; 3d6+5 necrotic damage, and the target is weakened (save ends). In addition, the spirit ooze gains phasing until the end of its next turn. &lt;/p&gt;]] <15.5>  necrotic damage, and the target is weakened (save ends). In addition, the spirit ooze gains phasing until the end of its next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Split&lt;/b&gt; ( when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;The spirit ooze splits into two Large individuals, the second one occupying a space adjacent to the original creature. Each of the two creatures has hit points equal to one-half the original’s current hit points. Both creatures act on the original creature’s initiative count. Effects applied to the original ooze do not apply to either of the individuals after the split occurs. A spirit ooze can’t split if reduced to 0 hit points by the attack that bloodied it.&lt;/p&gt;&lt;p&gt;If out of combat for 5 minutes, the two halves combine back into one spirit ooze, which has hit points equal to the combined value of the two halves.&lt;/p&gt;]]  <b>Split</b> ( when first bloodied; encounter) </p><p>The spirit ooze splits into two Large individuals, the second one occupying a space adjacent to the original creature. Each of the two creatures has hit points equal to one-half the original’s current hit points. Both creatures act on the original creature’s initiative count. Effects applied to the original ooze do not apply to either of the individuals after the split occurs. A spirit ooze can’t split if reduced to 0 hit points by the attack that bloodied it.</p><p>If out of combat for 5 minutes, the two halves combine back into one spirit ooze, which has hit points equal to the combined value of the two halves.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A spirit ooze deals 2d6 extra damage when it hits a target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A spirit ooze deals [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A spirit ooze deals 2d6 extra damage when it hits a target it has combat advantage against.&lt;/p&gt;]] <7> extra damage when it hits a target it has combat advantage against.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slippery Phasing&lt;/b&gt; (while the spirit ooze has phasing) &lt;/p&gt;&lt;p&gt;The spirit ooze gains a +2 bonus to AC and Reflex.&lt;/p&gt;]]  <b>Slippery Phasing</b> (while the spirit ooze has phasing) </p><p>The spirit ooze gains a +2 bonus to AC and Reflex.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Phase Away&lt;/b&gt; (minor; while the spirit ooze has phasing; at-will) &lt;/p&gt;&lt;p&gt;The spirit ooze shifts up to 1 square.&lt;/p&gt;]]  <b>Phase Away</b> (minor; while the spirit ooze has phasing; at-will) </p><p>The spirit ooze shifts up to 1 square.</p></tr></td></table>",

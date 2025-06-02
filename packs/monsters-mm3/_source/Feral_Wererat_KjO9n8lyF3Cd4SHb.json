@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OTetbYkrHS4Dy6nc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -816,23 +819,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 54; <b>Bloodied</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +9</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 18</td><td><b>Ref</b> 16</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4 (rat or hybrid form only)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+2)<br><b>Con</b> 16 (+5)</td><td><b>Dex</b> 20 (+7)<br><b>Int</b> 14 (+4)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 12 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +8, Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> dagger .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wererat regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the wererat takes damage from a silvered weapon, its regeneration does not function on its next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>The wererat regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the wererat takes damage from a silvered weapon, its regeneration does not function on its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The wererat must be in human or hybrid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +10 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 6 damage, or 4d4 + 6 if the wererat has combat advantage against the target.&lt;/p&gt;]] (⚔) <b>Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Requirement:</i> The wererat must be in human or hybrid form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+10[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+10 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d4 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 6 damage, or 4d4 + 6 if the wererat has combat advantage against the target.&lt;/p&gt;]] <11>  damage, or [[/roll 4d4 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 6 damage, or 4d4 + 6 if the wererat has combat advantage against the target.&lt;/p&gt;]] <16>  if the wererat has combat advantage against the target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The wererat must be in rat or hybrid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +10 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage. If the target is granting combat advantage to the wererat, it also takes ongoing 5 damage (save ends). At the end of the encounter, the target makes a saving throw. On a failure, the target contracts feral wererat filth fever (stage 1).&lt;/p&gt;]] (⚔) <b>Bite</b> (disease) ✦ <b>At-Will</b></p><p><i>Requirement:</i> The wererat must be in rat or hybrid form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+10[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+10 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 5 damage. If the target is granting combat advantage to the wererat, it also takes ongoing 5 damage (save ends). At the end of the encounter, the target makes a saving throw. On a failure, the target contracts feral wererat filth fever (stage 1).&lt;/p&gt;]] <8.5>  damage. If the target is granting combat advantage to the wererat, it also takes ongoing 5 damage (save ends). At the end of the encounter, the target makes a saving throw. On a failure, the target contracts feral wererat filth fever (stage 1).</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Rat Scurry&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The wererat must be in rat form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The wererat shifts up to its speed.&lt;/p&gt;]]  <b>Rat Scurry</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The wererat must be in rat form.</p><p><i>Effect:</i> The wererat shifts up to its speed.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The wererat alters its physical form to appear as a Tiny rat, or a Medium unique human or hybrid.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> The wererat alters its physical form to appear as a Tiny rat, or a Medium unique human or hybrid.</p></tr></td></table>",

@@ -466,6 +466,7 @@ async function adjustActor(actor, level, legacy = false, copy = false, copyName 
         await adjustHP(monster, level, legacy);
         await adjustXP(monster, level);
         await adjustDefences(monster, level, legacy);
+        await adjustInitiative(monster, level, legacy);
         await adjustAbilities(monster, level);
         await adjustPerception(monster, level);
         await adjustPowers(monster, level, legacy);
@@ -606,13 +607,11 @@ async function adjustInitiative(monster, level, legacy = false) {
     const scalingFunction = lookup.scalingFunctions[role].init;
     const referenceFunction = legacy ? lookup.scalingFunctions[role].initLegacy : scalingFunction;
 
-    const offset = monster.system.attributes.init.bonus[0].value - referenceFunction(monster.system.details.level);
-    const newInit = Math.max(Math.round(scalingFunction(level) + offset), 1);
-    const bonus = monster.system.attributes.init.bonus;
-    bonus[0].value = newInit;
+    const offset = monster.system.attributes.init.base - referenceFunction(monster.system.details.level);
+    const newInit = Math.max(Math.round(scalingFunction(level) + offset), 0);
 
     await monster.update({
-        "system.attributes.init.bonus": bonus
+        "system.attributes.init.base": newInit
     });
 }
 
@@ -951,19 +950,22 @@ async function adjustResistances(monster, level) {
     const scalingFunction = lookup.scalingFunctions[role].resistance;
     const newResistances = monster.system.resistances;
 
-    /* Look through all resistances */
+    /* Loop through all resistances */
     for (const key in newResistances) {
-        if (newResistances[key].res > 0) {
-            const res = newResistances[key].res;
+        if (newResistances[key].bonus.length > 0 & Number(newResistances[key].bonus[0].value) > 0) { // Vulnerabilities don't seem to scale with level. Ignore.
+            console.log(key)
+            const res = Number(newResistances[key].bonus[0].value);
 
-            if (res > 0) { // Vulnerabilities don't seem to scale with level. Ignore.
-                const offsetFactor = res / scalingFunction(monster.system.details.level);
-                const targetResistance = Math.round(offsetFactor * scalingFunction(level));
-                if (divisibleQ(res, 5)) { // Check if resistance is on 5 increment scale
-                    newResistances[key].res = (5 * Math.round(targetResistance / 5));
-                } else {
-                    newResistances[key].res = targetResistance;
-                }
+            // Reset derived values
+            newResistances[key].res = 0;
+            newResistances[key].vuln = 0;
+
+            const offsetFactor = res / scalingFunction(monster.system.details.level);
+            const targetResistance = Math.round(offsetFactor * scalingFunction(level));
+            if (divisibleQ(res, 5)) { // Check if resistance is on 5 increment scale
+                newResistances[key].bonus[0].value = String((5 * Math.round(targetResistance / 5)));
+            } else {
+                newResistances[key].bonus[0].value = String(targetResistance);
             }
         }
     }
@@ -1052,20 +1054,22 @@ async function addMonsterKnowledge(actor) {
 
     // Powers and Traits
     const powers = actor.items.contents.filter(x => x.type === "power").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
-    const traits = actor.items.contents.filter(x => x.type === "classFeats").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
+    const traits = actor.items.contents.filter(x => x.type === "feature" && x.system.featureType === "class").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
     descriptionHard.push("<h2>Traits</h2>" + traits.join(""));
     descriptionHard.push("<h2>Powers</h2>" + powers.join(""));
 
     const moderate = {
         "name": `Monster Knowledge (DC ${dcModerate})`,
-        "type": "destinyFeats",
+        "type": "feature",
+        "system.featureType": "destiny",
         "img": "icons/svg/book.svg",
         "system.description.value": descriptionModerate.join("")
     };
 
     const hard = {
         "name": `Monster Knowledge (DC ${dcHard})`,
-        "type": "destinyFeats",
+        "type": "feature",
+        "system.featureType": "destiny",
         "img": "icons/svg/book.svg",
         "system.description.value": descriptionHard.join("")
     };

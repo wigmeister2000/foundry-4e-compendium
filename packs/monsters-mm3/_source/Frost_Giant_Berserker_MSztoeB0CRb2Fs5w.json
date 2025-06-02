@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Icebound Footing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"e4UOkruglhMEiBQv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -826,23 +828,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 157; <b>Bloodied</b> 78<hr><b>Resist</b> 15 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 26</td><td><b>Ref</b> 29</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+12)<br><b>Con</b> 21 (+13)</td><td><b>Dex</b> 25 (+15)<br><b>Int</b> 15 (+10)</td><td><b>Wis</b> 22 (+14)<br><b>Cha</b> 16 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Athletics +20</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> greataxe , hide armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Icebound Footing&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect pulls, pushes, or slides the giant, it can choose to move 2 squares fewer than the effect specifies. The giant can make a saving throw to avoid falling prone when an attack would knock it prone.&lt;/p&gt;]]  <b>Icebound Footing</b> <b></b></p><p>When an effect pulls, pushes, or slides the giant, it can choose to move 2 squares fewer than the effect specifies. The giant can make a saving throw to avoid falling prone when an attack would knock it prone.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Greataxe&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 10 damage plus 2d6 cold damage.&lt;/p&gt;]] (⚔) <b>Freezing Greataxe</b> (cold, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Greataxe&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d12 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Greataxe&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 10 damage plus 2d6 cold damage.&lt;/p&gt;]] <16.5>  damage plus [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Greataxe&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 10 damage plus 2d6 cold damage.&lt;/p&gt;]] <7> cold damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Storm Charge&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The berserker charges without provoking opportunity attacks and makes the following attack in place of a melee basic attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +22 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 12 damage.&lt;/p&gt;]] ⚔ <b>Storm Charge</b> (cold, weapon) ✦ <b>At-Will</b></p><p><i>Effect:</i> The berserker charges without provoking opportunity attacks and makes the following attack in place of a melee basic attack.</p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+22[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Storm Charge&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+22 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Storm Charge&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 12 damage.&lt;/p&gt;]] <25>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Rage&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The berserker shifts its speed and uses freezing greataxe three times during the shift, making each attack against a different target.&lt;/p&gt;]] ⚔ <b>Primordial Rage</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The berserker shifts its speed and uses freezing greataxe three times during the shift, making each attack against a different target.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Giant Stride&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The berserker shifts 6 squares and can move through enemies’ spaces during the shift.&lt;/p&gt;]]  <b>Giant Stride</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> The berserker shifts 6 squares and can move through enemies’ spaces during the shift.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -592,23 +593,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 148; <b>Bloodied</b> 74<br><b>Regeneration</b> special (see Resist)<hr><b>Resist</b> 10 cold (if the wight takes cold damage, it gains regeneration 5 until it takes fire or radiant damage, or until the end of the encounter), 10 necrotic <b>Vulnerable</b> 5 fire, 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 28</td><td><b>Ref</b> 26</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 10 (+6)</td><td><b>Wis</b> 20 (+11)<br><b>Cha</b> 12 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+7 cold damage, and the target is marked (save ends). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 2d6+7 cold damage, and the target is marked (save ends). &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+7 cold damage, and the target is marked (save ends). &lt;/p&gt;]] <14>  cold damage, and the target is marked (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Freezing Grab&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +18 vs Reflex; 2d6+7 cold damage, and the target is grabbed. If the icetomb wight uses this power on a target it has already grabbed, that target loses a healing surge. &lt;/p&gt;]] ⚔ <b>Freezing Grab</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 2; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Freezing Grab&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 2d6+7 cold damage, and the target is grabbed. If the icetomb wight uses this power on a target it has already grabbed, that target loses a healing surge. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Freezing Grab&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +18 vs Reflex; 2d6+7 cold damage, and the target is grabbed. If the icetomb wight uses this power on a target it has already grabbed, that target loses a healing surge. &lt;/p&gt;]] <14>  cold damage, and the target is grabbed. If the icetomb wight uses this power on a target it has already grabbed, that target loses a healing surge. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Encase in Ice&lt;/b&gt; (standard; requires a grabbed target, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the creature the icetomb wight is grabbing; +18 vs Fortitude; 2d6+7 cold damage, and the target is no longer grabbed but is restrained and takes ongoing 10 cold damage (save ends both), and it is knocked prone. Aftereffect: The target is slowed and takes ongoing 5 cold damage (save ends both). &lt;/p&gt;]] ⚔ <b>Encase in Ice</b> (standard; requires a grabbed target, at-will) ✦ <b>Cold</b></p><p>Targets the creature the icetomb wight is grabbing; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Encase in Ice&lt;/b&gt; (standard; requires a grabbed target, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the creature the icetomb wight is grabbing; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 2d6+7 cold damage, and the target is no longer grabbed but is restrained and takes ongoing 10 cold damage (save ends both), and it is knocked prone. Aftereffect: The target is slowed and takes ongoing 5 cold damage (save ends both). &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Encase in Ice&lt;/b&gt; (standard; requires a grabbed target, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the creature the icetomb wight is grabbing; +18 vs Fortitude; 2d6+7 cold damage, and the target is no longer grabbed but is restrained and takes ongoing 10 cold damage (save ends both), and it is knocked prone. Aftereffect: The target is slowed and takes ongoing 5 cold damage (save ends both). &lt;/p&gt;]] <14>  cold damage, and the target is no longer grabbed but is restrained and takes ongoing 10 cold damage (save ends both), and it is knocked prone. Aftereffect: The target is slowed and takes ongoing 5 cold damage (save ends both). </p></tr></td></table>",

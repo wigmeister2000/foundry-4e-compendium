@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZWL9zTQnE7Cb0Kq5",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Emanating Cold",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TpEhIBgytwX280RH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -631,7 +634,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tQwhAModZp7JCOb0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -667,7 +670,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -723,23 +727,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 287; <b>Bloodied</b> 143<br><b>Regeneration</b> 20<hr><b>Vulnerable</b> acid or fire (if the troll takes acid or fire damage, its regeneration does not function until the end of its next turn) </td><td style=\"padding-left: 15px;\"><b>Init</b> +20</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 39</td><td><b>Ref</b> 38</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+23)<br><b>Con</b> 27 (+21)</td><td><b>Dex</b> 25 (+20)<br><b>Int</b> 9 (+12)</td><td><b>Wis</b> 22 (+19)<br><b>Cha</b> 14 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +27, Endurance +25</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Emanating Cold&lt;/b&gt; aura 1; any enemy that starts its turn in the aura is slowed until the start of its next turn.]] <b>Emanating Cold</b> aura 1; any enemy that starts its turn in the aura is slowed until the start of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 2d12+11 damage, and the target takes ongoing 15 cold damage (save ends). &lt;/p&gt;]] (⚔) <b>Claws</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 2; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+29 vs AC&lt;/u&gt;; 2d12+11 damage, and the target takes ongoing 15 cold damage (save ends). &lt;/p&gt;]]; [[/roll 2d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 2d12+11 damage, and the target takes ongoing 15 cold damage (save ends). &lt;/p&gt;]] <24>  damage, and the target takes ongoing 15 cold damage (save ends). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Frenzied Strike&lt;/b&gt; (free, when a troll\"s attack bloodies an enemy, at-will) &lt;/p&gt;&lt;p&gt;The troll makes two claw attacks. This attack scores a critical hit on a roll of 16-20&lt;/p&gt;]] ⚔ <b>Frenzied Strike</b> (free, when a troll\"s attack bloodies an enemy, at-will) </p><p>The troll makes two claw attacks. This attack scores a critical hit on a roll of 16-20</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Frostfury&lt;/b&gt; (free, when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;The troll makes a claw attack against every enemy within reach. This attack scores a critical hit on a roll of 16-20.&lt;/p&gt;]]  <b>Frostfury</b> (free, when first bloodied; encounter) </p><p>The troll makes a claw attack against every enemy within reach. This attack scores a critical hit on a roll of 16-20.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it revives on its next turn and has 10 hit points.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it revives on its next turn and has 10 hit points.</p></tr></td></table>",

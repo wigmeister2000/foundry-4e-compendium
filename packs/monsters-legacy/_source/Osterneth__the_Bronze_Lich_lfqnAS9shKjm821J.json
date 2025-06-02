@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NdZJFWOsoirfpe5w",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Necrodeath Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kSmTEc47p8vUI1C6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -198,10 +201,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -330,7 +333,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1534,7 +1538,7 @@
 		},
 		{
 			"name":"Soul Gems",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"m65SBuEc97ojHQpg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1570,7 +1574,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1804,23 +1809,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 993; <b>Bloodied</b> 496<br><b>Regeneration</b> 20 (if Osterneth takes radiant damage, regeneration doesn’t function until the end of her next turn)<hr><b>Resist</b> 10 cold, 10 lightning, 15 necrotic, 10 psychic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 45</td><td><b>Fort</b> 39</td><td><b>Ref</b> 44</td><td><b>Will</b> 44</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 10 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+19)<br><b>Con</b> 25 (+21)</td><td><b>Dex</b> 26 (+22)<br><b>Int</b> 31 (+24)</td><td><b>Wis</b> 24 (+21)<br><b>Cha</b> 28 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +28, Intimidate +28, Religion +29, Stealth +27, Thievery +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision,Truesight 10<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Necrodeath Aura&lt;/b&gt; (Necrotic) aura 5; any living enemy that enters or starts its turn within the aura takes 20 necrotic damage.]] <b>Necrodeath Aura</b> (Necrotic) aura 5; any living enemy that enters or starts its turn within the aura takes 20 necrotic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Touch of Death&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+34 vs AC; the target gains ongoing 15 necrotic damage (save ends). &lt;/p&gt;]] (⚔) <b>Touch of Death</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+34[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Touch of Death&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+34 vs AC&lt;/u&gt;; the target gains ongoing 15 necrotic damage (save ends). &lt;/p&gt;]]; the target gains ongoing 15 necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Reflex; 3d8+7 necrotic damage. &lt;/p&gt;]] (➶) <b>Shadow Ray</b> (standard, encounter) ✦ <b>Necrotic</b></p><p>Ranged 20; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 3d8+7 necrotic damage. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Reflex; 3d8+7 necrotic damage. &lt;/p&gt;]] <20.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Trap the Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Fortitude; the target is stunned (save ends). First Failed Saving Throw: The target loses 1d4 healing surges and is stunned (save ends both). Second Failed Saving Throw: The target dies and its soul is trapped within one of Osterneth’s soul gems. Osterneth can have up to six souls trapped in her soul gems at any time. A body made soulless by this attack is reduced to dust. &lt;/p&gt;]] ➶ <b>Trap the Soul</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 20; [[/roll 1d20+32[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Trap the Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+32 vs Fortitude&lt;/u&gt;; the target is stunned (save ends). First Failed Saving Throw: The target loses 1d4 healing surges and is stunned (save ends both). Second Failed Saving Throw: The target dies and its soul is trapped within one of Osterneth’s soul gems. Osterneth can have up to six souls trapped in her soul gems at any time. A body made soulless by this attack is reduced to dust. &lt;/p&gt;]]; the target is stunned (save ends). First Failed Saving Throw: The target loses [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Trap the Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Fortitude; the target is stunned (save ends). First Failed Saving Throw: The target loses 1d4 healing surges and is stunned (save ends both). Second Failed Saving Throw: The target dies and its soul is trapped within one of Osterneth’s soul gems. Osterneth can have up to six souls trapped in her soul gems at any time. A body made soulless by this attack is reduced to dust. &lt;/p&gt;]] <2.5> healing surges and is stunned (save ends both). Second Failed Saving Throw: The target dies and its soul is trapped within one of Osterneth’s soul gems. Osterneth can have up to six souls trapped in her soul gems at any time. A body made soulless by this attack is reduced to dust. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Reflex; 3d8+7 necrotic and lightning damage, and the target is dazed (save ends), and Osterneth makes a secondary attack. Miss: Half damage, and the target is not dazed. Secondary Targets: Two creatures within 5 squares of the primary target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +28 vs Reflex;  (each)2d8+7 necrotic and lightning damage each. &lt;/p&gt;]] ➶ <b>Void Lightning</b> (standard, at-will) ✦ <b>Necrotic, Lightning</b></p><p>Ranged 20; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 3d8+7 necrotic and lightning damage, and the target is dazed (save ends), and Osterneth makes a secondary attack. Miss: Half damage, and the target is not dazed. Secondary Targets: Two creatures within 5 squares of the primary target. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Reflex; 3d8+7 necrotic and lightning damage, and the target is dazed (save ends), and Osterneth makes a secondary attack. Miss: Half damage, and the target is not dazed. Secondary Targets: Two creatures within 5 squares of the primary target. &lt;/p&gt;]] <20.5>  necrotic and lightning damage, and the target is dazed (save ends), and Osterneth makes a secondary attack. Miss: Half damage, and the target is not dazed. Secondary Targets: Two creatures within 5 squares of the primary target. </p><p><i>Secondary Attack</i> [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+28 vs Reflex&lt;/u&gt;;  (each)2d8+7 necrotic and lightning damage each. &lt;/p&gt;]];  (each)[[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +28 vs Reflex;  (each)2d8+7 necrotic and lightning damage each. &lt;/p&gt;]] <16>  necrotic and lightning damage each. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Withering Domination&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; +32 vs Will; the target is dominated and takes ongoing 10 necrotic damage (save ends both). Aftereffect: The target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Withering Domination</b> (minor, recharge ⚅</p><p>Ranged 5; [[/roll 1d20+32[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Withering Domination&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+32 vs Will&lt;/u&gt;; the target is dominated and takes ongoing 10 necrotic damage (save ends both). Aftereffect: The target is dazed (save ends). &lt;/p&gt;]]; the target is dominated and takes ongoing 10 necrotic damage (save ends both). Aftereffect: The target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Luring Glare&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets one creature; +33 vs Will; the target is pulled 4 squares. &lt;/p&gt;]] ᗕ <b>Luring Glare</b> (minor 1/round, at-will) ✦ <b>Charm</b></p><p>Close burst 10; targets one creature; [[/roll 1d20+33[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Luring Glare&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets one creature; &lt;u&gt;+33 vs Will&lt;/u&gt;; the target is pulled 4 squares. &lt;/p&gt;]]; the target is pulled 4 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Consume Soul&lt;/b&gt; (minor; expends a trapped soul; recharge ⚄⚅) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Osterneth regains 100 hit points.&lt;/p&gt;]]  <b>Consume Soul</b> (minor; expends a trapped soul; recharge ⚄⚅) ✦ <b>Healing</b></p><p>Osterneth regains 100 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Greater illusionary Form&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Osterneth can alter her physical form to take on the appearance and smell of any Medium humanoid, including a unique individual. A successful Insight check (opposed by Osterneth’s Bluff check) pierces the illusion.&lt;/p&gt;]]  <b>Greater illusionary Form</b> (minor; at-will) ✦ <b>Illusion</b></p><p>Osterneth can alter her physical form to take on the appearance and smell of any Medium humanoid, including a unique individual. A successful Insight check (opposed by Osterneth’s Bluff check) pierces the illusion.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Gems&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The soul gems contain the spirits of Osterneth’s victims. At the beginning of an encounter, the soul gems contain three souls. Crushing a gem after Osterneth is defeated releases the soul to the Shadowfell.&lt;/p&gt;]]  <b>Soul Gems</b></p><p>The soul gems contain the spirits of Osterneth’s victims. At the beginning of an encounter, the soul gems contain three souls. Crushing a gem after Osterneth is defeated releases the soul to the Shadowfell.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt; ( when reduced to 0 hit points) &lt;/p&gt;&lt;p&gt;Osterneth crumbles to dust, but she is not destroyed unless her phylactery is found and also destroyed. She reappears in one day adjacent to her phylactery.&lt;/p&gt;]]  <b>Indestructible</b> ( when reduced to 0 hit points) </p><p>Osterneth crumbles to dust, but she is not destroyed unless her phylactery is found and also destroyed. She reappears in one day adjacent to her phylactery.</p></tr></td></table>",

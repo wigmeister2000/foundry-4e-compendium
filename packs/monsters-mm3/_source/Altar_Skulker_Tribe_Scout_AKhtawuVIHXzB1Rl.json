@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Plague of the Dragon's Altar",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AcirWHRJS8P9LYnj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Red Clay Cloak",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4B6EZJQrCfR7HPtL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,7 +336,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -860,23 +864,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 32; <b>Bloodied</b> 16</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (earth walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+2)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 17 (+4)<br><b>Int</b> 8 (0)</td><td><b>Wis</b> 15 (+3)<br><b>Cha</b> 9 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> red clay cloak</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Plague of the Dragon\"s Altar&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Enemies that end their turns adjacent to the scout take 5 necrotic damage.&lt;/p&gt;]] ⌀ <b>Plague of the Dragon\"s Altar</b> (necrotic) ✦ <b>Aura</b> 1</p><p>Enemies that end their turns adjacent to the scout take 5 necrotic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Red Clay Cloak&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While within rocky or mountainous terrain, a hidden scout remains hidden even if it loses cover or concealment as long as it does not move, attack, or speak.&lt;/p&gt;]]  <b>Red Clay Cloak</b> <b></b></p><p>While within rocky or mountainous terrain, a hidden scout remains hidden even if it loses cover or concealment as long as it does not move, attack, or speak.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +7 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d4 + 3 damage.&lt;/p&gt;]] (⚔) <b>Stone Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+7[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+7 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d4 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d4 + 3 damage.&lt;/p&gt;]] <5.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurl Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +7 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d4 + 3 damage.&lt;/p&gt;]] (➶) <b>Hurl Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+7[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurl Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+7 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d4 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurl Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d4 + 3 damage.&lt;/p&gt;]] <5.5>  damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Desert Stalker&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scout gains a +5 bonus to all defenses until the end of its next turn. The first melee attack the scout makes on its next turn deals 10 extra damage.&lt;/p&gt;]]  <b>Desert Stalker</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> The scout gains a +5 bonus to all defenses until the end of its next turn. The first melee attack the scout makes on its next turn deals 10 extra damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Scar of the Dragon\"s Altar&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The scout is missed by an attack against its Fortitude defense.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scout gains 5 temporary hit points.&lt;/p&gt;]]  <b>Scar of the Dragon\"s Altar</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The scout is missed by an attack against its Fortitude defense.</p><p><i>Effect:</i> The scout gains 5 temporary hit points.</p></tr></td></table>",

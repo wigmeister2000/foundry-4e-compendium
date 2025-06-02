@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Rancid Air",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"r8EOI0fKz1sjC6cJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Aquatic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"m1LifM5TKg3jnvp0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Nature's Release",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QEI9TdStR1zUfk2L",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Swamp Walk",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LIlTU6v2O8Xy0gAM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -245,7 +249,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -425,7 +430,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -776,23 +782,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 26; <b>Bloodied</b> 13</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+2)<br><b>Con</b> 10 (0)</td><td><b>Dex</b> 18 (+4)<br><b>Int</b> 10 (0)</td><td><b>Wis</b> 14 (+2)<br><b>Cha</b> 8 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +7</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> javelin  x4, spear .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Rancid Air&lt;/b&gt; (poison) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Each enemy that spends a healing surge within the aura is weakened until the end of its next turn.&lt;/p&gt;]] ⌀ <b>Rancid Air</b> (poison) ✦ <b>Aura</b> 2</p><p>Each enemy that spends a healing surge within the aura is weakened until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aquatic&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The bullywug can breathe underwater. In aquatic combat, it gains a +2 bonus to attack rolls against nonaquatic creatures.&lt;/p&gt;]]  <b>Aquatic</b> <b></b></p><p>The bullywug can breathe underwater. In aquatic combat, it gains a +2 bonus to attack rolls against nonaquatic creatures.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Nature\"s Release&lt;/b&gt; (healing) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any attacker that scores a critical hit against the bullywug regains 3 hit points.&lt;/p&gt;]]  <b>Nature\"s Release</b> (healing) <b></b></p><p>Any attacker that scores a critical hit against the bullywug regains 3 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swamp Walk&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The bullywug ignores difficult terrain that is mud or shallow water.&lt;/p&gt;]]  <b>Swamp Walk</b> <b></b></p><p>The bullywug ignores difficult terrain that is mud or shallow water.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +6 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage.&lt;/p&gt;]] (⚔) <b>Spear</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+6[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+6 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage.&lt;/p&gt;]] <8.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10/20 (one creature); +6 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 damage.&lt;/p&gt;]] (➶) <b>Javelin</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10/20 (one creature); [[/roll 1d20+6[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10/20 (one creature); &lt;u&gt;+6 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 damage.&lt;/p&gt;]] <7.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spasmodic Leap&lt;/b&gt; (weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Marks on the bullywug end, and it jumps 3 squares before making the attack. This movement does not provoke opportunity attacks.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +6 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 damage, or 3d6 + 6 if the bullywug has combat advantage against the target, and the target takes a -2 penalty to attack rolls against the bullywug until the end of the bullywug’s next turn.&lt;/p&gt;]] ⚔ <b>Spasmodic Leap</b> (weapon) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> Marks on the bullywug end, and it jumps 3 squares before making the attack. This movement does not provoke opportunity attacks.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+6[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spasmodic Leap&lt;/b&gt; (weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+6 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spasmodic Leap&lt;/b&gt; (weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 damage, or 3d6 + 6 if the bullywug has combat advantage against the target, and the target takes a -2 penalty to attack rolls against the bullywug until the end of the bullywug’s next turn.&lt;/p&gt;]] <13>  damage, or [[/roll 3d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spasmodic Leap&lt;/b&gt; (weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 damage, or 3d6 + 6 if the bullywug has combat advantage against the target, and the target takes a -2 penalty to attack rolls against the bullywug until the end of the bullywug’s next turn.&lt;/p&gt;]] <16.5>  if the bullywug has combat advantage against the target, and the target takes a -2 penalty to attack rolls against the bullywug until the end of the bullywug’s next turn.</p></tr></td></table>",

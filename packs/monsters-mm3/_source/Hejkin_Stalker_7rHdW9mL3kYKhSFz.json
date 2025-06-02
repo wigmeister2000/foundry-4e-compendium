@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Auspicious Bolt",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NpBmV9sEL58tleFT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Earth Phasing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"chiIDjgJkWtfF23X",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -680,23 +683,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 29; <b>Bloodied</b> 14<hr><b>Resist</b> 10 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 11</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 (earth walk), burrow 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+2)<br><b>Con</b> 13 (+1)</td><td><b>Dex</b> 17 (+3)<br><b>Int</b> 8 (null)</td><td><b>Wis</b> 12 (+1)<br><b>Cha</b> 8 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Insight +6, Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 11 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Auspicious Bolt&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The hejkin deals 1d6 extra lightning damage to any target granting combat advantage to it.&lt;/p&gt;]]  <b>Auspicious Bolt</b> <b></b></p><p>The hejkin deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Auspicious Bolt&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The hejkin deals 1d6 extra lightning damage to any target granting combat advantage to it.&lt;/p&gt;]] <3.5> extra lightning damage to any target granting combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Earth Phasing&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The hejkin can burrow through solid stone at full speed, and it can shift while burrowing.&lt;/p&gt;]]  <b>Earth Phasing</b> <b></b></p><p>The hejkin can burrow through solid stone at full speed, and it can shift while burrowing.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +6 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The hejkin shifts 1 square.&lt;/p&gt;]] (⚔) <b>Claws</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+6[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+6 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 damage.&lt;/p&gt;]] <7.5>  damage.</p><p><i>Effect:</i> The hejkin shifts 1 square.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Earth Grasp&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 10 (one bloodied creature); +4 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The hejkin or one of its allies swaps positions with the target, teleporting.&lt;/p&gt;]] ⚔ <b>Earth Grasp</b> (teleportation) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 10 (one bloodied creature); [[/roll 1d20+4[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Earth Grasp&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 10 (one bloodied creature); &lt;u&gt;+4 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Effect:</i> The hejkin or one of its allies swaps positions with the target, teleporting.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Burrow Beneath&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The hejkin takes damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The hejkin shifts 7 squares.&lt;/p&gt;]]  <b>Burrow Beneath</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The hejkin takes damage.</p><p><i>Effect (Immediate Reaction):</i> The hejkin shifts 7 squares.</p></tr></td></table>",

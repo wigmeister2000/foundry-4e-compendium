@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -947,23 +949,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 148; <b>Bloodied</b> 74<hr><b>Resist</b> 5 necrotic; insubstantial (if the shard slave takes radiant damage, it doesn’t benefit from being insubstantial during its next turn) <b>Vulnerable</b> 5 radiant (and see insubstantial) </td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 13</td><td><b>Ref</b> 18</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 4 (null)<br><b>Con</b> 13 (+3)</td><td><b>Dex</b> 19 (+6)<br><b>Int</b> 14 (+4)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 8 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> telepathy 10<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dominating Tendril&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +7 vs Reflex; 1d8+1 psychic damage, and the target takes ongoing 5 psychic damage (save ends). First Failed Save: The target instead takes ongoing 5 psychic damage and is dominated (save ends both). The tendril remains attached until the target saves. &lt;/p&gt;]] (⚔) <b>Dominating Tendril</b> (standard, at-will) ✦ <b>Charm, Psychic</b></p><p>Reach 3; [[/roll 1d20+7[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dominating Tendril&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+7 vs Reflex&lt;/u&gt;; 1d8+1 psychic damage, and the target takes ongoing 5 psychic damage (save ends). First Failed Save: The target instead takes ongoing 5 psychic damage and is dominated (save ends both). The tendril remains attached until the target saves. &lt;/p&gt;]]; [[/roll 1d8+1#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dominating Tendril&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +7 vs Reflex; 1d8+1 psychic damage, and the target takes ongoing 5 psychic damage (save ends). First Failed Save: The target instead takes ongoing 5 psychic damage and is dominated (save ends both). The tendril remains attached until the target saves. &lt;/p&gt;]] <5.5>  psychic damage, and the target takes ongoing 5 psychic damage (save ends). First Failed Save: The target instead takes ongoing 5 psychic damage and is dominated (save ends both). The tendril remains attached until the target saves. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Double Attack&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The shard slave makes two dominating tendril attacks&lt;/p&gt;]] (⚔) <b>Double Attack</b> (standard, encounter) </p><p>The shard slave makes two dominating tendril attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Call of the Shard&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 5; +7 vs Will; 1d10+3 psychic damage, and the target takes a -2 penalty to saving throws (save ends). &lt;/p&gt;]] ᗕ <b>Call of the Shard</b> (standard, recharge ⚅</p><p>Close burst 5; [[/roll 1d20+7[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Call of the Shard&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+7 vs Will&lt;/u&gt;; 1d10+3 psychic damage, and the target takes a -2 penalty to saving throws (save ends). &lt;/p&gt;]]; [[/roll 1d10+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Call of the Shard&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 5; +7 vs Will; 1d10+3 psychic damage, and the target takes a -2 penalty to saving throws (save ends). &lt;/p&gt;]] <8.5>  psychic damage, and the target takes a -2 penalty to saving throws (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shard Burst&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +7 vs Fortitude; 2d8+3 force damage, and the target is pushed 3 squares. &lt;/p&gt;]] ᗕ <b>Shard Burst</b> (standard, encounter) ✦ <b>Force</b></p><p>Close burst 2; targets enemies; [[/roll 1d20+7[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shard Burst&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; &lt;u&gt;+7 vs Fortitude&lt;/u&gt;; 2d8+3 force damage, and the target is pushed 3 squares. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shard Burst&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +7 vs Fortitude; 2d8+3 force damage, and the target is pushed 3 squares. &lt;/p&gt;]] <12>  force damage, and the target is pushed 3 squares. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shard Reflection&lt;/b&gt; (immediate reaction, when the shard slave takes damage; encounter) &lt;/p&gt;&lt;p&gt;The shard slave shifts 6 squares.&lt;/p&gt;]]  <b>Shard Reflection</b> (immediate reaction, when the shard slave takes damage; encounter) </p><p>The shard slave shifts 6 squares.</p></tr></td></table>",

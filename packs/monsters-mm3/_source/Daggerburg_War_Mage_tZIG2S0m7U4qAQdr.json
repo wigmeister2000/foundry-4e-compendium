@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Adept",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"raOwbYHvUg9uEmsB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -640,23 +642,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 58; <b>Bloodied</b> 29</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 17</td><td><b>Ref</b> 19</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+5)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 21 (+8)</td><td><b>Wis</b> 18 (+7)<br><b>Cha</b> 15 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> staff implement .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Adept&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of an encounter, the war mage’s attacks deal 1d10 extra damage against any enemy that has not yet acted during the encounter.&lt;/p&gt;]]  <b>Combat Adept</b> <b></b></p><p>At the start of an encounter, the war mage’s attacks deal [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Adept&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of an encounter, the war mage’s attacks deal 1d10 extra damage against any enemy that has not yet acted during the encounter.&lt;/p&gt;]] <5.5> extra damage against any enemy that has not yet acted during the encounter.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;]] (⚔) <b>Staff</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;]] <9.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Stabbing Flame&lt;/b&gt; (fire, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); +11 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 fire damage, and ongoing 5 fire damage (save ends).&lt;/p&gt;]] ➶ <b>Stabbing Flame</b> (fire, implement) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 15 (one creature); [[/roll 1d20+11[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Stabbing Flame&lt;/b&gt; (fire, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); &lt;u&gt;+11 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Stabbing Flame&lt;/b&gt; (fire, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 fire damage, and ongoing 5 fire damage (save ends).&lt;/p&gt;]] <9.5>  fire damage, and ongoing 5 fire damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Icy Stream&lt;/b&gt; (cold, implement) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); +11 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 9 cold damage, and the war mage slides the target up to 3 squares.&lt;/p&gt;]] ➶ <b>Icy Stream</b> (cold, implement) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 15 (one creature); [[/roll 1d20+11[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Icy Stream&lt;/b&gt; (cold, implement) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); &lt;u&gt;+11 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Icy Stream&lt;/b&gt; (cold, implement) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 9 cold damage, and the war mage slides the target up to 3 squares.&lt;/p&gt;]] <14.5>  cold damage, and the war mage slides the target up to 3 squares.</p></tr></td></table>",

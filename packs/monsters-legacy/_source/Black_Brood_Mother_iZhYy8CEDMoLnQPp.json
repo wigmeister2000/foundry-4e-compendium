@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -465,10 +467,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -643,10 +645,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1363,10 +1365,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1486,23 +1488,10 @@
 				"max":10
 			},
 			"init":{
-				"value":27,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":13,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":27
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1208; <b>Bloodied</b> 604<hr><b>Resist</b> 30 acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +27 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 42</td><td><b>Ref</b> 44</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, fly 10 (hover), swim 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+22)<br><b>Con</b> 22 (+20)</td><td><b>Dex</b> 30 (+24)<br><b>Int</b> 18 (+18)</td><td><b>Wis</b> 18 (+18)<br><b>Cha</b> 16 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Nature +22, Stealth +33</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 2d8+9 damage, and ongoing 15 acid damage (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Acid</b></p><p>Reach 4; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+35 vs AC&lt;/u&gt;; 2d8+9 damage, and ongoing 15 acid damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 2d8+9 damage, and ongoing 15 acid damage (save ends). &lt;/p&gt;]] <18>  damage, and ongoing 15 acid damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 1d10+9 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 4; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+35 vs AC&lt;/u&gt;; 1d10+9 damage. &lt;/p&gt;]]; [[/roll 1d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 1d10+9 damage. &lt;/p&gt;]] <14.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Underbelly Crush&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets an adjacent creature; +30 vs Reflex; 1d12+10 damage, and a Large or smaller target is grabbed, pulled 1 square into the dragon’s space, and restrained. A creature trapped underneath the brood mother’s bulk has line of sight and line of effect only to the brood mother, and no creatures have line of sight or line of effect to it. A creature that escapes the grab is no longer underneath the brood mother and no longer restrained; the character shifts to the nearest square that is not part of the brood mother’s space. If the brood mother moves so that it no longer occupies the grabbed character’s space, then the character is no longer grabbed or restrained. Sustain Minor: The brood mother sustains the grab, and the target takes 20 damage plus 10 acid damage. &lt;/p&gt;]] ⚔ <b>Underbelly Crush</b> (standard, at-will) </p><p>Targets an adjacent creature; [[/roll 1d20+30[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Underbelly Crush&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets an adjacent creature; &lt;u&gt;+30 vs Reflex&lt;/u&gt;; 1d12+10 damage, and a Large or smaller target is grabbed, pulled 1 square into the dragon’s space, and restrained. A creature trapped underneath the brood mother’s bulk has line of sight and line of effect only to the brood mother, and no creatures have line of sight or line of effect to it. A creature that escapes the grab is no longer underneath the brood mother and no longer restrained; the character shifts to the nearest square that is not part of the brood mother’s space. If the brood mother moves so that it no longer occupies the grabbed character’s space, then the character is no longer grabbed or restrained. Sustain Minor: The brood mother sustains the grab, and the target takes 20 damage plus 10 acid damage. &lt;/p&gt;]]; [[/roll 1d12+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Underbelly Crush&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets an adjacent creature; +30 vs Reflex; 1d12+10 damage, and a Large or smaller target is grabbed, pulled 1 square into the dragon’s space, and restrained. A creature trapped underneath the brood mother’s bulk has line of sight and line of effect only to the brood mother, and no creatures have line of sight or line of effect to it. A creature that escapes the grab is no longer underneath the brood mother and no longer restrained; the character shifts to the nearest square that is not part of the brood mother’s space. If the brood mother moves so that it no longer occupies the grabbed character’s space, then the character is no longer grabbed or restrained. Sustain Minor: The brood mother sustains the grab, and the target takes 20 damage plus 10 acid damage. &lt;/p&gt;]] <16.5>  damage, and a Large or smaller target is grabbed, pulled 1 square into the dragon’s space, and restrained. A creature trapped underneath the brood mother’s bulk has line of sight and line of effect only to the brood mother, and no creatures have line of sight or line of effect to it. A creature that escapes the grab is no longer underneath the brood mother and no longer restrained; the character shifts to the nearest square that is not part of the brood mother’s space. If the brood mother moves so that it no longer occupies the grabbed character’s space, then the character is no longer grabbed or restrained. Sustain Minor: The brood mother sustains the grab, and the target takes 20 damage plus 10 acid damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +31 vs Reflex; 4d8+7 acid damage, and the target takes ongoing 30 acid damage and takes a -4 penalty to AC (save ends both). &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Acid</b></p><p>Close blast 5; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 4d8+7 acid damage, and the target takes ongoing 30 acid damage and takes a -4 penalty to AC (save ends both). &lt;/p&gt;]]; [[/roll 4d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +31 vs Reflex; 4d8+7 acid damage, and the target takes ongoing 30 acid damage and takes a -4 penalty to AC (save ends both). &lt;/p&gt;]] <25>  acid damage, and the target takes ongoing 30 acid damage and takes a -4 penalty to AC (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vitriolic Spray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +31 vs Reflex; 2d10+7 acid damage, and the target is blinded until the end of the dragon’s next turn. Miss: Half damage, and the target is not blinded. &lt;/p&gt;]] ᗕ <b>Vitriolic Spray</b> (standard, at-will) ✦ <b>Acid</b></p><p>Close blast 5; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vitriolic Spray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 2d10+7 acid damage, and the target is blinded until the end of the dragon’s next turn. Miss: Half damage, and the target is not blinded. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vitriolic Spray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +31 vs Reflex; 2d10+7 acid damage, and the target is blinded until the end of the dragon’s next turn. Miss: Half damage, and the target is not blinded. &lt;/p&gt;]] <18>  acid damage, and the target is blinded until the end of the dragon’s next turn. Miss: Half damage, and the target is not blinded. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Frightful Presence&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;targets enemies; Close burst 10; +31 vs. Will; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends).&lt;/p&gt;]]  <b>Frightful Presence</b> (standard; encounter) ✦ <b>Fear</b></p><p>targets enemies; Close burst 10; [[/roll 1d20+31[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Frightful Presence&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;targets enemies; Close burst 10; &lt;u&gt;+31 vs. Will&lt;/u&gt;; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends).&lt;/p&gt;]]; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slash&lt;/b&gt; (immediate reaction, when a melee attack misses the dragon, at-will) &lt;/p&gt;&lt;p&gt;The dragon uses its tail to attack the target; reach 4; targets the enemy that missed it; +35 vs AC; 1d12+11 damage, and the target is pushed 3 squares. &lt;/p&gt;]] ⚔ <b>Tail Slash</b> (immediate reaction, when a melee attack misses the dragon, at-will) </p><p>The dragon uses its tail to attack the target; reach 4; targets the enemy that missed it; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slash&lt;/b&gt; (immediate reaction, when a melee attack misses the dragon, at-will) &lt;/p&gt;&lt;p&gt;The dragon uses its tail to attack the target; reach 4; targets the enemy that missed it; &lt;u&gt;+35 vs AC&lt;/u&gt;; 1d12+11 damage, and the target is pushed 3 squares. &lt;/p&gt;]]; [[/roll 1d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slash&lt;/b&gt; (immediate reaction, when a melee attack misses the dragon, at-will) &lt;/p&gt;&lt;p&gt;The dragon uses its tail to attack the target; reach 4; targets the enemy that missed it; +35 vs AC; 1d12+11 damage, and the target is pushed 3 squares. &lt;/p&gt;]] <17.5>  damage, and the target is pushed 3 squares. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied; encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon’s breath weapon recharges, and the dragon uses it immediately.&lt;/p&gt;]]  <b>Bloodied Breath</b> (free, when first bloodied; encounter) ✦ <b>Acid</b></p><p>The dragon’s breath weapon recharges, and the dragon uses it immediately.</p></tr></td></table>",

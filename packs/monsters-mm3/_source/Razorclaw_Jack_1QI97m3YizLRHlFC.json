@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Razorclaw Shifting",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"bHgWJePwzjhB8sZ7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"River Rat Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tHEGQVy6C4a2Spmq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -678,23 +681,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 43; <b>Bloodied</b> 21</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 15</td><td><b>Ref</b> 15</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+4)<br><b>Con</b> 11 (+1)</td><td><b>Dex</b> 16 (+4)<br><b>Int</b> 11 (+1)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +9, Stealth +9, Streetwise +6, Thievery +9</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Razorclaw Shifting&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While bloodied, the razorclaw jack gains a +2 power bonus to speed.&lt;/p&gt;]]  <b>Razorclaw Shifting</b> <b></b></p><p>While bloodied, the razorclaw jack gains a +2 power bonus to speed.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;River Rat Tactics&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The jack has combat advantage against any enemy that is adjacent to at least one of the jack’s allies.&lt;/p&gt;]]  <b>River Rat Tactics</b> <b></b></p><p>The jack has combat advantage against any enemy that is adjacent to at least one of the jack’s allies.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 damage, or 2d6 + 6 while the jack has combat advantage against the target.&lt;/p&gt;]] (⚔) <b>Claws</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 damage, or 2d6 + 6 while the jack has combat advantage against the target.&lt;/p&gt;]] <9.5>  damage, or [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 damage, or 2d6 + 6 while the jack has combat advantage against the target.&lt;/p&gt;]] <13>  while the jack has combat advantage against the target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;River Rat\"s Gambit&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The jack must be bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The jack uses claws. If the attack hits, the target takes 2d6 extra damage. If the attack misses, the jack takes 1d6 damage.&lt;/p&gt;]] ⚔ <b>River Rat\"s Gambit</b> ✦ <b>Encounter</b></p><p><i>Requirement:</i> The jack must be bloodied.</p><p><i>Effect:</i> The jack uses claws. If the attack hits, the target takes [[/roll 2d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;River Rat\"s Gambit&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The jack uses claws. If the attack hits, the target takes 2d6 extra damage. If the attack misses, the jack takes 1d6 damage.&lt;/p&gt;]] <7> extra damage. If the attack misses, the jack takes [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;River Rat\"s Gambit&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The jack uses claws. If the attack hits, the target takes 2d6 extra damage. If the attack misses, the jack takes 1d6 damage.&lt;/p&gt;]] <3.5> damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Skulduggery&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The jack shifts up to half its speed and gains combat advantage against any enemy adjacent to it at the end of this move. The combat advantage lasts until the end of the jack’s turn.&lt;/p&gt;]]  <b>Skulduggery</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> The jack shifts up to half its speed and gains combat advantage against any enemy adjacent to it at the end of this move. The combat advantage lasts until the end of the jack’s turn.</p></tr></td></table>",

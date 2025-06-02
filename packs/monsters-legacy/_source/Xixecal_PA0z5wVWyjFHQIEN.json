@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Raging Blizzard",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"iUu1O2tXNTjmZs8g",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 682; <b>Bloodied</b> 341<hr><b>Vulnerable</b> fire (when hit by a fire attack, Xixecal takes a -4 penalty to all defenses until the end of its next turn) <b>Immune</b> cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 46</td><td><b>Ref</b> 42</td><td><b>Will</b> 44</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 32 (+26)<br><b>Con</b> 31 (+25)</td><td><b>Dex</b> 15 (+17)<br><b>Int</b> 20 (+20)</td><td><b>Wis</b> 14 (+17)<br><b>Cha</b> 28 (+24)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Raging Blizzard&lt;/b&gt; aura 5; the aura’s area is lightly obscured. Each enemy that starts its turn within the aura is slowed and loses any resistance to cold until the start of its next turn.]] <b>Raging Blizzard</b> aura 5; the aura’s area is lightly obscured. Each enemy that starts its turn within the aura is slowed and loses any resistance to cold until the start of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 4d8+11 cold damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 3; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+33 vs AC&lt;/u&gt;; 4d8+11 cold damage. &lt;/p&gt;]]; [[/roll 4d8+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 4d8+11 cold damage. &lt;/p&gt;]] <29>  cold damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Freezing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Xixecal makes two slam attacks. If both attacks hit the same target, the target takes ongoing 20 cold damage and is immobilized (save ends both)&lt;/p&gt;]] ⚔ <b>Freezing Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>Xixecal makes two slam attacks. If both attacks hit the same target, the target takes ongoing 20 cold damage and is immobilized (save ends both)</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Winter&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 6; +31 vs Fortitude; 4d10+11 cold damage, and the target takes ongoing 20 cold damage and is restrained (save ends both). &lt;/p&gt;]] ᗕ <b>Breath of Winter</b> (standard, recharge ⚄⚅) ✦ <b>Cold</b></p><p>Close blast 6; [[/roll 1d20+31[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Winter&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 6; &lt;u&gt;+31 vs Fortitude&lt;/u&gt;; 4d10+11 cold damage, and the target takes ongoing 20 cold damage and is restrained (save ends both). &lt;/p&gt;]]; [[/roll 4d10+11#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Winter&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 6; +31 vs Fortitude; 4d10+11 cold damage, and the target takes ongoing 20 cold damage and is restrained (save ends both). &lt;/p&gt;]] <33>  cold damage, and the target takes ongoing 20 cold damage and is restrained (save ends both). </p></tr></td></table>",

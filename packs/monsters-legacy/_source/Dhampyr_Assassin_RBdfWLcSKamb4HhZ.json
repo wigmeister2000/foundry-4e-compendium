@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -724,7 +725,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yo8s5XFpKfweduZz",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -760,7 +761,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -770,7 +772,7 @@
 		},
 		{
 			"name":"Strike from the Shadows",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aeXcO0V8GTthMjKx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -806,7 +808,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -862,23 +865,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 198; <b>Bloodied</b> 99</td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 26</td><td><b>Ref</b> 28</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+10)<br><b>Con</b> 15 (+8)</td><td><b>Dex</b> 22 (+12)<br><b>Int</b> 15 (+8)</td><td><b>Wis</b> 12 (+7)<br><b>Cha</b> 19 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +17, Athletics +15, Stealth +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> kukri  x2, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kukri&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d6+8 damage (reroll any damage die result of 1). &lt;/p&gt;]] (⚔) <b>Kukri</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kukri&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 1d6+8 damage (reroll any damage die result of 1). &lt;/p&gt;]]; [[/roll 1d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kukri&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d6+8 damage (reroll any damage die result of 1). &lt;/p&gt;]] <11.5>  damage (reroll any damage die result of 1). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blood Run&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dhampyr assassin moves 6 squares and makes two melee basic attacks at any point during that movement. It does not provoke opportunity attacks when moving away from the targets of these attacks.&lt;/p&gt;]] ⚔ <b>Blood Run</b> (standard, at-will) ✦ <b>Weapon</b></p><p>The dhampyr assassin moves 6 squares and makes two melee basic attacks at any point during that movement. It does not provoke opportunity attacks when moving away from the targets of these attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Tear the Vein&lt;/b&gt; (standard; requires combat advantage, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs Fortitude; 2d8+6 damage, and the dhampyr assassin regains 25 hit points. &lt;/p&gt;]] ⚔ <b>Tear the Vein</b> (standard; requires combat advantage, encounter) ✦ <b>Healing</b></p><p>[[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Tear the Vein&lt;/b&gt; (standard; requires combat advantage, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 2d8+6 damage, and the dhampyr assassin regains 25 hit points. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Tear the Vein&lt;/b&gt; (standard; requires combat advantage, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs Fortitude; 2d8+6 damage, and the dhampyr assassin regains 25 hit points. &lt;/p&gt;]] <15>  damage, and the dhampyr assassin regains 25 hit points. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Misty Step&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The dhampyr assassin gains insubstantial, phasing, and concealment until the end of its next turn or until it attacks, whichever comes first.&lt;/p&gt;]]  <b>Misty Step</b> (standard; at-will) </p><p>The dhampyr assassin gains insubstantial, phasing, and concealment until the end of its next turn or until it attacks, whichever comes first.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A dhampyr assassin’s attack deals 3d6 extra damage to any target granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A dhampyr assassin’s attack deals [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A dhampyr assassin’s attack deals 3d6 extra damage to any target granting combat advantage to it.&lt;/p&gt;]] <10.5> extra damage to any target granting combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Strike from the Shadows&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the dhampyr assassin misses with an attack while hidden, it remains hidden.&lt;/p&gt;]]  <b>Strike from the Shadows</b></p><p>If the dhampyr assassin misses with an attack while hidden, it remains hidden.</p></tr></td></table>",

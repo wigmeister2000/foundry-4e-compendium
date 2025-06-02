@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -366,7 +368,7 @@
 		},
 		{
 			"name":"Murder is a Team Sport",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5UQoi6tE9qXWaRkw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +404,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -458,23 +461,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 16</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+7)<br><b>Con</b> 15 (+6)</td><td><b>Dex</b> 12 (+5)<br><b>Int</b> 9 (+3)</td><td><b>Wis</b> 10 (+4)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +11, Thievery +8</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> crossbow , crossbow bolts (20) , leather armor , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 6 damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 6 damage. &lt;/p&gt;]]; 6 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +13 vs AC; 6 damage. &lt;/p&gt;]] (➶) <b>Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+13 vs AC&lt;/u&gt;; 6 damage. &lt;/p&gt;]]; 6 damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Murder is a Team Sport&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a streetwise thug is flanking an enemy, it deals 1 extra point of damage per ally adjacent to the flanked enemy (including the ally who is granting the flank), to a maximum of +4.&lt;/p&gt;]]  <b>Murder is a Team Sport</b></p><p>If a streetwise thug is flanking an enemy, it deals 1 extra point of damage per ally adjacent to the flanked enemy (including the ally who is granting the flank), to a maximum of +4.</p></tr></td></table>",

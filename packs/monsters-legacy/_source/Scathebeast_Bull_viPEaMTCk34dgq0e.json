@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -768,23 +770,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 75; <b>Bloodied</b> 37<hr><b>Resist</b> 5 variable. Each time a scathebeast resists damage, its resistance to that damage type increases by 5 until the end of the encounter. <b>Immune</b> poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 20</td><td><b>Ref</b> 15</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+4)<br><b>Con</b> 20 (+8)</td><td><b>Dex</b> 10 (+3)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 15 (+5)<br><b>Cha</b> 7 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crush&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+3 damage. &lt;/p&gt;]] (⚔) <b>Crush</b> (standard, at-will) </p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crush&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 2d8+3 damage. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crush&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 2d8+3 damage. &lt;/p&gt;]] <12>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Split Slime&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Reflex; 2d4+5 acid damage. &lt;/p&gt;]] (➶) <b>Split Slime</b> (standard, at-will) ✦ <b>Acid</b></p><p>Ranged 10; [[/roll 1d20+9[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Split Slime&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+9 vs Reflex&lt;/u&gt;; 2d4+5 acid damage. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Split Slime&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Reflex; 2d4+5 acid damage. &lt;/p&gt;]] <10>  acid damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Slime Spray&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 4; +9 vs Reflex; 2d4+5 acid damage, and the target is immobilized until the end of the scathebeast bull\"s next turn. &lt;/p&gt;]] ᗕ <b>Slime Spray</b> (standard, recharge ⚃⚄⚅) ✦ <b>Acid</b></p><p>Close blast 4; [[/roll 1d20+9[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Slime Spray&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 4; &lt;u&gt;+9 vs Reflex&lt;/u&gt;; 2d4+5 acid damage, and the target is immobilized until the end of the scathebeast bull\"s next turn. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Slime Spray&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 4; +9 vs Reflex; 2d4+5 acid damage, and the target is immobilized until the end of the scathebeast bull\"s next turn. &lt;/p&gt;]] <10>  acid damage, and the target is immobilized until the end of the scathebeast bull\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Stampede&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;As an immediate reaction, one other scathebeast within 5 squares of a scathebeast bull can charge a target that the scathebeast bull charges.&lt;/p&gt;]]  <b>Stampede</b> (standard; encounter) </p><p>As an immediate reaction, one other scathebeast within 5 squares of a scathebeast bull can charge a target that the scathebeast bull charges.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Repulsion",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"bBRq5lYCyGAZIh86",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -511,10 +514,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -1223,10 +1226,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1478,7 +1481,7 @@
 		},
 		{
 			"name":"Residuum Recovery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vcrynkoRxFVbPGKY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1514,7 +1517,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1570,23 +1574,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 888; <b>Bloodied</b> 444<hr><b>Resist</b> Psychic 30 </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 33</td><td><b>Ref</b> 37</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+19)<br><b>Con</b> 22 (+18)</td><td><b>Dex</b> 17 (+15)<br><b>Int</b> 8 (+11)</td><td><b>Wis</b> 18 (+16)<br><b>Cha</b> 12 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> (telepathy)<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 20<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Repulsion&lt;/b&gt; aura 4; enemies treat all squares within the aura as difficult terrain.]] <b>Repulsion</b> aura 4; enemies treat all squares within the aura as difficult terrain.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 3d8+6 damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+28 vs AC&lt;/u&gt;; 3d8+6 damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. &lt;/p&gt;]]; [[/roll 3d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 3d8+6 damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. &lt;/p&gt;]] <19.5>  damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Consumptive Force&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +27 vs Reflex; 2d12+6 psychic damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. &lt;/p&gt;]] (➶) <b>Consumptive Force</b> (standard, at-will) </p><p>Ranged 5; [[/roll 1d20+27[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Consumptive Force&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+27 vs Reflex&lt;/u&gt;; 2d12+6 psychic damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. &lt;/p&gt;]]; [[/roll 2d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Consumptive Force&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +27 vs Reflex; 2d12+6 psychic damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. &lt;/p&gt;]] <19>  psychic damage, and if the target is wearing magic armor, the armor starts decaying; the wearer takes a –1 penalty to AC until the end of encounter. This penalty is cumulative, to a maximum –5. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Nightmare\"s Flurry&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The rust monster nightmare shifts 4 squares by leaping and makes four melee or ranged basic attacks. &lt;/p&gt;]] ⚔ <b>Nightmare\"s Flurry</b> (standard, at-will) </p><p>The rust monster nightmare shifts 4 squares by leaping and makes four melee or ranged basic attacks. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dweomer Feedback&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; +26 vs Fortitude; 3d12+6 damage, and the target is stunned (save ends). First Failed Saving Throw: The target is unconscious (save ends). The rust monster nightmare causes the magical possession of the target to exude painful vibrations. &lt;/p&gt;]] ➶ <b>Dweomer Feedback</b> (standard, recharge ⚄⚅) </p><p>Ranged 10; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dweomer Feedback&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; 3d12+6 damage, and the target is stunned (save ends). First Failed Saving Throw: The target is unconscious (save ends). The rust monster nightmare causes the magical possession of the target to exude painful vibrations. &lt;/p&gt;]]; [[/roll 3d12+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dweomer Feedback&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; +26 vs Fortitude; 3d12+6 damage, and the target is stunned (save ends). First Failed Saving Throw: The target is unconscious (save ends). The rust monster nightmare causes the magical possession of the target to exude painful vibrations. &lt;/p&gt;]] <25.5>  damage, and the target is stunned (save ends). First Failed Saving Throw: The target is unconscious (save ends). The rust monster nightmare causes the magical possession of the target to exude painful vibrations. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Trap&lt;/b&gt; (standard, recharge when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 5; +26 vs Will; 2d12+6 psychic damage, and the target is immobilized until the end of the rust monster nightmare’s next turn. Miss: Half damage, and the target is slowed until the end of the rust monster nightmare’s next turn. &lt;/p&gt;]] ᗕ <b>Psychic Trap</b> (standard, recharge when first bloodied) </p><p>Close blast 5; [[/roll 1d20+26[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Trap&lt;/b&gt; (standard, recharge when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+26 vs Will&lt;/u&gt;; 2d12+6 psychic damage, and the target is immobilized until the end of the rust monster nightmare’s next turn. Miss: Half damage, and the target is slowed until the end of the rust monster nightmare’s next turn. &lt;/p&gt;]]; [[/roll 2d12+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Trap&lt;/b&gt; (standard, recharge when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 5; +26 vs Will; 2d12+6 psychic damage, and the target is immobilized until the end of the rust monster nightmare’s next turn. Miss: Half damage, and the target is slowed until the end of the rust monster nightmare’s next turn. &lt;/p&gt;]] <19>  psychic damage, and the target is immobilized until the end of the rust monster nightmare’s next turn. Miss: Half damage, and the target is slowed until the end of the rust monster nightmare’s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Dissolve Item&lt;/b&gt; (minor 1/turn, recharge ⚄⚅) ✦ &lt;b&gt;Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature wearing or wielding a decaying magic item of 30th level or lower; +28 vs. Reflex; the decaying magic item is destroyed. &lt;/p&gt;]] ⚔ <b>Dissolve Item</b> (minor 1/turn, recharge ⚄⚅) ✦ <b>Reliable</b></p><p>Targets a creature wearing or wielding a decaying magic item of 30th level or lower; [[/roll 1d20+28[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Dissolve Item&lt;/b&gt; (minor 1/turn, recharge ⚄⚅) ✦ &lt;b&gt;Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature wearing or wielding a decaying magic item of 30th level or lower; &lt;u&gt;+28 vs. Reflex&lt;/u&gt;; the decaying magic item is destroyed. &lt;/p&gt;]]; the decaying magic item is destroyed. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Extradimensional Lock&lt;/b&gt; (immediate interrupt, when an enemy teleports into or out of a square adjacent to the rust monster nightmare; at-will) &lt;/p&gt;&lt;p&gt;Targets the triggering creature; +27 vs. Will; the teleport fails and the rust monster gains 20 temporary hit points.&lt;/p&gt;]]  <b>Extradimensional Lock</b> (immediate interrupt, when an enemy teleports into or out of a square adjacent to the rust monster nightmare; at-will) </p><p>Targets the triggering creature; [[/roll 1d20+27[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Extradimensional Lock&lt;/b&gt; (immediate interrupt, when an enemy teleports into or out of a square adjacent to the rust monster nightmare; at-will) &lt;/p&gt;&lt;p&gt;Targets the triggering creature; &lt;u&gt;+27 vs. Will&lt;/u&gt;; the teleport fails and the rust monster gains 20 temporary hit points.&lt;/p&gt;]]; the teleport fails and the rust monster gains 20 temporary hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Magic Consumption&lt;/b&gt; ( when the rust monster nightmare is hit by an attack that uses a magic implement or weapon; at-will) &lt;/p&gt;&lt;p&gt;The implement or weapon used in the triggering attack begins decaying; the wielder of the weapon takes a –1 penalty to damage rolls with that weapon until the end of the encounter. This penalty is cumulative, to a maximum of –5.&lt;/p&gt;]]  <b>Magic Consumption</b> ( when the rust monster nightmare is hit by an attack that uses a magic implement or weapon; at-will) </p><p>The implement or weapon used in the triggering attack begins decaying; the wielder of the weapon takes a –1 penalty to damage rolls with that weapon until the end of the encounter. This penalty is cumulative, to a maximum of –5.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Residuum Recovery&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A rust monster nightmare consumes any item it destroys. The residuum from any magic items the creature has destroyed can be retrieved from its stomach. The residuum is worth the market value of the item (not one-fifth the value).&lt;/p&gt;]]  <b>Residuum Recovery</b></p><p>A rust monster nightmare consumes any item it destroys. The residuum from any magic items the creature has destroyed can be retrieved from its stomach. The residuum is worth the market value of the item (not one-fifth the value).</p></tr></td></table>",

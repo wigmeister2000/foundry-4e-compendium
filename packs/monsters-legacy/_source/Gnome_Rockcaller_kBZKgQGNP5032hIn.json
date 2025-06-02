@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1078,7 +1079,7 @@
 		},
 		{
 			"name":"Reactive Stealth",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"exdhMnFXVDT0QfbH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1114,7 +1115,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1170,23 +1172,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 140; <b>Bloodied</b> 70</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 26</td><td><b>Ref</b> 26</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+9)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 16 (+10)<br><b>Int</b> 20 (+12)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 23 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +17, Diplomacy +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+4 damage. &lt;/p&gt;]] (⚔) <b>Stone Fist</b> (standard, at-will) </p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+4 damage. &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+4 damage. &lt;/p&gt;]] <13>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Focused Quake&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets enemies; +18 vs Reflex; 1d6+2 damage, and the target is knocked prone. &lt;/p&gt;]] ✻ <b>Focused Quake</b> (standard, at-will) </p><p>Area burst 2 within 10; targets enemies; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Focused Quake&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets enemies; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 1d6+2 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d6+2#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Focused Quake&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets enemies; +18 vs Reflex; 1d6+2 damage, and the target is knocked prone. &lt;/p&gt;]] <5.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Ring of Stone&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +18 vs Reflex; 2d6+4 damage. Effect: Each square in the burst becomes difficult terrain until the end of the gnome rockcaller’s next turn. &lt;/p&gt;]] ✻ <b>Ring of Stone</b> (standard, at-will) </p><p>Area burst 1 within 10; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Ring of Stone&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 2d6+4 damage. Effect: Each square in the burst becomes difficult terrain until the end of the gnome rockcaller’s next turn. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Ring of Stone&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +18 vs Reflex; 2d6+4 damage. Effect: Each square in the burst becomes difficult terrain until the end of the gnome rockcaller’s next turn. &lt;/p&gt;]] <11>  damage. Effect: Each square in the burst becomes difficult terrain until the end of the gnome rockcaller’s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Call Stone Spirits&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 5; the burst creates a zone of difficult terrain that lasts until the end of the rockcaller’s next turn. As a standard action, the rockcaller can use stone fist against any target in the zone. As a move action, the rockcaller can move the zone up to 5 squares. Sustain Minor: The effect persists&lt;/p&gt;]] ✻ <b>Call Stone Spirits</b> (minor, encounter) ✦ <b>Zone</b></p><p>Area burst 1 within 5; the burst creates a zone of difficult terrain that lasts until the end of the rockcaller’s next turn. As a standard action, the rockcaller can use stone fist against any target in the zone. As a move action, the rockcaller can move the zone up to 5 squares. Sustain Minor: The effect persists</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fade Away&lt;/b&gt; (immediate reaction, when the gnome rockcaller takes damage; encounter) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnome rockcaller turns invisible until it attacks or until the end of its next turn.&lt;/p&gt;]]  <b>Fade Away</b> (immediate reaction, when the gnome rockcaller takes damage; encounter) ✦ <b>Illusion</b></p><p>The gnome rockcaller turns invisible until it attacks or until the end of its next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Merge With Stone&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The gnome rockcaller moves 3 squares or shifts 1 square, and can pass into and through squares occupied by obstacles made of stone. If the obstacle is larger than it is, the rockcaller can end its movement in such a square. If it does, it remains alive and aware of its surroundings, but it cannot be seen or attacked. The only actions it can take are to make Perception checks or to shift 1 square into an unoccupied square as a move action.&lt;/p&gt;]]  <b>Merge With Stone</b> (move; encounter) </p><p>The gnome rockcaller moves 3 squares or shifts 1 square, and can pass into and through squares occupied by obstacles made of stone. If the obstacle is larger than it is, the rockcaller can end its movement in such a square. If it does, it remains alive and aware of its surroundings, but it cannot be seen or attacked. The only actions it can take are to make Perception checks or to shift 1 square into an unoccupied square as a move action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reactive Stealth&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If a gnome has cover or concealment when it makes an initiative check at the start of an encounter, it can make a Stealth check to become hidden.&lt;/p&gt;]]  <b>Reactive Stealth</b></p><p>If a gnome has cover or concealment when it makes an initiative check at the start of an encounter, it can make a Stealth check to become hidden.</p></tr></td></table>",

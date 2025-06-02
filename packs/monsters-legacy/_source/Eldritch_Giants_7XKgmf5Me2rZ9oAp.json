@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -290,10 +292,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -649,10 +651,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -952,23 +954,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 171; <b>Bloodied</b> 85<hr><b>Resist</b> 10 force </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>Save</b> +5 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 29</td><td><b>Ref</b> 31</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+14)<br><b>Con</b> 19 (+13)</td><td><b>Dex</b> 12 (+10)<br><b>Int</b> 24 (+16)</td><td><b>Wis</b> 22 (+15)<br><b>Cha</b> 13 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +21, Insight +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 25 | Insight 30</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Eldritch Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs Reflex; 2d6 + 7 force damage. Reach 2&lt;/p&gt;]] (⚔) <b>Eldritch Blade</b> (standard, at-will) ✦ <b>Force, Weapon</b></p><p>[[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Eldritch Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs Reflex&lt;/u&gt;; 2d6 + 7 force damage. Reach 2&lt;/p&gt;]]; [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Eldritch Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs Reflex; 2d6 + 7 force damage. Reach 2&lt;/p&gt;]] <14>  force damage. Reach 2</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Force Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;20; +21 vs Reflex; 2d6 + 7 force damage. &lt;/p&gt;]] (➶) <b>Force Missile</b> (standard, at-will) ✦ <b>Force</b></p><p>20; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Force Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;20; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 2d6 + 7 force damage. &lt;/p&gt;]]; [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Force Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;20; +21 vs Reflex; 2d6 + 7 force damage. &lt;/p&gt;]] <14>  force damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sweeping Sword&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 3d6 + 7 force damage, and the target is knocked prone. Special: When charging, the eldritch giant can use this power in place of a melee basic attack.. Close blast 2&lt;/p&gt;]] ᗕ <b>Sweeping Sword</b> (standard, encounter) ✦ <b>Force, Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sweeping Sword&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 3d6 + 7 force damage, and the target is knocked prone. Special: When charging, the eldritch giant can use this power in place of a melee basic attack.. Close blast 2&lt;/p&gt;]]; [[/roll 3d6 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sweeping Sword&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 3d6 + 7 force damage, and the target is knocked prone. Special: When charging, the eldritch giant can use this power in place of a melee basic attack.. Close blast 2&lt;/p&gt;]] <17.5>  force damage, and the target is knocked prone. Special: When charging, the eldritch giant can use this power in place of a melee basic attack.. Close blast 2</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Consume Magic&lt;/b&gt; (minor 1/round; at-will) &lt;/p&gt;&lt;p&gt;Targets an adjacent conjuration or zone created by an enemy; +21 vs. the Will of the creator of the conjuration or zone; the conjuration or zone is destroyed, and its effects end. The eldritch giant’s attacks deal 3d6 extra force damage until the end of its next turn.&lt;/p&gt;]]  <b>Consume Magic</b> (minor 1/round; at-will) </p><p>Targets an adjacent conjuration or zone created by an enemy; +21 vs. the Will of the creator of the conjuration or zone; the conjuration or zone is destroyed, and its effects end. The eldritch giant’s attacks deal [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Consume Magic&lt;/b&gt; (minor 1/round; at-will) &lt;/p&gt;&lt;p&gt;Targets an adjacent conjuration or zone created by an enemy; +21 vs. the Will of the creator of the conjuration or zone; the conjuration or zone is destroyed, and its effects end. The eldritch giant’s attacks deal 3d6 extra force damage until the end of its next turn.&lt;/p&gt;]] <10.5> extra force damage until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Eldritch Field&lt;/b&gt; (minor; recharge ⚄⚅) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; the blast creates a zone of rippling magic that lasts until the end of the encounter or until the eldritch giant uses this power again. The zone is difficult terrain, and the giant’s attacks deal 1d6 extra force damage against creatures within the zone.&lt;/p&gt;]]  <b>Eldritch Field</b> (minor; recharge ⚄⚅) ✦ <b>Zone</b></p><p>Close burst 5; the blast creates a zone of rippling magic that lasts until the end of the encounter or until the eldritch giant uses this power again. The zone is difficult terrain, and the giant’s attacks deal [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Eldritch Field&lt;/b&gt; (minor; recharge ⚄⚅) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; the blast creates a zone of rippling magic that lasts until the end of the encounter or until the eldritch giant uses this power again. The zone is difficult terrain, and the giant’s attacks deal 1d6 extra force damage against creatures within the zone.&lt;/p&gt;]] <3.5> extra force damage against creatures within the zone.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Manifest Essence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NxcWAlTVGjK9Ymvf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -871,10 +873,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1174,23 +1176,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 640; <b>Bloodied</b> 320 ; see also bloodied fury<hr><b>Resist</b> 30 fire <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 29</td><td><b>Ref</b> 27</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 10 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+14)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 19 (+12)<br><b>Int</b> 17 (+11)</td><td><b>Wis</b> 18 (+12)<br><b>Cha</b> 21 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +16, Insight +17, Intimidate +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 27</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Manifest Essence&lt;/b&gt; (Fire) aura 3; each creature that starts its turn in the aura takes 5 fire damage. The damage increases to 10 while the dragon is bloodied.]] <b>Manifest Essence</b> (Fire) aura 3; each creature that starts its turn in the aura takes 5 fire damage. The damage increases to 10 while the dragon is bloodied.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +19 vs AC; 1d8+7 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 3; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+7 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +19 vs AC; 1d8+7 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <11.5>  damage, and ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slap&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +18 vs AC; 3d8+7 damage. &lt;/p&gt;]] ⚔ <b>Tail Slap</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slap&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+18 vs AC&lt;/u&gt;; 3d8+7 damage. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Slap&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +18 vs AC; 3d8+7 damage. &lt;/p&gt;]] <20.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Power&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +17 vs Reflex; 2d10+7 fire damage, and the target takes ongoing 10 fire damage and is dazed (save ends both). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Breath of Power</b> (standard, recharge ⚄⚅) ✦ <b>Fire</b></p><p>Close blast 5; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Power&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d10+7 fire damage, and the target takes ongoing 10 fire damage and is dazed (save ends both). Miss: Half damage. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Power&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +17 vs Reflex; 2d10+7 fire damage, and the target takes ongoing 10 fire damage and is dazed (save ends both). Miss: Half damage. &lt;/p&gt;]] <18>  fire damage, and the target takes ongoing 10 fire damage and is dazed (save ends both). Miss: Half damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bloodied Fury&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;The dragon makes a bite attack and two tail slaps.&lt;/p&gt;]] ⚔ <b>Bloodied Fury</b> (free, when first bloodied, encounter) </p><p>The dragon makes a bite attack and two tail slaps.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burst of Essence&lt;/b&gt; (immediate reaction, when an enemy hits the dragon with a melee or ranged attack, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon\"s skin ruptures, releasing a gout of its essence; close blast 3; +17 vs Reflex; 3d8+7 fire damage. &lt;/p&gt;]] ᗕ <b>Burst of Essence</b> (immediate reaction, when an enemy hits the dragon with a melee or ranged attack, at-will) ✦ <b>Fire</b></p><p>The dragon\"s skin ruptures, releasing a gout of its essence; close blast 3; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burst of Essence&lt;/b&gt; (immediate reaction, when an enemy hits the dragon with a melee or ranged attack, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon\"s skin ruptures, releasing a gout of its essence; close blast 3; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 3d8+7 fire damage. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burst of Essence&lt;/b&gt; (immediate reaction, when an enemy hits the dragon with a melee or ranged attack, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon\"s skin ruptures, releasing a gout of its essence; close blast 3; +17 vs Reflex; 3d8+7 fire damage. &lt;/p&gt;]] <20.5>  fire damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Essence Explosion&lt;/b&gt; ( when reduced to 0 hit points, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +17 vs Reflex; 2d10+7 fire damage, and the target is knocked prone. Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Essence Explosion</b> ( when reduced to 0 hit points, encounter) ✦ <b>Fire</b></p><p>Close burst 5; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Essence Explosion&lt;/b&gt; ( when reduced to 0 hit points, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d10+7 fire damage, and the target is knocked prone. Miss: Half damage. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Essence Explosion&lt;/b&gt; ( when reduced to 0 hit points, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +17 vs Reflex; 2d10+7 fire damage, and the target is knocked prone. Miss: Half damage. &lt;/p&gt;]] <18>  fire damage, and the target is knocked prone. Miss: Half damage. </p></tr></td></table>",

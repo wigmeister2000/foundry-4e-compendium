@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Fiery Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3dnlaYebOD5wHAVW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 300; <b>Bloodied</b> 150<hr><b>Resist</b> 20 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 38</td><td><b>Ref</b> 31</td><td><b>Will</b> 32</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 10 (hover), overland flight 15</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+15)<br><b>Con</b> 25 (+16)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 3 (+5)</td><td><b>Wis</b> 16 (+12)<br><b>Cha</b> 24 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Fiery Body&lt;/b&gt; (Fire) aura 1; creatures in the aura at the start of their turns take 10 fire damage.]] <b>Fiery Body</b> (Fire) aura 1; creatures in the aura at the start of their turns take 10 fire damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d6+6 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d6+6 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d6+6 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <13>  damage, and ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Radiant Burst &lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 5; +20 vs Reflex; 2d10+7 radiant damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Radiant Burst </b> (standard, recharge ⚅</p><p>Close burst 5; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Radiant Burst &lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d10+7 radiant damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Radiant Burst &lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 5; +20 vs Reflex; 2d10+7 radiant damage, and the target is dazed (save ends). &lt;/p&gt;]] <18>  radiant damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Immolation&lt;/b&gt; ( when first bloodied, daily) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +20 vs Reflex; 3d6+7 fire damage, and the phoenix dies. It automatically returns to life at the end of its next turn, with full normal hit points. &lt;/p&gt;]] ᗕ <b>Immolation</b> ( when first bloodied, daily) ✦ <b>Fire</b></p><p>Close burst 2; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Immolation&lt;/b&gt; ( when first bloodied, daily) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 3d6+7 fire damage, and the phoenix dies. It automatically returns to life at the end of its next turn, with full normal hit points. &lt;/p&gt;]]; [[/roll 3d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Immolation&lt;/b&gt; ( when first bloodied, daily) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +20 vs Reflex; 3d6+7 fire damage, and the phoenix dies. It automatically returns to life at the end of its next turn, with full normal hit points. &lt;/p&gt;]] <17.5>  fire damage, and the phoenix dies. It automatically returns to life at the end of its next turn, with full normal hit points. </p></tr></td></table>",

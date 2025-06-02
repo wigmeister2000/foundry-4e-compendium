@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wc6V8DNy0XT1Abul",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Aquatic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NDIS3AtyakleLWK6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Ooze",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SeGafLQoWO4xjR3z",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -728,21 +732,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 92; <b>Bloodied</b> 46<hr><b>Immune</b> sleep </td><td style=\"padding-left: 15px;\"> | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 16</td><td><b>Ref</b> 14</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 9 (0)<br><b>Int</b> 13 (+2)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 15 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Draconic<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Bluff +8, Insight +8, Stealth +5</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 10<br><b>Passive</b> Perception 13 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the darktentacles.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the darktentacles.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aquatic&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The darktentacles can breathe underwater. In aquatic combat, it gains a +2 power bonus to attack rolls against nonaquatic creatures.&lt;/p&gt;]]  <b>Aquatic</b> <b></b></p><p>The darktentacles can breathe underwater. In aquatic combat, it gains a +2 power bonus to attack rolls against nonaquatic creatures.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ooze&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While squeezing, the darktentacles moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.&lt;/p&gt;]]  <b>Ooze</b> <b></b></p><p>While squeezing, the darktentacles moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Drag&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); +6 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the darktentacles pulls the target up to 3 squares.&lt;/p&gt;]] (⚔) <b>Tentacle Drag</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 4 (one creature); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Drag&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Drag&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage, and the darktentacles pulls the target up to 3 squares.&lt;/p&gt;]] <11>  damage, and the darktentacles pulls the target up to 3 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Flailing Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage.&lt;/p&gt;]] ᗕ <b>Flailing Tentacles</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Flailing Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Flailing Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 damage.&lt;/p&gt;]] <11>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Mesmerizing Tentacles&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); +6 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The target is immobilized (save ends).&lt;/p&gt;]] ⚔ <b>Mesmerizing Tentacles</b> (charm) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Melee 4 (one creature); [[/roll 1d20+6[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Mesmerizing Tentacles&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); &lt;u&gt;+6 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated (save ends).</p><p><i>Miss:</i> The target is immobilized (save ends).</p></tr></td></table>",

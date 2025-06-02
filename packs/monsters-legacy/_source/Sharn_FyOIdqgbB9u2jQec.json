@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GzXc6OVgUaYhfwby",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -282,7 +284,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -691,10 +694,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -1304,7 +1307,7 @@
 		},
 		{
 			"name":"Independent Consciousness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zqpv2YH9BymhSeOI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1340,7 +1343,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1574,23 +1578,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 615; <b>Bloodied</b> 307<br><b>Regeneration</b> 10<hr><b>Immune</b> pertrification, polymorph </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5 (+8 against fear effects, and against conditions that hinder movement)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 28</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+11)<br><b>Con</b> 23 (+12)</td><td><b>Dex</b> 23 (+12)<br><b>Int</b> 21 (+11)</td><td><b>Wis</b> 8 (+5)<br><b>Cha</b> 24 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +16, Insight +10, Religion +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 1d6+5 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+16 vs AC&lt;/u&gt;; 1d6+5 damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 1d6+5 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Adaptive Blue Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +16 vs Reflex; 1d6+7 force damage, and ongoing 5 variable damage. The ongoing damage is a type to which the target is most vulnerable (sharn\"s choice; the damage type doesn\"t change once chosen). If the target has no vulnerability, the ongoing damage is force. &lt;/p&gt;]] (➶) <b>Adaptive Blue Bolt</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 20; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Adaptive Blue Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 1d6+7 force damage, and ongoing 5 variable damage. The ongoing damage is a type to which the target is most vulnerable (sharn\"s choice; the damage type doesn\"t change once chosen). If the target has no vulnerability, the ongoing damage is force. &lt;/p&gt;]]; [[/roll 1d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Adaptive Blue Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +16 vs Reflex; 1d6+7 force damage, and ongoing 5 variable damage. The ongoing damage is a type to which the target is most vulnerable (sharn\"s choice; the damage type doesn\"t change once chosen). If the target has no vulnerability, the ongoing damage is force. &lt;/p&gt;]] <10.5>  force damage, and ongoing 5 variable damage. The ongoing damage is a type to which the target is most vulnerable (sharn\"s choice; the damage type doesn\"t change once chosen). If the target has no vulnerability, the ongoing damage is force. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Leaping Plaguefire&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Fortitude; 2d6+7 fire and force damage. Secondary Targets: +17 vs. Reflex; 1d6+7 fire and force damage, and the target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Leaping Plaguefire</b> (standard, recharge ⚄⚅) ✦ <b>Fire, Force</b></p><p>[[/roll 1d20+17[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Leaping Plaguefire&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs Fortitude&lt;/u&gt;; 2d6+7 fire and force damage. Secondary Targets: +17 vs. Reflex; 1d6+7 fire and force damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Leaping Plaguefire&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Fortitude; 2d6+7 fire and force damage. Secondary Targets: +17 vs. Reflex; 1d6+7 fire and force damage, and the target is dazed (save ends). &lt;/p&gt;]] <14>  fire and force damage. Secondary Targets: +17 vs. Reflex; [[/roll 1d6+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Leaping Plaguefire&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs Fortitude; 2d6+7 fire and force damage. Secondary Targets: +17 vs. Reflex; 1d6+7 fire and force damage, and the target is dazed (save ends). &lt;/p&gt;]] <10.5>  fire and force damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Independent Action&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The sharn makes two basic attacks (melee or ranged). If two different kinds of basic attacks hit the same target (such as a claw and a bite), that target is also dazed (save ends).&lt;/p&gt;]]  <b>Independent Action</b> (standard; at-will) </p><p>The sharn makes two basic attacks (melee or ranged). If two different kinds of basic attacks hit the same target (such as a claw and a bite), that target is also dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Second Wind&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The sharn spends a healing surge and heals 153 hit points. The sharn gains a +2 bonus to all defenses until the start of its next turn.&lt;/p&gt;]]  <b>Second Wind</b> (standard; encounter) ✦ <b>Healing</b></p><p>The sharn spends a healing surge and heals 153 hit points. The sharn gains a +2 bonus to all defenses until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;An sharn rolls initiative twice, gets two turns during a round, and has a full set of actions (standard, move, minor) on each turn. Each set of actions corresponds to a different consciousness. The sharn’s ability to take immediate actions refreshes on each of its turns.&lt;/p&gt;]]  <b>Double Actions</b> (standard; encounter) </p><p>An sharn rolls initiative twice, gets two turns during a round, and has a full set of actions (standard, move, minor) on each turn. Each set of actions corresponds to a different consciousness. The sharn’s ability to take immediate actions refreshes on each of its turns.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;A sharn can make opportunity attacks against all enemies within its reach (2 squares), including through hex portals.&lt;/p&gt;]]  <b>Threatening Reach</b> (standard; encounter) </p><p>A sharn can make opportunity attacks against all enemies within its reach (2 squares), including through hex portals.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hex Portal&lt;/b&gt; (minor; sustain minor, at-will) ✦ &lt;b&gt;Conjuration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; the sharn creates a hexogonal window of blue light that it can attack through as if it were in that portal\"s space. As a minor action, it can move one portal up to 4 squares. Portals don\"t block line of sight, line of effect, or enemy movement. A sharn can maintain up to three such portals at a time with a single minor action; it can close as many as it wishes with a free action.&lt;/p&gt;]] ➶ <b>Hex Portal</b> (minor; sustain minor, at-will) ✦ <b>Conjuration</b></p><p>Ranged 5; the sharn creates a hexogonal window of blue light that it can attack through as if it were in that portal\"s space. As a minor action, it can move one portal up to 4 squares. Portals don\"t block line of sight, line of effect, or enemy movement. A sharn can maintain up to three such portals at a time with a single minor action; it can close as many as it wishes with a free action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Independent Consciousness&lt;/b&gt;&lt;/p&gt;&lt;p&gt;the sharn automatically saves against the dazed and stunned conditions and against charm effects that a save can end.&lt;/p&gt;]]  <b>Independent Consciousness</b></p><p>the sharn automatically saves against the dazed and stunned conditions and against charm effects that a save can end.</p></tr></td></table>",

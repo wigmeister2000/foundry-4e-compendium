@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"IKP3dw1S8mxrRCyv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -282,7 +284,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -946,7 +949,7 @@
 		},
 		{
 			"name":"Double Actions",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tjKUhCYM16cNi0dA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -982,7 +985,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -992,7 +996,7 @@
 		},
 		{
 			"name":"Independent Consciousness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BGVYpLE60X51nZ4M",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1028,7 +1032,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1084,23 +1089,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 586; <b>Bloodied</b> 293<br><b>Regeneration</b> 10<hr><b>Immune</b> petrification, polymorph </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 2 | <b>Save</b> +5(+8 against fear effects, and against conditions that hinder movement)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+13)<br><b>Con</b> 23 (+14)</td><td><b>Dex</b> 23 (+14)<br><b>Int</b> 21 (+13)</td><td><b>Wis</b> 8 (+7)<br><b>Cha</b> 24 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +18, Insight +12, Religion +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 22</td></td></tr></table><p><b>Equipment</b> kukri  x3.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+5 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Phaseblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d6+5 psychic damage, and ongoing 5 psychic damage (save ends). &lt;/p&gt;]] (⚔) <b>Phaseblade</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Phaseblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d6+5 psychic damage, and ongoing 5 psychic damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Phaseblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d6+5 psychic damage, and ongoing 5 psychic damage (save ends). &lt;/p&gt;]] <12>  psychic damage, and ongoing 5 psychic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Independent Action&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The sharn makes two melee basic attacks. If a phaseblade and a bite hit the same target, that target is also dazed (save ends).&lt;/p&gt;]]  <b>Independent Action</b> (standard; at-will) </p><p>The sharn makes two melee basic attacks. If a phaseblade and a bite hit the same target, that target is also dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Phase Distortion&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The sharn Phaseblade teleports 10 squares and gains insubstantial and phasing until the start of its next turn. Additionally, on its next turn the sharn Phaseblade gains a +3 bonus to attack rolls.&lt;/p&gt;]]  <b>Phase Distortion</b> (standard; at-will) ✦ <b>Teleportation</b></p><p>The sharn Phaseblade teleports 10 squares and gains insubstantial and phasing until the start of its next turn. Additionally, on its next turn the sharn Phaseblade gains a +3 bonus to attack rolls.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hex Portal&lt;/b&gt; (minor; sustain minor, at-will) ✦ &lt;b&gt;Conjuration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; the sharn creates a hexagonal window of light that it can attack through as if it were in that portal’s space. As a minor action, it can move one portal 4 squares. Portals don’t block line of sight, line of effect, or enemy movement. A sharn can maintain up to three such portals at a time with a single minor action; it can close as many as it wishes with a free action.&lt;/p&gt;]] ➶ <b>Hex Portal</b> (minor; sustain minor, at-will) ✦ <b>Conjuration</b></p><p>Ranged 5; the sharn creates a hexagonal window of light that it can attack through as if it were in that portal’s space. As a minor action, it can move one portal 4 squares. Portals don’t block line of sight, line of effect, or enemy movement. A sharn can maintain up to three such portals at a time with a single minor action; it can close as many as it wishes with a free action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A sharn rolls initiative twice, gets two turns during a round, and has a full set of actions (standard, move, minor) on each turn. Each set of actions corresponds to a different consciousness. The sharn’s ability to take immediate actions refreshes on each of its turns.&lt;/p&gt;]]  <b>Double Actions</b></p><p>A sharn rolls initiative twice, gets two turns during a round, and has a full set of actions (standard, move, minor) on each turn. Each set of actions corresponds to a different consciousness. The sharn’s ability to take immediate actions refreshes on each of its turns.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Independent Consciousness&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A sharn automatically saves against the dazed and stunned conditions, and against charm effects that a save can end.&lt;/p&gt;]]  <b>Independent Consciousness</b></p><p>A sharn automatically saves against the dazed and stunned conditions, and against charm effects that a save can end.</p></tr></td></table>",

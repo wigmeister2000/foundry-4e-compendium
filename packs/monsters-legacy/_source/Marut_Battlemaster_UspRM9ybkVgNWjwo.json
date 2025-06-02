@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"G9wtgsjZUIiDemvT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -163,10 +165,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -344,10 +346,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -525,10 +527,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -705,10 +707,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -960,7 +962,7 @@
 		},
 		{
 			"name":"Combat Challenge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kY3MSdI1s6EcaFVQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -996,7 +998,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1006,7 +1009,7 @@
 		},
 		{
 			"name":"Combat Superiority",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Zqkgiz7crBShExaP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1042,7 +1045,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1098,23 +1102,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 482; <b>Bloodied</b> 241<br><b>Regeneration</b> 20<hr><b>Resist</b> 10 thunder <b>Immune</b> sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 43</td><td><b>Fort</b> 46</td><td><b>Ref</b> 38</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 4 (hover), teleport 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 35 (+25)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 24 (+20)<br><b>Int</b> 14 (+15)</td><td><b>Wis</b> 26 (+21)<br><b>Cha</b> 15 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +30, Endurance +25, Intimidate +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 10<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 1d10+13 damage plus 1d6 thunder damage, and the target is pushed 1 square. &lt;/p&gt;]] (⚔) <b>Greatsword</b> (standard, at-will) ✦ <b>Thunder, Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 1d10+13 damage plus 1d6 thunder damage, and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 1d10+13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 1d10+13 damage plus 1d6 thunder damage, and the target is pushed 1 square. &lt;/p&gt;]] <18.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 1d10+13 damage plus 1d6 thunder damage, and the target is pushed 1 square. &lt;/p&gt;]] <3.5> thunder damage, and the target is pushed 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs ; 5d10+9 damage.. The marut battlemaster makes two greatsword attacks. It can shift up to 6 squares between the first and second attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, recharge ⚃⚄⚅) ✦ <b>Thunder, Weapon</b></p><p>+31 vs ; [[/roll 5d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs ; 5d10+9 damage.. The marut battlemaster makes two greatsword attacks. It can shift up to 6 squares between the first and second attacks.&lt;/p&gt;]] <36.5>  damage.. The marut battlemaster makes two greatsword attacks. It can shift up to 6 squares between the first and second attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Warrior\"s Urging&lt;/b&gt; (standard; requires greatsword, encounter) ✦ &lt;b&gt;Charm, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close burst 4; targets each enemy in burst that the marut battlemaster can see; +33 vs AC; 3d10+13 damage. &lt;/p&gt;]] ᗕ <b>Warrior\"s Urging</b> (standard; requires greatsword, encounter) ✦ <b>Charm, Weapon</b></p><p>close burst 4; targets each enemy in burst that the marut battlemaster can see; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Warrior\"s Urging&lt;/b&gt; (standard; requires greatsword, encounter) ✦ &lt;b&gt;Charm, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close burst 4; targets each enemy in burst that the marut battlemaster can see; &lt;u&gt;+33 vs AC&lt;/u&gt;; 3d10+13 damage. &lt;/p&gt;]]; [[/roll 3d10+13#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Warrior\"s Urging&lt;/b&gt; (standard; requires greatsword, encounter) ✦ &lt;b&gt;Charm, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close burst 4; targets each enemy in burst that the marut battlemaster can see; +33 vs AC; 3d10+13 damage. &lt;/p&gt;]] <29.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dragon\"s Fangs&lt;/b&gt; (standard; requires greatsword, daily) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10+3 damage. The marut battlemaster makes two attacks against one target, or one attack against two different targets. Miss: Half damage. &lt;/p&gt;]] ⚔ <b>Dragon\"s Fangs</b> (standard; requires greatsword, daily) ✦ <b>Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dragon\"s Fangs&lt;/b&gt; (standard; requires greatsword, daily) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 2d10+3 damage. The marut battlemaster makes two attacks against one target, or one attack against two different targets. Miss: Half damage. &lt;/p&gt;]]; [[/roll 2d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dragon\"s Fangs&lt;/b&gt; (standard; requires greatsword, daily) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 2d10+3 damage. The marut battlemaster makes two attacks against one target, or one attack against two different targets. Miss: Half damage. &lt;/p&gt;]] <14>  damage. The marut battlemaster makes two attacks against one target, or one attack against two different targets. Miss: Half damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Into the Fray&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;The marut battlemaster can shift up to 3 squares, as long as it ends the move adjacent to an enemy.&lt;/p&gt;]]  <b>Into the Fray</b> (minor; encounter) </p><p>The marut battlemaster can shift up to 3 squares, as long as it ends the move adjacent to an enemy.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Challenge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Every time the death knight attacks an enemy, whether that attack hits or misses, the death knight can mark that target. The mark lasts until the end of the death knight’s next turn. In addition, whenever an adjacent enemy shifts, the death knight makes a melee basic attack against that enemy (as an immediate interrupt).&lt;/p&gt;]]  <b>Combat Challenge</b></p><p>Every time the death knight attacks an enemy, whether that attack hits or misses, the death knight can mark that target. The mark lasts until the end of the death knight’s next turn. In addition, whenever an adjacent enemy shifts, the death knight makes a melee basic attack against that enemy (as an immediate interrupt).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Superiority&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A marut battlemaster gains a +2 bonus to opportunity attacks. An enemy struck by opportunity attacks stops moving if a move provoked the attack.&lt;/p&gt;]]  <b>Combat Superiority</b></p><p>A marut battlemaster gains a +2 bonus to opportunity attacks. An enemy struck by opportunity attacks stops moving if a move provoked the attack.</p></tr></td></table>",

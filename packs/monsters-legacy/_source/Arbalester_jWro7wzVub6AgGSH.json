@@ -107,10 +107,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -540,7 +540,7 @@
 		},
 		{
 			"name":"Guard Area",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"N4JwrthOQ7z9b6js",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -576,7 +576,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -632,23 +633,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 43; <b>Bloodied</b> 21<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 16</td><td><b>Ref</b> 18</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+4)<br><b>Con</b> 13 (+3)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 5 (null)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 8 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 1d4 + 2 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 1d4 + 2 damage. &lt;/p&gt;]]; [[/roll 1d4 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 1d4 + 2 damage. &lt;/p&gt;]] <4.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20/40; +11 vs AC; 1d8 + 4 damage. &lt;/p&gt;]] (➶) <b>Bolt</b> (standard, at-will) </p><p>Ranged 20/40; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20/40; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d8 + 4 damage. &lt;/p&gt;]]; [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20/40; +11 vs AC; 1d8 + 4 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Double Shot&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The arbalester makes a bolt attack against two different targets within 5 squares of each other.&lt;/p&gt;]] ➶ <b>Double Shot</b> (standard, recharge ⚃⚄⚅) </p><p>The arbalester makes a bolt attack against two different targets within 5 squares of each other.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Guard Area&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of the arbalester’s turn, if an enemy is in its guarded area, the arbalester recharges its double shot power.&lt;/p&gt;]]  <b>Guard Area</b></p><p>At the start of the arbalester’s turn, if an enemy is in its guarded area, the arbalester recharges its double shot power.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"dTCuG0wfxglcNLh1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -282,7 +284,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1119,7 +1122,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4AeWxajVUTl7nPEz",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1155,7 +1158,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1211,23 +1215,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 260; <b>Bloodied</b> 130 ; see also troll healing<br><b>Regeneration</b> 10<hr><b>Vulnerable</b> acid or fire (if Tornak takes acid or fire damage, his regeneration does not function until the end of his next turn) </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 28</td><td><b>Ref</b> 22</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+14)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 16 (+10)<br><b>Int</b> 15 (+9)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 14 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+7 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 2d6+7 damage. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+7 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Necrotic Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +18 vs Fortitude; 2d8+5 necrotic damage. &lt;/p&gt;]] (➶) <b>Necrotic Bolt</b> (standard, at-will) </p><p>Ranged 10; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Necrotic Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 2d8+5 necrotic damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Necrotic Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +18 vs Fortitude; 2d8+5 necrotic damage. &lt;/p&gt;]] <14>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Wrath of the Troll King&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Tornak makes two claw attacks&lt;/p&gt;]] ⚔ <b>Wrath of the Troll King</b> (standard, at-will) </p><p>Tornak makes two claw attacks</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Shadowed Host&lt;/b&gt; ( when tornak rolls initiative or is first bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 10; Tornak calls four shades of fallen heroes from the crown. Each appears in one square within the burst. They enter the initiative order immediately after Tornak and can act normally in the round they appear. If a shade of fallen heroes ends its turn more than 20 squares from Tornak, it is destroyed. &lt;/p&gt;]] ᗕ <b>Shadowed Host</b> ( when tornak rolls initiative or is first bloodied, at-will) </p><p>Close burst 10; Tornak calls four shades of fallen heroes from the crown. Each appears in one square within the burst. They enter the initiative order immediately after Tornak and can act normally in the round they appear. If a shade of fallen heroes ends its turn more than 20 squares from Tornak, it is destroyed. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Tornak is reduced to 0 hit points by an attack that does not deal acid or fire damage, he falls prone and remains at 0 hit points until the start of his next turn, when he regains 10 hit points. If an attack deals acid or fire damage to Tornak while he is at 0 hit points, he is destroyed.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If Tornak is reduced to 0 hit points by an attack that does not deal acid or fire damage, he falls prone and remains at 0 hit points until the start of his next turn, when he regains 10 hit points. If an attack deals acid or fire damage to Tornak while he is at 0 hit points, he is destroyed.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Summon Shade&lt;/b&gt; (minor 1/round; requires fewer than four shades of fallen heroes within 20 squares of tornak, at-will) &lt;/p&gt;&lt;p&gt;Close burst 10; Tornak calls a shade of fallen heroes from the crown into one square within the burst. Tornak cannot summon more than four shades at one time, between this power and shadowed host. The shade enters the initiative order immediately after Tornak and can act normally in the round it appears. If the shade of fallen heroes ends its turn more than 20 squares from Tornak, it is destroyed. &lt;/p&gt;]] ᗕ <b>Summon Shade</b> (minor 1/round; requires fewer than four shades of fallen heroes within 20 squares of tornak, at-will) </p><p>Close burst 10; Tornak calls a shade of fallen heroes from the crown into one square within the burst. Tornak cannot summon more than four shades at one time, between this power and shadowed host. The shade enters the initiative order immediately after Tornak and can act normally in the round it appears. If the shade of fallen heroes ends its turn more than 20 squares from Tornak, it is destroyed. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Crown of Shades&lt;/b&gt; (move; at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tornak swaps places with a shade of fallen heroes within 10 squares of him.&lt;/p&gt;]]  <b>Crown of Shades</b> (move; at-will) ✦ <b>Teleportation</b></p><p>Tornak swaps places with a shade of fallen heroes within 10 squares of him.</p></tr></td></table>",

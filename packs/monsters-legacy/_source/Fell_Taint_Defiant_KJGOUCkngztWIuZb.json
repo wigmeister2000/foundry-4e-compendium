@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Disorientation",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7Hv5npkIth892RWB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 32; <b>Bloodied</b> 16<hr><b>Resist</b> Insubstantial <b>Vulnerable</b> 5 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 15</td><td><b>Ref</b> 14</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+1)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 13 (+2)<br><b>Int</b> 4 (null)</td><td><b>Wis</b> 16 (+4)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Disorientation&lt;/b&gt; aura 1; each enemy within the aura has a –4 penalty to all attack rolls against creatures other than a Fell Taint Defiant.]] <b>Disorientation</b> aura 1; each enemy within the aura has a –4 penalty to all attack rolls against creatures other than a Fell Taint Defiant.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs Reflex; 2d6+3 psychic damage. &lt;/p&gt;]] (⚔) <b>Tendril Caress</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs Reflex&lt;/u&gt;; 2d6+3 psychic damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs Reflex; 2d6+3 psychic damage. &lt;/p&gt;]] <10>  psychic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils of Power&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +8 vs Reflex; 2d6+3 psychic damage, and the target is knocked prone. &lt;/p&gt;]] ᗕ <b>Tendrils of Power</b> (standard, recharge ⚄⚅) ✦ <b>Psychic</b></p><p>Close burst 1; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils of Power&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 2d6+3 psychic damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils of Power&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +8 vs Reflex; 2d6+3 psychic damage, and the target is knocked prone. &lt;/p&gt;]] <10>  psychic damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fell Taint Feeding&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;Targets a helpless or unconscious creature; the Fell Taint Defiant loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the Fell Taint Defiant kills the target, it regains all of its hit points.&lt;/p&gt;]]  <b>Fell Taint Feeding</b> (standard; at-will) </p><p>Targets a helpless or unconscious creature; the Fell Taint Defiant loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the Fell Taint Defiant kills the target, it regains all of its hit points.</p></tr></td></table>",

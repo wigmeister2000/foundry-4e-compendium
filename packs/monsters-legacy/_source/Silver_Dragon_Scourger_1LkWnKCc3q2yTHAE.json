@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1256,7 +1258,7 @@
 		},
 		{
 			"name":"Unstoppable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BwHs1GCE5LnhbD8O",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1292,7 +1294,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1348,23 +1351,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 612; <b>Bloodied</b> 306 ; see also bloodied breath<hr><b>Resist</b> 30 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 41</td><td><b>Ref</b> 38</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, fly 10 (hover), overland flight 15</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 31 (+23)<br><b>Con</b> 26 (+21)</td><td><b>Dex</b> 25 (+20)<br><b>Int</b> 14 (+15)</td><td><b>Wis</b> 14 (+15)<br><b>Cha</b> 23 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +28, Insight +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 25 | Insight 30</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 4d8+9 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+30 vs AC&lt;/u&gt;; 4d8+9 damage. &lt;/p&gt;]]; [[/roll 4d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 4d8+9 damage. &lt;/p&gt;]] <27>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 2d8+9 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+30 vs AC&lt;/u&gt;; 2d8+9 damage. &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 2d8+9 damage. &lt;/p&gt;]] <18>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Smashing Tail&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 3; one, two, or three enemies in blast; +28 vs AC; 4d10+5 damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Smashing Tail</b> (standard, at-will) </p><p>Close blast 3; one, two, or three enemies in blast; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Smashing Tail&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 3; one, two, or three enemies in blast; &lt;u&gt;+28 vs AC&lt;/u&gt;; 4d10+5 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 4d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Smashing Tail&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 3; one, two, or three enemies in blast; +28 vs AC; 4d10+5 damage, and the target is dazed (save ends). &lt;/p&gt;]] <27>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Scourger\"s Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The silver dragon scourger makes two claw attacks and one bite attack&lt;/p&gt;]] ⚔ <b>Scourger\"s Fury</b> (standard, at-will) </p><p>The silver dragon scourger makes two claw attacks and one bite attack</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +26 vs Reflex; 4d10+9 cold damage, and the target gains vulnerable 10 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚃⚄⚅) ✦ <b>Cold</b></p><p>Close blast 5; [[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+26 vs Reflex&lt;/u&gt;; 4d10+9 cold damage, and the target gains vulnerable 10 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]]; [[/roll 4d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +26 vs Reflex; 4d10+9 cold damage, and the target gains vulnerable 10 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]] <31>  cold damage, and the target gains vulnerable 10 to all damage (save ends). Miss: Half damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +26 vs Will; the target is stunned until the end of the silver dragon scourger’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+26[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+26 vs Will&lt;/u&gt;; the target is stunned until the end of the silver dragon scourger’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of the silver dragon scourger’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;Breath weapon recharges, and the silver dragon scourger uses it&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>Breath weapon recharges, and the silver dragon scourger uses it</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unstoppable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A silver dragon scourger makes saving throws against ongoing damage at the start of its turn as well as at the end of its turn.&lt;/p&gt;]]  <b>Unstoppable</b></p><p>A silver dragon scourger makes saving throws against ongoing damage at the start of its turn as well as at the end of its turn.</p></tr></td></table>",

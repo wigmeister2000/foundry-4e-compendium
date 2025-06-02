@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -766,23 +767,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 86; <b>Bloodied</b> 43<hr><b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 19</td><td><b>Ref</b> 16</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+8)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 14 (+5)<br><b>Int</b> 7 (+1)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 9 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> club .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 2d6+5 damage. &lt;/p&gt;]] (⚔) <b>Club</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 2d6+5 damage. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 2d6+5 damage. &lt;/p&gt;]] <12>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Meaty Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +7 vs AC; 1d8+7 damage. &lt;/p&gt;]] ⚔ <b>Meaty Fist</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Meaty Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+7 vs AC&lt;/u&gt;; 1d8+7 damage. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Meaty Fist&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +7 vs AC; 1d8+7 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Foe-Hurler&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Reflex; 2d8+5 damage, and the dolgarr berserker pushes the target 3 squares and knocks it prone; the berserker slams the target to the ground and then throws the target at another creature, making a secondary attack against an enemy adjacent to the primary target after the push. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +7 vs Reflex; 2d8+5 damage. &lt;/p&gt;]] ⚔ <b>Foe-Hurler</b> (standard, recharge ⚃⚄⚅) </p><p>Reach 2; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Foe-Hurler&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 2d8+5 damage, and the dolgarr berserker pushes the target 3 squares and knocks it prone; the berserker slams the target to the ground and then throws the target at another creature, making a secondary attack against an enemy adjacent to the primary target after the push. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Foe-Hurler&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Reflex; 2d8+5 damage, and the dolgarr berserker pushes the target 3 squares and knocks it prone; the berserker slams the target to the ground and then throws the target at another creature, making a secondary attack against an enemy adjacent to the primary target after the push. &lt;/p&gt;]] <14>  damage, and the dolgarr berserker pushes the target 3 squares and knocks it prone; the berserker slams the target to the ground and then throws the target at another creature, making a secondary attack against an enemy adjacent to the primary target after the push. </p><p><i>Secondary Attack</i> [[/roll 1d20+7[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Foe-Hurler&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+7 vs Reflex&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Foe-Hurler&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +7 vs Reflex; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Berserk Rage&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;The dolgarr berserker gains 5 temporary hit points and makes a club attack and a meaty fist attack.&lt;/p&gt;]] ⚔ <b>Berserk Rage</b> (free, when first bloodied, encounter) </p><p>The dolgarr berserker gains 5 temporary hit points and makes a club attack and a meaty fist attack.</p></tr></td></table>",

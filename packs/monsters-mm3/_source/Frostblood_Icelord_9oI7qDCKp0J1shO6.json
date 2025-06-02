@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -594,23 +595,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 183; <b>Bloodied</b> 91<hr><b>Resist</b> 10 cold <b>Vulnerable</b> 5 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 29</td><td><b>Ref</b> 25</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+12)<br><b>Con</b> 23 (+13)</td><td><b>Dex</b> 16 (+10)<br><b>Int</b> 8 (+6)</td><td><b>Wis</b> 15 (+9)<br><b>Cha</b> 20 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +17, Endurance +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> greataxe , hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 15 damage.&lt;/p&gt;]] (⚔) <b>Greataxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 15 damage.&lt;/p&gt;]] <28>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roar of Cryonax&lt;/b&gt; (cold, fear, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +18 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 13 cold and psychic damage, and the target falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Roar of Cryonax</b> (cold, fear, psychic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+18[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roar of Cryonax&lt;/b&gt; (cold, fear, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+18 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 13#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Roar of Cryonax&lt;/b&gt; (cold, fear, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 13 cold and psychic damage, and the target falls prone.&lt;/p&gt;]] <23.5>  cold and psychic damage, and the target falls prone.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Brutal Exultation&lt;/b&gt; (fear) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The icelord drops a creature to 0 hit points or scores a critical hit.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 5 (enemies in the burst); +18 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; As a free action, the target moves its speed away from the icelord.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Each ally in the burst gains a +5 power bonus to damage rolls until the end of the icelord’s next turn.&lt;/p&gt;]] ᗕ <b>Brutal Exultation</b> (fear) ✦ <b>At-Will</b></p><p><i>Trigger:</i> The icelord drops a creature to 0 hit points or scores a critical hit.</p><p><i>Attack (Free Action):</i> Close burst 5 (enemies in the burst); [[/roll 1d20+18[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Brutal Exultation&lt;/b&gt; (fear) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+18 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> As a free action, the target moves its speed away from the icelord.</p><p><i>Effect:</i> Each ally in the burst gains a +5 power bonus to damage rolls until the end of the icelord’s next turn.</p></tr></td></table>",

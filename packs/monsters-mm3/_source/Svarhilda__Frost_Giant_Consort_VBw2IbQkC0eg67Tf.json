@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Icebound Footing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AIasjpL61qTwxEog",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1000,23 +1002,10 @@
 				"max":10
 			},
 			"init":{
-				"value":14,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":14
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 174; <b>Bloodied</b> 87<hr><b>Resist</b> 15 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +14</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 30</td><td><b>Ref</b> 29</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+14)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 21 (+14)<br><b>Int</b> 17 (+12)</td><td><b>Wis</b> 20 (+14)<br><b>Cha</b> 24 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +17, Athletics +19, Insight +19</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 24 | Insight 29</td></td></tr></table><p><b>Equipment</b> hide armor , mace .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Icebound Footing&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect pulls, pushes, or slides Svarhilda, she can choose to move 2 squares fewer than the effect specifies. Svarhilda can make a saving throw to avoid falling prone when an attack would knock her prone.&lt;/p&gt;]]  <b>Icebound Footing</b> <b></b></p><p>When an effect pulls, pushes, or slides Svarhilda, she can choose to move 2 squares fewer than the effect specifies. Svarhilda can make a saving throw to avoid falling prone when an attack would knock her prone.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (fire, teleportation, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 14 fire damage, and Svarhilda teleports the target up to 5 squares.&lt;/p&gt;]] (⚔) <b>Mace</b> (fire, teleportation, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (fire, teleportation, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (fire, teleportation, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 14 fire damage, and Svarhilda teleports the target up to 5 squares.&lt;/p&gt;]] <25>  fire damage, and Svarhilda teleports the target up to 5 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ice Pillar&lt;/b&gt; (cold, conjuration) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the effect ends&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 cold damage, and ongoing 10 cold damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Svarhilda conjures an ice pillar that must rest on a solid surface, fills 1 square, is up to 8 squares high, and lasts until the end of her next turn. Svarhilda slides any creature in the pillar’s square when it appears up to 3 squares to a space within 2 squares of the pillar. The pillar is blocking terrain and is immune to damage. Any enemy that starts its turn within 2 squares of the pillar is slowed and grants combat advantage to cold creatures until the start of its next turn.&lt;/p&gt;]] ➶ <b>Ice Pillar</b> (cold, conjuration) ✦ <b>Recharge</b> when the effect ends</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ice Pillar&lt;/b&gt; (cold, conjuration) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the effect ends&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ice Pillar&lt;/b&gt; (cold, conjuration) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the effect ends&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 cold damage, and ongoing 10 cold damage (save ends).&lt;/p&gt;]] <16>  cold damage, and ongoing 10 cold damage (save ends).</p><p><i>Effect:</i> Svarhilda conjures an ice pillar that must rest on a solid surface, fills 1 square, is up to 8 squares high, and lasts until the end of her next turn. Svarhilda slides any creature in the pillar’s square when it appears up to 3 squares to a space within 2 squares of the pillar. The pillar is blocking terrain and is immune to damage. Any enemy that starts its turn within 2 squares of the pillar is slowed and grants combat advantage to cold creatures until the start of its next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Ice Spikes&lt;/b&gt; (cold, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Area burst 2 within 10; the burst becomes a zone of icy difficult terrain that lasts until the end of the encounter. Any enemy that ends its turn in the zone takes 15 cold damage.&lt;/p&gt;]] ✻ <b>Ice Spikes</b> (cold, zone) ✦ <b>Encounter</b></p><p><i>Effect:</i> Area burst 2 within 10; the burst becomes a zone of icy difficult terrain that lasts until the end of the encounter. Any enemy that ends its turn in the zone takes 15 cold damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Share Pain&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Svarhilda takes damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Close burst 5 (one ally in the burst); the target takes half the damage, and Svarhilda takes the other half.&lt;/p&gt;]]  <b>Share Pain</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> Svarhilda takes damage.</p><p><i>Effect (Free Action):</i> Close burst 5 (one ally in the burst); the target takes half the damage, and Svarhilda takes the other half.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fiery Transport&lt;/b&gt; (fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy that Svarhilda teleported arrives in its new space.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Close burst 1 centered on the enemy (enemies in the burst); 10 fire damage.&lt;/p&gt;]] ᗕ <b>Fiery Transport</b> (fire) ✦ Recharge ⚄ ⚅</p><p><i>Trigger:</i> An enemy that Svarhilda teleported arrives in its new space.</p><p><i>Effect (No Action):</i> Close burst 1 centered on the enemy (enemies in the burst); 10 fire damage.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Action Recovery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TCEqLZchtuyOoH0M",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Aquatic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UAzpYrD7fZMuw4NK",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Crushing Grasp",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"cxCK5AL1MF26rg9h",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Ghost Tentacles",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HJmGB16YpaWltChF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -190,7 +194,7 @@
 		},
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"znUigOFpP21v85K6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -226,7 +230,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -236,7 +241,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"PmBcOGSf0LdjZkgq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -272,7 +277,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -337,7 +343,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1402,23 +1409,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 640; <b>Bloodied</b> 320<hr><b>Immune</b> disease, necrotic, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 29</td><td><b>Ref</b> 27</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 10; phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+12)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 21 (+13)<br><b>Int</b> 18 (+12)</td><td><b>Wis</b> 16 (+11)<br><b>Cha</b> 21 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> telepathy 20<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Intimidate +18, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Action Recovery&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the kraken starts its turn, any dazing, stunning, or dominating effect on it ends.&lt;/p&gt;]]  <b>Action Recovery</b> <b></b></p><p>Whenever the kraken starts its turn, any dazing, stunning, or dominating effect on it ends.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aquatic&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;In aquatic combat, the kraken gains a +2 bonus to attack rolls against nonaquatic creatures.&lt;/p&gt;]]  <b>Aquatic</b> <b></b></p><p>In aquatic combat, the kraken gains a +2 bonus to attack rolls against nonaquatic creatures.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Crushing Grasp&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the kraken starts its turn, each creature grabbed by it or a ghost tentacle within 10 squares of the kraken takes 10 damage.&lt;/p&gt;]]  <b>Crushing Grasp</b> <b></b></p><p>When the kraken starts its turn, each creature grabbed by it or a ghost tentacle within 10 squares of the kraken takes 10 damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ghost Tentacles&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the kraken starts its turn with fewer than four ghost tentacles within 20 squares of it, a number of tentacles appear so that the number of tentacles within 20 squares of it equals four. The tentacles roll initiative when they appear, acting on their own turns.&lt;/p&gt;]]  <b>Ghost Tentacles</b> <b></b></p><p>Whenever the kraken starts its turn with fewer than four ghost tentacles within 20 squares of it, a number of tentacles appear so that the number of tentacles within 20 squares of it equals four. The tentacles roll initiative when they appear, acting on their own turns.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The kraken takes half damage from any damage source, except those that deal force, psychic, or radiant damage. When the kraken takes force, psychic, or radiant damage, it loses this trait until the start of its next turn.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>The kraken takes half damage from any damage source, except those that deal force, psychic, or radiant damage. When the kraken takes force, psychic, or radiant damage, it loses this trait until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The kraken can make opportunity attacks against enemies within 3 squares of it.&lt;/p&gt;]]  <b>Threatening Reach</b> <b></b></p><p>The kraken can make opportunity attacks against enemies within 3 squares of it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 11 damage, and the kraken grabs the target (escape DC 22). The kraken can grab up to eight creatures at a time.&lt;/p&gt;]] (⚔) <b>Tentacle</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 11 damage, and the kraken grabs the target (escape DC 22). The kraken can grab up to eight creatures at a time.&lt;/p&gt;]] <24.5>  damage, and the kraken grabs the target (escape DC 22). The kraken can grab up to eight creatures at a time.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ᗕ &lt;b&gt;Fling&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Melee 3 (one creature grabbed by the kraken) or close burst 10 (one creature grabbed by a ghost tentacle in the burst); the kraken slides the target up to 5 squares and makes the following attack against the target. If the target would enter another creature’s space, the kraken can also make the following attack against that creature.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Tentacle Attack:&lt;/i&gt; +19 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 11 damage, and the target falls prone.&lt;/p&gt;]] ⚔ᗕ <b>Fling</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Melee 3 (one creature grabbed by the kraken) or close burst 10 (one creature grabbed by a ghost tentacle in the burst); the kraken slides the target up to 5 squares and makes the following attack against the target. If the target would enter another creature’s space, the kraken can also make the following attack against that creature.</p><p><i>Tentacle Attack:</i> [[/roll 1d20+19[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ᗕ &lt;b&gt;Fling&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Tentacle Attack:&lt;/i&gt; &lt;u&gt;+19 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ᗕ &lt;b&gt;Fling&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 11 damage, and the target falls prone.&lt;/p&gt;]] <20>  damage, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Coils of Doom&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The kraken uses tentacle or fling, in any combination, to make up to three attacks.&lt;/p&gt;]] ⚔ <b>Coils of Doom</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The kraken uses tentacle or fling, in any combination, to make up to three attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Insanity Wave&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Special:&lt;/i&gt; This attack’s origin square can be adjacent to any ghost tentacle within 10 squares of the kraken.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +19 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 13 psychic damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Insanity Wave</b> (psychic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Special:</i> This attack’s origin square can be adjacent to any ghost tentacle within 10 squares of the kraken.</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+19[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Insanity Wave&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+19 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 13#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Insanity Wave&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 13 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] <35>  psychic damage, and the target is dazed (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Burst of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 10 (one ghost tentacle in the burst); the kraken slides the target up to 5 squares, and the target drops to 0 hit points. The kraken then makes the following attack, centered on the target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt;  Close burst 1 (enemies in the burst); +19 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 13 psychic damage.&lt;/p&gt;]]  <b>Burst of Madness</b> (psychic) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> Close burst 10 (one ghost tentacle in the burst); the kraken slides the target up to 5 squares, and the target drops to 0 hit points. The kraken then makes the following attack, centered on the target.</p><p><i>Attack:</i>  Close burst 1 (enemies in the burst); [[/roll 1d20+19[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Burst of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt;  Close burst 1 (enemies in the burst); &lt;u&gt;+19 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 13#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Burst of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 13 psychic damage.&lt;/p&gt;]] <18.5>  psychic damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Ghostly Escape&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The kraken is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The kraken teleports up to 10 squares, and creatures grabbed by it are pulled with it, staying in a space of the kraken’s choice within 3 squares of it.&lt;/p&gt;]]  <b>Ghostly Escape</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The kraken is first bloodied.</p><p><i>Effect (Free Action):</i> The kraken teleports up to 10 squares, and creatures grabbed by it are pulled with it, staying in a space of the kraken’s choice within 3 squares of it.</p></tr></td></table>",

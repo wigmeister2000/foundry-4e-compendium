@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blistering Heat",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7Z6GVNpaCrtUiOKY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1004,23 +1006,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 480; <b>Bloodied</b> 240<hr><b>Resist</b> 15 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 28</td><td><b>Ref</b> 30</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 4 (tunneling)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+16)<br><b>Con</b> 20 (+15)</td><td><b>Dex</b> 26 (+18)<br><b>Int</b> 5 (+7)</td><td><b>Wis</b> 21 (+15)<br><b>Cha</b> 10 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Blistering Heat&lt;/b&gt; (fire) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any creature that starts its turn in the aura takes 10 fire damage.&lt;/p&gt;]] ⌀ <b>Blistering Heat</b> (fire) ✦ <b>Aura</b> 2</p><p>Any creature that starts its turn in the aura takes 10 fire damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +26 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 17 damage, and the remorhaz grabs the target (escape DC 26). While grabbing a target, the remorhaz can bite only that target.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+26[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+26 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d12 + 17#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 17 damage, and the remorhaz grabs the target (escape DC 26). While grabbing a target, the remorhaz can bite only that target.&lt;/p&gt;]] <36.5>  damage, and the remorhaz grabs the target (escape DC 26). While grabbing a target, the remorhaz can bite only that target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Immolating Carapace&lt;/b&gt; (fire) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (creatures in the burst); +24 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 15 fire damage, and ongoing 15 fire damage until the target ends its turn in a space that is not adjacent to the remorhaz.&lt;/p&gt;]] ᗕ <b>Immolating Carapace</b> (fire) ✦ Recharge ⚅</p><p><i>Attack:</i> Close burst 1 (creatures in the burst); [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Immolating Carapace&lt;/b&gt; (fire) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (creatures in the burst); &lt;u&gt;+24 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 15#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Immolating Carapace&lt;/b&gt; (fire) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 15 fire damage, and ongoing 15 fire damage until the target ends its turn in a space that is not adjacent to the remorhaz.&lt;/p&gt;]] <37>  fire damage, and ongoing 15 fire damage until the target ends its turn in a space that is not adjacent to the remorhaz.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The remorhaz moves up to its speed and can move through enemies’ spaces during the move. Each time the remorhaz enters an enemy’s space for the first time during the move, it makes the following attack against that enemy.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (enemy in the space); +24 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 15 damage, and the target falls prone.&lt;/p&gt;]] ⚔ <b>Trample</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The remorhaz moves up to its speed and can move through enemies’ spaces during the move. Each time the remorhaz enters an enemy’s space for the first time during the move, it makes the following attack against that enemy.</p><p><i>Attack:</i> Melee 0 (enemy in the space); [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 0 (enemy in the space); &lt;u&gt;+24 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 15 damage, and the target falls prone.&lt;/p&gt;]] <28>  damage, and the target falls prone.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Swallow&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature grabbed by the remorhaz); +24 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The grab ends, and the target is swallowed (escape DC 26). While swallowed, the target does not occupy a square and has neither line of sight nor line of effect to anything except the remorhaz and other creatures swallowed by the remorhaz. Nothing has line of sight or line of effect to the target except other creatures swallowed by the remorhaz. If the target attacks the remorhaz using a close or an area attack that targets creatures other than enemies, that attack targets all other creatures swallowed by the remorhaz. While swallowed, the target takes 15 damage plus 20 fire damage at the end of its turn. When the effect ends or the remorhaz drops to 0 hit points, the target appears in a square of its choice adjacent to the remorhaz.&lt;/p&gt;]] ⚔ <b>Swallow</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature grabbed by the remorhaz); [[/roll 1d20+24[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Swallow&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature grabbed by the remorhaz); &lt;u&gt;+24 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The grab ends, and the target is swallowed (escape DC 26). While swallowed, the target does not occupy a square and has neither line of sight nor line of effect to anything except the remorhaz and other creatures swallowed by the remorhaz. Nothing has line of sight or line of effect to the target except other creatures swallowed by the remorhaz. If the target attacks the remorhaz using a close or an area attack that targets creatures other than enemies, that attack targets all other creatures swallowed by the remorhaz. While swallowed, the target takes 15 damage plus 20 fire damage at the end of its turn. When the effect ends or the remorhaz drops to 0 hit points, the target appears in a square of its choice adjacent to the remorhaz.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Enraged Heat&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; While the remorhaz is bloodied, an enemy hits the remorhaz with a melee attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Melee 1 (triggering enemy); 10 fire damage.&lt;/p&gt;]]  <b>Enraged Heat</b> (fire) ✦ <b>At-Will</b></p><p><i>Trigger:</i> While the remorhaz is bloodied, an enemy hits the remorhaz with a melee attack.</p><p><i>Effect (Immediate Reaction):</i> Melee 1 (triggering enemy); 10 fire damage.</p></tr></td></table>",

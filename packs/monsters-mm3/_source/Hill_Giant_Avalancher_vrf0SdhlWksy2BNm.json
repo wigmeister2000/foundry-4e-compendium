@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -770,23 +772,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 139; <b>Bloodied</b> 69</td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 27</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+12)<br><b>Con</b> 19 (+11)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 15 (+9)</td><td><b>Wis</b> 17 (+10)<br><b>Cha</b> 11 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +17</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> greatclub , hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage.&lt;/p&gt;]] (⚔) <b>Greatclub</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage.&lt;/p&gt;]] <22>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Rolling Rock&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 8 (one creature); +17 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 damage, and the avalancher slides the target 4 squares and knocks it prone.&lt;/p&gt;]] (➶) <b>Rolling Rock</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 8 (one creature); [[/roll 1d20+17[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Rolling Rock&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 8 (one creature); &lt;u&gt;+17 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Rolling Rock&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 damage, and the avalancher slides the target 4 squares and knocks it prone.&lt;/p&gt;]] <15>  damage, and the avalancher slides the target 4 squares and knocks it prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Charge&lt;/b&gt; (weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The avalancher charges and makes the following attack in place of a melee basic attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage, and the target falls prone.&lt;/p&gt;]] ⚔ <b>Crushing Charge</b> (weapon) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> The avalancher charges and makes the following attack in place of a melee basic attack.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Charge&lt;/b&gt; (weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 11#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Charge&lt;/b&gt; (weapon) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage, and the target falls prone.&lt;/p&gt;]] <22>  damage, and the target falls prone.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stomping Shift&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The avalancher shifts 4 squares and can move through prone enemies’ spaces. Each time the avalancher enters a prone enemy’s space for the first time during the shift, that enemy takes 8 damage.&lt;/p&gt;]]  <b>Stomping Shift</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The avalancher shifts 4 squares and can move through prone enemies’ spaces. Each time the avalancher enters a prone enemy’s space for the first time during the shift, that enemy takes 8 damage.</p></tr></td></table>",

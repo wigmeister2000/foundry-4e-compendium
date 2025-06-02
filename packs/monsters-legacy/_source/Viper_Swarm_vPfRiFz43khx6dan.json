@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"sMGLfIDmnhzFjYPk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"39",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -278,23 +280,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +24</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 57</td><td><b>Fort</b> 53</td><td><b>Ref</b> 54</td><td><b>Will</b> 47</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4, swim 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+22)<br><b>Con</b> 27 (+22)</td><td><b>Dex</b> 30 (+24)<br><b>Int</b> 3 (+10)</td><td><b>Wis</b> 12 (+15)<br><b>Cha</b> 14 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +29</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm Attack&lt;/b&gt; (Poison) aura 1; each enemy that starts its turn within the aura takes 7 poison damage.]] <b>Swarm Attack</b> (Poison) aura 1; each enemy that starts its turn within the aura takes 7 poison damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+39 vs AC; 14 poison damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+39[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+39 vs AC&lt;/u&gt;; 14 poison damage. &lt;/p&gt;]]; 14 poison damage. </p></tr></td></table>",

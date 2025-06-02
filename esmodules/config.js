@@ -70,6 +70,15 @@ export function registerConfigurations() {
         hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.SURGE_MESSAGES}.Hint`
     });
 
+    game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.RESOURCE_MESSAGES, {
+        name: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.RESOURCE_MESSAGES}.Name`,
+        default: false,
+        type: Boolean,
+        scope: 'world',
+        config: true,
+        hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.RESOURCE_MESSAGES}.Hint`
+    });
+
     game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.CONDITION_MESSAGES, {
         name: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.CONDITION_MESSAGES}.Name`,
         default: false,

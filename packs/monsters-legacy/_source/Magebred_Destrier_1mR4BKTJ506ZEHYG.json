@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -362,7 +363,7 @@
 		},
 		{
 			"name":"Charger",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zjIiJDQ59AmvCeSu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -398,7 +399,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -634,23 +636,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 76; <b>Bloodied</b> 38</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 19</td><td><b>Ref</b> 16</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+8)<br><b>Con</b> 16 (+5)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 3 (null)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 10 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Endurance +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+8 vs AC; 1d8+9 damage. &lt;/p&gt;]] (⚔) <b>Kick</b> (standard, at-will) </p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d8+9 damage. &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Kick&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+8 vs AC; 1d8+9 damage. &lt;/p&gt;]] <13.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The magebred destrier can move up to its speed and enter enemies’ spaces. This movement provokes opportunity attacks, and the destrier must end its move in an unoccupied space. When it enters an enemy’s space, the destrier makes a trample attack; +6 vs Any; 1d8+6 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Trample</b> (standard, at-will) </p><p>The magebred destrier can move up to its speed and enter enemies’ spaces. This movement provokes opportunity attacks, and the destrier must end its move in an unoccupied space. When it enters an enemy’s space, the destrier makes a trample attack; +6 vs Any; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The magebred destrier can move up to its speed and enter enemies’ spaces. This movement provokes opportunity attacks, and the destrier must end its move in an unoccupied space. When it enters an enemy’s space, the destrier makes a trample attack; +6 vs Any; 1d8+6 damage, and the target is knocked prone. &lt;/p&gt;]] <10.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Charger&lt;/b&gt; (while mounted by a friendly rider of 5th level or higher) ✦ &lt;b&gt;Mount&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a destrier’s rider charges, the rider gains a +6 bonus to damage rolls.&lt;/p&gt;]]  <b>Charger</b> (while mounted by a friendly rider of 5th level or higher) ✦ <b>Mount</b></p><p>When a destrier’s rider charges, the rider gains a +6 bonus to damage rolls.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bonded Mount&lt;/b&gt; ( when a friendly rider of 5th level or higher spends a healing surge; encounter) ✦ &lt;b&gt;Mount&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The magebred destrier gains temporary hit points equal to the rider’s healing surge value.&lt;/p&gt;]]  <b>Bonded Mount</b> ( when a friendly rider of 5th level or higher spends a healing surge; encounter) ✦ <b>Mount</b></p><p>The magebred destrier gains temporary hit points equal to the rider’s healing surge value.</p></tr></td></table>",

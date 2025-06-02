@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Radiant Sensitivity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"sbEkU8vmeN6xgtRn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1179,23 +1181,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 170; <b>Bloodied</b> 85<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 18</td><td><b>Ref</b> 20</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (+3)<br><b>Con</b> 13 (+5)</td><td><b>Dex</b> 17 (+7)<br><b>Int</b> 14 (+6)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 19 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +13, Diplomacy +13, Intimidate +13, Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Radiant Sensitivity&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Havarr takes radiant damage, he cannot use insubstantial transformation until the end of his next turn.&lt;/p&gt;]]  <b>Radiant Sensitivity</b> <b></b></p><p>Whenever Havarr takes radiant damage, he cannot use insubstantial transformation until the end of his next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deadly Mane&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one or two creatures); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 necrotic damage.&lt;/p&gt;]] (⚔) <b>Deadly Mane</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one or two creatures); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deadly Mane&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one or two creatures); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deadly Mane&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 necrotic damage.&lt;/p&gt;]] <15>  necrotic damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when a creature adjacent to Havarr becomes bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature granting combat advantage to Havarr); +11 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 10 damage, and the target loses a healing surge and is weakened (save ends). Havarr regains 42 hit points.&lt;/p&gt;]] ⚔ <b>Blood Drain</b> (healing) ✦ <b>Recharge</b> when a creature adjacent to Havarr becomes bloodied</p><p><i>Attack:</i> Melee 2 (one creature granting combat advantage to Havarr); [[/roll 1d20+11[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when a creature adjacent to Havarr becomes bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature granting combat advantage to Havarr); &lt;u&gt;+11 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when a creature adjacent to Havarr becomes bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 10 damage, and the target loses a healing surge and is weakened (save ends). Havarr regains 42 hit points.&lt;/p&gt;]] <23>  damage, and the target loses a healing surge and is weakened (save ends). Havarr regains 42 hit points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (fear, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); +11 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 3 psychic damage, and the target is immobilized (save ends).&lt;/p&gt;]] ᗕ <b>Terrifying Shriek</b> (fear, psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 5 (enemies in the burst); [[/roll 1d20+11[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (fear, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+11 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (fear, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 3 psychic damage, and the target is immobilized (save ends).&lt;/p&gt;]] <16.5>  psychic damage, and the target is immobilized (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Image of Life&lt;/b&gt; (illusion) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Havarr disguises himself to appear as a living Medium humanoid until he attacks or is hit by an attack.&lt;/p&gt;]]  <b>Image of Life</b> (illusion) ✦ <b>Encounter</b></p><p><i>Effect:</i> Havarr disguises himself to appear as a living Medium humanoid until he attacks or is hit by an attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Entrapping Gaze&lt;/b&gt; (charm) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +11 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated (save ends).&lt;/p&gt;]] ➶ <b>Entrapping Gaze</b> (charm) ✦ <b>Encounter</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+11[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Entrapping Gaze&lt;/b&gt; (charm) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+11 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial Transformation&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Havarr becomes insubstantial and gains fly 8 (hover) and phasing until he attacks or he becomes stunned or unconscious.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Insubstantial:&lt;/i&gt; Havarr takes half damage from all attacks, except those that deal force damage.&lt;/p&gt;]]  <b>Insubstantial Transformation</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> Havarr becomes insubstantial and gains fly 8 (hover) and phasing until he attacks or he becomes stunned or unconscious.</p><p><i>Insubstantial:</i> Havarr takes half damage from all attacks, except those that deal force damage.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -722,7 +724,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0NrSgPt6XJRypVw2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -758,7 +760,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -768,7 +771,7 @@
 		},
 		{
 			"name":"Mark of Shadow",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"YxXRTSGdPsqptUMN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -804,7 +807,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -992,7 +996,7 @@
 		},
 		{
 			"name":"Wild Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7JBZ5cwGtWKzQEdb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1028,7 +1032,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1084,23 +1089,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 160; <b>Bloodied</b> 80</td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 20</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 12 (+6)</td><td><b>Dex</b> 22 (+11)<br><b>Int</b> 12 (+6)</td><td><b>Wis</b> 18 (+9)<br><b>Cha</b> 16 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +16, Bluff +13, Stealth +16, Thievery +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> crossbow , crossbow bolts (20) , dagger  x2, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d4+7 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d4+7 damage. &lt;/p&gt;]]; [[/roll 1d4+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d4+7 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +15 vs AC; 1d8+5 damage. &lt;/p&gt;]] (➶) <b>Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8+5 damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +15 vs AC; 1d8+5 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shadowblind&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 2d6+5 damage, and the target is blinded (save ends). &lt;/p&gt;]] ➶ <b>Shadowblind</b> (standard, recharge ⚄⚅) </p><p>Ranged 10; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shadowblind&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Will&lt;/u&gt;; 2d6+5 damage, and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shadowblind&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 2d6+5 damage, and the target is blinded (save ends). &lt;/p&gt;]] <12>  damage, and the target is blinded (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cloak of Shadows&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The Thuranni assassin gains total concealment from all creatures until it hits with an attack.&lt;/p&gt;]]  <b>Cloak of Shadows</b> (standard; at-will) </p><p>The Thuranni assassin gains total concealment from all creatures until it hits with an attack.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A Thuranni assassin deals 2d8 extra damage on attacks against any creature granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A Thuranni assassin deals [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A Thuranni assassin deals 2d8 extra damage on attacks against any creature granting combat advantage to it.&lt;/p&gt;]] <9> extra damage on attacks against any creature granting combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mark of Shadow&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a Thuranni assassin misses with an attack while hidden, it remains hidden.&lt;/p&gt;]]  <b>Mark of Shadow</b></p><p>When a Thuranni assassin misses with an attack while hidden, it remains hidden.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wild Step&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A Thuranni assassin ignores difficult terrain when it shifts.&lt;/p&gt;]]  <b>Wild Step</b></p><p>A Thuranni assassin ignores difficult terrain when it shifts.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Elven Accuracy &lt;/b&gt; (free; encounter) &lt;/p&gt;&lt;p&gt;A Thuranni assassin can reroll an attack roll and must use the second roll.&lt;/p&gt;]]  <b>Elven Accuracy </b> (free; encounter) </p><p>A Thuranni assassin can reroll an attack roll and must use the second roll.</p></tr></td></table>",

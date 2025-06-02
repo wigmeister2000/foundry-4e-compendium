@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 15",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WVcAZEdIPvyNXBHq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -512,10 +514,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -767,7 +769,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"phMa5H2RE80bgwfT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -803,7 +805,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -813,7 +816,7 @@
 		},
 		{
 			"name":"Vampire Lord's Mark",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"CcdaVs60xfi4bTEI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -849,7 +852,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1265,23 +1269,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 408; <b>Bloodied</b> 204<br><b>Regeneration</b> 15 (regeneration does not function while the vampire lord is exposed to direct sunlight)<hr><b>Resist</b> 20 necrotic <b>Vulnerable</b> 20 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 42</td><td><b>Ref</b> 41</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+24)<br><b>Con</b> 22 (+20)</td><td><b>Dex</b> 28 (+23)<br><b>Int</b> 18 (+18)</td><td><b>Wis</b> 20 (+19)<br><b>Cha</b> 26 (+22)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +28, Athletics +29, Intimidate +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p><b>Equipment</b> chain armor, broadsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Broadsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+35 vs AC; 3d10+5 damage, and the target is marked until the end of the vampire lord’s next turn. &lt;/p&gt;]] (⚔) <b>Broadsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Broadsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+35 vs AC&lt;/u&gt;; 3d10+5 damage, and the target is marked until the end of the vampire lord’s next turn. &lt;/p&gt;]]; [[/roll 3d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Broadsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+35 vs AC; 3d10+5 damage, and the target is marked until the end of the vampire lord’s next turn. &lt;/p&gt;]] <21.5>  damage, and the target is marked until the end of the vampire lord’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord makes two broadsword attacks&lt;/p&gt;]] ⚔ <b>Double Strike</b> (standard, at-will) ✦ <b>Weapon</b></p><p>The vampire lord makes two broadsword attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage against the target, recharges when an adjacent creature becomes bloodied)) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs Fortitude; 4d12+8 damage, the target is weakened (save ends), and the vampire lord regains 102 hit points; see also combat advantage. &lt;/p&gt;]] ⚔ <b>Blood Drain</b> (standard; requires combat advantage against the target, recharges when an adjacent creature becomes bloodied)) ✦ <b>Healing</b></p><p>[[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage against the target, recharges when an adjacent creature becomes bloodied)) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs Fortitude&lt;/u&gt;; 4d12+8 damage, the target is weakened (save ends), and the vampire lord regains 102 hit points; see also combat advantage. &lt;/p&gt;]]; [[/roll 4d12+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage against the target, recharges when an adjacent creature becomes bloodied)) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs Fortitude; 4d12+8 damage, the target is weakened (save ends), and the vampire lord regains 102 hit points; see also combat advantage. &lt;/p&gt;]] <34>  damage, the target is weakened (save ends), and the vampire lord regains 102 hit points; see also combat advantage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mist Form&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord becomes insubstantial and gains a fly speed of 12, but cannot make attacks. The vampire lord can remain in mist form for up to 1 hour or end the effect as a minor action.&lt;/p&gt;]]  <b>Mist Form</b> (standard; encounter) ✦ <b>Polymorph</b></p><p>The vampire lord becomes insubstantial and gains a fly speed of 12, but cannot make attacks. The vampire lord can remain in mist form for up to 1 hour or end the effect as a minor action.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Second Wind&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord spends a healing surge and regains 102 hit points. The vampire lord gains a +2 bonus to all defenses until the start of its next turn.&lt;/p&gt;]]  <b>Second Wind</b> (standard; encounter) ✦ <b>Healing</b></p><p>The vampire lord spends a healing surge and regains 102 hit points. The vampire lord gains a +2 bonus to all defenses until the start of its next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; +33 vs Will; the target is dominated (save ends, with a –2 penalty to the saving throw). Aftereffect: The target is dazed (save ends). The vampire lord can dominate only one creature at a time. &lt;/p&gt;]] ➶ <b>Dominating Gaze</b> (minor, recharge ⚅</p><p>Ranged 5; [[/roll 1d20+33[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+33 vs Will&lt;/u&gt;; the target is dominated (save ends, with a –2 penalty to the saving throw). Aftereffect: The target is dazed (save ends). The vampire lord can dominate only one creature at a time. &lt;/p&gt;]]; the target is dominated (save ends, with a –2 penalty to the saving throw). Aftereffect: The target is dazed (save ends). The vampire lord can dominate only one creature at a time. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord deals 2d10 extra damage with its attacks against any target it has marked.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The vampire lord deals [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord deals 2d10 extra damage with its attacks against any target it has marked.&lt;/p&gt;]] <11> extra damage with its attacks against any target it has marked.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vampire Lord\"s Mark&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord deals 2d10 extra damage with its attacks against any target it has marked.&lt;/p&gt;]]  <b>Vampire Lord\"s Mark</b></p><p>The vampire lord deals [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vampire Lord\"s Mark&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord deals 2d10 extra damage with its attacks against any target it has marked.&lt;/p&gt;]] <11> extra damage with its attacks against any target it has marked.</p></tr></td></table>",

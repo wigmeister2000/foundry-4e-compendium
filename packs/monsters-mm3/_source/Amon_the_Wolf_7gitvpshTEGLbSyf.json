@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Beast Blood",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"bMz75K8xfQJ2PcCy",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Dogged",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aiH9tTycDoYnpxwQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7BI0pmW42VZ9GJyQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Wolf Footing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Fbi7RaHoWh4gymrv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -245,7 +249,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1491,23 +1496,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 420; <b>Bloodied</b> 210<hr><b>Resist</b> 25 cold, 25 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 39</td><td><b>Ref</b> 40</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, climb 10, fly 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+21)<br><b>Con</b> 24 (+20)</td><td><b>Dex</b> 30 (+23)<br><b>Int</b> 20 (+18)</td><td><b>Wis</b> 20 (+18)<br><b>Cha</b> 26 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Insight +23, Intimidate +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 5,Darkvision<br><b>Passive</b> Perception 28 | Insight 33</td></td></tr></table><p><b>Equipment</b> heavy mace</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Beast Blood&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 10&lt;/p&gt;&lt;p&gt;When a beast or magical beast ally in the aura drops and enemy in the aura below 1 hit point, that ally gains 1 action point that it must expend on its next turn or lose.&lt;/p&gt;]] ⌀ <b>Beast Blood</b> ✦ <b>Aura</b> 10</p><p>When a beast or magical beast ally in the aura drops and enemy in the aura below 1 hit point, that ally gains 1 action point that it must expend on its next turn or lose.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dogged&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Amon is dominated, stunned, or weakened, he is instead dazed for the same duration. While dazed, on each of his turns, Amon can take a minor action and a move or standard action.&lt;/p&gt;]]  <b>Dogged</b> <b></b></p><p>If Amon is dominated, stunned, or weakened, he is instead dazed for the same duration. While dazed, on each of his turns, Amon can take a minor action and a move or standard action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Amon regains 15 hit points whenever he starts his turn and has at least 1 hit point. When he takes  damage from a silvered weapon, his regeneration does not function on his next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>Amon regains 15 hit points whenever he starts his turn and has at least 1 hit point. When he takes  damage from a silvered weapon, his regeneration does not function on his next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wolf Footing&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Amon is immobilized, restrained, or slowed, he is instead slowed for the same duration. Difficult terrain does not cost Amon extra movement.&lt;/p&gt;]]  <b>Wolf Footing</b> <b></b></p><p>If Amon is immobilized, restrained, or slowed, he is instead slowed for the same duration. Difficult terrain does not cost Amon extra movement.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +32 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 21 damage, or 4d8 + 23 damage to a prone target. If Amon has combat advantage against the target, the target falls prone.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+32[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+32 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 21#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 21 damage, or 4d8 + 23 damage to a prone target. If Amon has combat advantage against the target, the target falls prone.&lt;/p&gt;]] <34.5>  damage, or [[/roll 4d8 + 23#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 21 damage, or 4d8 + 23 damage to a prone target. If Amon has combat advantage against the target, the target falls prone.&lt;/p&gt;]] <41>  damage to a prone target. If Amon has combat advantage against the target, the target falls prone.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Howling Mace&lt;/b&gt; (thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt;  2 (one creature); +32 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 23 damage, or 3d10 + 23 damage to a prone target. If Amon scores a critical hit, the target also takes ongoing 15 thunder damage and is dazed (save ends both).&lt;/p&gt;]]  <b>Howling Mace</b> (thunder, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i>  2 (one creature); [[/roll 1d20+32[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Howling Mace&lt;/b&gt; (thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt;  2 (one creature); &lt;u&gt;+32 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 23#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Howling Mace&lt;/b&gt; (thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 23 damage, or 3d10 + 23 damage to a prone target. If Amon scores a critical hit, the target also takes ongoing 15 thunder damage and is dazed (save ends both).&lt;/p&gt;]] <34>  damage, or [[/roll 3d10 + 23#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Howling Mace&lt;/b&gt; (thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 23 damage, or 3d10 + 23 damage to a prone target. If Amon scores a critical hit, the target also takes ongoing 15 thunder damage and is dazed (save ends both).&lt;/p&gt;]] <39.5>  damage to a prone target. If Amon scores a critical hit, the target also takes ongoing 15 thunder damage and is dazed (save ends both).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wolf Tactics&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Amon uses howling mace and bite. He can also shift up to half his speed, splitting that movement among  the moments before, between, and after his attacks.&lt;/p&gt;]]  <b>Wolf Tactics</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Amon uses howling mace and bite. He can also shift up to half his speed, splitting that movement among  the moments before, between, and after his attacks.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Teleport&lt;/b&gt; (teleportation) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Amon teleports up to 10 squares.&lt;/p&gt;]]  <b>Teleport</b> (teleportation) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> Amon teleports up to 10 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Gaze of Despair&lt;/b&gt; (fear) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Amon’s turn ends after he uses wolf gaze&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (one creature in the blast); +30 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target falls prone. If it does not fall prone, it is instead immobilized until the end of Amon’s next turn.&lt;/p&gt;]] ᗕ <b>Gaze of Despair</b> (fear) ✦ <b>Recharge</b> when Amon’s turn ends after he uses wolf gaze</p><p><i>Attack:</i> Close blast 5 (one creature in the blast); [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Gaze of Despair&lt;/b&gt; (fear) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Amon’s turn ends after he uses wolf gaze&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (one creature in the blast); &lt;u&gt;+30 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target falls prone. If it does not fall prone, it is instead immobilized until the end of Amon’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wolf Gaze&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Amon’s turn ends after he uses gaze of despair&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (one creature in the blast); +30 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dazed until the end of Amon’s next turn. If it is not dazed, it is instead immobilized until the end of Amon’s next turn.&lt;/p&gt;]] ᗕ <b>Wolf Gaze</b> (charm) ✦ <b>Recharge</b> when Amon’s turn ends after he uses gaze of despair</p><p><i>Attack:</i> Close blast 5 (one creature in the blast); [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wolf Gaze&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Amon’s turn ends after he uses gaze of despair&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (one creature in the blast); &lt;u&gt;+30 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dazed until the end of Amon’s next turn. If it is not dazed, it is instead immobilized until the end of Amon’s next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ice Shield&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An attack hits Amon on his turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; Amon gains +5 to all defenses until the end of his current turn.&lt;/p&gt;]]  <b>Ice Shield</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An attack hits Amon on his turn.</p><p><i>Effect (Immediate Interrupt):</i> Amon gains +5 to all defenses until the end of his current turn.</p></tr></td></table>",

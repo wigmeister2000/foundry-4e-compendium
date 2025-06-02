@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Defiling Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"J2dBPEhvxs7wgKno",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -999,23 +1002,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 196; <b>Bloodied</b> 98<hr><b>Resist</b> 10 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 24</td><td><b>Ref</b> 27</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+6)<br><b>Con</b> 14 (+8)</td><td><b>Dex</b> 13 (+7)<br><b>Int</b> 22 (+12)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 10 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Arcana +17</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Defiling Aura&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any living creature that ends its turn in the aura takes 10 necrotic damage.&lt;/p&gt;]] ⌀ <b>Defiling Aura</b> (necrotic) ✦ <b>Aura</b> 1</p><p>Any living creature that ends its turn in the aura takes 10 necrotic damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Withering Grasp&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 necrotic damage, and the target is weakened until the end of the sorcerer’s next turn.&lt;/p&gt;]] (⚔) <b>Withering Grasp</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Withering Grasp&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Withering Grasp&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 necrotic damage, and the target is weakened until the end of the sorcerer’s next turn.&lt;/p&gt;]] <13>  necrotic damage, and the target is weakened until the end of the sorcerer’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Exile&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one or two creatures); +18 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 3 necrotic damage, and the target cannot willingly move closer to the sorcerer until the end of its next turn.&lt;/p&gt;]] (➶) <b>Ray of Exile</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one or two creatures); [[/roll 1d20+18[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Exile&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one or two creatures); &lt;u&gt;+18 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Exile&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 3 necrotic damage, and the target cannot willingly move closer to the sorcerer until the end of its next turn.&lt;/p&gt;]] <21>  necrotic damage, and the target cannot willingly move closer to the sorcerer until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ravenous Disintegrate&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +18 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 4 necrotic damage. If the target is vulnerable to necrotic damage, it takes ongoing 20 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage. If the target is vulnerable to necrotic damage, it takes ongoing 10 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target dies.&lt;/p&gt;]] ➶ <b>Ravenous Disintegrate</b> (necrotic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+18[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ravenous Disintegrate&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+18 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Ravenous Disintegrate&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 4 necrotic damage. If the target is vulnerable to necrotic damage, it takes ongoing 20 damage (save ends).&lt;/p&gt;]] <22>  necrotic damage. If the target is vulnerable to necrotic damage, it takes ongoing 20 damage (save ends).</p><p><i>Miss:</i> Half damage. If the target is vulnerable to necrotic damage, it takes ongoing 10 damage (save ends).</p><p><i>Second Failed Saving Throw:</i> The target dies.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Life-Draining Burst&lt;/b&gt; (cold, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 20 (creatures in the burst); +18 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 4 cold and necrotic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; If at least one creature takes damage from this attack, the sorcerer gains 25 temporary hit points.&lt;/p&gt;]] ✻ <b>Life-Draining Burst</b> (cold, necrotic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 1 within 20 (creatures in the burst); [[/roll 1d20+18[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Life-Draining Burst&lt;/b&gt; (cold, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 20 (creatures in the burst); &lt;u&gt;+18 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Life-Draining Burst&lt;/b&gt; (cold, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 4 cold and necrotic damage.&lt;/p&gt;]] <18>  cold and necrotic damage.</p><p><i>Effect:</i> If at least one creature takes damage from this attack, the sorcerer gains 25 temporary hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Ravenous Defiling&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The sorcerer misses an enemy with an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Enemies within 3 squares of the sorcerer take 15 necrotic damage, and the sorcerer rerolls the triggering attack roll.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Special:&lt;/i&gt; At the start of any of its turns, the sorcerer can lose 25 hit points to recharge this power.&lt;/p&gt;]]  <b>Ravenous Defiling</b> (necrotic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Trigger:</i> The sorcerer misses an enemy with an attack.</p><p><i>Effect (Free Action):</i> Enemies within 3 squares of the sorcerer take 15 necrotic damage, and the sorcerer rerolls the triggering attack roll.</p><p><i>Special:</i> At the start of any of its turns, the sorcerer can lose 25 hit points to recharge this power.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 23</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 17 (+8)<br><b>Int</b> 2 (+1)</td><td><b>Wis</b> 13 (+6)<br><b>Cha</b> 12 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; 9 damage. &lt;/p&gt;]] (⚔) <b>Claws</b> (standard, at-will) </p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 9 damage. &lt;/p&gt;]]; 9 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sudden Strike&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The manifestation flies up to 8 squares, avoiding opportunity attacks along the way. It attacks once at any time during its movement; +15 vs Reflex; 9 damage. &lt;/p&gt;]] ⚔ <b>Sudden Strike</b> (standard, encounter) </p><p>The manifestation flies up to 8 squares, avoiding opportunity attacks along the way. It attacks once at any time during its movement; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sudden Strike&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The manifestation flies up to 8 squares, avoiding opportunity attacks along the way. It attacks once at any time during its movement; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 9 damage. &lt;/p&gt;]]; 9 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Demonic Persuasion&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +14 vs Will; the target is pulled 2 squares toward the manifestation. Then the manifestation explodes, dealing 9 damage to every enemy that is adjacent to it. This destroys the manifestation. &lt;/p&gt;]] ᗕ <b>Demonic Persuasion</b> (standard, encounter) </p><p>Close burst 3; targets enemies; [[/roll 1d20+14[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Demonic Persuasion&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+14 vs Will&lt;/u&gt;; the target is pulled 2 squares toward the manifestation. Then the manifestation explodes, dealing 9 damage to every enemy that is adjacent to it. This destroys the manifestation. &lt;/p&gt;]]; the target is pulled 2 squares toward the manifestation. Then the manifestation explodes, dealing 9 damage to every enemy that is adjacent to it. This destroys the manifestation. </p></tr></td></table>",

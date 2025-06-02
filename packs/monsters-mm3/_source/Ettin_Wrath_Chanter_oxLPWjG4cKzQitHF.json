@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Rage Song",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"n6gafSjIsX7Teqr2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Double Actions",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"W4HAa1hLmn20JFSs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Dual Brain",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ksXfASERJ4dy9MGD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -546,23 +550,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 184; <b>Bloodied</b> 92</td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 21</td><td><b>Ref</b> 17</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 20 (+9)</td><td><b>Dex</b> 12 (+5)<br><b>Int</b> 8 (+3)</td><td><b>Wis</b> 15 (+6)<br><b>Cha</b> 17 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Rage Song&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Enemies take a -2 penalty to attack rolls and gain a +2 bonus to damage rolls while in the aura. Allies gain a +2 bonus to attack rolls and damage rolls while in the aura.&lt;/p&gt;]] ⌀ <b>Rage Song</b> ✦ <b>Aura</b> 5</p><p>Enemies take a -2 penalty to attack rolls and gain a +2 bonus to damage rolls while in the aura. Allies gain a +2 bonus to attack rolls and damage rolls while in the aura.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The ettin makes two initiative checks and takes a full turn on each initiative result. The ettin can take two immediate actions per round but only one between one turn and the next.&lt;/p&gt;]]  <b>Double Actions</b> <b></b></p><p>The ettin makes two initiative checks and takes a full turn on each initiative result. The ettin can take two immediate actions per round but only one between one turn and the next.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dual Brain&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the end of each of its turns, the ettin automatically ends any dazing, stunning, or charm effect on itself.&lt;/p&gt;]]  <b>Dual Brain</b> <b></b></p><p>At the end of each of its turns, the ettin automatically ends any dazing, stunning, or charm effect on itself.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, and the target falls prone.&lt;/p&gt;]] (⚔) <b>Smash</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, and the target falls prone.&lt;/p&gt;]] <16>  damage, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Invoke Fury&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 5 (one enemy in the burst). The target must use a free action to charge or make a basic attack against a target of the ettin’s choice. The movement for this charge does not provoke opportunity attacks.&lt;/p&gt;]]  <b>Invoke Fury</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Close burst 5 (one enemy in the burst). The target must use a free action to charge or make a basic attack against a target of the ettin’s choice. The movement for this charge does not provoke opportunity attacks.</p></tr></td></table>",

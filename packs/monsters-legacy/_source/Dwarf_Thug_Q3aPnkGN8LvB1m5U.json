@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -366,7 +367,7 @@
 		},
 		{
 			"name":"Aimed Shot",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"dozKyvgI1O2trVSF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +403,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -412,7 +414,7 @@
 		},
 		{
 			"name":"Combined Fire",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UdGNnfbTPFjSD251",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -448,7 +450,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -504,23 +507,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>Save</b> +5 against poison effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 16 (+9)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 11 (+6)</td><td><b>Wis</b> 18 (+10)<br><b>Cha</b> 10 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +17, Endurance +14, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> chainmail , crossbow , crossbow bolts (20) , warhammer .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 9 damage. &lt;/p&gt;]] (⚔) <b>Warhammer</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs AC&lt;/u&gt;; 9 damage. &lt;/p&gt;]]; 9 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +20 vs AC; 9 damage. &lt;/p&gt;]] ➶ <b>Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+20 vs AC&lt;/u&gt;; 9 damage. &lt;/p&gt;]]; 9 damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aimed Shot&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A dwarf thug gains a +2 bonus to attack rolls and deals an extra 3 damage with ranged attacks against creatures that don’t have cover.&lt;/p&gt;]]  <b>Aimed Shot</b></p><p>A dwarf thug gains a +2 bonus to attack rolls and deals an extra 3 damage with ranged attacks against creatures that don’t have cover.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combined Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Dwarf thugs can make a combined ranged attack against a single target. For each dwarf thug participating in a combined attack, increase the attack roll by 1 and the damage by 1.&lt;/p&gt;]]  <b>Combined Fire</b></p><p>Dwarf thugs can make a combined ranged attack against a single target. For each dwarf thug participating in a combined attack, increase the attack roll by 1 and the damage by 1.</p></tr></td></table>",

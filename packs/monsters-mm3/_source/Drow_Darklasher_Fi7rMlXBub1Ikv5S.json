@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"uRComn2dHpzGtXeV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 114; <b>Bloodied</b> 57</td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 26</td><td><b>Ref</b> 28</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+10)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 17 (+10)</td><td><b>Wis</b> 14 (+9)<br><b>Cha</b> 13 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +18, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> chainmail , dagger .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The darklasher’s attacks deal 2d10 extra damage against creatures granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b> <b></b></p><p>The darklasher’s attacks deal [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The darklasher’s attacks deal 2d10 extra damage against creatures granting combat advantage to it.&lt;/p&gt;]] <11> extra damage against creatures granting combat advantage to it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage.&lt;/p&gt;]] (⚔) <b>Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage.&lt;/p&gt;]] <19>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Lashing Darkness&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature that can’t see the darklasher); +18 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 12 force damage, and the darklasher can slide the target 1 square.&lt;/p&gt;]] ➶ <b>Lashing Darkness</b> (force) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature that can’t see the darklasher); [[/roll 1d20+18[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Lashing Darkness&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature that can’t see the darklasher); &lt;u&gt;+18 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Lashing Darkness&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 12 force damage, and the darklasher can slide the target 1 square.&lt;/p&gt;]] <28.5>  force damage, and the darklasher can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shadow Levitation&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The darklasher shifts up to 4 squares (20 feet) into the air. It then gains a fly speed of 4 (hover) and total concealment until the end of its next turn or until immediately after it attacks. When the flight ends, the darklasher descends safely to the ground.&lt;/p&gt;]]  <b>Shadow Levitation</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The darklasher shifts up to 4 squares (20 feet) into the air. It then gains a fly speed of 4 (hover) and total concealment until the end of its next turn or until immediately after it attacks. When the flight ends, the darklasher descends safely to the ground.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cloud of Darkness&lt;/b&gt; (zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 1. The burst creates a zone that lasts until the end of the encounter. The cloud blocks line of sight for all creatures except the darklasher. While entirely in the cloud, any creature other than the darklasher is blinded. The darklasher can dismiss the zone as a free action.&lt;/p&gt;]] ᗕ <b>Cloud of Darkness</b> (zone) ✦ <b>Encounter</b></p><p><i>Effect:</i> Close burst 1. The burst creates a zone that lasts until the end of the encounter. The cloud blocks line of sight for all creatures except the darklasher. While entirely in the cloud, any creature other than the darklasher is blinded. The darklasher can dismiss the zone as a free action.</p></tr></td></table>",

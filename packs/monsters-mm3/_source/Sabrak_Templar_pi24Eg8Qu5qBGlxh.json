@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Insane Focus",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KQb507VTwSdChLtq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Stand the Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QEo6cy1SwGX4kLFe",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Steady-Footed",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3W1jAt5RDnpmioPr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -379,7 +383,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -728,23 +733,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 48; <b>Bloodied</b> 24</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 16</td><td><b>Ref</b> 13</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 16 (+4)</td><td><b>Dex</b> 10 (+1)<br><b>Int</b> 10 (+1)</td><td><b>Wis</b> 8 (0)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><p><b>Equipment</b> heavy shield , plate armor , warhammer .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Insane Focus&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Enemies in the aura cannot shift. If an enemy is in the aura and marked by the templar, and that enemy makes an attack that does not include the templar as a target, the enemy takes 5 psychic damage.&lt;/p&gt;]] ⌀ <b>Insane Focus</b> (fear, psychic) ✦ <b>Aura</b> 1</p><p>Enemies in the aura cannot shift. If an enemy is in the aura and marked by the templar, and that enemy makes an attack that does not include the templar as a target, the enemy takes 5 psychic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand the Ground&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The templar can move 1 square fewer than the effect specifies when subjected to a pull, a push, or a slide.&lt;/p&gt;]]  <b>Stand the Ground</b> <b></b></p><p>The templar can move 1 square fewer than the effect specifies when subjected to a pull, a push, or a slide.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Steady-Footed&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The templar can make a saving throw to avoid falling prone when an attack would knock it prone.&lt;/p&gt;]]  <b>Steady-Footed</b> <b></b></p><p>The templar can make a saving throw to avoid falling prone when an attack would knock it prone.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 6 damage, and the templar can push the target 1 square. The templar can then shift 1 square into the square the target vacated.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The templar marks the target until the end of the templar’s next turn.&lt;/p&gt;]] (⚔) <b>Warhammer</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 6 damage, and the templar can push the target 1 square. The templar can then shift 1 square into the square the target vacated.&lt;/p&gt;]] <11.5>  damage, and the templar can push the target 1 square. The templar can then shift 1 square into the square the target vacated.</p><p><i>Effect:</i> The templar marks the target until the end of the templar’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Chaos Lure&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +6 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 psychic damage, and the templar pulls the target up to 3 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The templar marks the target until the end of the templar’s next turn.&lt;/p&gt;]] (➶) <b>Chaos Lure</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+6[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Chaos Lure&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+6 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Chaos Lure&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 psychic damage, and the templar pulls the target up to 3 squares.&lt;/p&gt;]] <7.5>  psychic damage, and the templar pulls the target up to 3 squares.</p><p><i>Effect:</i> The templar marks the target until the end of the templar’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Lure and Smash&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The templar uses chaos lure and then uses warhammer. If the templar hits the same target with both attacks, the templar also knocks the target prone.&lt;/p&gt;]]  <b>Lure and Smash</b> ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The templar uses chaos lure and then uses warhammer. If the templar hits the same target with both attacks, the templar also knocks the target prone.</p></tr></td></table>",

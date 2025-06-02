@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -594,23 +595,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 91; <b>Bloodied</b> 45<hr><b>Resist</b> insubstantial <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 23</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+8)<br><b>Con</b> 13 (+7)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 10 (+6)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 17 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 1d10+2 necrotic damage. &lt;/p&gt;]] (⚔) <b>Spirit Touch</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d10+2 necrotic damage. &lt;/p&gt;]]; [[/roll 1d10+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 1d10+2 necrotic damage. &lt;/p&gt;]] <7.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Death\"s Visage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +15 vs Will; 2d6+3 psychic damage, and the target takes a -2 penalty to all defenses. &lt;/p&gt;]] ➶ <b>Death\"s Visage</b> (standard, at-will) ✦ <b>Fear, Psychic</b></p><p>Ranged 5; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Death\"s Visage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+15 vs Will&lt;/u&gt;; 2d6+3 psychic damage, and the target takes a -2 penalty to all defenses. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Death\"s Visage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +15 vs Will; 2d6+3 psychic damage, and the target takes a -2 penalty to all defenses. &lt;/p&gt;]] <10>  psychic damage, and the target takes a -2 penalty to all defenses. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +15 vs Will; 2d8+3 psychic damage, the target is pushed 5 squares and is immobilized (save ends). &lt;/p&gt;]] ᗕ <b>Terrifying Shriek</b> (standard, recharge ⚄⚅) ✦ <b>Fear, Psychic</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+15 vs Will&lt;/u&gt;; 2d8+3 psychic damage, the target is pushed 5 squares and is immobilized (save ends). &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +15 vs Will; 2d8+3 psychic damage, the target is pushed 5 squares and is immobilized (save ends). &lt;/p&gt;]] <12>  psychic damage, the target is pushed 5 squares and is immobilized (save ends). </p></tr></td></table>",

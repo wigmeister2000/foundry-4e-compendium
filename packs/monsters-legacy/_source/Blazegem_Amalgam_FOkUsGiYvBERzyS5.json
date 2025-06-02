@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blazing Form",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HNXCDyUi9G1kKWaP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 40; <b>Bloodied</b> 20<hr><b>Resist</b> 5 fire <b>Vulnerable</b> 5 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 16</td><td><b>Ref</b> 16</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+3)<br><b>Con</b> 16 (+4)</td><td><b>Dex</b> 16 (+4)<br><b>Int</b> 3 (null)</td><td><b>Wis</b> 11 (+1)<br><b>Cha</b> 8 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Blazing Form&lt;/b&gt; aura 1; whenever an enemy enters the aura, it takes 4 fire damage.]] <b>Blazing Form</b> aura 1; whenever an enemy enters the aura, it takes 4 fire damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +8 vs AC; 1d6 + 3 fire damage. &lt;/p&gt;]] (⚔) <b>Blazing Slam</b> (standard, at-will) ✦ <b>Fire</b></p><p>Melee 1; [[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; &lt;u&gt;+8 vs AC&lt;/u&gt;; 1d6 + 3 fire damage. &lt;/p&gt;]]; [[/roll 1d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +8 vs AC; 1d6 + 3 fire damage. &lt;/p&gt;]] <6.5>  fire damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Inferno Spikes&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +8 vs Fortitude; 1d6 + 4 fire damage, and the amalgam pushes the target 2 squares. &lt;/p&gt;]] ᗕ <b>Inferno Spikes</b> (standard, encounter) ✦ <b>Fire</b></p><p>Close burst 1; [[/roll 1d20+8[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Inferno Spikes&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+8 vs Fortitude&lt;/u&gt;; 1d6 + 4 fire damage, and the amalgam pushes the target 2 squares. &lt;/p&gt;]]; [[/roll 1d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Inferno Spikes&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +8 vs Fortitude; 1d6 + 4 fire damage, and the amalgam pushes the target 2 squares. &lt;/p&gt;]] <7.5>  fire damage, and the amalgam pushes the target 2 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Blazing Shards&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +8 vs Fortitude; 1d10 + 3 damage. Effect: The burst becomes a zone of blazing gems until the end of the amalgam’s next turn. Any creature that ends its turn in the zone takes 5 fire damage. &lt;/p&gt;]] ✻ <b>Blazing Shards</b> (standard, at-will) ✦ <b>Fire</b></p><p>Area burst 1 within 20; [[/roll 1d20+8[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Blazing Shards&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; &lt;u&gt;+8 vs Fortitude&lt;/u&gt;; 1d10 + 3 damage. Effect: The burst becomes a zone of blazing gems until the end of the amalgam’s next turn. Any creature that ends its turn in the zone takes 5 fire damage. &lt;/p&gt;]]; [[/roll 1d10 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Blazing Shards&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +8 vs Fortitude; 1d10 + 3 damage. Effect: The burst becomes a zone of blazing gems until the end of the amalgam’s next turn. Any creature that ends its turn in the zone takes 5 fire damage. &lt;/p&gt;]] <8.5>  damage. Effect: The burst becomes a zone of blazing gems until the end of the amalgam’s next turn. Any creature that ends its turn in the zone takes 5 fire damage. </p></tr></td></table>",

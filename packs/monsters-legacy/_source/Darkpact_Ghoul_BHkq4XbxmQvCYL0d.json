@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Nauseating Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RYgUPcS7C8fqpQFO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -509,10 +511,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -812,23 +814,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 360; <b>Bloodied</b> 180<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 29</td><td><b>Ref</b> 33</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+15)<br><b>Con</b> 20 (+14)</td><td><b>Dex</b> 21 (+14)<br><b>Int</b> 17 (+12)</td><td><b>Wis</b> 18 (+13)<br><b>Cha</b> 15 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +19</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Nauseating Stench&lt;/b&gt; aura 6; any living creature within the aura takes a -2 penalty to attack rolls, skill checks, and ability checks.]] <b>Nauseating Stench</b> aura 6; any living creature within the aura takes a -2 penalty to attack rolls, skill checks, and ability checks.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+24 vs AC; 2d10+8 damage, and the target is immobilized. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs AC&lt;/u&gt;; 2d10+8 damage, and the target is immobilized. &lt;/p&gt;]]; [[/roll 2d10+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+24 vs AC; 2d10+8 damage, and the target is immobilized. &lt;/p&gt;]] <19>  damage, and the target is immobilized. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The darkpact ghoul makes two claw attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The darkpact ghoul makes two claw attacks</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a bloodied creature; +24 vs AC; 2d12+10 damage, or against an immobilized target: 3d12+10 damage, and the target is weakened (save ends). &lt;/p&gt;]] ⚔ <b>Ravenous Bite</b> (standard, at-will) </p><p>Targets a bloodied creature; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a bloodied creature; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d12+10 damage, or against an immobilized target: 3d12+10 damage, and the target is weakened (save ends). &lt;/p&gt;]]; [[/roll 2d12+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a bloodied creature; +24 vs AC; 2d12+10 damage, or against an immobilized target: 3d12+10 damage, and the target is weakened (save ends). &lt;/p&gt;]] <23>  damage, or against an immobilized target: [[/roll 3d12+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a bloodied creature; +24 vs AC; 2d12+10 damage, or against an immobilized target: 3d12+10 damage, and the target is weakened (save ends). &lt;/p&gt;]] <29.5>  damage, and the target is weakened (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Baleful Step&lt;/b&gt; (move; recharge ⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The darkpact ghoul teleports up to 10 squares. Each enemy adjacent to the darkpact ghoul after it teleports is dazed until the end of the darkpact ghoul’s next turn.&lt;/p&gt;]]  <b>Baleful Step</b> (move; recharge ⚅) ✦ <b>Teleportation</b></p><p>The darkpact ghoul teleports up to 10 squares. Each enemy adjacent to the darkpact ghoul after it teleports is dazed until the end of the darkpact ghoul’s next turn.</p></tr></td></table>",

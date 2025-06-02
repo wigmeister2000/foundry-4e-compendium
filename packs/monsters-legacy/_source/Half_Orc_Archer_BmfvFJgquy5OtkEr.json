@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -586,23 +588,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 38; <b>Bloodied</b> 19</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 13</td><td><b>Ref</b> 15</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+4)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 19 (+5)<br><b>Int</b> 11 (+1)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Endurance +5, Intimidate +8, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> arrows (30) , handaxe , leather armor , longbow .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+3 damage. &lt;/p&gt;]] (⚔) <b>Handaxe</b> (standard, at-will) </p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 1d6+3 damage. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Handaxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+3 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20/40; +9 vs AC; 1d10+4 damage. &lt;/p&gt;]] (➶) <b>Longbow</b> (standard, at-will) </p><p>Ranged 20/40; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20/40; &lt;u&gt;+9 vs AC&lt;/u&gt;; 1d10+4 damage. &lt;/p&gt;]]; [[/roll 1d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20/40; +9 vs AC; 1d10+4 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Furious Assault&lt;/b&gt; (free, when the half-orc archer hits an enemy, encounter) &lt;/p&gt;&lt;p&gt;The triggering attack deals 1d6 extra damage if it was a handaxe attack or 1d10 extra damage if it was a longbow attack.&lt;/p&gt;]] ➶ <b>Furious Assault</b> (free, when the half-orc archer hits an enemy, encounter) </p><p>The triggering attack deals [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Furious Assault&lt;/b&gt; (free, when the half-orc archer hits an enemy, encounter) &lt;/p&gt;&lt;p&gt;The triggering attack deals 1d6 extra damage if it was a handaxe attack or 1d10 extra damage if it was a longbow attack.&lt;/p&gt;]] <3.5> extra damage if it was a handaxe attack or [[/roll 1d10 #&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Furious Assault&lt;/b&gt; (free, when the half-orc archer hits an enemy, encounter) &lt;/p&gt;&lt;p&gt;The triggering attack deals 1d6 extra damage if it was a handaxe attack or 1d10 extra damage if it was a longbow attack.&lt;/p&gt;]] <5.5> extra damage if it was a longbow attack.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QJMtIgPhDUb2CdKW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ei6VEyrnMIcvAHNf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Clumsy Attacker",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"i2UurcBt7FNCW1Mq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -724,23 +727,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 123; <b>Bloodied</b> 61<hr><b>Resist</b> half damage from melee and ranged attacks <b>Vulnerable</b> 10 against close and area attacks </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 20</td><td><b>Ref</b> 19</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+5)<br><b>Con</b> 13 (+6)</td><td><b>Dex</b> 13 (+6)<br><b>Int</b> 8 (+4)</td><td><b>Wis</b> 11 (+5)<br><b>Cha</b> 4 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 10<br><b>Alignment</b> evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Swarm Attack&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura takes 10 damage plus 2 extra damage for each additional rot grub swarm adjacent to the enemy.&lt;/p&gt;]] ⌀ <b>Swarm Attack</b> ✦ <b>Aura</b> 1</p><p>Any enemy that starts its turn within the aura takes 10 damage plus 2 extra damage for each additional rot grub swarm adjacent to the enemy.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swarm &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The awakened rot grub swarm can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The awakened rot grub swarm cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.&lt;/p&gt;]]  <b>Swarm </b> <b></b></p><p>The awakened rot grub swarm can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The awakened rot grub swarm cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Clumsy Attacker&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The awakened rot grub swarm lacks a melee basic attack.&lt;/p&gt;]]  <b>Clumsy Attacker</b> <b></b></p><p>The awakened rot grub swarm lacks a melee basic attack.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Infesting Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 10 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; Ongoing 15 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; Ongoing 20 damage (save ends).&lt;/p&gt;]] ⚔ <b>Infesting Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Infesting Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 10 damage (save ends).</p><p><i>First Failed Saving Throw:</i> Ongoing 15 damage (save ends).</p><p><i>Second Failed Saving Throw:</i> Ongoing 20 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Shock&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is immobilized until the end of the awakened swarm’s next turn.&lt;/p&gt;]] ᗕ <b>Psychic Shock</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Shock&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is immobilized until the end of the awakened swarm’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Telepathic Lure&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The swarm pulls the target 4 squares.&lt;/p&gt;]] ➶ <b>Telepathic Lure</b> ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Telepathic Lure&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The swarm pulls the target 4 squares.</p></tr></td></table>",

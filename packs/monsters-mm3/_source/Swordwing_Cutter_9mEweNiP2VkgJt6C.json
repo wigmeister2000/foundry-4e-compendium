@@ -62,7 +62,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -413,28 +414,15 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion. ; see also scattering hive</td><td style=\"padding-left: 15px;\"><b>Init</b> +24</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 41</td><td><b>Ref</b> 40</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 10 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+23)<br><b>Con</b> 25 (+21)</td><td><b>Dex</b> 26 (+22)<br><b>Int</b> 10 (+14)</td><td><b>Wis</b> 25 (+21)<br><b>Cha</b> 12 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Endurance +26, Stealth +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Armblade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +33 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 18 damage, or 25 damage if the cutter scores a critical hit, and the target falls prone.&lt;/p&gt;]] (⚔) <b>Armblade</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+33[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Armblade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+33 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 18 damage, or 25 damage if the cutter scores a critical hit, and the target falls prone.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Scattering Hive&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The cutter drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; Each allied cutter adjacent to the cutter can shift up to 5 squares as a free action.&lt;/p&gt;]]  <b>Scattering Hive</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The cutter drops to 0 hit points.</p><p><i>Effect (Immediate Interrupt):</i> Each allied cutter adjacent to the cutter can shift up to 5 squares as a free action.</p></tr></td></table>",

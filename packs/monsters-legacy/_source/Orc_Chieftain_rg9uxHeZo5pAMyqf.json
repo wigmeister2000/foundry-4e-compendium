@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blood of the Enemy",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vbDqQ1wegIan6d34",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -635,23 +637,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 216; <b>Bloodied</b> 108</td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 22</td><td><b>Ref</b> 19</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 (7 while charging)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 19 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Endurance +12, Intimidate +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> chainmail , greataxe .</p><p>[[/roll 0#&lt;b&gt;Blood of the Enemy&lt;/b&gt; aura 5; bloodied allies in the aura deal an extra 2 damage with melee attacks.]] <b>Blood of the Enemy</b> aura 5; bloodied allies in the aura deal an extra 2 damage with melee attacks.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 1d12+5 damage (crit 1d12+17). &lt;/p&gt;]] (⚔) <b>Greataxe</b> (standard, at-will) </p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 1d12+5 damage (crit 1d12+17). &lt;/p&gt;]]; [[/roll 1d12+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 1d12+5 damage (crit 1d12+17). &lt;/p&gt;]] <11.5>  damage (crit [[/roll 1d12+17#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 1d12+5 damage (crit 1d12+17). &lt;/p&gt;]] <23.5> ). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Warrior’s Surge&lt;/b&gt; (standard; usable only while bloodied, encounter) ✦ &lt;b&gt;Healing, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The orc chieftain makes a melee basic attack, spends a healing surge, and regains 54 hit points.&lt;/p&gt;]] ⚔ <b>Warrior’s Surge</b> (standard; usable only while bloodied, encounter) ✦ <b>Healing, Weapon</b></p><p>The orc chieftain makes a melee basic attack, spends a healing surge, and regains 54 hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Inspire Ferocity&lt;/b&gt; (immediate reaction, when an ally within range drops to 0 hit points, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; the ally makes a melee basic attack.&lt;/p&gt;]] ➶ <b>Inspire Ferocity</b> (immediate reaction, when an ally within range drops to 0 hit points, recharge ⚄⚅) </p><p>Ranged 10; the ally makes a melee basic attack.</p></tr></td></table>",

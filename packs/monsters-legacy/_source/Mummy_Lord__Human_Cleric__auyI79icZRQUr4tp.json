@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FJXHtzolDyufPBZg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Despair",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NcfRGwASgydeMmYV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -198,10 +201,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -379,10 +382,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1220,23 +1223,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 205; <b>Bloodied</b> 102<br><b>Regeneration</b> 10 (if the mummy lord takes radiant damage, regeneration doesn’t function on its next turn)<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 fire <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+10)<br><b>Con</b> 15 (+8)</td><td><b>Dex</b> 12 (+7)<br><b>Int</b> 14 (+8)</td><td><b>Wis</b> 18 (+10)<br><b>Cha</b> 15 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> History +13, Insight +15, Intimidate +13, Religion +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 25</td></td></tr></table><p><b>Equipment</b> chainmail , mace .</p><p>[[/roll 0#&lt;b&gt;Despair&lt;/b&gt; (Fear) aura 5; An enemy takes a -4 penalty on attack rolls against the mummy lord until it damages the mummy lord.]] <b>Despair</b> (Fear) aura 5; An enemy takes a -4 penalty on attack rolls against the mummy lord until it damages the mummy lord.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shielding Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+9 damage, and the mummy lord and one adjacent ally gain a +1 power bonus to AC until the end of the mummy lord’s next turn. &lt;/p&gt;]] (⚔) <b>Shielding Mace</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shielding Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8+9 damage, and the mummy lord and one adjacent ally gain a +1 power bonus to AC until the end of the mummy lord’s next turn. &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shielding Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+9 damage, and the mummy lord and one adjacent ally gain a +1 power bonus to AC until the end of the mummy lord’s next turn. &lt;/p&gt;]] <13.5>  damage, and the mummy lord and one adjacent ally gain a +1 power bonus to AC until the end of the mummy lord’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Awe Strike &lt;/b&gt; (standard; requires mace, encounter) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Will; 1d8+9 damage, and the target is immobilized (save ends). &lt;/p&gt;]] ⚔ <b>Awe Strike </b> (standard; requires mace, encounter) ✦ <b>Fear, Weapon</b></p><p>[[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Awe Strike &lt;/b&gt; (standard; requires mace, encounter) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs Will&lt;/u&gt;; 1d8+9 damage, and the target is immobilized (save ends). &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Awe Strike &lt;/b&gt; (standard; requires mace, encounter) ✦ &lt;b&gt;Fear, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Will; 1d8+9 damage, and the target is immobilized (save ends). &lt;/p&gt;]] <13.5>  damage, and the target is immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Plague of Doom &lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +15 vs Reflex; 3d8+9 necrotic damage, and the target takes a -2 penalty to all defenses until the end of the mummy lord’s next turn. &lt;/p&gt;]] ➶ <b>Plague of Doom </b> (standard, encounter) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Plague of Doom &lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 3d8+9 necrotic damage, and the target takes a -2 penalty to all defenses until the end of the mummy lord’s next turn. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Plague of Doom &lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +15 vs Reflex; 3d8+9 necrotic damage, and the target takes a -2 penalty to all defenses until the end of the mummy lord’s next turn. &lt;/p&gt;]] <22.5>  necrotic damage, and the target takes a -2 penalty to all defenses until the end of the mummy lord’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Second Wind &lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mummy lord spends a healing surge and regains 51 hit points. The mummy lord gains a +2 bonus to all defenses until the start of its next turn.&lt;/p&gt;]]  <b>Second Wind </b> (standard; encounter) ✦ <b>Healing</b></p><p>The mummy lord spends a healing surge and regains 51 hit points. The mummy lord gains a +2 bonus to all defenses until the start of its next turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummy’s Curse &lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +15 vs Will; the target contracts level 13 mummy rot. &lt;/p&gt;]] ᗕ <b>Mummy’s Curse </b> ( when reduced to 0 hit points, ) ✦ <b>Disease</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummy’s Curse &lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+15 vs Will&lt;/u&gt;; the target contracts level 13 mummy rot. &lt;/p&gt;]]; the target contracts level 13 mummy rot. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Unholy Aid&lt;/b&gt; (immediate interrupt, when affected by a condition; recharge ⚅) &lt;/p&gt;&lt;p&gt;The mummy lord removes the condition.&lt;/p&gt;]]  <b>Unholy Aid</b> (immediate interrupt, when affected by a condition; recharge ⚅) </p><p>The mummy lord removes the condition.</p></tr></td></table>",

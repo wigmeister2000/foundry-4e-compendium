@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Flaming Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7bL6u2ZoViHWp9kI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -515,10 +517,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -818,23 +820,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 153; <b>Bloodied</b> 76<hr><b>Resist</b> 15 variable (2/encounter) <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, fire, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 28</td><td><b>Ref</b> 24</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+13)<br><b>Con</b> 25 (+14)</td><td><b>Dex</b> 16 (+10)<br><b>Int</b> 9 (+6)</td><td><b>Wis</b> 15 (+9)<br><b>Cha</b> 18 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Flaming Aura&lt;/b&gt; (Fire) aura 1; any creature that enters or starts its turn in the aura takes 10 fire damage.]] <b>Flaming Aura</b> (Fire) aura 1; any creature that enters or starts its turn in the aura takes 10 fire damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +20 vs AC; 1d8+7 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 4; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d8+7 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +20 vs AC; 1d8+7 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] <11.5>  fire damage, and ongoing 5 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fiery Grab &lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The immolith makes a claw attack (see above) against a Large or smaller target. On a hit, the target slides into a square adjacent to the immolith and is grabbed (until escape). While grabbed, the target loses any resistance it has to fire. An immolith can hold up to five grabbed creatures using this power&lt;/p&gt;]] ⚔ <b>Fiery Grab </b> (standard, at-will) ✦ <b>Fire</b></p><p>The immolith makes a claw attack (see above) against a Large or smaller target. On a hit, the target slides into a square adjacent to the immolith and is grabbed (until escape). While grabbed, the target loses any resistance it has to fire. An immolith can hold up to five grabbed creatures using this power</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Deathfire Curse&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; +18 vs Will; the target is slowed (save ends). Aftereffect: The target takes ongoing 5 fire damage (save ends). &lt;/p&gt;]] ➶ <b>Deathfire Curse</b> (minor, at-will) ✦ <b>Fire</b></p><p>Range 10; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Deathfire Curse&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; &lt;u&gt;+18 vs Will&lt;/u&gt;; the target is slowed (save ends). Aftereffect: The target takes ongoing 5 fire damage (save ends). &lt;/p&gt;]]; the target is slowed (save ends). Aftereffect: The target takes ongoing 5 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vigor of the Grave &lt;/b&gt; (minor 1/round; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; undead in the burst (including the immolith) regain 10 hit points.&lt;/p&gt;]]  <b>Vigor of the Grave </b> (minor 1/round; at-will) ✦ <b>Healing</b></p><p>Close burst 5; undead in the burst (including the immolith) regain 10 hit points.</p></tr></td></table>",

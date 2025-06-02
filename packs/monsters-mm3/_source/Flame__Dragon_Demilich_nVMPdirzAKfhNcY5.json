@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dooming Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"mrxCAf48glSbU7jB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Indomitable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aGKRFBYtACwJQOM3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Instinctive Assault",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vgPQOmbpi8F4cj2A",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Soul Gems",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0eBY6brNnDpzCwaO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -190,7 +194,7 @@
 		},
 		{
 			"name":"Soul Phylacteries",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UaqlFI4xXoy62weN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -226,7 +230,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -291,7 +296,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -471,7 +477,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1714,23 +1721,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 896; <b>Bloodied</b> 448<hr><b>Resist</b> 20 fire, 15 necrotic, 15 psychic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 36</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 10 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+19)<br><b>Con</b> 24 (+19)</td><td><b>Dex</b> 22 (+18)<br><b>Int</b> 18 (+16)</td><td><b>Wis</b> 18 (+16)<br><b>Cha</b> 27 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +21, Bluff +25, Insight +21, Intimidate +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 5,Darkvision<br><b>Passive</b> Perception 26 | Insight 31</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Dooming Presence&lt;/b&gt; (fear) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;While in the aura, any enemy that makes a saving throw must roll twice and take the lower result. In addition, enemies in the aura can neither make opportunity attacks nor gain temporary hit points.&lt;/p&gt;]] ⌀ <b>Dooming Presence</b> (fear) ✦ <b>Aura</b> 2</p><p>While in the aura, any enemy that makes a saving throw must roll twice and take the lower result. In addition, enemies in the aura can neither make opportunity attacks nor gain temporary hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indomitable&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Flame starts his turn, he can transfer one effect on him that a save can end to another creature that he can see within 10 squares of him. The transferred effect ends on Flame. Whenever Flame ends his turn, any dazing, stunning, or dominating effect on him ends.&lt;/p&gt;]]  <b>Indomitable</b> <b></b></p><p>Whenever Flame starts his turn, he can transfer one effect on him that a save can end to another creature that he can see within 10 squares of him. The transferred effect ends on Flame. Whenever Flame ends his turn, any dazing, stunning, or dominating effect on him ends.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Instinctive Assault&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;On an initiative of 10 + his initiative check, Flame can take a free action to make a basic attack. If he cannot take a free action to make this attack due to an effect, then that effect ends instead of Flame making the attack.&lt;/p&gt;]]  <b>Instinctive Assault</b> <b></b></p><p>On an initiative of 10 + his initiative check, Flame can take a free action to make a basic attack. If he cannot take a free action to make this attack due to an effect, then that effect ends instead of Flame making the attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Gems&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Flame’s twelve soul gems can each hold one soul. At the start of an encounter, the soul gems contain up to three souls. After Flame is destroyed (see soul phylacteries), crushing a soul gem destroys the gem and releases any soul within.&lt;/p&gt;]]  <b>Soul Gems</b> <b></b></p><p>Flame’s twelve soul gems can each hold one soul. At the start of an encounter, the soul gems contain up to three souls. After Flame is destroyed (see soul phylacteries), crushing a soul gem destroys the gem and releases any soul within.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Phylacteries&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Flame drops to 0 hit points, he and his soul gems crumble to dust but are not destroyed. He and his gems reappear in 2d6 days unless all his phylacteries are destroyed. If Flame’s phylacteries have been destroyed, his soul gems do not crumble to dust when he is destroyed.&lt;/p&gt;]]  <b>Soul Phylacteries</b> <b></b></p><p>When Flame drops to 0 hit points, he and his soul gems crumble to dust but are not destroyed. He and his gems reappear in [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Phylacteries&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Flame drops to 0 hit points, he and his soul gems crumble to dust but are not destroyed. He and his gems reappear in 2d6 days unless all his phylacteries are destroyed. If Flame’s phylacteries have been destroyed, his soul gems do not crumble to dust when he is destroyed.&lt;/p&gt;]] <7> days unless all his phylacteries are destroyed. If Flame’s phylacteries have been destroyed, his soul gems do not crumble to dust when he is destroyed.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disintegrating Bite&lt;/b&gt; (fear) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +29 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 19 damage, and ongoing 15 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Flame slides the target up to 2 squares.&lt;/p&gt;]] (⚔) <b>Disintegrating Bite</b> (fear) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+29[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disintegrating Bite&lt;/b&gt; (fear) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+29 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 19#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disintegrating Bite&lt;/b&gt; (fear) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 19 damage, and ongoing 15 damage (save ends).&lt;/p&gt;]] <32>  damage, and ongoing 15 damage (save ends).</p><p><i>Effect:</i> Flame slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Corrupting Bolt&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +27 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d10 + 20 damage, and the target cannot regain hit points (save ends).&lt;/p&gt;]] (➶) <b>Corrupting Bolt</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+27[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Corrupting Bolt&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+27 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 5d10 + 20#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Corrupting Bolt&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d10 + 20 damage, and the target cannot regain hit points (save ends).&lt;/p&gt;]] <47.5>  damage, and the target cannot regain hit points (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Draconic Fury&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Flame makes two basic attacks.&lt;/p&gt;]]  <b>Draconic Fury</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Flame makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Balefire Breath&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +27 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 40 fire and necrotic damage (save ends), Flame pushes the target up to 4 squares, and the target falls prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Ongoing 20 fire and necrotic damage (save ends), and Flame pushes the target up to 2 squares.&lt;/p&gt;]] ᗕ <b>Balefire Breath</b> (fire, necrotic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+27[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Balefire Breath&lt;/b&gt; (fire, necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+27 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 40 fire and necrotic damage (save ends), Flame pushes the target up to 4 squares, and the target falls prone.</p><p><i>Miss:</i> Ongoing 20 fire and necrotic damage (save ends), and Flame pushes the target up to 2 squares.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dread Teleport&lt;/b&gt; (fear, teleportation) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Flame teleports up to 8 squares. Any enemy adjacent to the space Flame leaves is dazed until the start of that enemy’s next turn.&lt;/p&gt;]]  <b>Dread Teleport</b> (fear, teleportation) ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> Flame teleports up to 8 squares. Any enemy adjacent to the space Flame leaves is dazed until the start of that enemy’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Soul Drain&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +27 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dazed and slowed (save ends both). If the target dies while under the effect of soul drain, its soul becomes trapped in one of Flame’s soul gems.&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is instead unconscious and restrained (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target dies.&lt;/p&gt;]] ➶ <b>Soul Drain</b> ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+27[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Soul Drain&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+27 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dazed and slowed (save ends both). If the target dies while under the effect of soul drain, its soul becomes trapped in one of Flame’s soul gems.</p><p><i>First Failed Saving Throw:</i> The target is instead unconscious and restrained (save ends both).</p><p><i>Second Failed Saving Throw:</i> The target dies.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Consume Soul&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One soul in Flame’s soul gems is destroyed. Flame gains an action point, and all his encounter and recharge powers, other than this one, recharge.&lt;/p&gt;]]  <b>Consume Soul</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> One soul in Flame’s soul gems is destroyed. Flame gains an action point, and all his encounter and recharge powers, other than this one, recharge.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Soul Shred&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A melee or a ranged attack hits Flame.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Close burst 5 (one enemy under the effect of soul drain in the burst); the target takes the same amount of damage Flame took.&lt;/p&gt;]] ᗕ <b>Soul Shred</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> A melee or a ranged attack hits Flame.</p><p><i>Effect (Immediate Reaction):</i> Close burst 5 (one enemy under the effect of soul drain in the burst); the target takes the same amount of damage Flame took.</p></tr></td></table>",

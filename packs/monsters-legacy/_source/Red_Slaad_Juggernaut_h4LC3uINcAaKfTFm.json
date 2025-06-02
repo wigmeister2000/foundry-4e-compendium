@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -768,23 +769,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 296; <b>Bloodied</b> 148<hr><b>Immune</b> chaos phage </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 30</td><td><b>Ref</b> 25</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, teleport 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+13)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 16 (+10)<br><b>Int</b> 10 (+7)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 11 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +18, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Brutal Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +21 vs AC; 2d8+6 damage, and the target is knocked prone and exposed to chaos phage (see page 142). &lt;/p&gt;]] (⚔) <b>Brutal Claw</b> (standard, at-will) ✦ <b>Disease</b></p><p>Reach 3; [[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Brutal Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+21 vs AC&lt;/u&gt;; 2d8+6 damage, and the target is knocked prone and exposed to chaos phage (see page 142). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Brutal Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +21 vs AC; 2d8+6 damage, and the target is knocked prone and exposed to chaos phage (see page 142). &lt;/p&gt;]] <15>  damage, and the target is knocked prone and exposed to chaos phage (see page 142). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Claw Apocalypse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +19 vs AC; 2d8+6 damage, and the target is knocked prone and exposed to chaos phage. &lt;/p&gt;]] ᗕ <b>Claw Apocalypse</b> (standard, at-will) ✦ <b>Disease</b></p><p>Close burst 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Claw Apocalypse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+6 damage, and the target is knocked prone and exposed to chaos phage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Claw Apocalypse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +19 vs AC; 2d8+6 damage, and the target is knocked prone and exposed to chaos phage. &lt;/p&gt;]] <15>  damage, and the target is knocked prone and exposed to chaos phage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rend the Fallen&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; targets a prone creature; +21 vs AC; 2d8+6 damage. &lt;/p&gt;]] ⚔ <b>Rend the Fallen</b> (minor, at-will) </p><p>Reach 3; targets a prone creature; [[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rend the Fallen&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; targets a prone creature; &lt;u&gt;+21 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rend the Fallen&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; targets a prone creature; +21 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Juggernaut\"s Punishment&lt;/b&gt; (opportunity, when a creature within 2 squares of the red slaad juggernaut moves or stands up; at-will) &lt;/p&gt;&lt;p&gt;The red slaad juggernaut makes a melee basic attack against the triggering creature.&lt;/p&gt;]]  <b>Juggernaut\"s Punishment</b> (opportunity, when a creature within 2 squares of the red slaad juggernaut moves or stands up; at-will) </p><p>The red slaad juggernaut makes a melee basic attack against the triggering creature.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -290,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -471,10 +472,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -652,10 +653,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1085,7 +1086,7 @@
 		},
 		{
 			"name":"Combat Leader",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"fwMCdAi2BQbyzvD4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1121,7 +1122,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1535,23 +1537,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 266; <b>Bloodied</b> 133</td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 27</td><td><b>Ref</b> 26</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+12)<br><b>Con</b> 13 (+8)</td><td><b>Dex</b> 14 (+9)<br><b>Int</b> 18 (+11)</td><td><b>Wis</b> 11 (+7)<br><b>Cha</b> 16 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Diplomacy +15, History +16, Intimidate +12, Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> +4 house insignia, chainmail , light shield , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+10 damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 1d8+10 damage. &lt;/p&gt;]]; [[/roll 1d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+10 damage. &lt;/p&gt;]] <14.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Commander\"s Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs ; 2d8+6 damage.. Zaknoril chooses one ally who can see and hear him to make a melee basic attack against a target. On a hit, the ally deals an extra 4 damage.&lt;/p&gt;]] ⚔ <b>Commander\"s Strike</b> (standard, at-will) ✦ <b>Martial, Weapon</b></p><p>+19 vs ; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Commander\"s Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs ; 2d8+6 damage.. Zaknoril chooses one ally who can see and hear him to make a melee basic attack against a target. On a hit, the ally deals an extra 4 damage.&lt;/p&gt;]] <15>  damage.. Zaknoril chooses one ally who can see and hear him to make a melee basic attack against a target. On a hit, the ally deals an extra 4 damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Surprise Attack&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+10 damage. An ally within 5 squares of Zaknoril makes a basic attack with combat advantage and a +4 bonus to the attack roll as a free action against a target of its choice. &lt;/p&gt;]] ⚔ <b>Surprise Attack</b> (standard, encounter) ✦ <b>Martial, Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Surprise Attack&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 1d8+10 damage. An ally within 5 squares of Zaknoril makes a basic attack with combat advantage and a +4 bonus to the attack roll as a free action against a target of its choice. &lt;/p&gt;]]; [[/roll 1d8+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Surprise Attack&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+10 damage. An ally within 5 squares of Zaknoril makes a basic attack with combat advantage and a +4 bonus to the attack roll as a free action against a target of its choice. &lt;/p&gt;]] <14.5>  damage. An ally within 5 squares of Zaknoril makes a basic attack with combat advantage and a +4 bonus to the attack roll as a free action against a target of its choice. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Beat Them into the Ground&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs Fortitude; 2d8+10 damage, and the target is knocked prone. Every ally within 5 squares of Zaknoril makes a basic attack with a +4 bonus to one target of its choice as a free action. These attacks deal no damage but knock a target prone on a hit. &lt;/p&gt;]] ⚔ <b>Beat Them into the Ground</b> (standard, encounter) ✦ <b>Martial, Weapon</b></p><p>[[/roll 1d20+19[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Beat Them into the Ground&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs Fortitude&lt;/u&gt;; 2d8+10 damage, and the target is knocked prone. Every ally within 5 squares of Zaknoril makes a basic attack with a +4 bonus to one target of its choice as a free action. These attacks deal no damage but knock a target prone on a hit. &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Beat Them into the Ground&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Martial, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs Fortitude; 2d8+10 damage, and the target is knocked prone. Every ally within 5 squares of Zaknoril makes a basic attack with a +4 bonus to one target of its choice as a free action. These attacks deal no damage but knock a target prone on a hit. &lt;/p&gt;]] <19>  damage, and the target is knocked prone. Every ally within 5 squares of Zaknoril makes a basic attack with a +4 bonus to one target of its choice as a free action. These attacks deal no damage but knock a target prone on a hit. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; +19 vs Reflex; until the end of Zaknoril’s next turn, all attacks against the target have combat advantage, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]] ➶ <b>Darkfire</b> (minor, encounter) </p><p>Ranged 10; [[/roll 1d20+19[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+19 vs Reflex&lt;/u&gt;; until the end of Zaknoril’s next turn, all attacks against the target have combat advantage, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]]; until the end of Zaknoril’s next turn, all attacks against the target have combat advantage, and the target cannot benefit from invisibility or concealment. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Inspiring Word&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Zaknoril or one ally in a close burst 10 heals 20 hit points.&lt;/p&gt;]] ⚔ <b>Inspiring Word</b> (minor, recharge ⚅</p><p>Zaknoril or one ally in a close burst 10 heals 20 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tactical Shift&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Martial&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Zaknoril chooses one ally who can see and hear him. That ally can shift up to 5 squares.&lt;/p&gt;]]  <b>Tactical Shift</b> (minor; at-will) ✦ <b>Martial</b></p><p>Zaknoril chooses one ally who can see and hear him. That ally can shift up to 5 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;House Insignia&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;Zaknoril gains concealment until the end of the encounter.&lt;/p&gt;]]  <b>House Insignia</b> (minor; encounter) </p><p>Zaknoril gains concealment until the end of the encounter.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Leader&lt;/b&gt;&lt;/p&gt;&lt;p&gt;All allies within 10 squares of Zaknoril who can see and hear him gain a +2 power bonus to initiative.&lt;/p&gt;]]  <b>Combat Leader</b></p><p>All allies within 10 squares of Zaknoril who can see and hear him gain a +2 power bonus to initiative.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -650,10 +652,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -951,23 +953,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 79; <b>Bloodied</b> 39</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 18</td><td><b>Ref</b> 21</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+4)<br><b>Con</b> 15 (+5)</td><td><b>Dex</b> 20 (+8)<br><b>Int</b> 12 (+4)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 10 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Any</td></tr><tr><td><b>Skills</b> Acrobatics +13, Intimidate +5, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> fangblade, chainmail , shuriken  x20.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fangblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 2d8+2 poison damage (crit 1d8+18). &lt;/p&gt;]] (⚔) <b>Fangblade</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fangblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 2d8+2 poison damage (crit 1d8+18). &lt;/p&gt;]]; [[/roll 2d8+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fangblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 2d8+2 poison damage (crit 1d8+18). &lt;/p&gt;]] <11>  poison damage (crit [[/roll 1d8+18#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fangblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 2d8+2 poison damage (crit 1d8+18). &lt;/p&gt;]] <22.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shuriken&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 6/12; +13 vs AC; 2d4+5 poison damage. &lt;/p&gt;]] (➶) <b>Shuriken</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>Ranged 6/12; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shuriken&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 6/12; &lt;u&gt;+13 vs AC&lt;/u&gt;; 2d4+5 poison damage. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shuriken&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 6/12; +13 vs AC; 2d4+5 poison damage. &lt;/p&gt;]] <10>  poison damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mobile Melee Attack&lt;/b&gt; (standard; usable when wielding a fangblade, at-will) &lt;/p&gt;&lt;p&gt;The drow adventurer can move up to 3 squares and make one melee basic attack at any point during that movement. It doesn’t provoke opportunity attacks when moving away from the target of its attack.&lt;/p&gt;]] ⚔ <b>Mobile Melee Attack</b> (standard; usable when wielding a fangblade, at-will) </p><p>The drow adventurer can move up to 3 squares and make one melee basic attack at any point during that movement. It doesn’t provoke opportunity attacks when moving away from the target of its attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Venomous Slash&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Required fangblade; +10 vs AC; 3d8+5 poison damage (crit 1d8+29), and all enemies adjacent to the target take 6 poison damage. &lt;/p&gt;]] ⚔ <b>Venomous Slash</b> (standard, recharge ⚄⚅) ✦ <b>Poison, Weapon</b></p><p>Required fangblade; [[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Venomous Slash&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Required fangblade; &lt;u&gt;+10 vs AC&lt;/u&gt;; 3d8+5 poison damage (crit 1d8+29), and all enemies adjacent to the target take 6 poison damage. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Venomous Slash&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Required fangblade; +10 vs AC; 3d8+5 poison damage (crit 1d8+29), and all enemies adjacent to the target take 6 poison damage. &lt;/p&gt;]] <18.5>  poison damage (crit [[/roll 1d8+29#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Venomous Slash&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Required fangblade; +10 vs AC; 3d8+5 poison damage (crit 1d8+29), and all enemies adjacent to the target take 6 poison damage. &lt;/p&gt;]] <33.5> ), and all enemies adjacent to the target take 6 poison damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; +10 vs Reflex; until the end of the drow adventurer’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]] ➶ <b>Darkfire</b> (minor, encounter) </p><p>Ranged 10; [[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+10 vs Reflex&lt;/u&gt;; until the end of the drow adventurer’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]]; until the end of the drow adventurer’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. </p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Slashing Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"iOPKxupj4cZVQJCa",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"All-Around Defense",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jmIcHJkAhZxvYiTq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Freedom of Movement",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Lat8Wu2PrvBmQYMf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -902,23 +906,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 112; <b>Bloodied</b> 56</td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 31</td><td><b>Ref</b> 31</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, fly 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+12)<br><b>Con</b> 20 (+14)</td><td><b>Dex</b> 20 (+14)<br><b>Int</b> 13 (+10)</td><td><b>Wis</b> 13 (+10)<br><b>Cha</b> 17 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 20<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Slashing Aura&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;An enemy that ends its turn in the aura takes 10 damage, or 15 while the ragewind is bloodied.&lt;/p&gt;]] ⌀ <b>Slashing Aura</b> ✦ <b>Aura</b> 1</p><p>An enemy that ends its turn in the aura takes 10 damage, or 15 while the ragewind is bloodied.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Defense&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The ragewind does not provoke opportunity attacks when it moves.&lt;/p&gt;]]  <b>All-Around Defense</b> <b></b></p><p>The ragewind does not provoke opportunity attacks when it moves.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Freedom of Movement&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any immobilizing or slowing effects on the ragewind end at the start of its turn.&lt;/p&gt;]]  <b>Freedom of Movement</b> <b></b></p><p>Any immobilizing or slowing effects on the ragewind end at the start of its turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Weapon Fury&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 8 damage. If the ragewind is bloodied, it gains 10 temporary hit points.&lt;/p&gt;]] (⚔) <b>Weapon Fury</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Weapon Fury&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Weapon Fury&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 8 damage. If the ragewind is bloodied, it gains 10 temporary hit points.&lt;/p&gt;]] <26>  damage. If the ragewind is bloodied, it gains 10 temporary hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rush of Blades&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The ragewind shifts up to 5 squares and makes the following attack at any point during this movement.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 8 damage. If the ragewind is bloodied, it gains 10 temporary hit points.&lt;/p&gt;]] ⚔ <b>Rush of Blades</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The ragewind shifts up to 5 squares and makes the following attack at any point during this movement.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rush of Blades&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rush of Blades&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 8 damage. If the ragewind is bloodied, it gains 10 temporary hit points.&lt;/p&gt;]] <26>  damage. If the ragewind is bloodied, it gains 10 temporary hit points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Steel Whirlwind&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1, or 2 if the ragewind is bloodied (enemies in the burst); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 21 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Steel Whirlwind</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 1, or 2 if the ragewind is bloodied (enemies in the burst); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Steel Whirlwind&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1, or 2 if the ragewind is bloodied (enemies in the burst); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 21#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Steel Whirlwind&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 21 damage.&lt;/p&gt;]] <39>  damage.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Death\"s Rage&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The ragewind dies.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 5 (enemies in the burst); +21 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target makes a basic attack against its nearest ally as a free action.&lt;/p&gt;]] ᗕ <b>Death\"s Rage</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The ragewind dies.</p><p><i>Attack (No Action):</i> Close burst 5 (enemies in the burst); [[/roll 1d20+21[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Death\"s Rage&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+21 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target makes a basic attack against its nearest ally as a free action.</p></tr></td></table>",

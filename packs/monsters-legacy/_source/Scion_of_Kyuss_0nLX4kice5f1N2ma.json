@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Marking Tendrils",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qMvEhgsJzxYjWmGD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -509,10 +511,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -812,23 +814,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 552; <b>Bloodied</b> 276<hr><b>Resist</b> 30 necrotic <b>Vulnerable</b> 15 radiant <b>Immune</b> disease, fear, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 43</td><td><b>Ref</b> 40</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 32 (+26)<br><b>Con</b> 28 (+24)</td><td><b>Dex</b> 26 (+23)<br><b>Int</b> 20 (+20)</td><td><b>Wis</b> 18 (+19)<br><b>Cha</b> 21 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Marking Tendrils&lt;/b&gt; (aura 2); writhing tendrils surround the scion of Kyuss; enemies starting their turn in the aura take 15 damage and are marked by the scion of Kyuss until the end of the scion’s next turn.]] <b>Marking Tendrils</b> (aura 2); writhing tendrils surround the scion of Kyuss; enemies starting their turn in the aura take 15 damage and are marked by the scion of Kyuss until the end of the scion’s next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 2d8 + 11 damage, and the scion can choose to immobilize (save ends) or grab the target. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 4; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+35 vs AC&lt;/u&gt;; 2d8 + 11 damage, and the scion can choose to immobilize (save ends) or grab the target. &lt;/p&gt;]]; [[/roll 2d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 2d8 + 11 damage, and the scion can choose to immobilize (save ends) or grab the target. &lt;/p&gt;]] <20>  damage, and the scion can choose to immobilize (save ends) or grab the target. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Swallow&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a bloodied Huge or smaller creature the scion of Kyuss is grabbing; +33 vs Fortitude; the target is swallowed. A swallowed target is grabbed and restrained. A swallowed creature has line of sight and line of effect only to the scion of Kyuss, and no creature has line of sight or line of effect to it. A creature that escapes the grab is no longer swallowed and appears in a space adjacent to the scion of Kyuss. A scion of Kyuss can move normally while it has a target swallowed. When the scion of Kyuss dies, the target can escape as a move action, appearing in the scion of Kyuss’s former space. Sustain Minor: The scion of Kyuss sustains the grab, and the target takes 20 damage. &lt;/p&gt;]] ⚔ <b>Swallow</b> (standard, at-will) </p><p>Targets a bloodied Huge or smaller creature the scion of Kyuss is grabbing; [[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Swallow&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a bloodied Huge or smaller creature the scion of Kyuss is grabbing; &lt;u&gt;+33 vs Fortitude&lt;/u&gt;; the target is swallowed. A swallowed target is grabbed and restrained. A swallowed creature has line of sight and line of effect only to the scion of Kyuss, and no creature has line of sight or line of effect to it. A creature that escapes the grab is no longer swallowed and appears in a space adjacent to the scion of Kyuss. A scion of Kyuss can move normally while it has a target swallowed. When the scion of Kyuss dies, the target can escape as a move action, appearing in the scion of Kyuss’s former space. Sustain Minor: The scion of Kyuss sustains the grab, and the target takes 20 damage. &lt;/p&gt;]]; the target is swallowed. A swallowed target is grabbed and restrained. A swallowed creature has line of sight and line of effect only to the scion of Kyuss, and no creature has line of sight or line of effect to it. A creature that escapes the grab is no longer swallowed and appears in a space adjacent to the scion of Kyuss. A scion of Kyuss can move normally while it has a target swallowed. When the scion of Kyuss dies, the target can escape as a move action, appearing in the scion of Kyuss’s former space. Sustain Minor: The scion of Kyuss sustains the grab, and the target takes 20 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Kyuss&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies only; +33 vs Reflex; 5d12 + 8 necrotic damage, and the target is slowed (save ends). Miss: Half damage, and the target is slowed until the end of the scion’s next turn. &lt;/p&gt;]] ᗕ <b>Breath of Kyuss</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Close blast 5; targets enemies only; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Kyuss&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies only; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 5d12 + 8 necrotic damage, and the target is slowed (save ends). Miss: Half damage, and the target is slowed until the end of the scion’s next turn. &lt;/p&gt;]]; [[/roll 5d12 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Kyuss&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies only; +33 vs Reflex; 5d12 + 8 necrotic damage, and the target is slowed (save ends). Miss: Half damage, and the target is slowed until the end of the scion’s next turn. &lt;/p&gt;]] <40.5>  necrotic damage, and the target is slowed (save ends). Miss: Half damage, and the target is slowed until the end of the scion’s next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lashing Tendrils &lt;/b&gt; (immediate interrupt, when a creature marked by the scion moves out of a square adjacent to the scion, at-will) &lt;/p&gt;&lt;p&gt;Reach 1; +35 vs AC; 2d8 + 11 damage, and the target is immobilized (save ends). &lt;/p&gt;]] ⚔ <b>Lashing Tendrils </b> (immediate interrupt, when a creature marked by the scion moves out of a square adjacent to the scion, at-will) </p><p>Reach 1; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lashing Tendrils &lt;/b&gt; (immediate interrupt, when a creature marked by the scion moves out of a square adjacent to the scion, at-will) &lt;/p&gt;&lt;p&gt;Reach 1; &lt;u&gt;+35 vs AC&lt;/u&gt;; 2d8 + 11 damage, and the target is immobilized (save ends). &lt;/p&gt;]]; [[/roll 2d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lashing Tendrils &lt;/b&gt; (immediate interrupt, when a creature marked by the scion moves out of a square adjacent to the scion, at-will) &lt;/p&gt;&lt;p&gt;Reach 1; +35 vs AC; 2d8 + 11 damage, and the target is immobilized (save ends). &lt;/p&gt;]] <20>  damage, and the target is immobilized (save ends). </p></tr></td></table>",

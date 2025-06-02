@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Whirling Blades",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xaOXRQHeEAUVhMZr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -764,7 +766,7 @@
 		},
 		{
 			"name":"Tunnel Fighting",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"CZQijw7z3MYEpDBc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -800,7 +802,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -856,23 +859,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 276; <b>Bloodied</b> 138<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 24</td><td><b>Ref</b> 23</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+11)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 18 (+9)<br><b>Int</b> 1 (0)</td><td><b>Wis</b> 10 (+5)<br><b>Cha</b> 3 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Whirling Blades&lt;/b&gt; aura 2; each creature that starts its turn within the aura takes 5 damage.]] <b>Whirling Blades</b> aura 2; each creature that starts its turn within the aura takes 5 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slicking Blade&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +14 vs AC; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]] (⚔) <b>Slicking Blade</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slicking Blade&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+14 vs AC&lt;/u&gt;; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slicking Blade&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +14 vs AC; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]] <15>  damage (crit [[/roll 4d8+22#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slicking Blade&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +14 vs AC; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]] <40> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Whirling Bladestorm&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +14 vs AC; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]] ᗕ <b>Whirling Bladestorm</b> (standard, at-will) </p><p>Close burst 2; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Whirling Bladestorm&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+14 vs AC&lt;/u&gt;; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Whirling Bladestorm&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +14 vs AC; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]] <15>  damage (crit [[/roll 4d8+22#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Whirling Bladestorm&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +14 vs AC; 2d8+6 damage (crit 4d8+22). &lt;/p&gt;]] <40> ). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Bladestorm&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;The slaughterstone slicer uses whirling bladestorm&lt;/p&gt;]] ᗕ <b>Bloodied Bladestorm</b> (free, when first bloodied, encounter) </p><p>The slaughterstone slicer uses whirling bladestorm</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Critical Malfunction&lt;/b&gt; ( when the slaughterstone slicer scores a critical hit or is subject to a critical hit) &lt;/p&gt;&lt;p&gt;The slicer is dazed until the end of its next turn.&lt;/p&gt;]]  <b>Critical Malfunction</b> ( when the slaughterstone slicer scores a critical hit or is subject to a critical hit) </p><p>The slicer is dazed until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tunnel Fighting&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A slaughterstone slicer takes no penalty to attack rolls while squeezing and does not grant combat advantage while squeezing.&lt;/p&gt;]]  <b>Tunnel Fighting</b></p><p>A slaughterstone slicer takes no penalty to attack rolls while squeezing and does not grant combat advantage while squeezing.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Ward of Vitality",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VObz5LxhJiWrKj4N",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 104; <b>Bloodied</b> 52</td><td style=\"padding-left: 15px;\"><b>Init</b> +2 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 15</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+5)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 11 (+2)<br><b>Int</b> 15 (+4)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 18 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Bluff +11, Diplomacy +11, Religion +9</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> scepter, phylactery of action, black cloak, black tunic, light shield , plate armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Ward of Vitality&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Allies that start their turns in the aura gain 3 temporary hit points as long as Lareth is not bloodied.&lt;/p&gt;]] ⌀ <b>Ward of Vitality</b> ✦ <b>Aura</b> 5</p><p>Allies that start their turns in the aura gain 3 temporary hit points as long as Lareth is not bloodied.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scepter&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the target is dazed until the end of Lareth’s next turn.&lt;/p&gt;]] (⚔) <b>Scepter</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scepter&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scepter&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the target is dazed until the end of Lareth’s next turn.&lt;/p&gt;]] <12>  damage, and the target is dazed until the end of Lareth’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Commanding Voice&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); +7 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 psychic damage, and Lareth slides the target up to 2 squares.&lt;/p&gt;]] ᗕ <b>Commanding Voice</b> (psychic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 5 (enemies in the burst); [[/roll 1d20+7[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Commanding Voice&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+7 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Commanding Voice&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 psychic damage, and Lareth slides the target up to 2 squares.&lt;/p&gt;]] <12.5>  psychic damage, and Lareth slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Curse of Blindness&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +7 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 necrotic damage, and the target is blinded (save ends).&lt;/p&gt;]] ᗕ <b>Curse of Blindness</b> (necrotic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+7[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Curse of Blindness&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+7 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Curse of Blindness&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 necrotic damage, and the target is blinded (save ends).&lt;/p&gt;]] <9.5>  necrotic damage, and the target is blinded (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Terrible Visage&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy bloodies Lareth with an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Until the end of the encounter, Lareth gains a +2 bonus to melee attack rolls and melee damage rolls against the triggering enemy.&lt;/p&gt;]]  <b>Terrible Visage</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy bloodies Lareth with an attack.</p><p><i>Effect (No Action):</i> Until the end of the encounter, Lareth gains a +2 bonus to melee attack rolls and melee damage rolls against the triggering enemy.</p></tr></td></table>",

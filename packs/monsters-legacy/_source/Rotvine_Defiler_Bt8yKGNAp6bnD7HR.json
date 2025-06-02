@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Despoiled Morass",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kjFuibVL8da79yQU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -772,7 +774,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HQhotIvy4ApfVkix",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -808,7 +810,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -864,23 +867,10 @@
 				"max":10
 			},
 			"init":{
-				"value":19,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":19
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1210; <b>Bloodied</b> 605<hr><b>Resist</b> 15 necrotic, 10 poison <b>Immune</b> disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +19 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 41</td><td><b>Ref</b> 39</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, burrow 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+22)<br><b>Con</b> 26 (+21)</td><td><b>Dex</b> 22 (+19)<br><b>Int</b> 8 (+12)</td><td><b>Wis</b> 17 (+16)<br><b>Cha</b> 20 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 10<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Despoiled Morass&lt;/b&gt; aura 4; any creature that starts its turn within the aura is slowed until the start of its next turn.]] <b>Despoiled Morass</b> aura 4; any creature that starts its turn within the aura is slowed until the start of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lashing Tendrils&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +30 vs AC; 3d8+9 necrotic damage, and the target cannot shift until the end of its next turn. &lt;/p&gt;]] (⚔) <b>Lashing Tendrils</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 4; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lashing Tendrils&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+30 vs AC&lt;/u&gt;; 3d8+9 necrotic damage, and the target cannot shift until the end of its next turn. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lashing Tendrils&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +30 vs AC; 3d8+9 necrotic damage, and the target cannot shift until the end of its next turn. &lt;/p&gt;]] <22.5>  necrotic damage, and the target cannot shift until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils of Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +29 vs Reflex; 3d8+9 necrotic damage, and the target is restrained (save ends). Miss: Half damage, and the target is not restrained. &lt;/p&gt;]] ᗕ <b>Tendrils of Rot</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils of Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 3d8+9 necrotic damage, and the target is restrained (save ends). Miss: Half damage, and the target is not restrained. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils of Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +29 vs Reflex; 3d8+9 necrotic damage, and the target is restrained (save ends). Miss: Half damage, and the target is not restrained. &lt;/p&gt;]] <22.5>  necrotic damage, and the target is restrained (save ends). Miss: Half damage, and the target is not restrained. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Earthly Maw&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets each creature restrained by the rotvine defiler; +30 vs Fortitude; the target takes ongoing 15 necrotic damage, loses a healing surge at the start of each of its turns and is grabbed (escape ends all). &lt;/p&gt;]] ᗕ <b>Earthly Maw</b> (minor 1/round, at-will) ✦ <b>Necrotic</b></p><p>Close burst 5; targets each creature restrained by the rotvine defiler; [[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Earthly Maw&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets each creature restrained by the rotvine defiler; &lt;u&gt;+30 vs Fortitude&lt;/u&gt;; the target takes ongoing 15 necrotic damage, loses a healing surge at the start of each of its turns and is grabbed (escape ends all). &lt;/p&gt;]]; the target takes ongoing 15 necrotic damage, loses a healing surge at the start of each of its turns and is grabbed (escape ends all). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Putrescent Explosion&lt;/b&gt; ( when first bloodied and again when the rotvine defiler is reduced to 0 hit points, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +29 vs Reflex; 3d8+9 necrotic damage. &lt;/p&gt;]] ᗕ <b>Putrescent Explosion</b> ( when first bloodied and again when the rotvine defiler is reduced to 0 hit points, ) ✦ <b>Necrotic</b></p><p>Close burst 10; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Putrescent Explosion&lt;/b&gt; ( when first bloodied and again when the rotvine defiler is reduced to 0 hit points, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 3d8+9 necrotic damage. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Putrescent Explosion&lt;/b&gt; ( when first bloodied and again when the rotvine defiler is reduced to 0 hit points, ) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +29 vs Reflex; 3d8+9 necrotic damage. &lt;/p&gt;]] <22.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A rotvine defiler can make opportunity attacks against all enemies within its reach (4 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>A rotvine defiler can make opportunity attacks against all enemies within its reach (4 squares).</p></tr></td></table>",

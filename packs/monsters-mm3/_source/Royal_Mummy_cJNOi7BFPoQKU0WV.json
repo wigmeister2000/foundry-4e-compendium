@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regal Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"iuTs2dIGMy3wLvxo",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Curse of Fear",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KvCkxzNun0beqh7a",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Flammable Corpus",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8Y9ZbWQNDPt37g1V",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -379,7 +383,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1268,23 +1273,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 236; <b>Bloodied</b> 118<hr><b>Resist</b> 10 necrotic, 10 poison <b>Immune</b> disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 22</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+11)<br><b>Con</b> 14 (+8)</td><td><b>Dex</b> 8 (+5)<br><b>Int</b> 14 (+8)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 22 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Insight +14, Religion +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 24</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Curse of Fear&lt;/b&gt; (fear) ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Enemies take a -2 penalty to all defenses against the mummy’s attacks while in the aura.&lt;/p&gt;]] ⌀ <b>Curse of Fear</b> (fear) ✦ <b>Aura</b> 5</p><p>Enemies take a -2 penalty to all defenses against the mummy’s attacks while in the aura.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Flammable Corpus&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the mummy takes fire damage, it also takes ongoing 5 fire damage (save ends).&lt;/p&gt;]]  <b>Flammable Corpus</b> <b></b></p><p>Whenever the mummy takes fire damage, it also takes ongoing 5 fire damage (save ends).</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scepter&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage.&lt;/p&gt;]] (⚔) <b>Scepter</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scepter&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scepter&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage.&lt;/p&gt;]] <18>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Plague Chant&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 necrotic damage, and ongoing 5 necrotic damage (save ends). Each time the target takes this ongoing damage, each ally adjacent to it takes 5 necrotic damage.&lt;/p&gt;]] (➶) <b>Plague Chant</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Plague Chant&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Plague Chant&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 necrotic damage, and ongoing 5 necrotic damage (save ends). Each time the target takes this ongoing damage, each ally adjacent to it takes 5 necrotic damage.&lt;/p&gt;]] <13>  necrotic damage, and ongoing 5 necrotic damage (save ends). Each time the target takes this ongoing damage, each ally adjacent to it takes 5 necrotic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grip of Despair&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +15 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 9 psychic damage, and the target is immobilized and takes a -2 penalty to attack rolls until the end of the mummy’s next turn.&lt;/p&gt;]] ➶ <b>Grip of Despair</b> (fear, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+15[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grip of Despair&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+15 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d12 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Grip of Despair&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 9 psychic damage, and the target is immobilized and takes a -2 penalty to attack rolls until the end of the mummy’s next turn.&lt;/p&gt;]] <15.5>  psychic damage, and the target is immobilized and takes a -2 penalty to attack rolls until the end of the mummy’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Sow Fear and Pestilence&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mummy uses plague chant and grip of despair.&lt;/p&gt;]] ➶ <b>Sow Fear and Pestilence</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The mummy uses plague chant and grip of despair.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Grave Terror&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +15 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 13 psychic damage, and the mummy pushes the target up to 4 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the mummy pushes the target up to 2 squares.&lt;/p&gt;]] ᗕ <b>Grave Terror</b> (fear, psychic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+15[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Grave Terror&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+15 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 13#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Grave Terror&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 13 psychic damage, and the mummy pushes the target up to 4 squares.&lt;/p&gt;]] <24>  psychic damage, and the mummy pushes the target up to 4 squares.</p><p><i>Miss:</i> Half damage, and the mummy pushes the target up to 2 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Enfeebling Curse&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ranged 10 (one creature). Whenever the target spends a healing surge, it becomes weakened until the end of its next turn. This effect lasts until the mummy uses this power again or until the target takes an extended rest.&lt;/p&gt;]]  <b>Enfeebling Curse</b> ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> Ranged 10 (one creature). Whenever the target spends a healing surge, it becomes weakened until the end of its next turn. This effect lasts until the mummy uses this power again or until the target takes an extended rest.</p></tr></td></table>",

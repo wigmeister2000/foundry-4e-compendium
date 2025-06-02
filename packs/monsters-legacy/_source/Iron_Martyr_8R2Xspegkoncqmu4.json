@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 66; <b>Bloodied</b> 33</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 18</td><td><b>Ref</b> 16</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+6)<br><b>Con</b> 16 (+5)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 8 (+1)</td><td><b>Wis</b> 11 (+2)<br><b>Cha</b> 10 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> iron helmet, leather armor , spiked gauntlet .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 1d6+6 damage, and the target is dazed until the end of the iron martyr’s next turn. &lt;/p&gt;]] (⚔) <b>Spiked Gauntlet</b> (standard, at-will) </p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d6+6 damage, and the target is dazed until the end of the iron martyr’s next turn. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Gauntlet&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 1d6+6 damage, and the target is dazed until the end of the iron martyr’s next turn. &lt;/p&gt;]] <9.5>  damage, and the target is dazed until the end of the iron martyr’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hideous Strike&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;+7 vs AC; 3d6+4 damage, and the target is stunned until the end of the iron martyr’s next turn. &lt;/p&gt;]] ⚔ <b>Hideous Strike</b> (standard, encounter) </p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hideous Strike&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 3d6+4 damage, and the target is stunned until the end of the iron martyr’s next turn. &lt;/p&gt;]]; [[/roll 3d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hideous Strike&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;+7 vs AC; 3d6+4 damage, and the target is stunned until the end of the iron martyr’s next turn. &lt;/p&gt;]] <14.5>  damage, and the target is stunned until the end of the iron martyr’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bloodsoaked Fury&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;The iron martyr gains a +2 bonus to attack rolls, damage rolls, and Will.&lt;/p&gt;]]  <b>Bloodsoaked Fury</b> (standard; encounter) </p><p>The iron martyr gains a +2 bonus to attack rolls, damage rolls, and Will.</p></tr></td></table>",

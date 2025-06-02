@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Cloud of Webs",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3Wqhk2nLRtPfXEKa",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,10 +333,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -509,10 +511,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -687,10 +689,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -988,23 +990,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 272; <b>Bloodied</b> 136<hr><b>Vulnerable</b> 10 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 25</td><td><b>Ref</b> 21</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+11)<br><b>Con</b> 24 (+13)</td><td><b>Dex</b> 17 (+9)<br><b>Int</b> 3 (+2)</td><td><b>Wis</b> 11 (+6)<br><b>Cha</b> 3 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Cloud of Webs&lt;/b&gt; aura 2; enemies that enter or start their turn in the aura are slowed and take a -2 penalty to attacks.]] <b>Cloud of Webs</b> aura 2; enemies that enter or start their turn in the aura are slowed and take a -2 penalty to attacks.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+5 damage, and target is grabbed (until escape). A web golem grappler can grab up to two enemies at a time. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+5 damage, and target is grabbed (until escape). A web golem grappler can grab up to two enemies at a time. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+5 damage, and target is grabbed (until escape). A web golem grappler can grab up to two enemies at a time. &lt;/p&gt;]] <14>  damage, and target is grabbed (until escape). A web golem grappler can grab up to two enemies at a time. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Living Weapon&lt;/b&gt; (standard; must currently have an opponent grabbed, at-will) &lt;/p&gt;&lt;p&gt;the grappler uses the grabbed foe as a club against the target; reach 2; +19 vs AC; 2d8+5 damage to the target and the grabbed opponent. &lt;/p&gt;]] ⚔ <b>Living Weapon</b> (standard; must currently have an opponent grabbed, at-will) </p><p>the grappler uses the grabbed foe as a club against the target; reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Living Weapon&lt;/b&gt; (standard; must currently have an opponent grabbed, at-will) &lt;/p&gt;&lt;p&gt;the grappler uses the grabbed foe as a club against the target; reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+5 damage to the target and the grabbed opponent. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Living Weapon&lt;/b&gt; (standard; must currently have an opponent grabbed, at-will) &lt;/p&gt;&lt;p&gt;the grappler uses the grabbed foe as a club against the target; reach 2; +19 vs AC; 2d8+5 damage to the target and the grabbed opponent. &lt;/p&gt;]] <14>  damage to the target and the grabbed opponent. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Adhesive&lt;/b&gt; (immediate reaction, when struck by a melee attack, at-will) &lt;/p&gt;&lt;p&gt;+18 vs Reflex; the target is immobilized (save ends). &lt;/p&gt;]] ⚔ <b>Adhesive</b> (immediate reaction, when struck by a melee attack, at-will) </p><p>[[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Adhesive&lt;/b&gt; (immediate reaction, when struck by a melee attack, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs Reflex&lt;/u&gt;; the target is immobilized (save ends). &lt;/p&gt;]]; the target is immobilized (save ends). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blinding Strands&lt;/b&gt; (free, when reduced to 0 hit points, encounter) &lt;/p&gt;&lt;p&gt;The web golem grappler explodes in a burst of sticky strands; close burst 3; +19 vs AC; target is slowed (save ends). &lt;/p&gt;]] ᗕ <b>Blinding Strands</b> (free, when reduced to 0 hit points, encounter) </p><p>The web golem grappler explodes in a burst of sticky strands; close burst 3; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blinding Strands&lt;/b&gt; (free, when reduced to 0 hit points, encounter) &lt;/p&gt;&lt;p&gt;The web golem grappler explodes in a burst of sticky strands; close burst 3; &lt;u&gt;+19 vs AC&lt;/u&gt;; target is slowed (save ends). &lt;/p&gt;]]; target is slowed (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drag and Move&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;The web golem moves up to its speed, moving any grabbed creatures with it. At the end of its movement, it places the grabbed creatures in any squares adjacent to it.&lt;/p&gt;]]  <b>Drag and Move</b> (move; at-will) </p><p>The web golem moves up to its speed, moving any grabbed creatures with it. At the end of its movement, it places the grabbed creatures in any squares adjacent to it.</p></tr></td></table>",

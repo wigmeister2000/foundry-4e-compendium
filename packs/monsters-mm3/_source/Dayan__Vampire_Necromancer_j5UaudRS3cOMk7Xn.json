@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Unholy Strength",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BkNia6RH5quYLnvt",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Burned by Sunlight",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"fokixm29pdhg0CEO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Grave Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"au6PsqHpRViEA913",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1269,23 +1273,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 84; <b>Bloodied</b> 42<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +4 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, climb 4 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+3)<br><b>Con</b> 10 (+1)</td><td><b>Dex</b> 16 (+4)<br><b>Int</b> 18 (+5)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 18 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +10, Bluff +10, Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> longsword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Unholy Strength&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any undead ally in the aura deals 5 extra necrotic damage.&lt;/p&gt;]] ⌀ <b>Unholy Strength</b> (necrotic) ✦ <b>Aura</b> 2</p><p>Any undead ally in the aura deals 5 extra necrotic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Burned by Sunlight&lt;/b&gt; (radiant) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Dayan starts his turn in direct sunlight, he takes 5 radiant damage.&lt;/p&gt;]]  <b>Burned by Sunlight</b> (radiant) <b></b></p><p>Whenever Dayan starts his turn in direct sunlight, he takes 5 radiant damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Grave Healing&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Dayan takes an extended rest in or on his grave dirt, he regains all his hit points. Dayan cannot rest while in mist form.&lt;/p&gt;]]  <b>Grave Healing</b> <b></b></p><p>If Dayan takes an extended rest in or on his grave dirt, he regains all his hit points. Dayan cannot rest while in mist form.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deft Longsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; After the attack, Dayan slides the target up to 2 squares.&lt;/p&gt;]] (⚔) <b>Deft Longsword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deft Longsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deft Longsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage.&lt;/p&gt;]] <11>  damage.</p><p><i>Effect:</i> After the attack, Dayan slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Embolden Undead&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Dayan can use deft longsword twice, or he can use deft longsword once and allow one undead ally within 5 squares of him to make a basic attack as a free action.&lt;/p&gt;]]  <b>Embolden Undead</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Dayan can use deft longsword twice, or he can use deft longsword once and allow one undead ally within 5 squares of him to make a basic attack as a free action.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Word of Beguilement&lt;/b&gt; (charm, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); +6 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 +5 psychic damage, and until the end of its next turn, the target is slowed and takes a -2 penalty to attack rolls it makes against Dayan.&lt;/p&gt;]] ᗕ <b>Word of Beguilement</b> (charm, psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 3 (enemies in the blast); [[/roll 1d20+6[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Word of Beguilement&lt;/b&gt; (charm, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); &lt;u&gt;+6 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 +5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Word of Beguilement&lt;/b&gt; (charm, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 +5 psychic damage, and until the end of its next turn, the target is slowed and takes a -2 penalty to attack rolls it makes against Dayan.&lt;/p&gt;]] <14>  psychic damage, and until the end of its next turn, the target is slowed and takes a -2 penalty to attack rolls it makes against Dayan.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Necromantic Surge&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +6 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 necrotic damage, and target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Undead allies in the blast gain 10 temporary hit points.&lt;/p&gt;]] ᗕ <b>Necromantic Surge</b> (necrotic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+6[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Necromantic Surge&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+6 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Necromantic Surge&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 4 necrotic damage, and target is dazed (save ends).&lt;/p&gt;]] <11>  necrotic damage, and target is dazed (save ends).</p><p><i>Miss:</i> Half damage.</p><p><i>Effect:</i> Undead allies in the blast gain 10 temporary hit points.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one dazed, dominated, stunned, or unconscious creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 3 damage, and Dayan regains 5 hit points.&lt;/p&gt;]] ⚔ <b>Bite</b> ✦ <b>At-Will</b> (1/round)</p><p><i>Attack:</i> Melee 1 (one dazed, dominated, stunned, or unconscious creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one dazed, dominated, stunned, or unconscious creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 3 damage, and Dayan regains 5 hit points.&lt;/p&gt;]] <8.5>  damage, and Dayan regains 5 hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mist Form&lt;/b&gt; (polymorph) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Dayan takes damage while bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Dayan becomes insubstantial, gains fly 12, and can immediately shift up to his fly speed. Dayan cannot attack in this form and can end this form as a minor action.&lt;/p&gt;]]  <b>Mist Form</b> (polymorph) ✦ <b>Encounter</b></p><p><i>Trigger:</i> Dayan takes damage while bloodied.</p><p><i>Effect (No Action):</i> Dayan becomes insubstantial, gains fly 12, and can immediately shift up to his fly speed. Dayan cannot attack in this form and can end this form as a minor action.</p></tr></td></table>",

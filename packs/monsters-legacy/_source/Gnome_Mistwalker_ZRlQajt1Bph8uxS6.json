@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -366,7 +367,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Ab8lkg6Nf7arpjmM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +403,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -592,7 +594,7 @@
 		},
 		{
 			"name":"Reactive Stealth",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"H6awUvR1IV5jp7oW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -628,7 +630,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -864,23 +867,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 51; <b>Bloodied</b> 25</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 16</td><td><b>Ref</b> 17</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 16 (+5)<br><b>Int</b> 11 (+2)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 14 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> hide armor , war pick .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+4 damage (crit 1d8 + 12). &lt;/p&gt;]] (⚔) <b>War Pick</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d8+4 damage (crit 1d8 + 12). &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+4 damage (crit 1d8 + 12). &lt;/p&gt;]] <8.5>  damage (crit [[/roll 1d8 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+4 damage (crit 1d8 + 12). &lt;/p&gt;]] <16.5> ). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Mistwalker\"s Strike&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnome mistwalker becomes invisible until the end of its next turn. In addition, it shifts 2 squares and makes a war pick attack&lt;/p&gt;]] ⚔ <b>Mistwalker\"s Strike</b> (standard, recharge ⚃⚄⚅) ✦ <b>Illusion</b></p><p>The gnome mistwalker becomes invisible until the end of its next turn. In addition, it shifts 2 squares and makes a war pick attack</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A gnome mistwalker deals 1d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A gnome mistwalker deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A gnome mistwalker deals 1d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage against any creature granting combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reactive Stealth&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the gnome mistwalker has cover or concealment when it rolls initiative at the start of an encounter, it can make a Stealth check to become hidden.&lt;/p&gt;]]  <b>Reactive Stealth</b></p><p>If the gnome mistwalker has cover or concealment when it rolls initiative at the start of an encounter, it can make a Stealth check to become hidden.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fade Away&lt;/b&gt; (immediate reaction, when the gnome mistwalker takes damage; encounter) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnome mistwalker becomes invisible until after it hits or misses with an attack or until the end of its next turn.&lt;/p&gt;]]  <b>Fade Away</b> (immediate reaction, when the gnome mistwalker takes damage; encounter) ✦ <b>Illusion</b></p><p>The gnome mistwalker becomes invisible until after it hits or misses with an attack or until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blur of Movement&lt;/b&gt; (immediate reaction, when the gnome mistwalker is hit by an enemy; at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mistwalker teleports 1 square.&lt;/p&gt;]]  <b>Blur of Movement</b> (immediate reaction, when the gnome mistwalker is hit by an enemy; at-will) ✦ <b>Teleportation</b></p><p>The mistwalker teleports 1 square.</p></tr></td></table>",

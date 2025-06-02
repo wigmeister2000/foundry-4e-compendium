@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Doom Shade",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nRBEX4DAxfoQGa8g",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Seething Divinity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"mxX39DWpHFawk4f5",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Death's Evasion",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6p03Hrw4IlVbBunL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VdqsaZLKbQ6PUNuy",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -246,7 +250,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -427,7 +432,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1318,28 +1324,15 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 400; <b>Bloodied</b> 200<hr><b>Resist</b> 15 necrotic, 15 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 38</td><td><b>Ref</b> 39</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8; phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+15)<br><b>Con</b> 26 (+21)</td><td><b>Dex</b> 28 (+22)<br><b>Int</b> 15 (+15)</td><td><b>Wis</b> 15 (+15)<br><b>Cha</b> 30 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 5,Darkvision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Seething Divinity&lt;/b&gt; (necrotic, radiant) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;While Nerull’s shade is stunned, dazed, or dominated, any enemy that ends its turn in the aura takes 30 necrotic and radiant damage.&lt;/p&gt;]] ⌀ <b>Seething Divinity</b> (necrotic, radiant) ✦ <b>Aura</b> 3</p><p>While Nerull’s shade is stunned, dazed, or dominated, any enemy that ends its turn in the aura takes 30 necrotic and radiant damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Death\"s Evasion&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Nerull’s shade is subjected to an effect that a save can end, the shade immediately makes a saving throw against the effect. On a successful save, the effect immediately ends.&lt;/p&gt;]]  <b>Death\"s Evasion</b> <b></b></p><p>Whenever Nerull’s shade is subjected to an effect that a save can end, the shade immediately makes a saving throw against the effect. On a successful save, the effect immediately ends.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Nerull’s shade takes half damage from all attacks, except those that deal force damage or psychic damage.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>Nerull’s shade takes half damage from all attacks, except those that deal force damage or psychic damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lifecutter\"s Shade&lt;/b&gt; (necrotic, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +30 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 22 necrotic and radiant damage (or 35 + 6d10 necrotic and radiant damage if Nerull’s shade scores a critical hit), and the target cannot regain hit points (save ends).&lt;/p&gt;]] (⚔) <b>Lifecutter\"s Shade</b> (necrotic, radiant) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+30[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lifecutter\"s Shade&lt;/b&gt; (necrotic, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+30 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 22#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lifecutter\"s Shade&lt;/b&gt; (necrotic, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 22 necrotic and radiant damage (or 35 + 6d10 necrotic and radiant damage if Nerull’s shade scores a critical hit), and the target cannot regain hit points (save ends).&lt;/p&gt;]] <35>  necrotic and radiant damage (or 35 + [[/roll 6d10 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lifecutter\"s Shade&lt;/b&gt; (necrotic, radiant) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 22 necrotic and radiant damage (or 35 + 6d10 necrotic and radiant damage if Nerull’s shade scores a critical hit), and the target cannot regain hit points (save ends).&lt;/p&gt;]] <33> necrotic and radiant damage if Nerull’s shade scores a critical hit), and the target cannot regain hit points (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Instill Bloodlust&lt;/b&gt; (charm, necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +30 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Nerull’s shade slides the target up to 5 squares, and the target uses an at-will attack power against a creature of the shade’s choice. If the target misses, it takes ongoing 30 necrotic and psychic damage (save ends).&lt;/p&gt;]] (➶) <b>Instill Bloodlust</b> (charm, necrotic, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Instill Bloodlust&lt;/b&gt; (charm, necrotic, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+30 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Nerull’s shade slides the target up to 5 squares, and the target uses an at-will attack power against a creature of the shade’s choice. If the target misses, it takes ongoing 30 necrotic and psychic damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The shade makes two basic attacks.&lt;/p&gt;]]  <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The shade makes two basic attacks.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Living Conduit&lt;/b&gt; (teleportation) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Nerull’s shade must be adjacent to a living creature.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Nerull’s shade teleports to an unoccupied space adjacent to a different living creature in the shade’s line of sight. The creature must make a death saving throw.&lt;/p&gt;]]  <b>Living Conduit</b> (teleportation) ✦ Recharge ⚄ ⚅</p><p><i>Requirement:</i> Nerull’s shade must be adjacent to a living creature.</p><p><i>Effect:</i> Nerull’s shade teleports to an unoccupied space adjacent to a different living creature in the shade’s line of sight. The creature must make a death saving throw.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bloody Reaping&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Nerull’s shade is first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Nerull’s shade shifts up to its speed. Each time Nerull’s shade moves within 3 squares of an enemy for the first time during the move, the shade uses Lifecutter’s shade against that enemy.&lt;/p&gt;]]  <b>Bloody Reaping</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> Nerull’s shade is first bloodied</p><p><i>Effect (No Action):</i> Nerull’s shade shifts up to its speed. Each time Nerull’s shade moves within 3 squares of an enemy for the first time during the move, the shade uses Lifecutter’s shade against that enemy.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Reaping&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A creature is hit by Lifecutter’s shade&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The hit becomes a critical hit.&lt;/p&gt;]]  <b>Reaping</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> A creature is hit by Lifecutter’s shade</p><p><i>Effect (Free Action):</i> The hit becomes a critical hit.</p></tr></td></table>",

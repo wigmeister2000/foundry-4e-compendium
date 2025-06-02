@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Mpo4gIrB9ZEL7HuN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Mucus Haze",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MJHbT2Pa7gZeuCxF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -95,7 +97,7 @@
 		},
 		{
 			"name":"Necromantic Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KMr9fthPjD8blHVR",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -131,7 +133,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -196,7 +199,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1222,7 +1226,7 @@
 		},
 		{
 			"name":"Indestructible",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aABWC3dbmV7SeiHG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1258,7 +1262,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1314,23 +1319,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 870; <b>Bloodied</b> 435<br><b>Regeneration</b> 10 (if Pavan takes radiant damage, regeneration doesn’t function until the end of its next turn)<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 30</td><td><b>Ref</b> 30</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, swim 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+17)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 16 (+12)<br><b>Int</b> 23 (+15)</td><td><b>Wis</b> 25 (+16)<br><b>Cha</b> 22 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 20<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +20, Dungeoneering +21, Insight +21</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 26 | Insight 31</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Mucus Haze&lt;/b&gt; aura 5; enemies treat the area within the aura as difficult terrain.]] <b>Mucus Haze</b> aura 5; enemies treat the area within the aura as difficult terrain.</p><p>[[/roll 0#&lt;b&gt;Necromantic Aura&lt;/b&gt; (Necrotic) aura 5; any living creature that enters or starts its turn in the aura takes 5 necrotic damage.]] <b>Necromantic Aura</b> (Necrotic) aura 5; any living creature that enters or starts its turn in the aura takes 5 necrotic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Death Tentacle&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 1d8+8 necrotic damage (3d8+8 damage against a dazed target), and the target is dazed (save ends). &lt;/p&gt;]] (⚔) <b>Death Tentacle</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Death Tentacle&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 1d8+8 necrotic damage (3d8+8 damage against a dazed target), and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Death Tentacle&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 1d8+8 necrotic damage (3d8+8 damage against a dazed target), and the target is dazed (save ends). &lt;/p&gt;]] <12.5>  necrotic damage ([[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Death Tentacle&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 1d8+8 necrotic damage (3d8+8 damage against a dazed target), and the target is dazed (save ends). &lt;/p&gt;]] <21.5>  damage against a dazed target), and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Tentacle Flurry&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +20 vs AC; 1d8+8 necrotic damage (3d8+8 damage against dazed targets), and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Death Tentacle Flurry</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Close burst 1; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Tentacle Flurry&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d8+8 necrotic damage (3d8+8 damage against dazed targets), and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Tentacle Flurry&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +20 vs AC; 1d8+8 necrotic damage (3d8+8 damage against dazed targets), and the target is dazed (save ends). &lt;/p&gt;]] <12.5>  necrotic damage ([[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Tentacle Flurry&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +20 vs AC; 1d8+8 necrotic damage (3d8+8 damage against dazed targets), and the target is dazed (save ends). &lt;/p&gt;]] <21.5>  damage against dazed targets), and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Slime&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +20 vs Will; 2d8+8 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Psychic Slime</b> (standard, recharges when first bloodied) ✦ <b>Psychic</b></p><p>Close burst 10; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Slime&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; &lt;u&gt;+20 vs Will&lt;/u&gt;; 2d8+8 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Slime&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +20 vs Will; 2d8+8 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] <17>  psychic damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Enslave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; targets a dominated creature; +20 vs Will; 6d8+8 psychic damage. A target reduced to 0 hit points or fewer by this attack doesn\"t die but becomes enslaved in preparation for the Aboleth Servitor ritual. Enslaved target are dominated, and only the death of Pavan can end this domination. Once a creature is enslaved, Pavan is free to dominate another creature. &lt;/p&gt;]] ➶ <b>Enslave</b> (standard, at-will) ✦ <b>Charm, Psychic</b></p><p>Ranged 5; targets a dominated creature; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Enslave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; targets a dominated creature; &lt;u&gt;+20 vs Will&lt;/u&gt;; 6d8+8 psychic damage. A target reduced to 0 hit points or fewer by this attack doesn\"t die but becomes enslaved in preparation for the Aboleth Servitor ritual. Enslaved target are dominated, and only the death of Pavan can end this domination. Once a creature is enslaved, Pavan is free to dominate another creature. &lt;/p&gt;]]; [[/roll 6d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Enslave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; targets a dominated creature; +20 vs Will; 6d8+8 psychic damage. A target reduced to 0 hit points or fewer by this attack doesn\"t die but becomes enslaved in preparation for the Aboleth Servitor ritual. Enslaved target are dominated, and only the death of Pavan can end this domination. Once a creature is enslaved, Pavan is free to dominate another creature. &lt;/p&gt;]] <35>  psychic damage. A target reduced to 0 hit points or fewer by this attack doesn\"t die but becomes enslaved in preparation for the Aboleth Servitor ritual. Enslaved target are dominated, and only the death of Pavan can end this domination. Once a creature is enslaved, Pavan is free to dominate another creature. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dominate&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a dazed humanoid; +20 vs Will; the target is dominated (save ends). Pavan can dominate only one creature at a time. &lt;/p&gt;]] ➶ <b>Dominate</b> (minor, at-will) ✦ <b>Charm</b></p><p>Ranged 10; targets a dazed humanoid; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dominate&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a dazed humanoid; &lt;u&gt;+20 vs Will&lt;/u&gt;; the target is dominated (save ends). Pavan can dominate only one creature at a time. &lt;/p&gt;]]; the target is dominated (save ends). Pavan can dominate only one creature at a time. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Invisibility&lt;/b&gt; (minor; recharge ⚄⚅) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Pavan and one ally within 10 squares of it turn invisible until the end of Pavan’s next turn.&lt;/p&gt;]]  <b>Invisibility</b> (minor; recharge ⚄⚅) ✦ <b>Illusion</b></p><p>Pavan and one ally within 10 squares of it turn invisible until the end of Pavan’s next turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Pavan is reduced to 0 hit points, its body falls, but it is not destroyed. It reappears within 1 square of its phylactery (the gem on the bottom of the pool) 1d10 days later.&lt;/p&gt;]]  <b>Indestructible</b></p><p>When Pavan is reduced to 0 hit points, its body falls, but it is not destroyed. It reappears within 1 square of its phylactery (the gem on the bottom of the pool) [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Pavan is reduced to 0 hit points, its body falls, but it is not destroyed. It reappears within 1 square of its phylactery (the gem on the bottom of the pool) 1d10 days later.&lt;/p&gt;]] <5.5> days later.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"D1gunxieUN08dEpo",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -332,10 +334,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1305,7 +1307,7 @@
 		},
 		{
 			"name":"Stand Your Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wSd8Mq2TVQX7yJtU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1341,7 +1343,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1397,23 +1400,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 408; <b>Bloodied</b> 204<br><b>Regeneration</b> 10 (only while bloodied)</td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 37</td><td><b>Ref</b> 32</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+20)<br><b>Con</b> 24 (+19)</td><td><b>Dex</b> 14 (+14)<br><b>Int</b> 19 (+16)</td><td><b>Wis</b> 26 (+20)<br><b>Cha</b> 21 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Draconic, Dwarven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +22, Diplomacy +22, Intimidate +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><p><b>Equipment</b> execution axe , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Executioner’s Axe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +29 vs AC; 2d12+8 damage (crit 3d12 + 32). &lt;/p&gt;]] (⚔) <b>Executioner’s Axe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Melee 1; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Executioner’s Axe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; &lt;u&gt;+29 vs AC&lt;/u&gt;; 2d12+8 damage (crit 3d12 + 32). &lt;/p&gt;]]; [[/roll 2d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Executioner’s Axe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +29 vs AC; 2d12+8 damage (crit 3d12 + 32). &lt;/p&gt;]] <21>  damage (crit [[/roll 3d12 + 32#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Executioner’s Axe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +29 vs AC; 2d12+8 damage (crit 3d12 + 32). &lt;/p&gt;]] <51.5> ). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Dread Execution&lt;/b&gt; (standard; requires executioner\"s axe, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 1d12+8 damage (crit 3d12 + 20), and the target grants combat advantage to all creatures until the end of Cadrick’s next turn. &lt;/p&gt;]] ⚔ <b>Dread Execution</b> (standard; requires executioner\"s axe, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Dread Execution&lt;/b&gt; (standard; requires executioner\"s axe, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+29 vs AC&lt;/u&gt;; 1d12+8 damage (crit 3d12 + 20), and the target grants combat advantage to all creatures until the end of Cadrick’s next turn. &lt;/p&gt;]]; [[/roll 1d12+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Dread Execution&lt;/b&gt; (standard; requires executioner\"s axe, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 1d12+8 damage (crit 3d12 + 20), and the target grants combat advantage to all creatures until the end of Cadrick’s next turn. &lt;/p&gt;]] <14.5>  damage (crit [[/roll 3d12 + 20#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Dread Execution&lt;/b&gt; (standard; requires executioner\"s axe, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+29 vs AC; 1d12+8 damage (crit 3d12 + 20), and the target grants combat advantage to all creatures until the end of Cadrick’s next turn. &lt;/p&gt;]] <39.5> ), and the target grants combat advantage to all creatures until the end of Cadrick’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;End of the Line&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Cadrick makes two dread execution attacks.&lt;/p&gt;]] ⚔ <b>End of the Line</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Cadrick makes two dread execution attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Beheading Slash&lt;/b&gt; (standard; requires executioner\"s axe, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +29 vs AC; 4d12+8 damage (crit 3d12 + 56). If this attack reduces the target to 0 or fewer hit points, the target takes a -5 penalty to death saving throws until the end of the encounter. &lt;/p&gt;]] ⚔ <b>Beheading Slash</b> (standard; requires executioner\"s axe, recharges when first bloodied) ✦ <b>Weapon</b></p><p>Melee 1; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Beheading Slash&lt;/b&gt; (standard; requires executioner\"s axe, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; &lt;u&gt;+29 vs AC&lt;/u&gt;; 4d12+8 damage (crit 3d12 + 56). If this attack reduces the target to 0 or fewer hit points, the target takes a -5 penalty to death saving throws until the end of the encounter. &lt;/p&gt;]]; [[/roll 4d12+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Beheading Slash&lt;/b&gt; (standard; requires executioner\"s axe, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +29 vs AC; 4d12+8 damage (crit 3d12 + 56). If this attack reduces the target to 0 or fewer hit points, the target takes a -5 penalty to death saving throws until the end of the encounter. &lt;/p&gt;]] <34>  damage (crit [[/roll 3d12 + 56#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Beheading Slash&lt;/b&gt; (standard; requires executioner\"s axe, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee 1; +29 vs AC; 4d12+8 damage (crit 3d12 + 56). If this attack reduces the target to 0 or fewer hit points, the target takes a -5 penalty to death saving throws until the end of the encounter. &lt;/p&gt;]] <75.5> ). If this attack reduces the target to 0 or fewer hit points, the target takes a -5 penalty to death saving throws until the end of the encounter. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hewing Sweep&lt;/b&gt; (standard; requires executioner\"s axe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +29 vs AC; 1d12+8 damage (crit 3d12 + 20). &lt;/p&gt;]] ᗕ <b>Hewing Sweep</b> (standard; requires executioner\"s axe, at-will) ✦ <b>Weapon</b></p><p>Close burst 1; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hewing Sweep&lt;/b&gt; (standard; requires executioner\"s axe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+29 vs AC&lt;/u&gt;; 1d12+8 damage (crit 3d12 + 20). &lt;/p&gt;]]; [[/roll 1d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hewing Sweep&lt;/b&gt; (standard; requires executioner\"s axe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +29 vs AC; 1d12+8 damage (crit 3d12 + 20). &lt;/p&gt;]] <14.5>  damage (crit [[/roll 3d12 + 20#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hewing Sweep&lt;/b&gt; (standard; requires executioner\"s axe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +29 vs AC; 1d12+8 damage (crit 3d12 + 20). &lt;/p&gt;]] <39.5> ). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Implacable Advance&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;If Cadrick is marked, that condition ends. He can then shift 1 square.&lt;/p&gt;]]  <b>Implacable Advance</b> (move; at-will) </p><p>If Cadrick is marked, that condition ends. He can then shift 1 square.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Advantageous Repositioning&lt;/b&gt; (free, usable when cadrick deals damage to a target he has combat advantage; at-will) &lt;/p&gt;&lt;p&gt;Cadrick can shift 3 squares.&lt;/p&gt;]]  <b>Advantageous Repositioning</b> (free, usable when cadrick deals damage to a target he has combat advantage; at-will) </p><p>Cadrick can shift 3 squares.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand Your Ground&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect forces Cadrick to move—through a pull, a push, or a slide—Cadrick moves 1 square less than the effect specifies. When an attack would knock Cadrick prone, he can roll a saving throw to avoid falling prone.&lt;/p&gt;]]  <b>Stand Your Ground</b></p><p>When an effect forces Cadrick to move—through a pull, a push, or a slide—Cadrick moves 1 square less than the effect specifies. When an attack would knock Cadrick prone, he can roll a saving throw to avoid falling prone.</p></tr></td></table>",

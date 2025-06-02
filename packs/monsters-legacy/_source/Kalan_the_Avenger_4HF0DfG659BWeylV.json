@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Flames of Vengeance",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KzwTFJCyn8E9Vx0X",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -166,10 +168,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -603,7 +605,7 @@
 		},
 		{
 			"name":"Stand Your Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MAoc8ZInSsxJUERB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -639,7 +641,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -695,23 +698,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 141; <b>Bloodied</b> 70<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 28</td><td><b>Ref</b> 24</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 21 (+12)</td><td><b>Dex</b> 13 (+8)<br><b>Int</b> 9 (+6)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 14 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> plate armor , warhammer .</p><p>[[/roll 0#&lt;b&gt;Flames of Vengeance&lt;/b&gt; (Fire) aura 1; allies who start their turns within the aura deal 5 extra fire damage on melee attacks.]] <b>Flames of Vengeance</b> (Fire) aura 1; allies who start their turns within the aura deal 5 extra fire damage on melee attacks.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d10+7 damage plus 1d6 fire damage, and the target is marked until the end of Dalan\"s next turn. &lt;/p&gt;]] (⚔) <b>Fiery Warhammer</b> (standard, at-will) ✦ <b>Fire, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 1d10+7 damage plus 1d6 fire damage, and the target is marked until the end of Dalan\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d10+7 damage plus 1d6 fire damage, and the target is marked until the end of Dalan\"s next turn. &lt;/p&gt;]] <12.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d10+7 damage plus 1d6 fire damage, and the target is marked until the end of Dalan\"s next turn. &lt;/p&gt;]] <3.5> fire damage, and the target is marked until the end of Dalan\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Volcanic Burst&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +15 vs Reflex; 1d6+5 fire damage, and the target is pulled 5 squares. &lt;/p&gt;]] ✻ <b>Volcanic Burst</b> (standard, recharge ⚃⚄⚅) ✦ <b>Fire</b></p><p>Area burst 1 within 10; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Volcanic Burst&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d6+5 fire damage, and the target is pulled 5 squares. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Volcanic Burst&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +15 vs Reflex; 1d6+5 fire damage, and the target is pulled 5 squares. &lt;/p&gt;]] <8.5>  fire damage, and the target is pulled 5 squares. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Back on Your Feet&lt;/b&gt; (immediate reaction, when an ally within line of sight is reduced to 0 hit points; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The ally regains 20 hit points, stands immediately, and makes a melee basic attack as a free action.&lt;/p&gt;]]  <b>Back on Your Feet</b> (immediate reaction, when an ally within line of sight is reduced to 0 hit points; encounter) ✦ <b>Healing</b></p><p>The ally regains 20 hit points, stands immediately, and makes a melee basic attack as a free action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand Your Ground&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect forces Dalan to move—through a pull, a push, or a slide—Dalan moves 1 square less than the effect specifies. When an attack would knock Dalan prone, he can roll a saving throw to avoid falling prone.&lt;/p&gt;]]  <b>Stand Your Ground</b></p><p>When an effect forces Dalan to move—through a pull, a push, or a slide—Dalan moves 1 square less than the effect specifies. When an attack would knock Dalan prone, he can roll a saving throw to avoid falling prone.</p></tr></td></table>",

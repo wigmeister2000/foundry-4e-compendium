@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Piercing Slivers",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5e67vbYfwzBICg9k",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -632,23 +635,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 65; <b>Bloodied</b> 32 ; see also death burst</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+5)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 4 (null)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 8 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision , tremorsense 4<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Piercing Slivers&lt;/b&gt; aura 1; an enemy that ends its turn in the aura takes 2 damage.]] <b>Piercing Slivers</b> aura 1; an enemy that ends its turn in the aura takes 2 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lancing Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 2d8+5 damage. &lt;/p&gt;]] (⚔) <b>Lancing Claw</b> (standard, at-will) </p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lancing Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lancing Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Piercing Shard&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +8 vs AC; 1d8 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] (➶) <b>Piercing Shard</b> (standard, at-will) </p><p>Ranged 5; [[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Piercing Shard&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+8 vs AC&lt;/u&gt;; 1d8 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Piercing Shard&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +8 vs AC; 1d8 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] <4.5> damage, and ongoing 5 damage (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when the glass guardian drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 2; +5 vs Reflex; 2d6 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] ᗕ <b>Death Burst</b> ( when the glass guardian drops to 0 hit points, ) </p><p>Close burst 2; [[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when the glass guardian drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+5 vs Reflex&lt;/u&gt;; 2d6 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when the glass guardian drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 2; +5 vs Reflex; 2d6 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] <7> damage, and ongoing 5 damage (save ends). </p></tr></td></table>",

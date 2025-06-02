@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,10 +289,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -944,23 +946,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 98; <b>Bloodied</b> 49<hr><b>Resist</b> 5 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +2 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 14</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk), fly 6, overland flight 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+4)<br><b>Con</b> 17 (+4)</td><td><b>Dex</b> 12 (+2)<br><b>Int</b> 10 (+1)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 13 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +9, Endurance +9, Intimidate +7, Stealth +7</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 cold damage, and the target is slowed (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Cold</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d10+4 cold damage, and the target is slowed (save ends). &lt;/p&gt;]]; [[/roll 1d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 cold damage, and the target is slowed (save ends). &lt;/p&gt;]] <9.5>  cold damage, and the target is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+8 vs AC; 1d6+5 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d6+5 damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+8 vs AC; 1d6+5 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dragon\"s Pounce&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The wyrmling makes a bite attack, shifts 2 squares, and makes a claw attack against a different target.&lt;/p&gt;]] ⚔ <b>Dragon\"s Pounce</b> (standard, at-will) </p><p>The wyrmling makes a bite attack, shifts 2 squares, and makes a claw attack against a different target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Savage Mauling&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 1; targets slowed or restrained creatures; +9 vs AC; 3d6+3 damage, and the wyrmling pushes the target 3 squares and knocks it prone. This forced movement can affect a creature restrained by the wyrmling’s own breath weapon. &lt;/p&gt;]] ᗕ <b>Savage Mauling</b> (standard, encounter) </p><p>Close burst 1; targets slowed or restrained creatures; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Savage Mauling&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 1; targets slowed or restrained creatures; &lt;u&gt;+9 vs AC&lt;/u&gt;; 3d6+3 damage, and the wyrmling pushes the target 3 squares and knocks it prone. This forced movement can affect a creature restrained by the wyrmling’s own breath weapon. &lt;/p&gt;]]; [[/roll 3d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Savage Mauling&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 1; targets slowed or restrained creatures; +9 vs AC; 3d6+3 damage, and the wyrmling pushes the target 3 squares and knocks it prone. This forced movement can affect a creature restrained by the wyrmling’s own breath weapon. &lt;/p&gt;]] <13.5>  damage, and the wyrmling pushes the target 3 squares and knocks it prone. This forced movement can affect a creature restrained by the wyrmling’s own breath weapon. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 4; +7 vs Fortitude; 1d6+3 cold damage, and the target is restrained (save ends). Aftereffect: The target is slowed (save ends). &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharges when first bloodied) </p><p>Close blast 4; [[/roll 1d20+7[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 4; &lt;u&gt;+7 vs Fortitude&lt;/u&gt;; 1d6+3 cold damage, and the target is restrained (save ends). Aftereffect: The target is slowed (save ends). &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 4; +7 vs Fortitude; 1d6+3 cold damage, and the target is restrained (save ends). Aftereffect: The target is slowed (save ends). &lt;/p&gt;]] <6.5>  cold damage, and the target is restrained (save ends). Aftereffect: The target is slowed (save ends). </p></tr></td></table>",

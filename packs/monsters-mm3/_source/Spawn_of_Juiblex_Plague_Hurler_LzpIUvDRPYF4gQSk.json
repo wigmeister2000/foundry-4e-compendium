@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HEqZcJMt0egzrXDA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Ooze",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3TgfP1MmlhoGnq2z",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -334,7 +337,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1225,23 +1229,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 112; <b>Bloodied</b> 56<hr><b>Immune</b> acid, disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 26</td><td><b>Ref</b> 26</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6, swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+10)<br><b>Con</b> 22 (+13)</td><td><b>Dex</b> 22 (+13)<br><b>Int</b> 17 (+10)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 20 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, telepathy 5<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Bluff +17, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 5<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the plague hurler.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the plague hurler.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ooze&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While squeezing, the plague hurler moves at full speed rather than half speed, doesn’t take the -5 penalty to attack rolls, and doesn’t grant combat advantage for squeezing.&lt;/p&gt;]]  <b>Ooze</b> <b></b></p><p>While squeezing, the plague hurler moves at full speed rather than half speed, doesn’t take the -5 penalty to attack rolls, and doesn’t grant combat advantage for squeezing.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (acid, disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 acid damage, and the target is exposed to Slime Lord’s rot.&lt;/p&gt;]] (⚔) <b>Slam</b> (acid, disease) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (acid, disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (acid, disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 acid damage, and the target is exposed to Slime Lord’s rot.&lt;/p&gt;]] <15>  acid damage, and the target is exposed to Slime Lord’s rot.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Slime Orb&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 6 acid damage, and the target is slowed (save ends).&lt;/p&gt;]] (➶) <b>Slime Orb</b> (acid) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Slime Orb&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Slime Orb&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 6 acid damage, and the target is slowed (save ends).&lt;/p&gt;]] <22.5>  acid damage, and the target is slowed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Rain of Effluvia&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 4 acid damage, and the target is blinded until the end of its next turn.&lt;/p&gt;]] ✻ <b>Rain of Effluvia</b> (acid) ✦ <b>At-Will</b></p><p><i>Attack:</i> Area burst 1 within 10 (enemies in the burst); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Rain of Effluvia&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Rain of Effluvia&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 4 acid damage, and the target is blinded until the end of its next turn.&lt;/p&gt;]] <14.5>  acid damage, and the target is blinded until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Virulent Pustules&lt;/b&gt; (acid, disease, poison) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +19 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 4 damage, and ongoing 10 poison damage (save ends). In addition, the target is exposed to Slime Lord’s rot.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Each Failed Saving Throw:&lt;/i&gt; Each of the target’s allies adjacent to the target takes ongoing 5 poison damage (save ends) and is exposed to Slime Lord’s rot.&lt;/p&gt;]] ➶ <b>Virulent Pustules</b> (acid, disease, poison) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+19[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Virulent Pustules&lt;/b&gt; (acid, disease, poison) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+19 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Virulent Pustules&lt;/b&gt; (acid, disease, poison) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 4 damage, and ongoing 10 poison damage (save ends). In addition, the target is exposed to Slime Lord’s rot.&lt;/p&gt;]] <18>  damage, and ongoing 10 poison damage (save ends). In addition, the target is exposed to Slime Lord’s rot.</p><p><i>Each Failed Saving Throw:</i> Each of the target’s allies adjacent to the target takes ongoing 5 poison damage (save ends) and is exposed to Slime Lord’s rot.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mortal Form&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The plague hurler can alter its physical form to appear as any Medium humanoid, including a unique individual, until it attacks, until it uses mortal form again, or until it drops to 0 hit points. The plague hurler retains its statistics in its new form. Its clothing, armor, and other possessions do not change. To assume a specific individual’s form, the plague hurler must have seen that individual. Other creatures can make a DC 31 Insight check to discern that the form is a disguise.&lt;/p&gt;]]  <b>Mortal Form</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> The plague hurler can alter its physical form to appear as any Medium humanoid, including a unique individual, until it attacks, until it uses mortal form again, or until it drops to 0 hit points. The plague hurler retains its statistics in its new form. Its clothing, armor, and other possessions do not change. To assume a specific individual’s form, the plague hurler must have seen that individual. Other creatures can make a DC 31 Insight check to discern that the form is a disguise.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Oozing Retreat&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The plague hurler is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The plague hurler shifts its speed, ignoring difficult terrain. At any point during the move, it can use mortal form as a free action.&lt;/p&gt;]]  <b>Oozing Retreat</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The plague hurler is first bloodied.</p><p><i>Effect (Free Action):</i> The plague hurler shifts its speed, ignoring difficult terrain. At any point during the move, it can use mortal form as a free action.</p></tr></td></table>",

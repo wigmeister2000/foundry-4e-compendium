@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TPanNS3XRHjOvhpw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1356,23 +1358,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 590; <b>Bloodied</b> 295<hr><b>Resist</b> 20 necrotic <b>Vulnerable</b> 15 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +21 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 39</td><td><b>Ref</b> 38</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+22)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 26 (+21)<br><b>Int</b> 22 (+19)</td><td><b>Wis</b> 18 (+17)<br><b>Cha</b> 26 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Bluff +26, Intimidate +26, Stealth +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> gem-keys x2, +5 flaming broadsword</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; (healing) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire lord berserker regains 15 hit points whenever it starts its turn and has at least 1 hit point. Its regeneration does not function while the berserker is exposed to direct sunlight.&lt;/p&gt;]]  <b>Regeneration</b> (healing) <b></b></p><p>The vampire lord berserker regains 15 hit points whenever it starts its turn and has at least 1 hit point. Its regeneration does not function while the berserker is exposed to direct sunlight.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flaming Broadsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +31 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 18 damage (crit 4d10 + 58)&lt;/p&gt;]] (⚔) <b>Flaming Broadsword</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+31[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flaming Broadsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+31 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 18#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flaming Broadsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 18 damage (crit 4d10 + 58)&lt;/p&gt;]] <40>  damage (crit [[/roll 4d10 + 58#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flaming Broadsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 18 damage (crit 4d10 + 58)&lt;/p&gt;]] <80> )</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devastating Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The berserker uses flaming broadsword twice. If both attacks hit the same target, the target is also dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is also weakened (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target falls unconscious (save ends).&lt;/p&gt;]] ⚔ <b>Devastating Strike</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The berserker uses flaming broadsword twice. If both attacks hit the same target, the target is also dazed (save ends).</p><p><i>First Failed Saving Throw:</i> The target is also weakened (save ends).</p><p><i>Second Failed Saving Throw:</i> The target falls unconscious (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when an adjacent living creature becomes bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the berserker); +29 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 12 damage, the target is weakened (save ends), and the berserker regains 147 hit points.&lt;/p&gt;]] ⚔ <b>Blood Drain</b> (healing) ✦ <b>Recharge</b> when an adjacent living creature becomes bloodied</p><p><i>Attack:</i> Melee 1 (one creature granting combat advantage to the berserker); [[/roll 1d20+29[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when an adjacent living creature becomes bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the berserker); &lt;u&gt;+29 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d12 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when an adjacent living creature becomes bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 12 damage, the target is weakened (save ends), and the berserker regains 147 hit points.&lt;/p&gt;]] <38>  damage, the target is weakened (save ends), and the berserker regains 147 hit points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mist Form&lt;/b&gt; (polymorph) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The berserker becomes insubstantial and gains a fly speed of 12, but cannot make attacks. It can remain in mist form for up to 1 hour or end the effect as a minor action.&lt;/p&gt;]]  <b>Mist Form</b> (polymorph) ✦ <b>Encounter</b></p><p><i>Effect:</i> The berserker becomes insubstantial and gains a fly speed of 12, but cannot make attacks. It can remain in mist form for up to 1 hour or end the effect as a minor action.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (charm) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The berserker must not be dominating a creature.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +29 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated (save ends; the target takes a -2 penalty to the saving throw).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Aftereffect:&lt;/i&gt; The target is dazed (save ends).&lt;/p&gt;]] ➶ <b>Dominating Gaze</b> (charm) ✦ Recharge ⚅</p><p><i>Requirement:</i> The berserker must not be dominating a creature.</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+29[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (charm) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+29 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated (save ends; the target takes a -2 penalty to the saving throw).</p><p><i>Aftereffect:</i> The target is dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Infernal Command&lt;/b&gt; (charm, fire) ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The berserker chooses one allied devil of a lower level than the berserker within 10 squares and slides that devil 5 squares. At the end of that movement, the devil explodes in a close burst 2, destroying itself. Each creature in the burst takes 2d10 + 5 fire damage.&lt;/p&gt;]]  <b>Infernal Command</b> (charm, fire) ✦ <b>At-Will</b> (1/round)</p><p><i>Effect:</i> The berserker chooses one allied devil of a lower level than the berserker within 10 squares and slides that devil 5 squares. At the end of that movement, the devil explodes in a close burst 2, destroying itself. Each creature in the burst takes [[/roll 2d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Infernal Command&lt;/b&gt; (charm, fire) ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The berserker chooses one allied devil of a lower level than the berserker within 10 squares and slides that devil 5 squares. At the end of that movement, the devil explodes in a close burst 2, destroying itself. Each creature in the burst takes 2d10 + 5 fire damage.&lt;/p&gt;]] <16>  fire damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Berserker’s Blood&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The berserker must be bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An attack hits the berserker.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The berserker uses flaming broadsword against a random target adjacent to it as a free action.&lt;/p&gt;]] ⚔ <b>Berserker’s Blood</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The berserker must be bloodied.</p><p><i>Trigger:</i> An attack hits the berserker.</p><p><i>Effect (Immediate Interrupt):</i> The berserker uses flaming broadsword against a random target adjacent to it as a free action.</p></tr></td></table>",

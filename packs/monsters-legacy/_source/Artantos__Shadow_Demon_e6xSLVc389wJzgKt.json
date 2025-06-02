@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -547,7 +548,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QlAUHjFzTxnmdh24",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -583,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 196; <b>Bloodied</b> 98<hr><b>Resist</b> 15 necrotic, 15 variable (2/encounter), insubstantial <b>Vulnerable</b> radiant (if Artantos takes 15 or more radiant damage, it loses phasing and insubstantial until the end of the attacker’s next turn) </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 25</td><td><b>Ref</b> 25</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+7)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 24 (+13)<br><b>Int</b> 16 (+9)</td><td><b>Wis</b> 12 (+7)<br><b>Cha</b> 22 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Arcana +14, Bluff +17, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs Reflex; 2d6+7 necrotic damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs Reflex&lt;/u&gt;; 2d6+7 necrotic damage. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs Reflex; 2d6+7 necrotic damage. &lt;/p&gt;]] <14>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Void&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Necrotic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +13 vs Fortitude; 1d6+6 necrotic damage. The burst creates a zone of darkness that lasts until the end of Artantos’s next turn. The zone of darkness cannot be illuminated, and it blocks line of sight for all creatures that cannot see in darkness. A creature that starts its turn within the zone takes 1d6 + 6 necrotic damage. &lt;/p&gt;]] ᗕ <b>Abyssal Void</b> (standard, recharges when first bloodied) ✦ <b>Necrotic, Zone</b></p><p>Close burst 3; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Void&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Necrotic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 1d6+6 necrotic damage. The burst creates a zone of darkness that lasts until the end of Artantos’s next turn. The zone of darkness cannot be illuminated, and it blocks line of sight for all creatures that cannot see in darkness. A creature that starts its turn within the zone takes 1d6 + 6 necrotic damage. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Void&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Necrotic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +13 vs Fortitude; 1d6+6 necrotic damage. The burst creates a zone of darkness that lasts until the end of Artantos’s next turn. The zone of darkness cannot be illuminated, and it blocks line of sight for all creatures that cannot see in darkness. A creature that starts its turn within the zone takes 1d6 + 6 necrotic damage. &lt;/p&gt;]] <9.5>  necrotic damage. The burst creates a zone of darkness that lasts until the end of Artantos’s next turn. The zone of darkness cannot be illuminated, and it blocks line of sight for all creatures that cannot see in darkness. A creature that starts its turn within the zone takes [[/roll 1d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Void&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Necrotic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +13 vs Fortitude; 1d6+6 necrotic damage. The burst creates a zone of darkness that lasts until the end of Artantos’s next turn. The zone of darkness cannot be illuminated, and it blocks line of sight for all creatures that cannot see in darkness. A creature that starts its turn within the zone takes 1d6 + 6 necrotic damage. &lt;/p&gt;]] <9.5>  necrotic damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Void Rake&lt;/b&gt; (minor; requires combat advantage, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs ; 2d8+6 damage.. Artantos makes a melee basic attack.&lt;/p&gt;]] ⚔ <b>Void Rake</b> (minor; requires combat advantage, at-will) ✦ <b>Necrotic</b></p><p>+16 vs ; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Void Rake&lt;/b&gt; (minor; requires combat advantage, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs ; 2d8+6 damage.. Artantos makes a melee basic attack.&lt;/p&gt;]] <15>  damage.. Artantos makes a melee basic attack.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Artantos uses a claw attack to damage a target it has combat advantage against, the target cannot spend healing surges until the end of Artantos’s next turn.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>When Artantos uses a claw attack to damage a target it has combat advantage against, the target cannot spend healing surges until the end of Artantos’s next turn.</p></tr></td></table>",

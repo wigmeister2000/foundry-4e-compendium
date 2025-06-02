@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"H7NxbyABmWSfLc85",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -346,10 +348,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1005,23 +1007,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 400; <b>Bloodied</b> 200<hr><b>Resist</b> 20 variable (3/encounter), half damage from melee and ranged attacks <b>Vulnerable</b> 15 against close and area attacks <b>Immune</b> disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 33</td><td><b>Ref</b> 34</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 see also aqueous shift</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+14)<br><b>Con</b> 24 (+17)</td><td><b>Dex</b> 26 (+18)<br><b>Int</b> 3 (+6)</td><td><b>Wis</b> 21 (+15)<br><b>Cha</b> 9 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm Attack&lt;/b&gt; (Acid) aura 1; each enemy that starts its turn within the aura takes 7 acid damage]] <b>Swarm Attack</b> (Acid) aura 1; each enemy that starts its turn within the aura takes 7 acid damage</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Jaws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 3d6+9 damage, and the swarm makes a secondary attack against the target. Secondary Attack: +24 vs. Fortitude; the target is exposed to slimy doom (DMG 50). &lt;/p&gt;]] (⚔) <b>Swarm of Jaws</b> (standard, at-will) ✦ <b>Disease</b></p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Jaws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 3d6+9 damage, and the swarm makes a secondary attack against the target. Secondary Attack: +24 vs. Fortitude; the target is exposed to slimy doom (DMG 50). &lt;/p&gt;]]; [[/roll 3d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Swarm of Jaws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 3d6+9 damage, and the swarm makes a secondary attack against the target. Secondary Attack: +24 vs. Fortitude; the target is exposed to slimy doom (DMG 50). &lt;/p&gt;]] <19.5>  damage, and the swarm makes a secondary attack against the target. Secondary Attack: +24 vs. Fortitude; the target is exposed to slimy doom (DMG 50). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Stampede&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The consumptive swarm shifts its speed and makes an attack against each creature it moves adjacent to during the move; +24 vs Reflex; 1d6+3 damage plus 1d6 + 3 acid damage, and the swarm makes a secondary attack against the target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; +24 vs Fortitude; the target is exposed to slimy doom (DMG 50). &lt;/p&gt;]] ⚔ <b>Ravenous Stampede</b> (standard, at-will) ✦ <b>Acid, Disease</b></p><p>The consumptive swarm shifts its speed and makes an attack against each creature it moves adjacent to during the move; [[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Stampede&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The consumptive swarm shifts its speed and makes an attack against each creature it moves adjacent to during the move; &lt;u&gt;+24 vs Reflex&lt;/u&gt;; 1d6+3 damage plus 1d6 + 3 acid damage, and the swarm makes a secondary attack against the target. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Stampede&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The consumptive swarm shifts its speed and makes an attack against each creature it moves adjacent to during the move; +24 vs Reflex; 1d6+3 damage plus 1d6 + 3 acid damage, and the swarm makes a secondary attack against the target. &lt;/p&gt;]] <6.5>  damage plus [[/roll 1d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Stampede&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The consumptive swarm shifts its speed and makes an attack against each creature it moves adjacent to during the move; +24 vs Reflex; 1d6+3 damage plus 1d6 + 3 acid damage, and the swarm makes a secondary attack against the target. &lt;/p&gt;]] <6.5>  acid damage, and the swarm makes a secondary attack against the target. </p><p><i>Secondary Attack:</i> [[/roll 1d20+24[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Stampede&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; &lt;u&gt;+24 vs Fortitude&lt;/u&gt;; the target is exposed to slimy doom (DMG 50). &lt;/p&gt;]]; the target is exposed to slimy doom (DMG 50). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Consumptive Spew&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +24 vs Reflex; 4d6+9 acid damage, and ongoing 5 acid damage (save ends). Effect: Six consumptive parasites appear, each in an unoccupied square within or adjacent to the blast. They act immediately after the consumptive swarm’s initiative count. Characters do not earn experience points for killing consumptive parasites created by this power. &lt;/p&gt;]] ᗕ <b>Consumptive Spew</b> (standard, recharges when first bloodied) ✦ <b>Acid</b></p><p>Close blast 5; [[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Consumptive Spew&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+24 vs Reflex&lt;/u&gt;; 4d6+9 acid damage, and ongoing 5 acid damage (save ends). Effect: Six consumptive parasites appear, each in an unoccupied square within or adjacent to the blast. They act immediately after the consumptive swarm’s initiative count. Characters do not earn experience points for killing consumptive parasites created by this power. &lt;/p&gt;]]; [[/roll 4d6+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Consumptive Spew&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +24 vs Reflex; 4d6+9 acid damage, and ongoing 5 acid damage (save ends). Effect: Six consumptive parasites appear, each in an unoccupied square within or adjacent to the blast. They act immediately after the consumptive swarm’s initiative count. Characters do not earn experience points for killing consumptive parasites created by this power. &lt;/p&gt;]] <23>  acid damage, and ongoing 5 acid damage (save ends). Effect: Six consumptive parasites appear, each in an unoccupied square within or adjacent to the blast. They act immediately after the consumptive swarm’s initiative count. Characters do not earn experience points for killing consumptive parasites created by this power. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Currents of Chaos&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;The consumptive swarm shifts 1 square.&lt;/p&gt;]]  <b>Currents of Chaos</b> (minor; at-will) </p><p>The consumptive swarm shifts 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aqueous Shift&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;A consumptive swarm ignores difficult terrain while shifting.&lt;/p&gt;]]  <b>Aqueous Shift</b> (minor; at-will) </p><p>A consumptive swarm ignores difficult terrain while shifting.</p></tr></td></table>",

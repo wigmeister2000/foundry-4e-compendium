@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -544,7 +545,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tmLv6Ri5XBZPryj2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -580,7 +581,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 54; <b>Bloodied</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 15</td><td><b>Ref</b> 17</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+2)<br><b>Con</b> 14 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 13 (+3)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 13 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +11, Thievery +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> black garments, dagger  x5.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d4+4 damage. &lt;/p&gt;&lt;p&gt;➶ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 5/10; +9 vs AC; 1d4+4 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d4+4 damage. &lt;/p&gt;]]; [[/roll 1d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d4+4 damage. &lt;/p&gt;]] <6.5>  damage. </p><p>➶ <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Range 5/10; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 5/10; &lt;u&gt;+9 vs AC&lt;/u&gt;; 1d4+4 damage. &lt;/p&gt;]]; [[/roll 1d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 5/10; +9 vs AC; 1d4+4 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Killing Dark&lt;/b&gt; ( when reduced to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; each target is blinded (save ends). When slain, a dark creeper explodes in a spout of darkness&lt;/p&gt;]] ᗕ <b>Killing Dark</b> ( when reduced to 0 hit points, ) </p><p>Close burst 1; targets enemies; each target is blinded (save ends). When slain, a dark creeper explodes in a spout of darkness</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dark creeper deals an extra 1d6 damage on melee and ranged attacks against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The dark creeper deals an extra [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dark creeper deals an extra 1d6 damage on melee and ranged attacks against any target it has combat advantage against.&lt;/p&gt;]] <3.5> damage on melee and ranged attacks against any target it has combat advantage against.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dark Step&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;The dark creeper moves up to 4 squares, gains a +4 bonus to AC against opportunity attacks, and gains combat advantage against any target that it ends its move adjacent to.&lt;/p&gt;]]  <b>Dark Step</b> (move; at-will) </p><p>The dark creeper moves up to 4 squares, gains a +4 bonus to AC against opportunity attacks, and gains combat advantage against any target that it ends its move adjacent to.</p></tr></td></table>",

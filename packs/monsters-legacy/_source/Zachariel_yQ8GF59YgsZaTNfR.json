@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dimensional Ward",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"C9R7zNXeOM50vr1K",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1339,7 +1341,7 @@
 		},
 		{
 			"name":"Angelic Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Xbp04rfmT7CszPta",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1375,7 +1377,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1385,7 +1388,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6N9Tjwdecvp74Ozg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1421,7 +1424,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1431,7 +1435,7 @@
 		},
 		{
 			"name":"Arrow of Fate",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2pvwBKjS7lAk0DLc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1467,7 +1471,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1523,23 +1528,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1036; <b>Bloodied</b> 518<hr><b>Resist</b> 20 fire, 30 radiant <b>Vulnerable</b> see arrow of fate <b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 42</td><td><b>Ref</b> 38</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 16 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 31 (+24)<br><b>Con</b> 27 (+22)</td><td><b>Dex</b> 23 (+20)<br><b>Int</b> 21 (+19)</td><td><b>Wis</b> 26 (+22)<br><b>Cha</b> 24 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +24, Diplomacy +26, History +24, Insight +27, Religion +24</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 32 | Insight 37</td></td></tr></table><p><b>Equipment</b> greatsword , plate armor .</p><p>[[/roll 0#&lt;b&gt;Dimensional Ward&lt;/b&gt; aura 3; creatures cannot use teleportation powers or effects to enter or exit squares inside the aura.]] <b>Dimensional Ward</b> aura 3; creatures cannot use teleportation powers or effects to enter or exit squares inside the aura.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +35 vs AC; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]] (⚔) <b>Blazing Sword</b> (standard, at-will) ✦ <b>Fire, Radiant, Weapon</b></p><p>Reach 2; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+35 vs AC&lt;/u&gt;; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]]; [[/roll 2d6+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +35 vs AC; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]] <17>  damage plus [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +35 vs AC; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]] <7> fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Excommunication&lt;/b&gt; (standard, recharges when an enemy hits zachariel with a melee attack) ✦ &lt;b&gt;Acid, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged sight; +31 vs Will; the target disappears into Carceri and is removed from play (save ends). The target is marooned on a bleak island lashed with acid rain, taking 20 acid damage each time it fails a saving throw to end the effect. Aftereffect: The target reappears in a square on the edge of the Zachariel’s dimensional ward aura and is immobilized and knocked prone until the end of its next turn. &lt;/p&gt;]] ➶ <b>Excommunication</b> (standard, recharges when an enemy hits zachariel with a melee attack) ✦ <b>Acid, Teleportation</b></p><p>Ranged sight; [[/roll 1d20+31[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Excommunication&lt;/b&gt; (standard, recharges when an enemy hits zachariel with a melee attack) ✦ &lt;b&gt;Acid, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged sight; &lt;u&gt;+31 vs Will&lt;/u&gt;; the target disappears into Carceri and is removed from play (save ends). The target is marooned on a bleak island lashed with acid rain, taking 20 acid damage each time it fails a saving throw to end the effect. Aftereffect: The target reappears in a square on the edge of the Zachariel’s dimensional ward aura and is immobilized and knocked prone until the end of its next turn. &lt;/p&gt;]]; the target disappears into Carceri and is removed from play (save ends). The target is marooned on a bleak island lashed with acid rain, taking 20 acid damage each time it fails a saving throw to end the effect. Aftereffect: The target reappears in a square on the edge of the Zachariel’s dimensional ward aura and is immobilized and knocked prone until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blazing Arc&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +35 vs AC; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]] ᗕ <b>Blazing Arc</b> (standard, at-will) ✦ <b>Fire, Radiant, Weapon</b></p><p>Close burst 2; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blazing Arc&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+35 vs AC&lt;/u&gt;; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]]; [[/roll 2d6+10#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blazing Arc&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +35 vs AC; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]] <17>  damage plus [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blazing Arc&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +35 vs AC; 2d6+10 damage plus 2d6 fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. &lt;/p&gt;]] <7> fire and radiant damage, and the target is slowed and marked until the end of Zachariel’s next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Brilliant Rebuke&lt;/b&gt; (immediate reaction, when an adjacent enemy moves or shifts, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Zachariel makes a blazing sword attack against the triggering enemy.&lt;/p&gt;]] ⚔ <b>Brilliant Rebuke</b> (immediate reaction, when an adjacent enemy moves or shifts, at-will) ✦ <b>Fire, Weapon</b></p><p>Zachariel makes a blazing sword attack against the triggering enemy.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Fury&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Radiant, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +31 vs Fortitude; 3d6+9 radiant damage, and the target is blinded (save ends). Effect: The burst creates a zone of brilliant light that lasts until the end of the encounter. Zachariel’s blazing sword attacks deal 2d6 extra radiant damage while he is within the zone. &lt;/p&gt;]] ᗕ <b>Astral Fury</b> (free, when first bloodied, encounter) ✦ <b>Radiant, Zone</b></p><p>Close burst 5; [[/roll 1d20+31[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Fury&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Radiant, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+31 vs Fortitude&lt;/u&gt;; 3d6+9 radiant damage, and the target is blinded (save ends). Effect: The burst creates a zone of brilliant light that lasts until the end of the encounter. Zachariel’s blazing sword attacks deal 2d6 extra radiant damage while he is within the zone. &lt;/p&gt;]]; [[/roll 3d6+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Fury&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Radiant, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +31 vs Fortitude; 3d6+9 radiant damage, and the target is blinded (save ends). Effect: The burst creates a zone of brilliant light that lasts until the end of the encounter. Zachariel’s blazing sword attacks deal 2d6 extra radiant damage while he is within the zone. &lt;/p&gt;]] <19.5>  radiant damage, and the target is blinded (save ends). Effect: The burst creates a zone of brilliant light that lasts until the end of the encounter. Zachariel’s blazing sword attacks deal [[/roll 2d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Fury&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Radiant, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +31 vs Fortitude; 3d6+9 radiant damage, and the target is blinded (save ends). Effect: The burst creates a zone of brilliant light that lasts until the end of the encounter. Zachariel’s blazing sword attacks deal 2d6 extra radiant damage while he is within the zone. &lt;/p&gt;]] <7> extra radiant damage while he is within the zone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Holy Word&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +31 vs Fortitude; 4d8+13 thunder damage, and the target is stunned until the end of Zachariel’s next turn. Aftereffect: The target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Holy Word</b> (minor, recharge ⚄⚅) ✦ <b>Thunder</b></p><p>Close blast 3; [[/roll 1d20+31[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Holy Word&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+31 vs Fortitude&lt;/u&gt;; 4d8+13 thunder damage, and the target is stunned until the end of Zachariel’s next turn. Aftereffect: The target is dazed (save ends). &lt;/p&gt;]]; [[/roll 4d8+13#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Holy Word&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +31 vs Fortitude; 4d8+13 thunder damage, and the target is stunned until the end of Zachariel’s next turn. Aftereffect: The target is dazed (save ends). &lt;/p&gt;]] <31>  thunder damage, and the target is stunned until the end of Zachariel’s next turn. Aftereffect: The target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Menacing Presence&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets creatures marked by Zachariel; +33 vs Will; the target is pushed 3 squares and takes a –2 penalty to all attack rolls until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Menacing Presence</b> (minor 1/round, at-will) ✦ <b>Fear</b></p><p>Close burst 3; targets creatures marked by Zachariel; [[/roll 1d20+33[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Menacing Presence&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets creatures marked by Zachariel; &lt;u&gt;+33 vs Will&lt;/u&gt;; the target is pushed 3 squares and takes a –2 penalty to all attack rolls until the end of its next turn. &lt;/p&gt;]]; the target is pushed 3 squares and takes a –2 penalty to all attack rolls until the end of its next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Angelic Presence&lt;/b&gt; (while not bloodied) &lt;/p&gt;&lt;p&gt;Any attack against Zachariel takes a –2 penalty to the attack roll.&lt;/p&gt;]]  <b>Angelic Presence</b> (while not bloodied) </p><p>Any attack against Zachariel takes a –2 penalty to the attack roll.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Zachariel can make opportunity attacks against all enemies in his reach.&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>Zachariel can make opportunity attacks against all enemies in his reach.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Arrow of Fate&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Zachariel is particularly vulnerable to the arrow of fate. If fired from a longbow or shortbow or used as an improvised weapon, when hit Zachariel takes 250 points of damage and is stunned (save ends).&lt;/p&gt;]]  <b>Arrow of Fate</b></p><p>Zachariel is particularly vulnerable to the arrow of fate. If fired from a longbow or shortbow or used as an improvised weapon, when hit Zachariel takes 250 points of damage and is stunned (save ends).</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -771,23 +773,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 79; <b>Bloodied</b> 39</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 20</td><td><b>Ref</b> 24</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+6)<br><b>Con</b> 13 (+6)</td><td><b>Dex</b> 16 (+8)<br><b>Int</b> 21 (+10)</td><td><b>Wis</b> 16 (+8)<br><b>Cha</b> 10 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +15, Dungeoneering +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> wand implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Whip&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +13 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 5 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The adept slides the target 1 square.&lt;/p&gt;]] (⚔) <b>Shadow Whip</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+13[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Whip&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+13 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d4 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Whip&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 5 damage.&lt;/p&gt;]] <10>  damage.</p><p><i>Effect:</i> The adept slides the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Darkfire Bolt&lt;/b&gt; (fire, implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); +15 vs. FortitudeThe attack can score a critical hit on a roll of 18-20.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 2 fire and necrotic damage. If the adept scores a critical hit, the target is weakened (save ends).&lt;/p&gt;]] (➶) <b>Darkfire Bolt</b> (fire, implement, necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 15 (one creature); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Darkfire Bolt&lt;/b&gt; (fire, implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;The attack can score a critical hit on a roll of 18-20.&lt;/p&gt;]]The attack can score a critical hit on a roll of 18-20.</p><p><i>Hit:</i> [[/roll 2d10 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Darkfire Bolt&lt;/b&gt; (fire, implement, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 2 fire and necrotic damage. If the adept scores a critical hit, the target is weakened (save ends).&lt;/p&gt;]] <13>  fire and necrotic damage. If the adept scores a critical hit, the target is weakened (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Corrupting Ray&lt;/b&gt; (implement, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 9 necrotic damage, and the target is blinded (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ➶ <b>Corrupting Ray</b> (implement, necrotic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Ranged 15 (one creature); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Corrupting Ray&lt;/b&gt; (implement, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one creature); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Corrupting Ray&lt;/b&gt; (implement, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 9 necrotic damage, and the target is blinded (save ends).&lt;/p&gt;]] <27>  necrotic damage, and the target is blinded (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Force Shield&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when an enemy damages the adept with a ranged or an area attack power&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The adept takes no damage from ranged or area attacks until the end of its next turn.&lt;/p&gt;]]  <b>Force Shield</b> ✦ <b>Recharge</b> when an enemy damages the adept with a ranged or an area attack power</p><p><i>Effect:</i> The adept takes no damage from ranged or area attacks until the end of its next turn.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -111,10 +112,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -243,7 +244,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -774,23 +776,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 253; <b>Bloodied</b> 126<hr><b>Immune</b> gaze, can’t be teleported against its will; Resist see also planar warp </td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 39</td><td><b>Ref</b> 39</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 hover; altitude limit 3; see also planar warp</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+21)<br><b>Con</b> 29 (+22)</td><td><b>Dex</b> 26 (+21)<br><b>Int</b> 9 (+12)</td><td><b>Wis</b> 21 (+18)<br><b>Cha</b> 26 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 20, tremorsense 10<br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Touch of Distortion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs Reflex; 3d8+9 psychic and radiant damage, and the astral render teleports the target 5 squares. &lt;/p&gt;]] (⚔) <b>Touch of Distortion</b> (standard, at-will) ✦ <b>Psychic, Radiant, Teleportation</b></p><p>[[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Touch of Distortion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs Reflex&lt;/u&gt;; 3d8+9 psychic and radiant damage, and the astral render teleports the target 5 squares. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Touch of Distortion&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs Reflex; 3d8+9 psychic and radiant damage, and the astral render teleports the target 5 squares. &lt;/p&gt;]] <22.5>  psychic and radiant damage, and the astral render teleports the target 5 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Distorting Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Reflex; 3d8+9 psychic and radiant damage, the astral render teleports the target 5 squares, and the target is dazed (save ends). &lt;/p&gt;]] (➶) <b>Distorting Ray</b> (standard, at-will) ✦ <b>Psychic, Radiant, Teleportation</b></p><p>Ranged 10; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Distorting Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 3d8+9 psychic and radiant damage, the astral render teleports the target 5 squares, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Distorting Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Reflex; 3d8+9 psychic and radiant damage, the astral render teleports the target 5 squares, and the target is dazed (save ends). &lt;/p&gt;]] <22.5>  psychic and radiant damage, the astral render teleports the target 5 squares, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Reality Shift&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +31 vs Reflex; 4d8+9 damage, and the astral render teleports the target 10 squares to a space outside the burst. In addition, the target is dazed and slowed (save ends both). Effect: The burst creates a zone of altered reality that lasts until the end of the encounter. Any creature that enters the zone is subject to the following secondary attack. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +31 vs Will; the target teleports 10 squares to a space outside the zone, and is dazed and slowed (save ends both). &lt;/p&gt;]] ✻ <b>Reality Shift</b> (standard, recharge ⚅</p><p>Area burst 1 within 20; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Reality Shift&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 4d8+9 damage, and the astral render teleports the target 10 squares to a space outside the burst. In addition, the target is dazed and slowed (save ends both). Effect: The burst creates a zone of altered reality that lasts until the end of the encounter. Any creature that enters the zone is subject to the following secondary attack. &lt;/p&gt;]]; [[/roll 4d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Reality Shift&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +31 vs Reflex; 4d8+9 damage, and the astral render teleports the target 10 squares to a space outside the burst. In addition, the target is dazed and slowed (save ends both). Effect: The burst creates a zone of altered reality that lasts until the end of the encounter. Any creature that enters the zone is subject to the following secondary attack. &lt;/p&gt;]] <27>  damage, and the astral render teleports the target 10 squares to a space outside the burst. In addition, the target is dazed and slowed (save ends both). Effect: The burst creates a zone of altered reality that lasts until the end of the encounter. Any creature that enters the zone is subject to the following secondary attack. </p><p><i>Secondary Attack</i> [[/roll 1d20+31[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Reality Shift&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+31 vs Will&lt;/u&gt;; the target teleports 10 squares to a space outside the zone, and is dazed and slowed (save ends both). &lt;/p&gt;]]; the target teleports 10 squares to a space outside the zone, and is dazed and slowed (save ends both). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Planar Warp&lt;/b&gt; (move; recharges when the astral render uses reality rift) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The astral render teleports 12 squares and gains insubstantial and phasing until the end of its next turn.&lt;/p&gt;]]  <b>Planar Warp</b> (move; recharges when the astral render uses reality rift) ✦ <b>Teleportation</b></p><p>The astral render teleports 12 squares and gains insubstantial and phasing until the end of its next turn.</p></tr></td></table>",

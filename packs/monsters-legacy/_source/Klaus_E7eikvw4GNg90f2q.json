@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -546,7 +548,7 @@
 		},
 		{
 			"name":"Skirmish +2d8",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SwV1g9GXPjvKWiEh",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -818,23 +821,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 204; <b>Bloodied</b> 102</td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26 (28 against opportunity attacks)</td><td><b>Fort</b> 23</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+10)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 18 (+9)<br><b>Int</b> 10 (+5)</td><td><b>Wis</b> 17 (+8)<br><b>Cha</b> 6 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +15, Dungeoneering +13, Nature +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> hide armor , longsword , short sword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Short Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bloody Rending&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Klaus makes a longsword attack and a short sword attack. If he hits one target with both attacks, that target takes ongoing 5 damage (save ends).&lt;/p&gt;]] ⚔ <b>Bloody Rending</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Klaus makes a longsword attack and a short sword attack. If he hits one target with both attacks, that target takes ongoing 5 damage (save ends).</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +[[/roll 2d8#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +2d8&lt;/b&gt;&lt;/p&gt;&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +2d8&lt;/b&gt;&lt;/p&gt;]] <9> &lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Klaus moves 3 squares away from his starting point, he deals an extra 2d8 damage with melee attacks until the start of his next turn.&lt;/p&gt;]]  <b>Skirmish +2d8</b></p><p>If Klaus moves 3 squares away from his starting point, he deals an extra [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +2d8&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Klaus moves 3 squares away from his starting point, he deals an extra 2d8 damage with melee attacks until the start of his next turn.&lt;/p&gt;]] <9> damage with melee attacks until the start of his next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unmarked Speed&lt;/b&gt; (move; at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Klaus ends any mark affecting him and shifts 2 squares or moves 4 squares. The creature that marked him takes 5 psychic damage.&lt;/p&gt;]]  <b>Unmarked Speed</b> (move; at-will) ✦ <b>Psychic</b></p><p>Klaus ends any mark affecting him and shifts 2 squares or moves 4 squares. The creature that marked him takes 5 psychic damage.</p></tr></td></table>",

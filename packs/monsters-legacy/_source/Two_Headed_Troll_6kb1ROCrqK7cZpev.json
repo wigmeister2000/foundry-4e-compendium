@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QmBswagWepTn71Ry",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,10 +333,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -408,7 +410,7 @@
 		},
 		{
 			"name":"Double Actions",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"rtGZ6xLC9DOjnkiU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -444,7 +446,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -454,7 +457,7 @@
 		},
 		{
 			"name":"Dual Brain",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"z5lrCqN4xV9hJQif",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -490,7 +493,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -500,7 +504,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BGnT8e7jqWzy0u5i",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -536,7 +540,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -592,23 +597,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 264; <b>Bloodied</b> 132<br><b>Regeneration</b> 10 (if the troll takes acid or fire damage, regeneration does not function until the end of its next turn)</td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 27</td><td><b>Ref</b> 19</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+12)<br><b>Con</b> 22 (+11)</td><td><b>Dex</b> 10 (+5)<br><b>Int</b> 6 (+3)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 10 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +13 vs AC; 3d6+7 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+13 vs AC&lt;/u&gt;; 3d6+7 damage. &lt;/p&gt;]]; [[/roll 3d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +13 vs AC; 3d6+7 damage. &lt;/p&gt;]] <17.5>  damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Smackdown&lt;/b&gt; (immediate reaction, when an enemy moves into a position that flanks the two-headed troll, at-will) &lt;/p&gt;&lt;p&gt;The two-headed troll targets one creature flanking it; +11 vs Fortitude; the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Smackdown</b> (immediate reaction, when an enemy moves into a position that flanks the two-headed troll, at-will) </p><p>The two-headed troll targets one creature flanking it; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Smackdown&lt;/b&gt; (immediate reaction, when an enemy moves into a position that flanks the two-headed troll, at-will) &lt;/p&gt;&lt;p&gt;The two-headed troll targets one creature flanking it; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; the target is knocked prone. &lt;/p&gt;]]; the target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A two-headed troll rolls initiative twice, gets two turns during a round, and has a full set of actions (standard, move, minor) on each turn. Each set of actions corresponds to a different head. The troll’s ability to take immediate actions refreshes on each of its turns.&lt;/p&gt;]]  <b>Double Actions</b></p><p>A two-headed troll rolls initiative twice, gets two turns during a round, and has a full set of actions (standard, move, minor) on each turn. Each set of actions corresponds to a different head. The troll’s ability to take immediate actions refreshes on each of its turns.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dual Brain&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the end of its turn, the two-headed troll automatically succeeds on all saving throws against the dazed and stunned conditions and against charm effects that a save can end.&lt;/p&gt;]]  <b>Dual Brain</b></p><p>At the end of its turn, the two-headed troll automatically succeeds on all saving throws against the dazed and stunned conditions and against charm effects that a save can end.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 10 hit points.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 10 hit points.</p></tr></td></table>",

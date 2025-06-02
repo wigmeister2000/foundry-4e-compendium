@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -288,10 +289,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -411,23 +412,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 26</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 4 (+2)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 21 (+10)<br><b>Int</b> 6 (+3)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 6 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Filthy Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; 1d6+3 damage. &lt;/p&gt;]] (⚔) <b>Filthy Claws</b> (standard, at-will) </p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Filthy Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 1d6+3 damage. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Filthy Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; 1d6+3 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Infectious Bite&lt;/b&gt; (standard; requires combat advantage against the target, at-will) ✦ &lt;b&gt;Disease, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d4+5 damage, and the target contracts cemetery rot (see below) and takes ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] ⚔ <b>Infectious Bite</b> (standard; requires combat advantage against the target, at-will) ✦ <b>Disease, Necrotic</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Infectious Bite&lt;/b&gt; (standard; requires combat advantage against the target, at-will) ✦ &lt;b&gt;Disease, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 2d4+5 damage, and the target contracts cemetery rot (see below) and takes ongoing 5 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Infectious Bite&lt;/b&gt; (standard; requires combat advantage against the target, at-will) ✦ &lt;b&gt;Disease, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d4+5 damage, and the target contracts cemetery rot (see below) and takes ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] <10>  damage, and the target contracts cemetery rot (see below) and takes ongoing 5 necrotic damage (save ends). </p></tr></td></table>",

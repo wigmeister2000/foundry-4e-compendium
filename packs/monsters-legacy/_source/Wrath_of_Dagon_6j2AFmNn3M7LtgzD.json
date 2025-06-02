@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"YANVtwZd9i51SLm3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Disorienting Pheromone",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WvyoLKSa2Ps4piER",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -198,10 +201,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -995,7 +998,7 @@
 		},
 		{
 			"name":"Leaping Horror",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zuDXKvts2aV8m3q7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1031,7 +1034,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1041,7 +1045,7 @@
 		},
 		{
 			"name":"Radiant Weakness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"PLnzf5AY8yguDZRO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1077,7 +1081,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1133,23 +1138,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 415; <b>Bloodied</b> 207<br><b>Regeneration</b> 5<hr><b>Resist</b> 10 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 2 | <b>Save</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 26</td><td><b>Ref</b> 25</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+11)<br><b>Con</b> 22 (+11)</td><td><b>Dex</b> 20 (+10)<br><b>Int</b> 14 (+7)</td><td><b>Wis</b> 19 (+9)<br><b>Cha</b> 15 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Disorienting Pheromone&lt;/b&gt; aura 5; creatures that begin their turn in this aura take a -1 penalty to Will defense and a -2 penalty to Perception checks (save ends)]] <b>Disorienting Pheromone</b> aura 5; creatures that begin their turn in this aura take a -1 penalty to Will defense and a -2 penalty to Perception checks (save ends)</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d6+6 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d6+6 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d6+6 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <13>  damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Snapping Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Make two claw attacks.&lt;/p&gt;]] ⚔ <b>Snapping Claws</b> (standard, at-will) ✦ <b>Poison</b></p><p>Make two claw attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearful Pheromone&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +15 vs Will; the target is pushed 4 and takes a -2 penalty to all attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Fearful Pheromone</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 3; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearful Pheromone&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+15 vs Will&lt;/u&gt;; the target is pushed 4 and takes a -2 penalty to all attack rolls (save ends). &lt;/p&gt;]]; the target is pushed 4 and takes a -2 penalty to all attack rolls (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Somnolent Pheromone&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +15 vs Will; the target falls asleep (save ends); any damage immediately awakens the target. &lt;/p&gt;]] ᗕ <b>Somnolent Pheromone</b> (standard, encounter) ✦ <b>Sleep</b></p><p>Close burst 1; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Somnolent Pheromone&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+15 vs Will&lt;/u&gt;; the target falls asleep (save ends); any damage immediately awakens the target. &lt;/p&gt;]]; the target falls asleep (save ends); any damage immediately awakens the target. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wrathful Pheromone&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +15 vs Will; the target must use a standard action on its next turn to make a basic attack against its nearest ally. If no ally is within range of a basic attack, the target loses its standard action for that round. &lt;/p&gt;]] ᗕ <b>Wrathful Pheromone</b> (standard, encounter) ✦ <b>Charm</b></p><p>Close burst 3; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wrathful Pheromone&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+15 vs Will&lt;/u&gt;; the target must use a standard action on its next turn to make a basic attack against its nearest ally. If no ally is within range of a basic attack, the target loses its standard action for that round. &lt;/p&gt;]]; the target must use a standard action on its next turn to make a basic attack against its nearest ally. If no ally is within range of a basic attack, the target loses its standard action for that round. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Leaping Horror&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Wrath can make long and high jumps as though it had a running start even if it does not, and even if leaping from the water. It also gains a +5 racial bonus to Athletics checks made to jump.&lt;/p&gt;]]  <b>Leaping Horror</b></p><p>The Wrath can make long and high jumps as though it had a running start even if it does not, and even if leaping from the water. It also gains a +5 racial bonus to Athletics checks made to jump.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Radiant Weakness&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Radiant effects cause the wrath of Dagon to take a -2 penalty to attacks until the start of the fish-man’s next turn.&lt;/p&gt;]]  <b>Radiant Weakness</b></p><p>Radiant effects cause the wrath of Dagon to take a -2 penalty to attacks until the start of the fish-man’s next turn.</p></tr></td></table>",

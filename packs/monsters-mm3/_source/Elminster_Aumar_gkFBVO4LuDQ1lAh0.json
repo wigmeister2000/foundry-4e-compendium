@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Mystic's Clarity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Rs58B1TzfJnGWt6O",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Rage of the Sage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RByMD4UsHTcKwPpS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Sage's Alacrity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"c6CqZ5Kg8w4TXDyH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Sage's Countermagic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wUA31Yyk5VsMDqE9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -245,7 +249,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -426,7 +431,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1319,23 +1325,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 728; <b>Bloodied</b> 364</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 2 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 31</td><td><b>Ref</b> 32</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+10)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 18 (+13)<br><b>Int</b> 25 (+16)</td><td><b>Wis</b> 20 (+14)<br><b>Cha</b> 17 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> All<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +21, History +21, Nature +19</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> robes, pipe, longsword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Mystic\"s Clarity&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;While Elminster is not bloodied, enemies in the aura take a -2 penalty to saving throws, and Elminster scores a critical hit against them on a natural 19–20.&lt;/p&gt;]] ⌀ <b>Mystic\"s Clarity</b> ✦ <b>Aura</b> 3</p><p>While Elminster is not bloodied, enemies in the aura take a -2 penalty to saving throws, and Elminster scores a critical hit against them on a natural 19–20.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Rage of the Sage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While Elminster is bloodied, all his defenses become 30, and his standard action attack powers deal 2d10 extra damage and 5 extra ongoing damage.&lt;/p&gt;]]  <b>Rage of the Sage</b> <b></b></p><p>While Elminster is bloodied, all his defenses become 30, and his standard action attack powers deal [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Rage of the Sage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While Elminster is bloodied, all his defenses become 30, and his standard action attack powers deal 2d10 extra damage and 5 extra ongoing damage.&lt;/p&gt;]] <11> extra damage and 5 extra ongoing damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sage\"s Alacrity&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Elminster makes two initiative checks, and he takes a full turn on each initiative result. He receives one immediate action between the end of one of his turns and the start of another.&lt;/p&gt;]]  <b>Sage\"s Alacrity</b> <b></b></p><p>Elminster makes two initiative checks, and he takes a full turn on each initiative result. He receives one immediate action between the end of one of his turns and the start of another.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sage\"s Countermagic&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the end of each of his turns, Elminster ends any dazing, immobilizing, restraining, slowing, or stunning effect on him.&lt;/p&gt;]]  <b>Sage\"s Countermagic</b> <b></b></p><p>At the end of each of his turns, Elminster ends any dazing, immobilizing, restraining, slowing, or stunning effect on him.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Thunderstrike Longsword&lt;/b&gt; (thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 5 damage, and ongoing 15 thunder damage (save ends), and Elminster pushes the target up to 4 squares and knocks it prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Elminster pushes the target up to 2 squares.&lt;/p&gt;]] (⚔) <b>Thunderstrike Longsword</b> (thunder, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Thunderstrike Longsword&lt;/b&gt; (thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Thunderstrike Longsword&lt;/b&gt; (thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 5 damage, and ongoing 15 thunder damage (save ends), and Elminster pushes the target up to 4 squares and knocks it prone.&lt;/p&gt;]] <23>  damage, and ongoing 15 thunder damage (save ends), and Elminster pushes the target up to 4 squares and knocks it prone.</p><p><i>Miss:</i> Elminster pushes the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcane Fire&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +22 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 7 force damage, and ongoing 15 fire damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The target is slowed until the end of Elminster’s next turn. If the target is already slowed and taking ongoing damage, it is instead immobilized (save ends).&lt;/p&gt;]] (➶) <b>Arcane Fire</b> (fire, force) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+22[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcane Fire&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+22 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcane Fire&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 7 force damage, and ongoing 15 fire damage (save ends).&lt;/p&gt;]] <23.5>  force damage, and ongoing 15 fire damage (save ends).</p><p><i>Effect:</i> The target is slowed until the end of Elminster’s next turn. If the target is already slowed and taking ongoing damage, it is instead immobilized (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Ragefire Nova&lt;/b&gt; (fear, fire, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2, close burst 3 while bloodied (creatures in the burst); +22 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 16 fire damage, and ongoing 15 psychic damage (save ends), and Elminster pushes the target up to its speed + 1.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and Elminster pushes the target 3 squares.&lt;/p&gt;]]  <b>Ragefire Nova</b> (fear, fire, psychic) ✦ Recharge ⚅</p><p><i>Attack:</i> Close burst 2, close burst 3 while bloodied (creatures in the burst); [[/roll 1d20+22[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Ragefire Nova&lt;/b&gt; (fear, fire, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2, close burst 3 while bloodied (creatures in the burst); &lt;u&gt;+22 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 16#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Ragefire Nova&lt;/b&gt; (fear, fire, psychic) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 16 fire damage, and ongoing 15 psychic damage (save ends), and Elminster pushes the target up to its speed + 1.&lt;/p&gt;]] <38>  fire damage, and ongoing 15 psychic damage (save ends), and Elminster pushes the target up to its speed + 1.</p><p><i>Miss:</i> Half damage, and Elminster pushes the target 3 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Fire Strike&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round while not bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +22 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 5 fire and force damage.&lt;/p&gt;]] ᗕ <b>Fire Strike</b> (fire, force) ✦ <b>At-Will</b> 1/round while not bloodied</p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+22[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Fire Strike&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round while not bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+22 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d12 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Fire Strike&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round while not bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 5 fire and force damage.&lt;/p&gt;]] <11.5>  fire and force damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Elminster alters his physical form and clothing to appear as a Medium or Small humanoid until he uses change shape again or until he drops to 0 hit points. To assume a specific individual’s form, Elminster must have seen that individual. Other creatures can make a DC 40 Insight check to discern that the form is a disguise.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> Elminster alters his physical form and clothing to appear as a Medium or Small humanoid until he uses change shape again or until he drops to 0 hit points. To assume a specific individual’s form, Elminster must have seen that individual. Other creatures can make a DC 40 Insight check to discern that the form is a disguise.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Elemental Intuitive&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy takes ongoing damage of a type to which it is resistant.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction; Immediate Interrupt while bloodied):&lt;/i&gt; Close burst 10 (the triggering enemy in the burst); Elminster changes the damage type to another to which the enemy is not resistant and imposes a -5 penalty to the saving throw against that damage.&lt;/p&gt;]]  <b>Elemental Intuitive</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy takes ongoing damage of a type to which it is resistant.</p><p><i>Effect (Immediate Reaction; Immediate Interrupt while bloodied):</i> Close burst 10 (the triggering enemy in the burst); Elminster changes the damage type to another to which the enemy is not resistant and imposes a -5 penalty to the saving throw against that damage.</p></tr></td></table>",

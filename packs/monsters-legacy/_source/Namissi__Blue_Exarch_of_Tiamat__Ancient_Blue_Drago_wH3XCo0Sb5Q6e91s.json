@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Exarch's Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HJMEVTfvFD2dXoAU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"37",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -297,7 +299,8 @@
 					"defBonus":0,
 					"formula":"37",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -699,10 +702,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1900,23 +1903,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1184; <b>Bloodied</b> 592 ; see also bloodied breath<hr><b>Resist</b> cold 20, fire 20 <b>Immune</b> lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +23 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 46</td><td><b>Ref</b> 44</td><td><b>Will</b> 43 ; if the heroes were successful in the “Corrupted Shrine” skill challenge in Encounter F1, the PCs have a +2 bonus on attacks in this encounter.</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, fly 12 (hover), overland flight 15</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 35 (+28)<br><b>Con</b> 32 (+27)</td><td><b>Dex</b> 25 (+23)<br><b>Int</b> 31 (+26)</td><td><b>Wis</b> 29 (+25)<br><b>Cha</b> 18 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +32, Insight +30, Intimidate +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 35 | Insight 40</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Exarch\"s Presence&lt;/b&gt; (Fear) aura 5; enemies within the aura take a -2 penalty to attack rolls and saving throws]] <b>Exarch\"s Presence</b> (Fear) aura 5; enemies within the aura take a -2 penalty to attack rolls and saving throws</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d8+12 damage plus 2d6 lightning damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] (⚔) <b>Gore</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Reach 4; [[/roll 1d20+37[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+37 vs AC&lt;/u&gt;; 2d8+12 damage plus 2d6 lightning damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]]; [[/roll 2d8+12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d8+12 damage plus 2d6 lightning damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] <21>  damage plus [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d8+12 damage plus 2d6 lightning damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] <7> lightning damage, and the target is pushed 3 squares and knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d6+12 damage.. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 4; [[/roll 1d20+37[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+37 vs AC&lt;/u&gt;; 2d6+12 damage.. &lt;/p&gt;]]; [[/roll 2d6+12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +37 vs AC; 2d6+12 damage.. &lt;/p&gt;]] <19>  damage.. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Draconic Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Namissi makes a gore attack and two claw attacks. If all three attacks hit, Namissi recharges wingclap&lt;/p&gt;]] ⚔ <b>Draconic Fury</b> (standard, at-will) </p><p>Namissi makes a gore attack and two claw attacks. If all three attacks hit, Namissi recharges wingclap</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +36 vs Reflex; 4d12+22 lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Lightning</b></p><p>Close burst 10; [[/roll 1d20+36[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; &lt;u&gt;+36 vs Reflex&lt;/u&gt;; 4d12+22 lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]]; [[/roll 4d12+22#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; +36 vs Reflex; 4d12+22 lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]] <48>  lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is dazed until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunderclap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +36 vs Fortitude; 2d10+10 thunder damage, and the target is stunned until the end of the blue dragon’s next turn. Critical Hit: As above, except that the target is stunned (save ends). &lt;/p&gt;]] ᗕ <b>Thunderclap</b> (standard, at-will) ✦ <b>Thunder</b></p><p>Close burst 3; [[/roll 1d20+36[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunderclap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+36 vs Fortitude&lt;/u&gt;; 2d10+10 thunder damage, and the target is stunned until the end of the blue dragon’s next turn. Critical Hit: As above, except that the target is stunned (save ends). &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunderclap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +36 vs Fortitude; 2d10+10 thunder damage, and the target is stunned until the end of the blue dragon’s next turn. Critical Hit: As above, except that the target is stunned (save ends). &lt;/p&gt;]] <21>  thunder damage, and the target is stunned until the end of the blue dragon’s next turn. Critical Hit: As above, except that the target is stunned (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wingclap&lt;/b&gt; (move, encounter) &lt;/p&gt;&lt;p&gt;Namissi flies up to 12 squares and attacks with his wings at the end of his move: reach 4, two targets; +36 vs Fortitude; 3d10+10 thunder damage. This movement does not provoke opportunity attacks. &lt;/p&gt;]] ⚔ <b>Wingclap</b> (move, encounter) </p><p>Namissi flies up to 12 squares and attacks with his wings at the end of his move: reach 4, two targets; [[/roll 1d20+36[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wingclap&lt;/b&gt; (move, encounter) &lt;/p&gt;&lt;p&gt;Namissi flies up to 12 squares and attacks with his wings at the end of his move: reach 4, two targets; &lt;u&gt;+36 vs Fortitude&lt;/u&gt;; 3d10+10 thunder damage. This movement does not provoke opportunity attacks. &lt;/p&gt;]]; [[/roll 3d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wingclap&lt;/b&gt; (move, encounter) &lt;/p&gt;&lt;p&gt;Namissi flies up to 12 squares and attacks with his wings at the end of his move: reach 4, two targets; +36 vs Fortitude; 3d10+10 thunder damage. This movement does not provoke opportunity attacks. &lt;/p&gt;]] <26.5>  thunder damage. This movement does not provoke opportunity attacks. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Namissi’s breath weapon recharges, and he uses it.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) ✦ <b>Lightning</b></p><p>Namissi’s breath weapon recharges, and he uses it.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tiamat\"s Wrath&lt;/b&gt; ( when namissi drops to 0 hit points, ) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +36 vs Reflex; 5d6+10 lightning damage. Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Tiamat\"s Wrath</b> ( when namissi drops to 0 hit points, ) ✦ <b>Lightning</b></p><p>Close burst 5; [[/roll 1d20+36[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tiamat\"s Wrath&lt;/b&gt; ( when namissi drops to 0 hit points, ) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+36 vs Reflex&lt;/u&gt;; 5d6+10 lightning damage. Miss: Half damage. &lt;/p&gt;]]; [[/roll 5d6+10#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tiamat\"s Wrath&lt;/b&gt; ( when namissi drops to 0 hit points, ) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +36 vs Reflex; 5d6+10 lightning damage. Miss: Half damage. &lt;/p&gt;]] <27.5>  lightning damage. Miss: Half damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Exarch\"s Shield&lt;/b&gt; (immediate reaction, when hit by a ranged or area attack, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 4 within 20; must target the triggering attacker; +36 vs Reflex; 4d6 lightning damage, and ongoing 10 lightning damage (save ends). Miss: Half damage. &lt;/p&gt;]] ✻ <b>Exarch\"s Shield</b> (immediate reaction, when hit by a ranged or area attack, encounter) ✦ <b>Lightning</b></p><p>Area burst 4 within 20; must target the triggering attacker; [[/roll 1d20+36[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Exarch\"s Shield&lt;/b&gt; (immediate reaction, when hit by a ranged or area attack, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 4 within 20; must target the triggering attacker; &lt;u&gt;+36 vs Reflex&lt;/u&gt;; 4d6 lightning damage, and ongoing 10 lightning damage (save ends). Miss: Half damage. &lt;/p&gt;]]; [[/roll 4d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Exarch\"s Shield&lt;/b&gt; (immediate reaction, when hit by a ranged or area attack, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 4 within 20; must target the triggering attacker; +36 vs Reflex; 4d6 lightning damage, and ongoing 10 lightning damage (save ends). Miss: Half damage. &lt;/p&gt;]] <14> lightning damage, and ongoing 10 lightning damage (save ends). Miss: Half damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Faith of Tiamat&lt;/b&gt; (minor; usable only while bloodied; at-will) &lt;/p&gt;&lt;p&gt;Namissi’s next successful attack that deals lightning damage instead deals acid, cold, fire, or poison damage (his choice).&lt;/p&gt;]]  <b>Faith of Tiamat</b> (minor; usable only while bloodied; at-will) </p><p>Namissi’s next successful attack that deals lightning damage instead deals acid, cold, fire, or poison damage (his choice).</p></tr></td></table>",

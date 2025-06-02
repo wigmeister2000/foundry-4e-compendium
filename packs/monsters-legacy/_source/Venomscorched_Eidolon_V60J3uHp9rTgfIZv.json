@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Fearless Followers",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"bOyfPEGstVABFUio",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -994,23 +996,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 264; <b>Bloodied</b> 132<hr><b>Immune</b> disease, fear, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 22</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 7 (+4)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 11 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Fearless Followers&lt;/b&gt; aura 5; allies in the aura are immune to fear.]] <b>Fearless Followers</b> aura 5; allies in the aura are immune to fear.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+6 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Toxic Assault&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The eidolon makes two slam attacks. If both slam attacks hit the same target, the eidolon makes a secondary attack. Secondary Attack: Close burst 1; +17 vs Fortitude; 1d8+3 poison damage and the target is slowed (save ends). &lt;/p&gt;]] ᗕ <b>Toxic Assault</b> (standard, at-will) ✦ <b>Poison</b></p><p>The eidolon makes two slam attacks. If both slam attacks hit the same target, the eidolon makes a secondary attack. Secondary Attack: Close burst 1; [[/roll 1d20+17[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Toxic Assault&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The eidolon makes two slam attacks. If both slam attacks hit the same target, the eidolon makes a secondary attack. Secondary Attack: Close burst 1; &lt;u&gt;+17 vs Fortitude&lt;/u&gt;; 1d8+3 poison damage and the target is slowed (save ends). &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Toxic Assault&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The eidolon makes two slam attacks. If both slam attacks hit the same target, the eidolon makes a secondary attack. Secondary Attack: Close burst 1; +17 vs Fortitude; 1d8+3 poison damage and the target is slowed (save ends). &lt;/p&gt;]] <7.5>  poison damage and the target is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unhallowed Stance&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The eidolon assumes a meditative stance. Until the end of its next turn, the eidolon gains resist 20 to all damage, and all allies in its line of sight deal an extra 1d8 poison damage on their melee attacks. If the eidolon moves, the effect ends.&lt;/p&gt;]]  <b>Unhallowed Stance</b> (standard; at-will) ✦ <b>Poison</b></p><p>The eidolon assumes a meditative stance. Until the end of its next turn, the eidolon gains resist 20 to all damage, and all allies in its line of sight deal an extra [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unhallowed Stance&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The eidolon assumes a meditative stance. Until the end of its next turn, the eidolon gains resist 20 to all damage, and all allies in its line of sight deal an extra 1d8 poison damage on their melee attacks. If the eidolon moves, the effect ends.&lt;/p&gt;]] <4.5> poison damage on their melee attacks. If the eidolon moves, the effect ends.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Toxic Rebuke&lt;/b&gt; (immediate reaction, when an enemy attacks the eidolon while unhallowed stance is active, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; +17 vs Reflex; 2d8+5 poison damage. Miss: Half damage. This attack does not provoke opportunity attacks. &lt;/p&gt;]] ➶ <b>Toxic Rebuke</b> (immediate reaction, when an enemy attacks the eidolon while unhallowed stance is active, at-will) </p><p>Ranged 20; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Toxic Rebuke&lt;/b&gt; (immediate reaction, when an enemy attacks the eidolon while unhallowed stance is active, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d8+5 poison damage. Miss: Half damage. This attack does not provoke opportunity attacks. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Toxic Rebuke&lt;/b&gt; (immediate reaction, when an enemy attacks the eidolon while unhallowed stance is active, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; +17 vs Reflex; 2d8+5 poison damage. Miss: Half damage. This attack does not provoke opportunity attacks. &lt;/p&gt;]] <14>  poison damage. Miss: Half damage. This attack does not provoke opportunity attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Storm of Death&lt;/b&gt; (immediate reaction, when an enemy kills one of the eidolon’s allies in the eidolon’s line of sight, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +17 vs Reflex; 1d6+5 necrotic damage, and the target is blinded and takes ongoing 5 necrotic damage (save ends both). This attack does not provoke opportunity attacks. &lt;/p&gt;]] ➶ <b>Storm of Death</b> (immediate reaction, when an enemy kills one of the eidolon’s allies in the eidolon’s line of sight, at-will) ✦ <b>Necrotic</b></p><p>Ranged 20; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Storm of Death&lt;/b&gt; (immediate reaction, when an enemy kills one of the eidolon’s allies in the eidolon’s line of sight, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 1d6+5 necrotic damage, and the target is blinded and takes ongoing 5 necrotic damage (save ends both). This attack does not provoke opportunity attacks. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Storm of Death&lt;/b&gt; (immediate reaction, when an enemy kills one of the eidolon’s allies in the eidolon’s line of sight, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +17 vs Reflex; 1d6+5 necrotic damage, and the target is blinded and takes ongoing 5 necrotic damage (save ends both). This attack does not provoke opportunity attacks. &lt;/p&gt;]] <8.5>  necrotic damage, and the target is blinded and takes ongoing 5 necrotic damage (save ends both). This attack does not provoke opportunity attacks. </p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Wracking Pool",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UAmzv71Y8WOQPJcx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Misty Veil",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"l0wdO7CL1zvt4TGj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pDkEF8tOhslCbqTH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Aquatic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8cqX4ETzOhUGs3Aj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -190,7 +194,7 @@
 		},
 		{
 			"name":"Epic Recovery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"rUAJWIoj6xVETN5d",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -226,7 +230,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -236,7 +241,7 @@
 		},
 		{
 			"name":"Flowing Form",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FOhM5LuNUi843TV2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -272,7 +277,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -282,7 +288,7 @@
 		},
 		{
 			"name":"Sensitive to Cold",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0egkOElRhJbrVCKn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -318,7 +324,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -383,7 +390,8 @@
 					"defBonus":0,
 					"formula":"36",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1626,23 +1634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1216; <b>Bloodied</b> 608<hr><b>Resist</b> 30 cold <b>Vulnerable</b> 10 fire <b>Immune</b> acid, disease, dominated, petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 3 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 45</td><td><b>Fort</b> 46</td><td><b>Ref</b> 45</td><td><b>Will</b> 46</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 12</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+25)<br><b>Con</b> 32 (+27)</td><td><b>Dex</b> 22 (+22)<br><b>Int</b> 27 (+24)</td><td><b>Wis</b> 25 (+23)<br><b>Cha</b> 29 (+25)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 5,Darkvision<br><b>Passive</b> Perception 33 | Insight 33</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Misty Veil&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Nonmagical fire cannot be lit within the aura, and any such fire brought into the aura is immediately extinguished. While Olhydra is not bloodied, the area within the aura is lightly obscured for enemies outside the aura.&lt;/p&gt;]] ⌀ <b>Misty Veil</b> ✦ <b>Aura</b> 3</p><p>Nonmagical fire cannot be lit within the aura, and any such fire brought into the aura is immediately extinguished. While Olhydra is not bloodied, the area within the aura is lightly obscured for enemies outside the aura.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking Olhydra.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking Olhydra.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aquatic&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Olhydra can breathe underwater. In aquatic combat, she gains a +2 bonus to attack rolls against nonaquatic creatures.&lt;/p&gt;]]  <b>Aquatic</b> <b></b></p><p>Olhydra can breathe underwater. In aquatic combat, she gains a +2 bonus to attack rolls against nonaquatic creatures.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Epic Recovery&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Olhydra starts her turn, any dazing, immobilizing, restraining, slowing, or stunning effect on her ends.&lt;/p&gt;]]  <b>Epic Recovery</b> <b></b></p><p>When Olhydra starts her turn, any dazing, immobilizing, restraining, slowing, or stunning effect on her ends.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Flowing Form&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While squeezing, Olhydra moves at full speed rather than half speed, she doesn’t take the -5 penalty to attack rolls, and she doesn’t grant combat advantage for squeezing. Olhydra can’t be knocked prone, and she ignores difficult terrain.&lt;/p&gt;]]  <b>Flowing Form</b> <b></b></p><p>While squeezing, Olhydra moves at full speed rather than half speed, she doesn’t take the -5 penalty to attack rolls, and she doesn’t grant combat advantage for squeezing. Olhydra can’t be knocked prone, and she ignores difficult terrain.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sensitive to Cold&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever a cold attack hits Olhydra, she gains vulnerable 15 to the next attack that hits her before the start of her next turn.&lt;/p&gt;]]  <b>Sensitive to Cold</b> <b></b></p><p>Whenever a cold attack hits Olhydra, she gains vulnerable 15 to the next attack that hits her before the start of her next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wave Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Before making the attack, Olhydra pushes creatures adjacent to the target up to 2 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); +36 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 25 damage, Olhydra grabs the target (escape DC 34), and ongoing 15 damage until the grab ends.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Olhydra pushes the target up to 4 squares.&lt;/p&gt;]] (⚔) <b>Wave Slam</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Before making the attack, Olhydra pushes creatures adjacent to the target up to 2 squares.</p><p><i>Attack:</i> Melee 4 (one creature); [[/roll 1d20+36[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wave Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); &lt;u&gt;+36 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 25#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wave Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 25 damage, Olhydra grabs the target (escape DC 34), and ongoing 15 damage until the grab ends.&lt;/p&gt;]] <41.5>  damage, Olhydra grabs the target (escape DC 34), and ongoing 15 damage until the grab ends.</p><p><i>Miss:</i> Olhydra pushes the target up to 4 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Engulfing Wave&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Olhydra uses wave slam three times, or four times if she is bloodied.&lt;/p&gt;]]  <b>Engulfing Wave</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Olhydra uses wave slam three times, or four times if she is bloodied.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flood of the Deep&lt;/b&gt; (acid, teleportation) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +36 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d12 + 27 damage, and ongoing 20 acid damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and ongoing 10 acid damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Olhydra teleports to a space, one square of which must be within the burst. Any creatures grabbed by her teleport with her and remain grabbed in a space of her choice within 4 squares of her (or within her space if the creatures started the teleportation there).&lt;/p&gt;]] ᗕ <b>Flood of the Deep</b> (acid, teleportation) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+36[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flood of the Deep&lt;/b&gt; (acid, teleportation) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+36 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 5d12 + 27#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flood of the Deep&lt;/b&gt; (acid, teleportation) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d12 + 27 damage, and ongoing 20 acid damage (save ends).&lt;/p&gt;]] <59.5>  damage, and ongoing 20 acid damage (save ends).</p><p><i>Miss:</i> Half damage, and ongoing 10 acid damage (save ends).</p><p><i>Effect:</i> Olhydra teleports to a space, one square of which must be within the burst. Any creatures grabbed by her teleport with her and remain grabbed in a space of her choice within 4 squares of her (or within her space if the creatures started the teleportation there).</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Riptide Grasp&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Olhydra moves up to her speed, and creatures grabbed by her are pulled with her, remaining grabbed in a space of her choice within 4 squares of her (or in her space if the creatures started the movement there). This movement provokes no opportunity attacks from the grabbed creatures.&lt;/p&gt;]]  <b>Riptide Grasp</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Olhydra moves up to her speed, and creatures grabbed by her are pulled with her, remaining grabbed in a space of her choice within 4 squares of her (or in her space if the creatures started the movement there). This movement provokes no opportunity attacks from the grabbed creatures.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Call of the Sea&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Olhydra spends an action point&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 10 (enemies in the burst); +36 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 25 psychic damage, and Olhydra pulls the target up to twice its speed.&lt;/p&gt;]] ᗕ <b>Call of the Sea</b> (charm, psychic) ✦ <b>Recharge</b> when Olhydra spends an action point</p><p><i>Attack:</i> Close burst 10 (enemies in the burst); [[/roll 1d20+36[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Call of the Sea&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Olhydra spends an action point&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 10 (enemies in the burst); &lt;u&gt;+36 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d12 + 25#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Call of the Sea&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Olhydra spends an action point&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 25 psychic damage, and Olhydra pulls the target up to twice its speed.&lt;/p&gt;]] <31.5>  psychic damage, and Olhydra pulls the target up to twice its speed.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Drown&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one enemy grabbed by Olhydra); +36 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Olhydra pulls the target into her space, where it remains grabbed (escape DC 36), and it is dazed and takes ongoing 30 damage until the grab ends.&lt;/p&gt;]] ⚔ <b>Drown</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 4 (one enemy grabbed by Olhydra); [[/roll 1d20+36[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Drown&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one enemy grabbed by Olhydra); &lt;u&gt;+36 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Olhydra pulls the target into her space, where it remains grabbed (escape DC 36), and it is dazed and takes ongoing 30 damage until the grab ends.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Instinctive Flood&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Olhydra is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Any immobilizing, restraining, or slowing effect on Olhydra ends. She moves up to her speed + 2. During the move, she can move through enemies’ spaces, she has resist 30 to all damage, and she can’t be immobilized, restrained, slowed, or otherwise hindered or stopped from moving by any attack or effect. Each time she enters an enemy’s space for the first time during the move, she uses wave slam against that enemy.&lt;/p&gt;]]  <b>Instinctive Flood</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> Olhydra is first bloodied.</p><p><i>Effect (No Action):</i> Any immobilizing, restraining, or slowing effect on Olhydra ends. She moves up to her speed + 2. During the move, she can move through enemies’ spaces, she has resist 30 to all damage, and she can’t be immobilized, restrained, slowed, or otherwise hindered or stopped from moving by any attack or effect. Each time she enters an enemy’s space for the first time during the move, she uses wave slam against that enemy.</p></tr></td></table>",

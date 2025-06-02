@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -603,7 +605,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -774,23 +777,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 164; <b>Bloodied</b> 82<hr><b>Resist</b> 10 fire, 10 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 30</td><td><b>Ref</b> 28</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+8)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 10 (+8)<br><b>Int</b> 19 (+12)</td><td><b>Wis</b> 13 (+9)<br><b>Cha</b> 21 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Dwarven<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Dungeoneering +14, Religion +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> leather armor , warhammer .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +22 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 damage, and the duerger infernal consort pushes the target up to 3 squares. The target is slowed until the end of the consort’s next turn.&lt;/p&gt;]] (⚔) <b>Warhammer</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+22[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+22 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 9 damage, and the duerger infernal consort pushes the target up to 3 squares. The target is slowed until the end of the consort’s next turn.&lt;/p&gt;]] <25.5>  damage, and the duerger infernal consort pushes the target up to 3 squares. The target is slowed until the end of the consort’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Devil Possession&lt;/b&gt; (charm, fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 3 (one creature); +20 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated until the end of the consort’s next turn. While the target is dominated, any ally of the target that ends its turn adjacent to the target takes 10 fire damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; At the start of the target’s next turn, the consort slides the target up to 3 squares as a free action.&lt;/p&gt;]] (➶) <b>Devil Possession</b> (charm, fire) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 3 (one creature); [[/roll 1d20+20[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Devil Possession&lt;/b&gt; (charm, fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 3 (one creature); &lt;u&gt;+20 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated until the end of the consort’s next turn. While the target is dominated, any ally of the target that ends its turn adjacent to the target takes 10 fire damage.</p><p><i>Effect:</i> At the start of the target’s next turn, the consort slides the target up to 3 squares as a free action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Infernal Summons&lt;/b&gt; (fire, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (creatures in the burst); +20 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 6 fire damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The burst creates a zone of difficult terrain that lasts until the start of the consort’s next turn. Any creature that enters the zone or ends its turn there takes 10 fire damage.&lt;/p&gt;]] ✻ <b>Infernal Summons</b> (fire, zone) ✦ <b>At-Will</b></p><p><i>Attack:</i> Area burst 1 within 5 (creatures in the burst); [[/roll 1d20+20[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Infernal Summons&lt;/b&gt; (fire, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (creatures in the burst); &lt;u&gt;+20 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Infernal Summons&lt;/b&gt; (fire, zone) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 6 fire damage.&lt;/p&gt;]] <20>  fire damage.</p><p><i>Effect:</i> The burst creates a zone of difficult terrain that lasts until the start of the consort’s next turn. Any creature that enters the zone or ends its turn there takes 10 fire damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Infernal Quills&lt;/b&gt; (poison) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 3 (one creature); +22 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and the target takes a -2 penalty to attack rolls and ongoing 10 poison damage (save ends both).&lt;/p&gt;]] (➶) <b>Infernal Quills</b> (poison) ✦ <b>Encounter</b></p><p><i>Attack:</i> Ranged 3 (one creature); [[/roll 1d20+22[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Infernal Quills&lt;/b&gt; (poison) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 3 (one creature); &lt;u&gt;+22 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Infernal Quills&lt;/b&gt; (poison) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and the target takes a -2 penalty to attack rolls and ongoing 10 poison damage (save ends both).&lt;/p&gt;]] <15>  damage, and the target takes a -2 penalty to attack rolls and ongoing 10 poison damage (save ends both).</p></tr></td></table>",

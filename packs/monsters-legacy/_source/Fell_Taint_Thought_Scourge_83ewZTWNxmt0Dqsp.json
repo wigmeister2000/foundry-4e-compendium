@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -906,7 +907,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HAnDo2wdk1tvRgqp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -942,7 +943,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -998,23 +1000,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 173; <b>Bloodied</b> 86<hr><b>Resist</b> Insubstantial <b>Vulnerable</b> 5 Psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 19</td><td><b>Ref</b> 20</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+3)<br><b>Con</b> 14 (+4)</td><td><b>Dex</b> 15 (+4)<br><b>Int</b> 4 (null)</td><td><b>Wis</b> 18 (+6)<br><b>Cha</b> 10 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendrils of Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Reflex; 2d6+2 psychic damage. &lt;/p&gt;]] (⚔) <b>Tendrils of Despair</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Reach 2; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendrils of Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 2d6+2 psychic damage. &lt;/p&gt;]]; [[/roll 2d6+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendrils of Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Reflex; 2d6+2 psychic damage. &lt;/p&gt;]] <9>  psychic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spreading Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Reflex; 3d6+2 psychic damage. The target can choose to reduce the damage by 5 by dealing 2d6 damage to an ally within 5 squares. &lt;/p&gt;]] ⚔ <b>Spreading Despair</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Reach 2; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spreading Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 3d6+2 psychic damage. The target can choose to reduce the damage by 5 by dealing 2d6 damage to an ally within 5 squares. &lt;/p&gt;]]; [[/roll 3d6+2#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spreading Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Reflex; 3d6+2 psychic damage. The target can choose to reduce the damage by 5 by dealing 2d6 damage to an ally within 5 squares. &lt;/p&gt;]] <12.5>  psychic damage. The target can choose to reduce the damage by 5 by dealing [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spreading Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Reflex; 3d6+2 psychic damage. The target can choose to reduce the damage by 5 by dealing 2d6 damage to an ally within 5 squares. &lt;/p&gt;]] <7> damage to an ally within 5 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fell Taint Feeding&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a helpless or unconscious creature; the fell taint thought scourge loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the fell taint thought scourge kills the target, it regains hit points equal to its bloodied total.&lt;/p&gt;]]  <b>Fell Taint Feeding</b> (standard; at-will) ✦ <b>Healing</b></p><p>Targets a helpless or unconscious creature; the fell taint thought scourge loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the fell taint thought scourge kills the target, it regains hit points equal to its bloodied total.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Seeds of Despair&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +8 vs Will; at the start of each of the target’s turns, the target deals 5 psychic damage to adjacent allies (save ends). &lt;/p&gt;]] ᗕ <b>Seeds of Despair</b> (minor, recharge ⚄⚅) ✦ <b>Psychic</b></p><p>Close blast 3; [[/roll 1d20+8[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Seeds of Despair&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+8 vs Will&lt;/u&gt;; at the start of each of the target’s turns, the target deals 5 psychic damage to adjacent allies (save ends). &lt;/p&gt;]]; at the start of each of the target’s turns, the target deals 5 psychic damage to adjacent allies (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Seeds of Discord&lt;/b&gt; (immediate reaction, when an enemy misses the thought scourge with a melee or ranged attack, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +8 vs Will; slide the target 3 squares, and the target re-rolls the triggering attack against a different target of the thought scourge’s choosing. &lt;/p&gt;]] ⚔ <b>Seeds of Discord</b> (immediate reaction, when an enemy misses the thought scourge with a melee or ranged attack, at-will) ✦ <b>Psychic</b></p><p>Reach 2; [[/roll 1d20+8[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Seeds of Discord&lt;/b&gt; (immediate reaction, when an enemy misses the thought scourge with a melee or ranged attack, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+8 vs Will&lt;/u&gt;; slide the target 3 squares, and the target re-rolls the triggering attack against a different target of the thought scourge’s choosing. &lt;/p&gt;]]; slide the target 3 squares, and the target re-rolls the triggering attack against a different target of the thought scourge’s choosing. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;This fell taint thought scourge can make opportunity attacks against all enemies within its reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>This fell taint thought scourge can make opportunity attacks against all enemies within its reach (2 squares).</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Thorn Boon",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Stdwfob68cF3YrsO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -331,10 +333,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,7 +588,7 @@
 		},
 		{
 			"name":"Thorny Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ozl6xvuI7DtA3HZB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -622,7 +624,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -856,23 +859,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 262; <b>Bloodied</b> 131</td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 27</td><td><b>Ref</b> 25</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (forest walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+9)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 11 (+6)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 19 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +15, Insight +13, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 23</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Curse of Thorns&lt;/b&gt; 3; enemies without forest walk take 2 damage each time they move—or are pulled, pushed, or slid—into a square within the aura. Creatures do not take damage when a briar witch dryad moves closer to them.]] <b>Curse of Thorns</b> 3; enemies without forest walk take 2 damage each time they move—or are pulled, pushed, or slid—into a square within the aura. Creatures do not take damage when a briar witch dryad moves closer to them.</p><p>[[/roll 0#&lt;b&gt;Thorn Boon&lt;/b&gt; aura 6; allied plants in the aura deal an extra 5 damage with each melee attack.]] <b>Thorn Boon</b> aura 6; allied plants in the aura deal an extra 5 damage with each melee attack.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 1d8+3 damage. &lt;/p&gt;]] (⚔) <b>Claws</b> (standard, at-will) </p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 1d8+3 damage. &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 1d8+3 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Briar Cage&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;the target is encased in sharp briars; Ranged 10; +16 vs Reflex; 1d6+4 damage, and the target takes ongoing 5 damage and is restrained (save ends both). A creature in a briar cage has cover. A briar cage can be destroyed (25 hit points; resist 10 to all damage). &lt;/p&gt;]] ➶ <b>Briar Cage</b> (standard, at-will) </p><p>the target is encased in sharp briars; Ranged 10; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Briar Cage&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;the target is encased in sharp briars; Ranged 10; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 1d6+4 damage, and the target takes ongoing 5 damage and is restrained (save ends both). A creature in a briar cage has cover. A briar cage can be destroyed (25 hit points; resist 10 to all damage). &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Briar Cage&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;the target is encased in sharp briars; Ranged 10; +16 vs Reflex; 1d6+4 damage, and the target takes ongoing 5 damage and is restrained (save ends both). A creature in a briar cage has cover. A briar cage can be destroyed (25 hit points; resist 10 to all damage). &lt;/p&gt;]] <7.5>  damage, and the target takes ongoing 5 damage and is restrained (save ends both). A creature in a briar cage has cover. A briar cage can be destroyed (25 hit points; resist 10 to all damage). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Deceptive Veil&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;The briar witch dryad can disguise itself to appear as any Medium humanoid, usually a beautiful elf or eladrin. A successful Insight check (opposed by the dryad’s Bluff check) pierces the disguise.&lt;/p&gt;]]  <b>Deceptive Veil</b> (minor; at-will) </p><p>The briar witch dryad can disguise itself to appear as any Medium humanoid, usually a beautiful elf or eladrin. A successful Insight check (opposed by the dryad’s Bluff check) pierces the disguise.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Thorny Body&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any creature that grabs the briar witch dryad takes 5 damage at the start of its turn.&lt;/p&gt;]]  <b>Thorny Body</b></p><p>Any creature that grabs the briar witch dryad takes 5 damage at the start of its turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Treestride&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;The briar witch dryad can teleport 8 squares if it begins and ends adjacent to a tree, a treant, or a plant of Large size or bigger.&lt;/p&gt;]]  <b>Treestride</b> (move; at-will) </p><p>The briar witch dryad can teleport 8 squares if it begins and ends adjacent to a tree, a treant, or a plant of Large size or bigger.</p></tr></td></table>",

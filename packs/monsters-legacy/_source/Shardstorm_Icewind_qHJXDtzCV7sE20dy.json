@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Iceblast",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6wGydMnWvF39mqcp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -456,23 +458,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Immune</b> cold, disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +24</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 39</td><td><b>Ref</b> 40</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+14)<br><b>Con</b> 26 (+21)</td><td><b>Dex</b> 29 (+22)<br><b>Int</b> 7 (+11)</td><td><b>Wis</b> 24 (+20)<br><b>Cha</b> 9 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Iceblast&lt;/b&gt; aura 1; each enemy within the aura takes a -2 penalty to all defenses. The area of the aura is difficult terrain for creatures without ice walk.]] <b>Iceblast</b> aura 1; each enemy within the aura takes a -2 penalty to all defenses. The area of the aura is difficult terrain for creatures without ice walk.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice-Shard Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs Fortitude; 15 cold damage. &lt;/p&gt;]] (⚔) <b>Ice-Shard Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>[[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice-Shard Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs Fortitude&lt;/u&gt;; 15 cold damage. &lt;/p&gt;]]; 15 cold damage. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vortex Step&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;The shardstorm icewind shifts 4 squares.&lt;/p&gt;]]  <b>Vortex Step</b> (move; at-will) </p><p>The shardstorm icewind shifts 4 squares.</p></tr></td></table>",

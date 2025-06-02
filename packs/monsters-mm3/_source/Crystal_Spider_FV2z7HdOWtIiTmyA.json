@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Gleaming Carapace",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5kCjBVOnMNXmqxug",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 39; <b>Bloodied</b> 19<hr><b>Resist</b> 5 radiant <b>Vulnerable</b> 5 thunder </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 14</td><td><b>Ref</b> 18</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 8 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 9 (+1)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 1 (null)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 3 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Gleaming Carapace&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the crystal spider moves at least 5 squares during its turn, it gains concealment until the end of its next turn.&lt;/p&gt;]]  <b>Gleaming Carapace</b> <b></b></p><p>When the crystal spider moves at least 5 squares during its turn, it gains concealment until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Razor Leg&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage.&lt;/p&gt;]] (⚔) <b>Razor Leg</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Razor Leg&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Razor Leg&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage.&lt;/p&gt;]] <12>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature that cannot see the spider); +7 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 1 poison damage, and ongoing 10 poison damage (save ends).&lt;/p&gt;]] ⚔ <b>Bite</b> (poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature that cannot see the spider); [[/roll 1d20+7[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature that cannot see the spider); &lt;u&gt;+7 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 1#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 1 poison damage, and ongoing 10 poison damage (save ends).&lt;/p&gt;]] <8>  poison damage, and ongoing 10 poison damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Radiant Agony&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when the spider uses bite or when no enemy is blinded&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (creatures in the burst); +5 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The spider pushes the target 3 squares, and the target is blinded until the end of the spider’s next turn.&lt;/p&gt;]] ᗕ <b>Radiant Agony</b> ✦ <b>Recharge</b> when the spider uses bite or when no enemy is blinded</p><p><i>Attack:</i> Close burst 2 (creatures in the burst); [[/roll 1d20+5[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Radiant Agony&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when the spider uses bite or when no enemy is blinded&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (creatures in the burst); &lt;u&gt;+5 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The spider pushes the target 3 squares, and the target is blinded until the end of the spider’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Brilliant Ray&lt;/b&gt; (radiant) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +7 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 4 radiant damage, and the target is blinded until the end of the spider’s next turn.&lt;/p&gt;]] ➶ <b>Brilliant Ray</b> (radiant) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+7[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Brilliant Ray&lt;/b&gt; (radiant) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+7 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Brilliant Ray&lt;/b&gt; (radiant) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 4 radiant damage, and the target is blinded until the end of the spider’s next turn.&lt;/p&gt;]] <18>  radiant damage, and the target is blinded until the end of the spider’s next turn.</p></tr></td></table>",

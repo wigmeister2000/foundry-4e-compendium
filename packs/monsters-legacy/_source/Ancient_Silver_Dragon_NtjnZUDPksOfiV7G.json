@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1434,7 +1436,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"F9r1wJ4hcBKo8aql",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1470,7 +1472,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1480,7 +1483,7 @@
 		},
 		{
 			"name":"Unstoppable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EuN21IwcvoM6Sida",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1516,7 +1519,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1572,23 +1576,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1072; <b>Bloodied</b> 536<hr><b>Resist</b> 30 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 43</td><td><b>Ref</b> 40</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, fly 10 (hover), overland flight 15</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 32 (+25)<br><b>Con</b> 28 (+23)</td><td><b>Dex</b> 26 (+22)<br><b>Int</b> 16 (+17)</td><td><b>Wis</b> 14 (+16)<br><b>Cha</b> 24 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +30, Insight +21</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 26 | Insight 31</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d12+11 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+32 vs AC&lt;/u&gt;; 3d12+11 damage. &lt;/p&gt;]]; [[/roll 3d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d12+11 damage. &lt;/p&gt;]] <30.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +32 vs AC; 2d12+11 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+32 vs AC&lt;/u&gt;; 2d12+11 damage. &lt;/p&gt;]]; [[/roll 2d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +32 vs AC; 2d12+11 damage. &lt;/p&gt;]] <24>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tail Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 5; +30 vs AC; 4d8+11 damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Tail Slam</b> (standard, at-will) </p><p>Close blast 5; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tail Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+30 vs AC&lt;/u&gt;; 4d8+11 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 4d8+11#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tail Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 5; +30 vs AC; 4d8+11 damage, and the target is dazed (save ends). &lt;/p&gt;]] <29>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Furious Dragon Onslaught&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The ancient silver dragon makes a claw attack against each enemy within reach. It also attacks one creature with a bite&lt;/p&gt;]] ⚔ <b>Furious Dragon Onslaught</b> (standard, at-will) </p><p>The ancient silver dragon makes a claw attack against each enemy within reach. It also attacks one creature with a bite</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +28 vs Reflex; 4d8+9 cold damage, and the target gains vulnerable 15 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚃⚄⚅) ✦ <b>Cold</b></p><p>Close blast 5; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 4d8+9 cold damage, and the target gains vulnerable 15 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]]; [[/roll 4d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +28 vs Reflex; 4d8+9 cold damage, and the target gains vulnerable 15 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]] <27>  cold damage, and the target gains vulnerable 15 to all damage (save ends). Miss: Half damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +28 vs Will; the target is stunned until the end of the ancient silver dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+28[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+28 vs Will&lt;/u&gt;; the target is stunned until the end of the ancient silver dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of the ancient silver dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Wing Slice&lt;/b&gt; (immediate reaction, when an enemy attacks the ancient silver dragon while flanking it, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; targets the triggering enemy and an enemy flanking with the triggering enemy; +32 vs AC; 2d12+11 damage. &lt;/p&gt;]] ⚔ <b>Wing Slice</b> (immediate reaction, when an enemy attacks the ancient silver dragon while flanking it, at-will) </p><p>Reach 2; targets the triggering enemy and an enemy flanking with the triggering enemy; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Wing Slice&lt;/b&gt; (immediate reaction, when an enemy attacks the ancient silver dragon while flanking it, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; targets the triggering enemy and an enemy flanking with the triggering enemy; &lt;u&gt;+32 vs AC&lt;/u&gt;; 2d12+11 damage. &lt;/p&gt;]]; [[/roll 2d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Wing Slice&lt;/b&gt; (immediate reaction, when an enemy attacks the ancient silver dragon while flanking it, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; targets the triggering enemy and an enemy flanking with the triggering enemy; +32 vs AC; 2d12+11 damage. &lt;/p&gt;]] <24>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;Breath weapon recharges, and the ancient silver dragon uses it&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>Breath weapon recharges, and the ancient silver dragon uses it</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An ancient silver dragon can make opportunity attacks against all enemies in its reach (2 squares for its claw or wing, 3 squares for its bite).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>An ancient silver dragon can make opportunity attacks against all enemies in its reach (2 squares for its claw or wing, 3 squares for its bite).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unstoppable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An ancient silver dragon makes saving throws against ongoing damage at the start of its turn as well as at the end of its turn.&lt;/p&gt;]]  <b>Unstoppable</b></p><p>An ancient silver dragon makes saving throws against ongoing damage at the start of its turn as well as at the end of its turn.</p></tr></td></table>",

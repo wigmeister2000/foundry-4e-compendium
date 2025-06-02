@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Icebound Footing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pIHEVOtXyFYefiWB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -288,7 +290,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -820,23 +823,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 354; <b>Bloodied</b> 177<hr><b>Resist</b> 15 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 31</td><td><b>Ref</b> 29</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+15)<br><b>Con</b> 25 (+16)</td><td><b>Dex</b> 14 (+11)<br><b>Int</b> 20 (+14)</td><td><b>Wis</b> 22 (+15)<br><b>Cha</b> 15 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +19, Athletics +20, Intimidate +16</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p><b>Equipment</b> hide armor ,  staff.</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Icebound Footing&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect pulls, pushes, or slides the giant, it can choose to move 2 squares fewer than the effect specifies. The giant can make a saving throw to avoid falling prone when an attack would knock it prone.&lt;/p&gt;]]  <b>Icebound Footing</b> <b></b></p><p>When an effect pulls, pushes, or slides the giant, it can choose to move 2 squares fewer than the effect specifies. The giant can make a saving throw to avoid falling prone when an attack would knock it prone.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Icy Staff&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 15 cold damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The giant slides the target up to 2 squares.&lt;/p&gt;]] (⚔) <b>Icy Staff</b> (cold, implement) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Icy Staff&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Icy Staff&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 15 cold damage.&lt;/p&gt;]] <26>  cold damage.</p><p><i>Effect:</i> The giant slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Freezing Ray&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 13 cold damage, and the target is slowed and takes a -2 penalty to attack rolls (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is instead restrained (save ends).&lt;/p&gt;]] (➶) <b>Freezing Ray</b> (cold, implement) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Freezing Ray&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Freezing Ray&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 13 cold damage, and the target is slowed and takes a -2 penalty to attack rolls (save ends).&lt;/p&gt;]] <26>  cold damage, and the target is slowed and takes a -2 penalty to attack rolls (save ends).</p><p><i>First Failed Saving Throw:</i> The target is instead restrained (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The giant makes two basic attacks.&lt;/p&gt;]]  <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The giant makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Swirling Ice&lt;/b&gt; (cold, implement, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); +21 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 13 cold damage, and the target is immobilized (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Each Failed Saving Throw:&lt;/i&gt; The giant slides the target up to 3 squares to another square in the zone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The burst creates a zone of swirling ice shards that lasts until the end of the giant’s next turn. Any creature that enters the zone or starts its turn there takes 10 cold damage. A creature can take this damage only once per turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; The zone persists until the end of the giant’s next turn.&lt;/p&gt;]] ✻ <b>Swirling Ice</b> (cold, implement, zone) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 1 within 10 (creatures in the burst); [[/roll 1d20+21[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Swirling Ice&lt;/b&gt; (cold, implement, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); &lt;u&gt;+21 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 13#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Swirling Ice&lt;/b&gt; (cold, implement, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 13 cold damage, and the target is immobilized (save ends).&lt;/p&gt;]] <26>  cold damage, and the target is immobilized (save ends).</p><p><i>Each Failed Saving Throw:</i> The giant slides the target up to 3 squares to another square in the zone.</p><p><i>Effect:</i> The burst creates a zone of swirling ice shards that lasts until the end of the giant’s next turn. Any creature that enters the zone or starts its turn there takes 10 cold damage. A creature can take this damage only once per turn.</p><p><i>Sustain Minor:</i> The zone persists until the end of the giant’s next turn.</p></tr></td></table>",

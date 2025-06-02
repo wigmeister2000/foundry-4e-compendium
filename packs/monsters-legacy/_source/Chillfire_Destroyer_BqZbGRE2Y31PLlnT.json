@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Leaking Firecore",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"CX2Qj1J9oufTmkr6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -355,10 +357,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -535,10 +537,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -658,23 +660,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 173; <b>Bloodied</b> 86<hr><b>Resist</b> 10 cold, 10 fire <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 26</td><td><b>Ref</b> 25</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+10)<br><b>Con</b> 23 (+13)</td><td><b>Dex</b> 20 (+12)<br><b>Int</b> 5 (+4)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 12 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Leaking Firecore&lt;/b&gt; (Fire) aura 2; while the chillfire destroyer is bloodied, each creature that starts its turn within the aura takes 10 fire damage.]] <b>Leaking Firecore</b> (Fire) aura 2; while the chillfire destroyer is bloodied, each creature that starts its turn within the aura takes 10 fire damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 1d12+6 damage plus 1d12 cold damage. &lt;/p&gt;]] (⚔) <b>Freezing Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 2; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d12+6 damage plus 1d12 cold damage. &lt;/p&gt;]]; [[/roll 1d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 1d12+6 damage plus 1d12 cold damage. &lt;/p&gt;]] <12.5>  damage plus [[/roll 1d12 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Freezing Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 1d12+6 damage plus 1d12 cold damage. &lt;/p&gt;]] <6.5> cold damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chillfire destroyer moves its speed and can move through enemies’ spaces. The destroyer makes an attack; +15 vs Reflex; 1d10+6 damage plus 1d10 cold damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Trample</b> (standard, at-will) ✦ <b>Cold</b></p><p>The chillfire destroyer moves its speed and can move through enemies’ spaces. The destroyer makes an attack; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chillfire destroyer moves its speed and can move through enemies’ spaces. The destroyer makes an attack; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d10+6 damage plus 1d10 cold damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chillfire destroyer moves its speed and can move through enemies’ spaces. The destroyer makes an attack; +15 vs Reflex; 1d10+6 damage plus 1d10 cold damage, and the target is knocked prone. &lt;/p&gt;]] <11.5>  damage plus [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chillfire destroyer moves its speed and can move through enemies’ spaces. The destroyer makes an attack; +15 vs Reflex; 1d10+6 damage plus 1d10 cold damage, and the target is knocked prone. &lt;/p&gt;]] <5.5> cold damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Firecore Breach&lt;/b&gt; ( when the chillfire destroyer drops to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The destroyer does not die until the start of its next turn. Until then, the destroyer can take no actions. At the start of the destroyer’s next turn, it makes an attack: close burst 3; +15 vs Reflex; 4d10+6 fire damage. &lt;/p&gt;]] ᗕ <b>Firecore Breach</b> ( when the chillfire destroyer drops to 0 hit points, ) ✦ <b>Fire</b></p><p>The destroyer does not die until the start of its next turn. Until then, the destroyer can take no actions. At the start of the destroyer’s next turn, it makes an attack: close burst 3; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Firecore Breach&lt;/b&gt; ( when the chillfire destroyer drops to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The destroyer does not die until the start of its next turn. Until then, the destroyer can take no actions. At the start of the destroyer’s next turn, it makes an attack: close burst 3; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 4d10+6 fire damage. &lt;/p&gt;]]; [[/roll 4d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Firecore Breach&lt;/b&gt; ( when the chillfire destroyer drops to 0 hit points, ) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The destroyer does not die until the start of its next turn. Until then, the destroyer can take no actions. At the start of the destroyer’s next turn, it makes an attack: close burst 3; +15 vs Reflex; 4d10+6 fire damage. &lt;/p&gt;]] <28>  fire damage. </p></tr></td></table>",

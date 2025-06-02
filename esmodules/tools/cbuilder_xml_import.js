@@ -509,7 +509,11 @@ function getLoot(doc) {
     const elements = [];
 
     doc.querySelectorAll("LootTally > loot").forEach(
-        x => elements.push(getLootComponents(x))
+        x => {
+            if (x.getAttribute("count") !== "0") {
+                elements.push(getLootComponents(x))
+            }
+        }
     );
 
     return elements;
@@ -784,11 +788,18 @@ async function lookupItems(compendium, names, nameLookup, matchType = "partial",
                         const pattern = new RegExp("^" + target.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
                         entry = compendium.index.filter(x => x.name.match(pattern)); // Array
                     } else if (matchType === "no_parentheses") {
-                        const pattern = target.replace(/\(.*\)/, "").trim();
+                        const pattern = typeof target === "string" ? target.replace(/\(.*\)/, "").trim() : target;
                         entry = compendium.index.find(x => x.name === pattern);
                     } else if (matchType === "pattern") {
                         entry = compendium.index.filter(x => x.name.match(target)).sort(itemSortOrderShortFirst)[0];
                     }
+                }
+
+                // Fallback: Try normalized name
+                if (!entry && typeof target === "string") {
+                    const normalizedTarget = target.replace(/\s*\(.*?\)$/, "").trim();
+                    const pattern = new RegExp(normalizedTarget.replaceAll(/[\(\)\[\]\+]/g, "\\$&"), "i");
+                    entry = compendium.index.filter(x => x.name.match(pattern)).sort(itemSortOrderShortFirst)[0];
                 }
 
                 if (entry && Object.keys(entry).length > 0) {

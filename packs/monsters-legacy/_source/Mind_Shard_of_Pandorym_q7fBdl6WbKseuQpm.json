@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Mental Subjugation",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"fzG4WMeLycs1Slhx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -335,10 +338,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":"When A Creature Under The Effect Of This Power'S Domination Effect Is Reduced To 0 Or Fewer Hit Points Or Saves Against That Effect",
@@ -638,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 552; <b>Bloodied</b> 276<hr><b>Resist</b> acid 20, cold 20, insubstantial <b>Immune</b> fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 42</td><td><b>Ref</b> 46</td><td><b>Will</b> 46</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+17)<br><b>Con</b> 28 (+24)</td><td><b>Dex</b> 15 (+17)<br><b>Int</b> 32 (+26)</td><td><b>Wis</b> 30 (+25)<br><b>Cha</b> 32 (+26)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +31, History +31</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 35 | Insight 35</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Mental Subjugation&lt;/b&gt; (Fear) aura 5; enemies within the aura take a -2 penalty to attack rolls against the mind shard of Pandorym]] <b>Mental Subjugation</b> (Fear) aura 5; enemies within the aura take a -2 penalty to attack rolls against the mind shard of Pandorym</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +35 vs AC; 3d8 + 10  necrotic damage and the target is weakened until the end of the mind shard’s next turn. &lt;/p&gt;]] (⚔) <b>Shadow Touch</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 3; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+35 vs AC&lt;/u&gt;; 3d8 + 10  necrotic damage and the target is weakened until the end of the mind shard’s next turn. &lt;/p&gt;]]; [[/roll 3d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +35 vs AC; 3d8 + 10  necrotic damage and the target is weakened until the end of the mind shard’s next turn. &lt;/p&gt;]] <23.5>   necrotic damage and the target is weakened until the end of the mind shard’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Dominating Ego Whip&lt;/b&gt; (standard, recharge when a creature under the effect of this power’s domination effect is reduced to 0 or fewer hit points or saves against that effect) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; +33 vs Will; 1d12 +10  psychic damage, and the target takes ongoing 15 psychic damage and is dominated by the mind shard (save ends both). &lt;/p&gt;]] (➶) <b>Dominating Ego Whip</b> (standard, recharge when a creature under the effect of this power’s domination effect is reduced to 0 or fewer hit points or saves against that effect) ✦ <b>Psychic</b></p><p>Range 10; [[/roll 1d20+33[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Dominating Ego Whip&lt;/b&gt; (standard, recharge when a creature under the effect of this power’s domination effect is reduced to 0 or fewer hit points or saves against that effect) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; &lt;u&gt;+33 vs Will&lt;/u&gt;; 1d12 +10  psychic damage, and the target takes ongoing 15 psychic damage and is dominated by the mind shard (save ends both). &lt;/p&gt;]]; [[/roll 1d12 +10#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Dominating Ego Whip&lt;/b&gt; (standard, recharge when a creature under the effect of this power’s domination effect is reduced to 0 or fewer hit points or saves against that effect) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; +33 vs Will; 1d12 +10  psychic damage, and the target takes ongoing 15 psychic damage and is dominated by the mind shard (save ends both). &lt;/p&gt;]] <16.5>   psychic damage, and the target takes ongoing 15 psychic damage and is dominated by the mind shard (save ends both). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Backlash&lt;/b&gt; (immediate reaction, when the mind shard is hit with a melee attack, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies only; +33 vs Reflex; 2d12 + 10 force damage, and the target is pushed 5 squares. &lt;/p&gt;]] ᗕ <b>Backlash</b> (immediate reaction, when the mind shard is hit with a melee attack, at-will) ✦ <b>Force</b></p><p>Close burst 5; targets enemies only; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Backlash&lt;/b&gt; (immediate reaction, when the mind shard is hit with a melee attack, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies only; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 2d12 + 10 force damage, and the target is pushed 5 squares. &lt;/p&gt;]]; [[/roll 2d12 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Backlash&lt;/b&gt; (immediate reaction, when the mind shard is hit with a melee attack, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies only; +33 vs Reflex; 2d12 + 10 force damage, and the target is pushed 5 squares. &lt;/p&gt;]] <23>  force damage, and the target is pushed 5 squares. </p></tr></td></table>",

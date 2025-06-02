@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Corded Victim",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Pw8Y2FAsxh1L0drb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Slippery Foe",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"j8fu6KlDyZnPIsm4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -678,23 +681,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 150; <b>Bloodied</b> 75</td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 33</td><td><b>Ref</b> 34</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, climb 6 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+16)<br><b>Con</b> 18 (+14)</td><td><b>Dex</b> 25 (+17)<br><b>Int</b> 12 (+11)</td><td><b>Wis</b> 16 (+13)<br><b>Cha</b> 22 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +22, Athletics +21, Bluff +21, Stealth +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Corded Victim&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The high kuotagha can score a critical hit against a creature grabbed by it on a roll of 18-20.&lt;/p&gt;]]  <b>Corded Victim</b> <b></b></p><p>The high kuotagha can score a critical hit against a creature grabbed by it on a roll of 18-20.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slippery Foe&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The high kuotagha gains a +4 bonus to all defenses while it has a creature grabbed.&lt;/p&gt;]]  <b>Slippery Foe</b> <b></b></p><p>The high kuotagha gains a +4 bonus to all defenses while it has a creature grabbed.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +24 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 6 damage.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+24 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 6 damage.&lt;/p&gt;]] <28>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh Garrote&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the high kuotagha); +24 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 6 damage, and the high kuotagha grabs the target. The target takes a -4 penalty to attempts to escape the grab.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Standard:&lt;/i&gt; The high kuotagha sustains each of its grabs, and each creature it is grabbing takes 2d6 + 10 damage.&lt;/p&gt;]] ⚔ <b>Flesh Garrote</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature granting combat advantage to the high kuotagha); [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh Garrote&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature granting combat advantage to the high kuotagha); &lt;u&gt;+24 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh Garrote&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 6 damage, and the high kuotagha grabs the target. The target takes a -4 penalty to attempts to escape the grab.&lt;/p&gt;]] <28>  damage, and the high kuotagha grabs the target. The target takes a -4 penalty to attempts to escape the grab.</p><p><i>Sustain Standard:</i> The high kuotagha sustains each of its grabs, and each creature it is grabbing takes [[/roll 2d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh Garrote&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Standard:&lt;/i&gt; The high kuotagha sustains each of its grabs, and each creature it is grabbing takes 2d6 + 10 damage.&lt;/p&gt;]] <17>  damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Garrote Slide&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An attack targets the high kuotagha when it has a creature grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The high kuotagha slides 1 square and simultaneously slides each creature it is grabbing to any unoccupied square adjacent to it.&lt;/p&gt;]]  <b>Garrote Slide</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An attack targets the high kuotagha when it has a creature grabbed.</p><p><i>Effect (Immediate Interrupt):</i> The high kuotagha slides 1 square and simultaneously slides each creature it is grabbing to any unoccupied square adjacent to it.</p></tr></td></table>",

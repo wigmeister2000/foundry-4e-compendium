@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Aura of Fear",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KHi3DYgEBywrbXfm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Aura of Fire",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NLsiSQr3dnhVbpl7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"37",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1043,23 +1046,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 550; <b>Bloodied</b> 275<hr><b>Resist</b> 30 fire, 15 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +24 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 43</td><td><b>Ref</b> 39</td><td><b>Will</b> 41</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 12, fly 12 (clumsy), teleport 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 33 (+26)<br><b>Con</b> 27 (+23)</td><td><b>Dex</b> 25 (+22)<br><b>Int</b> 22 (+21)</td><td><b>Wis</b> 23 (+21)<br><b>Cha</b> 29 (+24)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +29, Insight +26, Intimidate +29, Religion +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p><b>Equipment</b> flametouched mace</p><p>[[/roll 0#&lt;b&gt;Aura of Fear&lt;/b&gt; (Fear) aura 5; each enemy within the aura takes a –2 penalty to attack rolls.]] <b>Aura of Fear</b> (Fear) aura 5; each enemy within the aura takes a –2 penalty to attack rolls.</p><p>[[/roll 0#&lt;b&gt;Aura of Fire&lt;/b&gt; (Fire) aura 5; each enemy that enters or starts its turns in the aura takes 15 fire damage.]] <b>Aura of Fire</b> (Fire) aura 5; each enemy that enters or starts its turns in the aura takes 15 fire damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flametouched Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +37 vs AC; 3d8+10 fire damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] (⚔) <b>Flametouched Mace</b> (standard, at-will) ✦ <b>Fire, Weapon</b></p><p>Reach 2; [[/roll 1d20+37[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flametouched Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+37 vs AC&lt;/u&gt;; 3d8+10 fire damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 3d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flametouched Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +37 vs AC; 3d8+10 fire damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <23.5>  fire damage, and ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +37 vs AC; 2d8+10 damage, and the pit fiend makes a secondary attack against the same target. Secondary Attack: +35 vs. Fortitude; the target takes ongoing 15 poison damage and is weakened (save ends both). &lt;/p&gt;]] ⚔ <b>Tail Sting</b> (standard, at-will) ✦ <b>Poison</b></p><p>Reach 2; [[/roll 1d20+37[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+37 vs AC&lt;/u&gt;; 2d8+10 damage, and the pit fiend makes a secondary attack against the same target. Secondary Attack: +35 vs. Fortitude; the target takes ongoing 15 poison damage and is weakened (save ends both). &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +37 vs AC; 2d8+10 damage, and the pit fiend makes a secondary attack against the same target. Secondary Attack: +35 vs. Fortitude; the target takes ongoing 15 poison damage and is weakened (save ends both). &lt;/p&gt;]] <19>  damage, and the pit fiend makes a secondary attack against the same target. Secondary Attack: +35 vs. Fortitude; the target takes ongoing 15 poison damage and is weakened (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Pit Fiend Frenzy&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The pit fiend makes a flametouched mace attack and a tail sting attack.&lt;/p&gt;]] ⚔ <b>Pit Fiend Frenzy</b> (standard, at-will) </p><p>The pit fiend makes a flametouched mace attack and a tail sting attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Tactical Teleport&lt;/b&gt; (standard; recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The pit fiend can teleport up to 2 allies within 10 squares of it. The targets appear in any unoccupied squares within 10 squares of the pit fiend.&lt;/p&gt;]]  <b>Tactical Teleport</b> (standard; recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>The pit fiend can teleport up to 2 allies within 10 squares of it. The targets appear in any unoccupied squares within 10 squares of the pit fiend.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Point of Terror&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +35 vs Will; the target takes a –5 penalty to all defenses until the end of the pit fiend’s next turn. &lt;/p&gt;]] ➶ <b>Point of Terror</b> (minor, at-will) ✦ <b>Fear</b></p><p>Ranged 5; [[/roll 1d20+35[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Point of Terror&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+35 vs Will&lt;/u&gt;; the target takes a –5 penalty to all defenses until the end of the pit fiend’s next turn. &lt;/p&gt;]]; the target takes a –5 penalty to all defenses until the end of the pit fiend’s next turn. </p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Tendrils of Reaping",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LXKcjSQdtuzEq07g",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -637,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 183; <b>Bloodied</b> 91<hr><b>Resist</b> 10 necrotic, insubstantial <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 33</td><td><b>Ref</b> 30</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+18)<br><b>Con</b> 24 (+17)</td><td><b>Dex</b> 20 (+15)<br><b>Int</b> 9 (+9)</td><td><b>Wis</b> 16 (+13)<br><b>Cha</b> 14 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Tendrils of Reaping&lt;/b&gt; aura 2; enemies that enter or start their turn in the aura take 10 points of necrotic damage.]] <b>Tendrils of Reaping</b> aura 2; enemies that enter or start their turn in the aura take 10 points of necrotic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ravaging Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 3d8+7 necrotic damage. &lt;/p&gt;]] (⚔) <b>Ravaging Strike</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 2; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ravaging Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+24 vs AC&lt;/u&gt;; 3d8+7 necrotic damage. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ravaging Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 3d8+7 necrotic damage. &lt;/p&gt;]] <20.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Soul Ravage&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 4d8+7 necrotic damage, and the target loses 1 healing surge, and the wraith regains 45 hit points. If the draconic wraith takes radiant damage, it cannot use this power until after the end of the wraith\"s next turn. &lt;/p&gt;]] (⚔) <b>Soul Ravage</b> (standard, recharge ⚄⚅) ✦ <b>Healing, Necrotic</b></p><p>Reach 2; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Soul Ravage&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+24 vs AC&lt;/u&gt;; 4d8+7 necrotic damage, and the target loses 1 healing surge, and the wraith regains 45 hit points. If the draconic wraith takes radiant damage, it cannot use this power until after the end of the wraith\"s next turn. &lt;/p&gt;]]; [[/roll 4d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Soul Ravage&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +24 vs AC; 4d8+7 necrotic damage, and the target loses 1 healing surge, and the wraith regains 45 hit points. If the draconic wraith takes radiant damage, it cannot use this power until after the end of the wraith\"s next turn. &lt;/p&gt;]] <25>  necrotic damage, and the target loses 1 healing surge, and the wraith regains 45 hit points. If the draconic wraith takes radiant damage, it cannot use this power until after the end of the wraith\"s next turn. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Glide&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The draconic wraith shifts 8 squares.&lt;/p&gt;]]  <b>Shadow Glide</b> (move; encounter) </p><p>The draconic wraith shifts 8 squares.</p></tr></td></table>",

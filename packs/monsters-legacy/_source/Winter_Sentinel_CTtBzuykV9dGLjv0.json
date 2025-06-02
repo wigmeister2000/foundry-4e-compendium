@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -311,10 +312,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -568,7 +569,7 @@
 		},
 		{
 			"name":"Winnow the Weak",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EcATwsDkOrZUdHPy",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -604,7 +605,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -660,23 +662,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 101; <b>Bloodied</b> 50<hr><b>Resist</b> 5 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 23</td><td><b>Ref</b> 22</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 13 (+6)</td><td><b>Dex</b> 17 (+8)<br><b>Int</b> 9 (+4)</td><td><b>Wis</b> 18 (+9)<br><b>Cha</b> 10 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Endurance +11, Intimidate +10, Nature +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> heavy shield , hide armor , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+5 damage plus 1d6 poison damage, and the target is marked until the end of the sentinel’s next turn. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+5 damage plus 1d6 poison damage, and the target is marked until the end of the sentinel’s next turn. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+5 damage plus 1d6 poison damage, and the target is marked until the end of the sentinel’s next turn. &lt;/p&gt;]] <9.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+5 damage plus 1d6 poison damage, and the target is marked until the end of the sentinel’s next turn. &lt;/p&gt;]] <3.5> poison damage, and the target is marked until the end of the sentinel’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Winter\"s Fang&lt;/b&gt; (standard; requires a longsword, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+5 damage plus 1d6 poison damage, and the target is marked and immobilized until the end of the winter sentinel’s next turn. &lt;/p&gt;]] ⚔ <b>Winter\"s Fang</b> (standard; requires a longsword, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Winter\"s Fang&lt;/b&gt; (standard; requires a longsword, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+5 damage plus 1d6 poison damage, and the target is marked and immobilized until the end of the winter sentinel’s next turn. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Winter\"s Fang&lt;/b&gt; (standard; requires a longsword, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+5 damage plus 1d6 poison damage, and the target is marked and immobilized until the end of the winter sentinel’s next turn. &lt;/p&gt;]] <9.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Winter\"s Fang&lt;/b&gt; (standard; requires a longsword, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+5 damage plus 1d6 poison damage, and the target is marked and immobilized until the end of the winter sentinel’s next turn. &lt;/p&gt;]] <3.5> poison damage, and the target is marked and immobilized until the end of the winter sentinel’s next turn. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Winter Fugue&lt;/b&gt; (free, encounter) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets a creature marked by winter\"s fang; +13 vs Fortitude; the target contracts the winter fugue disease. &lt;/p&gt;]] ᗕ <b>Winter Fugue</b> (free, encounter) ✦ <b>Disease</b></p><p>Close burst 3; targets a creature marked by winter\"s fang; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Winter Fugue&lt;/b&gt; (free, encounter) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets a creature marked by winter\"s fang; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; the target contracts the winter fugue disease. &lt;/p&gt;]]; the target contracts the winter fugue disease. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Winnow the Weak&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A winter sentinel’s melee attacks deal 1d6 extra damage against a bloodied target it has marked.&lt;/p&gt;]]  <b>Winnow the Weak</b></p><p>A winter sentinel’s melee attacks deal [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Winnow the Weak&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A winter sentinel’s melee attacks deal 1d6 extra damage against a bloodied target it has marked.&lt;/p&gt;]] <3.5> extra damage against a bloodied target it has marked.</p></tr></td></table>",

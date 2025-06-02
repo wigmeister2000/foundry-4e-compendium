@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 53; <b>Bloodied</b> 26<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 16</td><td><b>Ref</b> 17</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+5)<br><b>Con</b> 13 (+3)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 9 (+1)</td><td><b>Wis</b> 11 (+2)<br><b>Cha</b> 12 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +9, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard; requires a free hand, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 1d6+6 damage, and the target is grabbed . &lt;/p&gt;]] (⚔) <b>Claw</b> (standard; requires a free hand, at-will) </p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard; requires a free hand, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 1d6+6 damage, and the target is grabbed . &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard; requires a free hand, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 1d6+6 damage, and the target is grabbed . &lt;/p&gt;]] <9.5>  damage, and the target is grabbed . </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lacedon Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the sodden ghoul; +11 vs AC; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] ⚔ <b>Lacedon Bite</b> (standard, at-will) </p><p>Targets a creature grabbed by the sodden ghoul; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lacedon Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the sodden ghoul; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lacedon Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the sodden ghoul; +11 vs AC; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] <11.5>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rending Pounce&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The sodden ghoul makes two claw attacks, each at a -2 penalty to the attack roll. If both attacks hit the same target, the target  is grabbed, and it takes ongoing 5 damage (save ends).&lt;/p&gt;]] ⚔ <b>Rending Pounce</b> (standard, recharge ⚃⚄⚅) </p><p>The sodden ghoul makes two claw attacks, each at a -2 penalty to the attack roll. If both attacks hit the same target, the target  is grabbed, and it takes ongoing 5 damage (save ends).</p></tr></td></table>",

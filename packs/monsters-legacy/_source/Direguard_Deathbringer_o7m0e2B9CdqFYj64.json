@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Command Zone",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZKe6i78YWLSshf4m",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -992,23 +994,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 134; <b>Bloodied</b> 67<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 20</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+7)<br><b>Con</b> 13 (+5)</td><td><b>Dex</b> 17 (+7)<br><b>Int</b> 19 (+8)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 20 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +12, Insight +11, Intimidate +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision,Truesight 10<br><b>Passive</b> Perception 16 | Insight 21</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Command Zone&lt;/b&gt; aura 4; each ally within the aura gains a +2 bonus to attack rolls.]] <b>Command Zone</b> aura 4; each ally within the aura gains a +2 bonus to attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Bone Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6+9 force damage. &lt;/p&gt;]] (⚔) <b>Blazing Bone Claw</b> (standard, at-will) ✦ <b>Force</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Bone Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d6+9 force damage. &lt;/p&gt;]]; [[/roll 1d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blazing Bone Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6+9 force damage. &lt;/p&gt;]] <12.5>  force damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; +13 vs Reflex; 2d8+5 force damage, and the direguard deathbringer pushes the target 3 squares. Miss: The target is slowed until the end of the deathbringer\"s next turn. &lt;/p&gt;]] ➶ <b>Force Blast</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 15; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 2d8+5 force damage, and the direguard deathbringer pushes the target 3 squares. Miss: The target is slowed until the end of the deathbringer\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15; +13 vs Reflex; 2d8+5 force damage, and the direguard deathbringer pushes the target 3 squares. Miss: The target is slowed until the end of the deathbringer\"s next turn. &lt;/p&gt;]] <14>  force damage, and the direguard deathbringer pushes the target 3 squares. Miss: The target is slowed until the end of the deathbringer\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Frightful Force&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The direguard deathbringer makes three force blast attacks, each against a different target.&lt;/p&gt;]] ➶ <b>Frightful Force</b> (standard, recharge ⚃⚄⚅) </p><p>The direguard deathbringer makes three force blast attacks, each against a different target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Vile Command&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 3; targets allies; the target shifts 2 squares and makes a basic attack as a free action.&lt;/p&gt;]] ⚔ <b>Vile Command</b> (standard, recharge ⚄⚅) </p><p>Close blast 3; targets allies; the target shifts 2 squares and makes a basic attack as a free action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Force Armor&lt;/b&gt; ( when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;The direguard deathbringer gains a +4 power bonus to AC and Reflex until it is hit by an attack.&lt;/p&gt;]]  <b>Force Armor</b> ( when first bloodied; encounter) </p><p>The direguard deathbringer gains a +4 power bonus to AC and Reflex until it is hit by an attack.</p></tr></td></table>",

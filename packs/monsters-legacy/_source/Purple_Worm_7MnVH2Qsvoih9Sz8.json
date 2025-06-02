@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -473,10 +474,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -596,23 +597,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 780; <b>Bloodied</b> 390<hr><b>Immune</b> gaze, illusion </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33 (26 against swallowed creatures)</td><td><b>Fort</b> 34</td><td><b>Ref</b> 30</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 3 (tunneling)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+15)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 16 (+11)<br><b>Int</b> 2 (+4)</td><td><b>Wis</b> 14 (+10)<br><b>Cha</b> 4 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10, tremorsense 20<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +21 vs Reflex; 2d8+7 damage plus the target is grabbed (until escape). The purple worm cannot make bite attacks while grabbing a creature, but it can use clamping jaws. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 2d8+7 damage plus the target is grabbed (until escape). The purple worm cannot make bite attacks while grabbing a creature, but it can use clamping jaws. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +21 vs Reflex; 2d8+7 damage plus the target is grabbed (until escape). The purple worm cannot make bite attacks while grabbing a creature, but it can use clamping jaws. &lt;/p&gt;]] <16>  damage plus the target is grabbed (until escape). The purple worm cannot make bite attacks while grabbing a creature, but it can use clamping jaws. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;If a purple worm begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature: ; +21 vs Reflex; 2d8+7 damage. Miss: Half damage. &lt;/p&gt;]] ⚔ <b>Clamping Jaws</b> (standard, at-will) </p><p>If a purple worm begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature: ; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;If a purple worm begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature: ; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 2d8+7 damage. Miss: Half damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;If a purple worm begins its turn with a target grabbed in its jaws, it makes an attack against the grabbed creature: ; +21 vs Reflex; 2d8+7 damage. Miss: Half damage. &lt;/p&gt;]] <16>  damage. Miss: Half damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Swallow&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The purple worm tries to swallow a bloodied Medium or smaller creature it is grabbing; +21 vs Fortitude; the target is swallowed. The swallowed target is inside the purple worm and is dazed and restrained until it is no longer swallowed. The swallowed target has line of sight and line of effect only to the purple worm, and no creature has line of sight or line of effect to the swallowed target. The only attacks the swallowed target can make are basic attacks. At the start of each of the purple worm’s turns, the swallowed target takes 10 damage plus 10 acid damage. When the purple worm dies, the target is no longer swallowed and can escape as a move action, appearing in the purple worm’s former space. &lt;/p&gt;]] ⚔ <b>Swallow</b> (standard, at-will) </p><p>The purple worm tries to swallow a bloodied Medium or smaller creature it is grabbing; [[/roll 1d20+21[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Swallow&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The purple worm tries to swallow a bloodied Medium or smaller creature it is grabbing; &lt;u&gt;+21 vs Fortitude&lt;/u&gt;; the target is swallowed. The swallowed target is inside the purple worm and is dazed and restrained until it is no longer swallowed. The swallowed target has line of sight and line of effect only to the purple worm, and no creature has line of sight or line of effect to the swallowed target. The only attacks the swallowed target can make are basic attacks. At the start of each of the purple worm’s turns, the swallowed target takes 10 damage plus 10 acid damage. When the purple worm dies, the target is no longer swallowed and can escape as a move action, appearing in the purple worm’s former space. &lt;/p&gt;]]; the target is swallowed. The swallowed target is inside the purple worm and is dazed and restrained until it is no longer swallowed. The swallowed target has line of sight and line of effect only to the purple worm, and no creature has line of sight or line of effect to the swallowed target. The only attacks the swallowed target can make are basic attacks. At the start of each of the purple worm’s turns, the swallowed target takes 10 damage plus 10 acid damage. When the purple worm dies, the target is no longer swallowed and can escape as a move action, appearing in the purple worm’s former space. </p></tr></td></table>",

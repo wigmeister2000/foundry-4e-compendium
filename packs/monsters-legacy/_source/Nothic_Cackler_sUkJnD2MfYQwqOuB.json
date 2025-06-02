@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -726,7 +727,7 @@
 		},
 		{
 			"name":"Distorted Visage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"X6gyRqkrPmYb9pvt",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -762,7 +763,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -818,23 +820,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 116; <b>Bloodied</b> 58</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 28</td><td><b>Ref</b> 29</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+11)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 19 (+11)<br><b>Int</b> 9 (+6)</td><td><b>Wis</b> 14 (+9)<br><b>Cha</b> 10 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision,Truesight 10<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 1d6+5 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 1d6+5 damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 1d6+5 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Mind Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Will; 2d6+3 psychic damage, and the nothic cackler slides the target 6 squares. The target then makes a melee basic attack against a target of the cackler\"s choice. &lt;/p&gt;]] ➶ <b>Mind Rot</b> (standard, at-will) ✦ <b>Charm, Psychic</b></p><p>Ranged 10; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Mind Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+20 vs Will&lt;/u&gt;; 2d6+3 psychic damage, and the nothic cackler slides the target 6 squares. The target then makes a melee basic attack against a target of the cackler\"s choice. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Mind Rot&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Will; 2d6+3 psychic damage, and the nothic cackler slides the target 6 squares. The target then makes a melee basic attack against a target of the cackler\"s choice. &lt;/p&gt;]] <10>  psychic damage, and the nothic cackler slides the target 6 squares. The target then makes a melee basic attack against a target of the cackler\"s choice. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Rotting Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets one, two, or three enemies; +18 vs Fortitude; 2d6+5 necrotic damage, and the target takes a -2 penalty to all defenses (save ends). &lt;/p&gt;]] ➶ <b>Rotting Gaze</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 10; targets one, two, or three enemies; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Rotting Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets one, two, or three enemies; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 2d6+5 necrotic damage, and the target takes a -2 penalty to all defenses (save ends). &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Rotting Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets one, two, or three enemies; +18 vs Fortitude; 2d6+5 necrotic damage, and the target takes a -2 penalty to all defenses (save ends). &lt;/p&gt;]] <12>  necrotic damage, and the target takes a -2 penalty to all defenses (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Maddening Cackle&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +18 vs Will; 2d8+6 psychic damage, and the nothic cackler pushes the target 2 squares. At the start of the target’s next turn, the cackler slides the target 2 squares. &lt;/p&gt;]] ᗕ <b>Maddening Cackle</b> (standard, recharge ⚄⚅) ✦ <b>Fear, Psychic</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Maddening Cackle&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+18 vs Will&lt;/u&gt;; 2d8+6 psychic damage, and the nothic cackler pushes the target 2 squares. At the start of the target’s next turn, the cackler slides the target 2 squares. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Maddening Cackle&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +18 vs Will; 2d8+6 psychic damage, and the nothic cackler pushes the target 2 squares. At the start of the target’s next turn, the cackler slides the target 2 squares. &lt;/p&gt;]] <15>  psychic damage, and the nothic cackler pushes the target 2 squares. At the start of the target’s next turn, the cackler slides the target 2 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Distorted Visage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a nothic cackler moves at least 4 squares during its turn, it gains a +2 bonus to AC and Reflex until the end of its next turn.&lt;/p&gt;]]  <b>Distorted Visage</b></p><p>When a nothic cackler moves at least 4 squares during its turn, it gains a +2 bonus to AC and Reflex until the end of its next turn.</p></tr></td></table>",

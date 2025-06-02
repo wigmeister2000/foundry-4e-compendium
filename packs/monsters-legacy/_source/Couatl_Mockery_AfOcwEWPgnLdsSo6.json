@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -424,23 +425,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Immune</b> disease, gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 36</td><td><b>Ref</b> 40</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 12 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 6 (+11)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 28 (+22)<br><b>Int</b> 3 (+9)</td><td><b>Wis</b> 10 (+13)<br><b>Cha</b> 10 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 20<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wing Slash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 6 damage plus 5 radiant and necrotic damage. &lt;/p&gt;]] (⚔) <b>Wing Slash</b> (standard, at-will) ✦ <b>Necrotic, Radiant</b></p><p>[[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Wing Slash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs AC&lt;/u&gt;; 6 damage plus 5 radiant and necrotic damage. &lt;/p&gt;]]; 6 damage plus 5 radiant and necrotic damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Corrupt Cloud&lt;/b&gt; ( when the couatl mockery is reduced to 0 hit points, ) ✦ &lt;b&gt;Necrotic, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +26 vs Fortitude; 10 radiant and necrotic damage, and the target cannot spend healing surges until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Corrupt Cloud</b> ( when the couatl mockery is reduced to 0 hit points, ) ✦ <b>Necrotic, Radiant</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Corrupt Cloud&lt;/b&gt; ( when the couatl mockery is reduced to 0 hit points, ) ✦ &lt;b&gt;Necrotic, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; 10 radiant and necrotic damage, and the target cannot spend healing surges until the end of its next turn. &lt;/p&gt;]]; 10 radiant and necrotic damage, and the target cannot spend healing surges until the end of its next turn. </p></tr></td></table>",

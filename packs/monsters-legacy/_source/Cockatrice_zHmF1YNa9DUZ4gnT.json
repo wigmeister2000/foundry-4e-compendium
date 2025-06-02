@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -408,23 +409,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 63; <b>Bloodied</b> 31<hr><b>Immune</b> petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 17</td><td><b>Ref</b> 19</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 6 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 9 (+1)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 11 (+2)<br><b>Cha</b> 4 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+3 damage, and the cockatrice makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +8 vs Fortitude; the target is slowed (save ends). First Failed Saving Throw: The target is immobilized instead of slowed (save ends). Second Failed Saving Throw: The target is petrified. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d6+3 damage, and the cockatrice makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+3 damage, and the cockatrice makes a secondary attack against the same target. &lt;/p&gt;]] <6.5>  damage, and the cockatrice makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+8[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+8 vs Fortitude&lt;/u&gt;; the target is slowed (save ends). First Failed Saving Throw: The target is immobilized instead of slowed (save ends). Second Failed Saving Throw: The target is petrified. &lt;/p&gt;]]; the target is slowed (save ends). First Failed Saving Throw: The target is immobilized instead of slowed (save ends). Second Failed Saving Throw: The target is petrified. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Buffeting Wings&lt;/b&gt; (immediate interrupt, when an enemy moves adjacent to the cockatrice, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The cockatrice uses its bite against the triggering enemy and then shifts 3 squares.&lt;/p&gt;]] ⚔ <b>Buffeting Wings</b> (immediate interrupt, when an enemy moves adjacent to the cockatrice, recharge ⚃⚄⚅) </p><p>The cockatrice uses its bite against the triggering enemy and then shifts 3 squares.</p></tr></td></table>",

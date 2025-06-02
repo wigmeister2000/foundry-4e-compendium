@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -362,7 +363,7 @@
 		},
 		{
 			"name":"Cover Retreat",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FWnd7uqesZvtgbJT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -398,7 +399,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -454,23 +456,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 163; <b>Bloodied</b> 81<hr><b>Immune</b> charm, disease, fear, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 32</td><td><b>Ref</b> 26</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+11)<br><b>Con</b> 19 (+12)</td><td><b>Dex</b> 11 (+8)<br><b>Int</b> 7 (+6)</td><td><b>Wis</b> 14 (+10)<br><b>Cha</b> 11 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 3d6+7 damage, and the target is immobilized (save ends). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 3d6+7 damage, and the target is immobilized (save ends). &lt;/p&gt;]]; [[/roll 3d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 3d6+7 damage, and the target is immobilized (save ends). &lt;/p&gt;]] <17.5>  damage, and the target is immobilized (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Block Charge&lt;/b&gt; (immediate interrupt, when an enemy ends a charge within 8 squares of the battle guardian, at-will) &lt;/p&gt;&lt;p&gt;The battle guardian charges the enemy and makes a slam attack. The target is knocked prone on a hit. &lt;/p&gt;]] ⚔ <b>Block Charge</b> (immediate interrupt, when an enemy ends a charge within 8 squares of the battle guardian, at-will) </p><p>The battle guardian charges the enemy and makes a slam attack. The target is knocked prone on a hit. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cover Retreat&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An ally adjacent to a battle guardian does not provoke opportunity attacks when moving, as long as that ally remains adjacent.&lt;/p&gt;]]  <b>Cover Retreat</b></p><p>An ally adjacent to a battle guardian does not provoke opportunity attacks when moving, as long as that ally remains adjacent.</p></tr></td></table>",

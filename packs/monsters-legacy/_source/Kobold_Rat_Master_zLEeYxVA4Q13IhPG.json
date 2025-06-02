@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Rat Horde",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zX2FoYrgDh4VNJCL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -944,7 +946,7 @@
 		},
 		{
 			"name":"Trap Sense",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"JPYi5FEI4K3nxOeQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -980,7 +982,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1036,23 +1039,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 114; <b>Bloodied</b> 57</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 18</td><td><b>Ref</b> 17</td><td><b>Will</b> 16 ; see also trap sense</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 17 (+5)</td><td><b>Dex</b> 15 (+4)<br><b>Int</b> 12 (+3)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 13 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Nature +8</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> hide armor, whip</p><p>[[/roll 0#&lt;b&gt;Rat Horde&lt;/b&gt; aura 1; each enemy that begins its turns within the aura takes 5 damage. Enemies treat squares in the aura as difficult terrain. See also devouring horde.]] <b>Rat Horde</b> aura 1; each enemy that begins its turns within the aura takes 5 damage. Enemies treat squares in the aura as difficult terrain. See also devouring horde.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d4+2 damage, and the target is pulled 1 square. &lt;/p&gt;]] (⚔) <b>Whip</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d4+2 damage, and the target is pulled 1 square. &lt;/p&gt;]]; [[/roll 1d4+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whip&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d4+2 damage, and the target is pulled 1 square. &lt;/p&gt;]] <4.5>  damage, and the target is pulled 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gnawing Rats&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +9 vs Fortitude; 1d6+2 damage and ongoing 5 damage (save ends). See also devouring horde. &lt;/p&gt;]] ᗕ <b>Gnawing Rats</b> (standard, at-will) </p><p>Close burst 2; [[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gnawing Rats&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+9 vs Fortitude&lt;/u&gt;; 1d6+2 damage and ongoing 5 damage (save ends). See also devouring horde. &lt;/p&gt;]]; [[/roll 1d6+2#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gnawing Rats&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +9 vs Fortitude; 1d6+2 damage and ongoing 5 damage (save ends). See also devouring horde. &lt;/p&gt;]] <5.5>  damage and ongoing 5 damage (save ends). See also devouring horde. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Devouring Horde&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; +9 vs Fortitude; 1d6+3 damage, and the target is stunned (save ends); until the target saves, the rat master loses its rat horde aura and the use of its gnawing rats attack. &lt;/p&gt;]] ➶ <b>Devouring Horde</b> (standard, encounter) </p><p>Ranged 5; [[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Devouring Horde&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+9 vs Fortitude&lt;/u&gt;; 1d6+3 damage, and the target is stunned (save ends); until the target saves, the rat master loses its rat horde aura and the use of its gnawing rats attack. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Devouring Horde&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; +9 vs Fortitude; 1d6+3 damage, and the target is stunned (save ends); until the target saves, the rat master loses its rat horde aura and the use of its gnawing rats attack. &lt;/p&gt;]] <6.5>  damage, and the target is stunned (save ends); until the target saves, the rat master loses its rat horde aura and the use of its gnawing rats attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rat Frenzy&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 1; +9 vs Reflex; 2d6+3 damage. &lt;/p&gt;]] ᗕ <b>Rat Frenzy</b> (standard, encounter) </p><p>Close burst 1; [[/roll 1d20+9[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rat Frenzy&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+9 vs Reflex&lt;/u&gt;; 2d6+3 damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rat Frenzy&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 1; +9 vs Reflex; 2d6+3 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shifty&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;A kobold can shift 1 square as a minor action.&lt;/p&gt;]]  <b>Shifty</b> (minor; at-will) </p><p>A kobold can shift 1 square as a minor action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Trap Sense&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A kobold gains a +2 bonus to all defenses against traps.&lt;/p&gt;]]  <b>Trap Sense</b></p><p>A kobold gains a +2 bonus to all defenses against traps.</p></tr></td></table>",

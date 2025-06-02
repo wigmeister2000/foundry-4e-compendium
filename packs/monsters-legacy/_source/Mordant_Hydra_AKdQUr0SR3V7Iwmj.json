@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -540,7 +542,7 @@
 		},
 		{
 			"name":"Many-Headed",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aQvhpldfXo6CcuMm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -576,7 +578,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -586,7 +589,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"D8ruMkZFfxv3JUjS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -622,7 +625,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -678,23 +682,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 880; <b>Bloodied</b> 440<hr><b>Resist</b> 15 acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 33</td><td><b>Ref</b> 30</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 12</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+15)<br><b>Con</b> 24 (+16)</td><td><b>Dex</b> 18 (+13)<br><b>Int</b> 2 (+5)</td><td><b>Wis</b> 16 (+12)<br><b>Cha</b> 8 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision,Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +21 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+21 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +21 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Spit&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +18 vs Reflex; 1d8+6 acid damage. &lt;/p&gt;]] (➶) <b>Acid Spit</b> (standard, at-will) </p><p>Ranged 10; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Spit&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 1d8+6 acid damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Spit&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +18 vs Reflex; 1d8+6 acid damage. &lt;/p&gt;]] <10.5>  acid damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hydra Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The mordant hydra makes six basic attacks (any combination of bite attacks and acid spit attacks).&lt;/p&gt;]] ⚔ <b>Hydra Fury</b> (standard, at-will) </p><p>The mordant hydra makes six basic attacks (any combination of bite attacks and acid spit attacks).</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Many-Headed&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Each time the mordant hydra becomes dazed or stunned, it loses one attack on its next turn instead. Multiple such effects stack.&lt;/p&gt;]]  <b>Many-Headed</b></p><p>Each time the mordant hydra becomes dazed or stunned, it loses one attack on its next turn instead. Multiple such effects stack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mordant hydra can make opportunity attacks against all enemies within its reach (3 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>The mordant hydra can make opportunity attacks against all enemies within its reach (3 squares).</p></tr></td></table>",

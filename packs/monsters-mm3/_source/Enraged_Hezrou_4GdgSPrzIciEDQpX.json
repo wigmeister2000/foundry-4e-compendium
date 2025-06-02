@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Noxious Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"t4dQurJqTpmj1iAx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -440,7 +442,7 @@
 				"uses":{
 					"value":2,
 					"max":"2",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -632,23 +634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":19,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":19
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 278; <b>Bloodied</b> 139</td><td style=\"padding-left: 15px;\"><b>Init</b> +19</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 38</td><td><b>Ref</b> 35</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+22)<br><b>Con</b> 28 (+21)</td><td><b>Dex</b> 25 (+19)<br><b>Int</b> 8 (+11)</td><td><b>Wis</b> 25 (+19)<br><b>Cha</b> 18 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Noxious Stench&lt;/b&gt; (poison) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any enemy that uses an attack power while in the aura takes 10 poison damage, or 20 poison damage while the hezrou is bloodied.&lt;/p&gt;]] ⌀ <b>Noxious Stench</b> (poison) ✦ <b>Aura</b> 2</p><p>Any enemy that uses an attack power while in the aura takes 10 poison damage, or 20 poison damage while the hezrou is bloodied.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +29 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 13 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+29[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+29 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 13 damage.&lt;/p&gt;]] <35>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +29 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d12 + 16 damage.&lt;/p&gt;]] ⚔ <b>Bite</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+29[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+29 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d12 + 16#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d12 + 16 damage.&lt;/p&gt;]] <55>  damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;2/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The hezrou takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The hezrou gains resist 20 to the triggering damage type until the end of the encounter or until it uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>2/Encounter</b></p><p><i>Trigger:</i> The hezrou takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The hezrou gains resist 20 to the triggering damage type until the end of the encounter or until it uses variable resistance again.</p></tr></td></table>",

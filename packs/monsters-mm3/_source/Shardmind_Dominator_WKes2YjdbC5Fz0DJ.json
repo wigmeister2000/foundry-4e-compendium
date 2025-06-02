@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -953,23 +954,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 86; <b>Bloodied</b> 43<hr><b>Resist</b> 5 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 17</td><td><b>Ref</b> 19</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+4)<br><b>Con</b> 14 (+6)</td><td><b>Dex</b> 10 (+4)<br><b>Int</b> 17 (+7)</td><td><b>Wis</b> 18 (+8)<br><b>Cha</b> 13 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, telepathy 5<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Arcana +12, Bluff +10</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> dagger , orb implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d4 + 9 damage.&lt;/p&gt;]] (⚔) <b>Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d4 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d4 + 9 damage.&lt;/p&gt;]] <16.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Overwhelming Mind&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One creature within 5 squares of the dominator makes a melee or a ranged basic attack as a free action against a target of the dominator’s choice. If the attack hits, the dominator slides the attacking creature 3 squares.&lt;/p&gt;]]  <b>Overwhelming Mind</b> (charm) ✦ <b>At-Will</b></p><p><i>Effect:</i> One creature within 5 squares of the dominator makes a melee or a ranged basic attack as a free action against a target of the dominator’s choice. If the attack hits, the dominator slides the attacking creature 3 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Psionic Puppet&lt;/b&gt; (charm) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +11 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated (save ends).&lt;/p&gt;]] ➶ <b>Psionic Puppet</b> (charm) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+11[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Psionic Puppet&lt;/b&gt; (charm) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+11 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Mind Swarm&lt;/b&gt; (psychic, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (enemies in the burst); +11 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 psychic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The burst creates a zone that lasts until the end of the encounter. When any enemy ends its turn within the zone, the dominator can slide it 3 squares as a free action.&lt;/p&gt;]] ✻ <b>Mind Swarm</b> (psychic, zone) ✦ <b>Encounter</b></p><p><i>Attack:</i> Area burst 1 within 5 (enemies in the burst); [[/roll 1d20+11[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Mind Swarm&lt;/b&gt; (psychic, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (enemies in the burst); &lt;u&gt;+11 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Mind Swarm&lt;/b&gt; (psychic, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 psychic damage.&lt;/p&gt;]] <18>  psychic damage.</p><p><i>Effect:</i> The burst creates a zone that lasts until the end of the encounter. When any enemy ends its turn within the zone, the dominator can slide it 3 squares as a free action.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shardswarm&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Each enemy adjacent to the dominator grants combat advantage until the end of the dominator’s next turn. The dominator then teleports 3 squares.&lt;/p&gt;]]  <b>Shardswarm</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> Each enemy adjacent to the dominator grants combat advantage until the end of the dominator’s next turn. The dominator then teleports 3 squares.</p></tr></td></table>",

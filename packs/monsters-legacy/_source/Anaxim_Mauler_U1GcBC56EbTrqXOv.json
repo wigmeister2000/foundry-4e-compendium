@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -299,10 +300,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -602,23 +603,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 280; <b>Bloodied</b> 140<hr><b>Resist</b> 15 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 25</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+11)<br><b>Con</b> 20 (+10)</td><td><b>Dex</b> 15 (+7)<br><b>Int</b> 2 (+1)</td><td><b>Wis</b> 17 (+8)<br><b>Cha</b> 16 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mandible&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +14 vs AC; 2d10+1 damage plus 5 lightning damage. &lt;/p&gt;]] (⚔) <b>Mandible</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Reach 2; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mandible&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+14 vs AC&lt;/u&gt;; 2d10+1 damage plus 5 lightning damage. &lt;/p&gt;]]; [[/roll 2d10+1#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mandible&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +14 vs AC; 2d10+1 damage plus 5 lightning damage. &lt;/p&gt;]] <12>  damage plus 5 lightning damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mandible Grasp&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mauler makes two mandible attacks. If both mandible attacks hit the same target, the mauler makes a secondary attack against the target&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +14 vs AC; the target is grabbed (until escape). &lt;/p&gt;]] ⚔ <b>Mandible Grasp</b> (standard, at-will) ✦ <b>Lightning</b></p><p>The mauler makes two mandible attacks. If both mandible attacks hit the same target, the mauler makes a secondary attack against the target</p><p><i>Secondary Attack</i> [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mandible Grasp&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+14 vs AC&lt;/u&gt;; the target is grabbed (until escape). &lt;/p&gt;]]; the target is grabbed (until escape). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mauling Chew&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mauler deals 2d10 + 3 damage and ongoing 5 lightning damage to a grabbed creature (no attack roll required).&lt;/p&gt;]] ⚔ <b>Mauling Chew</b> (standard, at-will) ✦ <b>Lightning</b></p><p>The mauler deals [[/roll 2d10 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mauling Chew&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mauler deals 2d10 + 3 damage and ongoing 5 lightning damage to a grabbed creature (no attack roll required).&lt;/p&gt;]] <14>  damage and ongoing 5 lightning damage to a grabbed creature (no attack roll required).</p></tr></td></table>",

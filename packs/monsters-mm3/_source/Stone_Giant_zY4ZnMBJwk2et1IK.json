@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -948,23 +949,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 140; <b>Bloodied</b> 70<hr><b>Immune</b> petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 27</td><td><b>Ref</b> 24</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (earth walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+13)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 16 (+10)<br><b>Int</b> 10 (+7)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 11 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +18, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> 3 rocks, greatclub .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage, and the giant marks the target until the end of the giant’s next turn.&lt;/p&gt;]] (⚔) <b>Stone Greatclub</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage, and the giant marks the target until the end of the giant’s next turn.&lt;/p&gt;]] <22>  damage, and the giant marks the target until the end of the giant’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Rock&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 13 damage.&lt;/p&gt;]] ➶ <b>Hurl Rock</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Rock&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Rock&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 13 damage.&lt;/p&gt;]] <22>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Staggering Sweep&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 2 (creatures in the blast); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage, the giant pushes the target up to 2 squares, and the giant marks the target until the end of the giant’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The giant shifts 2 squares but must remain within 2 squares of any creatures marked by it.&lt;/p&gt;]] ᗕ <b>Staggering Sweep</b> (weapon) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Close blast 2 (creatures in the blast); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Staggering Sweep&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 2 (creatures in the blast); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 11#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Staggering Sweep&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 11 damage, the giant pushes the target up to 2 squares, and the giant marks the target until the end of the giant’s next turn.&lt;/p&gt;]] <22>  damage, the giant pushes the target up to 2 squares, and the giant marks the target until the end of the giant’s next turn.</p><p><i>Effect:</i> The giant shifts 2 squares but must remain within 2 squares of any creatures marked by it.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hardened Threat&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A creature marked by the giant and within its reach willingly moves.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Opportunity Action):&lt;/i&gt; The giant uses stone greatclub against the triggering creature.&lt;/p&gt;]]  <b>Hardened Threat</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> A creature marked by the giant and within its reach willingly moves.</p><p><i>Effect (Opportunity Action):</i> The giant uses stone greatclub against the triggering creature.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stone Bones&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The giant is hit by an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The giant gains resist 5 to all damage against the triggering attack.&lt;/p&gt;]]  <b>Stone Bones</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The giant is hit by an attack.</p><p><i>Effect (Immediate Interrupt):</i> The giant gains resist 5 to all damage against the triggering attack.</p></tr></td></table>",

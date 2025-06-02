@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Spectral Chill",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xcuIAgUfLX9JFRHN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -335,10 +337,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 26; <b>Bloodied</b> 13<hr><b>Resist</b> 10 necrotic, insubstantial <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 15</td><td><b>Ref</b> 16</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+1)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 16 (+4)<br><b>Int</b> 6 (null)</td><td><b>Wis</b> 8 (0)<br><b>Cha</b> 14 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Spectral Chill&lt;/b&gt; (Cold) aura 1; an enemy within the aura takes a –2 penalty to all defenses]] <b>Spectral Chill</b> (Cold) aura 1; an enemy within the aura takes a –2 penalty to all defenses</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spectral Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs Reflex; 1d6 + 4 necrotic damage. &lt;/p&gt;]] (⚔) <b>Spectral Touch</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+6[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spectral Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs Reflex&lt;/u&gt;; 1d6 + 4 necrotic damage. &lt;/p&gt;]]; [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spectral Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs Reflex; 1d6 + 4 necrotic damage. &lt;/p&gt;]] <7.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spectral Force&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close Burst 2; +6 vs Will; 2d6 + 4 force damage, and the target slides 1 square. targets enemies&lt;/p&gt;]] ᗕ <b>Spectral Force</b> (standard, recharge ⚄⚅) ✦ <b>Force</b></p><p>Close Burst 2; [[/roll 1d20+6[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spectral Force&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close Burst 2; &lt;u&gt;+6 vs Will&lt;/u&gt;; 2d6 + 4 force damage, and the target slides 1 square. targets enemies&lt;/p&gt;]]; [[/roll 2d6 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spectral Force&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close Burst 2; +6 vs Will; 2d6 + 4 force damage, and the target slides 1 square. targets enemies&lt;/p&gt;]] <11>  force damage, and the target slides 1 square. targets enemies</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Invisibility&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The force specter becomes invisible until it attacks or until it is hit by an attack.&lt;/p&gt;]]  <b>Invisibility</b> (standard; at-will) </p><p>The force specter becomes invisible until it attacks or until it is hit by an attack.</p></tr></td></table>",

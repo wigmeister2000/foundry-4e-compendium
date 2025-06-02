@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -410,21 +411,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"></td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 13</td><td><b>Ref</b> 13</td><td><b>Will</b> 10</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6, burrow 2 (tunneling)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+3)<br><b>Con</b> 14 (+2)</td><td><b>Dex</b> 15 (+2)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 9 (null)<br><b>Cha</b> 4 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision , tremorsense 10<br><b>Passive</b> Perception NaN | Insight NaN</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 4 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 4 damage. &lt;/p&gt;]]; 4 damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hive Worker Frenzy&lt;/b&gt; (free, when any giant ant within 10 squares of the hive warrior drops to 0 hit points; at-will) &lt;/p&gt;&lt;p&gt;The hive worker shifts 2 squares.&lt;/p&gt;]]  <b>Hive Worker Frenzy</b> (free, when any giant ant within 10 squares of the hive warrior drops to 0 hit points; at-will) </p><p>The hive worker shifts 2 squares.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Merciless Eyes",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"s6fhWLoBjwCz8XEM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NfFmEZv1o5jS2lMW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -678,23 +681,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 984; <b>Bloodied</b> 492</td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 38</td><td><b>Ref</b> 39</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 0, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+21)<br><b>Con</b> 22 (+19)</td><td><b>Dex</b> 28 (+22)<br><b>Int</b> 17 (+16)</td><td><b>Wis</b> 15 (+15)<br><b>Cha</b> 31 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Merciless Eyes&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;When an enemy starts its turn in the aura and in the gibbering orb’s line of sight, the gibbering orb uses one random eye ray against that enemy.&lt;/p&gt;]] ⌀ <b>Merciless Eyes</b> ✦ <b>Aura</b> 5</p><p>When an enemy starts its turn in the aura and in the gibbering orb’s line of sight, the gibbering orb uses one random eye ray against that enemy.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the gibbering orb.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the gibbering orb.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +32 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 14 damage, and one of the orb’s mouths detaches and repeats this attack against the target at the start of each of the orb’s turns. The mouth falls off when one of these attacks misses.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+32[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+32 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d6 + 14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 14 damage, and one of the orb’s mouths detaches and repeats this attack against the target at the start of each of the orb’s turns. The mouth falls off when one of these attacks misses.&lt;/p&gt;]] <35>  damage, and one of the orb’s mouths detaches and repeats this attack against the target at the start of each of the orb’s turns. The mouth falls off when one of these attacks misses.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gibbering orb uses two of the following eye rays, each against a different target. This attack does not provoke opportunity attacks.&lt;/p&gt;&lt;p&gt;&lt;i&gt;1. Mindcarving Ray (psychic):&lt;/i&gt; Ranged 10; +30 vs. Will; 3d8 + 11 psychic damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;2. Flesheating Ray (necrotic):&lt;/i&gt; Ranged 10; +30 vs. Fortitude; 3d8 + 11 necrotic damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;3. Bonewarping Ray:&lt;/i&gt; Ranged 10; +30 vs. Fortitude; 2d8 + 8 damage, and the target is weakened (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;4. Bloodfeasting Ray:&lt;/i&gt; Ranged 10; +30 vs. Reflex; 3d8 + 11 damage, and ongoing 10 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;5. Farsending Ray (psychic):&lt;/i&gt; Ranged 10; +30 vs. Reflex; the target is removed from play until the end of the gibbering orb’s next turn, when it reappears in the same space (or the nearest unoccupied space if that space is occupied). When it returns, the target takes 3d8 + 11 psychic damage, and takes a -5 penalty to saving throws until the end of the encounter.&lt;/p&gt;&lt;p&gt;&lt;i&gt;6. Souleating Ray (necrotic):&lt;/i&gt; Ranged 10; +30 vs. Will; 2d8 + 8 necrotic damage, and the target is slowed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is immobilized instead of slowed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target dies.&lt;/p&gt;]] ➶ <b>Eye Rays</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The gibbering orb uses two of the following eye rays, each against a different target. This attack does not provoke opportunity attacks.</p><p><i>1. Mindcarving Ray (psychic):</i> Ranged 10; [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;1. Mindcarving Ray (psychic):&lt;/i&gt; Ranged 10; &lt;u&gt;+30 vs. Will&lt;/u&gt;; 3d8 + 11 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]]; [[/roll 3d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;1. Mindcarving Ray (psychic):&lt;/i&gt; Ranged 10; +30 vs. Will; 3d8 + 11 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] <24.5>  psychic damage, and the target is dazed (save ends).</p><p><i>2. Flesheating Ray (necrotic):</i> Ranged 10; [[/roll 1d20+30[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;2. Flesheating Ray (necrotic):&lt;/i&gt; Ranged 10; &lt;u&gt;+30 vs. Fortitude&lt;/u&gt;; 3d8 + 11 necrotic damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;]]; [[/roll 3d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;2. Flesheating Ray (necrotic):&lt;/i&gt; Ranged 10; +30 vs. Fortitude; 3d8 + 11 necrotic damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;]] <24.5>  necrotic damage, and ongoing 10 necrotic damage (save ends).</p><p><i>3. Bonewarping Ray:</i> Ranged 10; [[/roll 1d20+30[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;3. Bonewarping Ray:&lt;/i&gt; Ranged 10; &lt;u&gt;+30 vs. Fortitude&lt;/u&gt;; 2d8 + 8 damage, and the target is weakened (save ends).&lt;/p&gt;]]; [[/roll 2d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;3. Bonewarping Ray:&lt;/i&gt; Ranged 10; +30 vs. Fortitude; 2d8 + 8 damage, and the target is weakened (save ends).&lt;/p&gt;]] <17>  damage, and the target is weakened (save ends).</p><p><i>4. Bloodfeasting Ray:</i> Ranged 10; [[/roll 1d20+30[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;4. Bloodfeasting Ray:&lt;/i&gt; Ranged 10; &lt;u&gt;+30 vs. Reflex&lt;/u&gt;; 3d8 + 11 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]]; [[/roll 3d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;4. Bloodfeasting Ray:&lt;/i&gt; Ranged 10; +30 vs. Reflex; 3d8 + 11 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] <24.5>  damage, and ongoing 10 damage (save ends).</p><p><i>5. Farsending Ray (psychic):</i> Ranged 10; [[/roll 1d20+30[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;5. Farsending Ray (psychic):&lt;/i&gt; Ranged 10; &lt;u&gt;+30 vs. Reflex&lt;/u&gt;; the target is removed from play until the end of the gibbering orb’s next turn, when it reappears in the same space (or the nearest unoccupied space if that space is occupied). When it returns, the target takes 3d8 + 11 psychic damage, and takes a -5 penalty to saving throws until the end of the encounter.&lt;/p&gt;]]; the target is removed from play until the end of the gibbering orb’s next turn, when it reappears in the same space (or the nearest unoccupied space if that space is occupied). When it returns, the target takes [[/roll 3d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;5. Farsending Ray (psychic):&lt;/i&gt; Ranged 10; +30 vs. Reflex; the target is removed from play until the end of the gibbering orb’s next turn, when it reappears in the same space (or the nearest unoccupied space if that space is occupied). When it returns, the target takes 3d8 + 11 psychic damage, and takes a -5 penalty to saving throws until the end of the encounter.&lt;/p&gt;]] <24.5>  psychic damage, and takes a -5 penalty to saving throws until the end of the encounter.</p><p><i>6. Souleating Ray (necrotic):</i> Ranged 10; [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;6. Souleating Ray (necrotic):&lt;/i&gt; Ranged 10; &lt;u&gt;+30 vs. Will&lt;/u&gt;; 2d8 + 8 necrotic damage, and the target is slowed (save ends).&lt;/p&gt;]]; [[/roll 2d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Rays&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;6. Souleating Ray (necrotic):&lt;/i&gt; Ranged 10; +30 vs. Will; 2d8 + 8 necrotic damage, and the target is slowed (save ends).&lt;/p&gt;]] <17>  necrotic damage, and the target is slowed (save ends).</p><p><i>First Failed Saving Throw:</i> The target is immobilized instead of slowed (save ends).</p><p><i>Second Failed Saving Throw:</i> The target dies.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gibbering&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The gibbering orb starts its turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (nondeafened creatures in the burst); +30 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dazed until the end of the gibbering orb’s next turn.&lt;/p&gt;]] ᗕ <b>Gibbering</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The gibbering orb starts its turn.</p><p><i>Attack:</i> Close burst 5 (nondeafened creatures in the burst); [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gibbering&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (nondeafened creatures in the burst); &lt;u&gt;+30 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dazed until the end of the gibbering orb’s next turn.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Warp Reality",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DvTGyqQBJxf4RaKZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Absorb Thoughts",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hNzuo4OjmTD3U5FZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Unseeing Telepathy",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WMDVv8HBRmq0Lutg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1087,23 +1091,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 436; <b>Bloodied</b> 218<hr><b>Immune</b> blinded, gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 33</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 2, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+17)<br><b>Con</b> 26 (+19)</td><td><b>Dex</b> 23 (+17)<br><b>Int</b> 28 (+20)</td><td><b>Wis</b> 26 (+19)<br><b>Cha</b> 27 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 50<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Arcana +25, Bluff +24, Diplomacy +24, Dungeoneering +24</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Warp Reality&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Any enemy that teleports while within the aura takes 10 damage. &lt;/p&gt;]] ⌀ <b>Warp Reality</b> ✦ <b>Aura</b> 5</p><p>Any enemy that teleports while within the aura takes 10 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Absorb Thoughts&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever a nonminion ally within 10 squares of the elder brain drops to 0 hit points, the elder brain makes a saving throw or a power recharge roll. &lt;/p&gt;]]  <b>Absorb Thoughts</b> <b></b></p><p>Whenever a nonminion ally within 10 squares of the elder brain drops to 0 hit points, the elder brain makes a saving throw or a power recharge roll. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unseeing Telepathy&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The elder brain can communicate with other creatures telepathically even if it does not have line of effect to those creatures.&lt;/p&gt;]]  <b>Unseeing Telepathy</b> <b></b></p><p>The elder brain can communicate with other creatures telepathically even if it does not have line of effect to those creatures.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Warp&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +26 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage. The elder brain teleports the target 3 squares, and the target is immobilized until the end of the elder brain’s next turn.&lt;/p&gt;]] (⚔) <b>Tentacle Warp</b> (teleportation) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+26[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Warp&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+26 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Warp&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage. The elder brain teleports the target 3 squares, and the target is immobilized until the end of the elder brain’s next turn.&lt;/p&gt;]] <12.5>  damage. The elder brain teleports the target 3 squares, and the target is immobilized until the end of the elder brain’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flailing Warp&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The elder brain uses tentacle warp three times, making each attack against a different target.&lt;/p&gt;]] ⚔ <b>Flailing Warp</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The elder brain uses tentacle warp three times, making each attack against a different target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Burst&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); +27 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 6 psychic damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Mind Burst</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 5 (enemies in the burst); [[/roll 1d20+27[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Burst&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+27 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Burst&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 6 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] <19.5>  psychic damage, and the target is dazed (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sensory Overload&lt;/b&gt; (psychic, teleportation) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); +27 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 psychic damage, and the target is blinded and deafened until the end of the elder brain’s next turn. The elder brain then teleports the target 3 squares.&lt;/p&gt;]] ᗕ <b>Sensory Overload</b> (psychic, teleportation) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 5 (enemies in the burst); [[/roll 1d20+27[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sensory Overload&lt;/b&gt; (psychic, teleportation) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+27 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sensory Overload&lt;/b&gt; (psychic, teleportation) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 psychic damage, and the target is blinded and deafened until the end of the elder brain’s next turn. The elder brain then teleports the target 3 squares.&lt;/p&gt;]] <15>  psychic damage, and the target is blinded and deafened until the end of the elder brain’s next turn. The elder brain then teleports the target 3 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Baleful Transfer&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The elder brain saves against an effect.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; An enemy within 5 squares of the elder brain is subjected to the same effect the elder brain saved against (save ends).&lt;/p&gt;]]  <b>Baleful Transfer</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The elder brain saves against an effect.</p><p><i>Effect (No Action):</i> An enemy within 5 squares of the elder brain is subjected to the same effect the elder brain saved against (save ends).</p></tr></td></table>",

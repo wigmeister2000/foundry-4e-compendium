@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5mPtEhKMuC0RHf9J",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Spidery Nature",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NwhbgAfCTGu8EZsD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -334,7 +337,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1039,23 +1043,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 288; <b>Bloodied</b> 144<hr><b>Resist</b> 10 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 27</td><td><b>Ref</b> 30</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, climb 7 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+11)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 24 (+15)<br><b>Int</b> 18 (+12)</td><td><b>Wis</b> 19 (+12)<br><b>Cha</b> 25 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Insight +17, Intimidate +20, Stealth +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ti’irtha regains 10 hit points whenever she starts her turn with at least 1 hit point. When she takes damage from a silvered weapon, her regeneration does not function on her next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>Ti’irtha regains 10 hit points whenever she starts her turn with at least 1 hit point. When she takes damage from a silvered weapon, her regeneration does not function on her next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spidery Nature&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ti’irtha ignores the hindering effects of spider swarms and spiderwebs.&lt;/p&gt;]]  <b>Spidery Nature</b> <b></b></p><p>Ti’irtha ignores the hindering effects of spider swarms and spiderwebs.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Ti’irtha must be in spider form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +22 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 16 poison damage. In addition, at the end of the encounter, the target makes a saving throw. On a failure, the target contracts Spider Queen’s curse (stage 1).&lt;/p&gt;]] (⚔) <b>Bite</b> (disease, poison) ✦ <b>At-Will</b></p><p><i>Requirement:</i> Ti’irtha must be in spider form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+22[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+22 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 16#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 16 poison damage. In addition, at the end of the encounter, the target makes a saving throw. On a failure, the target contracts Spider Queen’s curse (stage 1).&lt;/p&gt;]] <25>  poison damage. In addition, at the end of the encounter, the target makes a saving throw. On a failure, the target contracts Spider Queen’s curse (stage 1).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dark Caress&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Ti’irtha must be in humanoid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +20 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 15 damage, and the target gains vulnerable 5 poison (save ends). If Ti’irtha has combat advantage against the target for the attack, the target also takes a -5 penalty to this saving throw.&lt;/p&gt;]] (⚔) <b>Dark Caress</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> Ti’irtha must be in humanoid form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+20[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dark Caress&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+20 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dark Caress&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 15 damage, and the target gains vulnerable 5 poison (save ends). If Ti’irtha has combat advantage against the target for the attack, the target also takes a -5 penalty to this saving throw.&lt;/p&gt;]] <25.5>  damage, and the target gains vulnerable 5 poison (save ends). If Ti’irtha has combat advantage against the target for the attack, the target also takes a -5 penalty to this saving throw.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ti’irtha makes two melee basic attacks. She can shift 1 square after each attack, or up to 3 squares after each attack if she is in spider form.&lt;/p&gt;]] ⚔ <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Ti’irtha makes two melee basic attacks. She can shift 1 square after each attack, or up to 3 squares after each attack if she is in spider form.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ti’irtha alters her physical form to appear as a Medium spider or a unique Medium drow until she uses change shape again or until she dies.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> Ti’irtha alters her physical form to appear as a Medium spider or a unique Medium drow until she uses change shape again or until she dies.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Spiderweb&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Ti’irtha must be in spider form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (creatures in the burst); +20 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is restrained until it escapes (DC 23) or leaves the area of the burst.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The area of the burst is difficult terrain until the end of the encounter.&lt;/p&gt;]] ✻ <b>Spiderweb</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Requirement:</i> Ti’irtha must be in spider form.</p><p><i>Attack:</i> Area burst 1 within 5 (creatures in the burst); [[/roll 1d20+20[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Spiderweb&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 5 (creatures in the burst); &lt;u&gt;+20 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is restrained until it escapes (DC 23) or leaves the area of the burst.</p><p><i>Effect:</i> The area of the burst is difficult terrain until the end of the encounter.</p></tr></td></table>",

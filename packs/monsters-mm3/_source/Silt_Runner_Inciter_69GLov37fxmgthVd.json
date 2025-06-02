@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Silt Runner Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"sEe2Vp1LWlHrgt6B",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -815,23 +817,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 38; <b>Bloodied</b> 19</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 14</td><td><b>Ref</b> 14</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+1)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 14 (+3)<br><b>Int</b> 8 (0)</td><td><b>Wis</b> 15 (+3)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +6, Intimidate +9, Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> bone sword</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Silt Runner Swarm&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn adjacent to two or more silt runners takes 2 damage.&lt;/p&gt;]]  <b>Silt Runner Swarm</b> <b></b></p><p>Any enemy that starts its turn adjacent to two or more silt runners takes 2 damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +7 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage.&lt;/p&gt;]] (⚔) <b>Bone Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+7[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+7 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 damage.&lt;/p&gt;]] <10.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Psionic Detonation&lt;/b&gt; (force, zone) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); +6 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 force damage. The burst creates a zone that lasts until the end of the encounter. Enemies treat squares within the zone as difficult terrain.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ✻ <b>Psionic Detonation</b> (force, zone) ✦ Recharge ⚅</p><p><i>Attack:</i> Area burst 1 within 10 (enemies in the burst); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Psionic Detonation&lt;/b&gt; (force, zone) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Psionic Detonation&lt;/b&gt; (force, zone) ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 5 force damage. The burst creates a zone that lasts until the end of the encounter. Enemies treat squares within the zone as difficult terrain.&lt;/p&gt;]] <10.5>  force damage. The burst creates a zone that lasts until the end of the encounter. Enemies treat squares within the zone as difficult terrain.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Incite Fury&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; As a free action, each silt runner within a close blast 5 shifts 1 square and makes a basic attack before or after it shifts.&lt;/p&gt;]] ᗕ <b>Incite Fury</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> As a free action, each silt runner within a close blast 5 shifts 1 square and makes a basic attack before or after it shifts.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Incite Frenzy&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The inciter is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; As a free action, each ally within a close burst 5 shifts 1 square and makes a basic attack before or after it shifts.&lt;/p&gt;]] ᗕ <b>Incite Frenzy</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The inciter is first bloodied.</p><p><i>Effect (Free Action):</i> As a free action, each ally within a close burst 5 shifts 1 square and makes a basic attack before or after it shifts.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -726,7 +728,7 @@
 		},
 		{
 			"name":"Many-Headed",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lUNjQzak26MZDr8i",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -762,7 +764,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -772,7 +775,7 @@
 		},
 		{
 			"name":"Regenerating Heads",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"78LsYVIRmM5taDAS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -808,7 +811,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -818,7 +822,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nvE9eiRMjFrw32Ns",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -854,7 +858,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -910,23 +915,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 552; <b>Bloodied</b> 276<hr><b>Resist</b> 10 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 27</td><td><b>Ref</b> 25</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, swim 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 19 (+11)<br><b>Int</b> 8 (+6)</td><td><b>Wis</b> 10 (+7)<br><b>Cha</b> 20 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +17 vs AC; 1d8+6  damage, and ongoing 5 fire damage (save ends). If the Cinder Sisters hit a target that is already taking ongoing fire damage, that target’s ongoing fire damage increases by 5 up to a maximum of 15. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 3; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+6  damage, and ongoing 5 fire damage (save ends). If the Cinder Sisters hit a target that is already taking ongoing fire damage, that target’s ongoing fire damage increases by 5 up to a maximum of 15. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +17 vs AC; 1d8+6  damage, and ongoing 5 fire damage (save ends). If the Cinder Sisters hit a target that is already taking ongoing fire damage, that target’s ongoing fire damage increases by 5 up to a maximum of 15. &lt;/p&gt;]] <10.5>   damage, and ongoing 5 fire damage (save ends). If the Cinder Sisters hit a target that is already taking ongoing fire damage, that target’s ongoing fire damage increases by 5 up to a maximum of 15. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Volcanic Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +15 vs Reflex; 1d8+6 fire damage, and ongoing 5 poison damage (save ends). This attack does not provoke opportunity attacks. &lt;/p&gt;]] (➶) <b>Volcanic Bolt</b> (standard, at-will) ✦ <b>Fire, Poison</b></p><p>Ranged 10; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Volcanic Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d8+6 fire damage, and ongoing 5 poison damage (save ends). This attack does not provoke opportunity attacks. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Volcanic Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +15 vs Reflex; 1d8+6 fire damage, and ongoing 5 poison damage (save ends). This attack does not provoke opportunity attacks. &lt;/p&gt;]] <10.5>  fire damage, and ongoing 5 poison damage (save ends). This attack does not provoke opportunity attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cinder Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee or Ranged; The Cinder Sisters make four basic attacks, plus an additional attack for each head she has grown (see regenerating heads). &lt;/p&gt;]] ⚔ <b>Cinder Fury</b> (standard, at-will) </p><p>Melee or Ranged; The Cinder Sisters make four basic attacks, plus an additional attack for each head she has grown (see regenerating heads). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Khyber&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +14 vs Reflex; 2d8+4 fire damage and 2d8 + 4 necrotic damage, and ongoing 5 fire and necrotic damage (save ends). &lt;/p&gt;]] ᗕ <b>Breath of Khyber</b> (standard, recharge ⚄⚅) ✦ <b>Fire, Necrotic</b></p><p>Close blast 3; [[/roll 1d20+14[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Khyber&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+14 vs Reflex&lt;/u&gt;; 2d8+4 fire damage and 2d8 + 4 necrotic damage, and ongoing 5 fire and necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Khyber&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +14 vs Reflex; 2d8+4 fire damage and 2d8 + 4 necrotic damage, and ongoing 5 fire and necrotic damage (save ends). &lt;/p&gt;]] <13>  fire damage and [[/roll 2d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath of Khyber&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +14 vs Reflex; 2d8+4 fire damage and 2d8 + 4 necrotic damage, and ongoing 5 fire and necrotic damage (save ends). &lt;/p&gt;]] <13>  necrotic damage, and ongoing 5 fire and necrotic damage (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Many-Headed&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Each time the Cinder Sisters would become dazed or stunned, they instead lose one attack while using cinder fury during their next turn. They can be dazed or stunned multiple times.&lt;/p&gt;]]  <b>Many-Headed</b></p><p>Each time the Cinder Sisters would become dazed or stunned, they instead lose one attack while using cinder fury during their next turn. They can be dazed or stunned multiple times.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regenerating Heads&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the Cinder Sisters first reaches 414, 276, and 138 hit points, a head is destroyed. At the start of the hydra’s next turn after a head is destroyed, two heads grow in the lost head’s place, and the hydra gains an additional attack with cinder fury.&lt;/p&gt;]]  <b>Regenerating Heads</b></p><p>When the Cinder Sisters first reaches 414, 276, and 138 hit points, a head is destroyed. At the start of the hydra’s next turn after a head is destroyed, two heads grow in the lost head’s place, and the hydra gains an additional attack with cinder fury.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Cinder Sisters can make opportunity attacks against all enemies within reach (3 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>The Cinder Sisters can make opportunity attacks against all enemies within reach (3 squares).</p></tr></td></table>",

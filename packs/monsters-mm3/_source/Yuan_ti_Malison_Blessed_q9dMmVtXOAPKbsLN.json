@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Zehir's Favor",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"sjQxBJaKZ2muGozl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Zehir's Agony",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AEbPnm2iWkK7O61a",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Slither Away",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kIKBwLl6DTmgshat",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -727,23 +731,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 250; <b>Bloodied</b> 125<hr><b>Resist</b> 15 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +23</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 36</td><td><b>Ref</b> 39</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+18)<br><b>Con</b> 18 (+18)</td><td><b>Dex</b> 28 (+23)<br><b>Int</b> 22 (+20)</td><td><b>Wis</b> 26 (+22)<br><b>Cha</b> 21 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><p><b>Equipment</b> scimitar .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Zehir\"s Agony&lt;/b&gt; (poison) ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura takes 15 poison damage.&lt;/p&gt;]] ⌀ <b>Zehir\"s Agony</b> (poison) ✦ <b>Aura</b> 5</p><p>Any enemy that starts its turn within the aura takes 15 poison damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slither Away&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While the blessed is bloodied, it gains a +2 bonus to speed and a +5 bonus to all defenses.&lt;/p&gt;]]  <b>Slither Away</b> <b></b></p><p>While the blessed is bloodied, it gains a +2 bonus to speed and a +5 bonus to all defenses.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (poison, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +33 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 8 damage, and the target loses poison resistance and takes a -2 penalty to saving throws against poison effects (save ends both).&lt;/p&gt;]] (⚔) <b>Scimitar</b> (poison, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+33[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (poison, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+33 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (poison, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 8 damage, and the target loses poison resistance and takes a -2 penalty to saving throws against poison effects (save ends both).&lt;/p&gt;]] <21.5>  damage, and the target loses poison resistance and takes a -2 penalty to saving throws against poison effects (save ends both).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Zehir\"s Command&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One or two allies within 5 squares of the blessed can each either make a melee basic attack as a free action or shift its speed as a free action.&lt;/p&gt;]]  <b>Zehir\"s Command</b> ✦ Recharge ⚅</p><p><i>Effect:</i> One or two allies within 5 squares of the blessed can each either make a melee basic attack as a free action or shift its speed as a free action.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shifting Feet&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 5 squares of the blessed shifts.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The blessed slides the triggering enemy 2 squares.&lt;/p&gt;]]  <b>Shifting Feet</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy within 5 squares of the blessed shifts.</p><p><i>Effect (Immediate Reaction):</i> The blessed slides the triggering enemy 2 squares.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -946,23 +947,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 62; <b>Bloodied</b> 31</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 19</td><td><b>Ref</b> 20</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+3)<br><b>Con</b> 14 (+5)</td><td><b>Dex</b> 11 (+3)<br><b>Int</b> 16 (+6)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 14 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Abyssal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +14, Bluff +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> amulet of false life  +2 , spellbook .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bat Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8+4 poison damage. &lt;/p&gt;]] (⚔) <b>Bat Bite</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bat Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d8+4 poison damage. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bat Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8+4 poison damage. &lt;/p&gt;]] <8.5>  poison damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fire Shroud&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; +12 vs Reflex; 1d8+3 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] ᗕ <b>Fire Shroud</b> (standard, recharge ⚅</p><p>Close burst 3; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fire Shroud&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; 1d8+3 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fire Shroud&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; +12 vs Reflex; 1d8+3 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] <7.5>  fire damage, and ongoing 5 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Sleep&lt;/b&gt; (standard, daily) ✦ &lt;b&gt;Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20 squares; +12 vs Will; the target is slowed (save ends). First Failed Saving Throw: The target becomes unconscious (save ends). &lt;/p&gt;]] ✻ <b>Sleep</b> (standard, daily) ✦ <b>Sleep</b></p><p>Area burst 2 within 20 squares; [[/roll 1d20+12[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Sleep&lt;/b&gt; (standard, daily) ✦ &lt;b&gt;Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20 squares; &lt;u&gt;+12 vs Will&lt;/u&gt;; the target is slowed (save ends). First Failed Saving Throw: The target becomes unconscious (save ends). &lt;/p&gt;]]; the target is slowed (save ends). First Failed Saving Throw: The target becomes unconscious (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;False Life&lt;/b&gt; (minor, when bloodied; daily) &lt;/p&gt;&lt;p&gt;Conferred by amulet of false life; Dorim gains 14 temporary hit points.&lt;/p&gt;]]  <b>False Life</b> (minor, when bloodied; daily) </p><p>Conferred by amulet of false life; Dorim gains 14 temporary hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Disguise Self&lt;/b&gt; (minor; daily) &lt;/p&gt;&lt;p&gt;Personal; Dorim takes on the appearance of another humanoid creature of the same size previously seen; the illusion lasts for 1 hour. Anyone attempting to see through the disguise makes a DC 28 Insight check to succeed.&lt;/p&gt;]]  <b>Disguise Self</b> (minor; daily) </p><p>Personal; Dorim takes on the appearance of another humanoid creature of the same size previously seen; the illusion lasts for 1 hour. Anyone attempting to see through the disguise makes a DC 28 Insight check to succeed.</p></tr></td></table>",

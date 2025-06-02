@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Storm Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EDkNsTXzp9wuxAJI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -298,7 +300,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -539,10 +542,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -840,23 +843,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 576; <b>Bloodied</b> 288<hr><b>Resist</b> 30 lightning, 30 thunder </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 38</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 10 (hover), swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+21)<br><b>Con</b> 28 (+21)</td><td><b>Dex</b> 22 (+18)<br><b>Int</b> 13 (+13)</td><td><b>Wis</b> 18 (+16)<br><b>Cha</b> 26 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Diplomacy +25, Intimidate +25</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> elemental morningstar</p><p>[[/roll 0#&lt;b&gt;Storm Fury&lt;/b&gt; (Lightning, Thunder) aura 4; any creature that enters the aura or starts its turn there takes 10 lightning and thunder damage. Creatures other than storm giants and storm titans treat the aura’s area as difficult terrain and cannot fly.]] <b>Storm Fury</b> (Lightning, Thunder) aura 4; any creature that enters the aura or starts its turn there takes 10 lightning and thunder damage. Creatures other than storm giants and storm titans treat the aura’s area as difficult terrain and cannot fly.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Elemental Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 2d6 + 10 damage plus 2d6 lightning damage. &lt;/p&gt;]] (⚔) <b>Elemental Morningstar</b> (standard, at-will) ✦ <b>Lightning, Weapon</b></p><p>Reach 3; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Elemental Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+28 vs AC&lt;/u&gt;; 2d6 + 10 damage plus 2d6 lightning damage. &lt;/p&gt;]]; [[/roll [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Elemental Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 2d6 + 10 damage plus 2d6 lightning damage. &lt;/p&gt;]] <7> + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Elemental Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 2d6 + 10 damage plus 2d6 lightning damage. &lt;/p&gt;]] <17>  damage plus 2d6 lightning damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurl Thunderbolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +26 vs Reflex; 2d6 + 9 lightning and thunder damage, and the target is pushed 3 squares and dazed (save ends). &lt;/p&gt;]] (➶) <b>Hurl Thunderbolt</b> (standard, at-will) ✦ <b>Lightning, Thunder</b></p><p>Ranged 10; [[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurl Thunderbolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+26 vs Reflex&lt;/u&gt;; 2d6 + 9 lightning and thunder damage, and the target is pushed 3 squares and dazed (save ends). &lt;/p&gt;]]; [[/roll 2d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurl Thunderbolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +26 vs Reflex; 2d6 + 9 lightning and thunder damage, and the target is pushed 3 squares and dazed (save ends). &lt;/p&gt;]] <16>  lightning and thunder damage, and the target is pushed 3 squares and dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Shattering Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close burst 3, targets enemies; +28 vs AC; 2d6 + 9 damage plus 2d6 lightning and thunder damage. The titan splits its morningstar into rocky fragments that hit nearby enemies, then forms the weapon again&lt;/p&gt;]] ᗕ <b>Shattering Morningstar</b> (standard, at-will) ✦ <b>Lightning, Thunder, Weapon</b></p><p>close burst 3, targets enemies; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Shattering Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close burst 3, targets enemies; &lt;u&gt;+28 vs AC&lt;/u&gt;; 2d6 + 9 damage plus 2d6 lightning and thunder damage. The titan splits its morningstar into rocky fragments that hit nearby enemies, then forms the weapon again&lt;/p&gt;]]; [[/roll [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Shattering Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close burst 3, targets enemies; +28 vs AC; 2d6 + 9 damage plus 2d6 lightning and thunder damage. The titan splits its morningstar into rocky fragments that hit nearby enemies, then forms the weapon again&lt;/p&gt;]] <7> + 9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Shattering Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close burst 3, targets enemies; +28 vs AC; 2d6 + 9 damage plus 2d6 lightning and thunder damage. The titan splits its morningstar into rocky fragments that hit nearby enemies, then forms the weapon again&lt;/p&gt;]] <16>  damage plus 2d6 lightning and thunder damage. The titan splits its morningstar into rocky fragments that hit nearby enemies, then forms the weapon again</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Elemental Armor&lt;/b&gt; (minor; must be bloodied; encounter) &lt;/p&gt;&lt;p&gt;The storm titan spark binder surrounds itself with elemental stone tethered by arcs of lightning; the storm titan gains resist 15 to all damage. Each time the titan is hit by a melee attack, reduce the resistance by 5.&lt;/p&gt;]]  <b>Elemental Armor</b> (minor; must be bloodied; encounter) </p><p>The storm titan spark binder surrounds itself with elemental stone tethered by arcs of lightning; the storm titan gains resist 15 to all damage. Each time the titan is hit by a melee attack, reduce the resistance by 5.</p></tr></td></table>",

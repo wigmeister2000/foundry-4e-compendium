@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -768,23 +769,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 508; <b>Bloodied</b> 254<hr><b>Resist</b> 20 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 43</td><td><b>Fort</b> 41</td><td><b>Ref</b> 41</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 see also ravenous frenzy and teleport</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+22)<br><b>Con</b> 30 (+23)</td><td><b>Dex</b> 30 (+23)<br><b>Int</b> 20 (+18)</td><td><b>Wis</b> 23 (+19)<br><b>Cha</b> 25 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Bluff +25, Insight +24, Religion +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 29 | Insight 34</td></td></tr></table><p><b>Equipment</b> Toothlust (staff), Cloak of Mouths</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Toothlust&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+32 vs AC; 1d6+9 damage, and ongoing 10 damage (save ends). &lt;/p&gt;]] (⚔) <b>Toothlust</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Toothlust&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+32 vs AC&lt;/u&gt;; 1d6+9 damage, and ongoing 10 damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Toothlust&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+32 vs AC; 1d6+9 damage, and ongoing 10 damage (save ends). &lt;/p&gt;]] <12.5>  damage, and ongoing 10 damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cloak of Mouths&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+30 vs AC; 1d8+10 damage, and the target is slowed (save ends). &lt;/p&gt;]] ⚔ <b>Cloak of Mouths</b> (standard, at-will) </p><p>[[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cloak of Mouths&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs AC&lt;/u&gt;; 1d8+10 damage, and the target is slowed (save ends). &lt;/p&gt;]]; [[/roll 1d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cloak of Mouths&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+30 vs AC; 1d8+10 damage, and the target is slowed (save ends). &lt;/p&gt;]] <14.5>  damage, and the target is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Ravenous Frenzy &lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Doresain can move up to 8 squares without provoking opportunity attacks and makes a cloak of mouths attack against each creature he moves adjacent to during the move.&lt;/p&gt;]] ⚔ <b>Ravenous Frenzy </b> (standard, recharge ⚅</p><p>Doresain can move up to 8 squares without provoking opportunity attacks and makes a cloak of mouths attack against each creature he moves adjacent to during the move.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Teleport&lt;/b&gt; (move; recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Doresain can teleport 12 squares.&lt;/p&gt;]]  <b>Teleport</b> (move; recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>Doresain can teleport 12 squares.</p></tr></td></table>",

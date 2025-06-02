@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"6",
 				"rechargeCondition":"",
@@ -590,23 +591,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 92; <b>Bloodied</b> 46</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 18</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+8)<br><b>Con</b> 20 (+9)</td><td><b>Dex</b> 9 (+3)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 10 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Intimidate +11</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> small wooden shield, club .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Club</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Nature\"s Judgment&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d8+6 damage, and the target is immobilized and takes ongoing 5 damage (save ends both). When the target takes the ongoing damage, the fey enemy or plant enemy nearest to the target regains an equal number of hit points. &lt;/p&gt;]] ⚔ <b>Nature\"s Judgment</b> (standard, recharge ⚅</p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Nature\"s Judgment&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 2d8+6 damage, and the target is immobilized and takes ongoing 5 damage (save ends both). When the target takes the ongoing damage, the fey enemy or plant enemy nearest to the target regains an equal number of hit points. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Nature\"s Judgment&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d8+6 damage, and the target is immobilized and takes ongoing 5 damage (save ends both). When the target takes the ongoing damage, the fey enemy or plant enemy nearest to the target regains an equal number of hit points. &lt;/p&gt;]] <15>  damage, and the target is immobilized and takes ongoing 5 damage (save ends both). When the target takes the ongoing damage, the fey enemy or plant enemy nearest to the target regains an equal number of hit points. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Nature\"s Mystery&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets one creature; no attack roll; the target takes a -2 penalty to attack rolls, all defenses, and saving throws (save ends). In addition, the target takes a -5 penalty to saving throws against this effect unless it succeeds on a DC 20 Nature check (as a minor action on the target’s turn)&lt;/p&gt;]] ᗕ <b>Nature\"s Mystery</b> (minor, encounter) ✦ <b>Charm</b></p><p>Close burst 2; targets one creature; no attack roll; the target takes a -2 penalty to attack rolls, all defenses, and saving throws (save ends). In addition, the target takes a -5 penalty to saving throws against this effect unless it succeeds on a DC 20 Nature check (as a minor action on the target’s turn)</p></tr></td></table>",

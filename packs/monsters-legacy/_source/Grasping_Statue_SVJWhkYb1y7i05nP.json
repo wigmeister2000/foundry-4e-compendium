@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Verdant Grasp",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SXRfb9Y5xGaItJqF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -232,7 +234,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5GoMNrqm0RuBZiUk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -268,7 +270,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -324,23 +327,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 123; <b>Bloodied</b> 61<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 28</td><td><b>Ref</b> 24</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+11)<br><b>Con</b> 21 (+11)</td><td><b>Dex</b> 12 (+7)<br><b>Int</b> 3 (+2)</td><td><b>Wis</b> 13 (+7)<br><b>Cha</b> 10 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Verdant Grasp&lt;/b&gt; aura 2; enemies treat the area within the aura as difficult terrain]] <b>Verdant Grasp</b> aura 2; enemies treat the area within the aura as difficult terrain</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC; 1d6+5 damage, and at the grasping statue’s option, the target slides 1 square or is grabbed (until escape). A target trying to escape the grab takes a -4 penalty to the check. The grasping statue can slide or grab only Large or smaller targets. The statue can grab up to two targets at once but, if it does so, it cannot make slam attacks until it releases at least one target. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+18 vs AC&lt;/u&gt;; 1d6+5 damage, and at the grasping statue’s option, the target slides 1 square or is grabbed (until escape). A target trying to escape the grab takes a -4 penalty to the check. The grasping statue can slide or grab only Large or smaller targets. The statue can grab up to two targets at once but, if it does so, it cannot make slam attacks until it releases at least one target. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC; 1d6+5 damage, and at the grasping statue’s option, the target slides 1 square or is grabbed (until escape). A target trying to escape the grab takes a -4 penalty to the check. The grasping statue can slide or grab only Large or smaller targets. The statue can grab up to two targets at once but, if it does so, it cannot make slam attacks until it releases at least one target. &lt;/p&gt;]] <8.5>  damage, and at the grasping statue’s option, the target slides 1 square or is grabbed (until escape). A target trying to escape the grab takes a -4 penalty to the check. The grasping statue can slide or grab only Large or smaller targets. The statue can grab up to two targets at once but, if it does so, it cannot make slam attacks until it releases at least one target. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A grasping statue can make opportunity attacks against all enemies within its reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>A grasping statue can make opportunity attacks against all enemies within its reach (2 squares).</p></tr></td></table>",

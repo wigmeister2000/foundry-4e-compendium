@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -467,10 +468,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -768,23 +769,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 54; <b>Bloodied</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 16</td><td><b>Ref</b> 14</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 14 (+3)<br><b>Int</b> 8 (0)</td><td><b>Wis</b> 13 (+2)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Nature +7, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> hide armor , waraxe .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d12 + 3 damage, or 2d12 + 3 damage while bloodied. &lt;/p&gt;]] (⚔) <b>Waraxe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d12 + 3 damage, or 2d12 + 3 damage while bloodied. &lt;/p&gt;]]; [[/roll 1d12 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d12 + 3 damage, or 2d12 + 3 damage while bloodied. &lt;/p&gt;]] <9.5>  damage, or [[/roll 2d12 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d12 + 3 damage, or 2d12 + 3 damage while bloodied. &lt;/p&gt;]] <16>  damage while bloodied. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rabid Wolf Charge&lt;/b&gt; (standard; requires a waraxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d12 + 3 plus 1d8 damage. When charging, Akitani can use this power in place of a melee basic attack. While bloodied, Akitani’s movement during a charge doesn’t provoke opportunity attacks.. &lt;/p&gt;]] ⚔ <b>Rabid Wolf Charge</b> (standard; requires a waraxe, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rabid Wolf Charge&lt;/b&gt; (standard; requires a waraxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d12 + 3 plus 1d8 damage. When charging, Akitani can use this power in place of a melee basic attack. While bloodied, Akitani’s movement during a charge doesn’t provoke opportunity attacks.. &lt;/p&gt;]]; [[/roll 1d12 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rabid Wolf Charge&lt;/b&gt; (standard; requires a waraxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d12 + 3 plus 1d8 damage. When charging, Akitani can use this power in place of a melee basic attack. While bloodied, Akitani’s movement during a charge doesn’t provoke opportunity attacks.. &lt;/p&gt;]] <9.5>  plus [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rabid Wolf Charge&lt;/b&gt; (standard; requires a waraxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d12 + 3 plus 1d8 damage. When charging, Akitani can use this power in place of a melee basic attack. While bloodied, Akitani’s movement during a charge doesn’t provoke opportunity attacks.. &lt;/p&gt;]] <4.5> damage. When charging, Akitani can use this power in place of a melee basic attack. While bloodied, Akitani’s movement during a charge doesn’t provoke opportunity attacks.. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rampage&lt;/b&gt; (free, when akitani scores a critical hit, ) &lt;/p&gt;&lt;p&gt;+4 vs  or  (whichever is lower); . Akitani makes a melee basic attack.&lt;/p&gt;]] ⚔ <b>Rampage</b> (free, when akitani scores a critical hit, ) </p><p>+4 vs  or  (whichever is lower); . Akitani makes a melee basic attack.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate reaction, when missed by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;Akitani shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate reaction, when missed by a melee attack; at-will) </p><p>Akitani shifts 1 square.</p></tr></td></table>",

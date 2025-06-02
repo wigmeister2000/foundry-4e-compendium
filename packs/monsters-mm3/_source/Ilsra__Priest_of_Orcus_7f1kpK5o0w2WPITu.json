@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Orcus's Admonishment",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tZwYU7LoNrXeGsjB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -819,23 +821,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 95; <b>Bloodied</b> 47<hr><b>Resist</b> 5 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 20</td><td><b>Ref</b> 22</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+6)<br><b>Con</b> 15 (+6)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 16 (+7)</td><td><b>Wis</b> 18 (+8)<br><b>Cha</b> 17 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Arcana +12, Religion +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> robes, skull mace</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Orcus\"s Admonishment&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any enemy in the aura that regains hit points is immobilized until the end of its next turn.&lt;/p&gt;]] ⌀ <b>Orcus\"s Admonishment</b> ✦ <b>Aura</b> 2</p><p>Any enemy in the aura that regains hit points is immobilized until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Skull Mace&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 5 necrotic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ilsra can slide the target 1 square.&lt;/p&gt;]] (⚔) <b>Skull Mace</b> (necrotic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Skull Mace&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Skull Mace&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 5 necrotic damage.&lt;/p&gt;]] <15.5>  necrotic damage.</p><p><i>Effect:</i> Ilsra can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ray of Mortality&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 necrotic damage, and the target is slowed and takes ongoing 5 necrotic damage (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The target is slowed until the end of its next turn.&lt;/p&gt;]] ➶ <b>Ray of Mortality</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ray of Mortality&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ray of Mortality&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 necrotic damage, and the target is slowed and takes ongoing 5 necrotic damage (save ends both).&lt;/p&gt;]] <13>  necrotic damage, and the target is slowed and takes ongoing 5 necrotic damage (save ends both).</p><p><i>Miss:</i> The target is slowed until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dark Reaping&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when an enemy within 10 squares of Ilsra fails a death saving throw&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +12 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 necrotic damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ilsra slides each ally in the blast up to 3 squares.&lt;/p&gt;]] ᗕ <b>Dark Reaping</b> (necrotic) ✦ <b>Recharge</b> when an enemy within 10 squares of Ilsra fails a death saving throw</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+12[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dark Reaping&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when an enemy within 10 squares of Ilsra fails a death saving throw&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+12 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dark Reaping&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when an enemy within 10 squares of Ilsra fails a death saving throw&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 necrotic damage, and the target is dazed (save ends).&lt;/p&gt;]] <18.5>  necrotic damage, and the target is dazed (save ends).</p><p><i>Effect:</i> Ilsra slides each ally in the blast up to 3 squares.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Jaunt&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ilsra teleports up to 3 squares and becomes insubstantial until the start of her next turn.&lt;/p&gt;]]  <b>Shadow Jaunt</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> Ilsra teleports up to 3 squares and becomes insubstantial until the start of her next turn.</p></tr></td></table>",

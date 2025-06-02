@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -366,7 +368,7 @@
 		},
 		{
 			"name":"Double Actions",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"16MZpIPXy8UhDQBe",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +404,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -590,7 +593,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tAwaqeQ2IU713rEO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -626,7 +629,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -682,23 +686,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 53; <b>Bloodied</b> 26<hr><b>Vulnerable</b> 5 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>Save</b> +2 against charm and fear effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 15</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+5)<br><b>Con</b> 13 (+3)</td><td><b>Dex</b> 15 (+4)<br><b>Int</b> 9 (+1)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 9 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> arrow  x20, club , crossbow , light shield .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d6+3 damage. &lt;/p&gt;]] (⚔) <b>Club</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d6+3 damage. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d6+3 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +8 vs AC; 1d8+1 damage. &lt;/p&gt;]] (➶) <b>Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+8 vs AC&lt;/u&gt;; 1d8+1 damage. &lt;/p&gt;]]; [[/roll 1d8+1#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +8 vs AC; 1d8+1 damage. &lt;/p&gt;]] <5.5>  damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Actions&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of combat, the dolgrim warrior makes two initiative checks. Each check corresponds to one of the warrior’s brains, and the warrior takes a turn on both initiative counts. The warrior has a full set of actions on each of these turns, and its ability to take an immediate action refreshes on each turn.&lt;/p&gt;]]  <b>Double Actions</b></p><p>At the start of combat, the dolgrim warrior makes two initiative checks. Each check corresponds to one of the warrior’s brains, and the warrior takes a turn on both initiative counts. The warrior has a full set of actions on each of these turns, and its ability to take an immediate action refreshes on each turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A dolgrim warrior deals 1d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A dolgrim warrior deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A dolgrim warrior deals 1d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage against any creature granting combat advantage to it.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dolgrim Tactics&lt;/b&gt; (immediate reaction, when missed by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The dolgrim warrior shifts 1 square.&lt;/p&gt;]]  <b>Dolgrim Tactics</b> (immediate reaction, when missed by a melee attack; at-will) </p><p>The dolgrim warrior shifts 1 square.</p></tr></td></table>",

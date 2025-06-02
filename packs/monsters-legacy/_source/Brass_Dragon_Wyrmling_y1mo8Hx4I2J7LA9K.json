@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -119,10 +120,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -251,7 +252,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -297,10 +299,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -958,23 +960,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 68; <b>Bloodied</b> 34<hr><b>Resist</b> 5 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +3 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 16</td><td><b>Ref</b> 15</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (hover), overland flight 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+3)<br><b>Con</b> 16 (+4)</td><td><b>Dex</b> 14 (+3)<br><b>Int</b> 11 (+1)</td><td><b>Wis</b> 13 (+2)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +8, Insight +7, Intimidate +6</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d8+2 damage plus 1d6 fire damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Fire</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d8+2 damage plus 1d6 fire damage. &lt;/p&gt;]]; [[/roll 1d8+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d8+2 damage plus 1d6 fire damage. &lt;/p&gt;]] <6.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d8+2 damage plus 1d6 fire damage. &lt;/p&gt;]] <3.5> fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 1d6+2 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d6+2 damage. &lt;/p&gt;]]; [[/roll 1d6+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 1d6+2 damage. &lt;/p&gt;]] <5.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dragon Ire&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The wyrmling makes two claw attacks, and then shifts 1 square.&lt;/p&gt;]] ⚔ <b>Dragon Ire</b> (standard, at-will) </p><p>The wyrmling makes two claw attacks, and then shifts 1 square.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 4; +5 vs Reflex; 3d6+2 fire damage, and the wyrmling pushes the target 1 square. Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharges when first bloodied) ✦ <b>Fire</b></p><p>Close blast 4; [[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 4; &lt;u&gt;+5 vs Reflex&lt;/u&gt;; 3d6+2 fire damage, and the wyrmling pushes the target 1 square. Miss: Half damage. &lt;/p&gt;]]; [[/roll 3d6+2#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 4; +5 vs Reflex; 3d6+2 fire damage, and the wyrmling pushes the target 1 square. Miss: Half damage. &lt;/p&gt;]] <12.5>  fire damage, and the wyrmling pushes the target 1 square. Miss: Half damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Fire Stream&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +7 vs Reflex; 1d8+4 fire damage, and any creature adjacent to the target takes 1d6 fire damage. &lt;/p&gt;]] ➶ <b>Fire Stream</b> (standard, at-will) ✦ <b>Fire</b></p><p>Ranged 20; [[/roll 1d20+7[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Fire Stream&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+7 vs Reflex&lt;/u&gt;; 1d8+4 fire damage, and any creature adjacent to the target takes 1d6 fire damage. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Fire Stream&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +7 vs Reflex; 1d8+4 fire damage, and any creature adjacent to the target takes 1d6 fire damage. &lt;/p&gt;]] <8.5>  fire damage, and any creature adjacent to the target takes [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Fire Stream&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +7 vs Reflex; 1d8+4 fire damage, and any creature adjacent to the target takes 1d6 fire damage. &lt;/p&gt;]] <3.5> fire damage. </p></tr></td></table>",

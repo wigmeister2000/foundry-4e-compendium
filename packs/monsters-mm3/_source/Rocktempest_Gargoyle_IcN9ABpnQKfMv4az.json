@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -764,23 +765,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 330; <b>Bloodied</b> 165<hr><b>Immune</b> petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +23 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 37</td><td><b>Ref</b> 36</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+19)<br><b>Con</b> 24 (+18)</td><td><b>Dex</b> 27 (+19)<br><b>Int</b> 15 (+13)</td><td><b>Wis</b> 17 (+14)<br><b>Cha</b> 21 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +28 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and ongoing 15 damage (save ends).&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+28[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+28 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and ongoing 15 damage (save ends).&lt;/p&gt;]] <15>  damage, and ongoing 15 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tempest Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gargoyle uses claw two times. If both attacks hit the same target, the target is also dazed (save ends).&lt;/p&gt;]] ⚔ <b>Tempest Claws</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The gargoyle uses claw two times. If both attacks hit the same target, the target is also dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stone Form&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gargoyle enters stone form until it ends the effect as a minor action. While in this form, it gains tremorsense 10 and resist 30 to all damage, gains 10 temporary hit points at the start of each of its turns, and cannot take actions except to end the effect. When the gargoyle ends the effect, it gains a +10 bonus to all damage rolls before the end of its next turn.&lt;/p&gt;]]  <b>Stone Form</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The gargoyle enters stone form until it ends the effect as a minor action. While in this form, it gains tremorsense 10 and resist 30 to all damage, gains 10 temporary hit points at the start of each of its turns, and cannot take actions except to end the effect. When the gargoyle ends the effect, it gains a +10 bonus to all damage rolls before the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flying Strike&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when the gargoyle uses stone form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The gargoyle flies up to 8 squares. At any point during its move, it makes the following attack three times, but only once against any creature. This movement does not provoke opportunity attacks.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +26 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 12 damage, and the gargoyle slides the target up to 3 squares.&lt;/p&gt;]] ⚔ <b>Flying Strike</b> ✦ <b>Recharge</b> when the gargoyle uses stone form</p><p><i>Effect:</i> The gargoyle flies up to 8 squares. At any point during its move, it makes the following attack three times, but only once against any creature. This movement does not provoke opportunity attacks.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+26[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flying Strike&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when the gargoyle uses stone form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+26 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flying Strike&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when the gargoyle uses stone form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 12 damage, and the gargoyle slides the target up to 3 squares.&lt;/p&gt;]] <30>  damage, and the gargoyle slides the target up to 3 squares.</p></tr></td></table>",

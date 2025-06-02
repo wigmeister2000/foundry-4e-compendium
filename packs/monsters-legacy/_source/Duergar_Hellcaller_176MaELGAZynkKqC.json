@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1134,23 +1135,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 96; <b>Bloodied</b> 48<hr><b>Resist</b> 10 fire, 10 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 23</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+8)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 11 (+6)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 22 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Dwarven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +11, Dungeoneering +13, Religion +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> leather armor , mace .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+5 damage. &lt;/p&gt;]] (⚔) <b>Mace</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+5 damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+5 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Infernal Quills&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +19 vs AC; 1d8+3 fire and poison damage, and the target takes ongoing 5 fire and poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] ➶ <b>Infernal Quills</b> (standard, at-will) ✦ <b>Fire, Poison</b></p><p>Ranged 10; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Infernal Quills&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+3 fire and poison damage, and the target takes ongoing 5 fire and poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Infernal Quills&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +19 vs AC; 1d8+3 fire and poison damage, and the target takes ongoing 5 fire and poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] <7.5>  fire and poison damage, and the target takes ongoing 5 fire and poison damage and a -2 penalty to attack rolls (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Asmodeus\"s Ruby Curse&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; +16 vs Will; 3d8+5 psychic damage, and the duergar slides the target to the nearest space outside the blast. This forced movement provokes opportunity attacks. &lt;/p&gt;]] ᗕ <b>Asmodeus\"s Ruby Curse</b> (standard, encounter) ✦ <b>Fear, Psychic</b></p><p>Close blast 5; targets enemies; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Asmodeus\"s Ruby Curse&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; &lt;u&gt;+16 vs Will&lt;/u&gt;; 3d8+5 psychic damage, and the duergar slides the target to the nearest space outside the blast. This forced movement provokes opportunity attacks. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Asmodeus\"s Ruby Curse&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; +16 vs Will; 3d8+5 psychic damage, and the duergar slides the target to the nearest space outside the blast. This forced movement provokes opportunity attacks. &lt;/p&gt;]] <18.5>  psychic damage, and the duergar slides the target to the nearest space outside the blast. This forced movement provokes opportunity attacks. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Quill Storm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +17 vs Reflex; 1d8 fire and poison damage, and the target takes ongoing 10 fire and poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] ✻ <b>Quill Storm</b> (standard, encounter) ✦ <b>Fire, Poison</b></p><p>Area burst 2 within 10; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Quill Storm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 1d8 fire and poison damage, and the target takes ongoing 10 fire and poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; [[/roll 1d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Quill Storm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +17 vs Reflex; 1d8 fire and poison damage, and the target takes ongoing 10 fire and poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] <4.5> fire and poison damage, and the target takes ongoing 10 fire and poison damage and a -2 penalty to attack rolls (save ends both). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Quick Quill Strike&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The duergar hellcaller makes an infernal quills attack&lt;/p&gt;]] ➶ <b>Quick Quill Strike</b> (minor, encounter) ✦ <b>Fire, Poison</b></p><p>The duergar hellcaller makes an infernal quills attack</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Devilish Sacrifice&lt;/b&gt; (immediate interrupt, when an enemy makes a melee attack roll against the duergar hellcaller; encounter) &lt;/p&gt;&lt;p&gt;The duergar hellcaller shifts to the nearest space beyond the triggering attack’s reach. A legion devil hellguard appears in the duergar’s former space and becomes the target of the triggering attack. The devil acts immediately after the duergar hellcaller’s initiative.&lt;/p&gt;]]  <b>Devilish Sacrifice</b> (immediate interrupt, when an enemy makes a melee attack roll against the duergar hellcaller; encounter) </p><p>The duergar hellcaller shifts to the nearest space beyond the triggering attack’s reach. A legion devil hellguard appears in the duergar’s former space and becomes the target of the triggering attack. The devil acts immediately after the duergar hellcaller’s initiative.</p></tr></td></table>",

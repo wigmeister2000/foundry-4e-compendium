@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FgVyvd4KqElWD5wX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -276,23 +278,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 252; <b>Bloodied</b> 126<hr><b>Resist</b> half damage from melee and ranged attacks <b>Vulnerable</b> 10 against close and area attacks <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 34</td><td><b>Fort</b> 35</td><td><b>Ref</b> 34</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+19)<br><b>Con</b> 22 (+17)</td><td><b>Dex</b> 20 (+16)<br><b>Int</b> 3 (+7)</td><td><b>Wis</b> 18 (+15)<br><b>Cha</b> 10 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 10<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm Attack&lt;/b&gt; aura 3; the dragonclaw swarm makes a dragonclaw pin attack as a free action against any enemy that starts its turn within the aura.]] <b>Swarm Attack</b> aura 3; the dragonclaw swarm makes a dragonclaw pin attack as a free action against any enemy that starts its turn within the aura.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragonclaw Pin&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 2d8+14 damage, and the target is restrained until the start of tis next turn. &lt;/p&gt;]] (⚔) <b>Dragonclaw Pin</b> (standard, at-will) </p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragonclaw Pin&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 2d8+14 damage, and the target is restrained until the start of tis next turn. &lt;/p&gt;]]; [[/roll 2d8+14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragonclaw Pin&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 2d8+14 damage, and the target is restrained until the start of tis next turn. &lt;/p&gt;]] <23>  damage, and the target is restrained until the start of tis next turn. </p></tr></td></table>",

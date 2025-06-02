@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Vecna's Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"w7h8jbxDRyLZ3AHM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"39",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1531,23 +1533,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1580; <b>Bloodied</b> 790<hr><b>Resist</b> 20 necrotic <b>Vulnerable</b> 20 radiant <b>Immune</b> attacks by characters below level 20, disease, illusion, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 49</td><td><b>Fort</b> 49</td><td><b>Ref</b> 47</td><td><b>Will</b> 51</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (hover), teleport 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+24)<br><b>Con</b> 28 (+26)</td><td><b>Dex</b> 26 (+25)<br><b>Int</b> 34 (+29)</td><td><b>Wis</b> 34 (+29)<br><b>Cha</b> 29 (+26)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> all, telepathy 20<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +34, Bluff +31, Diplomacy +31, Dungeoneering +34, Heal +34, History +34, Insight +34, Intimidate +31, Nature +34, Religion +34</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision,Truesight 20<br><b>Passive</b> Perception 39 | Insight 44</td></td></tr></table><p><b>Equipment</b> robes</p><p>[[/roll 0#&lt;b&gt;Vecna\"s Aura&lt;/b&gt; (Healing, Necrotic) aura 10; any living creature that starts its turn within the aura takes 50 necrotic damage. Any undead creature that starts its turn within the aura regains 50 hit points.]] <b>Vecna\"s Aura</b> (Healing, Necrotic) aura 10; any living creature that starts its turn within the aura takes 50 necrotic damage. Any undead creature that starts its turn within the aura regains 50 hit points.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Paralyzing Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+39 vs Reflex; 3d6+14 necrotic damage, and the target is restrained and weakened (save ends both). &lt;/p&gt;]] (⚔) <b>Paralyzing Touch</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+39[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Paralyzing Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+39 vs Reflex&lt;/u&gt;; 3d6+14 necrotic damage, and the target is restrained and weakened (save ends both). &lt;/p&gt;]]; [[/roll 3d6+14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Paralyzing Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+39 vs Reflex; 3d6+14 necrotic damage, and the target is restrained and weakened (save ends both). &lt;/p&gt;]] <24.5>  necrotic damage, and the target is restrained and weakened (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Banish to the Dread Realm&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +39 vs Will; 2d10+9 psychic damage. The target is banished to a demiplane, disappearing from sight. The target cannot be targeted and cannot take actions until the start of its next turn, at which time the target reappears in the original space it occupied or in the nearest space of Vecna’s choice if that space is occupied. The target immediately makes a melee basic attack as a free action against the nearest creature. In addition, the target treats its allies as enemies for the purpose of making opportunity attacks, and if an ally performs an action that would normally provoke an opportunity attack from an enemy, the target makes an opportunity attack against the ally (save ends). &lt;/p&gt;]] ⚔ <b>Banish to the Dread Realm</b> (standard, recharge ⚃⚄⚅) ✦ <b>Psychic</b></p><p>Ranged 10; [[/roll 1d20+39[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Banish to the Dread Realm&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+39 vs Will&lt;/u&gt;; 2d10+9 psychic damage. The target is banished to a demiplane, disappearing from sight. The target cannot be targeted and cannot take actions until the start of its next turn, at which time the target reappears in the original space it occupied or in the nearest space of Vecna’s choice if that space is occupied. The target immediately makes a melee basic attack as a free action against the nearest creature. In addition, the target treats its allies as enemies for the purpose of making opportunity attacks, and if an ally performs an action that would normally provoke an opportunity attack from an enemy, the target makes an opportunity attack against the ally (save ends). &lt;/p&gt;]]; [[/roll 2d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Banish to the Dread Realm&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +39 vs Will; 2d10+9 psychic damage. The target is banished to a demiplane, disappearing from sight. The target cannot be targeted and cannot take actions until the start of its next turn, at which time the target reappears in the original space it occupied or in the nearest space of Vecna’s choice if that space is occupied. The target immediately makes a melee basic attack as a free action against the nearest creature. In addition, the target treats its allies as enemies for the purpose of making opportunity attacks, and if an ally performs an action that would normally provoke an opportunity attack from an enemy, the target makes an opportunity attack against the ally (save ends). &lt;/p&gt;]] <20>  psychic damage. The target is banished to a demiplane, disappearing from sight. The target cannot be targeted and cannot take actions until the start of its next turn, at which time the target reappears in the original space it occupied or in the nearest space of Vecna’s choice if that space is occupied. The target immediately makes a melee basic attack as a free action against the nearest creature. In addition, the target treats its allies as enemies for the purpose of making opportunity attacks, and if an ally performs an action that would normally provoke an opportunity attack from an enemy, the target makes an opportunity attack against the ally (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ray of Death&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +39 vs Reflex; 2d8+15 necrotic damage, and the target loses a healing surge. &lt;/p&gt;]] ➶ <b>Ray of Death</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 20; [[/roll 1d20+39[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ray of Death&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+39 vs Reflex&lt;/u&gt;; 2d8+15 necrotic damage, and the target loses a healing surge. &lt;/p&gt;]]; [[/roll 2d8+15#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ray of Death&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +39 vs Reflex; 2d8+15 necrotic damage, and the target loses a healing surge. &lt;/p&gt;]] <24>  necrotic damage, and the target loses a healing surge. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Necrotic Web&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; targets living creatures; +39 vs Reflex; 2d6+12 necrotic damage, and the target is restrained and takes ongoing 20 necrotic damage (save ends both). The burst creates a zone of webs that lasts until the end of the encounter. The zone is difficult terrain, and a living creature that ends its move in the web is restrained and takes ongoing 20 necrotic damage (save ends both). &lt;/p&gt;]] ✻ <b>Necrotic Web</b> (standard, recharge ⚃⚄⚅) ✦ <b>Necrotic, Zone</b></p><p>Area burst 3 within 20; targets living creatures; [[/roll 1d20+39[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Necrotic Web&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; targets living creatures; &lt;u&gt;+39 vs Reflex&lt;/u&gt;; 2d6+12 necrotic damage, and the target is restrained and takes ongoing 20 necrotic damage (save ends both). The burst creates a zone of webs that lasts until the end of the encounter. The zone is difficult terrain, and a living creature that ends its move in the web is restrained and takes ongoing 20 necrotic damage (save ends both). &lt;/p&gt;]]; [[/roll 2d6+12#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Necrotic Web&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; targets living creatures; +39 vs Reflex; 2d6+12 necrotic damage, and the target is restrained and takes ongoing 20 necrotic damage (save ends both). The burst creates a zone of webs that lasts until the end of the encounter. The zone is difficult terrain, and a living creature that ends its move in the web is restrained and takes ongoing 20 necrotic damage (save ends both). &lt;/p&gt;]] <19>  necrotic damage, and the target is restrained and takes ongoing 20 necrotic damage (save ends both). The burst creates a zone of webs that lasts until the end of the encounter. The zone is difficult terrain, and a living creature that ends its move in the web is restrained and takes ongoing 20 necrotic damage (save ends both). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Divine Discorporation&lt;/b&gt; ( when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;Vecna discorporates.&lt;/p&gt;]]  <b>Divine Discorporation</b> ( when first bloodied; encounter) </p><p>Vecna discorporates.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Immortal Resistance&lt;/b&gt; ( when vecna gains an effect that a save can end; at-will) &lt;/p&gt;&lt;p&gt;Vecna makes a saving throw. On a save, Vecna is unaffected by the effect.&lt;/p&gt;]]  <b>Immortal Resistance</b> ( when vecna gains an effect that a save can end; at-will) </p><p>Vecna makes a saving throw. On a save, Vecna is unaffected by the effect.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vecna\"s Ambition&lt;/b&gt; ( when vecna reduces a creature to 0 hit points or fewer; at-will) &lt;/p&gt;&lt;p&gt;Vecna regains an action point.&lt;/p&gt;]]  <b>Vecna\"s Ambition</b> ( when vecna reduces a creature to 0 hit points or fewer; at-will) </p><p>Vecna regains an action point.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Esoteric Action&lt;/b&gt; (immediate interrupt, when an enemy within sight spends an action point; at-will) &lt;/p&gt;&lt;p&gt;Vecna spends an action point and takes an extra action.&lt;/p&gt;]]  <b>Esoteric Action</b> (immediate interrupt, when an enemy within sight spends an action point; at-will) </p><p>Vecna spends an action point and takes an extra action.</p></tr></td></table>",

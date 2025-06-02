@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -465,10 +466,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1124,23 +1125,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 416; <b>Bloodied</b> 208<hr><b>Resist</b> 10 poison, 20 psychic <b>Immune</b> charm, disease, fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 32</td><td><b>Ref</b> 36</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+13)<br><b>Con</b> 24 (+18)</td><td><b>Dex</b> 20 (+16)<br><b>Int</b> 28 (+20)</td><td><b>Wis</b> 30 (+21)<br><b>Cha</b> 22 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> All<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +30, Dungeoneering +26, History +30, Insight +31, Nature +25, Religion +30, Streetwise +22</td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision,Blindsight 20,Truesight 20<br><b>Passive</b> Perception 31 | Insight 41</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Distracting Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs Reflex; 3d10+3 psychic damage, and the target takes a -5 penalty to attack rolls against Sora Teraza until the end of its next turn. &lt;/p&gt;]] (⚔) <b>Distracting Touch</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Distracting Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs Reflex&lt;/u&gt;; 3d10+3 psychic damage, and the target takes a -5 penalty to attack rolls against Sora Teraza until the end of its next turn. &lt;/p&gt;]]; [[/roll 3d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Distracting Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs Reflex; 3d10+3 psychic damage, and the target takes a -5 penalty to attack rolls against Sora Teraza until the end of its next turn. &lt;/p&gt;]] <19.5>  psychic damage, and the target takes a -5 penalty to attack rolls against Sora Teraza until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Teraza\"s Whisper&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs Will; 2d6+3 damage, and the target is blinded and dazed (save ends both). &lt;/p&gt;]] ᗕ <b>Teraza\"s Whisper</b> (standard, at-will) </p><p>[[/roll 1d20+26[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Teraza\"s Whisper&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs Will&lt;/u&gt;; 2d6+3 damage, and the target is blinded and dazed (save ends both). &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Teraza\"s Whisper&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs Will; 2d6+3 damage, and the target is blinded and dazed (save ends both). &lt;/p&gt;]] <10>  damage, and the target is blinded and dazed (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Timeslip&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 5; any ally in the burst can take a standard action immediately.&lt;/p&gt;]] ᗕ <b>Timeslip</b> (standard, encounter) </p><p>Close burst 5; any ally in the burst can take a standard action immediately.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twist of Fate&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +26 vs Will; one ally within range ends a condition that a save can end, and the target gains that condition (save ends). &lt;/p&gt;]] ➶ <b>Twist of Fate</b> (minor 1/round, at-will) </p><p>Ranged 10; [[/roll 1d20+26[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twist of Fate&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+26 vs Will&lt;/u&gt;; one ally within range ends a condition that a save can end, and the target gains that condition (save ends). &lt;/p&gt;]]; one ally within range ends a condition that a save can end, and the target gains that condition (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Sora Teraza can alter her physical form to appear as an elderly female of any Medium humanoid race, including a unique individual,&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>Sora Teraza can alter her physical form to appear as an elderly female of any Medium humanoid race, including a unique individual,</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Prophetic Knowledge&lt;/b&gt; (immediate interrupt, when sora teraza is hit by an attack; at-will) &lt;/p&gt;&lt;p&gt;The attacker must make a second attack roll and use the new result.&lt;/p&gt;]]  <b>Prophetic Knowledge</b> (immediate interrupt, when sora teraza is hit by an attack; at-will) </p><p>The attacker must make a second attack roll and use the new result.</p></tr></td></table>",

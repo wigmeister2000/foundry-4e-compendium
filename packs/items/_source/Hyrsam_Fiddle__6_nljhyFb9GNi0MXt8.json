@@ -1,12 +1,15 @@
 {
 	"name":"Hyrsam Fiddle +6",
-	"type":"equipment",
+	"type":"weapon",
 	"img":"icons/svg/chest.svg",
 	"system":{
 		"description":{
 			"value":"<p class=\"flavour\"><i>This finely crafted fiddle bears a glamer that betrays its fey origin.</i></p><p class=\"basics\"><b>Wondrous Item</b><b>:</b> Uncommon</p>\n<p class=\"basics\"><b>Enhancement Bonus:</b> Attack rolls and damage rolls</p><p class=\"basics\"><b>Critical:</b> +1d6 damage per plus</p>\n<p class=\"basics\"><b>Properties:</b>\n<ul>\n<li>Bards can use this item as an implement for bard powers and bard paragon path powers.</li>\n<li>When you hold a Hyrsam fiddle in one hand and a Hyrsam fiddlestick in the other, you gain a +1 shield bonus to your AC and Reflex.</li>\n</ul></p>\n<p class=\"subheading\"><b>Power ✦ Daily (Free Action)</b></p><p><i>Trigger:</i> You miss with a charm, psychic, or thunder implement attack power.</p><p><i>Effect:</i> Reroll the triggering attack roll, and use either result.</p>",
 			"chat":"",
 			"unidentified":""
+		},
+		"descriptionGM":{
+			"value":""
 		},
 		"source":"",
 		"quantity":1,
@@ -16,6 +19,7 @@
 		"equipped":true,
 		"rarity":"",
 		"identified":true,
+		"container":null,
 		"activation":{
 			"type":"",
 			"cost":0,
@@ -32,25 +36,25 @@
 			"type":""
 		},
 		"range":{
-			"value":null,
-			"long":null,
+			"value":0,
+			"long":0,
 			"units":""
 		},
 		"uses":{
 			"value":0,
-			"max":0,
-			"per":null
+			"max":"0",
+			"per":""
 		},
 		"consume":{
 			"type":"",
-			"target":null,
+			"target":"",
 			"amount":null
 		},
 		"armour":{
 			"value":10,
 			"type":"other",
 			"subType":"",
-			"ac":-6,
+			"ac":0,
 			"fort":0,
 			"ref":0,
 			"wil":0,
@@ -59,7 +63,7 @@
 			"movePenValue":0,
 			"skillCheck":false,
 			"skillCheckValue":0,
-			"enhance":6
+			"enhance":0
 		},
 		"hp":{
 			"value":0,
@@ -72,20 +76,119 @@
 			"scope":"global",
 			"launchOrder":"off",
 			"command":"",
-			"author":""
+			"author":"",
+			"autoanimationHook":""
 		},
 		"level":"28",
-		"speed":{
-			"value":null,
-			"conditions":""
+		"weaponType":"implement",
+		"weaponHand":"hTwo",
+		"properties":{
+			"amm":false,
+			"bru":false,
+			"def":false,
+			"hic":false,
+			"imp":true,
+			"lof":false,
+			"lom":false,
+			"off":false,
+			"rch":false,
+			"rel":false,
+			"sml":false,
+			"spc":false,
+			"thv":false,
+			"tlg":false,
+			"two":false,
+			"ver":false,
+			"mou":false,
+			"sto":false
 		},
-		"strength":0,
-		"stealth":false,
-		"proficient":true
+		"proficient":false,
+		"proficientI":true,
+		"profBonus":0,
+		"profImpBonus":"0",
+		"enhance":"6",
+		"isRanged":false,
+		"damageDice":{
+			"parts":[
+				[
+					"",
+					"",
+					""
+				]
+			]
+		},
+		"damage":{
+			"parts":[]
+		},
+		"damageCrit":{
+			"parts":[]
+		},
+		"damageImp":{
+			"parts":[]
+		},
+		"damageCritImp":{
+			"parts":[]
+		},
+		"damageType":{
+			"physical":true
+		},
+		"brutalNum":0,
+		"weaponGroup":{
+			"axe":false,
+			"blowgun":false,
+			"bow":false,
+			"cbow":false,
+			"dragon":false,
+			"flail":false,
+			"garrote":false,
+			"ham":false,
+			"bladeH":false,
+			"bladeL":false,
+			"mace":false,
+			"pik":false,
+			"pole":false,
+			"sling":false,
+			"spear":false,
+			"staff":false,
+			"unarm":false,
+			"whip":false
+		},
+		"attackForm":"@profBonus+@enhance",
+		"attackFormImp":"@profImpBonus+@enhanceImp",
+		"damageForm":"@enhance",
+		"damageFormImp":"@enhanceImp",
+		"critDamageForm":"",
+		"critDamageFormImp":"6d6",
+		"critRange":20,
+		"critRangeImp":20,
+		"weaponBaseType":"custom",
+		"damageTypeWeapon":false,
+		"chatFlavor":"",
+		"implement":{
+			"holyS":false,
+			"ki":false,
+			"orb":false,
+			"rod":false,
+			"staff":false,
+			"tome":false,
+			"totem":false,
+			"wand":false
+		},
+		"brutal":0,
+		"implementGroup":{
+			"holyS":false,
+			"ki":false,
+			"orb":false,
+			"rod":false,
+			"staff":false,
+			"tome":false,
+			"totem":false,
+			"wand":false
+		},
+		"weaponBaseTypeCustom":"Bard Implement"
 	},
 	"effects":[],
 	"folder":null,
-	"sort":0,
 	"flags":{},
 	"_id":"nljhyFb9GNi0MXt8",
 	"_key":"!items!nljhyFb9GNi0MXt8"

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -649,10 +650,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":"When First Bloodied",
@@ -772,23 +773,10 @@
 				"max":10
 			},
 			"init":{
-				"value":26,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":26
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 542; <b>Bloodied</b> 271<hr><b>Resist</b> 20 variable (3/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +26 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 42</td><td><b>Ref</b> 41</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 31 (+25)<br><b>Con</b> 23 (+21)</td><td><b>Dex</b> 29 (+24)<br><b>Int</b> 17 (+18)</td><td><b>Wis</b> 22 (+21)<br><b>Cha</b> 25 (+22)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Bluff +27, Insight +26, Intimidate +27, Stealth +29</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p><b>Equipment</b> scimitar  x6.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +35 vs AC; 2d12 + 10  damage (crit 6d12 + 34). &lt;/p&gt;]] (⚔) <b>Scimitar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+35 vs AC&lt;/u&gt;; 2d12 + 10  damage (crit 6d12 + 34). &lt;/p&gt;]]; [[/roll 2d12 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +35 vs AC; 2d12 + 10  damage (crit 6d12 + 34). &lt;/p&gt;]] <23>   damage (crit [[/roll 6d12 + 34#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +35 vs AC; 2d12 + 10  damage (crit 6d12 + 34). &lt;/p&gt;]] <73> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shroud of Steel&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs  or  (whichever is lower); . Zuvexus makes two scimitar attacks and uses its other scimitars to parry incoming attacks, gaining a +4 bonus (+1 per scimitar) to AC until the start of its next turn.&lt;/p&gt;]] ⚔ <b>Shroud of Steel</b> (standard, at-will) ✦ <b>Weapon</b></p><p>+33 vs  or  (whichever is lower); . Zuvexus makes two scimitar attacks and uses its other scimitars to parry incoming attacks, gaining a +4 bonus (+1 per scimitar) to AC until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Weapon Dance&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs  or  (whichever is lower); . Zuvexus makes six scimitar attacks. Each time she hits, she shifts one square&lt;/p&gt;]] ⚔ <b>Weapon Dance</b> (standard, recharges when first bloodied) ✦ <b>Weapon</b></p><p>+33 vs  or  (whichever is lower); . Zuvexus makes six scimitar attacks. Each time she hits, she shifts one square</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hacking Blades&lt;/b&gt; (free, when an adjacent enemy misses zuvexus with a melee attack, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs  or  (whichever is lower); . Zuvexus makes a scimitar attack against the enemy.&lt;/p&gt;]] ⚔ <b>Hacking Blades</b> (free, when an adjacent enemy misses zuvexus with a melee attack, at-will) ✦ <b>Weapon</b></p><p>+33 vs  or  (whichever is lower); . Zuvexus makes a scimitar attack against the enemy.</p></tr></td></table>",

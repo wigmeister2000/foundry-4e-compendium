@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Crawling Flesh",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"cm7FC3B6wGgDE49H",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -997,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 108; <b>Bloodied</b> 54<hr><b>Resist</b> 15 necrotic, 5 poison <b>Immune</b> disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 21</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (forest walk), climb 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 6 (+3)<br><b>Con</b> 20 (+10)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 16 (+8)</td><td><b>Wis</b> 15 (+7)<br><b>Cha</b> 20 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +13, Bluff +15, Insight +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 22</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Crawling Flesh&lt;/b&gt; aura 6; enemies within the aura take a -1 penalty to attack rolls and reduce their necrotic resistance by 10.]] <b>Crawling Flesh</b> aura 6; enemies within the aura take a -1 penalty to attack rolls and reduce their necrotic resistance by 10.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Vicious Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6 damage plus ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] (⚔) <b>Vicious Bite</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Vicious Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d6 damage plus ongoing 5 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Vicious Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6 damage plus ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] <3.5> damage plus ongoing 5 necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dreadful Word&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +14 vs Will; 2d6+5 psychic damage, and the target takes a -3 penalty to Will defense until the end of the skinweaver head\"s next turn. &lt;/p&gt;]] ➶ <b>Dreadful Word</b> (standard, at-will) ✦ <b>Fear, Psychic</b></p><p>Ranged 5; [[/roll 1d20+14[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dreadful Word&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+14 vs Will&lt;/u&gt;; 2d6+5 psychic damage, and the target takes a -3 penalty to Will defense until the end of the skinweaver head\"s next turn. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dreadful Word&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +14 vs Will; 2d6+5 psychic damage, and the target takes a -3 penalty to Will defense until the end of the skinweaver head\"s next turn. &lt;/p&gt;]] <12>  psychic damage, and the target takes a -3 penalty to Will defense until the end of the skinweaver head\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Mucus Web&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 15; target is immobilized (save ends); creates a zone of difficult terrain; any creature that ends its turn in the zone is slowed (save ends). The zone lasts for the duration of the encounter. &lt;/p&gt;]] ✻ <b>Mucus Web</b> (standard, encounter) ✦ <b>Zone</b></p><p>Area burst 2 within 15; target is immobilized (save ends); creates a zone of difficult terrain; any creature that ends its turn in the zone is slowed (save ends). The zone lasts for the duration of the encounter. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Arcane Mimicry&lt;/b&gt; (standard; recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The skinweaver head can use one encounter or at-will wizard power of 10th level or below that has been used in the last round and within 10 squares of the head. This is considered to be a standard action, even if the original power was a move or minor action. If the power is an attack, the skinweaver’s attack bonus is +14 and its damage modifier is +5.&lt;/p&gt;]]  <b>Arcane Mimicry</b> (standard; recharge ⚃⚄⚅) </p><p>The skinweaver head can use one encounter or at-will wizard power of 10th level or below that has been used in the last round and within 10 squares of the head. This is considered to be a standard action, even if the original power was a move or minor action. If the power is an attack, the skinweaver’s attack bonus is +14 and its damage modifier is +5.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fleshweaving&lt;/b&gt; (move, recharge ⚄⚅) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; skinweavers in the burst regain 10 hit points&lt;/p&gt;]] ᗕ <b>Fleshweaving</b> (move, recharge ⚄⚅) ✦ <b>Healing</b></p><p>Close burst 2; skinweavers in the burst regain 10 hit points</p></tr></td></table>",

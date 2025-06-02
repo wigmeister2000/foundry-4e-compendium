@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Eez3nPBGk6RHQO5j",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 62; <b>Bloodied</b> 31<br><b>Regeneration</b> 5<hr><b>Resist</b> 5 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 18</td><td><b>Ref</b> 20</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8, overland flight 16</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+6)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 20 (+8)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 19 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +13, Bluff +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d4+3 damage, and the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;]] (⚔) <b>Sting</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 2d4+3 damage, and the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 2d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 2d4+3 damage, and the target takes ongoing 5 poison damage (save ends). &lt;/p&gt;]] <8>  damage, and the target takes ongoing 5 poison damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Venom Cloud&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison, Teleportation, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; the burst creates a zone filled with poisonous gas that lasts until the end of the encounter. Any creature that starts its turn in the zone takes 5 poison damage and is dazed until the end of its next turn. The zone is difficult terrain. The venomous abishai can teleport 3 squares as a move action, as long as it begins and ends this movement within the zone.&lt;/p&gt;]] ᗕ <b>Venom Cloud</b> (standard, encounter) ✦ <b>Poison, Teleportation, Zone</b></p><p>Close blast 3; the burst creates a zone filled with poisonous gas that lasts until the end of the encounter. Any creature that starts its turn in the zone takes 5 poison damage and is dazed until the end of its next turn. The zone is difficult terrain. The venomous abishai can teleport 3 squares as a move action, as long as it begins and ends this movement within the zone.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eyes of the Dragon&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +10 vs Will; the target slides 2 squares. &lt;/p&gt;]] ➶ <b>Eyes of the Dragon</b> (minor, at-will) ✦ <b>Charm</b></p><p>Ranged 10; [[/roll 1d20+10[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eyes of the Dragon&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+10 vs Will&lt;/u&gt;; the target slides 2 squares. &lt;/p&gt;]]; the target slides 2 squares. </p></tr></td></table>",

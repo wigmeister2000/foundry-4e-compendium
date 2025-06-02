@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Grim Solidarity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"c7FPeuXl3NEWqZk1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -818,23 +820,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 95; <b>Bloodied</b> 47<hr><b>Resist</b> 5 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 20</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+6)<br><b>Con</b> 15 (+6)</td><td><b>Dex</b> 19 (+8)<br><b>Int</b> 20 (+9)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 17 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +14, History +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> robes, dagger , wand implement .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Grim Solidarity&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the mage starts its turn adjacent to a creature that has grim solidarity, it can make a saving throw against one effect that a save can end.&lt;/p&gt;]]  <b>Grim Solidarity</b> <b></b></p><p>If the mage starts its turn adjacent to a creature that has grim solidarity, it can make a saving throw against one effect that a save can end.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice Dagger&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 12 cold damage, and the target is slowed until the end of the mage’s next turn.&lt;/p&gt;]] (⚔) <b>Ice Dagger</b> (cold, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice Dagger&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d4 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice Dagger&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 12 cold damage, and the target is slowed until the end of the mage’s next turn.&lt;/p&gt;]] <17>  cold damage, and the target is slowed until the end of the mage’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Misty Tendrils&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 cold damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mage can slide the target 1 square.&lt;/p&gt;]] ᗕ <b>Misty Tendrils</b> (cold, implement) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 3 (enemies in the blast); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Misty Tendrils&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Misty Tendrils&lt;/b&gt; (cold, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 cold damage.&lt;/p&gt;]] <13>  cold damage.</p><p><i>Effect:</i> The mage can slide the target 1 square.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Gray Mist&lt;/b&gt; (zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Area burst 2 within 10. The burst creates a zone that lasts until the end of the mage’s next turn. Any creature that ends its turn in the zone takes a -2 penalty to attack rolls and is slowed until the end of its next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; The zone persists until the end of the mage’s next turn.&lt;/p&gt;]]  <b>Gray Mist</b> (zone) ✦ <b>Encounter</b></p><p><i>Effect:</i> Area burst 2 within 10. The burst creates a zone that lasts until the end of the mage’s next turn. Any creature that ends its turn in the zone takes a -2 penalty to attack rolls and is slowed until the end of its next turn.</p><p><i>Sustain Minor:</i> The zone persists until the end of the mage’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Freeze Mist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one slowed creature); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is immobilized until the end of the mage’s next turn.&lt;/p&gt;]] ➶ <b>Freeze Mist</b> ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Ranged 5 (one slowed creature); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Freeze Mist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one slowed creature); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is immobilized until the end of the mage’s next turn.</p></tr></td></table>",

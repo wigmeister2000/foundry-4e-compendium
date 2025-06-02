@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aEYBICZzpH460GXc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -601,7 +603,7 @@
 		},
 		{
 			"name":"Demonic Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qn4yIRz3TZaFCVx0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -637,7 +639,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -827,7 +830,7 @@
 		},
 		{
 			"name":"Illumination",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8c6Zqpeu0sjvHrfi",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -863,7 +866,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -919,23 +923,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 114; <b>Bloodied</b> 57<br><b>Regeneration</b> 5<hr><b>Resist</b> 10 fire, 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 25</td><td><b>Ref</b> 27</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 10 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 6 (+5)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 18 (+11)<br><b>Int</b> 23 (+13)</td><td><b>Wis</b> 15 (+9)<br><b>Cha</b> 21 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, one other<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 0; +22 vs AC; 1d8 damage plus 1d8 fire damage. &lt;/p&gt;]] (⚔) <b>Fiery Bite</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 0; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 0; &lt;u&gt;+22 vs AC&lt;/u&gt;; 1d8 damage plus 1d8 fire damage. &lt;/p&gt;]]; [[/roll [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 0; +22 vs AC; 1d8 damage plus 1d8 fire damage. &lt;/p&gt;]] <4.5> #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 0; +22 vs AC; 1d8 damage plus 1d8 fire damage. &lt;/p&gt;]] <4.5> damage plus 1d8 fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Unholy Fire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Reflex; 2d8+8 fire damage, plus ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] ➶ <b>Unholy Fire</b> (standard, at-will) ✦ <b>Fire, Necrotic</b></p><p>Ranged 10; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Unholy Fire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d8+8 fire damage, plus ongoing 5 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Unholy Fire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Reflex; 2d8+8 fire damage, plus ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] <17>  fire damage, plus ongoing 5 necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Vile Consecration&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; +20 vs Reflex; 3d8+8 fire and necrotic damage. Miss: Half damage. The flameskull can exclude two allies from the effect. &lt;/p&gt;]] ✻ <b>Vile Consecration</b> (standard, encounter) ✦ <b>Fire, Necrotic</b></p><p>Area burst 3 within 20; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Vile Consecration&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 3d8+8 fire and necrotic damage. Miss: Half damage. The flameskull can exclude two allies from the effect. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Vile Consecration&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; +20 vs Reflex; 3d8+8 fire and necrotic damage. Miss: Half damage. The flameskull can exclude two allies from the effect. &lt;/p&gt;]] <21.5>  fire and necrotic damage. Miss: Half damage. The flameskull can exclude two allies from the effect. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Demonic Fury&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While the demonic flameskull is bloodied, it deals an extra 1d8 damage with its attacks.&lt;/p&gt;]]  <b>Demonic Fury</b></p><p>While the demonic flameskull is bloodied, it deals an extra [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Demonic Fury&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While the demonic flameskull is bloodied, it deals an extra 1d8 damage with its attacks.&lt;/p&gt;]] <4.5> damage with its attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Illumination&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The flameskull sheds bright light out to 5 squares, but it can reduce its brightness to dim light out to 2 squares as a free action.&lt;/p&gt;]]  <b>Illumination</b></p><p>The flameskull sheds bright light out to 5 squares, but it can reduce its brightness to dim light out to 2 squares as a free action.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mage Hand&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Conjuration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;As the wizard power mage hand.&lt;/p&gt;]]  <b>Mage Hand</b> (minor; at-will) ✦ <b>Conjuration</b></p><p>As the wizard power mage hand.</p></tr></td></table>",

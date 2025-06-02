@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -468,10 +469,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -648,10 +649,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -725,7 +726,7 @@
 		},
 		{
 			"name":"Elemental Manifestation",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"IuVmGDMyOZlfY0CX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -761,7 +762,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -817,23 +819,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 344; <b>Bloodied</b> 172<hr><b>Resist</b> 10 cold, 10 fire, 10 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 30</td><td><b>Ref</b> 32</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover), swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+13)<br><b>Con</b> 20 (+14)</td><td><b>Dex</b> 24 (+16)<br><b>Int</b> 16 (+12)</td><td><b>Wis</b> 18 (+13)<br><b>Cha</b> 15 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +20, Athletics +21, Endurance +21, Intimidate +16, Nature +20</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> double sword , hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Double Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8+7 damage, and ongoing 5 damage (save ends) of the type determined by elemental manifestation. &lt;/p&gt;]] (⚔) <b>Double Sword</b> (standard, at-will) ✦ <b>Weapon, Varies</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Double Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 1d8+7 damage, and ongoing 5 damage (save ends) of the type determined by elemental manifestation. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Double Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8+7 damage, and ongoing 5 damage (save ends) of the type determined by elemental manifestation. &lt;/p&gt;]] <11.5>  damage, and ongoing 5 damage (save ends) of the type determined by elemental manifestation. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The genasi elemental dervish makes two double sword attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The genasi elemental dervish makes two double sword attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Storm&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The genasi elemental dervish shifts 6 squares and can move through enemies’ spaces. During its movement, the dervish makes the following three attacks in order, each against a different target.&lt;/p&gt;&lt;p&gt;Promise of Storm (Thunder): +21 vs. Fortitude; 1d8 + 5 thunder damage, and the target gains vulnerable 5 thunder (save ends).&lt;/p&gt;&lt;p&gt;Earth Shock: +21 vs. Fortitude; 1d8 + 5 damage, and the target is dazed until the end of its next turn.&lt;/p&gt;&lt;p&gt;Lightning Cut (Lightning): +21 vs. Reflex; 1d8 + 5 lightning damage, and the target gains ongoing 10 lightning damage (save ends)&lt;/p&gt;]] ⚔ <b>Primordial Storm</b> (standard, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>The genasi elemental dervish shifts 6 squares and can move through enemies’ spaces. During its movement, the dervish makes the following three attacks in order, each against a different target.</p><p>Promise of Storm (Thunder): [[/roll 1d20+21[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Storm&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Promise of Storm (Thunder): &lt;u&gt;+21 vs. Fortitude&lt;/u&gt;; 1d8 + 5 thunder damage, and the target gains vulnerable 5 thunder (save ends).&lt;/p&gt;]]; [[/roll 1d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Storm&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Promise of Storm (Thunder): +21 vs. Fortitude; 1d8 + 5 thunder damage, and the target gains vulnerable 5 thunder (save ends).&lt;/p&gt;]] <9.5>  thunder damage, and the target gains vulnerable 5 thunder (save ends).</p><p>Earth Shock: [[/roll 1d20+21[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Storm&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Earth Shock: &lt;u&gt;+21 vs. Fortitude&lt;/u&gt;; 1d8 + 5 damage, and the target is dazed until the end of its next turn.&lt;/p&gt;]]; [[/roll 1d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Storm&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Earth Shock: +21 vs. Fortitude; 1d8 + 5 damage, and the target is dazed until the end of its next turn.&lt;/p&gt;]] <9.5>  damage, and the target is dazed until the end of its next turn.</p><p>Lightning Cut (Lightning): [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Storm&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Lightning Cut (Lightning): &lt;u&gt;+21 vs. Reflex&lt;/u&gt;; 1d8 + 5 lightning damage, and the target gains ongoing 10 lightning damage (save ends)&lt;/p&gt;]]; [[/roll 1d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Primordial Storm&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Lightning Cut (Lightning): +21 vs. Reflex; 1d8 + 5 lightning damage, and the target gains ongoing 10 lightning damage (save ends)&lt;/p&gt;]] <9.5>  lightning damage, and the target gains ongoing 10 lightning damage (save ends)</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fiery Riposte&lt;/b&gt; (immediate reaction, when the genasi elemental dervish is hit by an enemy adjacent to it, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering enemy; +21 vs Reflex; the target takes ongoing 10 fire damage (save ends). If the target is already taking ongoing fire damage, that damage increases by 10. &lt;/p&gt;]] ⚔ <b>Fiery Riposte</b> (immediate reaction, when the genasi elemental dervish is hit by an enemy adjacent to it, at-will) ✦ <b>Fire</b></p><p>Targets the triggering enemy; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fiery Riposte&lt;/b&gt; (immediate reaction, when the genasi elemental dervish is hit by an enemy adjacent to it, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering enemy; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; the target takes ongoing 10 fire damage (save ends). If the target is already taking ongoing fire damage, that damage increases by 10. &lt;/p&gt;]]; the target takes ongoing 10 fire damage (save ends). If the target is already taking ongoing fire damage, that damage increases by 10. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Elemental Manifestation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of a genasi elemental dervish’s turn, it chooses fire, lightning, or thunder damage. The dervish’s double sword attack deals that type of damage until the start of its next turn, when it can choose a different damage type.&lt;/p&gt;]]  <b>Elemental Manifestation</b></p><p>At the start of a genasi elemental dervish’s turn, it chooses fire, lightning, or thunder damage. The dervish’s double sword attack deals that type of damage until the start of its next turn, when it can choose a different damage type.</p></tr></td></table>",

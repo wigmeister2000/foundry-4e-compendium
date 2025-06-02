@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dream Drain",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZE867BmqrfWph4Td",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1177,23 +1180,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 140; <b>Bloodied</b> 70<hr><b>Immune</b> charm </td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 17</td><td><b>Ref</b> 18</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+3)<br><b>Con</b> 14 (+5)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 11 (+3)</td><td><b>Wis</b> 15 (+5)<br><b>Cha</b> 19 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +8, Bluff +12, Insight +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Dream Drain&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Any enemy starting its turn unconscious in the aura loses a healing surge. If the enemy has no healing surge to lose, it instead loses a number of hit points equal to its healing surge value.&lt;/p&gt;]] ⌀ <b>Dream Drain</b> ✦ <b>Aura</b> 3</p><p>Any enemy starting its turn unconscious in the aura loses a healing surge. If the enemy has no healing surge to lose, it instead loses a number of hit points equal to its healing surge value.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 or ranged 10 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 6 damage, and the target is dazed until the end of the scion’s next turn.&lt;/p&gt;]] (⚔) <b>Dagger</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 or ranged 10 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 or ranged 10 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d4 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d4 + 6 damage, and the target is dazed until the end of the scion’s next turn.&lt;/p&gt;]] <11>  damage, and the target is dazed until the end of the scion’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eye of Dreams&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 psychic damage, and the target is immobilized until the end of the scion’s next turn.&lt;/p&gt;]] (➶) <b>Eye of Dreams</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eye of Dreams&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eye of Dreams&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 psychic damage, and the target is immobilized until the end of the scion’s next turn.&lt;/p&gt;]] <14>  psychic damage, and the target is immobilized until the end of the scion’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scion makes two basic attacks.&lt;/p&gt;]]  <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The scion makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Felsa\"s Slumber&lt;/b&gt; (charm, sleep) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); +9 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dazed and immobilized (save ends both). If the target is already dazed or immobilized, it falls unconscious instead. &lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target falls unconscious (save ends).&lt;/p&gt;]] ✻ <b>Felsa\"s Slumber</b> (charm, sleep) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 2 within 10 (enemies in the burst); [[/roll 1d20+9[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Felsa\"s Slumber&lt;/b&gt; (charm, sleep) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); &lt;u&gt;+9 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dazed and immobilized (save ends both). If the target is already dazed or immobilized, it falls unconscious instead. </p><p><i>First Failed Saving Throw:</i> The target falls unconscious (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Deceptive Veil&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scion can disguise itself to appear as any Small humanoid, usually a child, until it uses deceptive v veil again or drops to 0 hit points. A creature that succeeds on a DC 28 Insight check can see through the illusion.&lt;/p&gt;]]  <b>Deceptive Veil</b> (illusion) ✦ <b>At-Will</b></p><p><i>Effect:</i> The scion can disguise itself to appear as any Small humanoid, usually a child, until it uses deceptive v veil again or drops to 0 hit points. A creature that succeeds on a DC 28 Insight check can see through the illusion.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Feywild Escape&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scion crosses over to the Feywild and is removed from play until the start of its next turn. At that time, the scion returns to play within 10 squares of its previous location and becomes invisible until the end of its current turn.&lt;/p&gt;]]  <b>Feywild Escape</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> The scion crosses over to the Feywild and is removed from play until the start of its next turn. At that time, the scion returns to play within 10 squares of its previous location and becomes invisible until the end of its current turn.</p></tr></td></table>",

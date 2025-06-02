@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KrHDIEP3sX250aSq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -332,10 +334,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -996,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1075; <b>Bloodied</b> 537<br><b>Regeneration</b> 10 (if the astral warwing takes necrotic damage, regeneration does not function until the end of its next turn)<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 36</td><td><b>Ref</b> 35</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+20)<br><b>Con</b> 23 (+17)</td><td><b>Dex</b> 22 (+17)<br><b>Int</b> 8 (+10)</td><td><b>Wis</b> 22 (+17)<br><b>Cha</b> 6 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> telepathy 20<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Astral Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +26 vs AC; 2d10+8 damage and the target is pushed 1 square. If the warwing is bloodied, the damage increases to 3d10+8. &lt;/p&gt;]] (⚔) <b>Astral Waraxe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 3; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Astral Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+26 vs AC&lt;/u&gt;; 2d10+8 damage and the target is pushed 1 square. If the warwing is bloodied, the damage increases to 3d10+8. &lt;/p&gt;]]; [[/roll 2d10+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Astral Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +26 vs AC; 2d10+8 damage and the target is pushed 1 square. If the warwing is bloodied, the damage increases to 3d10+8. &lt;/p&gt;]] <19>  damage and the target is pushed 1 square. If the warwing is bloodied, the damage increases to [[/roll 3d10+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Astral Waraxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +26 vs AC; 2d10+8 damage and the target is pushed 1 square. If the warwing is bloodied, the damage increases to 3d10+8. &lt;/p&gt;]] <24.5> . </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 3d6+8 damage.. The astral warwing makes two astral waraxe attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 3d6+8 damage.. The astral warwing makes two astral waraxe attacks.&lt;/p&gt;]]; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs AC; 3d6+8 damage.. The astral warwing makes two astral waraxe attacks.&lt;/p&gt;]] <18.5>  damage.. The astral warwing makes two astral waraxe attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Attack&lt;/b&gt; (standard; warwing must be bloodied to use this power, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The astral warwing makes three astral waraxe attacks.&lt;/p&gt;]] ⚔ <b>Triple Attack</b> (standard; warwing must be bloodied to use this power, at-will) ✦ <b>Weapon</b></p><p>The astral warwing makes three astral waraxe attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Vanguard Assault&lt;/b&gt; (standard; warwing must be bloodied to use this power, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The astral warwing moves its speed. It makes one astral waraxe attack with each square of movement against an enemy that comes within reach. It can make up to six attacks in this way.&lt;/p&gt;]] ⚔ <b>Vanguard Assault</b> (standard; warwing must be bloodied to use this power, at-will) ✦ <b>Weapon</b></p><p>The astral warwing moves its speed. It makes one astral waraxe attack with each square of movement against an enemy that comes within reach. It can make up to six attacks in this way.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Vanguard Vengeance&lt;/b&gt; (immediate reaction, when hit by an&lt;br&gt;area or ranged attack, recharges when first bloodied) ✦ &lt;b&gt;Teleportation, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The astral warwing teleports up to 20 squares to end adjacent to the attacker and then make an astral waxaxe attack against the attacker.&lt;/p&gt;]] ⚔ <b>Vanguard Vengeance</b> (immediate reaction, when hit by an<br>area or ranged attack, recharges when first bloodied) ✦ <b>Teleportation, Weapon</b></p><p>The astral warwing teleports up to 20 squares to end adjacent to the attacker and then make an astral waxaxe attack against the attacker.</p></tr></td></table>",

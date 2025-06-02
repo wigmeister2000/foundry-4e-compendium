@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8S1hyoXx0gWCnYZI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -328,10 +330,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -405,7 +407,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0vSBkpOwms5hncUy",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -441,7 +443,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -451,7 +454,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hmQlBDn8Fkp9Vq3g",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -487,7 +490,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -543,23 +547,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 109; <b>Bloodied</b> 54<br><b>Regeneration</b> 10<hr><b>Vulnerable</b> acid or fire (if the fanged troll takes acid or fire damage, its regeneration does not function until the end of its next turn) </td><td style=\"padding-left: 15px;\"><b>Init</b> +9</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 20</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+11)<br><b>Con</b> 21 (+10)</td><td><b>Dex</b> 15 (+7)<br><b>Int</b> 9 (+4)</td><td><b>Wis</b> 10 (+5)<br><b>Cha</b> 8 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +16, Endurance +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 2d8+4 damage, and the target is grabbed. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+4 damage, and the target is grabbed. &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 2d8+4 damage, and the target is grabbed. &lt;/p&gt;]] <13>  damage, and the target is grabbed. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Gnaw&lt;/b&gt; (standard; usable only against a grabbed target, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+4 damage and ongoing 5 damage (save ends). &lt;/p&gt;]] ⚔ <b>Gnaw</b> (standard; usable only against a grabbed target, at-will) </p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Gnaw&lt;/b&gt; (standard; usable only against a grabbed target, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+4 damage and ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Gnaw&lt;/b&gt; (standard; usable only against a grabbed target, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+4 damage and ongoing 5 damage (save ends). &lt;/p&gt;]] <13>  damage and ongoing 5 damage (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The fanged troll can make opportunity attacks against all enemies within its reach (2 squares)&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>The fanged troll can make opportunity attacks against all enemies within its reach (2 squares)</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the fanged troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it falls prone and remains at 0 hit points until the start of its next turn, when it regains 10 hit points. If an attack deals acid or fire damage to the fanged troll while it is at 0 hit points, it is destroyed.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If the fanged troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it falls prone and remains at 0 hit points until the start of its next turn, when it regains 10 hit points. If an attack deals acid or fire damage to the fanged troll while it is at 0 hit points, it is destroyed.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -546,7 +547,7 @@
 		},
 		{
 			"name":"Icebound Footing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VizgNEcjBU2s4lAn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +583,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion. ; see also dying swipe<hr><b>Resist</b> 15 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 32</td><td><b>Ref</b> 27</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+14)<br><b>Con</b> 21 (+13)</td><td><b>Dex</b> 16 (+11)<br><b>Int</b> 10 (+8)</td><td><b>Wis</b> 20 (+13)<br><b>Cha</b> 12 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +19</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> greataxe , handaxe  x3, hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Icy Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 10 cold damage. &lt;/p&gt;]] (⚔) <b>Icy Greataxe</b> (standard, at-will) ✦ <b>Cold, Weapon</b></p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Icy Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 10 cold damage. &lt;/p&gt;]]; 10 cold damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Icy Handaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +20 vs AC; 9 cold damage. &lt;/p&gt;]] ➶ <b>Icy Handaxe</b> (standard, at-will) ✦ <b>Cold, Weapon</b></p><p>Ranged 5/10; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Icy Handaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+20 vs AC&lt;/u&gt;; 9 cold damage. &lt;/p&gt;]]; 9 cold damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dying Swipe&lt;/b&gt; ( when the frost giant drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;The frost giant makes an icy greataxe attack&lt;/p&gt;]] ⚔ <b>Dying Swipe</b> ( when the frost giant drops to 0 hit points, ) </p><p>The frost giant makes an icy greataxe attack</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Icebound Footing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect pulls, pushes, or slides a frost giant, the giant moves 2 squares less than the effect specifies. Also, a frost giant can make a saving throw to avoid being knocked prone.&lt;/p&gt;]]  <b>Icebound Footing</b></p><p>When an effect pulls, pushes, or slides a frost giant, the giant moves 2 squares less than the effect specifies. Also, a frost giant can make a saving throw to avoid being knocked prone.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Fire and Ice",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HWKbF2IaMhC0XvlJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -108,7 +109,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -299,7 +301,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1512,7 +1515,7 @@
 		},
 		{
 			"name":"Elemental Affinity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DSVsFuQyb7xB6p4r",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1548,7 +1551,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1608,28 +1612,15 @@
 				"max":10
 			},
 			"init":{
-				"value":19,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":19
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1048; <b>Bloodied</b> 524 ; see also bloodied breath<hr><b>Resist</b> 30 cold, fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +19 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 43</td><td><b>Ref</b> 40</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk), fly 8 (hover), overland flight 12</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+23)<br><b>Con</b> 30 (+24)</td><td><b>Dex</b> 21 (+19)<br><b>Int</b> 26 (+22)</td><td><b>Wis</b> 20 (+19)<br><b>Cha</b> 26 (+22)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +28, Intimidate +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Fire and Ice&lt;/b&gt; aura 5; while within the aura, enemies gain vulnerable 15 cold and vulnerable 15 fire.]] <b>Fire and Ice</b> aura 5; while within the aura, enemies gain vulnerable 15 cold and vulnerable 15 fire.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d12+6 plus 2d12 cold damage (plus an extra 2d12 cold damage on a successful opportunity attack). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 3; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+33 vs AC&lt;/u&gt;; 2d12+6 plus 2d12 cold damage (plus an extra 2d12 cold damage on a successful opportunity attack). &lt;/p&gt;]]; [[/roll 2d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d12+6 plus 2d12 cold damage (plus an extra 2d12 cold damage on a successful opportunity attack). &lt;/p&gt;]] <19>  plus [[/roll [[/roll 2d12 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d12+6 plus 2d12 cold damage (plus an extra 2d12 cold damage on a successful opportunity attack). &lt;/p&gt;]] <13> #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d12+6 plus 2d12 cold damage (plus an extra 2d12 cold damage on a successful opportunity attack). &lt;/p&gt;]] <13> cold damage (plus an extra 2d12 cold damage on a successful opportunity attack). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 1d12+6 damage plus 1d12 fire damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 3; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+33 vs AC&lt;/u&gt;; 1d12+6 damage plus 1d12 fire damage. &lt;/p&gt;]]; [[/roll 1d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 1d12+6 damage plus 1d12 fire damage. &lt;/p&gt;]] <12.5>  damage plus [[/roll 1d12 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 1d12+6 damage plus 1d12 fire damage. &lt;/p&gt;]] <6.5> fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dragon\"s Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The dragon makes two claw attacks. If the dragon hits a single target with both claws, it makes a bite attack against the same target&lt;/p&gt;]] ⚔ <b>Dragon\"s Fury</b> (standard, at-will) </p><p>The dragon makes two claw attacks. If the dragon hits a single target with both claws, it makes a bite attack against the same target</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Scouring Bolt&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Fortitude; 2d12+10 cold and fire damage, and the firelord slides the target 2 squares. &lt;/p&gt;]] ➶ <b>Scouring Bolt</b> (standard, recharge ⚄⚅) ✦ <b>Cold, Fire</b></p><p>Ranged 10; [[/roll 1d20+31[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Scouring Bolt&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+31 vs Fortitude&lt;/u&gt;; 2d12+10 cold and fire damage, and the firelord slides the target 2 squares. &lt;/p&gt;]]; [[/roll 2d12+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Scouring Bolt&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Fortitude; 2d12+10 cold and fire damage, and the firelord slides the target 2 squares. &lt;/p&gt;]] <23>  cold and fire damage, and the firelord slides the target 2 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +31 vs Reflex; 5d10+10 cold and fire damage, and the target is knocked prone and blinded (save ends both). &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Cold, Fire</b></p><p>Close blast 5; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 5d10+10 cold and fire damage, and the target is knocked prone and blinded (save ends both). &lt;/p&gt;]]; [[/roll 5d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +31 vs Reflex; 5d10+10 cold and fire damage, and the target is knocked prone and blinded (save ends both). &lt;/p&gt;]] <37.5>  cold and fire damage, and the target is knocked prone and blinded (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +31 vs Will; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a –2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+31[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+31 vs Will&lt;/u&gt;; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a –2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a –2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;The dragon’s breath weapon recharges, and the dragon uses it.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>The dragon’s breath weapon recharges, and the dragon uses it.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Steam Shroud&lt;/b&gt; (immediate interrupt, when hit by a melee attack; at-will) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon’s space and all adjacent squares become a zone of roiling steam that grants total concealment until the end of the dragon’s next turn.&lt;/p&gt;]]  <b>Steam Shroud</b> (immediate interrupt, when hit by a melee attack; at-will) ✦ <b>Zone</b></p><p>The dragon’s space and all adjacent squares become a zone of roiling steam that grants total concealment until the end of the dragon’s next turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Elemental Affinity&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The white dragon firelord’s elemental power overcomes the fire affinity of the City of Brass. The dragon’s attacks with the cold keyword deal full damage.&lt;/p&gt;]]  <b>Elemental Affinity</b></p><p>The white dragon firelord’s elemental power overcomes the fire affinity of the City of Brass. The dragon’s attacks with the cold keyword deal full damage.</p></tr></td></table>",

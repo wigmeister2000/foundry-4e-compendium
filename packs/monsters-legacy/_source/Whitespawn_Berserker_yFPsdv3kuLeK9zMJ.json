@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -770,23 +772,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 264; <b>Bloodied</b> 132</td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 37</td><td><b>Ref</b> 32</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+20)<br><b>Con</b> 24 (+18)</td><td><b>Dex</b> 18 (+15)<br><b>Int</b> 7 (+9)</td><td><b>Wis</b> 14 (+13)<br><b>Cha</b> 15 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Endurance +23, Intimidate +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> spiked chain .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Chain &lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 2d4 + 9 damage. &lt;/p&gt;]] (⚔) <b>Spiked Chain </b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Chain &lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 2d4 + 9 damage. &lt;/p&gt;]]; [[/roll 2d4 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Chain &lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 2d4 + 9 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Raging Blow &lt;/b&gt; (standard; requires a spiked chain, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; 8d4 + 9 damage, and the target is knocked prone and immobilized (save ends). &lt;/p&gt;]] (⚔) <b>Raging Blow </b> (standard; requires a spiked chain, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 8d4 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;(⚔) &lt;b&gt;Raging Blow &lt;/b&gt; (standard; requires a spiked chain, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; 8d4 + 9 damage, and the target is knocked prone and immobilized (save ends). &lt;/p&gt;]] <29>  damage, and the target is knocked prone and immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Reaving Strike&lt;/b&gt; (standard; requires a spiked chain, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 10d4 +9 damage, and the target is pushed 1 square. &lt;/p&gt;]] ⚔ <b>Reaving Strike</b> (standard; requires a spiked chain, encounter) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Reaving Strike&lt;/b&gt; (standard; requires a spiked chain, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 10d4 +9 damage, and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 10d4 +9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Reaving Strike&lt;/b&gt; (standard; requires a spiked chain, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 10d4 +9 damage, and the target is pushed 1 square. &lt;/p&gt;]] <34>  damage, and the target is pushed 1 square. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swift Step&lt;/b&gt; (immediate reaction, when an adjacent enemy moves away from the whitespawn; at-will) &lt;/p&gt;&lt;p&gt;The whitespawn shifts into the vacated square and the triggering enemy grants the whitespan combat advantage until the end of the whitespawn’s next turn.&lt;/p&gt;]]  <b>Swift Step</b> (immediate reaction, when an adjacent enemy moves away from the whitespawn; at-will) </p><p>The whitespawn shifts into the vacated square and the triggering enemy grants the whitespan combat advantage until the end of the whitespawn’s next turn.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Confounding Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UuZdet5MapFvhRqA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -515,10 +518,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -695,10 +698,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -950,7 +953,7 @@
 		},
 		{
 			"name":"Astral Majesty",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KiZ8nDoXaeTm9jy7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -986,7 +989,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1042,23 +1046,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 145; <b>Bloodied</b> 72<hr><b>Resist</b> 12 necrotic and 12 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 26</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+13)<br><b>Con</b> 17 (+10)</td><td><b>Dex</b> 12 (+8)<br><b>Int</b> 19 (+11)</td><td><b>Wis</b> 22 (+13)<br><b>Cha</b> 15 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial, Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> History +13, Intimidate +14, Religion +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> heavy shield , holy symbol , mace , plate armor .</p><p>[[/roll 0#&lt;b&gt;Confounding Presence&lt;/b&gt; aura 3; allies within the aura gain a +1 bonus to attack rolls.]] <b>Confounding Presence</b> aura 3; allies within the aura gain a +1 bonus to attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Skullcrushing Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8+6 damage. &lt;/p&gt;]] (⚔) <b>Skullcrushing Mace</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Skullcrushing Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Skullcrushing Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Star of Justice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +20 vs Reflex; 2d8+6 radiant damage, and the target grants combat advantage to all enemies until the end of Andrezhej\"s next turn. &lt;/p&gt;]] (➶) <b>Star of Justice</b> (standard, at-will) ✦ <b>Radiant</b></p><p>Ranged 5; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Star of Justice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 2d8+6 radiant damage, and the target grants combat advantage to all enemies until the end of Andrezhej\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Star of Justice&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +20 vs Reflex; 2d8+6 radiant damage, and the target grants combat advantage to all enemies until the end of Andrezhej\"s next turn. &lt;/p&gt;]] <15>  radiant damage, and the target grants combat advantage to all enemies until the end of Andrezhej\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Kneel Foe&lt;/b&gt; (standard; requires mace, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8+6 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Kneel Foe</b> (standard; requires mace, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Kneel Foe&lt;/b&gt; (standard; requires mace, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+6 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Kneel Foe&lt;/b&gt; (standard; requires mace, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8+6 damage, and the target is knocked prone. &lt;/p&gt;]] <15>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Mighty Smite&lt;/b&gt; (standard; requires mace, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 4d8+6 damage, and the target is dazed and gains vulnerable 5 radiant (save ends both). &lt;/p&gt;]] ⚔ <b>Mighty Smite</b> (standard; requires mace, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Mighty Smite&lt;/b&gt; (standard; requires mace, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 4d8+6 damage, and the target is dazed and gains vulnerable 5 radiant (save ends both). &lt;/p&gt;]]; [[/roll 4d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Mighty Smite&lt;/b&gt; (standard; requires mace, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 4d8+6 damage, and the target is dazed and gains vulnerable 5 radiant (save ends both). &lt;/p&gt;]] <24>  damage, and the target is dazed and gains vulnerable 5 radiant (save ends both). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Memory of A Thousand Lifetimes&lt;/b&gt; ( when andrezhej makes an attack roll, saving throw, a skill check, or an ability check; encounter) &lt;/p&gt;&lt;p&gt;aura 3; allies within the aura gain a +1 bonus to attack rolls.&lt;/p&gt;]]  <b>Memory of A Thousand Lifetimes</b> ( when andrezhej makes an attack roll, saving throw, a skill check, or an ability check; encounter) </p><p>aura 3; allies within the aura gain a +1 bonus to attack rolls.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Astral Majesty&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Captain Andrezhej gains a +1 bonus to all defenses against attacks made by bloodied creatures.&lt;/p&gt;]]  <b>Astral Majesty</b></p><p>Captain Andrezhej gains a +1 bonus to all defenses against attacks made by bloodied creatures.</p></tr></td></table>",

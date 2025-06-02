@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Icebound Footing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"x9C6L1MrWsREzlDm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -635,23 +637,10 @@
 				"max":10
 			},
 			"init":{
-				"value":14,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":14
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 168; <b>Bloodied</b> 84<hr><b>Resist</b> 15 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +14</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 31</td><td><b>Ref</b> 28</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+13)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 19 (+12)<br><b>Int</b> 10 (+8)</td><td><b>Wis</b> 17 (+11)<br><b>Cha</b> 12 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Athletics +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p><b>Equipment</b> handaxe  x8.</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Icebound Footing&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect pulls, pushes, or slides the giant, it can choose to move 2 squares fewer than the effect specifies. The giant can make a saving throw to avoid falling prone when an attack would knock it prone.&lt;/p&gt;]]  <b>Icebound Footing</b> <b></b></p><p>When an effect pulls, pushes, or slides the giant, it can choose to move 2 squares fewer than the effect specifies. The giant can make a saving throw to avoid falling prone when an attack would knock it prone.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔)(➶) &lt;b&gt;Icy Handaxe&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 or Ranged 10 (one creature); +22 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 cold damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The giant shifts up to 2 squares.&lt;/p&gt;]] (⚔)(➶) <b>Icy Handaxe</b> (cold, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 or Ranged 10 (one creature); [[/roll 1d20+22[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔)(➶) &lt;b&gt;Icy Handaxe&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 or Ranged 10 (one creature); &lt;u&gt;+22 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔)(➶) &lt;b&gt;Icy Handaxe&lt;/b&gt; (cold, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 cold damage.&lt;/p&gt;]] <13>  cold damage.</p><p><i>Effect:</i> The giant shifts up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Twin Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The giant uses icy handaxe twice and can shift up to 2 squares between the attacks.&lt;/p&gt;]] ⚔ <b>Twin Strike</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The giant uses icy handaxe twice and can shift up to 2 squares between the attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Hurling Charge&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The giant uses icy handaxe twice as ranged attacks and then charges one of the targets.&lt;/p&gt;]] ➶ <b>Hurling Charge</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The giant uses icy handaxe twice as ranged attacks and then charges one of the targets.</p></tr></td></table>",

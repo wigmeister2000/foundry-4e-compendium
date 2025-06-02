@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -119,10 +120,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -299,10 +300,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1143,23 +1144,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 240; <b>Bloodied</b> 120</td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2; +7 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 24</td><td><b>Ref</b> 27</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+6)<br><b>Con</b> 16 (+9)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 22 (+12)</td><td><b>Wis</b> 8 (+5)<br><b>Cha</b> 18 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +19</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> robes, staff implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] (⚔) <b>Fire Staff</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]]; [[/roll [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] <4.5> #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fire Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] <4.5> damage plus 1d8 fire damage, and ongoing 5 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fire Smite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage. Shantaira makes a secondary attack. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; Targets two enemies within 5 squares of the original target; +15 vs Reflex; 1d8 fire damage, and ongoing 5 fire damage. &lt;/p&gt;]] ⚔ <b>Fire Smite</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fire Smite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage. Shantaira makes a secondary attack. &lt;/p&gt;]]; [[/roll [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fire Smite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage. Shantaira makes a secondary attack. &lt;/p&gt;]] <4.5> #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fire Smite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8 damage plus 1d8 fire damage, and ongoing 5 fire damage. Shantaira makes a secondary attack. &lt;/p&gt;]] <4.5> damage plus 1d8 fire damage, and ongoing 5 fire damage. Shantaira makes a secondary attack. </p><p><i>Secondary Attack</i> Targets two enemies within 5 squares of the original target; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fire Smite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; Targets two enemies within 5 squares of the original target; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d8 fire damage, and ongoing 5 fire damage. &lt;/p&gt;]]; [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fire Smite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; Targets two enemies within 5 squares of the original target; +15 vs Reflex; 1d8 fire damage, and ongoing 5 fire damage. &lt;/p&gt;]] <4.5> fire damage, and ongoing 5 fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Flame Lance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Reflex; 2d10+6 fire damage, and the target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Flame Lance</b> (standard, at-will) ✦ <b>Fire</b></p><p>Ranged 10; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Flame Lance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 2d10+6 fire damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Flame Lance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Reflex; 2d10+6 fire damage, and the target is dazed (save ends). &lt;/p&gt;]] <17>  fire damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fire Shroud&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +16 vs Fortitude; 1d8+6 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] ᗕ <b>Fire Shroud</b> (standard, recharge ⚃⚄⚅) ✦ <b>Fire</b></p><p>Close burst 3; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fire Shroud&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 1d8+6 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fire Shroud&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +16 vs Fortitude; 1d8+6 fire damage, and ongoing 5 fire damage (save ends). &lt;/p&gt;]] <10.5>  fire damage, and ongoing 5 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Wall of Fire&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Conjuration, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area wall 8 (4 high) within 10; a wall of fire appears, blocking line of sight and rendering its space heavily obscured. It lasts until the end of Shantaira next turn. Any creature that starts its turn adjacent to the wall takes 1d6 + 5 fire damage. Entering the wall’s space costs 3 extra squares of movement. If a creature moves into the wall’s space or starts its turn there, that creature takes 3d6 + 5 fire damage.&lt;/p&gt;]] ✻ <b>Wall of Fire</b> (standard; sustain minor, encounter) ✦ <b>Conjuration, Fire</b></p><p>Area wall 8 (4 high) within 10; a wall of fire appears, blocking line of sight and rendering its space heavily obscured. It lasts until the end of Shantaira next turn. Any creature that starts its turn adjacent to the wall takes [[/roll 1d6 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Wall of Fire&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Conjuration, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area wall 8 (4 high) within 10; a wall of fire appears, blocking line of sight and rendering its space heavily obscured. It lasts until the end of Shantaira next turn. Any creature that starts its turn adjacent to the wall takes 1d6 + 5 fire damage. Entering the wall’s space costs 3 extra squares of movement. If a creature moves into the wall’s space or starts its turn there, that creature takes 3d6 + 5 fire damage.&lt;/p&gt;]] <8.5>  fire damage. Entering the wall’s space costs 3 extra squares of movement. If a creature moves into the wall’s space or starts its turn there, that creature takes [[/roll 3d6 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Wall of Fire&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Conjuration, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area wall 8 (4 high) within 10; a wall of fire appears, blocking line of sight and rendering its space heavily obscured. It lasts until the end of Shantaira next turn. Any creature that starts its turn adjacent to the wall takes 1d6 + 5 fire damage. Entering the wall’s space costs 3 extra squares of movement. If a creature moves into the wall’s space or starts its turn there, that creature takes 3d6 + 5 fire damage.&lt;/p&gt;]] <15.5>  fire damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Shantaira can teleport 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>Shantaira can teleport 5 squares.</p></tr></td></table>",

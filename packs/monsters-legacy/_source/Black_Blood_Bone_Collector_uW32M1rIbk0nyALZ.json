@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -591,23 +592,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 580; <b>Bloodied</b> 290<hr><b>Resist</b> 15 necrotic <b>Immune</b> disease, gaze, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 39</td><td><b>Ref</b> 35</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 36 (+25)<br><b>Con</b> 30 (+22)</td><td><b>Dex</b> 6 (+10)<br><b>Int</b> 1 (+7)</td><td><b>Wis</b> 11 (+12)<br><b>Cha</b> 1 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 20<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 4d6+11 necrotic damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 3; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+28 vs AC&lt;/u&gt;; 4d6+11 necrotic damage. &lt;/p&gt;]]; [[/roll 4d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 4d6+11 necrotic damage. &lt;/p&gt;]] <25>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +26 vs Reflex; 3d6+11 necrotic damage, and the target is grabbed and loses a healing surge. The black blood bone collector regains 5 hit points for each healing surge a target loses in this way. &lt;/p&gt;]] ᗕ <b>Tendrils</b> (standard, at-will) ✦ <b>Healing, Necrotic</b></p><p>Close blast 3; [[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+26 vs Reflex&lt;/u&gt;; 3d6+11 necrotic damage, and the target is grabbed and loses a healing surge. The black blood bone collector regains 5 hit points for each healing surge a target loses in this way. &lt;/p&gt;]]; [[/roll 3d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tendrils&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +26 vs Reflex; 3d6+11 necrotic damage, and the target is grabbed and loses a healing surge. The black blood bone collector regains 5 hit points for each healing surge a target loses in this way. &lt;/p&gt;]] <21.5>  necrotic damage, and the target is grabbed and loses a healing surge. The black blood bone collector regains 5 hit points for each healing surge a target loses in this way. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Lurch&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;The black blood bone collector shifts up to 3 squares.&lt;/p&gt;]]  <b>Lurch</b> (move; at-will) </p><p>The black blood bone collector shifts up to 3 squares.</p></tr></td></table>",

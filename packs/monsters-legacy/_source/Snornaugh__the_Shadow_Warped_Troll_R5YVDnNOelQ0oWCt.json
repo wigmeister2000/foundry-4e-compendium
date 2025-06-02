@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Phf1p7zZaWFnqX4w",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -328,10 +330,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -941,7 +943,7 @@
 		},
 		{
 			"name":"Sneak Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9ed2lKgQYBx3D8pn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -977,7 +979,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -987,7 +990,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AqgvVhEHieUnml6S",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1023,7 +1026,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1079,23 +1083,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 200; <b>Bloodied</b> 100<br><b>Regeneration</b> 10 (if Snornaugh takes acid or fire damage, regeneration does not function until the end of his next turn)</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 24</td><td><b>Ref</b> 21</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+10)<br><b>Con</b> 20 (+9)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 5 (+1)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 10 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +13 vs AC; 2d8+6 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+13 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +13 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs ; 2d6+5 damage.. Snornaugh makes two claw attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>+10 vs ; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs ; 2d6+5 damage.. Snornaugh makes two claw attacks.&lt;/p&gt;]] <12>  damage.. Snornaugh makes two claw attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shadow Blind&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; +11 vs AC; 1d8+5 damage, and the target is blinded (save ends). &lt;/p&gt;]] ➶ <b>Shadow Blind</b> (standard, encounter) </p><p>Ranged 5; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shadow Blind&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d8+5 damage, and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Shadow Blind&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; +11 vs AC; 1d8+5 damage, and the target is blinded (save ends). &lt;/p&gt;]] <9.5>  damage, and the target is blinded (save ends). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Frenzied Strike&lt;/b&gt; (free, when snornaugh\"s attack bloodies an enemy, at-will) &lt;/p&gt;&lt;p&gt;Snornaugh makes a claw attack.&lt;/p&gt;]] ⚔ <b>Frenzied Strike</b> (free, when snornaugh\"s attack bloodies an enemy, at-will) </p><p>Snornaugh makes a claw attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Call Troll Shade&lt;/b&gt; (minor; 4/encounter) ✦ &lt;b&gt;Conjuration&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Snornaugh reaches into the shadow within and conjures a troll shade within 5 squares. The troll shade acts independently just after Snornaugh in the initiative order.&lt;/p&gt;]]  <b>Call Troll Shade</b> (minor; 4/encounter) ✦ <b>Conjuration</b></p><p>Snornaugh reaches into the shadow within and conjures a troll shade within 5 squares. The troll shade acts independently just after Snornaugh in the initiative order.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sneak Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Snornaugh flanks an enemy, he deals 2d6 extra damage on melee attacks against that enemy.&lt;/p&gt;]]  <b>Sneak Attack</b></p><p>When Snornaugh flanks an enemy, he deals [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sneak Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Snornaugh flanks an enemy, he deals 2d6 extra damage on melee attacks against that enemy.&lt;/p&gt;]] <7> extra damage on melee attacks against that enemy.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Snornaugh is reduced to 0 hit points by an attack that does not deal acid or fire damage, Snornaugh rises on his next turn (as a move action) with 10 hit points.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If Snornaugh is reduced to 0 hit points by an attack that does not deal acid or fire damage, Snornaugh rises on his next turn (as a move action) with 10 hit points.</p></tr></td></table>",

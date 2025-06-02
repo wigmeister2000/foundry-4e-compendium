@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -547,7 +549,7 @@
 		},
 		{
 			"name":"Aura of Doom",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"sNiB97vk5lSVrKxD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -583,7 +585,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -639,23 +642,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 80; <b>Bloodied</b> 40<hr><b>Resist</b> 10 necrotic, insubstantial </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover; altitude limit 6)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+7)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 21 (+10)<br><b>Int</b> 10 (+5)</td><td><b>Wis</b> 12 (+6)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d6+5 psychic damage, and the target is slowed until the end of the mourner’s next turn. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 2d6+5 psychic damage, and the target is slowed until the end of the mourner’s next turn. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d6+5 psychic damage, and the target is slowed until the end of the mourner’s next turn. &lt;/p&gt;]] <12>  psychic damage, and the target is slowed until the end of the mourner’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Tendril of Mist&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +15 vs Reflex; 2d6+7 psychic damage, and the mourner slides the target 2 squares. &lt;/p&gt;]] (➶) <b>Tendril of Mist</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 5; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Tendril of Mist&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 2d6+7 psychic damage, and the mourner slides the target 2 squares. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Tendril of Mist&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +15 vs Reflex; 2d6+7 psychic damage, and the mourner slides the target 2 squares. &lt;/p&gt;]] <14>  psychic damage, and the mourner slides the target 2 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wall of Anguish&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +15 vs Will; 3d8+7 psychic damage, and the target is immobilized (save ends). &lt;/p&gt;]] ᗕ <b>Wall of Anguish</b> (standard, recharge ⚄⚅) ✦ <b>Fear, Psychic</b></p><p>Close burst 3; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wall of Anguish&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+15 vs Will&lt;/u&gt;; 3d8+7 psychic damage, and the target is immobilized (save ends). &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wall of Anguish&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +15 vs Will; 3d8+7 psychic damage, and the target is immobilized (save ends). &lt;/p&gt;]] <20.5>  psychic damage, and the target is immobilized (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aura of Doom&lt;/b&gt; (aura) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;aura 2; any enemy within the aura at the start of its turn takes a -2 penalty to Will defense until the start of its next turn.&lt;/p&gt;]]  <b>Aura of Doom</b> (aura) ✦ <b>Psychic</b></p><p>aura 2; any enemy within the aura at the start of its turn takes a -2 penalty to Will defense until the start of its next turn.</p></tr></td></table>",

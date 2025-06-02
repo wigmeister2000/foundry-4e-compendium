@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -311,10 +312,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -489,10 +490,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -566,7 +567,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"cd4OJHkiXam1ZLKx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -602,7 +603,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -658,23 +660,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 179; <b>Bloodied</b> 89</td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>Save</b> +2 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 31</td><td><b>Ref</b> 32</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 see also telekinetic leap</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+15)<br><b>Con</b> 19 (+13)</td><td><b>Dex</b> 25 (+16)<br><b>Int</b> 21 (+14)</td><td><b>Wis</b> 22 (+15)<br><b>Cha</b> 17 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +21, Insight +20</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 25 | Insight 30</td></td></tr></table><p><b>Equipment</b> Silver Longsword, leather armor , light shield .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 2d8 + 5 damage plus 1d6 psychic damage, and if the githyanki corsair shipmaster has combat advantage against the target, it can shift 3 squares. &lt;/p&gt;]] (⚔) <b>Silver Longsword</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs AC&lt;/u&gt;; 2d8 + 5 damage plus 1d6 psychic damage, and if the githyanki corsair shipmaster has combat advantage against the target, it can shift 3 squares. &lt;/p&gt;]]; [[/roll 2d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 2d8 + 5 damage plus 1d6 psychic damage, and if the githyanki corsair shipmaster has combat advantage against the target, it can shift 3 squares. &lt;/p&gt;]] <14>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 2d8 + 5 damage plus 1d6 psychic damage, and if the githyanki corsair shipmaster has combat advantage against the target, it can shift 3 squares. &lt;/p&gt;]] <3.5> psychic damage, and if the githyanki corsair shipmaster has combat advantage against the target, it can shift 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blade Dance&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 3d8 + 6 damage plus 1d8 psychic damage, and the target is dazed until the end of the githyanki corsair shipmaster’s next turn. Effect: The shipmaster can shift up to 3 squares before or after making this attack.. &lt;/p&gt;]] ⚔ <b>Blade Dance</b> (standard, encounter) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blade Dance&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs AC&lt;/u&gt;; 3d8 + 6 damage plus 1d8 psychic damage, and the target is dazed until the end of the githyanki corsair shipmaster’s next turn. Effect: The shipmaster can shift up to 3 squares before or after making this attack.. &lt;/p&gt;]]; [[/roll 3d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blade Dance&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 3d8 + 6 damage plus 1d8 psychic damage, and the target is dazed until the end of the githyanki corsair shipmaster’s next turn. Effect: The shipmaster can shift up to 3 squares before or after making this attack.. &lt;/p&gt;]] <19.5>  damage plus [[/roll 1d8 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blade Dance&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 3d8 + 6 damage plus 1d8 psychic damage, and the target is dazed until the end of the githyanki corsair shipmaster’s next turn. Effect: The shipmaster can shift up to 3 squares before or after making this attack.. &lt;/p&gt;]] <4.5> psychic damage, and the target is dazed until the end of the githyanki corsair shipmaster’s next turn. Effect: The shipmaster can shift up to 3 squares before or after making this attack.. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Telekinetic Leap&lt;/b&gt; (move, encounter) &lt;/p&gt;&lt;p&gt;10; +22 vs  or  (whichever is lower); . the githyanki corsair shipmaster or an ally within range can fly 5 squares.&lt;/p&gt;]] ➶ <b>Telekinetic Leap</b> (move, encounter) </p><p>10; +22 vs  or  (whichever is lower); . the githyanki corsair shipmaster or an ally within range can fly 5 squares.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A githyanki corsair shipmaster deals 1d6 extra damage on melee attacks against any target that is granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A githyanki corsair shipmaster deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A githyanki corsair shipmaster deals 1d6 extra damage on melee attacks against any target that is granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage on melee attacks against any target that is granting combat advantage to it.</p></tr></td></table>",

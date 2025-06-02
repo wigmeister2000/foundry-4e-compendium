@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 63; <b>Bloodied</b> 31</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 19</td><td><b>Ref</b> 17</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+6)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 8 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 2d8+2 damage, and the horned drake shifts 2 squares. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 2d8+2 damage, and the horned drake shifts 2 squares. &lt;/p&gt;]]; [[/roll 2d8+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 2d8+2 damage, and the horned drake shifts 2 squares. &lt;/p&gt;]] <11>  damage, and the horned drake shifts 2 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Horns&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 3d8+2 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Goring Horns</b> (standard, at-will) </p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Horns&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 3d8+2 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 3d8+2#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Horns&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+11 vs AC; 3d8+2 damage, and the target is knocked prone. &lt;/p&gt;]] <15.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Movement&lt;/b&gt; (immediate reaction, when an enemy adjacent to the horned drake is hit by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The drake shifts 2 squares.&lt;/p&gt;]]  <b>Pack Movement</b> (immediate reaction, when an enemy adjacent to the horned drake is hit by a melee attack; at-will) </p><p>The drake shifts 2 squares.</p></tr></td></table>",

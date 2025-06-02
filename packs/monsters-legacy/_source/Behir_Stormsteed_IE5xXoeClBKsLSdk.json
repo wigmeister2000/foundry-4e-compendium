@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -602,23 +603,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 229; <b>Bloodied</b> 114<hr><b>Resist</b> 15 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 38</td><td><b>Ref</b> 36</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+20)<br><b>Con</b> 29 (+21)</td><td><b>Dex</b> 25 (+19)<br><b>Int</b> 7 (+10)</td><td><b>Wis</b> 23 (+18)<br><b>Cha</b> 15 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 10<br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 1d8+9 damage plus 1d8 lightning damage, and each creature within 3 squares of the target takes 5 lightning damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Reach 2; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+31 vs AC&lt;/u&gt;; 1d8+9 damage plus 1d8 lightning damage, and each creature within 3 squares of the target takes 5 lightning damage. &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 1d8+9 damage plus 1d8 lightning damage, and each creature within 3 squares of the target takes 5 lightning damage. &lt;/p&gt;]] <13.5>  damage plus [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 1d8+9 damage plus 1d8 lightning damage, and each creature within 3 squares of the target takes 5 lightning damage. &lt;/p&gt;]] <4.5> lightning damage, and each creature within 3 squares of the target takes 5 lightning damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Breath&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; two creatures in burst; +29 vs Reflex; 1d10+9 lightning damage and the target is slowed until the end of the target\"s next turn. &lt;/p&gt;]] ᗕ <b>Lightning Breath</b> (standard, recharge ⚃⚄⚅) ✦ <b>Lightning</b></p><p>Close burst 3; two creatures in burst; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Breath&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; two creatures in burst; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 1d10+9 lightning damage and the target is slowed until the end of the target\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Breath&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; two creatures in burst; +29 vs Reflex; 1d10+9 lightning damage and the target is slowed until the end of the target\"s next turn. &lt;/p&gt;]] <14.5>  lightning damage and the target is slowed until the end of the target\"s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ride the Lightning&lt;/b&gt; (while mounted by a friendly rider of 24th level or higher; at-will) ✦ &lt;b&gt;Mount&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The behir stormsteed can use its bite or lightning breath once per turn as a minor action. In addition, the rider gains a +2 bonus to attacks with lightning powers.&lt;/p&gt;]]  <b>Ride the Lightning</b> (while mounted by a friendly rider of 24th level or higher; at-will) ✦ <b>Mount</b></p><p>The behir stormsteed can use its bite or lightning breath once per turn as a minor action. In addition, the rider gains a +2 bonus to attacks with lightning powers.</p></tr></td></table>",

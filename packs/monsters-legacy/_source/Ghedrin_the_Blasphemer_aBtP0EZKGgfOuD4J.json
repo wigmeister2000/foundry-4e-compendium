@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1103,7 +1105,7 @@
 		},
 		{
 			"name":"Dragonborn Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lTt5ZhIrSfCKkmVY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1139,7 +1141,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1195,23 +1198,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 198; <b>Bloodied</b> 99<hr><b>Resist</b> 10 variable (2/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 26</td><td><b>Ref</b> 22</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+9)<br><b>Con</b> 21 (+11)</td><td><b>Dex</b> 10 (+6)<br><b>Int</b> 15 (+8)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 20 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +13, Bluff +16, History +15, Intimidate +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> leather armor , mace , rod implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;melee 1; +19 vs AC; 1d8+5 damage. &lt;/p&gt;]] (⚔) <b>Mace</b> (standard, at-will) ✦ <b>Weapon</b></p><p>melee 1; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;melee 1; &lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+5 damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;melee 1; +19 vs AC; 1d8+5 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurled Dragon Breath&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +19 vs AC; 2d6+5 acid, cold, fire, lightning, or poison damage. Ghedrin chooses the damage type for each attack. &lt;/p&gt;]] (➶) <b>Hurled Dragon Breath</b> (standard, at-will) ✦ <b>Acid, Cold, Fire, Lightning, Poison</b></p><p>Ranged 10; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurled Dragon Breath&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d6+5 acid, cold, fire, lightning, or poison damage. Ghedrin chooses the damage type for each attack. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hurled Dragon Breath&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +19 vs AC; 2d6+5 acid, cold, fire, lightning, or poison damage. Ghedrin chooses the damage type for each attack. &lt;/p&gt;]] <12>  acid, cold, fire, lightning, or poison damage. Ghedrin chooses the damage type for each attack. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Breath Volley&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ghedrin makes two hurled dragon breath attacks.&lt;/p&gt;]] ➶ <b>Breath Volley</b> (standard, at-will) ✦ <b>Acid, Cold, Fire, Lightning, Poison</b></p><p>Ghedrin makes two hurled dragon breath attacks.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +17 vs Reflex; 2d6+5 acid, cold, fire, lightning, or poison damage, and ongoing 10 damage of the same type (save ends). Ghedrin chooses the damage type for each attack. &lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (minor, encounter) ✦ <b>Acid, Cold, Fire, Lightning, Poison</b></p><p>Close blast 3; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d6+5 acid, cold, fire, lightning, or poison damage, and ongoing 10 damage of the same type (save ends). Ghedrin chooses the damage type for each attack. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +17 vs Reflex; 2d6+5 acid, cold, fire, lightning, or poison damage, and ongoing 10 damage of the same type (save ends). Ghedrin chooses the damage type for each attack. &lt;/p&gt;]] <12>  acid, cold, fire, lightning, or poison damage, and ongoing 10 damage of the same type (save ends). Ghedrin chooses the damage type for each attack. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ghedrin’s dragon breath recharges, and he uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) ✦ <b>Acid, Cold, Fire, Lightning, Poison</b></p><p>Ghedrin’s dragon breath recharges, and he uses it immediately.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Conflagration Step&lt;/b&gt; (immediate reaction, when hit by a melee attack, encounter) ✦ &lt;b&gt;Fire, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +17 vs Reflex; 4d6+5 fire damage. Ghedrin teleports 5 squares, plus 1 additional square for each target he hits with this attack. &lt;/p&gt;]] ᗕ <b>Conflagration Step</b> (immediate reaction, when hit by a melee attack, encounter) ✦ <b>Fire, Teleportation</b></p><p>Close burst 1; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Conflagration Step&lt;/b&gt; (immediate reaction, when hit by a melee attack, encounter) ✦ &lt;b&gt;Fire, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 4d6+5 fire damage. Ghedrin teleports 5 squares, plus 1 additional square for each target he hits with this attack. &lt;/p&gt;]]; [[/roll 4d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Conflagration Step&lt;/b&gt; (immediate reaction, when hit by a melee attack, encounter) ✦ &lt;b&gt;Fire, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +17 vs Reflex; 4d6+5 fire damage. Ghedrin teleports 5 squares, plus 1 additional square for each target he hits with this attack. &lt;/p&gt;]] <19>  fire damage. Ghedrin teleports 5 squares, plus 1 additional square for each target he hits with this attack. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dragonborn Fury&lt;/b&gt; (usable only while bloodied) &lt;/p&gt;&lt;p&gt;Ghedrin gains a +1 bonus to attack rolls.&lt;/p&gt;]]  <b>Dragonborn Fury</b> (usable only while bloodied) </p><p>Ghedrin gains a +1 bonus to attack rolls.</p></tr></td></table>",

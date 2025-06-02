@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Agonizing Gaze",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hSpI8tVXcrH7AeFP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -165,10 +167,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -346,10 +348,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -647,23 +649,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 124; <b>Bloodied</b> 62<hr><b>Resist</b> 15 necrotic <b>Vulnerable</b> 5 radiant; a bodak skulk that takes radiant damage cannot weaken a target until the end of its next turn <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 29</td><td><b>Ref</b> 27</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+13)<br><b>Con</b> 22 (+14)</td><td><b>Dex</b> 19 (+12)<br><b>Int</b> 6 (+6)</td><td><b>Wis</b> 15 (+10)<br><b>Cha</b> 23 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Agonizing Gaze&lt;/b&gt; (Fear, Necrotic, Gaze) aura 5; a creature in the aura that makes a melee or a ranged attack against the bodak skulk takes 5 necrotic damage before the attack roll is made and takes a -2 penalty to the attack roll.]] <b>Agonizing Gaze</b> (Fear, Necrotic, Gaze) aura 5; a creature in the aura that makes a melee or a ranged attack against the bodak skulk takes 5 necrotic damage before the attack roll is made and takes a -2 penalty to the attack roll.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d6+5 damage plus 2d6 necrotic damage, and the target is weakened until the end of the bodak skulk’s next turn. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 1d6+5 damage plus 2d6 necrotic damage, and the target is weakened until the end of the bodak skulk’s next turn. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d6+5 damage plus 2d6 necrotic damage, and the target is weakened until the end of the bodak skulk’s next turn. &lt;/p&gt;]] <8.5>  damage plus [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d6+5 damage plus 2d6 necrotic damage, and the target is weakened until the end of the bodak skulk’s next turn. &lt;/p&gt;]] <7> necrotic damage, and the target is weakened until the end of the bodak skulk’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Death Gaze&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Gaze, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; targets a living creature; +19 vs Fortitude; if the target is weakened, it is reduced to 0 hit points; otherwise, the target takes 1d6 + 6 necrotic damage and loses 1 healing surge. &lt;/p&gt;]] ⚔ <b>Death Gaze</b> (standard, encounter) ✦ <b>Gaze, Necrotic</b></p><p>Range 10; targets a living creature; [[/roll 1d20+19[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Death Gaze&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Gaze, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; targets a living creature; &lt;u&gt;+19 vs Fortitude&lt;/u&gt;; if the target is weakened, it is reduced to 0 hit points; otherwise, the target takes 1d6 + 6 necrotic damage and loses 1 healing surge. &lt;/p&gt;]]; if the target is weakened, it is reduced to 0 hit points; otherwise, the target takes [[/roll 1d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Death Gaze&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Gaze, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10; targets a living creature; +19 vs Fortitude; if the target is weakened, it is reduced to 0 hit points; otherwise, the target takes 1d6 + 6 necrotic damage and loses 1 healing surge. &lt;/p&gt;]] <9.5>  necrotic damage and loses 1 healing surge. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spectral Form&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The bodak skulk turns invisible and gains the insubstantial and phasing qualities . It can do nothing but move in spectral form, and it can return to its normal form as a free action.&lt;/p&gt;]]  <b>Spectral Form</b> (standard; at-will) </p><p>The bodak skulk turns invisible and gains the insubstantial and phasing qualities . It can do nothing but move in spectral form, and it can return to its normal form as a free action.</p></tr></td></table>",

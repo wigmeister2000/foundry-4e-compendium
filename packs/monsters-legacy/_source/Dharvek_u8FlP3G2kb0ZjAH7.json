@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Group Awareness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0t2wkHzFbYqOAWcT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1353,23 +1356,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 164; <b>Bloodied</b> 82</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7 see also scavenger\"s survival</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+6)<br><b>Con</b> 16 (+8)</td><td><b>Dex</b> 15 (+7)<br><b>Int</b> 18 (+9)</td><td><b>Wis</b> 18 (+9)<br><b>Cha</b> 14 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +16, Insight +14, Stealth +15, Thievery +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 19 | Insight 24</td></td></tr></table><p><b>Equipment</b> dagger  x2, leather armor , longsword , shortbow .</p><p>[[/roll 0#&lt;b&gt;Group Awareness&lt;/b&gt; aura 5; non-elf allies in the aura gain a +1 racial bonus to Perception checks.]] <b>Group Awareness</b> aura 5; non-elf allies in the aura gain a +1 racial bonus to Perception checks.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d6+5 damage. &lt;/p&gt;]] (⚔) <b>Short Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d6+5 damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d6+5 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +17 vs AC; 2d6+4 damage. &lt;/p&gt;]] (➶) <b>Shortbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+17 vs AC&lt;/u&gt;; 2d6+4 damage. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +17 vs AC; 2d6+4 damage. &lt;/p&gt;]] <11>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Burning Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +17 vs AC; 2d8+4 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] ➶ <b>Burning Arrow</b> (standard, at-will) ✦ <b>Weapon, Fire</b></p><p>Ranged 15/30; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Burning Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+4 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Burning Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +17 vs AC; 2d8+4 damage, and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <13>  damage, and ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twin Arrows&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Dharvek makes two shortbow attacks&lt;/p&gt;]] ➶ <b>Twin Arrows</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Dharvek makes two shortbow attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shocking Dissuasion&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 2; +15 vs Reflex; 2d6+4 lightning damage, and the target is pushed 2 squares. &lt;/p&gt;]] ᗕ <b>Shocking Dissuasion</b> (standard, recharge ⚃⚄⚅) </p><p>Close burst 2; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shocking Dissuasion&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 2d6+4 lightning damage, and the target is pushed 2 squares. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shocking Dissuasion&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 2; +15 vs Reflex; 2d6+4 lightning damage, and the target is pushed 2 squares. &lt;/p&gt;]] <11>  lightning damage, and the target is pushed 2 squares. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Elven Accuracy &lt;/b&gt; (free; encounter) &lt;/p&gt;&lt;p&gt;Dharvek can reroll an attack roll. He must use the second roll, even if it’s lower.&lt;/p&gt;]]  <b>Elven Accuracy </b> (free; encounter) </p><p>Dharvek can reroll an attack roll. He must use the second roll, even if it’s lower.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Scavenger\"s Survival&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;Dharvek shifts 3 squares and gains phasing during this movement.&lt;/p&gt;]]  <b>Scavenger\"s Survival</b> (move; encounter) </p><p>Dharvek shifts 3 squares and gains phasing during this movement.</p></tr></td></table>",

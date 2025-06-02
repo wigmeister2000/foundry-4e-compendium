@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Vortex",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yNLbTFsRteW0P7H6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"okQFh3P8HIl65BLe",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SlEWZJp8AbYFaq3L",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Spawn Wraith",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ytg8HnwkufVvNRI9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -245,7 +249,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -955,23 +960,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 97; <b>Bloodied</b> 48<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 23</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 0, fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+6)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 8 (+3)</td><td><b>Wis</b> 6 (+2)<br><b>Cha</b> 17 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Vortex&lt;/b&gt; (force) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura takes 5 force damage, and the wraith pulls it 1 square.&lt;/p&gt;]] ⌀ <b>Vortex</b> (force) ✦ <b>Aura</b> 3</p><p>Any enemy that starts its turn within the aura takes 5 force damage, and the wraith pulls it 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wraith takes half damage from all attacks, except those that deal force damage.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>The wraith takes half damage from all attacks, except those that deal force damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wraith regains 5 hit points whenever it starts its turn and has at least 1 hit point. Whenever the wraith takes radiant damage, it loses this trait until the start of its next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>The wraith regains 5 hit points whenever it starts its turn and has at least 1 hit point. Whenever the wraith takes radiant damage, it loses this trait until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spawn Wraith&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the wraith kills a humanoid, that humanoid becomes a vortex wraith the start of this wraith’s next turn. The new wraith appears in the space where the humanoid died or in the nearest unoccupied square, and it rolls a new initiative check. The new wraith acts under the Dungeon Master’s control.&lt;/p&gt;]]  <b>Spawn Wraith</b> <b></b></p><p>When the wraith kills a humanoid, that humanoid becomes a vortex wraith the start of this wraith’s next turn. The new wraith appears in the space where the humanoid died or in the nearest unoccupied square, and it rolls a new initiative check. The new wraith acts under the Dungeon Master’s control.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiral Strike&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +12 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 force damage, and the target is slowed until the end of the wraith’s next turn.&lt;/p&gt;]] (⚔) <b>Spiral Strike</b> (force) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+12[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiral Strike&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+12 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiral Strike&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 force damage, and the target is slowed until the end of the wraith’s next turn.&lt;/p&gt;]] <15>  force damage, and the target is slowed until the end of the wraith’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spectral Helix&lt;/b&gt; (force) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 3 force damage, and the target takes ongoing 10 force damage and is immobilized (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The vortex wraith can shift 1 square to a square adjacent to the target.&lt;/p&gt;]] ⚔ <b>Spectral Helix</b> (force) ✦ <b>Encounter</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spectral Helix&lt;/b&gt; (force) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spectral Helix&lt;/b&gt; (force) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 3 force damage, and the target takes ongoing 10 force damage and is immobilized (save ends both).&lt;/p&gt;]] <13.5>  force damage, and the target takes ongoing 10 force damage and is immobilized (save ends both).</p><p><i>Miss:</i> Half damage.</p><p><i>Effect:</i> The vortex wraith can shift 1 square to a square adjacent to the target.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Glide&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The wraith shifts up to 6 squares.&lt;/p&gt;]]  <b>Shadow Glide</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The wraith shifts up to 6 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Final Vortex&lt;/b&gt; (force, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The wraith drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 5 (enemies in the burst); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 force damage, and the wraith teleports the target up to 5 squares and knocks it prone.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Final Vortex</b> (force, teleportation) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The wraith drops to 0 hit points.</p><p><i>Attack (No Action):</i> Close burst 5 (enemies in the burst); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Final Vortex&lt;/b&gt; (force, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Final Vortex&lt;/b&gt; (force, teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 force damage, and the wraith teleports the target up to 5 squares and knocks it prone.&lt;/p&gt;]] <15>  force damage, and the wraith teleports the target up to 5 squares and knocks it prone.</p><p><i>Miss:</i> Half damage.</p></tr></td></table>",

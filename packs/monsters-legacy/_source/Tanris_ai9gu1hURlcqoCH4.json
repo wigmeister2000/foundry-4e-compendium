@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -649,10 +651,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -829,10 +831,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1009,10 +1011,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1444,7 +1446,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"eU7xNSXyBPiAkghs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1480,7 +1482,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1536,23 +1539,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 184; <b>Bloodied</b> 92<hr><b>Resist</b> 5 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 22</td><td><b>Ref</b> 26</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+8)<br><b>Con</b> 14 (+8)</td><td><b>Dex</b> 20 (+11)<br><b>Int</b> 16 (+9)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 10 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +11, Insight +13, Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 23</td></td></tr></table><p><b>Equipment</b> dagger  x12, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d4+5 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d4+5 damage. &lt;/p&gt;]]; [[/roll 1d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d4+5 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Thrown Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs AC; 1d4+5 damage. &lt;/p&gt;]] (➶) <b>Thrown Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Thrown Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d4+5 damage. &lt;/p&gt;]]; [[/roll 1d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Thrown Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs AC; 1d4+5 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Near or Far&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tanris makes two basic (melee or ranged) attacks&lt;/p&gt;]] ⚔ <b>Near or Far</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Tanris makes two basic (melee or ranged) attacks</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;By the Throat&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d4+5 damage, and the target is grabbed and takes a –2 penalty to escape checks to escape the grab. &lt;/p&gt;]] ⚔ <b>By the Throat</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;By the Throat&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d4+5 damage, and the target is grabbed and takes a –2 penalty to escape checks to escape the grab. &lt;/p&gt;]]; [[/roll 1d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;By the Throat&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d4+5 damage, and the target is grabbed and takes a –2 penalty to escape checks to escape the grab. &lt;/p&gt;]] <7.5>  damage, and the target is grabbed and takes a –2 penalty to escape checks to escape the grab. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Close Shave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one creature grabbed by Tanris; +17 vs AC; 3d6+5 damage. &lt;/p&gt;]] ⚔ <b>Close Shave</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Targets one creature grabbed by Tanris; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Close Shave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one creature grabbed by Tanris; &lt;u&gt;+17 vs AC&lt;/u&gt;; 3d6+5 damage. &lt;/p&gt;]]; [[/roll 3d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Close Shave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one creature grabbed by Tanris; +17 vs AC; 3d6+5 damage. &lt;/p&gt;]] <15.5>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Before You Go&lt;/b&gt; (free, when an enemy grabbed by tanris escapes, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the escaping enemy; +17 vs AC; 2d4+5 damage. &lt;/p&gt;]] ⚔ <b>Before You Go</b> (free, when an enemy grabbed by tanris escapes, at-will) ✦ <b>Weapon</b></p><p>Targets the escaping enemy; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Before You Go&lt;/b&gt; (free, when an enemy grabbed by tanris escapes, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the escaping enemy; &lt;u&gt;+17 vs AC&lt;/u&gt;; 2d4+5 damage. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Before You Go&lt;/b&gt; (free, when an enemy grabbed by tanris escapes, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the escaping enemy; +17 vs AC; 2d4+5 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rising Storm&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +14 vs Reflex; 2d10 lightning damage. Effect: Tanris gains fly 6 until the end of his next turn. &lt;/p&gt;]] ᗕ <b>Rising Storm</b> (minor, encounter) ✦ <b>Lightning</b></p><p>Close burst 2; [[/roll 1d20+14[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rising Storm&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+14 vs Reflex&lt;/u&gt;; 2d10 lightning damage. Effect: Tanris gains fly 6 until the end of his next turn. &lt;/p&gt;]]; [[/roll 2d10 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rising Storm&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +14 vs Reflex; 2d10 lightning damage. Effect: Tanris gains fly 6 until the end of his next turn. &lt;/p&gt;]] <11> lightning damage. Effect: Tanris gains fly 6 until the end of his next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Body Shield&lt;/b&gt; (opportunity, when an enemy hits or misses tanris; must be grabbing a creature; at-will) &lt;/p&gt;&lt;p&gt;Tanris takes only half damage from the hit, and the grabbed creature takes the rest. If the attack misses and deals damage on a miss, Tanris takes no damage and the grabbed enemy takes all the damage from the attack.&lt;/p&gt;]]  <b>Body Shield</b> (opportunity, when an enemy hits or misses tanris; must be grabbing a creature; at-will) </p><p>Tanris takes only half damage from the hit, and the grabbed creature takes the rest. If the attack misses and deals damage on a miss, Tanris takes no damage and the grabbed enemy takes all the damage from the attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tanris deals 1d6 extra damage against any target granting combat advantage to him.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>Tanris deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Tanris deals 1d6 extra damage against any target granting combat advantage to him.&lt;/p&gt;]] <3.5> extra damage against any target granting combat advantage to him.</p></tr></td></table>",

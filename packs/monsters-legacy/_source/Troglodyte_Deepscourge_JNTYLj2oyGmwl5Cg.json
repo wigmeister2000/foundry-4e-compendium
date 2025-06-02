@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dizzying Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VdC3NDsjJQkWaA4O",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Troglodyte Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"XcIBZyqiuLkhGams",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -199,10 +202,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -858,23 +861,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 78; <b>Bloodied</b> 39</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 22</td><td><b>Ref</b> 21</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+5)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 12 (+5)</td><td><b>Wis</b> 11 (+4)<br><b>Cha</b> 13 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Dungeoneering +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> leather armor , staff implement .</p><p>[[/roll 0#&lt;b&gt;Dizzying Stench&lt;/b&gt; aura 10; each troglodyte within the aura gains an increase of 1 to the size of its troglodyte stench aura.]] <b>Dizzying Stench</b> aura 10; each troglodyte within the aura gains an increase of 1 to the size of its troglodyte stench aura.</p><p>[[/roll 0#&lt;b&gt;Troglodyte Stench&lt;/b&gt; aura 2; each living enemy within the aura takes a -2 penalty to attack rolls.]] <b>Troglodyte Stench</b> aura 2; each living enemy within the aura takes a -2 penalty to attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 1d4+5 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d4+5 damage. &lt;/p&gt;]]; [[/roll 1d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 1d4+5 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Debilitating Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +14 vs  or Fortitude (whichever is lower); 1d8+4 damage, and if the target is within a troglodyte stench aura, it is weakened until the end of its next turn. &lt;/p&gt;]] ➶ <b>Debilitating Ray</b> (standard, at-will) ✦ <b>Implement</b></p><p>Ranged 10; +14 vs  or Fortitude (whichever is lower); [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Debilitating Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +14 vs  or Fortitude (whichever is lower); 1d8+4 damage, and if the target is within a troglodyte stench aura, it is weakened until the end of its next turn. &lt;/p&gt;]] <8.5>  damage, and if the target is within a troglodyte stench aura, it is weakened until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Rancid Cloud&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets nonreptiles; +13 vs Fortitude; 2d6+5 damage, and the target is weakened until the end of the troglodyte deepscourge’s next turn. &lt;/p&gt;]] ✻ <b>Rancid Cloud</b> (standard, recharge ⚄⚅) </p><p>Area burst 2 within 10; targets nonreptiles; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Rancid Cloud&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets nonreptiles; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 2d6+5 damage, and the target is weakened until the end of the troglodyte deepscourge’s next turn. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Rancid Cloud&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets nonreptiles; +13 vs Fortitude; 2d6+5 damage, and the target is weakened until the end of the troglodyte deepscourge’s next turn. &lt;/p&gt;]] <12>  damage, and the target is weakened until the end of the troglodyte deepscourge’s next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blinding Stench&lt;/b&gt; (immediate reaction, when hit by an attack, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close burst 2; targets nonreptiles; +13 vs Fortitude; the target is blinded (save ends). &lt;/p&gt;]] ᗕ <b>Blinding Stench</b> (immediate reaction, when hit by an attack, recharges when first bloodied) </p><p>Close burst 2; targets nonreptiles; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blinding Stench&lt;/b&gt; (immediate reaction, when hit by an attack, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close burst 2; targets nonreptiles; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; the target is blinded (save ends). &lt;/p&gt;]]; the target is blinded (save ends). </p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Nimble Blade",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tWhYTzMwKGL1SBvk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -276,23 +278,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 18</td><td><b>Ref</b> 20</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 2, fly 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (+2)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 17 (+6)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 11 (+3)<br><b>Cha</b> 5 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Nimble Blade&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While the flying dagger has a creature grabbed, the flying dagger gains a +2 bonus to AC and Reflex.&lt;/p&gt;]]  <b>Nimble Blade</b> <b></b></p><p>While the flying dagger has a creature grabbed, the flying dagger gains a +2 bonus to AC and Reflex.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pinning Thrust&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +12 vs. AC. While the flying dagger has a creature grabbed, it can use pinning thrust only against that creature, and it hits automatically.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6 damage, and the flying dagger grabs the target (escape DC 16). Until the target is no longer grabbed by any daggers, it takes damage at the start of its turn equal to the number of flying daggers grabbing it. The target takes this damage once each turn, regardless of how many daggers are grabbing it.&lt;/p&gt;]] (⚔) <b>Pinning Thrust</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+12[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pinning Thrust&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+12 vs. AC&lt;/u&gt;. While the flying dagger has a creature grabbed, it can use pinning thrust only against that creature, and it hits automatically.&lt;/p&gt;]]. While the flying dagger has a creature grabbed, it can use pinning thrust only against that creature, and it hits automatically.</p><p><i>Hit:</i> 6 damage, and the flying dagger grabs the target (escape DC 16). Until the target is no longer grabbed by any daggers, it takes damage at the start of its turn equal to the number of flying daggers grabbing it. The target takes this damage once each turn, regardless of how many daggers are grabbing it.</p></tr></td></table>",

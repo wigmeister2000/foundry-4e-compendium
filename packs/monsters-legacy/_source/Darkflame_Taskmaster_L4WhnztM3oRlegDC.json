@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9lhx6iJTepuyWdPc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Clinging Darkflame",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jvuEFtHO9cPb0GUr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -198,10 +201,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -682,23 +685,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 330; <b>Bloodied</b> 165<br><b>Regeneration</b> 10 (if a darkflame taskmaster takes cold damage, regeneration doesn’t function until the end of its next turn)<hr><b>Resist</b> 10 fire, 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 30</td><td><b>Ref</b> 27</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+13)<br><b>Con</b> 21 (+13)</td><td><b>Dex</b> 18 (+12)<br><b>Int</b> 14 (+10)</td><td><b>Wis</b> 24 (+15)<br><b>Cha</b> 16 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><p><b>Equipment</b> chainmail , scourge .</p><p>[[/roll 0#&lt;b&gt;Clinging Darkflame&lt;/b&gt; (Fire, Necrotic) aura 5; any enemy that starts its turn within the aura takes 5 fire and necrotic damage.]] <b>Clinging Darkflame</b> (Fire, Necrotic) aura 5; any enemy that starts its turn within the aura takes 5 fire and necrotic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scourge&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d8+4 damage. &lt;/p&gt;]] (⚔) <b>Scourge</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scourge&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 1d8+4 damage. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scourge&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 1d8+4 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Burning Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +20 vs Reflex; the target takes ongoing 5 fire damage and a -2 penalty to all defenses (save ends both). &lt;/p&gt;]] ➶ <b>Burning Despair</b> (standard, at-will) ✦ <b>Fear, Fire</b></p><p>Ranged 5; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Burning Despair&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; the target takes ongoing 5 fire damage and a -2 penalty to all defenses (save ends both). &lt;/p&gt;]]; the target takes ongoing 5 fire damage and a -2 penalty to all defenses (save ends both). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummy\"s Curse&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +19 vs Will; the target contracts mummy rot. &lt;/p&gt;]] ᗕ <b>Mummy\"s Curse</b> ( when reduced to 0 hit points, ) ✦ <b>Disease</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+19[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mummy\"s Curse&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+19 vs Will&lt;/u&gt;; the target contracts mummy rot. &lt;/p&gt;]]; the target contracts mummy rot. </p></tr></td></table>",

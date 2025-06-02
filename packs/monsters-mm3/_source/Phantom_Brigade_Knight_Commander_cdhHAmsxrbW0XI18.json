@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"j67KIildrGoevBRL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Unrelenting Brigade",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"O7XZMvwUijBJ0Cxf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -865,23 +868,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 96; <b>Bloodied</b> 48<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 27</td><td><b>Ref</b> 24</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6; phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 17 (+10)</td><td><b>Dex</b> 17 (+10)<br><b>Int</b> 19 (+11)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 20 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Lawful Good</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The knight-commander takes only half damage from any damage source, except force damage.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>The knight-commander takes only half damage from any damage source, except force damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unrelenting Brigade&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever an ally who also has this trait drops to 0 hit points within 5 squares of the knight-commander, the knight-commander gains a +2 power bonus to attack rolls until the end of its next turn.&lt;/p&gt;]]  <b>Unrelenting Brigade</b> <b></b></p><p>Whenever an ally who also has this trait drops to 0 hit points within 5 squares of the knight-commander, the knight-commander gains a +2 power bonus to attack rolls until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Keening Soulbound Backsword&lt;/b&gt; (psychic, thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 12 psychic and thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The target is marked until the end of the knight-commander’s next turn.&lt;/p&gt;]] (⚔) <b>Keening Soulbound Backsword</b> (psychic, thunder, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Keening Soulbound Backsword&lt;/b&gt; (psychic, thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Keening Soulbound Backsword&lt;/b&gt; (psychic, thunder, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 12 psychic and thunder damage.&lt;/p&gt;]] <22.5>  psychic and thunder damage.</p><p><i>Effect:</i> The target is marked until the end of the knight-commander’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Soul Strike&lt;/b&gt; (psychic, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 15 psychic damage, and the knight-commander gains 10 temporary hit points.&lt;/p&gt;]] ⚔ <b>Soul Strike</b> (psychic, weapon) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Soul Strike&lt;/b&gt; (psychic, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 15#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Soul Strike&lt;/b&gt; (psychic, weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 15 psychic damage, and the knight-commander gains 10 temporary hit points.&lt;/p&gt;]] <33>  psychic damage, and the knight-commander gains 10 temporary hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Oath of Nerath&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); +17 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 6 psychic damage.&lt;/p&gt;]] ᗕ <b>Oath of Nerath</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 1 (enemies in the burst); [[/roll 1d20+17[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Oath of Nerath&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); &lt;u&gt;+17 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Oath of Nerath&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 6 psychic damage.&lt;/p&gt;]] <17>  psychic damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Call to Arms&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy marked by the knight-commander and within 2 squares of it uses an attack power that doesn’t include it as a target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Close burst 5 (one ally in the burst). The target can take a free action to shift up to 3 squares and make a melee basic attack against the triggering enemy.&lt;/p&gt;]]  <b>Call to Arms</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy marked by the knight-commander and within 2 squares of it uses an attack power that doesn’t include it as a target.</p><p><i>Effect (Immediate Reaction):</i> Close burst 5 (one ally in the burst). The target can take a free action to shift up to 3 squares and make a melee basic attack against the triggering enemy.</p></tr></td></table>",

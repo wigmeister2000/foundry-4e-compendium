@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1128,23 +1130,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 71; <b>Bloodied</b> 35<b>; Surge</b> 17</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 23</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (+4)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 11 (+5)<br><b>Int</b> 16 (+8)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 12 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Good</td></tr><tr><td><b>Skills</b> Arcana +16, History +16, Nature +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> robes, staff implement .</p><p>[[/roll 0#&lt;b&gt;Healing Surges&lt;/b&gt; 9]] <b>Healing Surges</b> 9</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 damage.&lt;/p&gt;]] (⚔) <b>Staff</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 damage.&lt;/p&gt;]] <7.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (force, implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Ranged 20 (one creature).  The target takes 10 force damage.&lt;/p&gt;]] (➶) <b>Magic Missile</b> (force, implement) ✦ <b>At-Will</b></p><p><i>Effect:</i> Ranged 20 (one creature).  The target takes 10 force damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Bolt&lt;/b&gt; (implement, lightning) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +14 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 lightning damage, and Ramne makes a secondary attack against two creatures within 10 squares of the target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; +16 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 8 lightning damage.&lt;/p&gt;]] ➶ <b>Lightning Bolt</b> (implement, lightning) ✦ <b>Encounter</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+14[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Bolt&lt;/b&gt; (implement, lightning) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+14 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Bolt&lt;/b&gt; (implement, lightning) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 lightning damage, and Ramne makes a secondary attack against two creatures within 10 squares of the target.&lt;/p&gt;]] <15>  lightning damage, and Ramne makes a secondary attack against two creatures within 10 squares of the target.</p><p><i>Secondary Attack:</i> [[/roll 1d20+16[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Bolt&lt;/b&gt; (implement, lightning) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; &lt;u&gt;+16 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Bolt&lt;/b&gt; (implement, lightning) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 8 lightning damage.&lt;/p&gt;]] <11.5>  lightning damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Protective Globe&lt;/b&gt; (zone) ✦ &lt;b&gt;Daily&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 1 (creatures in the burst). The burst creates a zone that lasts until the end of Ramne’s next turn. Allies gain a +2 power bonus to all defenses against attacks that originate outside the zone while they are within the zone. The zone moves with Ramne.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; The zone persists.&lt;/p&gt;]] ᗕ <b>Protective Globe</b> (zone) ✦ <b>Daily</b></p><p><i>Effect:</i> Close burst 1 (creatures in the burst). The burst creates a zone that lasts until the end of Ramne’s next turn. Allies gain a +2 power bonus to all defenses against attacks that originate outside the zone while they are within the zone. The zone moves with Ramne.</p><p><i>Sustain Minor:</i> The zone persists.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Freeing Word&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Choose one ally within 5 squares of Ramne that is dazed, dominated, immobilized, slowed, or stunned. That ally immediately makes a saving throw against one of these conditions. Ramne can use this power twice per encounter, but only once per turn.&lt;/p&gt;]]  <b>Freeing Word</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> Choose one ally within 5 squares of Ramne that is dazed, dominated, immobilized, slowed, or stunned. That ally immediately makes a saving throw against one of these conditions. Ramne can use this power twice per encounter, but only once per turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shroud of Invisibility&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Ramne is hit by an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Ramne becomes invisible until the end of his next turn. In addition, he shifts up to 3 squares.&lt;/p&gt;]]  <b>Shroud of Invisibility</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> Ramne is hit by an attack.</p><p><i>Effect (Immediate Reaction):</i> Ramne becomes invisible until the end of his next turn. In addition, he shifts up to 3 squares.</p></tr></td></table>",

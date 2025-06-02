@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -771,23 +772,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 398; <b>Bloodied</b> 199<hr><b>Immune</b> fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 34</td><td><b>Ref</b> 31</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+19)<br><b>Con</b> 23 (+16)</td><td><b>Dex</b> 23 (+16)<br><b>Int</b> 10 (+10)</td><td><b>Wis</b> 23 (+16)<br><b>Cha</b> 21 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Primordial<br><b>Alignment</b> evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> greatsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Greatsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +26 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 9 fire damage, and the titan pushes the target up to 2 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The titan marks the target until the end of the titan’s next turn.&lt;/p&gt;]] (⚔) <b>Fiery Greatsword</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+26[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Greatsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+26 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Greatsword&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 9 fire damage, and the titan pushes the target up to 2 squares.&lt;/p&gt;]] <30>  fire damage, and the titan pushes the target up to 2 squares.</p><p><i>Effect:</i> The titan marks the target until the end of the titan’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The titan uses fiery greatsword twice.&lt;/p&gt;]] ⚔ <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The titan uses fiery greatsword twice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Hurl Lava&lt;/b&gt; (fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +24 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 15 fire damage, and the target is immobilized until the end of the titan’s next turn. If the target is flying, it falls.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the target is slowed until the end of the titan’s next turn.&lt;/p&gt;]] ➶ <b>Hurl Lava</b> (fire) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Hurl Lava&lt;/b&gt; (fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+24 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d6 + 15#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Hurl Lava&lt;/b&gt; (fire) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 15 fire damage, and the target is immobilized until the end of the titan’s next turn. If the target is flying, it falls.&lt;/p&gt;]] <36>  fire damage, and the target is immobilized until the end of the titan’s next turn. If the target is flying, it falls.</p><p><i>Miss:</i> Half damage, and the target is slowed until the end of the titan’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burning Wave&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (creatures in the burst); +24 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 fire damage, and ongoing 10 fire damage (save ends).&lt;/p&gt;]] ᗕ <b>Burning Wave</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 5 (creatures in the burst); [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burning Wave&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 5 (creatures in the burst); &lt;u&gt;+24 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Burning Wave&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 fire damage, and ongoing 10 fire damage (save ends).&lt;/p&gt;]] <12>  fire damage, and ongoing 10 fire damage (save ends).</p></tr></td></table>",

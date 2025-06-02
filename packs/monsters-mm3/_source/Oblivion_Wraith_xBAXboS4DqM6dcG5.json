@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Nihil",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"f0EJ8SK9gj4cdwhq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ifcNlnUzpB9but1Z",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LkpnIV9UBfRmcaiW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Spawn Wraith",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pc5afrCVANgGKEBJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -245,7 +249,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -954,23 +959,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 116; <b>Bloodied</b> 58<hr><b>Resist</b> 15 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 25</td><td><b>Ref</b> 27</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 0, fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+12)<br><b>Con</b> 16 (+10)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 10 (+7)</td><td><b>Wis</b> 10 (+7)<br><b>Cha</b> 18 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Nihil&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn in the aura takes 10 necrotic damage and cannot spend a healing surge until the start of its next turn.&lt;/p&gt;]] ⌀ <b>Nihil</b> (necrotic) ✦ <b>Aura</b> 2</p><p>Any enemy that starts its turn in the aura takes 10 necrotic damage and cannot spend a healing surge until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wraith takes half damage from any damage source.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>The wraith takes half damage from any damage source.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wraith regains 10 hit points whenever it starts its turn and has at least 1 hit point. Whenever the wraith takes radiant damage, its regeneration doesn’t function until the end of its next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>The wraith regains 10 hit points whenever it starts its turn and has at least 1 hit point. Whenever the wraith takes radiant damage, its regeneration doesn’t function until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spawn Wraith&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the wraith kills a humanoid, that humanoid becomes a wraith at the start of this wraith’s next turn. The new wraith appears in the space where the humanoid died or in the nearest unoccupied square, and it rolls a new initiative check. The new wraith acts under the Dungeon Master’s control.&lt;/p&gt;]]  <b>Spawn Wraith</b> <b></b></p><p>When the wraith kills a humanoid, that humanoid becomes a wraith at the start of this wraith’s next turn. The new wraith appears in the space where the humanoid died or in the nearest unoccupied square, and it rolls a new initiative check. The new wraith acts under the Dungeon Master’s control.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Nihil Strike&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 8 necrotic damage, and the wraith is invisible to the target until the end of the wraith’s next turn.&lt;/p&gt;]] (⚔) <b>Nihil Strike</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Nihil Strike&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d12 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Nihil Strike&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 8 necrotic damage, and the wraith is invisible to the target until the end of the wraith’s next turn.&lt;/p&gt;]] <27.5>  necrotic damage, and the wraith is invisible to the target until the end of the wraith’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Obliviate&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 4 necrotic damage, and the target takes ongoing 15 necrotic damage and a -2 penalty to saving throws (save ends both).&lt;/p&gt;]] ⚔ <b>Obliviate</b> (necrotic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Obliviate&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d12 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Obliviate&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 4 necrotic damage, and the target takes ongoing 15 necrotic damage and a -2 penalty to saving throws (save ends both).&lt;/p&gt;]] <23.5>  necrotic damage, and the target takes ongoing 15 necrotic damage and a -2 penalty to saving throws (save ends both).</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Glide&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The wraith shifts up to 6 squares.&lt;/p&gt;]]  <b>Shadow Glide</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The wraith shifts up to 6 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Death Blast&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The wraith drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close blast 3 (enemies in the blast); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target loses two healing surges.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; The target loses one healing surge.&lt;/p&gt;]] ᗕ <b>Death Blast</b> (necrotic) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The wraith drops to 0 hit points.</p><p><i>Attack (Immediate Reaction):</i> Close blast 3 (enemies in the blast); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Death Blast&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close blast 3 (enemies in the blast); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target loses two healing surges.</p><p><i>Miss:</i> The target loses one healing surge.</p></tr></td></table>",

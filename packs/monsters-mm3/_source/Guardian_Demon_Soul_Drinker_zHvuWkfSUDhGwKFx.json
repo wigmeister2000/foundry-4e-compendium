@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Soul Drinker's Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AsNZD2iR3PYyzfqa",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5BIL3fTiK2JRGSyD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1025,7 +1028,7 @@
 				"uses":{
 					"value":3,
 					"max":"3",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -1217,23 +1220,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 241; <b>Bloodied</b> 120<hr><b>Immune</b> sleep, stun </td><td style=\"padding-left: 15px;\"><b>Init</b> +23</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 39</td><td><b>Ref</b> 37</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+23)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 27 (+21)<br><b>Int</b> 19 (+17)</td><td><b>Wis</b> 26 (+21)<br><b>Cha</b> 12 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +28, Intimidate +19</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Soul Drinker’s Presence&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that ends its turn within the aura is marked until the end of the soul drinker’s next turn.&lt;/p&gt;]] ⌀ <b>Soul Drinker’s Presence</b> ✦ <b>Aura</b> 1</p><p>Any enemy that ends its turn within the aura is marked until the end of the soul drinker’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the soul drinker.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the soul drinker.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The soul drinker must not have two creatures grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +31 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 7 damage.&lt;/p&gt;]] (⚔) <b>Tentacle</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The soul drinker must not have two creatures grabbed.</p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+31[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+31 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 7 damage.&lt;/p&gt;]] <34>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Seize&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The soul drinker must not have two creatures grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +31 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 7 damage, and the soul drinker pulls the target 1 square. If the target ends that movement adjacent to the soul drinker, the soul drinker grabs the target. The target takes a -4 penalty to attempts to escape the grab.&lt;/p&gt;]] ⚔ <b>Tentacle Seize</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The soul drinker must not have two creatures grabbed.</p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+31[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Seize&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+31 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Seize&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 7 damage, and the soul drinker pulls the target 1 square. If the target ends that movement adjacent to the soul drinker, the soul drinker grabs the target. The target takes a -4 penalty to attempts to escape the grab.&lt;/p&gt;]] <34>  damage, and the soul drinker pulls the target 1 square. If the target ends that movement adjacent to the soul drinker, the soul drinker grabs the target. The target takes a -4 penalty to attempts to escape the grab.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearsome Gaze&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +29 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 12 psychic damage, and the target is pulled 4 squares and immobilized (save ends).&lt;/p&gt;]] ᗕ <b>Fearsome Gaze</b> (fear, psychic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+29[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearsome Gaze&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+29 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fearsome Gaze&lt;/b&gt; (fear, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 12 psychic damage, and the target is pulled 4 squares and immobilized (save ends).&lt;/p&gt;]] <34>  psychic damage, and the target is pulled 4 squares and immobilized (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tentacle Drain&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The soul drinker must be bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The soul drinker sustains a grab. The grabbed creature takes 2d8 + 8 necrotic damage, and the soul drinker can make a saving throw against one effect that a save can end.&lt;/p&gt;]]  <b>Tentacle Drain</b> (necrotic) ✦ <b>At-Will</b> (1/round)</p><p><i>Requirement:</i> The soul drinker must be bloodied.</p><p><i>Effect:</i> The soul drinker sustains a grab. The grabbed creature takes [[/roll 2d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tentacle Drain&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The soul drinker sustains a grab. The grabbed creature takes 2d8 + 8 necrotic damage, and the soul drinker can make a saving throw against one effect that a save can end.&lt;/p&gt;]] <17>  necrotic damage, and the soul drinker can make a saving throw against one effect that a save can end.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Soul-Drain Parry&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The soul drinker must be bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A creature marked by the soul drinker makes an attack that does not include the soul drinker.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 2 (the triggering creature); +29 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target loses a healing surge, and the soul drinker gains 1 action point. The soul drinker can have only 1 action point at a time.&lt;/p&gt;]] ⚔ <b>Soul-Drain Parry</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The soul drinker must be bloodied.</p><p><i>Trigger:</i> A creature marked by the soul drinker makes an attack that does not include the soul drinker.</p><p><i>Attack (Immediate Reaction):</i> Melee 2 (the triggering creature); [[/roll 1d20+29[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Soul-Drain Parry&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 2 (the triggering creature); &lt;u&gt;+29 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target loses a healing surge, and the soul drinker gains 1 action point. The soul drinker can have only 1 action point at a time.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;3/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The soul drinker takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The soul drinker gains resist 10 to the triggering damage type until the end of the encounter or until it uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>3/Encounter</b></p><p><i>Trigger:</i> The soul drinker takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The soul drinker gains resist 10 to the triggering damage type until the end of the encounter or until it uses variable resistance again.</p></tr></td></table>",

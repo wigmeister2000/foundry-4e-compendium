@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -950,23 +952,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 160; <b>Bloodied</b> 80<hr><b>Resist</b> insubstantial </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 24</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (+4)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 20 (+10)</td><td><b>Wis</b> 21 (+10)<br><b>Cha</b> 16 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> History +17, Insight +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 1<br><b>Passive</b> Perception 20 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disincarnate Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 2d4+5 psychic and radiant damage, and the target cannot make opportunity attacks against the deva disincarnate until the end of the deva disincarnate’s next turn. &lt;/p&gt;]] (⚔) <b>Disincarnate Touch</b> (standard, at-will) ✦ <b>Psychic, Radiant</b></p><p>[[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disincarnate Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs Reflex&lt;/u&gt;; 2d4+5 psychic and radiant damage, and the target cannot make opportunity attacks against the deva disincarnate until the end of the deva disincarnate’s next turn. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disincarnate Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 2d4+5 psychic and radiant damage, and the target cannot make opportunity attacks against the deva disincarnate until the end of the deva disincarnate’s next turn. &lt;/p&gt;]] <10>  psychic and radiant damage, and the target cannot make opportunity attacks against the deva disincarnate until the end of the deva disincarnate’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Roots&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +15 vs Will; 1d8+5 lightning and radiant damage, and the target is slowed until the end of the deva disincarnate’s next turn. &lt;/p&gt;]] (➶) <b>Spirit Roots</b> (standard, at-will) ✦ <b>Lightning, Radiant</b></p><p>Ranged 10; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Roots&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+15 vs Will&lt;/u&gt;; 1d8+5 lightning and radiant damage, and the target is slowed until the end of the deva disincarnate’s next turn. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Roots&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +15 vs Will; 1d8+5 lightning and radiant damage, and the target is slowed until the end of the deva disincarnate’s next turn. &lt;/p&gt;]] <9.5>  lightning and radiant damage, and the target is slowed until the end of the deva disincarnate’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔➶ &lt;b&gt;Disincarnate Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The deva disincarnate makes two basic attacks, or it shifts 3 squares and makes one basic attack before or after shifting.&lt;/p&gt;]] ⚔➶ <b>Disincarnate Fury</b> (standard, at-will) </p><p>The deva disincarnate makes two basic attacks, or it shifts 3 squares and makes one basic attack before or after shifting.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Wave&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +14 vs Fortitude; 3d6+5 psychic damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] ᗕ <b>Psychic Wave</b> (standard, recharge ⚃⚄⚅) ✦ <b>Psychic</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+14[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Wave&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+14 vs Fortitude&lt;/u&gt;; 3d6+5 psychic damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]]; [[/roll 3d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Wave&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +14 vs Fortitude; 3d6+5 psychic damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] <15.5>  psychic damage, and the target is pushed 3 squares and knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Salient Memory&lt;/b&gt; ( when the deva disincarnate would fail an attack roll, saving throw, or check; recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Add 1d6 to the triggering roll.&lt;/p&gt;]]  <b>Salient Memory</b> ( when the deva disincarnate would fail an attack roll, saving throw, or check; recharges when first bloodied) </p><p>Add [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Salient Memory&lt;/b&gt; ( when the deva disincarnate would fail an attack roll, saving throw, or check; recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Add 1d6 to the triggering roll.&lt;/p&gt;]] <3.5> to the triggering roll.</p></tr></td></table>",

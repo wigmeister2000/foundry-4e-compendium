@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -766,23 +767,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 71; <b>Bloodied</b> 35</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 18</td><td><b>Ref</b> 17</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+6)<br><b>Con</b> 15 (+5)</td><td><b>Dex</b> 15 (+5)<br><b>Int</b> 10 (+3)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 18 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +11, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> iron-shod boots, chainmail , light shield , short sword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 damage, and ongoing 5 damage (save ends).&lt;/p&gt;]] (⚔) <b>Short Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 damage, and ongoing 5 damage (save ends).&lt;/p&gt;]] <9.5>  damage, and ongoing 5 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mark of Thorns&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 5 (one enemy in the burst); until the end of the encounter or the thorn dies, the target cannot make opportunity attacks against the thorn, and the target takes 5 damage at the end of any of its turns during which it did not attack the thorn. In addition, at the start of the target’s turn, each of the target’s allies adjacent to the target takes 5 damage.&lt;/p&gt;]] ᗕ <b>Mark of Thorns</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> Close burst 5 (one enemy in the burst); until the end of the encounter or the thorn dies, the target cannot make opportunity attacks against the thorn, and the target takes 5 damage at the end of any of its turns during which it did not attack the thorn. In addition, at the start of the target’s turn, each of the target’s allies adjacent to the target takes 5 damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Drowsing Puncture&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; If the thorn hits with its next short sword attack, the target is also dazed until the end of the thorn’s next turn and falls prone.&lt;/p&gt;]]  <b>Drowsing Puncture</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> If the thorn hits with its next short sword attack, the target is also dazed until the end of the thorn’s next turn and falls prone.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Redcap Zeal&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The thorn bloodies an enemy or reduces an enemy to 0 hit points or fewer.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The thorn gains 1d8 + 2 temporary hit points.&lt;/p&gt;]]  <b>Redcap Zeal</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The thorn bloodies an enemy or reduces an enemy to 0 hit points or fewer.</p><p><i>Effect (No Action):</i> The thorn gains [[/roll 1d8 + 2#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Redcap Zeal&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The thorn gains 1d8 + 2 temporary hit points.&lt;/p&gt;]] <6.5>  temporary hit points.</p></tr></td></table>",

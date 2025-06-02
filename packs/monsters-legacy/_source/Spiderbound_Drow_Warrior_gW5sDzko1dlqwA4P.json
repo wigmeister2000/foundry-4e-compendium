@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -766,23 +767,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 128; <b>Bloodied</b> 64<hr><b>Resist</b> 10 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 26</td><td><b>Ref</b> 25</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+13)<br><b>Con</b> 16 (+9)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 14 (+8)</td><td><b>Wis</b> 12 (+7)<br><b>Cha</b> 14 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +10, Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> spider shield, chainmail , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 2d8+6 damage, and the target is slowed until the end of the spiderbound drow warrior\"s next turn. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs AC&lt;/u&gt;; 2d8+6 damage, and the target is slowed until the end of the spiderbound drow warrior\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs AC; 2d8+6 damage, and the target is slowed until the end of the spiderbound drow warrior\"s next turn. &lt;/p&gt;]] <15>  damage, and the target is slowed until the end of the spiderbound drow warrior\"s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Reflex; until the end of the warrior’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]] ➶ <b>Darkfire</b> (minor, encounter) </p><p>Ranged 10; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; until the end of the warrior’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. &lt;/p&gt;]]; until the end of the warrior’s next turn, the target grants combat advantage to all attackers, and the target cannot benefit from invisibility or concealment. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Spider Shield&lt;/b&gt; (minor; recharge ⚅) &lt;/p&gt;&lt;p&gt;The warrior’s shield turns into a spider shield minion, which appears in an adjacent square. The warrior takes a -4 penalty to AC and Reflex. The minion can take one standard, move, and minor action on its turn as normal, but it acts on the warrior’s initiative and must be directed. When the minion is destroyed, the shield returns to the warrior. This power cannot recharge while that warrior’s spider minion is active.&lt;/p&gt;]]  <b>Spider Shield</b> (minor; recharge ⚅) </p><p>The warrior’s shield turns into a spider shield minion, which appears in an adjacent square. The warrior takes a -4 penalty to AC and Reflex. The minion can take one standard, move, and minor action on its turn as normal, but it acts on the warrior’s initiative and must be directed. When the minion is destroyed, the shield returns to the warrior. This power cannot recharge while that warrior’s spider minion is active.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Surrounding Webs&lt;/b&gt; (immediate reaction, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;Close burst 2; all squares in the burst become difficult terrain for enemies until the end of the encounter.&lt;/p&gt;]] ᗕ <b>Surrounding Webs</b> (immediate reaction, when first bloodied, encounter) </p><p>Close burst 2; all squares in the burst become difficult terrain for enemies until the end of the encounter.</p></tr></td></table>",

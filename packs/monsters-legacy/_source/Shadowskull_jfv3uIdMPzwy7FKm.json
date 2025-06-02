@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"olvnZKs8CxbIk2HJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -812,23 +814,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 64; <b>Bloodied</b> 32<br><b>Regeneration</b> 5 (if the shadowskull takes radiant damage, regeneration is negated until the end of its next turn)<hr><b>Resist</b> 5 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 17</td><td><b>Ref</b> 21</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 4 (0)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 18 (+7)<br><b>Int</b> 12 (+4)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 20 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite to the Bone&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 0; +9 vs AC; 1d4 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] (⚔) <b>Bite to the Bone</b> (standard, at-will) </p><p>Reach 0; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite to the Bone&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 0; &lt;u&gt;+9 vs AC&lt;/u&gt;; 1d4 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite to the Bone&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 0; +9 vs AC; 1d4 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] <2.5> damage, and ongoing 5 damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ghost Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 1d10 + 5 necrotic damage, and the target treats the shadowskull as insubstantial until the end of its next turn.. &lt;/p&gt;]] ➶ <b>Ghost Ray</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ghost Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Will&lt;/u&gt;; 1d10 + 5 necrotic damage, and the target treats the shadowskull as insubstantial until the end of its next turn.. &lt;/p&gt;]]; [[/roll 1d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Ghost Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 1d10 + 5 necrotic damage, and the target treats the shadowskull as insubstantial until the end of its next turn.. &lt;/p&gt;]] <10.5>  necrotic damage, and the target treats the shadowskull as insubstantial until the end of its next turn.. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Grave Strands&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Fortitude; 2d8 + 5 necrotic damage, and the target is restrained until the end of the shadowskull’s next turn. Enemies adjacent to the target take 5 necrotic damage and are slowed until the end of the shadowskull’s next turn.. &lt;/p&gt;]] ➶ <b>Grave Strands</b> (standard, encounter) ✦ <b>Fear, Necrotic</b></p><p>Ranged 10; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Grave Strands&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; 2d8 + 5 necrotic damage, and the target is restrained until the end of the shadowskull’s next turn. Enemies adjacent to the target take 5 necrotic damage and are slowed until the end of the shadowskull’s next turn.. &lt;/p&gt;]]; [[/roll 2d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Grave Strands&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Fortitude; 2d8 + 5 necrotic damage, and the target is restrained until the end of the shadowskull’s next turn. Enemies adjacent to the target take 5 necrotic damage and are slowed until the end of the shadowskull’s next turn.. &lt;/p&gt;]] <14>  necrotic damage, and the target is restrained until the end of the shadowskull’s next turn. Enemies adjacent to the target take 5 necrotic damage and are slowed until the end of the shadowskull’s next turn.. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Column of Darkness&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;The shadowskull’s square is filled with darkness 4 squares high until the end of its next turn.&lt;/p&gt;]]  <b>Column of Darkness</b> (minor; encounter) </p><p>The shadowskull’s square is filled with darkness 4 squares high until the end of its next turn.</p></tr></td></table>",

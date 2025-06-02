@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Freezing Winds",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xRcv9HPYbaozJQBZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1175,23 +1178,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 252; <b>Bloodied</b> 126</td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 25</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (ice walk), fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+10)<br><b>Con</b> 22 (+12)</td><td><b>Dex</b> 23 (+12)<br><b>Int</b> 20 (+11)</td><td><b>Wis</b> 20 (+11)<br><b>Cha</b> 17 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Primordial<br><b>Alignment</b> unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Freezing Winds&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;The dragon slides any enemy that ends its turn in the aura 1 square.&lt;/p&gt;]] ⌀ <b>Freezing Winds</b> ✦ <b>Aura</b> 1</p><p>The dragon slides any enemy that ends its turn in the aura 1 square.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 cold damage, and the target is immobilized until the end of the dragon’s next turn.&lt;/p&gt;]] (⚔) <b>Bite</b> (cold) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 cold damage, and the target is immobilized until the end of the dragon’s next turn.&lt;/p&gt;]] <15>  cold damage, and the target is immobilized until the end of the dragon’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 cold damage, and the dragon slides the target 2 squares.&lt;/p&gt;]] (⚔) <b>Claw</b> (cold) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (cold) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 cold damage, and the dragon slides the target 2 squares.&lt;/p&gt;]] <20.5>  cold damage, and the dragon slides the target 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The dragon uses bite and claw or uses claw twice.&lt;/p&gt;]] ⚔ <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The dragon uses bite and claw or uses claw twice.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rising Winds&lt;/b&gt; (cold) ✦ &lt;b&gt;Recharge&lt;/b&gt; at the start of any turn when freezing winds is aura 1&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The freezing winds expands to aura 3. At the start of the dragon’s next turn, the freezing winds expands to aura 5. At the start of its following turn, the dragon makes the following attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 5 (enemies in the burst); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 6 cold damage, and the target is immobilized and blinded (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The freezing winds aura reverts to its original state and size (aura 1).&lt;/p&gt;]] ᗕ <b>Rising Winds</b> (cold) ✦ <b>Recharge</b> at the start of any turn when freezing winds is aura 1</p><p><i>Effect:</i> The freezing winds expands to aura 3. At the start of the dragon’s next turn, the freezing winds expands to aura 5. At the start of its following turn, the dragon makes the following attack.</p><p><i>Attack (No Action):</i> Close burst 5 (enemies in the burst); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rising Winds&lt;/b&gt; (cold) ✦ &lt;b&gt;Recharge&lt;/b&gt; at the start of any turn when freezing winds is aura 1&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 5 (enemies in the burst); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rising Winds&lt;/b&gt; (cold) ✦ &lt;b&gt;Recharge&lt;/b&gt; at the start of any turn when freezing winds is aura 1&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 6 cold damage, and the target is immobilized and blinded (save ends both).&lt;/p&gt;]] <19.5>  cold damage, and the target is immobilized and blinded (save ends both).</p><p><i>Effect:</i> The freezing winds aura reverts to its original state and size (aura 1).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chill Rebuke&lt;/b&gt; (cold) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy’s melee attack deals damage to the dragon.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close blast 5 (enemies in the blast); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 9 cold damage, and the target is slowed (save ends).&lt;/p&gt;]] ᗕ <b>Chill Rebuke</b> (cold) ✦ <b>Recharge</b> when first bloodied</p><p><i>Trigger:</i> An enemy’s melee attack deals damage to the dragon.</p><p><i>Attack (Immediate Reaction):</i> Close blast 5 (enemies in the blast); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chill Rebuke&lt;/b&gt; (cold) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d10 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chill Rebuke&lt;/b&gt; (cold) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 9 cold damage, and the target is slowed (save ends).&lt;/p&gt;]] <14.5>  cold damage, and the target is slowed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sudden Flurry&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The dragon is hit by a cold attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The dragon slides each enemy in its aura 1 square.&lt;/p&gt;]]  <b>Sudden Flurry</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The dragon is hit by a cold attack.</p><p><i>Effect (Free Action):</i> The dragon slides each enemy in its aura 1 square.</p></tr></td></table>",

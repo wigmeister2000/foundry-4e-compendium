@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -835,10 +837,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1317,23 +1319,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 262; <b>Bloodied</b> 131</td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 39</td><td><b>Ref</b> 42</td><td><b>Will</b> 44</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+16)<br><b>Con</b> 14 (+17)</td><td><b>Dex</b> 15 (+17)<br><b>Int</b> 24 (+22)</td><td><b>Wis</b> 22 (+21)<br><b>Cha</b> 13 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +27, Religion +27</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><p><b>Equipment</b> Wand, dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+27 vs AC; 3d4 + 8 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+27[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+27 vs AC&lt;/u&gt;; 3d4 + 8 damage. &lt;/p&gt;]]; [[/roll 3d4 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+27 vs AC; 3d4 + 8 damage. &lt;/p&gt;]] <15.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs AC; 4d4 + 8 force damage. &lt;/p&gt;]] (➶) <b>Magic Missile</b> (standard, at-will) ✦ <b>Force, Implement</b></p><p>Ranged 20; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+33 vs AC&lt;/u&gt;; 4d4 + 8 force damage. &lt;/p&gt;]]; [[/roll 4d4 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs AC; 4d4 + 8 force damage. &lt;/p&gt;]] <18>  force damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Force Cage&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs Reflex; 3d10 + 8 force damage, and the target is confined until the end of Edwin’s next turn. While confined, it is immobilized, grants combat advantage, and cannot gain line of effect against nonadjacent enemies. &lt;/p&gt;]] ➶ <b>Force Cage</b> (standard, encounter) ✦ <b>Arcane, Force, Implement</b></p><p>Ranged 20; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Force Cage&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 3d10 + 8 force damage, and the target is confined until the end of Edwin’s next turn. While confined, it is immobilized, grants combat advantage, and cannot gain line of effect against nonadjacent enemies. &lt;/p&gt;]]; [[/roll 3d10 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Force Cage&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs Reflex; 3d10 + 8 force damage, and the target is confined until the end of Edwin’s next turn. While confined, it is immobilized, grants combat advantage, and cannot gain line of effect against nonadjacent enemies. &lt;/p&gt;]] <24.5>  force damage, and the target is confined until the end of Edwin’s next turn. While confined, it is immobilized, grants combat advantage, and cannot gain line of effect against nonadjacent enemies. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acidic Spew&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +33 vs Reflex; 2d6 + 8 acid damage, and ongoing 10 acid damage (save ends). Miss: half damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] ᗕ <b>Acidic Spew</b> (standard, recharge ⚄⚅) ✦ <b>Acid, Implement</b></p><p>Close burst 5; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acidic Spew&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 2d6 + 8 acid damage, and ongoing 10 acid damage (save ends). Miss: half damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]]; [[/roll 2d6 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acidic Spew&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +33 vs Reflex; 2d6 + 8 acid damage, and ongoing 10 acid damage (save ends). Miss: half damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] <15>  acid damage, and ongoing 10 acid damage (save ends). Miss: half damage, and ongoing 5 acid damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Meteor Swarm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Fire, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Burst 5 within 20; +33 vs Reflex; 8d6 + 8 fire damage. Miss: half damage. &lt;/p&gt;]] ✻ <b>Meteor Swarm</b> (standard, encounter) ✦ <b>Arcane, Fire, Implement</b></p><p>Burst 5 within 20; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Meteor Swarm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Fire, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Burst 5 within 20; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 8d6 + 8 fire damage. Miss: half damage. &lt;/p&gt;]]; [[/roll 8d6 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Meteor Swarm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Fire, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Burst 5 within 20; +33 vs Reflex; 8d6 + 8 fire damage. Miss: half damage. &lt;/p&gt;]] <36>  fire damage. Miss: half damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Consume Soul&lt;/b&gt; (immediate reaction, when an ally within 5 squares of edwin is reduced to 0 hit points) &lt;/p&gt;&lt;p&gt;Edwin regains 15 hit points&lt;/p&gt;]]  <b>Consume Soul</b> (immediate reaction, when an ally within 5 squares of edwin is reduced to 0 hit points) </p><p>Edwin regains 15 hit points</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Blink Escape&lt;/b&gt; (immediate interrupt, when a ranged or melee attack hits edwin; recharge ⚅) ✦ &lt;b&gt;Arcane, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Edwin teleports 5 squares, and the attack is negated.&lt;/p&gt;]]  <b>Blink Escape</b> (immediate interrupt, when a ranged or melee attack hits edwin; recharge ⚅) ✦ <b>Arcane, Teleportation</b></p><p>Edwin teleports 5 squares, and the attack is negated.</p></tr></td></table>",

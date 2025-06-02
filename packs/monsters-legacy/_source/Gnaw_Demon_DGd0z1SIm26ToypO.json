@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Ankle Biter",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kq1S8jENPvw9D7h0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -230,7 +232,7 @@
 		},
 		{
 			"name":"Abyssal Hunger",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3WGXzkuI0DUSYfid",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -266,7 +268,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -682,23 +685,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 66; <b>Bloodied</b> 33<hr><b>Resist</b> 10 variable (1/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 19</td><td><b>Ref</b> 14</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 3, fly 5 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+4)<br><b>Con</b> 18 (+6)</td><td><b>Dex</b> 7 (0)<br><b>Int</b> 9 (+1)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 9 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +5</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Ankle Biter&lt;/b&gt; aura 1; each enemy that starts its turn within the aura takes a -2 penalty to speed until the end of its turn.]] <b>Ankle Biter</b> aura 1; each enemy that starts its turn within the aura takes a -2 penalty to speed until the end of its turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Abyssal Hunger&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A gnaw demon’s melee attacks deal 1d8 extra damage against a bloodied target.&lt;/p&gt;]]  <b>Abyssal Hunger</b></p><p>A gnaw demon’s melee attacks deal [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Abyssal Hunger&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A gnaw demon’s melee attacks deal 1d8 extra damage against a bloodied target.&lt;/p&gt;]] <4.5> extra damage against a bloodied target.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hungry Teleport&lt;/b&gt; (move; at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnaw demon teleports 10 squares into a square adjacent to a bloodied enemy.&lt;/p&gt;]]  <b>Hungry Teleport</b> (move; at-will) ✦ <b>Teleportation</b></p><p>The gnaw demon teleports 10 squares into a square adjacent to a bloodied enemy.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Pain-Induced Teleport&lt;/b&gt; (free, when first bloodied; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnaw demon teleports 10 squares.&lt;/p&gt;]]  <b>Pain-Induced Teleport</b> (free, when first bloodied; encounter) ✦ <b>Teleportation</b></p><p>The gnaw demon teleports 10 squares.</p></tr></td></table>",

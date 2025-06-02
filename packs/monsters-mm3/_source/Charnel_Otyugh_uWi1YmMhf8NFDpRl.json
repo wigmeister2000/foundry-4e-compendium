@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Otyugh Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BeLYtEfMbq50xUHp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -820,23 +822,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 212; <b>Bloodied</b> 106<hr><b>Resist</b> 5 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 27</td><td><b>Ref</b> 21</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, swim 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+11)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 11 (+5)<br><b>Int</b> 6 (+3)</td><td><b>Wis</b> 16 (+8)<br><b>Cha</b> 5 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Otyugh Stench&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Living enemies take a -2 penalty to attack rolls while in the aura.&lt;/p&gt;]] ⌀ <b>Otyugh Stench</b> ✦ <b>Aura</b> 1</p><p>Living enemies take a -2 penalty to attack rolls while in the aura.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Charnel Lash&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage, and ongoing 5 necrotic damage (save ends). The otyugh pulls the target up to 2 squares and grabs it (escape DC 18).&lt;/p&gt;]] (⚔) <b>Charnel Lash</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Charnel Lash&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Charnel Lash&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage, and ongoing 5 necrotic damage (save ends). The otyugh pulls the target up to 2 squares and grabs it (escape DC 18).&lt;/p&gt;]] <12.5>  damage, and ongoing 5 necrotic damage (save ends). The otyugh pulls the target up to 2 squares and grabs it (escape DC 18).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rotting Bite&lt;/b&gt; (disease, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 6 necrotic damage, and ongoing 5 necrotic damage (save ends). In addition, at the end of the encounter, the target makes a saving throw. On a failure, the target contracts greater otyugh filth fever (stage 1).&lt;/p&gt;]] ⚔ <b>Rotting Bite</b> (disease, necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rotting Bite&lt;/b&gt; (disease, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rotting Bite&lt;/b&gt; (disease, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 6 necrotic damage, and ongoing 5 necrotic damage (save ends). In addition, at the end of the encounter, the target makes a saving throw. On a failure, the target contracts greater otyugh filth fever (stage 1).&lt;/p&gt;]] <19>  necrotic damage, and ongoing 5 necrotic damage (save ends). In addition, at the end of the encounter, the target makes a saving throw. On a failure, the target contracts greater otyugh filth fever (stage 1).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Charnel Frenzy&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage, and ongoing 5 necrotic damage (save ends).&lt;/p&gt;]] ᗕ <b>Charnel Frenzy</b> (necrotic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Charnel Frenzy&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Charnel Frenzy&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 damage, and ongoing 5 necrotic damage (save ends).&lt;/p&gt;]] <12.5>  damage, and ongoing 5 necrotic damage (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Life Leech&lt;/b&gt; (healing, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature grabbed by the otyugh); +13 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 10 necrotic damage, and the otyugh regains 5 hit points.&lt;/p&gt;]] ⚔ <b>Life Leech</b> (healing, necrotic) ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Melee 3 (one creature grabbed by the otyugh); [[/roll 1d20+13[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Life Leech&lt;/b&gt; (healing, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature grabbed by the otyugh); &lt;u&gt;+13 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 10 necrotic damage, and the otyugh regains 5 hit points.</p></tr></td></table>",

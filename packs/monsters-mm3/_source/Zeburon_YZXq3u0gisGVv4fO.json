@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Bloody Violence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8WkGCXJIz1lt3VT2",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 246; <b>Bloodied</b> 123<hr><b>Resist</b> 10 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+12)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 17 (+9)<br><b>Int</b> 12 (+7)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 19 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +17, Endurance +15, Intimidate +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> sword, iron helm</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloody Violence&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Zeburon’s melee attacks and weapon attacks deal 3d6 extra damage against bloodied creatures.&lt;/p&gt;]]  <b>Bloody Violence</b> <b></b></p><p>Zeburon’s melee attacks and weapon attacks deal [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloody Violence&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Zeburon’s melee attacks and weapon attacks deal 3d6 extra damage against bloodied creatures.&lt;/p&gt;]] <10.5> extra damage against bloodied creatures.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 9 damage.&lt;/p&gt;]] (⚔) <b>Bastard Sword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 9 damage.&lt;/p&gt;]] <20>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wild Bloodletting&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 7 damage, and the target is slowed and takes ongoing 10 damage (save ends both).&lt;/p&gt;]] ᗕ <b>Wild Bloodletting</b> (weapon) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Close burst 1 (enemies in the burst); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wild Bloodletting&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wild Bloodletting&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 7 damage, and the target is slowed and takes ongoing 10 damage (save ends both).&lt;/p&gt;]] <17.5>  damage, and the target is slowed and takes ongoing 10 damage (save ends both).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Iron Fist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 damage, and the target is immobilized until the end of Zeburon’s next turn.&lt;/p&gt;]] ⚔ <b>Iron Fist</b> ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Iron Fist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Iron Fist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 damage, and the target is immobilized until the end of Zeburon’s next turn.&lt;/p&gt;]] <20.5>  damage, and the target is immobilized until the end of Zeburon’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Zeburon gains a +1 power bonus to attack rolls and a +4 power bonus to damage rolls against any enemy that hit him since the end of his last turn. The bonus lasts until the end of Zeburon’s next turn or until he hits an enemy.&lt;/p&gt;]]  <b>Infernal Wrath</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> Zeburon gains a +1 power bonus to attack rolls and a +4 power bonus to damage rolls against any enemy that hit him since the end of his last turn. The bonus lasts until the end of Zeburon’s next turn or until he hits an enemy.</p></tr></td></table>",

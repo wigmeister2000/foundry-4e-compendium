@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -768,21 +770,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 82; <b>Bloodied</b> 41<hr><b>Immune</b> fear </td><td style=\"padding-left: 15px;\"></td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 30</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+15)<br><b>Con</b> 21 (+13)</td><td><b>Dex</b> 19 (+12)<br><b>Int</b> 7 (+6)</td><td><b>Wis</b> 21 (+13)<br><b>Cha</b> 9 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+24 vs AC; 1d10+7 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>[[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs AC&lt;/u&gt;; 1d10+7 damage. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+24 vs AC; 1d10+7 damage. &lt;/p&gt;]] <12.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Soul-Shaking Stare&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 12; +22 vs Will; 1d8+7 damage, and the target is dazed until the end of the vile host shaker\"s next turn. &lt;/p&gt;]] (➶) <b>Soul-Shaking Stare</b> (standard, at-will) ✦ <b>Fear</b></p><p>Ranged 12; [[/roll 1d20+22[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Soul-Shaking Stare&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 12; &lt;u&gt;+22 vs Will&lt;/u&gt;; 1d8+7 damage, and the target is dazed until the end of the vile host shaker\"s next turn. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Soul-Shaking Stare&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 12; +22 vs Will; 1d8+7 damage, and the target is dazed until the end of the vile host shaker\"s next turn. &lt;/p&gt;]] <11.5>  damage, and the target is dazed until the end of the vile host shaker\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Earth-Shaking Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 4; +22 vs Reflex; 1d10+7 damage, and the target is knocked prone. &lt;/p&gt;]] ᗕ <b>Earth-Shaking Slam</b> (standard, at-will) </p><p>Close burst 4; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Earth-Shaking Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 4; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 1d10+7 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Earth-Shaking Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 4; +22 vs Reflex; 1d10+7 damage, and the target is knocked prone. &lt;/p&gt;]] <12.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rend Earth&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close blast 4; +22 vs Reflex; 3d10+7 damage, and the area of the blast becomes difficult terrain. &lt;/p&gt;]] ᗕ <b>Rend Earth</b> (standard, encounter) </p><p>Close blast 4; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rend Earth&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close blast 4; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 3d10+7 damage, and the area of the blast becomes difficult terrain. &lt;/p&gt;]]; [[/roll 3d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Rend Earth&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close blast 4; +22 vs Reflex; 3d10+7 damage, and the area of the blast becomes difficult terrain. &lt;/p&gt;]] <23.5>  damage, and the area of the blast becomes difficult terrain. </p></tr></td></table>",

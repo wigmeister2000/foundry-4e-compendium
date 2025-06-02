@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qkMp3VZesdYTFLCG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -150,10 +152,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -328,10 +330,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -809,23 +811,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 85; <b>Bloodied</b> 42<br><b>Regeneration</b> 5<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+8)<br><b>Con</b> 15 (+6)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 11 (+4)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 13 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +13, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard; requires a free hand, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; 2d6+5 damage, and the target is grabbed . &lt;/p&gt;]] (⚔) <b>Claw</b> (standard; requires a free hand, at-will) </p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard; requires a free hand, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 2d6+5 damage, and the target is grabbed . &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard; requires a free hand, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC; 2d6+5 damage, and the target is grabbed . &lt;/p&gt;]] <12>  damage, and the target is grabbed . </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lacedon Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the sodden ghoul; +16 vs AC; 1d10+7 damage, and the target is dazed (save ends). &lt;/p&gt;]] ⚔ <b>Lacedon Bite</b> (standard, at-will) </p><p>Targets a creature grabbed by the sodden ghoul; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lacedon Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the sodden ghoul; &lt;u&gt;+16 vs AC&lt;/u&gt;; 1d10+7 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lacedon Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the sodden ghoul; +16 vs AC; 1d10+7 damage, and the target is dazed (save ends). &lt;/p&gt;]] <12.5>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rending Pounce&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The sodden ghoul makes two claw attacks, each at a -2 penalty to the attack roll. If both attacks hit the same target, the target  is grabbed, and it takes ongoing 5 damage (save ends).&lt;/p&gt;]] ⚔ <b>Rending Pounce</b> (standard, recharge ⚃⚄⚅) </p><p>The sodden ghoul makes two claw attacks, each at a -2 penalty to the attack roll. If both attacks hit the same target, the target  is grabbed, and it takes ongoing 5 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Dirge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +14 vs Will; the target is stunned until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Frightful Dirge</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 2; targets enemies; [[/roll 1d20+14[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Dirge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; &lt;u&gt;+14 vs Will&lt;/u&gt;; the target is stunned until the end of its next turn. &lt;/p&gt;]]; the target is stunned until the end of its next turn. </p></tr></td></table>",

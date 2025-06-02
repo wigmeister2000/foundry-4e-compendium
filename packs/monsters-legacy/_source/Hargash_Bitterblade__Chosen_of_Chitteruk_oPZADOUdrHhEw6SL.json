@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Shroud of Chitteruk",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2gv5K8lDThGmq0Qk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -997,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 126; <b>Bloodied</b> 63<hr><b>Resist</b> 5 fire, 5 poison <b>Immune</b> illusion </td><td style=\"padding-left: 15px;\"><b>Init</b> +2 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 16</td><td><b>Ref</b> 16</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+4)<br><b>Con</b> 16 (+5)</td><td><b>Dex</b> 12 (+3)<br><b>Int</b> 15 (+4)</td><td><b>Wis</b> 18 (+6)<br><b>Cha</b> 16 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Dwarven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +7, Dungeoneering +13, Nature +11, Religion +7</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> war pick .</p><p>[[/roll 0#&lt;b&gt;Shroud of Chitteruk&lt;/b&gt; aura 5; Natural beasts with an Intelligence score of 1 or any creature with the spider keyword within the aura gain a +2 bonus to attack rolls and saving throws.]] <b>Shroud of Chitteruk</b> aura 5; Natural beasts with an Intelligence score of 1 or any creature with the spider keyword within the aura gain a +2 bonus to attack rolls and saving throws.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Envenomed War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+3 damage, and Hargash makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; +9 vs Fortitude; . ongoing 5 poison damage and the target is weakened (save ends both).&lt;/p&gt;]] (⚔) <b>Envenomed War Pick</b> (standard, at-will) ✦ <b>Weapon, Poison</b></p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Envenomed War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d8+3 damage, and Hargash makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Envenomed War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+3 damage, and Hargash makes a secondary attack against the same target. &lt;/p&gt;]] <7.5>  damage, and Hargash makes a secondary attack against the same target. </p><p><i>Secondary Attack:</i> [[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Envenomed War Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; &lt;u&gt;+9 vs Fortitude&lt;/u&gt;; . ongoing 5 poison damage and the target is weakened (save ends both).&lt;/p&gt;]]; . ongoing 5 poison damage and the target is weakened (save ends both).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Web Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Reflex; 1d8+4 damage and the target is slowed (save ends). First Failed Save: The target is immobilized (save ends). &lt;/p&gt;]] ➶ <b>Web Bolt</b> (standard, at-will) </p><p>Ranged 10; [[/roll 1d20+9[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Web Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+9 vs Reflex&lt;/u&gt;; 1d8+4 damage and the target is slowed (save ends). First Failed Save: The target is immobilized (save ends). &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Web Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Reflex; 1d8+4 damage and the target is slowed (save ends). First Failed Save: The target is immobilized (save ends). &lt;/p&gt;]] <8.5>  damage and the target is slowed (save ends). First Failed Save: The target is immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Curse of Chitteruk&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Reflex; 3d6+4 poison damage and ongoing 5 poison damage (save ends). If the target is already suffering ongoing poison damage, the ongoing poison damage increases by 5 and saving throws made to end the ongoing poison damage take a -2 penalty. Curse of Chitteruk can increase the ongoing poison damage taken by a target only once, even if the target is struck multiple times by Curse of Chitteruk. &lt;/p&gt;]] ➶ <b>Curse of Chitteruk</b> (standard, recharge ⚄⚅) ✦ <b>Poison</b></p><p>Ranged 10; [[/roll 1d20+9[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Curse of Chitteruk&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+9 vs Reflex&lt;/u&gt;; 3d6+4 poison damage and ongoing 5 poison damage (save ends). If the target is already suffering ongoing poison damage, the ongoing poison damage increases by 5 and saving throws made to end the ongoing poison damage take a -2 penalty. Curse of Chitteruk can increase the ongoing poison damage taken by a target only once, even if the target is struck multiple times by Curse of Chitteruk. &lt;/p&gt;]]; [[/roll 3d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Curse of Chitteruk&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +9 vs Reflex; 3d6+4 poison damage and ongoing 5 poison damage (save ends). If the target is already suffering ongoing poison damage, the ongoing poison damage increases by 5 and saving throws made to end the ongoing poison damage take a -2 penalty. Curse of Chitteruk can increase the ongoing poison damage taken by a target only once, even if the target is struck multiple times by Curse of Chitteruk. &lt;/p&gt;]] <14.5>  poison damage and ongoing 5 poison damage (save ends). If the target is already suffering ongoing poison damage, the ongoing poison damage increases by 5 and saving throws made to end the ongoing poison damage take a -2 penalty. Curse of Chitteruk can increase the ongoing poison damage taken by a target only once, even if the target is struck multiple times by Curse of Chitteruk. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Verminous Blast&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 15; +9 vs Fortitude; 2d6+4 poison damage, and one centipede swarm appears in any unoccupied space within the burst. The centipede swarm treats Hargash as an ally and takes its turn on his initiative. The centipede swarm remains until the end of the encounter. &lt;/p&gt;]] ✻ <b>Verminous Blast</b> (standard, encounter) ✦ <b>Poison</b></p><p>Area burst 2 within 15; [[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Verminous Blast&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 15; &lt;u&gt;+9 vs Fortitude&lt;/u&gt;; 2d6+4 poison damage, and one centipede swarm appears in any unoccupied space within the burst. The centipede swarm treats Hargash as an ally and takes its turn on his initiative. The centipede swarm remains until the end of the encounter. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Verminous Blast&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 15; +9 vs Fortitude; 2d6+4 poison damage, and one centipede swarm appears in any unoccupied space within the burst. The centipede swarm treats Hargash as an ally and takes its turn on his initiative. The centipede swarm remains until the end of the encounter. &lt;/p&gt;]] <11>  poison damage, and one centipede swarm appears in any unoccupied space within the burst. The centipede swarm treats Hargash as an ally and takes its turn on his initiative. The centipede swarm remains until the end of the encounter. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Infernal Quills&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 3; +10 vs AC; 1d8+3 damage, and the target takes ongoing 2 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] ➶ <b>Infernal Quills</b> (minor, encounter) ✦ <b>Poison</b></p><p>Ranged 3; [[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Infernal Quills&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 3; &lt;u&gt;+10 vs AC&lt;/u&gt;; 1d8+3 damage, and the target takes ongoing 2 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Infernal Quills&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 3; +10 vs AC; 1d8+3 damage, and the target takes ongoing 2 poison damage and a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] <7.5>  damage, and the target takes ongoing 2 poison damage and a -2 penalty to attack rolls (save ends both). </p></tr></td></table>",

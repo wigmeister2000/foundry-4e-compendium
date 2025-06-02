@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Icefire Fog",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nMPudKoUI8ljTcpD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -594,7 +596,7 @@
 		},
 		{
 			"name":"Forgefire Unleashed",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"is0zBJxWAUgoRaVG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -630,7 +632,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -686,23 +689,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 468; <b>Bloodied</b> 234<hr><b>Resist</b> 10 cold, 10 fire <b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 34</td><td><b>Fort</b> 34</td><td><b>Ref</b> 31</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 can\"t shift</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+18)<br><b>Con</b> 24 (+17)</td><td><b>Dex</b> 7 (+8)<br><b>Int</b> 3 (+6)</td><td><b>Wis</b> 8 (+9)<br><b>Cha</b> 3 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Icefire Fog&lt;/b&gt; (Cold) aura 2; enemies treat the area within the aura as difficult terrain; see also forgefire unleashed]] <b>Icefire Fog</b> (Cold) aura 2; enemies treat the area within the aura as difficult terrain; see also forgefire unleashed</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +23 vs AC; 2d8+2 damage, and ongoing 10 cold damage (save ends). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 2; [[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+23 vs AC&lt;/u&gt;; 2d8+2 damage, and ongoing 10 cold damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +23 vs AC; 2d8+2 damage, and ongoing 10 cold damage (save ends). &lt;/p&gt;]] <11>  damage, and ongoing 10 cold damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Rimefire Sweep&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rimefire golem makes a basic attack against each adjacent enemy.&lt;/p&gt;]] ➶ <b>Rimefire Sweep</b> (standard, recharge ⚄⚅) ✦ <b>Cold</b></p><p>The rimefire golem makes a basic attack against each adjacent enemy.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rimefire golem explodes in a burst of fire and ice. Close burst 2; +22 vs Reflex; 3d8+7 fire and cold damage. In addition, the area of the burst becomes a zone that lasts until the end of the encounter. A creature that begins its turn in the zone takes 10 fire damage. &lt;/p&gt;]] ᗕ <b>Death Burst</b> ( when reduced to 0 hit points, ) ✦ <b>Cold, Fire, Zone</b></p><p>The rimefire golem explodes in a burst of fire and ice. Close burst 2; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rimefire golem explodes in a burst of fire and ice. Close burst 2; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; 3d8+7 fire and cold damage. In addition, the area of the burst becomes a zone that lasts until the end of the encounter. A creature that begins its turn in the zone takes 10 fire damage. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rimefire golem explodes in a burst of fire and ice. Close burst 2; +22 vs Reflex; 3d8+7 fire and cold damage. In addition, the area of the burst becomes a zone that lasts until the end of the encounter. A creature that begins its turn in the zone takes 10 fire damage. &lt;/p&gt;]] <20.5>  fire and cold damage. In addition, the area of the burst becomes a zone that lasts until the end of the encounter. A creature that begins its turn in the zone takes 10 fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Forgefire Unleashed&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The rimefire golem’s icefire fog aura gains the fire keyword and gains the following effect: an enemy that begins its turn in the aura takes 10 fire damage.&lt;/p&gt;]]  <b>Forgefire Unleashed</b> (while bloodied) </p><p>The rimefire golem’s icefire fog aura gains the fire keyword and gains the following effect: an enemy that begins its turn in the aura takes 10 fire damage.</p></tr></td></table>",

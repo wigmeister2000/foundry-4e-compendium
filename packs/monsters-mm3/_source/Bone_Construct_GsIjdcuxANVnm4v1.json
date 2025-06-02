@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Bone Spikes",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"dCTkRU47YuoNZOr3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Osseous Retaliation",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yaECu38VtUOjBHz6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -856,23 +859,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 92; <b>Bloodied</b> 46</td><td style=\"padding-left: 15px;\"><b>Init</b> +3 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 14</td><td><b>Fort</b> 15</td><td><b>Ref</b> 14</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (cannot shift)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 16 (+4)</td><td><b>Dex</b> 15 (+3)<br><b>Int</b> 0 (+1)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 0 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Bone Spikes&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that enters the aura takes 2 damage.&lt;/p&gt;]] ⌀ <b>Bone Spikes</b> ✦ <b>Aura</b> 1</p><p>Any enemy that enters the aura takes 2 damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Osseous Retaliation&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A creature that makes an opportunity attack against the bone construct takes 1d6 damage.&lt;/p&gt;]]  <b>Osseous Retaliation</b> <b></b></p><p>A creature that makes an opportunity attack against the bone construct takes [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Osseous Retaliation&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A creature that makes an opportunity attack against the bone construct takes 1d6 damage.&lt;/p&gt;]] <3.5> damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Spur&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +7 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;]] (⚔) <b>Bone Spur</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+7[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Spur&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+7 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Spur&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;]] <9.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Spurs&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The bone construct uses bone spur twice, making each attack against a different target. If both attacks hit, the targets are dazed until the end of the construct’s next turn.&lt;/p&gt;]] ⚔ <b>Double Spurs</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The bone construct uses bone spur twice, making each attack against a different target. If both attacks hit, the targets are dazed until the end of the construct’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bone Volley&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +5 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage, and the target is dazed (save ends).&lt;/p&gt;]] ᗕ <b>Bone Volley</b> ✦ Recharge ⚅</p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+5[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bone Volley&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+5 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bone Volley&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage, and the target is dazed (save ends).&lt;/p&gt;]] <12>  damage, and the target is dazed (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ᗕ &lt;b&gt;Bone Death&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The construct is first bloodied or drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The construct uses bone volley if the power is available; otherwise, it uses bone spur.&lt;/p&gt;]] ⚔ᗕ <b>Bone Death</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The construct is first bloodied or drops to 0 hit points.</p><p><i>Effect (Free Action):</i> The construct uses bone volley if the power is available; otherwise, it uses bone spur.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Rancid Air",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MdjwW729o6L4Hlba",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -516,10 +519,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -593,7 +596,7 @@
 		},
 		{
 			"name":"Nature's Release",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yCHlBmSjM13QvW2b",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -629,7 +632,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -685,23 +689,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 34; <b>Bloodied</b> 17</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 13</td><td><b>Ref</b> 14</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7 (swamp walk), swim 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+3)<br><b>Con</b> 10 (+1)</td><td><b>Dex</b> 18 (+5)<br><b>Int</b> 10 (+1)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 8 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +8</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> javelin  x5.</p><p>[[/roll 0#&lt;b&gt;Rancid Air&lt;/b&gt; (Poison) aura 2; each enemy that spends a healing surge within the aura is weakened until the end of its next turn.]] <b>Rancid Air</b> (Poison) aura 2; each enemy that spends a healing surge within the aura is weakened until the end of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+3 damage. &lt;/p&gt;&lt;p&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +8 vs AC; 1d6+3 damage. &lt;/p&gt;]] (⚔) <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 1d6+3 damage. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+3 damage. &lt;/p&gt;]] <6.5>  damage. </p><p>(➶) <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+8 vs AC&lt;/u&gt;; 1d6+3 damage. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +8 vs AC; 1d6+3 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spasmodic Hop&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Reliable, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Marks on the bullywug twitcher end, and it shifts 4 squares before the attack; +7 vs AC; 2d6+3 damage, and the target takes a -4 penalty to attack rolls against the twitcher until the end of the twitcher’s next turn. &lt;/p&gt;]] ⚔ <b>Spasmodic Hop</b> (standard, encounter) ✦ <b>Reliable, Weapon</b></p><p>Marks on the bullywug twitcher end, and it shifts 4 squares before the attack; [[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spasmodic Hop&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Reliable, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Marks on the bullywug twitcher end, and it shifts 4 squares before the attack; &lt;u&gt;+7 vs AC&lt;/u&gt;; 2d6+3 damage, and the target takes a -4 penalty to attack rolls against the twitcher until the end of the twitcher’s next turn. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Spasmodic Hop&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Reliable, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Marks on the bullywug twitcher end, and it shifts 4 squares before the attack; +7 vs AC; 2d6+3 damage, and the target takes a -4 penalty to attack rolls against the twitcher until the end of the twitcher’s next turn. &lt;/p&gt;]] <10>  damage, and the target takes a -4 penalty to attack rolls against the twitcher until the end of the twitcher’s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Nature\"s Release&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any attacker who scores a critical hit against a bullywug twitcher regains 4 hit points.&lt;/p&gt;]]  <b>Nature\"s Release</b>✦ <b>Healing</b></p><p>Any attacker who scores a critical hit against a bullywug twitcher regains 4 hit points.</p></tr></td></table>",

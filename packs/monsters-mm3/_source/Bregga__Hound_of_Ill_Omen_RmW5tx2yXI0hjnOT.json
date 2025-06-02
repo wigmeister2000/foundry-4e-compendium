@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Ill Omen",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"PxJVpit1k0zS5Hyb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5Xa06vY3JAwsiSr8",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1039,23 +1042,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 212; <b>Bloodied</b> 106<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 22</td><td><b>Ref</b> 23</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8; phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+9)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 22 (+11)<br><b>Int</b> 4 (+2)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 15 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Ill Omen&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any enemy that spends a healing surge while in the aura is slowed until the end of its next turn.&lt;/p&gt;]] ⌀ <b>Ill Omen</b> ✦ <b>Aura</b> 2</p><p>Any enemy that spends a healing surge while in the aura is slowed until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Bregga takes half damage from any damage source, except those that deal force damage or radiant damage. In addition, if she takes radiant damage, she loses the insubstantial trait until the end of her next turn.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>Bregga takes half damage from any damage source, except those that deal force damage or radiant damage. In addition, if she takes radiant damage, she loses the insubstantial trait until the end of her next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 damage.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 damage.&lt;/p&gt;]] <18.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 damage, and Bregga can shift up to half her speed, pulling the target with her. The target remains adjacent to Bregga during this movement.&lt;/p&gt;]] ⚔ <b>Clamping Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clamping Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 5 damage, and Bregga can shift up to half her speed, pulling the target with her. The target remains adjacent to Bregga during this movement.&lt;/p&gt;]] <18.5>  damage, and Bregga can shift up to half her speed, pulling the target with her. The target remains adjacent to Bregga during this movement.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Drag and Snap&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Bregga uses clamping bite and then bite against the same target.&lt;/p&gt;]] ⚔ <b>Drag and Snap</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Bregga uses clamping bite and then bite against the same target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Howl of Doom&lt;/b&gt; (psychic, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 11 thunder damage, and the target is cursed. Until the target is no longer cursed, it takes 3 psychic damage whenever it misses every target with an attack power. At the end of each of the target’s extended rests, it makes a DC 18 Religion check to try to end the curse.&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Check:&lt;/i&gt; The psychic damage increases to 6.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Check:&lt;/i&gt; The psychic damage increases to 9.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Third Failed Check:&lt;/i&gt; The target dies.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Howl of Doom</b> (psychic, thunder) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Howl of Doom&lt;/b&gt; (psychic, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 11#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Howl of Doom&lt;/b&gt; (psychic, thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 11 thunder damage, and the target is cursed. Until the target is no longer cursed, it takes 3 psychic damage whenever it misses every target with an attack power. At the end of each of the target’s extended rests, it makes a DC 18 Religion check to try to end the curse.&lt;/p&gt;]] <27.5>  thunder damage, and the target is cursed. Until the target is no longer cursed, it takes 3 psychic damage whenever it misses every target with an attack power. At the end of each of the target’s extended rests, it makes a DC 18 Religion check to try to end the curse.</p><p><i>First Failed Check:</i> The psychic damage increases to 6.</p><p><i>Second Failed Check:</i> The psychic damage increases to 9.</p><p><i>Third Failed Check:</i> The target dies.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Ghostly Travel&lt;/b&gt; (illusion) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Bregga becomes invisible and moves up to her speed. She remains invisible until the end of her turn.&lt;/p&gt;]]  <b>Ghostly Travel</b> (illusion) ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> Bregga becomes invisible and moves up to her speed. She remains invisible until the end of her turn.</p></tr></td></table>",

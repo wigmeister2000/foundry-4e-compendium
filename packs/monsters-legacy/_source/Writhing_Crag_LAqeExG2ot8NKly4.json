@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -896,7 +897,7 @@
 		},
 		{
 			"name":"Tentacle Grab",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9JrThuk2BVNCILg8",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -932,7 +933,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -942,7 +944,7 @@
 		},
 		{
 			"name":"Earth Glide",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Ruh0fXyA6xdcnUwQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -978,7 +980,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1212,23 +1215,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 434; <b>Bloodied</b> 217<hr><b>Resist</b> 25 variable (3/encounter) <b>Immune</b> petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 37</td><td><b>Ref</b> 31</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (earth walk), burrow 4 (tunneling), climb 6 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+20)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 20 (+16)<br><b>Int</b> 13 (+12)</td><td><b>Wis</b> 22 (+17)<br><b>Cha</b> 23 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +25, Stealth +21 (only in caves and rocky environments)</td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision,Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Reach&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; +30 vs AC; 2d6+5 damage, and the target is grabbed. &lt;/p&gt;]] (⚔) <b>Stone Reach</b> (standard, at-will) </p><p>Reach 5; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Reach&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; &lt;u&gt;+30 vs AC&lt;/u&gt;; 2d6+5 damage, and the target is grabbed. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Reach&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; +30 vs AC; 2d6+5 damage, and the target is grabbed. &lt;/p&gt;]] <12>  damage, and the target is grabbed. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Reach&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The writhing crag makes three stone reach attacks&lt;/p&gt;]] ⚔ <b>Triple Reach</b> (standard, at-will) </p><p>The writhing crag makes three stone reach attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flailing Tentacles&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 5; +30 vs AC; 3d6+9 damage, and the writhing crag slides the target 5 squares and knocks it prone. Each enemy adjacent to the target and within the writhing crag’s reach (5 squares) takes 9 damage. &lt;/p&gt;]] ⚔ <b>Flailing Tentacles</b> (standard, recharge ⚄⚅) </p><p>Reach 5; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flailing Tentacles&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 5; &lt;u&gt;+30 vs AC&lt;/u&gt;; 3d6+9 damage, and the writhing crag slides the target 5 squares and knocks it prone. Each enemy adjacent to the target and within the writhing crag’s reach (5 squares) takes 9 damage. &lt;/p&gt;]]; [[/roll 3d6+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flailing Tentacles&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 5; +30 vs AC; 3d6+9 damage, and the writhing crag slides the target 5 squares and knocks it prone. Each enemy adjacent to the target and within the writhing crag’s reach (5 squares) takes 9 damage. &lt;/p&gt;]] <19.5>  damage, and the writhing crag slides the target 5 squares and knocks it prone. Each enemy adjacent to the target and within the writhing crag’s reach (5 squares) takes 9 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stone-Melding Slam&lt;/b&gt; (standard; usable only against a target touching or adjacent to a stone surface, recharge ⚅&lt;/p&gt;&lt;p&gt;Reach 5; +28 vs Fortitude or Fortitude (whichever is lower); 3d6+9 damage, and the target is partly absorbed into the surface, causing it to become immobilized (save ends). First Failed Saving Throw: The target is restrained (save ends). Second Failed Saving Throw: The target is drawn entirely into the stone, leaving a faint imprint (no save). The target does not die but remains in stasis until it is freed from the stone. &lt;/p&gt;]] ⚔ <b>Stone-Melding Slam</b> (standard; usable only against a target touching or adjacent to a stone surface, recharge ⚅</p><p>Reach 5; [[/roll 1d20+28[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stone-Melding Slam&lt;/b&gt; (standard; usable only against a target touching or adjacent to a stone surface, recharge ⚅&lt;/p&gt;&lt;p&gt;Reach 5; &lt;u&gt;+28 vs Fortitude&lt;/u&gt; or Fortitude (whichever is lower); 3d6+9 damage, and the target is partly absorbed into the surface, causing it to become immobilized (save ends). First Failed Saving Throw: The target is restrained (save ends). Second Failed Saving Throw: The target is drawn entirely into the stone, leaving a faint imprint (no save). The target does not die but remains in stasis until it is freed from the stone. &lt;/p&gt;]] or Fortitude (whichever is lower); [[/roll 3d6+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stone-Melding Slam&lt;/b&gt; (standard; usable only against a target touching or adjacent to a stone surface, recharge ⚅&lt;/p&gt;&lt;p&gt;Reach 5; +28 vs Fortitude or Fortitude (whichever is lower); 3d6+9 damage, and the target is partly absorbed into the surface, causing it to become immobilized (save ends). First Failed Saving Throw: The target is restrained (save ends). Second Failed Saving Throw: The target is drawn entirely into the stone, leaving a faint imprint (no save). The target does not die but remains in stasis until it is freed from the stone. &lt;/p&gt;]] <19.5>  damage, and the target is partly absorbed into the surface, causing it to become immobilized (save ends). First Failed Saving Throw: The target is restrained (save ends). Second Failed Saving Throw: The target is drawn entirely into the stone, leaving a faint imprint (no save). The target does not die but remains in stasis until it is freed from the stone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Stony Body&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;A writhing crag that does not move and retracts its tentacles resembles a jagged rock formation, stalagmite, or stalactite. In this form, the writhing crag can be recognized only with a successful DC 35 Perception check.&lt;/p&gt;]]  <b>Stony Body</b> (standard; encounter) </p><p>A writhing crag that does not move and retracts its tentacles resembles a jagged rock formation, stalagmite, or stalactite. In this form, the writhing crag can be recognized only with a successful DC 35 Perception check.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Reel&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; targets a creature grabbed by the writhing crag; +28 vs Fortitude; the target is pulled 5 squares. &lt;/p&gt;]] ⚔ <b>Reel</b> (minor, at-will) </p><p>Reach 5; targets a creature grabbed by the writhing crag; [[/roll 1d20+28[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Reel&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; targets a creature grabbed by the writhing crag; &lt;u&gt;+28 vs Fortitude&lt;/u&gt;; the target is pulled 5 squares. &lt;/p&gt;]]; the target is pulled 5 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tentacle Grab&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A writhing crag can attack and grab with up to three tentacles at a time. While grabbing an enemy, it can act normally, but it can’t use that tentacle for another attack. Enemies can attack the tentacle to make the writhing crag let go of a grabbed creature; the tentacle’s defenses are the same as the crag’s. An attack that hits a tentacle does not harm the writhing crag but causes it to let go and retract the tentacle.&lt;/p&gt;]]  <b>Tentacle Grab</b></p><p>A writhing crag can attack and grab with up to three tentacles at a time. While grabbing an enemy, it can act normally, but it can’t use that tentacle for another attack. Enemies can attack the tentacle to make the writhing crag let go of a grabbed creature; the tentacle’s defenses are the same as the crag’s. An attack that hits a tentacle does not harm the writhing crag but causes it to let go and retract the tentacle.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Earth Glide&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A writhing crag can burrow through solid stone as if it were loose earth.&lt;/p&gt;]]  <b>Earth Glide</b></p><p>A writhing crag can burrow through solid stone as if it were loose earth.</p></tr></td></table>",

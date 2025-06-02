@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7G1qCZ8rXtnAw2Wj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -689,10 +692,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -870,10 +873,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":"When First Bloodied",
@@ -1173,23 +1176,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 304; <b>Bloodied</b> 152<br><b>Regeneration</b> 10<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> radiant (if Dekaraz takes radiant damage or is exposed to direct sunlight, his regeneration does not function until the end of his next turn); see also winter’s mist <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 27</td><td><b>Ref</b> 29</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4 (spider climb); see also winter\"s mist</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+13)<br><b>Con</b> 16 (+11)</td><td><b>Dex</b> 15 (+10)<br><b>Int</b> 24 (+15)</td><td><b>Wis</b> 15 (+10)<br><b>Cha</b> 22 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Elven, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +20, Bluff +19, Insight +15, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 25</td></td></tr></table><p><b>Equipment</b> robes, dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deathchill Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 4d4+5 cold damage, and the target is slowed until the end of Dekaraz’s next turn. &lt;/p&gt;]] (⚔) <b>Deathchill Dagger</b> (standard, at-will) ✦ <b>Cold, Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deathchill Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 4d4+5 cold damage, and the target is slowed until the end of Dekaraz’s next turn. &lt;/p&gt;]]; [[/roll 4d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deathchill Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 4d4+5 cold damage, and the target is slowed until the end of Dekaraz’s next turn. &lt;/p&gt;]] <15>  cold damage, and the target is slowed until the end of Dekaraz’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Sap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Reflex; Dekaraz chooses one effect from the following list. Using spirit sap does not provoke opportunity attacks.&lt;/p&gt;&lt;p&gt;Exhaust: 2d6 + 4 damage, and the target is knocked prone and cannot stand until the end of Dekaraz’s next turn.&lt;/p&gt;&lt;p&gt;Enfeeble (Necrotic): 2d6 + 4 necrotic damage, and the target is slowed and takes a -5 penalty to damage rolls until the end of Dekaraz’s next turn.&lt;/p&gt;&lt;p&gt;Milky Eye: 2d6 + 4 damage, and the target is blinded until the end of Dekaraz’s next turn.&lt;/p&gt;&lt;p&gt;Mind Scramble (Psychic): 2d6 + 5 psychic damage, and the target is dazed until the end of Dekaraz’s next turn. &lt;/p&gt;]] (➶) <b>Spirit Sap</b> (standard, at-will) ✦ <b>Varies</b></p><p>Ranged 10; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Sap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; Dekaraz chooses one effect from the following list. Using spirit sap does not provoke opportunity attacks.&lt;/p&gt;]]; Dekaraz chooses one effect from the following list. Using spirit sap does not provoke opportunity attacks.</p><p>Exhaust: [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Sap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Exhaust: 2d6 + 4 damage, and the target is knocked prone and cannot stand until the end of Dekaraz’s next turn.&lt;/p&gt;]] <11>  damage, and the target is knocked prone and cannot stand until the end of Dekaraz’s next turn.</p><p>Enfeeble (Necrotic): [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Sap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enfeeble (Necrotic): 2d6 + 4 necrotic damage, and the target is slowed and takes a -5 penalty to damage rolls until the end of Dekaraz’s next turn.&lt;/p&gt;]] <11>  necrotic damage, and the target is slowed and takes a -5 penalty to damage rolls until the end of Dekaraz’s next turn.</p><p>Milky Eye: [[/roll 2d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Sap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Milky Eye: 2d6 + 4 damage, and the target is blinded until the end of Dekaraz’s next turn.&lt;/p&gt;]] <11>  damage, and the target is blinded until the end of Dekaraz’s next turn.</p><p>Mind Scramble (Psychic): [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Sap&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Mind Scramble (Psychic): 2d6 + 5 psychic damage, and the target is dazed until the end of Dekaraz’s next turn. &lt;/p&gt;]] <12>  psychic damage, and the target is dazed until the end of Dekaraz’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee or ranged; Dekaraz makes two basic attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>Melee or ranged; Dekaraz makes two basic attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) &lt;/p&gt;&lt;p&gt;+20 vs Fortitude; 2d12+10 damage, the target is weakened (save ends), and Dekaraz’s regeneration increases to 30 until the end of his next turn. &lt;/p&gt;]] ⚔ <b>Blood Drain</b> (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) </p><p>[[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 2d12+10 damage, the target is weakened (save ends), and Dekaraz’s regeneration increases to 30 until the end of his next turn. &lt;/p&gt;]]; [[/roll 2d12+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) &lt;/p&gt;&lt;p&gt;+20 vs Fortitude; 2d12+10 damage, the target is weakened (save ends), and Dekaraz’s regeneration increases to 30 until the end of his next turn. &lt;/p&gt;]] <23>  damage, the target is weakened (save ends), and Dekaraz’s regeneration increases to 30 until the end of his next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Winter\"s Mist&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Cold, Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Dekaraz becomes Large, occupying 4 squares instead of 1, and his reach becomes 2. He gains the insubstantial and phasing qualities and a fly speed of 8. When Dekaraz moves through or comes to occupy any other creature’s space, he makes the following attack against that creature; +20 vs Fortitude; 2d6+3 cold damage, and the target is restrained (save ends). If Dekaraz takes radiant damage or is exposed to direct sunlight, he immediately reverts to his humanoid form. Otherwise, he can end the effect as a minor action. Sustain Move: The effect persists. &lt;/p&gt;]] ⚔ <b>Winter\"s Mist</b> (standard, recharges when first bloodied) ✦ <b>Cold, Polymorph</b></p><p>Dekaraz becomes Large, occupying 4 squares instead of 1, and his reach becomes 2. He gains the insubstantial and phasing qualities and a fly speed of 8. When Dekaraz moves through or comes to occupy any other creature’s space, he makes the following attack against that creature; [[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Winter\"s Mist&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Cold, Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Dekaraz becomes Large, occupying 4 squares instead of 1, and his reach becomes 2. He gains the insubstantial and phasing qualities and a fly speed of 8. When Dekaraz moves through or comes to occupy any other creature’s space, he makes the following attack against that creature; &lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 2d6+3 cold damage, and the target is restrained (save ends). If Dekaraz takes radiant damage or is exposed to direct sunlight, he immediately reverts to his humanoid form. Otherwise, he can end the effect as a minor action. Sustain Move: The effect persists. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Winter\"s Mist&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Cold, Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Dekaraz becomes Large, occupying 4 squares instead of 1, and his reach becomes 2. He gains the insubstantial and phasing qualities and a fly speed of 8. When Dekaraz moves through or comes to occupy any other creature’s space, he makes the following attack against that creature; +20 vs Fortitude; 2d6+3 cold damage, and the target is restrained (save ends). If Dekaraz takes radiant damage or is exposed to direct sunlight, he immediately reverts to his humanoid form. Otherwise, he can end the effect as a minor action. Sustain Move: The effect persists. &lt;/p&gt;]] <10>  cold damage, and the target is restrained (save ends). If Dekaraz takes radiant damage or is exposed to direct sunlight, he immediately reverts to his humanoid form. Otherwise, he can end the effect as a minor action. Sustain Move: The effect persists. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominate&lt;/b&gt; (minor, recharge 6, only when dekaraz has no creature dominated) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +20 vs Will; Will; the target is dominated (save ends). Aftereffect: The target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Dominate</b> (minor, recharge 6, only when dekaraz has no creature dominated) ✦ <b>Charm</b></p><p>Ranged 10; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominate&lt;/b&gt; (minor, recharge 6, only when dekaraz has no creature dominated) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+20 vs Will&lt;/u&gt;; Will; the target is dominated (save ends). Aftereffect: The target is dazed (save ends). &lt;/p&gt;]]; Will; the target is dominated (save ends). Aftereffect: The target is dazed (save ends). </p></tr></td></table>",

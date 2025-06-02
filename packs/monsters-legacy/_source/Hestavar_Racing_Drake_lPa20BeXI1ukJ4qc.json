@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -769,23 +770,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 217; <b>Bloodied</b> 108<hr><b>Resist</b> 15 lightning, 15 thunder </td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 35</td><td><b>Ref</b> 36</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 12</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+17)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 26 (+19)<br><b>Int</b> 4 (+8)</td><td><b>Wis</b> 22 (+17)<br><b>Cha</b> 12 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Endurance +23</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee 2; +34 vs AC; 2d10+10 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Melee 2; [[/roll 1d20+34[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee 2; &lt;u&gt;+34 vs AC&lt;/u&gt;; 2d10+10 damage. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee 2; +34 vs AC; 2d10+10 damage. &lt;/p&gt;]] <21>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flyby Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs ; 3d6+8 damage.. The Hestavar racing drake flies 10 squares and makes one melee basic attack at any point during that movement. The drake doesn’t provoke opportunity attacks when moving away from the target of the attack.&lt;/p&gt;]] ⚔ <b>Flyby Attack</b> (standard, at-will) </p><p>+26 vs ; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flyby Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs ; 3d6+8 damage.. The Hestavar racing drake flies 10 squares and makes one melee basic attack at any point during that movement. The drake doesn’t provoke opportunity attacks when moving away from the target of the attack.&lt;/p&gt;]] <18.5>  damage.. The Hestavar racing drake flies 10 squares and makes one melee basic attack at any point during that movement. The drake doesn’t provoke opportunity attacks when moving away from the target of the attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Burst&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 2; 3d8 + 8 lightning damage and the target is dazed until the end of the racing drake’s next turn.&lt;/p&gt;]] ᗕ <b>Lightning Burst</b> (standard, recharge ⚄⚅) ✦ <b>Lightning</b></p><p>Close blast 2; [[/roll 3d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Burst&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 2; 3d8 + 8 lightning damage and the target is dazed until the end of the racing drake’s next turn.&lt;/p&gt;]] <21.5>  lightning damage and the target is dazed until the end of the racing drake’s next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Lightning Leap&lt;/b&gt; (move; consumes a use of lightning burst; recharges when that power recharges) ✦ &lt;b&gt;Mount, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While mounted by a friendly rider of 23rd level or higher, the racing drake and the rider teleport 20 squares.&lt;/p&gt;]]  <b>Lightning Leap</b> (move; consumes a use of lightning burst; recharges when that power recharges) ✦ <b>Mount, Teleportation</b></p><p>While mounted by a friendly rider of 23rd level or higher, the racing drake and the rider teleport 20 squares.</p></tr></td></table>",

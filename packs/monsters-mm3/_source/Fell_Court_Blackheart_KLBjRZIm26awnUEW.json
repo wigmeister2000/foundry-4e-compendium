@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blackhearted Scoundrel",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nHXjvqEGiaV3myZ9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -288,7 +290,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -996,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 37; <b>Bloodied</b> 18<hr><b>Resist</b> 5 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+4)<br><b>Con</b> 19 (+5)</td><td><b>Dex</b> 20 (+6)<br><b>Int</b> 13 (+2)</td><td><b>Wis</b> 15 (+3)<br><b>Cha</b> 17 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +11, Bluff +9, Stealth +11, Streetwise +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> leather armor , sickle .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blackhearted Scoundrel&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the blackheart deals damage to an enemy granting combat advantage to it, that enemy cannot spend healing surges (save ends).&lt;/p&gt;]]  <b>Blackhearted Scoundrel</b> <b></b></p><p>Whenever the blackheart deals damage to an enemy granting combat advantage to it, that enemy cannot spend healing surges (save ends).</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deadly Sickle&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +7 vs. AC. The blackheart has a +1 bonus to hit a bloodied target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 7 necrotic damage.&lt;/p&gt;]] (⚔) <b>Deadly Sickle</b> (necrotic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+7[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deadly Sickle&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+7 vs. AC&lt;/u&gt;. The blackheart has a +1 bonus to hit a bloodied target.&lt;/p&gt;]]. The blackheart has a +1 bonus to hit a bloodied target.</p><p><i>Hit:</i> [[/roll 1d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Deadly Sickle&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 7 necrotic damage.&lt;/p&gt;]] <10.5>  necrotic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sly Attack&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +6 vs. Reflex. The blackheart has a +1 bonus to hit a bloodied target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 7 necrotic damage, or double damage if the blackheart started its turn in smoke form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] (⚔) <b>Sly Attack</b> (necrotic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+6[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sly Attack&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+6 vs. Reflex&lt;/u&gt;. The blackheart has a +1 bonus to hit a bloodied target.&lt;/p&gt;]]. The blackheart has a +1 bonus to hit a bloodied target.</p><p><i>Hit:</i> [[/roll 1d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sly Attack&lt;/b&gt; (necrotic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 7 necrotic damage, or double damage if the blackheart started its turn in smoke form.&lt;/p&gt;]] <10.5>  necrotic damage, or double damage if the blackheart started its turn in smoke form.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Smoke Form&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The blackheart assumes smoke form until it reverts to its normal form as a free action or until it drops to 0 hit points. While in smoke form, the blackheart cannot attack or be attacked and cannot regain hit points. Enemies can enter its space, and it can occupy the same space as another creature. It moves at full speed instead of half speed while squeezing. If the effect ends while the blackheart is occupying another creature’s space, the blackheart reverts to its normal form in the nearest unoccupied space.&lt;/p&gt;]]  <b>Smoke Form</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The blackheart assumes smoke form until it reverts to its normal form as a free action or until it drops to 0 hit points. While in smoke form, the blackheart cannot attack or be attacked and cannot regain hit points. Enemies can enter its space, and it can occupy the same space as another creature. It moves at full speed instead of half speed while squeezing. If the effect ends while the blackheart is occupying another creature’s space, the blackheart reverts to its normal form in the nearest unoccupied space.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Blood Curse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The blackheart drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; One enemy that the blackheart can see loses a healing surge.&lt;/p&gt;]]  <b>Blood Curse</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The blackheart drops to 0 hit points.</p><p><i>Effect (Free Action):</i> One enemy that the blackheart can see loses a healing surge.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (fire) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 10 squares of the blackheart hits it with an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The triggering enemy takes 1d6 + 3 fire damage.&lt;/p&gt;]]  <b>Infernal Wrath</b> (fire) ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy within 10 squares of the blackheart hits it with an attack.</p><p><i>Effect (Free Action):</i> The triggering enemy takes [[/roll 1d6 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (fire) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The triggering enemy takes 1d6 + 3 fire damage.&lt;/p&gt;]] <6.5>  fire damage.</p></tr></td></table>",

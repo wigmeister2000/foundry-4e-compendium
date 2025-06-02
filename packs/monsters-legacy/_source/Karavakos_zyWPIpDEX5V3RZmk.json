@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1088,7 +1089,7 @@
 		},
 		{
 			"name":"Deathless Echoes",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yY3DFt4BusjAmUSO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1124,7 +1125,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1312,7 +1314,7 @@
 		},
 		{
 			"name":"Bloodhunt",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tf6hQWG94yZCgUSr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1348,7 +1350,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1404,23 +1407,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 226; <b>Bloodied</b> 113<hr><b>Resist</b> 12 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 29</td><td><b>Ref</b> 32</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+7)<br><b>Con</b> 17 (+10)</td><td><b>Dex</b> 13 (+8)<br><b>Int</b> 22 (+13)</td><td><b>Wis</b> 12 (+8)<br><b>Cha</b> 17 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +18, Bluff +12, Diplomacy +15, Insight +13, Religion +18, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 23</td></td></tr></table><p><b>Equipment</b> robes, dagger , ritual book , staff implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d4 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 1d4 damage. &lt;/p&gt;]]; [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d4 damage. &lt;/p&gt;]] <2.5> damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Scorching Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10 squares; +18 vs Reflex; 1d6+11 fire damage. &lt;/p&gt;]] ✻ <b>Scorching Burst</b> (standard, at-will) ✦ <b>Fire, Implement</b></p><p>Area burst 1 within 10 squares; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Scorching Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10 squares; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 1d6+11 fire damage. &lt;/p&gt;]]; [[/roll 1d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Scorching Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10 squares; +18 vs Reflex; 1d6+11 fire damage. &lt;/p&gt;]] <14.5>  fire damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Thunderlance&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Implement, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +18 vs Fortitude; 4d6+11 thunder damage, and the target is pushed 4 squares. &lt;/p&gt;]] ᗕ <b>Thunderlance</b> (standard, encounter) ✦ <b>Implement, Thunder</b></p><p>Close blast 5; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Thunderlance&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Implement, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 4d6+11 thunder damage, and the target is pushed 4 squares. &lt;/p&gt;]]; [[/roll 4d6+11#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Thunderlance&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Implement, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +18 vs Fortitude; 4d6+11 thunder damage, and the target is pushed 4 squares. &lt;/p&gt;]] <25>  thunder damage, and the target is pushed 4 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blast of Cold&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Cold, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +20 vs Reflex; 6d6+11 cold damage, and the target is immobilized (save ends). On a miss, half damage and the target is slowed (save ends). &lt;/p&gt;]] ᗕ <b>Blast of Cold</b> (standard, encounter) ✦ <b>Arcane, Cold, Implement</b></p><p>Close blast 5; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blast of Cold&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Cold, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 6d6+11 cold damage, and the target is immobilized (save ends). On a miss, half damage and the target is slowed (save ends). &lt;/p&gt;]]; [[/roll 6d6+11#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blast of Cold&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Cold, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +20 vs Reflex; 6d6+11 cold damage, and the target is immobilized (save ends). On a miss, half damage and the target is slowed (save ends). &lt;/p&gt;]] <32>  cold damage, and the target is immobilized (save ends). On a miss, half damage and the target is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dispel Magic&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +18 vs Will; . +18 vs. the Will defense of targeted zone or conjuration. On a hit, destroy the zone or conjuration.&lt;/p&gt;]] ➶ <b>Dispel Magic</b> (standard, encounter) ✦ <b>Arcane</b></p><p>Ranged 10; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dispel Magic&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+18 vs Will&lt;/u&gt;; . +18 vs. the Will defense of targeted zone or conjuration. On a hit, destroy the zone or conjuration.&lt;/p&gt;]]; . +18 vs. the Will defense of targeted zone or conjuration. On a hit, destroy the zone or conjuration.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mind Swap&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; swap positions with a false shard.&lt;/p&gt;]]  <b>Mind Swap</b> (minor; at-will) </p><p>Ranged 10; swap positions with a false shard.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;Gain +1 one attack and +3 damage to his next attack against a foe who hit Karavakos since his last turn.&lt;/p&gt;]]  <b>Infernal Wrath</b> (minor; encounter) </p><p>Gain +1 one attack and +3 damage to his next attack against a foe who hit Karavakos since his last turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Deathless Echoes&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If at least one of the false shards on this level is alive, Karavakos cannot be reduced to fewer than 1 hit point by any means.&lt;/p&gt;]]  <b>Deathless Echoes</b></p><p>If at least one of the false shards on this level is alive, Karavakos cannot be reduced to fewer than 1 hit point by any means.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodhunt&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+1 racial bonus to attack rolls against bloodied foes.&lt;/p&gt;]]  <b>Bloodhunt</b></p><p>+1 racial bonus to attack rolls against bloodied foes.</p></tr></td></table>",

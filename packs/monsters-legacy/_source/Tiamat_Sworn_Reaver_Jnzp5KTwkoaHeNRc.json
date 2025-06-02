@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NmHtDykQIWlh6iru",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -409,7 +411,7 @@
 		},
 		{
 			"name":"Dragonborn Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gXBOJcZeS5yoq0M1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -445,7 +447,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -455,7 +458,7 @@
 		},
 		{
 			"name":"Skirmish +2d6",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7EwTf0VU8BPixdsv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -491,7 +494,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -725,23 +729,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 176; <b>Bloodied</b> 88 ; see also dragonborn fury and springing assault<br><b>Regeneration</b> 10 (only while bloodied).</td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 31</td><td><b>Ref</b> 27</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 see also springing assault</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+14)<br><b>Con</b> 24 (+16)</td><td><b>Dex</b> 14 (+11)<br><b>Int</b> 13 (+10)</td><td><b>Wis</b> 17 (+12)<br><b>Cha</b> 14 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> History +12, Intimidate +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> scale armor, heavy shield, triple-headed flail</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Triple-headed Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC;  (+24 while bloodied); 1d10 + 5 damage. &lt;/p&gt;]] (⚔) <b>Triple-headed Flail</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Triple-headed Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;;  (+24 while bloodied); 1d10 + 5 damage. &lt;/p&gt;]];  (+24 while bloodied); [[/roll 1d10 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Triple-headed Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC;  (+24 while bloodied); 1d10 + 5 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rending Strike&lt;/b&gt; (standard; requires triple-headed flail, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Tiamat-sworn reaver attacks up to three targets with its triple-headed flail. If it hits one target, it can push the next target 1 square on a hit, and if it hits two targets, the third takes ongoing 5 damage on a hit (save ends). &lt;/p&gt;]] ⚔ <b>Rending Strike</b> (standard; requires triple-headed flail, at-will) ✦ <b>Weapon</b></p><p>The Tiamat-sworn reaver attacks up to three targets with its triple-headed flail. If it hits one target, it can push the next target 1 square on a hit, and if it hits two targets, the third takes ongoing 5 damage on a hit (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dragonborn Fury&lt;/b&gt; (no action; while bloodied) &lt;/p&gt;&lt;p&gt;The reaver gains a +1 racial bonus to attack rolls while bloodied&lt;/p&gt;]]  <b>Dragonborn Fury</b> (no action; while bloodied) </p><p>The reaver gains a +1 racial bonus to attack rolls while bloodied</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +[[/roll 2d6#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +2d6&lt;/b&gt;&lt;/p&gt;&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +2d6&lt;/b&gt;&lt;/p&gt;]] <7> &lt;/b&gt;&lt;/p&gt;&lt;p&gt;If, on its turn, the Tiamat-sworn reaver ends its move at least 3 squares away from where it began its turn, its melee attacks deal 2d6 extra damage until the start of its next turn&lt;/p&gt;]]  <b>Skirmish +2d6</b></p><p>If, on its turn, the Tiamat-sworn reaver ends its move at least 3 squares away from where it began its turn, its melee attacks deal [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Skirmish +2d6&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If, on its turn, the Tiamat-sworn reaver ends its move at least 3 squares away from where it began its turn, its melee attacks deal 2d6 extra damage until the start of its next turn&lt;/p&gt;]] <7> extra damage until the start of its next turn</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Springing Assault&lt;/b&gt; (free, when the reaver hits with a melee attack during its turn; recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The reaver shifts 3 squares&lt;/p&gt;]]  <b>Springing Assault</b> (free, when the reaver hits with a melee attack during its turn; recharges when first bloodied) </p><p>The reaver shifts 3 squares</p></tr></td></table>",

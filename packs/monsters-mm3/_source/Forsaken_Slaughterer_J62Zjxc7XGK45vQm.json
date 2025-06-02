@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Relentless Slaughter",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wFYyR637Zv2MSUDQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Proximal Resistance",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wyDJhV03Aplq8PnB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -862,23 +865,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 253; <b>Bloodied</b> 126<hr><b>Immune</b> blinded, gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 41</td><td><b>Ref</b> 40</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+24)<br><b>Con</b> 27 (+22)</td><td><b>Dex</b> 26 (+22)<br><b>Int</b> 29 (+23)</td><td><b>Wis</b> 27 (+22)<br><b>Cha</b> 24 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Athletics +29, Intimidate +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 20<br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><p><b>Equipment</b> khopesh  x2, scale armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Relentless Slaughter&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Enemies within the aura gain only half the benefit of healing effects.&lt;/p&gt;]] ⌀ <b>Relentless Slaughter</b> ✦ <b>Aura</b> 1</p><p>Enemies within the aura gain only half the benefit of healing effects.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Proximal Resistance &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While no enemy is adjacent to it, the slaughterer gains resist 10 against ranged and area attacks.&lt;/p&gt;]]  <b>Proximal Resistance </b> <b></b></p><p>While no enemy is adjacent to it, the slaughterer gains resist 10 against ranged and area attacks.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Khopesh&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +33 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 18 damage.&lt;/p&gt;]] (⚔) <b>Khopesh</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+33[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Khopesh&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+33 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d8 + 18#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Khopesh&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 18 damage.&lt;/p&gt;]] <45>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Unstoppable Cut&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +33 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 18 damage, and one enemy adjacent to the target takes the same amount of damage.&lt;/p&gt;]] ⚔ <b>Unstoppable Cut</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+33[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Unstoppable Cut&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+33 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 18#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Unstoppable Cut&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 18 damage, and one enemy adjacent to the target takes the same amount of damage.&lt;/p&gt;]] <31.5>  damage, and one enemy adjacent to the target takes the same amount of damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blood for Blood&lt;/b&gt; (weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The slaughterer is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 1 (enemies in the burst); +33 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target takes damage equal to its healing surge value.&lt;/p&gt;]] ᗕ <b>Blood for Blood</b> (weapon) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The slaughterer is first bloodied.</p><p><i>Attack (Free Action):</i> Close burst 1 (enemies in the burst); [[/roll 1d20+33[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blood for Blood&lt;/b&gt; (weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 1 (enemies in the burst); &lt;u&gt;+33 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target takes damage equal to its healing surge value.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fragment of Immortality&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The slaughterer drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The slaughterer is removed from play until the start of its next turn. The slaughterer then appears within 5 squares of its last location with 63 hit points and without any effects on it.&lt;/p&gt;]]  <b>Fragment of Immortality</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The slaughterer drops to 0 hit points.</p><p><i>Effect (No Action):</i> The slaughterer is removed from play until the start of its next turn. The slaughterer then appears within 5 squares of its last location with 63 hit points and without any effects on it.</p></tr></td></table>",

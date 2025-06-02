@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Elemental Storm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5hIwoPMWGRk8JQj7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -157,10 +159,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -462,23 +464,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 10 cold, 10 fire, 10 lightning <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 30</td><td><b>Ref</b> 28</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+14)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 18 (+13)<br><b>Int</b> 8 (+8)</td><td><b>Wis</b> 16 (+12)<br><b>Cha</b> 9 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Elemental Storm&lt;/b&gt; aura 1; each enemy that starts its turn within the aura takes 5 cold, fire, and lightning damage.]] <b>Elemental Storm</b> aura 1; each enemy that starts its turn within the aura takes 5 cold, fire, and lightning damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Elemental Smash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+22 vs AC; 12 cold, fire, or lightning damage, determined randomly each time an attack hits. &lt;/p&gt;]] (⚔) <b>Elemental Smash</b> (standard, at-will) ✦ <b>Cold, Fire, Lightning</b></p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Elemental Smash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 12 cold, fire, or lightning damage, determined randomly each time an attack hits. &lt;/p&gt;]]; 12 cold, fire, or lightning damage, determined randomly each time an attack hits. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Elemental Explosion&lt;/b&gt; (free, when the elemental spawn is reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +21 vs Reflex; 12 cold, fire, and lightning damage. &lt;/p&gt;]] ᗕ <b>Elemental Explosion</b> (free, when the elemental spawn is reduced to 0 hit points, ) ✦ <b>Cold, Fire, Lightning</b></p><p>Close burst 2; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Elemental Explosion&lt;/b&gt; (free, when the elemental spawn is reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 12 cold, fire, and lightning damage. &lt;/p&gt;]]; 12 cold, fire, and lightning damage. </p></tr></td></table>",

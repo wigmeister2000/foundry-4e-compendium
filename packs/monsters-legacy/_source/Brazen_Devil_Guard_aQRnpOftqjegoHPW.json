@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -649,10 +650,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -952,23 +953,10 @@
 				"max":10
 			},
 			"init":{
-				"value":19,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":19
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 249; <b>Bloodied</b> 124<hr><b>Resist</b> 30 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +19</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 43</td><td><b>Fort</b> 40</td><td><b>Ref</b> 37</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, fly 7 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+22)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 18 (+17)<br><b>Int</b> 23 (+19)</td><td><b>Wis</b> 25 (+20)<br><b>Cha</b> 22 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +24</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><p><b>Equipment</b> hellforged plate armor (destroyed if brazen devil is reduced to 0 hit points), trident .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +34 vs AC; 2d12+8 damage, and the target slides 1 square. &lt;/p&gt;]] (⚔) <b>Trident</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+34[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+34 vs AC&lt;/u&gt;; 2d12+8 damage, and the target slides 1 square. &lt;/p&gt;]]; [[/roll 2d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +34 vs AC; 2d12+8 damage, and the target slides 1 square. &lt;/p&gt;]] <21>  damage, and the target slides 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Disgorge Hellfire&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +32 vs Reflex; 2d10+10 fire damage, and the target loses all resistances until the end of the brazen guard’s next turn. &lt;/p&gt;]] ᗕ <b>Disgorge Hellfire</b> (standard, recharges when first bloodied) ✦ <b>Fire</b></p><p>Close blast 5; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Disgorge Hellfire&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 2d10+10 fire damage, and the target loses all resistances until the end of the brazen guard’s next turn. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Disgorge Hellfire&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +32 vs Reflex; 2d10+10 fire damage, and the target loses all resistances until the end of the brazen guard’s next turn. &lt;/p&gt;]] <21>  fire damage, and the target loses all resistances until the end of the brazen guard’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Furious Assault&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +32 vs Fortitude; 2d12+8 damage, the target is pushed 3 squares, and the brazen devil guard teleports to a space adjacent to the target at the end of the push. &lt;/p&gt;]] ⚔ <b>Furious Assault</b> (standard, encounter) ✦ <b>Teleportation</b></p><p>Reach 2; [[/roll 1d20+32[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Furious Assault&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+32 vs Fortitude&lt;/u&gt;; 2d12+8 damage, the target is pushed 3 squares, and the brazen devil guard teleports to a space adjacent to the target at the end of the push. &lt;/p&gt;]]; [[/roll 2d12+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Furious Assault&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +32 vs Fortitude; 2d12+8 damage, the target is pushed 3 squares, and the brazen devil guard teleports to a space adjacent to the target at the end of the push. &lt;/p&gt;]] <21>  damage, the target is pushed 3 squares, and the brazen devil guard teleports to a space adjacent to the target at the end of the push. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fiendish Opportunist&lt;/b&gt; (immediate reaction, when an enemy is pushed, pulled, or slid into a square adjacent to the brazen devil, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+32 vs Fortitude; 2d12+5 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Fiendish Opportunist</b> (immediate reaction, when an enemy is pushed, pulled, or slid into a square adjacent to the brazen devil, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+32[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fiendish Opportunist&lt;/b&gt; (immediate reaction, when an enemy is pushed, pulled, or slid into a square adjacent to the brazen devil, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+32 vs Fortitude&lt;/u&gt;; 2d12+5 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d12+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fiendish Opportunist&lt;/b&gt; (immediate reaction, when an enemy is pushed, pulled, or slid into a square adjacent to the brazen devil, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+32 vs Fortitude; 2d12+5 damage, and the target is knocked prone. &lt;/p&gt;]] <18>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Assault&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The brazen devil guard teleports 20 squares and gains a +2 bonus to attack rolls until the start of its next turn. The brazen devil guard can teleport into occupied squares, sliding any creatures occupying those squares into the nearest unoccupied squares.&lt;/p&gt;]]  <b>Infernal Assault</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The brazen devil guard teleports 20 squares and gains a +2 bonus to attack rolls until the start of its next turn. The brazen devil guard can teleport into occupied squares, sliding any creatures occupying those squares into the nearest unoccupied squares.</p></tr></td></table>",

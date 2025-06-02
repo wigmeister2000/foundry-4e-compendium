@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 77; <b>Bloodied</b> 38<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 23</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+7)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 3 (0)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 1 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lash&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 2d6+3 damage. &lt;/p&gt;]] (⚔) <b>Lash</b> (standard, at-will) </p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lash&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 2d6+3 damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lash&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 2d6+3 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flaying Strike&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;+14 vs AC; 3d8+5 damage, and the target takes 5 ongoing damage and takes a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] ⚔ <b>Flaying Strike</b> (standard, recharge ⚄⚅) </p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flaying Strike&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 3d8+5 damage, and the target takes 5 ongoing damage and takes a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flaying Strike&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;+14 vs AC; 3d8+5 damage, and the target takes 5 ongoing damage and takes a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] <18.5>  damage, and the target takes 5 ongoing damage and takes a -2 penalty to attack rolls (save ends both). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Impossible Bound&lt;/b&gt; (move; recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;The flayed crawler can fly 10 squares. It must end its movement either on the ground or by clinging to a surface capable of supporting its weight by using its spider climb.&lt;/p&gt;]]  <b>Impossible Bound</b> (move; recharge ⚃⚄⚅) </p><p>The flayed crawler can fly 10 squares. It must end its movement either on the ground or by clinging to a surface capable of supporting its weight by using its spider climb.</p></tr></td></table>",

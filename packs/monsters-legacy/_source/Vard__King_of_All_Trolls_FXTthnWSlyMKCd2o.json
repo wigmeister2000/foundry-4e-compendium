@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8yIVljQKbeqwrBCd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -328,10 +330,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1121,7 +1123,7 @@
 		},
 		{
 			"name":"Bound to the Cauldron",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6xGkY0LUpuQbROe7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1157,7 +1159,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1213,23 +1216,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 348; <b>Bloodied</b> 174<br><b>Regeneration</b> 10 (if Vard takes acid or fire damage, regeneration does not function until the end of his next turn)<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 26</td><td><b>Ref</b> 23</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+16)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 20 (+13)<br><b>Int</b> 8 (+7)</td><td><b>Wis</b> 18 (+12)<br><b>Cha</b> 13 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +21, Endurance +20, Intimidate +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> moran\"s eye  +3 , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 3d8+7 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 3d8+7 damage. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 3d8+7 damage. &lt;/p&gt;]] <20.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Propelling Swipe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 2; +17 vs Reflex; 3d8+7 damage, and the target is pushed 2 squares and knocked prone. If Vard takes acid or fire damage, propelling swipe does not function until the end of his next turn. &lt;/p&gt;]] ᗕ <b>Propelling Swipe</b> (standard, at-will) </p><p>Close blast 2; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Propelling Swipe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 2; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 3d8+7 damage, and the target is pushed 2 squares and knocked prone. If Vard takes acid or fire damage, propelling swipe does not function until the end of his next turn. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Propelling Swipe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close blast 2; +17 vs Reflex; 3d8+7 damage, and the target is pushed 2 squares and knocked prone. If Vard takes acid or fire damage, propelling swipe does not function until the end of his next turn. &lt;/p&gt;]] <20.5>  damage, and the target is pushed 2 squares and knocked prone. If Vard takes acid or fire damage, propelling swipe does not function until the end of his next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Smoldering Eye&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +19 vs Reflex; 2d10+7 fire damage, plus ongoing 10 fire damage and a -2 penalty to attack rolls (save ends both). Vard takes 10 psychic damage when he uses this power. &lt;/p&gt;]] ᗕ <b>Smoldering Eye</b> (standard, encounter) ✦ <b>Fire</b></p><p>Close blast 5; [[/roll 1d20+19[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Smoldering Eye&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+19 vs Reflex&lt;/u&gt;; 2d10+7 fire damage, plus ongoing 10 fire damage and a -2 penalty to attack rolls (save ends both). Vard takes 10 psychic damage when he uses this power. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Smoldering Eye&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +19 vs Reflex; 2d10+7 fire damage, plus ongoing 10 fire damage and a -2 penalty to attack rolls (save ends both). Vard takes 10 psychic damage when he uses this power. &lt;/p&gt;]] <18>  fire damage, plus ongoing 10 fire damage and a -2 penalty to attack rolls (save ends both). Vard takes 10 psychic damage when he uses this power. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Frenzied Strike&lt;/b&gt; (free, when vard\"s attack bloodies an enemy, at-will) &lt;/p&gt;&lt;p&gt;+17 vs ; 2d8+7 damage.. Vard makes a claw attack.&lt;/p&gt;]] ⚔ <b>Frenzied Strike</b> (free, when vard\"s attack bloodies an enemy, at-will) </p><p>+17 vs ; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Frenzied Strike&lt;/b&gt; (free, when vard\"s attack bloodies an enemy, at-will) &lt;/p&gt;&lt;p&gt;+17 vs ; 2d8+7 damage.. Vard makes a claw attack.&lt;/p&gt;]] <16>  damage.. Vard makes a claw attack.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Necrotic Blood&lt;/b&gt; (immediate reaction, when vard takes damage, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +17 vs Fortitude; the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] ⚔ <b>Necrotic Blood</b> (immediate reaction, when vard takes damage, at-will) ✦ <b>Necrotic</b></p><p>Reach 2; [[/roll 1d20+17[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Necrotic Blood&lt;/b&gt; (immediate reaction, when vard takes damage, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+17 vs Fortitude&lt;/u&gt;; the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]]; the target takes ongoing 10 necrotic damage (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Baleful Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged sight; +19 vs Will; the target is slowed and cannot teleport (save ends both). The effect ends if Vard uses baleful eye on another target. &lt;/p&gt;]] ➶ <b>Baleful Eye</b> (minor, at-will) </p><p>Ranged sight; [[/roll 1d20+19[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Baleful Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged sight; &lt;u&gt;+19 vs Will&lt;/u&gt;; the target is slowed and cannot teleport (save ends both). The effect ends if Vard uses baleful eye on another target. &lt;/p&gt;]]; the target is slowed and cannot teleport (save ends both). The effect ends if Vard uses baleful eye on another target. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bound to the Cauldron&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the Stone Cauldron is destroyed, Vard takes 40 damage and howls in pain. If the Stone Cauldron is intact when Vard is reduced to 0 hit points or fewer, the troll king’s body turns to a dark fog that flows back into the Cauldron. One round later, he reforms with 174 hp and without Moran’s Eye (so he cannot use baleful eye or smoldering eye powers). If the Cauldron is already destroyed when Vard is defeated, his essence dissipates.&lt;/p&gt;]]  <b>Bound to the Cauldron</b></p><p>If the Stone Cauldron is destroyed, Vard takes 40 damage and howls in pain. If the Stone Cauldron is intact when Vard is reduced to 0 hit points or fewer, the troll king’s body turns to a dark fog that flows back into the Cauldron. One round later, he reforms with 174 hp and without Moran’s Eye (so he cannot use baleful eye or smoldering eye powers). If the Cauldron is already destroyed when Vard is defeated, his essence dissipates.</p></tr></td></table>",

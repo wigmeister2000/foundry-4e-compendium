@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ULu6NJx0XaSeARBM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -813,23 +815,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 174; <b>Bloodied</b> 87</td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 31</td><td><b>Ref</b> 30</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+15)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 4 (+6)</td><td><b>Wis</b> 20 (+14)<br><b>Cha</b> 9 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rageborn ambusher deals 2d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b> <b></b></p><p>The rageborn ambusher deals [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rageborn ambusher deals 2d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]] <7> extra damage against any creature granting combat advantage to it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 8 damage, and the ambusher slides the target 1 square. The ambusher then shifts 1 square as a free action.&lt;/p&gt;]] (⚔) <b>Slashing Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 8 damage, and the ambusher slides the target 1 square. The ambusher then shifts 1 square as a free action.&lt;/p&gt;]] <21.5>  damage, and the ambusher slides the target 1 square. The ambusher then shifts 1 square as a free action.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Fire&lt;/b&gt; (fire, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 8 fire damage, and the blast creates a zone. Any creature that enters the zone or ends its turn there takes 10 fire damage. At the start of the demon’s turn, roll a d20. On a result of 15 or higher, the zone ends.&lt;/p&gt;]] ᗕ <b>Abyssal Fire</b> (fire, zone) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 5 (creatures in the blast); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Fire&lt;/b&gt; (fire, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Fire&lt;/b&gt; (fire, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 8 fire damage, and the blast creates a zone. Any creature that enters the zone or ends its turn there takes 10 fire damage. At the start of the demon’s turn, roll a d20. On a result of 15 or higher, the zone ends.&lt;/p&gt;]] <26>  fire damage, and the blast creates a zone. Any creature that enters the zone or ends its turn there takes 10 fire damage. At the start of the demon’s turn, roll a [[/roll d20#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Fire&lt;/b&gt; (fire, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 8 fire damage, and the blast creates a zone. Any creature that enters the zone or ends its turn there takes 10 fire damage. At the start of the demon’s turn, roll a d20. On a result of 15 or higher, the zone ends.&lt;/p&gt;]] <10.5> . On a result of 15 or higher, the zone ends.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Leaping Ambush&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The rageborn ambusher jumps 4 squares. This movement does not provoke opportunity attacks.&lt;/p&gt;]]  <b>Leaping Ambush</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The rageborn ambusher jumps 4 squares. This movement does not provoke opportunity attacks.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The ambusher takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The ambusher gains resist 10 to the triggering damage type until the end of the encounter.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The ambusher takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The ambusher gains resist 10 to the triggering damage type until the end of the encounter.</p></tr></td></table>",

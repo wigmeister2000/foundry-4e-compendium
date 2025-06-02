@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Storm Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6mxWtrR8FwdPBsNS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -299,7 +301,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -826,23 +829,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 394; <b>Bloodied</b> 197<hr><b>Resist</b> 30 lightning, 30 thunder </td><td style=\"padding-left: 15px;\"><b>Init</b> +24 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 40</td><td><b>Ref</b> 42</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 10 (hover), swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+22)<br><b>Con</b> 23 (+20)</td><td><b>Dex</b> 30 (+24)<br><b>Int</b> 14 (+16)</td><td><b>Wis</b> 20 (+19)<br><b>Cha</b> 22 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Diplomacy +25, Intimidate +25</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p><b>Equipment</b> arrow  x20, greatsword , leather armor , longbow .</p><p>[[/roll 0#&lt;b&gt;Storm Fury&lt;/b&gt; (Lightning, Thunder) aura 4; any creature that enters the aura or starts its turn there takes 10 lightning and thunder damage. Creatures other than storm giants and storm titans treat the aura’s area as difficult terrain and cannot fly.]] <b>Storm Fury</b> (Lightning, Thunder) aura 4; any creature that enters the aura or starts its turn there takes 10 lightning and thunder damage. Creatures other than storm giants and storm titans treat the aura’s area as difficult terrain and cannot fly.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crackling Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d6 + 6 damage plus 1d8 lightning and thunder damage. &lt;/p&gt;]] (⚔) <b>Crackling Greatsword</b> (standard, at-will) ✦ <b>Lightning, Thunder, Weapon</b></p><p>Reach 3; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crackling Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+33 vs AC&lt;/u&gt;; 2d6 + 6 damage plus 1d8 lightning and thunder damage. &lt;/p&gt;]]; [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crackling Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d6 + 6 damage plus 1d8 lightning and thunder damage. &lt;/p&gt;]] <13>  damage plus [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Crackling Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d6 + 6 damage plus 1d8 lightning and thunder damage. &lt;/p&gt;]] <4.5> lightning and thunder damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcing Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; +35 vs AC; 3d6 + 10 lightning damage. Effect: The storm titan archer makes a secondary attack against a different creature within 10 squares of the primary target, originating the attack from the primary target: ranged 10; +33 vs. Reflex; 2d8 + 10 lightning damage. &lt;/p&gt;]] (➶) <b>Arcing Arrow</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Ranged 20/40; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcing Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; &lt;u&gt;+35 vs AC&lt;/u&gt;; 3d6 + 10 lightning damage. Effect: The storm titan archer makes a secondary attack against a different creature within 10 squares of the primary target, originating the attack from the primary target: ranged 10; +33 vs. Reflex; 2d8 + 10 lightning damage. &lt;/p&gt;]]; [[/roll 3d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcing Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; +35 vs AC; 3d6 + 10 lightning damage. Effect: The storm titan archer makes a secondary attack against a different creature within 10 squares of the primary target, originating the attack from the primary target: ranged 10; +33 vs. Reflex; 2d8 + 10 lightning damage. &lt;/p&gt;]] <20.5>  lightning damage. Effect: The storm titan archer makes a secondary attack against a different creature within 10 squares of the primary target, originating the attack from the primary target: ranged 10; +33 vs. Reflex; [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcing Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; +35 vs AC; 3d6 + 10 lightning damage. Effect: The storm titan archer makes a secondary attack against a different creature within 10 squares of the primary target, originating the attack from the primary target: ranged 10; +33 vs. Reflex; 2d8 + 10 lightning damage. &lt;/p&gt;]] <19>  lightning damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Swift Zephyr&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The storm titan archer becomes invisible until the end of its next turn. The titan then shifts its speed, making two arcing arrow attacks at any point during the movement. &lt;/p&gt;]] ➶ <b>Swift Zephyr</b> (standard, encounter) </p><p>The storm titan archer becomes invisible until the end of its next turn. The titan then shifts its speed, making two arcing arrow attacks at any point during the movement. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Reactive Bolt&lt;/b&gt; (immediate reaction, when hit by a melee or ranged, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The storm titan archer shifts half its speed, then makes an arcing arrow attack. &lt;/p&gt;]] ➶ <b>Reactive Bolt</b> (immediate reaction, when hit by a melee or ranged, recharge ⚄⚅) </p><p>The storm titan archer shifts half its speed, then makes an arcing arrow attack. </p></tr></td></table>",

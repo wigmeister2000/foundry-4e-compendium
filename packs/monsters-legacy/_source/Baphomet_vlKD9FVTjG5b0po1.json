@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blood Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UkKD1HzZ8pA6qgxS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1353,23 +1356,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1295; <b>Bloodied</b> 647<hr><b>Resist</b> 20 variable (3/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +23 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 44</td><td><b>Ref</b> 41</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (earth walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+24)<br><b>Con</b> 27 (+22)</td><td><b>Dex</b> 28 (+23)<br><b>Int</b> 20 (+19)</td><td><b>Wis</b> 26 (+22)<br><b>Cha</b> 22 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Acrobatics +29, Intimidate +25, Nature +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><p><b>Equipment</b> Heartcleaver (+6 vicious greataxe)</p><p>[[/roll 0#&lt;b&gt;Blood Ground&lt;/b&gt; aura 5; a creature in the aura that makes a melee attack against a bloodied target gains a +5 bonus to damage rolls, and a bloodied creature that makes a melee attack gains a +10 bonus to damage rolls.]] <b>Blood Ground</b> aura 5; a creature in the aura that makes a melee attack against a bloodied target gains a +5 bonus to damage rolls, and a bloodied creature that makes a melee attack gains a +10 bonus to damage rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heartcleaver&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d12+10 damage (crit 9d12 +46), and the target takes a -2 penalty to AC (save ends). &lt;/p&gt;]] (⚔) <b>Heartcleaver</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 3; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heartcleaver&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+32 vs AC&lt;/u&gt;; 3d12+10 damage (crit 9d12 +46), and the target takes a -2 penalty to AC (save ends). &lt;/p&gt;]]; [[/roll 3d12+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heartcleaver&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d12+10 damage (crit 9d12 +46), and the target takes a -2 penalty to AC (save ends). &lt;/p&gt;]] <29.5>  damage (crit [[/roll 9d12 +46#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heartcleaver&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 3d12+10 damage (crit 9d12 +46), and the target takes a -2 penalty to AC (save ends). &lt;/p&gt;]] <104.5> ), and the target takes a -2 penalty to AC (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Goring Horns&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 4d8+10 damage, and the target slides 2 squares. When Baphomet makes this attack as part of a charge, the target is also knocked prone. &lt;/p&gt;]] (⚔) <b>Goring Horns</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Goring Horns&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+31 vs AC&lt;/u&gt;; 4d8+10 damage, and the target slides 2 squares. When Baphomet makes this attack as part of a charge, the target is also knocked prone. &lt;/p&gt;]]; [[/roll 4d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Goring Horns&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +31 vs AC; 4d8+10 damage, and the target slides 2 squares. When Baphomet makes this attack as part of a charge, the target is also knocked prone. &lt;/p&gt;]] <28>  damage, and the target slides 2 squares. When Baphomet makes this attack as part of a charge, the target is also knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rampage&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Baphomet makes a heartcleaver attack against one target and a goring horns attack against a different target.&lt;/p&gt;]] ⚔ <b>Rampage</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Baphomet makes a heartcleaver attack against one target and a goring horns attack against a different target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Fury&lt;/b&gt; (standard; usable only while bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +29 vs Fortitude; 4d8+10 damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] ᗕ <b>Bloodied Fury</b> (standard; usable only while bloodied, at-will) </p><p>Close burst 2; [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Fury&lt;/b&gt; (standard; usable only while bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;; 4d8+10 damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]]; [[/roll 4d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Fury&lt;/b&gt; (standard; usable only while bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +29 vs Fortitude; 4d8+10 damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] <28>  damage, and the target is pushed 3 squares and knocked prone. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bellow&lt;/b&gt; (immediate reaction, when baphomet is damaged by an attack, recharges when first bloodied) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 6; +29 vs Will; 7d8+6 thunder damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Bellow</b> (immediate reaction, when baphomet is damaged by an attack, recharges when first bloodied) ✦ <b>Fear, Thunder</b></p><p>Close burst 6; [[/roll 1d20+29[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bellow&lt;/b&gt; (immediate reaction, when baphomet is damaged by an attack, recharges when first bloodied) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 6; &lt;u&gt;+29 vs Will&lt;/u&gt;; 7d8+6 thunder damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 7d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bellow&lt;/b&gt; (immediate reaction, when baphomet is damaged by an attack, recharges when first bloodied) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 6; +29 vs Will; 7d8+6 thunder damage, and the target is dazed (save ends). &lt;/p&gt;]] <37.5>  thunder damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Abyssal Maze&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area wall 4 within 10 squares; the illusory wall occupies 4 contiguous squares and lasts until the end of the encounter. The wall cannot be destroyed or climbed. If Baphomet creates more than one wall, no part of the walls can be adjacent.&lt;/p&gt;&lt;p&gt;The wall blocks movement and line of sight for enemies. Baphomet and his allies can move, see, and attack through the wall without penalty. If Baphomet or an ally moves into space within the wall that is adjacent to an enemy, that enemy can ignore the effects of that wall.&lt;/p&gt;]]  <b>Abyssal Maze</b> (minor; at-will) ✦ <b>Illusion</b></p><p>Area wall 4 within 10 squares; the illusory wall occupies 4 contiguous squares and lasts until the end of the encounter. The wall cannot be destroyed or climbed. If Baphomet creates more than one wall, no part of the walls can be adjacent.</p><p>The wall blocks movement and line of sight for enemies. Baphomet and his allies can move, see, and attack through the wall without penalty. If Baphomet or an ally moves into space within the wall that is adjacent to an enemy, that enemy can ignore the effects of that wall.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ferocity&lt;/b&gt; ( when reduced to 0 hit points) &lt;/p&gt;&lt;p&gt;Baphomet makes a bloodied fury attack.&lt;/p&gt;]]  <b>Ferocity</b> ( when reduced to 0 hit points) </p><p>Baphomet makes a bloodied fury attack.</p></tr></td></table>",

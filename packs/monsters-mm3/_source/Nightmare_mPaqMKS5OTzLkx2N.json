@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Shroud of Smoke",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xMXdD5mwWQZBAKiL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Hell's Ride",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"y18E7ecKtmhxn3G0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -685,23 +688,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 138; <b>Bloodied</b> 69<hr><b>Resist</b> 20 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 26</td><td><b>Ref</b> 25</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+12)<br><b>Con</b> 26 (+14)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 5 (+3)</td><td><b>Wis</b> 12 (+7)<br><b>Cha</b> 15 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shroud of Smoke&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The nightmare gains a +2 bonus to AC against opportunity attacks.&lt;/p&gt;]]  <b>Shroud of Smoke</b> <b></b></p><p>The nightmare gains a +2 bonus to AC against opportunity attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hell\"s Ride&lt;/b&gt; (mount) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The nightmare’s rider gains resist 20 fire.&lt;/p&gt;]]  <b>Hell\"s Ride</b> (mount) <b></b></p><p>The nightmare’s rider gains resist 20 fire.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hooves&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, and ongoing 5 fire damage (save ends).&lt;/p&gt;]] (⚔) <b>Hooves</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hooves&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hooves&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, and ongoing 5 fire damage (save ends).&lt;/p&gt;]] <16>  damage, and ongoing 5 fire damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Hooves of Hell&lt;/b&gt; (fire, zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The nightmare moves up to its speed. Each square it leaves becomes a zone of fire 10 feet tall that lasts until the end of the nightmare’s next turn. Any creature that hits the nightmare with a melee attack during this move, or that enters the zone, takes 10 fire damage.&lt;/p&gt;]]  <b>Hooves of Hell</b> (fire, zone) ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The nightmare moves up to its speed. Each square it leaves becomes a zone of fire 10 feet tall that lasts until the end of the nightmare’s next turn. Any creature that hits the nightmare with a melee attack during this move, or that enters the zone, takes 10 fire damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Teleport&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The nightmare teleports up to its speed and teleports its rider with it.&lt;/p&gt;]]  <b>Teleport</b> (teleportation) ✦ <b>At-Will</b></p><p><i>Effect:</i> The nightmare teleports up to its speed and teleports its rider with it.</p></tr></td></table>",

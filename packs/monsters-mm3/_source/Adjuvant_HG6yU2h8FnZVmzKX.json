@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Against the Odds",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lzO5LuYTAVmPp3Fv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Overbearing Stance",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zAZQd6sSPGOlyCcY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,7 +336,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1044,23 +1048,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 312; <b>Bloodied</b> 156</td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 30</td><td><b>Ref</b> 28</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+14)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 14 (+10)<br><b>Int</b> 21 (+13)</td><td><b>Wis</b> 17 (+11)<br><b>Cha</b> 20 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Diplomacy +18, Endurance +18, Intimidate +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p><b>Equipment</b> greataxe , plate armor , short sword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Against the Odds&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Adjuvant gains a +1 bonus to melee attacks when he is adjacent to more than one enemy.&lt;/p&gt;]]  <b>Against the Odds</b> <b></b></p><p>Adjuvant gains a +1 bonus to melee attacks when he is adjacent to more than one enemy.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Overbearing Stance&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Adjuvant cannot be the target of forced movement by enemies he has marked.&lt;/p&gt;]]  <b>Overbearing Stance</b> <b></b></p><p>Adjuvant cannot be the target of forced movement by enemies he has marked.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 11 damage, and the target is marked until the end of Adjuvant’s next turn. &lt;/p&gt;]] (⚔) <b>Greataxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 11 damage, and the target is marked until the end of Adjuvant’s next turn. &lt;/p&gt;]] <24>  damage, and the target is marked until the end of Adjuvant’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Fire Wand&lt;/b&gt; (fire) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 7 fire damage, and the target falls prone.&lt;/p&gt;]] (➶) <b>Fire Wand</b> (fire) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Fire Wand&lt;/b&gt; (fire) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Fire Wand&lt;/b&gt; (fire) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 7 fire damage, and the target falls prone.&lt;/p&gt;]] <29>  fire damage, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Halting Words&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +19 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is immobilized (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Adjuvant can reroll a greataxe attack he makes against any enemy immobilized by halting words. He must use the second roll, even if it’s lower.&lt;/p&gt;]] ᗕ <b>Halting Words</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+19[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Halting Words&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+19 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is immobilized (save ends).</p><p><i>Effect:</i> Adjuvant can reroll a greataxe attack he makes against any enemy immobilized by halting words. He must use the second roll, even if it’s lower.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Envoy\"s Resolve&lt;/b&gt; (healing) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Adjuvant gains 15 temporary hit points and can make a saving throw against an ongoing damage effect. If he uses this power while bloodied, he also regains 15 hit points.&lt;/p&gt;]]  <b>Envoy\"s Resolve</b> (healing) ✦ <b>Encounter</b></p><p><i>Effect:</i> Adjuvant gains 15 temporary hit points and can make a saving throw against an ongoing damage effect. If he uses this power while bloodied, he also regains 15 hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Ruthless Retaliation&lt;/b&gt; (weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Adjuvant is bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Adjuvant makes a greataxe attack against all enemies adjacent to him.&lt;/p&gt;]] ᗕ <b>Ruthless Retaliation</b> (weapon) ✦ <b>Encounter</b></p><p><i>Trigger:</i> Adjuvant is bloodied.</p><p><i>Effect (Immediate Reaction):</i> Adjuvant makes a greataxe attack against all enemies adjacent to him.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -292,10 +294,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -957,23 +959,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 80; <b>Bloodied</b> 40</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+3)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 10 (+3)<br><b>Int</b> 18 (+7)</td><td><b>Wis</b> 14 (+5)<br><b>Cha</b> 13 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +12, Bluff +9, Stealth +5, Thievery +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> leather armor , mace , rod implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8 + 4 damage, and the next of Dakai’s allies to attack the target gains +2 to its attack roll. &lt;/p&gt;]] (⚔) <b>Mace</b> (standard, at-will) ✦ <b>Arcane, Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d8 + 4 damage, and the next of Dakai’s allies to attack the target gains +2 to its attack roll. &lt;/p&gt;]]; [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8 + 4 damage, and the next of Dakai’s allies to attack the target gains +2 to its attack roll. &lt;/p&gt;]] <8.5>  damage, and the next of Dakai’s allies to attack the target gains +2 to its attack roll. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Rod Arc&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;10; +10 vs Reflex; 1d8 + 4 lightning damage, and the target takes -3 to its next damage roll. Dakai ignores the target’s cover.&lt;/p&gt;]] (➶) <b>Rod Arc</b> (standard, at-will) ✦ <b>Arcane, Implement, Lightning</b></p><p>10; [[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Rod Arc&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;10; &lt;u&gt;+10 vs Reflex&lt;/u&gt;; 1d8 + 4 lightning damage, and the target takes -3 to its next damage roll. Dakai ignores the target’s cover.&lt;/p&gt;]]; [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Rod Arc&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;10; +10 vs Reflex; 1d8 + 4 lightning damage, and the target takes -3 to its next damage roll. Dakai ignores the target’s cover.&lt;/p&gt;]] <8.5>  lightning damage, and the target takes -3 to its next damage roll. Dakai ignores the target’s cover.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Shard Orb&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Arcane, Force, Implement, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; targets enemies; +10 vs Fortitude; 1d10 + 4 force damage, and the target is knocked prone. Effect: The burst creates a zone that lasts until the end of Dakai’s next turn. An enemy who ends its turn in this zone takes 1d10 + 4 force damage. &lt;/p&gt;]] ✻ <b>Shard Orb</b> (standard, recharge ⚃⚄⚅) ✦ <b>Arcane, Force, Implement, Zone</b></p><p>Area burst 1 within 10; targets enemies; [[/roll 1d20+10[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Shard Orb&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Arcane, Force, Implement, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; targets enemies; &lt;u&gt;+10 vs Fortitude&lt;/u&gt;; 1d10 + 4 force damage, and the target is knocked prone. Effect: The burst creates a zone that lasts until the end of Dakai’s next turn. An enemy who ends its turn in this zone takes 1d10 + 4 force damage. &lt;/p&gt;]]; [[/roll [[/roll 1d10 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Shard Orb&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Arcane, Force, Implement, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; targets enemies; +10 vs Fortitude; 1d10 + 4 force damage, and the target is knocked prone. Effect: The burst creates a zone that lasts until the end of Dakai’s next turn. An enemy who ends its turn in this zone takes 1d10 + 4 force damage. &lt;/p&gt;]] <9.5> #&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Shard Orb&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Arcane, Force, Implement, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; targets enemies; +10 vs Fortitude; 1d10 + 4 force damage, and the target is knocked prone. Effect: The burst creates a zone that lasts until the end of Dakai’s next turn. An enemy who ends its turn in this zone takes 1d10 + 4 force damage. &lt;/p&gt;]] <9.5>  force damage, and the target is knocked prone. Effect: The burst creates a zone that lasts until the end of Dakai’s next turn. An enemy who ends its turn in this zone takes 1d10 + 4 force damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Resistive Formula&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Arcane, Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; allies in the burst gain +1 to AC and can end this bonus as a free action to gain 5 temporary hit points.&lt;/p&gt;]] ᗕ <b>Resistive Formula</b> (minor, encounter) ✦ <b>Arcane, Healing</b></p><p>Close burst 5; allies in the burst gain +1 to AC and can end this bonus as a free action to gain 5 temporary hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate reaction, when missed by a melee&lt;br&gt;attack) &lt;/p&gt;&lt;p&gt;Dakai shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate reaction, when missed by a melee<br>attack) </p><p>Dakai shifts 1 square.</p></tr></td></table>",

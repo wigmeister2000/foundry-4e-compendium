@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Reactive Stealth",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"epxIYTqaKb50rtiH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BjT1dMFuct46vhKl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -864,23 +867,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 62; <b>Bloodied</b> 31</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 16</td><td><b>Ref</b> 18</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 14 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 12 (+3)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 16 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +10, Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> hide armor , scimitar .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reactive Stealth&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Barel has any cover or concealment when he rolls initiative, he can make a Stealth check to become hidden.&lt;/p&gt;]]  <b>Reactive Stealth</b> <b></b></p><p>If Barel has any cover or concealment when he rolls initiative, he can make a Stealth check to become hidden.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Barel can score a critical hit on a roll of 19-20 against any creature granting combat advantage to him.&lt;/p&gt;]]  <b>Combat Advantage</b> <b></b></p><p>Barel can score a critical hit on a roll of 19-20 against any creature granting combat advantage to him.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +10 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 damage, and Barel can slide the target 1 square.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Barel can shift 1 square.&lt;/p&gt;]] (⚔) <b>Scimitar</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+10[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+10 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 damage, and Barel can slide the target 1 square.&lt;/p&gt;]] <13>  damage, and Barel can slide the target 1 square.</p><p><i>Effect:</i> Barel can shift 1 square.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shadowdancer\"s Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +10 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 6 damage, and Barel slides the target up to 2 squares. Additionally, each time Barel hits the target, he can shift 1 extra square and slide the target 1 extra square (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Barel shifts up to 2 squares.&lt;/p&gt;]] ⚔ <b>Shadowdancer\"s Strike</b> (weapon) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+10[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shadowdancer\"s Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+10 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shadowdancer\"s Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 6 damage, and Barel slides the target up to 2 squares. Additionally, each time Barel hits the target, he can shift 1 extra square and slide the target 1 extra square (save ends).&lt;/p&gt;]] <16.5>  damage, and Barel slides the target up to 2 squares. Additionally, each time Barel hits the target, he can shift 1 extra square and slide the target 1 extra square (save ends).</p><p><i>Effect:</i> Barel shifts up to 2 squares.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadowdance&lt;/b&gt; (teleportation) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Barel teleports up to his speed, but he must begin or end this movement adjacent to a creature or at least 3 squares from a light source.&lt;/p&gt;]]  <b>Shadowdance</b> (teleportation) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> Barel teleports up to his speed, but he must begin or end this movement adjacent to a creature or at least 3 squares from a light source.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fade Away&lt;/b&gt; (illusion) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Barel takes damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Barel becomes invisible until after he hits or misses with an attack, or until the end of his next turn.&lt;/p&gt;]]  <b>Fade Away</b> (illusion) ✦ <b>Encounter</b></p><p><i>Trigger:</i> Barel takes damage.</p><p><i>Effect (Immediate Reaction):</i> Barel becomes invisible until after he hits or misses with an attack, or until the end of his next turn.</p></tr></td></table>",

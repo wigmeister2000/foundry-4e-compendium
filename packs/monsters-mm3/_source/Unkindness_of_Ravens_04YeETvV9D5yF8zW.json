@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Claws and Beaks",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"XiNpfPHY72RztgM5",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Blot the Sun",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"JIW78j2GzregnBls",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -502,23 +505,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 65; <b>Bloodied</b> 32<hr><b>Resist</b> half damage from melee and ranged attacks <b>Vulnerable</b> 5 against close and area attacks </td><td style=\"padding-left: 15px;\"><b>Init</b> +9</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 14</td><td><b>Ref</b> 19</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 3, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 4 (0)<br><b>Con</b> 9 (+2)</td><td><b>Dex</b> 19 (+7)<br><b>Int</b> 3 (null)</td><td><b>Wis</b> 14 (+5)<br><b>Cha</b> 6 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Claws and Beaks&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura takes 5 damage.&lt;/p&gt;]] ⌀ <b>Claws and Beaks</b> ✦ <b>Aura</b> 1</p><p>Any enemy that starts its turn within the aura takes 5 damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blot the Sun&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An unkindness of ravens blocks line of sight. Creatures entirely in its space are blinded.&lt;/p&gt;]]  <b>Blot the Sun</b> <b></b></p><p>An unkindness of ravens blocks line of sight. Creatures entirely in its space are blinded.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unkind Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d4 + 3 damage, and the target is blinded until the unkindness of ravens’ next turn.&lt;/p&gt;]] (⚔) <b>Unkind Attack</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unkind Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d4 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unkind Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d4 + 3 damage, and the target is blinded until the unkindness of ravens’ next turn.&lt;/p&gt;]] <5.5>  damage, and the target is blinded until the unkindness of ravens’ next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Scattering of Feathers&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The unkindness is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The unkindness is removed from play until the start of its next turn. When the effect ends, the unkindness returns to play in any space within 5 squares of the space it last occupied.&lt;/p&gt;]]  <b>Scattering of Feathers</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The unkindness is first bloodied.</p><p><i>Effect (Immediate Reaction):</i> The unkindness is removed from play until the start of its next turn. When the effect ends, the unkindness returns to play in any space within 5 squares of the space it last occupied.</p></tr></td></table>",

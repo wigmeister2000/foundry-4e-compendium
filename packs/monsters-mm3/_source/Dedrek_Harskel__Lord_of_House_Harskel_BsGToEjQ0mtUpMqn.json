@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -768,23 +769,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 103; <b>Bloodied</b> 51</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 22</td><td><b>Ref</b> 20</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+9)<br><b>Con</b> 15 (+7)</td><td><b>Dex</b> 13 (+6)<br><b>Int</b> 15 (+7)</td><td><b>Wis</b> 15 (+7)<br><b>Cha</b> 21 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +15, Diplomacy +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> Harskel signet ring, rapier .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 11 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Dedrek marks the target until the end of Dedrek’s next turn.&lt;/p&gt;]] (⚔) <b>Rapier</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 11 damage.&lt;/p&gt;]] <20>  damage.</p><p><i>Effect:</i> Dedrek marks the target until the end of Dedrek’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Poison Signet&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature marked by Dedrek); +13 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 11 poison damage, and ongoing 5 poison damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target takes ongoing 10 poison damage and is immobilized (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target falls unconscious (save ends).&lt;/p&gt;]] ⚔ <b>Poison Signet</b> (poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature marked by Dedrek); [[/roll 1d20+13[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Poison Signet&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature marked by Dedrek); &lt;u&gt;+13 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Poison Signet&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 11 poison damage, and ongoing 5 poison damage (save ends).&lt;/p&gt;]] <20>  poison damage, and ongoing 5 poison damage (save ends).</p><p><i>First Failed Saving Throw:</i> The target takes ongoing 10 poison damage and is immobilized (save ends both).</p><p><i>Second Failed Saving Throw:</i> The target falls unconscious (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Overpowering Gaze&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 5 (one creature in the burst affected by poison signet). The target makes a saving throw against poison signet’s effect. The target cannot succeed on the saving throw but can fail.&lt;/p&gt;]]  <b>Overpowering Gaze</b> ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> Close burst 5 (one creature in the burst affected by poison signet). The target makes a saving throw against poison signet’s effect. The target cannot succeed on the saving throw but can fail.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bodyguard\"s Sacrifice&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy damages Dedrek with a melee or a ranged attack while at least one of Dedrek’s allies is adjacent to him.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The damage of the triggering attack is reduced by 10, and one ally adjacent to Dedrek takes 10 damage that cannot be prevented or resisted.&lt;/p&gt;]]  <b>Bodyguard\"s Sacrifice</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy damages Dedrek with a melee or a ranged attack while at least one of Dedrek’s allies is adjacent to him.</p><p><i>Effect (Immediate Interrupt):</i> The damage of the triggering attack is reduced by 10, and one ally adjacent to Dedrek takes 10 damage that cannot be prevented or resisted.</p></tr></td></table>",

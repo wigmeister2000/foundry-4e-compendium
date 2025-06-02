@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -469,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -647,10 +649,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"6",
 				"rechargeCondition":"",
@@ -950,23 +952,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 138; <b>Bloodied</b> 69</td><td style=\"padding-left: 15px;\"><b>Init</b> +4 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 18</td><td><b>Ref</b> 16</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+5)<br><b>Con</b> 19 (+6)</td><td><b>Dex</b> 15 (+4)<br><b>Int</b> 12 (+3)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 9 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Endurance +11, Intimidate +6</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> crossbow , crossbow bolt  x30, longsword , scale armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC;  (+1 to hit while bloodied)1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;;  (+1 to hit while bloodied)1d8+6 damage. &lt;/p&gt;]];  (+1 to hit while bloodied)[[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC;  (+1 to hit while bloodied)1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +7 vs AC;  (+1 to hit while bloodied)1d8+4 damage. &lt;/p&gt;]] (➶) <b>Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+7 vs AC&lt;/u&gt;;  (+1 to hit while bloodied)1d8+4 damage. &lt;/p&gt;]];  (+1 to hit while bloodied)[[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +7 vs AC;  (+1 to hit while bloodied)1d8+4 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cleave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC;  (+1 to hit while bloodied)1d8+6 damage, and another enemy adjacent to Hesskin takes 6 damage. &lt;/p&gt;]] ⚔ <b>Cleave</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cleave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;;  (+1 to hit while bloodied)1d8+6 damage, and another enemy adjacent to Hesskin takes 6 damage. &lt;/p&gt;]];  (+1 to hit while bloodied)[[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cleave&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC;  (+1 to hit while bloodied)1d8+6 damage, and another enemy adjacent to Hesskin takes 6 damage. &lt;/p&gt;]] <10.5>  damage, and another enemy adjacent to Hesskin takes 6 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Powerful Slice&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+7 vs AC;  (+1 while bloodied)2d8+6 damage, and the target is pushed 1 square and knocked prone. &lt;/p&gt;]] ⚔ <b>Powerful Slice</b> (standard, recharge ⚅</p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Powerful Slice&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;;  (+1 while bloodied)2d8+6 damage, and the target is pushed 1 square and knocked prone. &lt;/p&gt;]];  (+1 while bloodied)[[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Powerful Slice&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+7 vs AC;  (+1 while bloodied)2d8+6 damage, and the target is pushed 1 square and knocked prone. &lt;/p&gt;]] <15>  damage, and the target is pushed 1 square and knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +5 vs Reflex;  (+1 while bloodied)1d8+3 cold damage. &lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (minor, encounter) ✦ <b>Cold</b></p><p>Close blast 3; [[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+5 vs Reflex&lt;/u&gt;;  (+1 while bloodied)1d8+3 cold damage. &lt;/p&gt;]];  (+1 while bloodied)[[/roll 1d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +5 vs Reflex;  (+1 while bloodied)1d8+3 cold damage. &lt;/p&gt;]] <7.5>  cold damage. </p></tr></td></table>",

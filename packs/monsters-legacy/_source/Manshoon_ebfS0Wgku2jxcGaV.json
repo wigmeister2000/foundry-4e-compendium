@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZlCHOuNe2UvP4iTQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,10 +334,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -511,10 +514,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1891,23 +1894,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 500; <b>Bloodied</b> 250<br><b>Regeneration</b> 10 (regeneration functions even while Manshoon is exposed to direct sunlight as long as he wears Manshoon\"s bloodmask)<hr><b>Resist</b> 15 necrotic, 10 against ranged attacks <b>Vulnerable</b> 10 radiant (only if not wearing manshoon\"s bloodmask) <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +2 (+8 against charm effects; +4/+10 while bloodied)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 45 (47 while bloodied)</td><td><b>Fort</b> 42</td><td><b>Ref</b> 44</td><td><b>Will</b> 43</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+15)<br><b>Con</b> 26 (+22)</td><td><b>Dex</b> 16 (+17)<br><b>Int</b> 31 (+24)</td><td><b>Wis</b> 16 (+17)<br><b>Cha</b> 28 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Chondathan, Common, Draconic, Elven, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +29, Diplomacy +28, History +29, Insight +28</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 38</td></td></tr></table><p><b>Equipment</b> manshoon\"s bloodmask  +6 , staff implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 1d6+8 damage. &lt;/p&gt;]] (⚔) <b>Staff</b> (standard, at-will) ✦ <b>Force, Weapon</b></p><p>[[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs AC&lt;/u&gt;; 1d6+8 damage. &lt;/p&gt;]]; [[/roll 1d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 1d6+8 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcane Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+33 vs Reflex; 2d6+10 damage. &lt;/p&gt;]] (➶) <b>Arcane Bolt</b> (standard, at-will) </p><p>[[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcane Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs Reflex&lt;/u&gt;; 2d6+10 damage. &lt;/p&gt;]]; [[/roll 2d6+10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Arcane Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+33 vs Reflex; 2d6+10 damage. &lt;/p&gt;]] <17>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs Fortitude; 2d12+9 damage, the target is weakened (save ends), and Manshoon regains 125 hit points. &lt;/p&gt;]] ⚔ <b>Blood Drain</b> (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ <b>Healing</b></p><p>[[/roll 1d20+31[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs Fortitude&lt;/u&gt;; 2d12+9 damage, the target is weakened (save ends), and Manshoon regains 125 hit points. &lt;/p&gt;]]; [[/roll 2d12+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs Fortitude; 2d12+9 damage, the target is weakened (save ends), and Manshoon regains 125 hit points. &lt;/p&gt;]] <22>  damage, the target is weakened (save ends), and Manshoon regains 125 hit points. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Eldritch Tendrils&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 4 within 10; +33 vs Reflex; 2d6+10 force damage, and the target is immobilized until the end of Manshoon\"s next turn. Manshoon makes new attack rolls when he sustains this effect. &lt;/p&gt;]] ✻ <b>Eldritch Tendrils</b> (standard; sustain minor, encounter) ✦ <b>Force</b></p><p>Area burst 4 within 10; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Eldritch Tendrils&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 4 within 10; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 2d6+10 force damage, and the target is immobilized until the end of Manshoon\"s next turn. Manshoon makes new attack rolls when he sustains this effect. &lt;/p&gt;]]; [[/roll 2d6+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Eldritch Tendrils&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 4 within 10; +33 vs Reflex; 2d6+10 force damage, and the target is immobilized until the end of Manshoon\"s next turn. Manshoon makes new attack rolls when he sustains this effect. &lt;/p&gt;]] <17>  force damage, and the target is immobilized until the end of Manshoon\"s next turn. Manshoon makes new attack rolls when he sustains this effect. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Bolt Arc&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Manshoon makes two arcane bolt attacks. If both attacks hit the same target, it is dazed until the end of Manshoon\"s next turn and knocked prone.&lt;/p&gt;]] ➶ <b>Bolt Arc</b> (standard, at-will) </p><p>Manshoon makes two arcane bolt attacks. If both attacks hit the same target, it is dazed until the end of Manshoon\"s next turn and knocked prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Vascular Purge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs Fortitude; 2d10+10 damage, and the target is stunned (save ends). All the target\"s allies that can see the target are dazed (save ends). Undead creatures within 3 squares of the target regain 15 hit points. &lt;/p&gt;]] ➶ <b>Vascular Purge</b> (standard, encounter) ✦ <b>Fear, Healing</b></p><p>Ranged 20; [[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Vascular Purge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+33 vs Fortitude&lt;/u&gt;; 2d10+10 damage, and the target is stunned (save ends). All the target\"s allies that can see the target are dazed (save ends). Undead creatures within 3 squares of the target regain 15 hit points. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Vascular Purge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear, Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +33 vs Fortitude; 2d10+10 damage, and the target is stunned (save ends). All the target\"s allies that can see the target are dazed (save ends). Undead creatures within 3 squares of the target regain 15 hit points. &lt;/p&gt;]] <21>  damage, and the target is stunned (save ends). All the target\"s allies that can see the target are dazed (save ends). Undead creatures within 3 squares of the target regain 15 hit points. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Second Wind&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Manshoon spends a healing surge and heals 125 hit points. He gains a +2 bonus to all defenses until the start of its next turn.&lt;/p&gt;]]  <b>Second Wind</b> (standard; encounter) ✦ <b>Healing</b></p><p>Manshoon spends a healing surge and heals 125 hit points. He gains a +2 bonus to all defenses until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mist Form&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Manshoon becomes insubstantial and gains a fly speed of 12, but cannot make attacks. He can remain in mist form for up to 1 hour or end the effect as a minor action.&lt;/p&gt;]]  <b>Mist Form</b> (standard; encounter) ✦ <b>Polymorph</b></p><p>Manshoon becomes insubstantial and gains a fly speed of 12, but cannot make attacks. He can remain in mist form for up to 1 hour or end the effect as a minor action.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; +32 vs Will; the target is dominated (save ends, with a -2 penalty to the saving throw). Aftereffect: The target is dazed (save ends). Manshoon can dominate only one creature at a time. &lt;/p&gt;]] ➶ <b>Dominating Gaze</b> (minor, recharge ⚅</p><p>Ranged 5; [[/roll 1d20+32[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+32 vs Will&lt;/u&gt;; the target is dominated (save ends, with a -2 penalty to the saving throw). Aftereffect: The target is dazed (save ends). Manshoon can dominate only one creature at a time. &lt;/p&gt;]]; the target is dominated (save ends, with a -2 penalty to the saving throw). Aftereffect: The target is dazed (save ends). Manshoon can dominate only one creature at a time. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Battle Teleport&lt;/b&gt; (move; recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Manshoon teleports 4 squares.&lt;/p&gt;]]  <b>Battle Teleport</b> (move; recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>Manshoon teleports 4 squares.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -548,7 +549,7 @@
 		},
 		{
 			"name":"Triumphant Surge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lw3PInMUkNqRp6ja",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -584,7 +585,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -594,7 +596,7 @@
 		},
 		{
 			"name":"Invisible Killer",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NywM9sVAY4olefjc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -630,7 +632,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -686,23 +689,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 140; <b>Bloodied</b> 70<hr><b>Resist</b> 10 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 20</td><td><b>Ref</b> 18</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 18 (+8)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 21 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +14, Intimidate +14, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> chainmail , greatsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d10+2 damage. If Redra’s nightmare is invisible, the target also takes 2d6 extra damage and ongoing 10 fire damage (save ends). &lt;/p&gt;]] (⚔) <b>Greatsword</b> (standard, at-will) ✦ <b>Fire, Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d10+2 damage. If Redra’s nightmare is invisible, the target also takes 2d6 extra damage and ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 1d10+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d10+2 damage. If Redra’s nightmare is invisible, the target also takes 2d6 extra damage and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <7.5>  damage. If Redra’s nightmare is invisible, the target also takes [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d10+2 damage. If Redra’s nightmare is invisible, the target also takes 2d6 extra damage and ongoing 10 fire damage (save ends). &lt;/p&gt;]] <7> extra damage and ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Whirlwind Charge&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Redra’s nightmare moves its speed, then makes a greatsword attack against each enemy adjacent to it.&lt;/p&gt;]]  <b>Whirlwind Charge</b> (standard; at-will) ✦ <b>Fire, Weapon</b></p><p>Redra’s nightmare moves its speed, then makes a greatsword attack against each enemy adjacent to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Assassin\"s Fading&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Redra’s nightmare becomes invisible until the end of its next turn, and it can shift 2 squares.&lt;/p&gt;]]  <b>Assassin\"s Fading</b> (standard; at-will) ✦ <b>Illusion</b></p><p>Redra’s nightmare becomes invisible until the end of its next turn, and it can shift 2 squares.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Triumphant Surge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Redra’s nightmare gains 5 temporary hit points each time it bloodies an enemy or reduces an enemy to 0 or fewer hit points.&lt;/p&gt;]]  <b>Triumphant Surge</b></p><p>Redra’s nightmare gains 5 temporary hit points each time it bloodies an enemy or reduces an enemy to 0 or fewer hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Invisible Killer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While invisible, Redra’s nightmare scores a critical hit on a roll of 19-20.&lt;/p&gt;]]  <b>Invisible Killer</b></p><p>While invisible, Redra’s nightmare scores a critical hit on a roll of 19-20.</p></tr></td></table>",

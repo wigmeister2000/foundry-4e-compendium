@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"96GoZRwUzfY3a20u",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -284,7 +286,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -332,10 +335,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -688,10 +691,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -1169,23 +1172,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 172; <b>Bloodied</b> 86<br><b>Regeneration</b> 10<hr><b>Vulnerable</b> silver (if the weretiger takes damage from a silver weapon, its regeneration does not function on its next turn) <b>Immune</b> moon rage </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 23</td><td><b>Ref</b> 22</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 in tiger form)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+8)<br><b>Con</b> 15 (+7)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 12 (+6)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 13 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +12, Bluff +11, Insight +12, Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 22</td></td></tr></table><p><b>Equipment</b> katar  x2, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d6+6 damage (crit 4d6+18). &lt;/p&gt;]] (⚔) <b>Katar</b> (standard; usable only while in humanoid form, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 2d6+6 damage (crit 4d6+18). &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d6+6 damage (crit 4d6+18). &lt;/p&gt;]] <13>  damage (crit [[/roll 4d6+18#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d6+6 damage (crit 4d6+18). &lt;/p&gt;]] <32> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in tiger form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d8+5 damage, and the target is exposed to moon rage (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard; usable only while in tiger form, at-will) ✦ <b>Disease</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in tiger form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 1d8+5 damage, and the target is exposed to moon rage (save ends). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in tiger form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d8+5 damage, and the target is exposed to moon rage (save ends). &lt;/p&gt;]] <9.5>  damage, and the target is exposed to moon rage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Feline Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The weretiger makes two melee basic attacks. It shifts 1 square between the attacks&lt;/p&gt;]] ⚔ <b>Feline Fury</b> (standard, at-will) </p><p>The weretiger makes two melee basic attacks. It shifts 1 square between the attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Pounce&lt;/b&gt; (standard; usable only when charging, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;+16 vs AC; 2d8+5 damage, and the target is pushed 1 square and knocked prone. The weretiger then shifts into the target\"s vacated space. &lt;/p&gt;]] ⚔ <b>Pounce</b> (standard; usable only when charging, recharge ⚄⚅) </p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Pounce&lt;/b&gt; (standard; usable only when charging, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 2d8+5 damage, and the target is pushed 1 square and knocked prone. The weretiger then shifts into the target\"s vacated space. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Pounce&lt;/b&gt; (standard; usable only when charging, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;+16 vs AC; 2d8+5 damage, and the target is pushed 1 square and knocked prone. The weretiger then shifts into the target\"s vacated space. &lt;/p&gt;]] <14>  damage, and the target is pushed 1 square and knocked prone. The weretiger then shifts into the target\"s vacated space. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slashing Recoil&lt;/b&gt; (immediate reaction, when an attack misses the weretiger, at-will) &lt;/p&gt;&lt;p&gt;The weretiger makes a melee basic attack and shifts 2 squares.&lt;/p&gt;]] ⚔ <b>Slashing Recoil</b> (immediate reaction, when an attack misses the weretiger, at-will) </p><p>The weretiger makes a melee basic attack and shifts 2 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A weretiger can alter its physical form to appear as a dire tiger or a unique humanoid.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>A weretiger can alter its physical form to appear as a dire tiger or a unique humanoid.</p></tr></td></table>",

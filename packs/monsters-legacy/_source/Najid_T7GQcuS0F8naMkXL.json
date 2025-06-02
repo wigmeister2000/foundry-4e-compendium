@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -906,7 +908,7 @@
 		},
 		{
 			"name":"Mounted Combat",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yUPKYq7ijbDunRgA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -942,7 +944,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1178,23 +1181,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 180; <b>Bloodied</b> 90</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2; +7 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 22</td><td><b>Ref</b> 19</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 see also fey step</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+10)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 17 (+7)<br><b>Int</b> 14 (+6)</td><td><b>Wis</b> 18 (+8)<br><b>Cha</b> 14 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +15, Endurance +13, Nature +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> lance, chainmail , scimitar .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lance&lt;/b&gt; (standard; usable only while mounted, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d6+5 damage. &lt;/p&gt;]] (⚔) <b>Lance</b> (standard; usable only while mounted, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lance&lt;/b&gt; (standard; usable only while mounted, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d6+5 damage. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lance&lt;/b&gt; (standard; usable only while mounted, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d6+5 damage. &lt;/p&gt;]] <12>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+7 damage (crit 2d8+15). &lt;/p&gt;]] (⚔) <b>Scimitar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8+7 damage (crit 2d8+15). &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+7 damage (crit 2d8+15). &lt;/p&gt;]] <11.5>  damage (crit [[/roll 2d8+15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+7 damage (crit 2d8+15). &lt;/p&gt;]] <24> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dismounted Wrath&lt;/b&gt; (standard; usable only while dismounted, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Najid makes two scimitar attacks, which score critical hits on a natural roll of 19–20.&lt;/p&gt;]] ⚔ <b>Dismounted Wrath</b> (standard; usable only while dismounted, at-will) ✦ <b>Weapon</b></p><p>Najid makes two scimitar attacks, which score critical hits on a natural roll of 19–20.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Relentless Charge&lt;/b&gt; (standard; usable only while mounted and charging; requires a lance, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d6+5 damage and the target is pushed 1 square and knocked prone. &lt;/p&gt;]] ⚔ <b>Relentless Charge</b> (standard; usable only while mounted and charging; requires a lance, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Relentless Charge&lt;/b&gt; (standard; usable only while mounted and charging; requires a lance, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d6+5 damage and the target is pushed 1 square and knocked prone. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Relentless Charge&lt;/b&gt; (standard; usable only while mounted and charging; requires a lance, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d6+5 damage and the target is pushed 1 square and knocked prone. &lt;/p&gt;]] <12>  damage and the target is pushed 1 square and knocked prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Tower of Sand&lt;/b&gt; (standard; unusable while mounted; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Najid absorbs the sand underfoot to fuel a magical growth spurt; Najid becomes Large, occupying 4 squares instead of 1. Creatures and objects in the squares that Najid comes to occupy are pushed 1 square. Najid’s reach becomes 2 and he gains a +5 bonus to damage rolls. Najid can revert to its normal form as a free action.&lt;/p&gt;]]  <b>Tower of Sand</b> (standard; unusable while mounted; encounter) ✦ <b>Polymorph</b></p><p>Najid absorbs the sand underfoot to fuel a magical growth spurt; Najid becomes Large, occupying 4 squares instead of 1. Creatures and objects in the squares that Najid comes to occupy are pushed 1 square. Najid’s reach becomes 2 and he gains a +5 bonus to damage rolls. Najid can revert to its normal form as a free action.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Najid can teleport 5 squares.  If mounted, Najid can also teleport his mount.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>Najid can teleport 5 squares.  If mounted, Najid can also teleport his mount.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mounted Combat&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While Najid rides a creature, he gains access to any special mount abilities it confers to its rider, plus the creature can also make Athletics, Acrobatics, Endurance, and Stealth checks using Najid’s base skill check bonus rather its own if Najid’s is higher.&lt;/p&gt;]]  <b>Mounted Combat</b></p><p>While Najid rides a creature, he gains access to any special mount abilities it confers to its rider, plus the creature can also make Athletics, Acrobatics, Endurance, and Stealth checks using Najid’s base skill check bonus rather its own if Najid’s is higher.</p></tr></td></table>",

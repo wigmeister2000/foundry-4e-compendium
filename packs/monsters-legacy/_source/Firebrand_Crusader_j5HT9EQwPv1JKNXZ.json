@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -470,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -651,10 +652,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -774,23 +775,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 88; <b>Bloodied</b> 44</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 22</td><td><b>Ref</b> 17</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+9)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 10 (+4)<br><b>Int</b> 8 (+3)</td><td><b>Wis</b> 11 (+4)<br><b>Cha</b> 16 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> flint and steel , longsword , plate armor , torch  x4.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8 + 5 damage, and the target is marked until the end of the crusader’s next turn. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8 + 5 damage, and the target is marked until the end of the crusader’s next turn. &lt;/p&gt;]]; [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8 + 5 damage, and the target is marked until the end of the crusader’s next turn. &lt;/p&gt;]] <9.5>  damage, and the target is marked until the end of the crusader’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Immolate the Unclean&lt;/b&gt; (standard; requires torch, encounter) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Reflex;  2d4 + 5 damage, and the target takes ongoing 10 fire damage (save ends). &lt;/p&gt;]] ⚔ <b>Immolate the Unclean</b> (standard; requires torch, encounter) ✦ <b>Fire, Weapon</b></p><p>[[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Immolate the Unclean&lt;/b&gt; (standard; requires torch, encounter) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs Reflex&lt;/u&gt;;  2d4 + 5 damage, and the target takes ongoing 10 fire damage (save ends). &lt;/p&gt;]];  [[/roll 2d4 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Immolate the Unclean&lt;/b&gt; (standard; requires torch, encounter) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Reflex;  2d4 + 5 damage, and the target takes ongoing 10 fire damage (save ends). &lt;/p&gt;]] <10>  damage, and the target takes ongoing 10 fire damage (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crusader\"s Mercy&lt;/b&gt; (opportunity, when an enemy marked by the crusader moves or shifts, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8 + 5 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Crusader\"s Mercy</b> (opportunity, when an enemy marked by the crusader moves or shifts, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crusader\"s Mercy&lt;/b&gt; (opportunity, when an enemy marked by the crusader moves or shifts, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8 + 5 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crusader\"s Mercy&lt;/b&gt; (opportunity, when an enemy marked by the crusader moves or shifts, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8 + 5 damage, and the target is knocked prone. &lt;/p&gt;]] <9.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Torch&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Reflex; 1d4 fire damage. &lt;/p&gt;]] ⚔ <b>Torch</b> (minor 1/round, at-will) ✦ <b>Fire, Weapon</b></p><p>[[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Torch&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs Reflex&lt;/u&gt;; 1d4 fire damage. &lt;/p&gt;]]; [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Torch&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Reflex; 1d4 fire damage. &lt;/p&gt;]] <2.5> fire damage. </p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Masterful Rider",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"JEPtpVKu1G5wLxzS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 119; <b>Bloodied</b> 59</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 25</td><td><b>Ref</b> 24</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+10)<br><b>Con</b> 15 (+8)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 17 (+9)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 17 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> lance, leather armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Masterful Rider&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the dragoon is mounted and subjected to a pull, push, or slide, it can move 1 square fewer than the effect specifies.&lt;/p&gt;]]  <b>Masterful Rider</b> <b></b></p><p>Whenever the dragoon is mounted and subjected to a pull, push, or slide, it can move 1 square fewer than the effect specifies.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lance&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +17 vs. AC. The dragoon has a +2 bonus to hit while bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 damage. If the dragoon is mounted, the target also falls prone.&lt;/p&gt;]] (⚔) <b>Lance</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lance&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;. The dragoon has a +2 bonus to hit while bloodied.&lt;/p&gt;]]. The dragoon has a +2 bonus to hit while bloodied.</p><p><i>Hit:</i> [[/roll 2d12 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lance&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 damage. If the dragoon is mounted, the target also falls prone.&lt;/p&gt;]] <20>  damage. If the dragoon is mounted, the target also falls prone.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Battlefield Mastery&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 2 (allies in the burst). Each target can shift 1 square as a free action.&lt;/p&gt;]]  <b>Battlefield Mastery</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> Close burst 2 (allies in the burst). Each target can shift 1 square as a free action.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (acid) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +15 vs. Reflex. The dragoon has a +2 bonus to hit while bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 acid damage.&lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (acid) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+15[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (acid) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+15 vs. Reflex&lt;/u&gt;. The dragoon has a +2 bonus to hit while bloodied.&lt;/p&gt;]]. The dragoon has a +2 bonus to hit while bloodied.</p><p><i>Hit:</i> [[/roll 1d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (acid) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 6 acid damage.&lt;/p&gt;]] <9.5>  acid damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Incensed Mount&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy’s attack damages the dragoon while the dragoon is mounted.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; Melee 1 (the dragoon’s mount). The target can make a basic attack against the triggering enemy as a free action.&lt;/p&gt;]]  <b>Incensed Mount</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy’s attack damages the dragoon while the dragoon is mounted.</p><p><i>Effect (Immediate Reaction):</i> Melee 1 (the dragoon’s mount). The target can make a basic attack against the triggering enemy as a free action.</p></tr></td></table>",

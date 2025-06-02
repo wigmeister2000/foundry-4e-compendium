@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Underboss's Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TuDhIdjb5oaUEmFx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -335,10 +337,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 87; <b>Bloodied</b> 43</td><td style=\"padding-left: 15px;\"><b>Init</b> +9</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 19</td><td><b>Ref</b> 19</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+5)<br><b>Con</b> 15 (+6)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 15 (+6)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 17 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +12, Intimidate +12, Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> dagger  x18, leather armor .</p><p>[[/roll 0#&lt;b&gt;Underboss\"s Presence&lt;/b&gt; aura 2; at the start of each ally’s turn, if that ally is within the aura and the Lost One underboss’s line of sight, the ally gains 4 temporary hit points.]] <b>Underboss\"s Presence</b> aura 2; at the start of each ally’s turn, if that ally is within the aura and the Lost One underboss’s line of sight, the ally gains 4 temporary hit points.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 2d4+4 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 2d4+4 damage. &lt;/p&gt;]]; [[/roll 2d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 2d4+4 damage. &lt;/p&gt;]] <9>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Storm of Daggers&lt;/b&gt; (standard; requires a number of daggers equal to number of enemies in burst, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;area burst 1 within 10; targets enemies the Lost One Underboss can see; +10 vs Reflex; 2d4+4 damage. &lt;/p&gt;]] ✻ <b>Storm of Daggers</b> (standard; requires a number of daggers equal to number of enemies in burst, at-will) ✦ <b>Weapon</b></p><p>area burst 1 within 10; targets enemies the Lost One Underboss can see; [[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Storm of Daggers&lt;/b&gt; (standard; requires a number of daggers equal to number of enemies in burst, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;area burst 1 within 10; targets enemies the Lost One Underboss can see; &lt;u&gt;+10 vs Reflex&lt;/u&gt;; 2d4+4 damage. &lt;/p&gt;]]; [[/roll 2d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Storm of Daggers&lt;/b&gt; (standard; requires a number of daggers equal to number of enemies in burst, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;area burst 1 within 10; targets enemies the Lost One Underboss can see; +10 vs Reflex; 2d4+4 damage. &lt;/p&gt;]] <9>  damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Get Into Position&lt;/b&gt; (minor 1/round; at-will) &lt;/p&gt;&lt;p&gt;One ally within 10 squares shifts 1 square.&lt;/p&gt;]]  <b>Get Into Position</b> (minor 1/round; at-will) </p><p>One ally within 10 squares shifts 1 square.</p></tr></td></table>",

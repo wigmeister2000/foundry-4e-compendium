@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Defiling Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gtE60NR8JeV2ubdY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 182; <b>Bloodied</b> 91<hr><b>Resist</b> 10 fire <b>Vulnerable</b> 10 cold <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 23</td><td><b>Ref</b> 24</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+6)<br><b>Con</b> 19 (+9)</td><td><b>Dex</b> 20 (+10)<br><b>Int</b> 20 (+10)</td><td><b>Wis</b> 16 (+8)<br><b>Cha</b> 15 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, telepathy 15<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Defiling Aura&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Enemies who end their turn in the aura take 5 necrotic damage.&lt;/p&gt;]] ⌀ <b>Defiling Aura</b> (necrotic) ✦ <b>Aura</b> 3</p><p><i>Effect:</i> Enemies who end their turn in the aura take 5 necrotic damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fiery Tendrils&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one or two creatures); +16 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 5 fire damage.&lt;/p&gt;]] (➶) <b>Fiery Tendrils</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 15 (one or two creatures); [[/roll 1d20+16[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fiery Tendrils&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 15 (one or two creatures); &lt;u&gt;+16 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fiery Tendrils&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 5 fire damage.&lt;/p&gt;]] <19>  fire damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Heat Blast&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +14 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 4 fire damage, and Avor can push the target 1 square.&lt;/p&gt;]] ᗕ <b>Heat Blast</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+14[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Heat Blast&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+14 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Heat Blast&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 4 fire damage, and Avor can push the target 1 square.&lt;/p&gt;]] <14.5>  fire damage, and Avor can push the target 1 square.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spiteful Defiling&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 10 squares of Avor spends a healing surge.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 10 (the triggering enemy in the burst); +14 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target loses a healing surge, and Avor gains temporary hit points equal to the target’s healing surge value. &lt;/p&gt;]] ᗕ <b>Spiteful Defiling</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy within 10 squares of Avor spends a healing surge.</p><p><i>Attack (Immediate Reaction):</i> Close burst 10 (the triggering enemy in the burst); [[/roll 1d20+14[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spiteful Defiling&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 10 (the triggering enemy in the burst); &lt;u&gt;+14 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target loses a healing surge, and Avor gains temporary hit points equal to the target’s healing surge value. </p></tr></td></table>",

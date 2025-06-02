@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -413,21 +414,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-14,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> ++0 (as creator)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 43</td><td><b>Ref</b> 41</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+24)<br><b>Con</b> 28 (+23)</td><td><b>Dex</b> 27 (+22)<br><b>Int</b> 2 (+10)</td><td><b>Wis</b> 24 (+21)<br><b>Cha</b> 8 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spinning Blades&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+32 vs AC; 18 damage. &lt;/p&gt;]] (⚔) <b>Spinning Blades</b> (standard, at-will) </p><p>[[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spinning Blades&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+32 vs AC&lt;/u&gt;; 18 damage. &lt;/p&gt;]]; 18 damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Exploding Construct&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +30 vs Reflex; 18 fire and radiant damage. &lt;/p&gt;]] ⚔ <b>Exploding Construct</b> ( when reduced to 0 hit points, ) ✦ <b>Fire, Radiant</b></p><p>Close burst 1; [[/roll 1d20+30[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Exploding Construct&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+30 vs Reflex&lt;/u&gt;; 18 fire and radiant damage. &lt;/p&gt;]]; 18 fire and radiant damage. </p></tr></td></table>",

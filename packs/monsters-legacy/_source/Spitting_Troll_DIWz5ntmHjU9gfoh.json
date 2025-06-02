@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0uWei1jpn5UGD4fB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -162,10 +164,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -294,7 +296,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -788,7 +791,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WiEFSgChanYyJx2Z",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -824,7 +827,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -880,23 +884,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 106; <b>Bloodied</b> 53<br><b>Regeneration</b> 10 (if the troll takes acid or fire damage, regeneration does not function until the end of its next turn)</td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 22</td><td><b>Ref</b> 23</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 21 (+10)<br><b>Int</b> 10 (+5)</td><td><b>Wis</b> 17 (+8)<br><b>Cha</b> 13 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +13, Endurance +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> javelin  x10, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]] <8.5>  damage, plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]] <3.5> poison damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +17 vs AC; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]] (➶) <b>Javelin</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +17 vs AC; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]] <8.5>  damage, plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +17 vs AC; 1d6+5 damage, plus 1d6 poison damage. &lt;/p&gt;]] <3.5> poison damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Acid Spit&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +15 vs Reflex; 1d6 acid damage. &lt;/p&gt;]] ➶ <b>Acid Spit</b> (minor, recharge ⚄⚅) ✦ <b>Acid</b></p><p>Ranged 5; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Acid Spit&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d6 acid damage. &lt;/p&gt;]]; [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Acid Spit&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +15 vs Reflex; 1d6 acid damage. &lt;/p&gt;]] <3.5> acid damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regenerative Empowerment&lt;/b&gt; (minor 1/turn; at-will) &lt;/p&gt;&lt;p&gt;One troll within 10 squares whose regeneration is currently inactive (as a result of taking acid or fire damage) immediately reactivates the regeneration.&lt;/p&gt;]]  <b>Regenerative Empowerment</b> (minor 1/turn; at-will) </p><p>One troll within 10 squares whose regeneration is currently inactive (as a result of taking acid or fire damage) immediately reactivates the regeneration.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 10 hit points.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 10 hit points.</p></tr></td></table>",

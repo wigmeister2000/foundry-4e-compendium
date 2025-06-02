@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Description",
-			"type":"raceFeats",
+			"type":"feature",
 			"img":"icons/svg/mystery-man.svg",
 			"system":{
 				"description":{
@@ -15,36 +15,6 @@
 					"unidentified":""
 				},
 				"source":"",
-				"activation":{
-					"type":"",
-					"cost":0,
-					"condition":""
-				},
-				"duration":{
-					"value":null,
-					"units":""
-				},
-				"target":{
-					"value":null,
-					"width":null,
-					"units":"",
-					"type":""
-				},
-				"range":{
-					"value":null,
-					"long":null,
-					"units":""
-				},
-				"uses":{
-					"value":0,
-					"max":0,
-					"per":null
-				},
-				"consume":{
-					"type":"",
-					"target":null,
-					"amount":null
-				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
@@ -57,7 +27,8 @@
 				"recharge":{
 					"value":null,
 					"charged":false
-				}
+				},
+				"featureType":"race"
 			},
 			"effects":[],
 			"folder":null,
@@ -68,7 +39,7 @@
 		},
 		{
 			"name":"Detect",
-			"type":"raceFeats",
+			"type":"feature",
 			"img":"icons/svg/eye.svg",
 			"system":{
 				"description":{
@@ -77,36 +48,6 @@
 					"unidentified":""
 				},
 				"source":"",
-				"activation":{
-					"type":"",
-					"cost":0,
-					"condition":""
-				},
-				"duration":{
-					"value":null,
-					"units":""
-				},
-				"target":{
-					"value":null,
-					"width":null,
-					"units":"",
-					"type":""
-				},
-				"range":{
-					"value":null,
-					"long":null,
-					"units":""
-				},
-				"uses":{
-					"value":0,
-					"max":0,
-					"per":null
-				},
-				"consume":{
-					"type":"",
-					"target":null,
-					"amount":null
-				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
@@ -119,7 +60,8 @@
 				"recharge":{
 					"value":null,
 					"charged":false
-				}
+				},
+				"featureType":"race"
 			},
 			"effects":[],
 			"folder":null,
@@ -130,7 +72,7 @@
 		},
 		{
 			"name":"Countermeasures",
-			"type":"feat",
+			"type":"feature",
 			"img":"icons/svg/cancel.svg",
 			"system":{
 				"description":{
@@ -139,36 +81,6 @@
 					"unidentified":""
 				},
 				"source":"",
-				"activation":{
-					"type":"",
-					"cost":0,
-					"condition":""
-				},
-				"duration":{
-					"value":null,
-					"units":""
-				},
-				"target":{
-					"value":null,
-					"width":null,
-					"units":"",
-					"type":""
-				},
-				"range":{
-					"value":null,
-					"long":null,
-					"units":""
-				},
-				"uses":{
-					"value":0,
-					"max":0,
-					"per":null
-				},
-				"consume":{
-					"type":"",
-					"target":null,
-					"amount":null
-				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
@@ -181,7 +93,8 @@
 				"recharge":{
 					"value":null,
 					"charged":false
-				}
+				},
+				"featureType":"feat"
 			},
 			"effects":[],
 			"folder":null,
@@ -418,21 +331,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-14,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"",
@@ -1127,6 +1027,6 @@
 		},
 		"detectionModes":[]
 	},
-	"folder":"Uajw4JcP1FsoVelq",
+	"folder":"8OPb7Q41sRkyLecg",
 	"_key":"!actors!Cku0NX6ErMwHqnpU"
 }

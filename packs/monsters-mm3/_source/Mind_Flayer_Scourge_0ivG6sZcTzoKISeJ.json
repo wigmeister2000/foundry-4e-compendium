@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Mind Leech",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"oBr2kmYcuIX1tRUL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 199; <b>Bloodied</b> 99<hr><b>Resist</b> 10 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 31</td><td><b>Ref</b> 34</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+15)<br><b>Con</b> 23 (+16)</td><td><b>Dex</b> 23 (+16)<br><b>Int</b> 26 (+18)</td><td><b>Wis</b> 22 (+16)<br><b>Cha</b> 25 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 10<br><b>Alignment</b> evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mind Leech&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the mind flayer scourge starts its turn with a creature grabbed, the scourge can make a saving throw or an extra recharge roll. It can recharge psychic assault but must roll a 6 on the recharge roll.&lt;/p&gt;]]  <b>Mind Leech</b> <b></b></p><p>Whenever the mind flayer scourge starts its turn with a creature grabbed, the scourge can make a saving throw or an extra recharge roll. It can recharge psychic assault but must roll a 6 on the recharge roll.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The scourge must not have a creature grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +24 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 damage, and the scourge grabs the target. Until the grab ends, the target is dazed.&lt;/p&gt;]] (⚔) <b>Tentacles</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The scourge must not have a creature grabbed.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+24[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+24 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 damage, and the scourge grabs the target. Until the grab ends, the target is dazed.&lt;/p&gt;]] <14>  damage, and the scourge grabs the target. Until the grab ends, the target is dazed.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Blast&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +24 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Mind Blast</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+24[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Blast&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+24 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Mind Blast&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] <14>  psychic damage, and the target is dazed (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Psychic Assault&lt;/b&gt; (charm) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the scourge); +24 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage, and the target is dominated (save ends; the target takes a -4 penalty to the saving throw).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the target is dominated (save ends).&lt;/p&gt;]] ⚔ <b>Psychic Assault</b> (charm) ✦ <b>Encounter</b></p><p><i>Attack:</i> Melee 1 (one creature grabbed by the scourge); [[/roll 1d20+24[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Psychic Assault&lt;/b&gt; (charm) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the scourge); &lt;u&gt;+24 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Psychic Assault&lt;/b&gt; (charm) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage, and the target is dominated (save ends; the target takes a -4 penalty to the saving throw).&lt;/p&gt;]] <9.5>  damage, and the target is dominated (save ends; the target takes a -4 penalty to the saving throw).</p><p><i>Miss:</i> Half damage, and the target is dominated (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Alter Reality&lt;/b&gt; (teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The scourge teleports a creature adjacent to it 2 squares.&lt;/p&gt;]]  <b>Alter Reality</b> (teleportation) ✦ <b>At-Will</b></p><p><i>Effect:</i> The scourge teleports a creature adjacent to it 2 squares.</p></tr></td></table>",

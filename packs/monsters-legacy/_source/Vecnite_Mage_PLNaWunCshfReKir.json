@@ -109,10 +109,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -592,23 +592,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 42; <b>Bloodied</b> 21</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 13</td><td><b>Ref</b> 14</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 18 (+6)</td><td><b>Wis</b> 17 (+5)<br><b>Cha</b> 12 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Any</td></tr><tr><td><b>Skills</b> Arcana +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> robes, quarterstaff , wand implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs AC; 1d4 damage. &lt;/p&gt;]] ⚔ <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+4[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+4 vs AC&lt;/u&gt;; 1d4 damage. &lt;/p&gt;]]; [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs AC; 1d4 damage. &lt;/p&gt;]] <2.5> damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunder Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +8 vs Fortitude; 1d6+5 thunder damage, and the target is pushed 3 squares. &lt;/p&gt;]] ᗕ <b>Thunder Blast</b> (standard, at-will) ✦ <b>Thunder</b></p><p>Close blast 3; [[/roll 1d20+8[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunder Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+8 vs Fortitude&lt;/u&gt;; 1d6+5 thunder damage, and the target is pushed 3 squares. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thunder Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +8 vs Fortitude; 1d6+5 thunder damage, and the target is pushed 3 squares. &lt;/p&gt;]] <8.5>  thunder damage, and the target is pushed 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Arcs&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mage makes a separate attack against 3 different targets: Ranged 10; +8 vs Reflex; 1d8+5 lightning damage. &lt;/p&gt;]] ➶ <b>Lightning Arcs</b> (standard, encounter) ✦ <b>Lightning</b></p><p>The mage makes a separate attack against 3 different targets: Ranged 10; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Arcs&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mage makes a separate attack against 3 different targets: Ranged 10; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 1d8+5 lightning damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Arcs&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mage makes a separate attack against 3 different targets: Ranged 10; +8 vs Reflex; 1d8+5 lightning damage. &lt;/p&gt;]] <9.5>  lightning damage. </p></tr></td></table>",

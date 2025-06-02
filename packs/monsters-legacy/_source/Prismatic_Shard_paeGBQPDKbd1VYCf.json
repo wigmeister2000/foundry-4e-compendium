@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Prismatic Corona",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0M6aTxFurzjSgyb9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 123; <b>Bloodied</b> 61<hr><b>Resist</b> 10 variable (4/encounter) <b>Immune</b> disease, poison, radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 27</td><td><b>Ref</b> 27</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 4 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+12)<br><b>Con</b> 21 (+13)</td><td><b>Dex</b> 20 (+13)<br><b>Int</b> 7 (+6)</td><td><b>Wis</b> 13 (+9)<br><b>Cha</b> 24 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Prismatic Corona&lt;/b&gt; (Radiant) aura 2; each enemy that ends its turn within the aura takes 5 radiant damage and takes a -2 penalty to saving throws during its current turn.]] <b>Prismatic Corona</b> (Radiant) aura 2; each enemy that ends its turn within the aura takes 5 radiant damage and takes a -2 penalty to saving throws during its current turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Prism Flare&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs Reflex; 1d10+7 radiant damage. &lt;/p&gt;]] (⚔) <b>Prism Flare</b> (standard, at-will) ✦ <b>Radiant</b></p><p>[[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Prism Flare&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs Reflex&lt;/u&gt;; 1d10+7 radiant damage. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Prism Flare&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs Reflex; 1d10+7 radiant damage. &lt;/p&gt;]] <12.5>  radiant damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Iridescent Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +21 vs Will; 2d8+7 radiant damage, and the target is blinded until the end of the prismatic shard\"s next turn. &lt;/p&gt;]] ➶ <b>Iridescent Bolt</b> (standard, at-will) ✦ <b>Radiant</b></p><p>Ranged 20; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Iridescent Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+21 vs Will&lt;/u&gt;; 2d8+7 radiant damage, and the target is blinded until the end of the prismatic shard\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Iridescent Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +21 vs Will; 2d8+7 radiant damage, and the target is blinded until the end of the prismatic shard\"s next turn. &lt;/p&gt;]] <16>  radiant damage, and the target is blinded until the end of the prismatic shard\"s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flashing Colors&lt;/b&gt; (minor, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +21 vs Will; the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Flashing Colors</b> (minor, recharge ⚄⚅) </p><p>Close burst 3; targets enemies; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flashing Colors&lt;/b&gt; (minor, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+21 vs Will&lt;/u&gt;; the target is dazed (save ends). &lt;/p&gt;]]; the target is dazed (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Prismatic Shatter&lt;/b&gt; ( when the prismatic shard drops to 0 hit points, ) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +21 vs Will; 2d8+7 radiant damage, and the target is blinded (save ends). &lt;/p&gt;]] ᗕ <b>Prismatic Shatter</b> ( when the prismatic shard drops to 0 hit points, ) ✦ <b>Radiant</b></p><p>Close burst 2; [[/roll 1d20+21[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Prismatic Shatter&lt;/b&gt; ( when the prismatic shard drops to 0 hit points, ) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+21 vs Will&lt;/u&gt;; 2d8+7 radiant damage, and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Prismatic Shatter&lt;/b&gt; ( when the prismatic shard drops to 0 hit points, ) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +21 vs Will; 2d8+7 radiant damage, and the target is blinded (save ends). &lt;/p&gt;]] <16>  radiant damage, and the target is blinded (save ends). </p></tr></td></table>",

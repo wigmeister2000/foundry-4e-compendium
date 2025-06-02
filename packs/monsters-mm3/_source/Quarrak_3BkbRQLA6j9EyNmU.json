@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Quarrak Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5hUaPv3kN0zeE7pg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -440,7 +442,7 @@
 				"uses":{
 					"value":2,
 					"max":"2",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -632,23 +634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 198; <b>Bloodied</b> 99<hr><b>Immune</b> immobilized, slowed </td><td style=\"padding-left: 15px;\"><b>Init</b> +20</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 33</td><td><b>Ref</b> 34</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+12)<br><b>Con</b> 22 (+16)</td><td><b>Dex</b> 26 (+18)<br><b>Int</b> 8 (+9)</td><td><b>Wis</b> 19 (+14)<br><b>Cha</b> 7 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Quarrak Tactics&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the quarrak flanks with another quarrak, it gains a +3 bonus to attack rolls for the flank instead of the normal +2. If the quarrak flanks with its twin, it gains a +4 bonus to attack rolls instead of +2. If the quarrak hits a target for which it has this +4 flanking bonus, the target is stunned until the end of the quarrak’s next turn.&lt;/p&gt;]]  <b>Quarrak Tactics</b> <b></b></p><p>If the quarrak flanks with another quarrak, it gains a +3 bonus to attack rolls for the flank instead of the normal +2. If the quarrak flanks with its twin, it gains a +4 bonus to attack rolls instead of +2. If the quarrak hits a target for which it has this +4 flanking bonus, the target is stunned until the end of the quarrak’s next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +26 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 11 damage.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+26[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+26 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 11 damage.&lt;/p&gt;]] <29>  damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slippery&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy misses the quarrak with a melee attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The quarrak uses bite, then shifts 4 squares.&lt;/p&gt;]] ⚔ <b>Slippery</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy misses the quarrak with a melee attack.</p><p><i>Effect (Immediate Reaction):</i> The quarrak uses bite, then shifts 4 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;2/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The quarrak takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The quarrak gains resist 15 to the triggering damage type until the end of the encounter or until it uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>2/Encounter</b></p><p><i>Trigger:</i> The quarrak takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The quarrak gains resist 15 to the triggering damage type until the end of the encounter or until it uses variable resistance again.</p></tr></td></table>",

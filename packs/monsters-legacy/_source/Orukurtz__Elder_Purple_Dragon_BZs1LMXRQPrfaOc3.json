@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -645,10 +647,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1444,7 +1446,7 @@
 		},
 		{
 			"name":"Harmed by Sunlight",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SYaskIMHWhNwOoum",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1480,7 +1482,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1536,23 +1539,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 895; <b>Bloodied</b> 447<hr><b>Resist</b> 25 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 33</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 9, fly 9 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+13)<br><b>Con</b> 19 (+13)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 21 (+14)</td><td><b>Wis</b> 21 (+14)<br><b>Cha</b> 27 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +22, Diplomacy +22, Dungeoneering +19, Insight +19, Intimidate +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 29</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d6+4 damage, and the target takes ongoing 15 psychic damage (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Reach 3; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d6+4 damage, and the target takes ongoing 15 psychic damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d6+4 damage, and the target takes ongoing 15 psychic damage (save ends). &lt;/p&gt;]] <11>  damage, and the target takes ongoing 15 psychic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d8+4 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d8+4 damage. &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d8+4 damage. &lt;/p&gt;]] <13>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The dragon makes two claw attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The dragon makes two claw attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +23 vs Fortitude; 2d10+8 psychic damage, and the target takes ongoing 10 psychic damage and is dazed (save ends both). Miss: Half damage, and the target is not dazed and does not take ongoing damage. Each time the target fails the saving throw against this effect, the purple dragon can slide it 5 squares. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Psychic</b></p><p>Close blast 10; [[/roll 1d20+23[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; &lt;u&gt;+23 vs Fortitude&lt;/u&gt;; 2d10+8 psychic damage, and the target takes ongoing 10 psychic damage and is dazed (save ends both). Miss: Half damage, and the target is not dazed and does not take ongoing damage. Each time the target fails the saving throw against this effect, the purple dragon can slide it 5 squares. &lt;/p&gt;]]; [[/roll 2d10+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +23 vs Fortitude; 2d10+8 psychic damage, and the target takes ongoing 10 psychic damage and is dazed (save ends both). Miss: Half damage, and the target is not dazed and does not take ongoing damage. Each time the target fails the saving throw against this effect, the purple dragon can slide it 5 squares. &lt;/p&gt;]] <19>  psychic damage, and the target takes ongoing 10 psychic damage and is dazed (save ends both). Miss: Half damage, and the target is not dazed and does not take ongoing damage. Each time the target fails the saving throw against this effect, the purple dragon can slide it 5 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +23 vs Will; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+23[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+23 vs Will&lt;/u&gt;; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Phasing Strike&lt;/b&gt; (immediate reaction, when an enemy ends its turn within 3 squares of the dragon, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon attacks the target; reach 3; targets the triggering creature; +23 vs Will; 2d6+4 psychic damage, and the target is pushed 5 squares. The target gains the phasing quality during this forced movement. &lt;/p&gt;]] ⚔ <b>Phasing Strike</b> (immediate reaction, when an enemy ends its turn within 3 squares of the dragon, at-will) ✦ <b>Psychic</b></p><p>The dragon attacks the target; reach 3; targets the triggering creature; [[/roll 1d20+23[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Phasing Strike&lt;/b&gt; (immediate reaction, when an enemy ends its turn within 3 squares of the dragon, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon attacks the target; reach 3; targets the triggering creature; &lt;u&gt;+23 vs Will&lt;/u&gt;; 2d6+4 psychic damage, and the target is pushed 5 squares. The target gains the phasing quality during this forced movement. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Phasing Strike&lt;/b&gt; (immediate reaction, when an enemy ends its turn within 3 squares of the dragon, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon attacks the target; reach 3; targets the triggering creature; +23 vs Will; 2d6+4 psychic damage, and the target is pushed 5 squares. The target gains the phasing quality during this forced movement. &lt;/p&gt;]] <11>  psychic damage, and the target is pushed 5 squares. The target gains the phasing quality during this forced movement. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Nightmare Gaze&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a stunned or dazed creature; +23 vs Will; the target is dominated (save ends). A creature dominated by this effect must attack an ally on its turn or take 20 psychic damage at the end of its turn (even if it saves against this effect). &lt;/p&gt;]] ➶ <b>Nightmare Gaze</b> (minor, at-will) ✦ <b>Charm, Gaze, Psychic</b></p><p>Ranged 10; targets a stunned or dazed creature; [[/roll 1d20+23[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Nightmare Gaze&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets a stunned or dazed creature; &lt;u&gt;+23 vs Will&lt;/u&gt;; the target is dominated (save ends). A creature dominated by this effect must attack an ally on its turn or take 20 psychic damage at the end of its turn (even if it saves against this effect). &lt;/p&gt;]]; the target is dominated (save ends). A creature dominated by this effect must attack an ally on its turn or take 20 psychic damage at the end of its turn (even if it saves against this effect). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon’s breath weapon recharges, and the dragon uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) ✦ <b>Psychic</b></p><p>The dragon’s breath weapon recharges, and the dragon uses it immediately.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Harmed by Sunlight&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An elder purple dragon that begins its turn in direct sunlight can take only a single standard action on its turn. If it ends the turn in direct sunlight, it also takes 223 damage.&lt;/p&gt;]]  <b>Harmed by Sunlight</b></p><p>An elder purple dragon that begins its turn in direct sunlight can take only a single standard action on its turn. If it ends the turn in direct sunlight, it also takes 223 damage.</p></tr></td></table>",

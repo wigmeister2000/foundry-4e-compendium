@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -545,7 +546,7 @@
 		},
 		{
 			"name":"Deft Charge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BnsYP40F1ZqgmyuA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -581,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 63; <b>Bloodied</b> 31</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 17</td><td><b>Ref</b> 19</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 while charging)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 8 (+1)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 8 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Endurance +9, Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> leather armor , spear .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+5 damage. &lt;/p&gt;]] (⚔) <b>Spear</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d8+5 damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+5 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Warrior\"s Surge&lt;/b&gt; (standard; usable only while bloodied, encounter) ✦ &lt;b&gt;Healing, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The orc harrier makes a melee basic attack and regains 15 hit points.&lt;/p&gt;]] ⚔ <b>Warrior\"s Surge</b> (standard; usable only while bloodied, encounter) ✦ <b>Healing, Weapon</b></p><p>The orc harrier makes a melee basic attack and regains 15 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mobile Melee Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The orc harrier can move half its speed and make one melee basic attack at any point during that movement. The creature doesn’t provoke opportunity attacks while moving away from the target of its attack&lt;/p&gt;]] ⚔ <b>Mobile Melee Attack</b> (standard, at-will) </p><p>The orc harrier can move half its speed and make one melee basic attack at any point during that movement. The creature doesn’t provoke opportunity attacks while moving away from the target of its attack</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Deft Charge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The orc harrier can use its move action to shift after it charges.&lt;/p&gt;]]  <b>Deft Charge</b></p><p>The orc harrier can use its move action to shift after it charges.</p></tr></td></table>",

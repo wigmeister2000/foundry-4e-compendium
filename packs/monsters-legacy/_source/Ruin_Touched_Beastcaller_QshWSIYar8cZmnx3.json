@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -463,10 +465,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -641,10 +643,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -821,10 +823,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -944,23 +946,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 81; <b>Bloodied</b> 40</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 19</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+5)<br><b>Con</b> 17 (+6)</td><td><b>Dex</b> 17 (+6)<br><b>Int</b> 15 (+5)</td><td><b>Wis</b> 15 (+5)<br><b>Cha</b> 20 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Religion +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> hide armor , javelin  x10.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 2d6+3 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 2d6+3 damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 2d6+3 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5/10; +13 vs AC; 2d6+3 damage. &lt;/p&gt;]] (➶) <b>Javelin</b> (standard, at-will) </p><p>Ranged 5/10; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+13 vs AC&lt;/u&gt;; 2d6+3 damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5/10; +13 vs AC; 2d6+3 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Murderous Flock&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;A flock of carrion birds (crows, ravens, and the like) appear from nowhere to descend briefly upon the battlefield, screeching and clawing; Burst 3 within 20; +12 vs Reflex; 2d4+5 damage, plus the target is blinded and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or blindness.&lt;/p&gt;&lt;p&gt;Special: The beastcaller’s allies are immune to this attack. &lt;/p&gt;]] ✻ <b>Murderous Flock</b> (standard, at-will) </p><p>A flock of carrion birds (crows, ravens, and the like) appear from nowhere to descend briefly upon the battlefield, screeching and clawing; Burst 3 within 20; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Murderous Flock&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;A flock of carrion birds (crows, ravens, and the like) appear from nowhere to descend briefly upon the battlefield, screeching and clawing; Burst 3 within 20; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; 2d4+5 damage, plus the target is blinded and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or blindness.&lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Murderous Flock&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;A flock of carrion birds (crows, ravens, and the like) appear from nowhere to descend briefly upon the battlefield, screeching and clawing; Burst 3 within 20; +12 vs Reflex; 2d4+5 damage, plus the target is blinded and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or blindness.&lt;/p&gt;]] <10>  damage, plus the target is blinded and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or blindness.</p><p>Special: The beastcaller’s allies are immune to this attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Erupting Swarm&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Rats, serpents, and insects boil from the earth, ravaging all in their path; Burst 3 within 10 (targets on the ground only); +12 vs Fortitude; 2d4+5 damage, plus the target is immobilized and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or immobilization.&lt;/p&gt;&lt;p&gt;Special: The beastcaller’s allies are immune to this attack.&lt;/p&gt;&lt;p&gt;Aftereffect: The area becomes difficult terrain for the duration of the encounter. &lt;/p&gt;]] ✻ <b>Erupting Swarm</b> (standard, recharge ⚄⚅) </p><p>Rats, serpents, and insects boil from the earth, ravaging all in their path; Burst 3 within 10 (targets on the ground only); [[/roll 1d20+12[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Erupting Swarm&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Rats, serpents, and insects boil from the earth, ravaging all in their path; Burst 3 within 10 (targets on the ground only); &lt;u&gt;+12 vs Fortitude&lt;/u&gt;; 2d4+5 damage, plus the target is immobilized and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or immobilization.&lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Erupting Swarm&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Rats, serpents, and insects boil from the earth, ravaging all in their path; Burst 3 within 10 (targets on the ground only); +12 vs Fortitude; 2d4+5 damage, plus the target is immobilized and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or immobilization.&lt;/p&gt;]] <10>  damage, plus the target is immobilized and takes ongoing 5 damage (save ends both). Miss: Half damage, and no ongoing damage or immobilization.</p><p>Special: The beastcaller’s allies are immune to this attack.</p><p>Aftereffect: The area becomes difficult terrain for the duration of the encounter. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Against the Tide&lt;/b&gt; (free 1/round, when the beastcaller hits with an area attack, ) ✦ &lt;b&gt;Divine&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The beastcaller may choose one of the targets hit by its area attack; +13 vs Fortitude; the target slides up to 3 squares or falls prone (beastcaller\"s choice). &lt;/p&gt;]] ➶ <b>Against the Tide</b> (free 1/round, when the beastcaller hits with an area attack, ) ✦ <b>Divine</b></p><p>The beastcaller may choose one of the targets hit by its area attack; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Against the Tide&lt;/b&gt; (free 1/round, when the beastcaller hits with an area attack, ) ✦ &lt;b&gt;Divine&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The beastcaller may choose one of the targets hit by its area attack; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; the target slides up to 3 squares or falls prone (beastcaller\"s choice). &lt;/p&gt;]]; the target slides up to 3 squares or falls prone (beastcaller\"s choice). </p></tr></td></table>",

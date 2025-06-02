@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swirling Madness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"XAI6hB2Tg0ZnRVKN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -335,10 +338,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -999,23 +1002,10 @@
 				"max":10
 			},
 			"init":{
-				"value":14,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":14
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 244; <b>Bloodied</b> 122</td><td style=\"padding-left: 15px;\"><b>Init</b> +14 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 27</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+7)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 22 (+12)<br><b>Int</b> 25 (+13)</td><td><b>Wis</b> 8 (+5)<br><b>Cha</b> 13 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Arcana +20, Heal +10, History +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> stained robes, everburning torch, longsword .</p><p>[[/roll 0#&lt;b&gt;Swirling Madness&lt;/b&gt; (Fear) aura 1; the Patriarch makes a mind rend attack against each enemy that starts its turn within the aura.]] <b>Swirling Madness</b> (Fear) aura 1; the Patriarch makes a mind rend attack against each enemy that starts its turn within the aura.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+4 damage, and if the Patriarch is marked, end this condition. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+4 damage, and if the Patriarch is marked, end this condition. &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+4 damage, and if the Patriarch is marked, end this condition. &lt;/p&gt;]] <13>  damage, and if the Patriarch is marked, end this condition. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mind Rend&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Will; the target is dazed until the end of the Partiarch\"s next turn. &lt;/p&gt;]] (⚔) <b>Mind Rend</b> (standard, at-will) ✦ <b>Fear</b></p><p>[[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mind Rend&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs Will&lt;/u&gt;; the target is dazed until the end of the Partiarch\"s next turn. &lt;/p&gt;]]; the target is dazed until the end of the Partiarch\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh-Splitter&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Make a longsword attack against two targets. The Patriarch can shift before or after each attack. If both attacks hit, both targets are slowed (save ends)&lt;/p&gt;]] ⚔ <b>Flesh-Splitter</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Make a longsword attack against two targets. The Patriarch can shift before or after each attack. If both attacks hit, both targets are slowed (save ends)</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Haunted by the Past&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +15 vs Will; the target is dazed (save ends). First Failed Saving Throw: The target is dominated instead of stunned (save ends). Aftereffect: The target takes 10 psychic damage. &lt;/p&gt;]] ᗕ <b>Haunted by the Past</b> (standard, recharge ⚄⚅) ✦ <b>Fear, Psychic</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Haunted by the Past&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+15 vs Will&lt;/u&gt;; the target is dazed (save ends). First Failed Saving Throw: The target is dominated instead of stunned (save ends). Aftereffect: The target takes 10 psychic damage. &lt;/p&gt;]]; the target is dazed (save ends). First Failed Saving Throw: The target is dominated instead of stunned (save ends). Aftereffect: The target takes 10 psychic damage. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Patriarch teleports 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The Patriarch teleports 5 squares.</p></tr></td></table>",

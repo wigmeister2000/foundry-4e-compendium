@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Psychic Moan",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8jdwe6aAXlZyzSnr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,10 +335,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -590,7 +592,7 @@
 		},
 		{
 			"name":"Tentacle Net",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"mr41BW9viYw2HgEc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -626,7 +628,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -682,23 +685,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 402; <b>Bloodied</b> 201</td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 37</td><td><b>Ref</b> 33</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, swim 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+18)<br><b>Con</b> 25 (+17)</td><td><b>Dex</b> 19 (+14)<br><b>Int</b> 6 (+8)</td><td><b>Wis</b> 15 (+12)<br><b>Cha</b> 22 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Psychic Moan&lt;/b&gt; (Psychic) aura 2; the chuul exudes a constant hum of psychic energy. Enemies in the aura take a -2 penalty to Will defense and gain vulnerable 5 psychic.]] <b>Psychic Moan</b> (Psychic) aura 2; the chuul exudes a constant hum of psychic energy. Enemies in the aura take a -2 penalty to Will defense and gain vulnerable 5 psychic.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 2d8+8 damage, or 4d8+8 damage against an immobilized creature. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+28 vs AC&lt;/u&gt;; 2d8+8 damage, or 4d8+8 damage against an immobilized creature. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 2d8+8 damage, or 4d8+8 damage against an immobilized creature. &lt;/p&gt;]] <17>  damage, or [[/roll 4d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +28 vs AC; 2d8+8 damage, or 4d8+8 damage against an immobilized creature. &lt;/p&gt;]] <26>  damage against an immobilized creature. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chuul makes two claw attacks. If both claw attacks hit a single target, the chuul makes a secondary attack against the same target with its tentacles&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +26 vs Fortitude; the target is immobilized (save ends). &lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) ✦ <b>Poison</b></p><p>The chuul makes two claw attacks. If both claw attacks hit a single target, the chuul makes a secondary attack against the same target with its tentacles</p><p><i>Secondary Attack</i> [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; the target is immobilized (save ends). &lt;/p&gt;]]; the target is immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Lure&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Will; 2d10+3 psychic damage, and the target is pulled 5 squares. &lt;/p&gt;]] ➶ <b>Psychic Lure</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 10; [[/roll 1d20+27[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Lure&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+27 vs Will&lt;/u&gt;; 2d10+3 psychic damage, and the target is pulled 5 squares. &lt;/p&gt;]]; [[/roll 2d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Psychic Lure&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Will; 2d10+3 psychic damage, and the target is pulled 5 squares. &lt;/p&gt;]] <14>  psychic damage, and the target is pulled 5 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tentacle Net&lt;/b&gt;✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A creature hit by the chuul’s opportunity attack is immobilized until the end of the chuul’s next turn.&lt;/p&gt;]]  <b>Tentacle Net</b>✦ <b>Poison</b></p><p>A creature hit by the chuul’s opportunity attack is immobilized until the end of the chuul’s next turn.</p></tr></td></table>",

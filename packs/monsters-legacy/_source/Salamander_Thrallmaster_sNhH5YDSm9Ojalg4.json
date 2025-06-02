@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -547,7 +548,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"61MNgjFbSadoCe3P",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -583,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 262; <b>Bloodied</b> 131<hr><b>Resist</b> 30 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 41</td><td><b>Ref</b> 41</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+21)<br><b>Con</b> 30 (+24)</td><td><b>Dex</b> 27 (+22)<br><b>Int</b> 20 (+19)</td><td><b>Wis</b> 27 (+22)<br><b>Cha</b> 19 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +23</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><p><b>Equipment</b> scourge .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tail Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 3d10+6 fire damage, and the target is knocked prone. &lt;/p&gt;]] (⚔) <b>Tail Lash</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 2; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tail Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+33 vs AC&lt;/u&gt;; 3d10+6 fire damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 3d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tail Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 3d10+6 fire damage, and the target is knocked prone. &lt;/p&gt;]] <22.5>  fire damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Scourge&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d10+4 damage, and the target takes ongoing 5 fire damage and is slowed (save ends both). &lt;/p&gt;]] ⚔ <b>Scourge</b> (standard, at-will) ✦ <b>Fire, Weapon</b></p><p>Reach 3; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Scourge&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+33 vs AC&lt;/u&gt;; 2d10+4 damage, and the target takes ongoing 5 fire damage and is slowed (save ends both). &lt;/p&gt;]]; [[/roll 2d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Scourge&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +33 vs AC; 2d10+4 damage, and the target takes ongoing 5 fire damage and is slowed (save ends both). &lt;/p&gt;]] <15>  damage, and the target takes ongoing 5 fire damage and is slowed (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Molten Lash&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Reflex; 3d10 damage, and the target takes ongoing 10 fire damage and is stunned (save ends both). &lt;/p&gt;]] ➶ <b>Molten Lash</b> (standard, recharge ⚃⚄⚅) ✦ <b>Fire</b></p><p>Ranged 20; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Molten Lash&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 3d10 damage, and the target takes ongoing 10 fire damage and is stunned (save ends both). &lt;/p&gt;]]; [[/roll 3d10 #&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Molten Lash&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Reflex; 3d10 damage, and the target takes ongoing 10 fire damage and is stunned (save ends both). &lt;/p&gt;]] <16.5> damage, and the target takes ongoing 10 fire damage and is stunned (save ends both). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The salamander thrallmaster can make opportunity attacks against enemies within 2 squares.&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>The salamander thrallmaster can make opportunity attacks against enemies within 2 squares.</p></tr></td></table>",

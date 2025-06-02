@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Threatening Barbs",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"AqSZnarOfPzMVjCm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -992,23 +994,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 170; <b>Bloodied</b> 85<hr><b>Resist</b> 20 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 31</td><td><b>Ref</b> 30</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, teleport 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+16)<br><b>Con</b> 18 (+13)</td><td><b>Dex</b> 23 (+15)<br><b>Int</b> 12 (+10)</td><td><b>Wis</b> 15 (+11)<br><b>Cha</b> 20 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +21, Intimidate +19</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Threatening Barbs&lt;/b&gt; aura 1; any creature in the aura that makes a melee attack or a close attack with the weapon keyword against the barbed devil takes 5 damage.]] <b>Threatening Barbs</b> aura 1; any creature in the aura that makes a melee attack or a close attack with the weapon keyword against the barbed devil takes 5 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8+7 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 1d8+7 damage. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8+7 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The barbed devil makes two claw attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The barbed devil makes two claw attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Hurl Flame&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +21 vs Reflex; 1d10+6 fire damage, and ongoing 5 fire damage, and the target is dazed (save ends both). &lt;/p&gt;]] ➶ <b>Hurl Flame</b> (standard, recharge ⚄⚅) ✦ <b>Fire</b></p><p>Ranged 5; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Hurl Flame&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 1d10+6 fire damage, and ongoing 5 fire damage, and the target is dazed (save ends both). &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Hurl Flame&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +21 vs Reflex; 1d10+6 fire damage, and ongoing 5 fire damage, and the target is dazed (save ends both). &lt;/p&gt;]] <11.5>  fire damage, and ongoing 5 fire damage, and the target is dazed (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Barbed Teleport&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +23 vs AC; 1d8+7 damage, and the barbed devil teleports 7 squares. &lt;/p&gt;]] ᗕ <b>Barbed Teleport</b> (standard, encounter) ✦ <b>Teleportation</b></p><p>Close burst 1; [[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Barbed Teleport&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+23 vs AC&lt;/u&gt;; 1d8+7 damage, and the barbed devil teleports 7 squares. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Barbed Teleport&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +23 vs AC; 1d8+7 damage, and the barbed devil teleports 7 squares. &lt;/p&gt;]] <11.5>  damage, and the barbed devil teleports 7 squares. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Infernal Bound&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;The barbed devil shifts 3 squares.&lt;/p&gt;]]  <b>Infernal Bound</b> (minor; at-will) </p><p>The barbed devil shifts 3 squares.</p></tr></td></table>",

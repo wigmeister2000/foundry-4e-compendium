@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Sz8mTtIZ4aNbEryX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Death Wish",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"dTiS862rek9N4I3C",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1173,7 +1176,7 @@
 		},
 		{
 			"name":"Spawn Wraith",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nm37C0qyiw1USL5c",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1209,7 +1212,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1265,23 +1269,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 957; <b>Bloodied</b> 478<br><b>Regeneration</b> 20 (if the soulgrinder takes radiant damage, regeneration does not function on its next turn)<hr><b>Resist</b> 20 necrotic; insubstantial <b>Vulnerable</b> 10 radiant (see also regeneration) <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +24 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 40</td><td><b>Ref</b> 44</td><td><b>Will</b> 41</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 10 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+20)<br><b>Con</b> 23 (+20)</td><td><b>Dex</b> 30 (+24)<br><b>Int</b> 12 (+15)</td><td><b>Wis</b> 25 (+21)<br><b>Cha</b> 26 (+22)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +29</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Death Wish&lt;/b&gt; (Charm, Necrotic) aura 3; creatures in the aura cannot spend healing surges. Any creature within the aura at the start of the soulgrinder’s turn is pulled 1 square.]] <b>Death Wish</b> (Charm, Necrotic) aura 3; creatures in the aura cannot spend healing surges. Any creature within the aura at the start of the soulgrinder’s turn is pulled 1 square.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs Reflex; 3d8+10 necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). &lt;/p&gt;]] (⚔) <b>Shadow Bite</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 3; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 3d8+10 necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). &lt;/p&gt;]]; [[/roll 3d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs Reflex; 3d8+10 necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). &lt;/p&gt;]] <23.5>  necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Death\"s Maw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The soulgrinder makes a shadow bite attack against each of three different targets.&lt;/p&gt;]] ⚔ <b>Death\"s Maw</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>The soulgrinder makes a shadow bite attack against each of three different targets.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +32 vs Fortitude; 4d8+8 necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). A target that is already taking ongoing necrotic damage also loses two healing surges. Miss: Half damage, and a target taking ongoing necrotic damage loses only one healing surge. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Close blast 10; [[/roll 1d20+32[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; &lt;u&gt;+32 vs Fortitude&lt;/u&gt;; 4d8+8 necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). A target that is already taking ongoing necrotic damage also loses two healing surges. Miss: Half damage, and a target taking ongoing necrotic damage loses only one healing surge. &lt;/p&gt;]]; [[/roll 4d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +32 vs Fortitude; 4d8+8 necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). A target that is already taking ongoing necrotic damage also loses two healing surges. Miss: Half damage, and a target taking ongoing necrotic damage loses only one healing surge. &lt;/p&gt;]] <26>  necrotic damage, and the target takes ongoing 10 necrotic damage and cannot spend a healing surge (save ends both). A target that is already taking ongoing necrotic damage also loses two healing surges. Miss: Half damage, and a target taking ongoing necrotic damage loses only one healing surge. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The soulgrinder’s breath weapon recharges, and the soulgrinder uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) ✦ <b>Necrotic</b></p><p>The soulgrinder’s breath weapon recharges, and the soulgrinder uses it immediately.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vengeance from Beyond&lt;/b&gt; ( when the soulgrinder is reduced to 0 hit points, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +32 vs Fortitude; 4d8+8 necrotic damage, and the target loses two healing surges. Miss: No damage, and the target loses one healing surge. &lt;/p&gt;]] ᗕ <b>Vengeance from Beyond</b> ( when the soulgrinder is reduced to 0 hit points, at-will) ✦ <b>Necrotic</b></p><p>Close burst 5; [[/roll 1d20+32[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vengeance from Beyond&lt;/b&gt; ( when the soulgrinder is reduced to 0 hit points, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+32 vs Fortitude&lt;/u&gt;; 4d8+8 necrotic damage, and the target loses two healing surges. Miss: No damage, and the target loses one healing surge. &lt;/p&gt;]]; [[/roll 4d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Vengeance from Beyond&lt;/b&gt; ( when the soulgrinder is reduced to 0 hit points, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +32 vs Fortitude; 4d8+8 necrotic damage, and the target loses two healing surges. Miss: No damage, and the target loses one healing surge. &lt;/p&gt;]] <26>  necrotic damage, and the target loses two healing surges. Miss: No damage, and the target loses one healing surge. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spawn Wraith&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any humanoid creature killed by a soulgrinder rises as a freewilled wraith at the start of its creator’s next turn; a dragon instead rises as a soulgrinder. The new wraith appears in the space where it died or in the nearest unoccupied space. Raising the slain creature (using the Raise Dead ritual) does not destroy the spawned wraith.&lt;/p&gt;]]  <b>Spawn Wraith</b></p><p>Any humanoid creature killed by a soulgrinder rises as a freewilled wraith at the start of its creator’s next turn; a dragon instead rises as a soulgrinder. The new wraith appears in the space where it died or in the nearest unoccupied space. Raising the slain creature (using the Raise Dead ritual) does not destroy the spawned wraith.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Glide&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The soulgrinder shifts 6 squares.&lt;/p&gt;]]  <b>Shadow Glide</b> (move; encounter) </p><p>The soulgrinder shifts 6 squares.</p></tr></td></table>",

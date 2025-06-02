@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -592,23 +593,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 368; <b>Bloodied</b> 184<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 31</td><td><b>Ref</b> 25</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+13)<br><b>Con</b> 24 (+14)</td><td><b>Dex</b> 7 (+5)<br><b>Int</b> 3 (+3)</td><td><b>Wis</b> 8 (+6)<br><b>Cha</b> 3 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC;  (+20 while bloodied)2d8+6 damage, and the target takes ongoing 10 necrotic damage and is dazed (save ends both). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 2; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+18 vs AC&lt;/u&gt;;  (+20 while bloodied)2d8+6 damage, and the target takes ongoing 10 necrotic damage and is dazed (save ends both). &lt;/p&gt;]];  (+20 while bloodied)[[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC;  (+20 while bloodied)2d8+6 damage, and the target takes ongoing 10 necrotic damage and is dazed (save ends both). &lt;/p&gt;]] <15>  damage, and the target takes ongoing 10 necrotic damage and is dazed (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs ; 2d8+6 damage.. The grave dirt golem makes two slam attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>+16 vs ; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs ; 2d8+6 damage.. The grave dirt golem makes two slam attacks.&lt;/p&gt;]] <15>  damage.. The grave dirt golem makes two slam attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Grave Dirt Rampage&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The grave dirt golem moves up to its speed plus 2 and can move through enemies’ spaces without provoking opportunity attacks. When it enters a creature’s space (ally or enemy), the golem makes a slam attack against that creature. The grave dirt golem must end its movement in an unoccupied space, and it can make no more than one slam attack against any single creature when using this power.&lt;/p&gt;]] ⚔ <b>Grave Dirt Rampage</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>The grave dirt golem moves up to its speed plus 2 and can move through enemies’ spaces without provoking opportunity attacks. When it enters a creature’s space (ally or enemy), the golem makes a slam attack against that creature. The grave dirt golem must end its movement in an unoccupied space, and it can make no more than one slam attack against any single creature when using this power.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 130; <b>Bloodied</b> 65</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 25</td><td><b>Ref</b> 20</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+10)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 10 (+5)<br><b>Int</b> 5 (+2)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 5 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 2d10+6 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 2d10+6 damage. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 2d10+6 damage. &lt;/p&gt;]] <17>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh Tear&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 2d6+3 damage, and ongoing 10 damage (save ends). &lt;/p&gt;]] ⚔ <b>Flesh Tear</b> (standard, at-will) </p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh Tear&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 2d6+3 damage, and ongoing 10 damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flesh Tear&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 2d6+3 damage, and ongoing 10 damage (save ends). &lt;/p&gt;]] <10>  damage, and ongoing 10 damage (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Writhe of Hunger&lt;/b&gt; (immediate interrupt, when an adjacent creature is bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; +14 vs AC; 2d6+3 damage. &lt;/p&gt;]] ᗕ <b>Writhe of Hunger</b> (immediate interrupt, when an adjacent creature is bloodied, at-will) </p><p>Close burst 1; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Writhe of Hunger&lt;/b&gt; (immediate interrupt, when an adjacent creature is bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+14 vs AC&lt;/u&gt;; 2d6+3 damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Writhe of Hunger&lt;/b&gt; (immediate interrupt, when an adjacent creature is bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; +14 vs AC; 2d6+3 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td></table>",

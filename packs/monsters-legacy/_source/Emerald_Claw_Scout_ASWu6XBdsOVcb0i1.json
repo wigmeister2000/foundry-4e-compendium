@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -544,7 +546,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kmK8FP6IpNqdVGEw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -580,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -814,23 +817,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 37; <b>Bloodied</b> 18 ; see also fanatic</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+3)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 17 (+4)<br><b>Int</b> 10 (+1)</td><td><b>Wis</b> 13 (+2)<br><b>Cha</b> 11 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Nature +6, Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> 3 alchemist’s fire arrows and 10 arrows, leather armor , short sword , shortbow .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d6 + 4 damage, and an ally within 5 squares shifts 1 square as a free action. &lt;/p&gt;]] (⚔) <b>Short Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d6 + 4 damage, and an ally within 5 squares shifts 1 square as a free action. &lt;/p&gt;]]; [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d6 + 4 damage, and an ally within 5 squares shifts 1 square as a free action. &lt;/p&gt;]] <7.5>  damage, and an ally within 5 squares shifts 1 square as a free action. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +7 vs AC; 1d8 + 4 damage. &lt;/p&gt;]] (⚔) <b>Shortbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+7 vs AC&lt;/u&gt;; 1d8 + 4 damage. &lt;/p&gt;]]; [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +7 vs AC; 1d8 + 4 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Alchemist\"s Fire Arrows&lt;/b&gt; (standard; requires a shortbow, usable three times only)) &lt;/p&gt;&lt;p&gt;Area burst 1 within 15; +4 vs Reflex; 1d6 fire damage. Miss: Half damage. &lt;/p&gt;]] ✻ <b>Alchemist\"s Fire Arrows</b> (standard; requires a shortbow, usable three times only)) </p><p>Area burst 1 within 15; [[/roll 1d20+4[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Alchemist\"s Fire Arrows&lt;/b&gt; (standard; requires a shortbow, usable three times only)) &lt;/p&gt;&lt;p&gt;Area burst 1 within 15; &lt;u&gt;+4 vs Reflex&lt;/u&gt;; 1d6 fire damage. Miss: Half damage. &lt;/p&gt;]]; [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Alchemist\"s Fire Arrows&lt;/b&gt; (standard; requires a shortbow, usable three times only)) &lt;/p&gt;&lt;p&gt;Area burst 1 within 15; +4 vs Reflex; 1d6 fire damage. Miss: Half damage. &lt;/p&gt;]] <3.5> fire damage. Miss: Half damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An Emerald Claw scout deals 1d6 extra damage against any creature that grants combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>An Emerald Claw scout deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;An Emerald Claw scout deals 1d6 extra damage against any creature that grants combat advantage to it.&lt;/p&gt;]] <3.5> extra damage against any creature that grants combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fanatic&lt;/b&gt; ( when the emerald claw scout drops to 0 hit points) &lt;/p&gt;&lt;p&gt;The Emerald Claw scout makes a basic attack&lt;/p&gt;]]  <b>Fanatic</b> ( when the emerald claw scout drops to 0 hit points) </p><p>The Emerald Claw scout makes a basic attack</p></tr></td></table>",

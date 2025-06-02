@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -408,23 +409,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 125; <b>Bloodied</b> 62<hr><b>Immune</b> disease, petrification, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 24</td><td><b>Ref</b> 21</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 15 (+7)</td><td><b>Dex</b> 15 (+7)<br><b>Int</b> 4 (+2)</td><td><b>Wis</b> 12 (+6)<br><b>Cha</b> 15 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Granite Punch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +13 vs AC; 2d10+6 damage. &lt;/p&gt;]] (⚔) <b>Granite Punch</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Granite Punch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+13 vs AC&lt;/u&gt;; 2d10+6 damage. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Granite Punch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +13 vs AC; 2d10+6 damage. &lt;/p&gt;]] <17>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Earthquake&lt;/b&gt; (standard; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The ground around the earth elemental shakes violently; Close burst 2; +11 vs. Fortitude; 3d8 + 5 damage, and the target is pushed 2 squares.&lt;/p&gt;]]  <b>Earthquake</b> (standard; recharge ⚄⚅) </p><p>The ground around the earth elemental shakes violently; Close burst 2; [[/roll 1d20+11[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Earthquake&lt;/b&gt; (standard; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The ground around the earth elemental shakes violently; Close burst 2; &lt;u&gt;+11 vs. Fortitude&lt;/u&gt;; 3d8 + 5 damage, and the target is pushed 2 squares.&lt;/p&gt;]]; [[/roll 3d8 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Earthquake&lt;/b&gt; (standard; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The ground around the earth elemental shakes violently; Close burst 2; +11 vs. Fortitude; 3d8 + 5 damage, and the target is pushed 2 squares.&lt;/p&gt;]] <18.5>  damage, and the target is pushed 2 squares.</p></tr></td></table>",

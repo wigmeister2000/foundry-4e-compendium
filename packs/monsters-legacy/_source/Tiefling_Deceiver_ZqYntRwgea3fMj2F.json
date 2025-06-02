@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -770,23 +772,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 72; <b>Bloodied</b> 36<hr><b>Resist</b> 5 cold, 5 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 19</td><td><b>Ref</b> 20</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+6)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 13 (+5)</td><td><b>Wis</b> 16 (+7)<br><b>Cha</b> 20 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +16, Insight +12, Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 22</td></td></tr></table><p><b>Equipment</b> dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC;  (+13 against a bloodied target)1d4+3 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;;  (+13 against a bloodied target)1d4+3 damage. &lt;/p&gt;]];  (+13 against a bloodied target)[[/roll 1d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC;  (+13 against a bloodied target)1d4+3 damage. &lt;/p&gt;]] <5.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Balefire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex;  (+14 against a bloodied target)1d8+6 fire damage, ongoing 5 fire damage (save ends), and slide the target 1 square. &lt;/p&gt;]] (➶) <b>Balefire</b> (standard, at-will) ✦ <b>Fire</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Balefire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Reflex&lt;/u&gt;;  (+14 against a bloodied target)1d8+6 fire damage, ongoing 5 fire damage (save ends), and slide the target 1 square. &lt;/p&gt;]];  (+14 against a bloodied target)[[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Balefire&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex;  (+14 against a bloodied target)1d8+6 fire damage, ongoing 5 fire damage (save ends), and slide the target 1 square. &lt;/p&gt;]] <10.5>  fire damage, ongoing 5 fire damage (save ends), and slide the target 1 square. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cloak of Escape&lt;/b&gt; (immediate reaction, when the tiefling deceiver is hit by a melee attack; at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The tiefling deceiver teleports up to 5 squares.&lt;/p&gt;]]  <b>Cloak of Escape</b> (immediate reaction, when the tiefling deceiver is hit by a melee attack; at-will) ✦ <b>Teleportation</b></p><p>The tiefling deceiver teleports up to 5 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;The tiefling deceiver gains a +1 power bonus to its next attack roll against an enemy that hit it since the tiefling deceiver’s last turn. If the attack hits and deals damage, the tiefling deceiver deals 5 extra damage.&lt;/p&gt;]]  <b>Infernal Wrath</b> (minor; encounter) </p><p>The tiefling deceiver gains a +1 power bonus to its next attack roll against an enemy that hit it since the tiefling deceiver’s last turn. If the attack hits and deals damage, the tiefling deceiver deals 5 extra damage.</p></tr></td></table>",

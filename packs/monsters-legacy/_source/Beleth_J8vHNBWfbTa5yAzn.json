@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"From All Sides",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"mK4oBN1XFibZvezn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -514,10 +516,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"6",
 				"rechargeCondition":"",
@@ -949,7 +951,7 @@
 		},
 		{
 			"name":"Diabolic Telesthesia",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Vf2PUqYu6rEoDhOg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -985,7 +987,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1221,23 +1224,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1205; <b>Bloodied</b> 602<hr><b>Resist</b> 35 fire, 20 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +23 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 39</td><td><b>Ref</b> 42</td><td><b>Will</b> 42</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover), teleport 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+19)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 27 (+21)<br><b>Int</b> 30 (+23)</td><td><b>Wis</b> 26 (+21)<br><b>Cha</b> 30 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal, telepathy 20<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +28, Bluff +28, Diplomacy +28, Insight +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p>[[/roll 0#&lt;b&gt;From All Sides&lt;/b&gt; aura 10; allied devils within the area may spend a move action, on their turn, to teleport a number of squares equal to their base speed or base fly speed (whichever is higher).]] <b>From All Sides</b> aura 10; allied devils within the area may spend a move action, on their turn, to teleport a number of squares equal to their base speed or base fly speed (whichever is higher).</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Infernal Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 2d12+6 damage, and Beleth makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +29 vs Fortitude; and ongoing 15 fire and poison damage and target is immobilized (save ends both). &lt;/p&gt;]] (⚔) <b>Infernal Sting</b> (standard, at-will) ✦ <b>Fire, Poison</b></p><p>[[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Infernal Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs AC&lt;/u&gt;; 2d12+6 damage, and Beleth makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 2d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Infernal Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC; 2d12+6 damage, and Beleth makes a secondary attack against the same target. &lt;/p&gt;]] <19>  damage, and Beleth makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Infernal Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;; and ongoing 15 fire and poison damage and target is immobilized (save ends both). &lt;/p&gt;]]; and ongoing 15 fire and poison damage and target is immobilized (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hellish Salvo&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Beleth makes an infernal sting attack against a target and can teleport 2 squares after the attack. Beleth can then make another infernal sting attack against a different target and teleport 2 squares after that attack. Then, an ally with 5 squares of Beleth’s final destination can make a melee basic attack and teleport 2 squares after its attack&lt;/p&gt;]] ⚔ <b>Hellish Salvo</b> (standard, at-will) ✦ <b>Teleportation</b></p><p>Beleth makes an infernal sting attack against a target and can teleport 2 squares after the attack. Beleth can then make another infernal sting attack against a different target and teleport 2 squares after that attack. Then, an ally with 5 squares of Beleth’s final destination can make a melee basic attack and teleport 2 squares after its attack</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Vanish &lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Beleth becomes invisible until he attacks. (If Beleth is mounted, he can apply this ability to his mount as well.)&lt;/p&gt;]]  <b>Vanish </b> (standard; at-will) ✦ <b>Illusion</b></p><p>Beleth becomes invisible until he attacks. (If Beleth is mounted, he can apply this ability to his mount as well.)</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brimstone Cloud&lt;/b&gt; (move, recharge ⚅&lt;/p&gt;&lt;p&gt;Beleth teleports 10 squares, leaving a brimstone cloud behind in a close burst 3, centered on the square he left; +29 vs Fortitude; slowed until save. &lt;/p&gt;]] ⚔ <b>Brimstone Cloud</b> (move, recharge ⚅</p><p>Beleth teleports 10 squares, leaving a brimstone cloud behind in a close burst 3, centered on the square he left; [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brimstone Cloud&lt;/b&gt; (move, recharge ⚅&lt;/p&gt;&lt;p&gt;Beleth teleports 10 squares, leaving a brimstone cloud behind in a close burst 3, centered on the square he left; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;; slowed until save. &lt;/p&gt;]]; slowed until save. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Escape&lt;/b&gt; (immediate reaction, when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;Beleth’s brimstone cloud recharges automatically, and he uses it immediately.&lt;/p&gt;]]  <b>Infernal Escape</b> (immediate reaction, when first bloodied; encounter) </p><p>Beleth’s brimstone cloud recharges automatically, and he uses it immediately.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Diabolic Telesthesia&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Beleth can read the minds of any allied devil of lower level within 20 squares of him. Any place such a devil can see is considered within line of sight for Beleth’s teleportation.&lt;/p&gt;]]  <b>Diabolic Telesthesia</b></p><p>Beleth can read the minds of any allied devil of lower level within 20 squares of him. Any place such a devil can see is considered within line of sight for Beleth’s teleportation.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Beleth can alter his physical form to appear as any Small or Medium humanoid, including a unique individual. The human form described above is his favored shape, and best known to his covens, but he assumes whatever shape is appropriate to the circumstances.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>Beleth can alter his physical form to appear as any Small or Medium humanoid, including a unique individual. The human form described above is his favored shape, and best known to his covens, but he assumes whatever shape is appropriate to the circumstances.</p></tr></td></table>",

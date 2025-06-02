@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Entropic Imperative",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"vow3kVWzCtJSKy0b",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -336,10 +338,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -874,10 +876,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1177,23 +1179,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 256; <b>Bloodied</b> 128</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 24</td><td><b>Ref</b> 27</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+6)<br><b>Con</b> 16 (+9)</td><td><b>Dex</b> 17 (+9)<br><b>Int</b> 23 (+12)</td><td><b>Wis</b> 8 (+5)<br><b>Cha</b> 19 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Arcana +17, Dungeoneering +10, History +17, Nature +10</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> stained robes, chaos blade, 4 tumescent nodules</p><p>[[/roll 0#&lt;b&gt;Entropic Imperative&lt;/b&gt; aura 3; allies who start their turns within the aura gain a +2 bonus to attack rolls and damage rolls.]] <b>Entropic Imperative</b> aura 3; allies who start their turns within the aura gain a +2 bonus to attack rolls and damage rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chaos Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d4+3 damage, and the target is stunned until the end of Obsen\"s next turn. &lt;/p&gt;]] (⚔) <b>Chaos Blade</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chaos Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 1d4+3 damage, and the target is stunned until the end of Obsen\"s next turn. &lt;/p&gt;]]; [[/roll 1d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chaos Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d4+3 damage, and the target is stunned until the end of Obsen\"s next turn. &lt;/p&gt;]] <5.5>  damage, and the target is stunned until the end of Obsen\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tumescent Nodule&lt;/b&gt; (standard, at-will, usable 4/day) ✦ &lt;b&gt;Acid, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Obsen rips a nodule from his body and hurls it at an enemy within range; Obsen takes 5 damage: ranged 5/10; +17 vs Reflex; 1d6+5 acid damage, and ongoing 5 poison damage (save ends). Each creature adjacent to the target takes 5 acid damage. &lt;/p&gt;]] ➶ <b>Tumescent Nodule</b> (standard, at-will, usable 4/day) ✦ <b>Acid, Poison</b></p><p>Obsen rips a nodule from his body and hurls it at an enemy within range; Obsen takes 5 damage: ranged 5/10; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tumescent Nodule&lt;/b&gt; (standard, at-will, usable 4/day) ✦ &lt;b&gt;Acid, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Obsen rips a nodule from his body and hurls it at an enemy within range; Obsen takes 5 damage: ranged 5/10; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 1d6+5 acid damage, and ongoing 5 poison damage (save ends). Each creature adjacent to the target takes 5 acid damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tumescent Nodule&lt;/b&gt; (standard, at-will, usable 4/day) ✦ &lt;b&gt;Acid, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Obsen rips a nodule from his body and hurls it at an enemy within range; Obsen takes 5 damage: ranged 5/10; +17 vs Reflex; 1d6+5 acid damage, and ongoing 5 poison damage (save ends). Each creature adjacent to the target takes 5 acid damage. &lt;/p&gt;]] <8.5>  acid damage, and ongoing 5 poison damage (save ends). Each creature adjacent to the target takes 5 acid damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Chaos Seed&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets enemies; +17 vs Will; on a hit, the target is dazed and makes a melee basic attack against one ally adjacent to it. Miss: The target is dazed and does not make an attack. Effect: The burst creates a zone that persists until the end of Obsen’s next turn. Obsen can sustain the effect by spending a minor action, and can move the zone 3 squares by spending a move action. Any creature that starts its turn inside the zone is subject to another attack. &lt;/p&gt;]] ✻ <b>Chaos Seed</b> (standard; sustain minor, encounter) ✦ <b>Zone</b></p><p>Area burst 2 within 10; targets enemies; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Chaos Seed&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; targets enemies; &lt;u&gt;+17 vs Will&lt;/u&gt;; on a hit, the target is dazed and makes a melee basic attack against one ally adjacent to it. Miss: The target is dazed and does not make an attack. Effect: The burst creates a zone that persists until the end of Obsen’s next turn. Obsen can sustain the effect by spending a minor action, and can move the zone 3 squares by spending a move action. Any creature that starts its turn inside the zone is subject to another attack. &lt;/p&gt;]]; on a hit, the target is dazed and makes a melee basic attack against one ally adjacent to it. Miss: The target is dazed and does not make an attack. Effect: The burst creates a zone that persists until the end of Obsen’s next turn. Obsen can sustain the effect by spending a minor action, and can move the zone 3 squares by spending a move action. Any creature that starts its turn inside the zone is subject to another attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chaos Blast&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 5; +15 vs Fortitude; 2d8+6 damage, and the target grants combat advantage to any enemy (save ends). Aftereffect: The target takes 5 damage. &lt;/p&gt;]] ᗕ <b>Chaos Blast</b> (standard, recharge ⚃⚄⚅) </p><p>Close blast 5; [[/roll 1d20+15[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chaos Blast&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+15 vs Fortitude&lt;/u&gt;; 2d8+6 damage, and the target grants combat advantage to any enemy (save ends). Aftereffect: The target takes 5 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chaos Blast&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 5; +15 vs Fortitude; 2d8+6 damage, and the target grants combat advantage to any enemy (save ends). Aftereffect: The target takes 5 damage. &lt;/p&gt;]] <15>  damage, and the target grants combat advantage to any enemy (save ends). Aftereffect: The target takes 5 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Writhing Chaos&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three ribbons of light appear in the air and attack; ranged 10; three targets; +15 vs Reflex;  (three attacks)1d8+6 damage, and the target teleports to a square of Obsen\"s choosing within 5 squares of him. &lt;/p&gt;]] ➶ <b>Writhing Chaos</b> (standard, encounter) ✦ <b>Teleportation</b></p><p>Three ribbons of light appear in the air and attack; ranged 10; three targets; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Writhing Chaos&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three ribbons of light appear in the air and attack; ranged 10; three targets; &lt;u&gt;+15 vs Reflex&lt;/u&gt;;  (three attacks)1d8+6 damage, and the target teleports to a square of Obsen\"s choosing within 5 squares of him. &lt;/p&gt;]];  (three attacks)[[/roll 1d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Writhing Chaos&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three ribbons of light appear in the air and attack; ranged 10; three targets; +15 vs Reflex;  (three attacks)1d8+6 damage, and the target teleports to a square of Obsen\"s choosing within 5 squares of him. &lt;/p&gt;]] <10.5>  damage, and the target teleports to a square of Obsen\"s choosing within 5 squares of him. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chaos Stride&lt;/b&gt; (minor, recharge when first bloodied) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +15 vs Will; 1d8+6 damage, and the target is dazed (save ends). After the attack, Obsen teleports 1 square for each enemy he hit with this attack. &lt;/p&gt;]] ᗕ <b>Chaos Stride</b> (minor, recharge when first bloodied) ✦ <b>Teleportation</b></p><p>Close burst 1; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chaos Stride&lt;/b&gt; (minor, recharge when first bloodied) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+15 vs Will&lt;/u&gt;; 1d8+6 damage, and the target is dazed (save ends). After the attack, Obsen teleports 1 square for each enemy he hit with this attack. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chaos Stride&lt;/b&gt; (minor, recharge when first bloodied) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +15 vs Will; 1d8+6 damage, and the target is dazed (save ends). After the attack, Obsen teleports 1 square for each enemy he hit with this attack. &lt;/p&gt;]] <10.5>  damage, and the target is dazed (save ends). After the attack, Obsen teleports 1 square for each enemy he hit with this attack. </p></tr></td></table>",

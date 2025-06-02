@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -546,7 +547,7 @@
 		},
 		{
 			"name":"Battle Lord Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gJCeliWsXEOp3rIK",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +583,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -592,7 +594,7 @@
 		},
 		{
 			"name":"Battle Talent",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zAM8pSLVrn4o6tQv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -628,7 +630,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -638,7 +641,7 @@
 		},
 		{
 			"name":"Dragonborn Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Boej4q91uMrvnR6x",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -674,7 +677,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -684,7 +688,7 @@
 		},
 		{
 			"name":"Inspiring Assault",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HiTuQsDE0mdLCrjn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -720,7 +724,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -730,7 +735,7 @@
 		},
 		{
 			"name":"No Remorse",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HF4baGnDAeluVQIi",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -766,7 +771,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1000,23 +1006,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 478; <b>Bloodied</b> 239 ; see also dragonblood fury and furious blade<hr><b>Resist</b> 30 acid, 30 cold, 30 fire, 30 lightning, 30 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 44</td><td><b>Ref</b> 40</td><td><b>Will</b> 41</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+22)<br><b>Con</b> 23 (+19)</td><td><b>Dex</b> 20 (+18)<br><b>Int</b> 15 (+15)</td><td><b>Wis</b> 17 (+16)<br><b>Cha</b> 22 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +23, History +22, Intimidate +26</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> bastard sword , heavy shield , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC;  ((+32 while bloodied))2d10+9 damage, and the leader makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +29 vs Fortitude;  ((+30 while bloodied))the target is stunned until the end of the guard’s next turn and knocked prone. &lt;/p&gt;]] (⚔) <b>Bastard Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs AC&lt;/u&gt;;  ((+32 while bloodied))2d10+9 damage, and the leader makes a secondary attack against the same target. &lt;/p&gt;]];  ((+32 while bloodied))[[/roll 2d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+31 vs AC;  ((+32 while bloodied))2d10+9 damage, and the leader makes a secondary attack against the same target. &lt;/p&gt;]] <20>  damage, and the leader makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+29[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+29 vs Fortitude&lt;/u&gt;;  ((+30 while bloodied))the target is stunned until the end of the guard’s next turn and knocked prone. &lt;/p&gt;]];  ((+30 while bloodied))the target is stunned until the end of the guard’s next turn and knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +27 vs Reflex;  ((+28 vs. while bloodied))2d6+6 lightning damage. &lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (minor, encounter) ✦ <b>Lightning</b></p><p>Close blast 3; [[/roll 1d20+27[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+27 vs Reflex&lt;/u&gt;;  ((+28 vs. while bloodied))2d6+6 lightning damage. &lt;/p&gt;]];  ((+28 vs. while bloodied))[[/roll 2d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +27 vs Reflex;  ((+28 vs. while bloodied))2d6+6 lightning damage. &lt;/p&gt;]] <13>  lightning damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Furious Blade&lt;/b&gt; (free, when first bloodied; usable only while wielding a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets any enemy; +32 vs AC;  (includes bonus for dragonborn fury)2d10+9 damage. &lt;/p&gt;]] ᗕ <b>Furious Blade</b> (free, when first bloodied; usable only while wielding a bastard sword, encounter) ✦ <b>Weapon</b></p><p>Close burst 1; targets any enemy; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Furious Blade&lt;/b&gt; (free, when first bloodied; usable only while wielding a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets any enemy; &lt;u&gt;+32 vs AC&lt;/u&gt;;  (includes bonus for dragonborn fury)2d10+9 damage. &lt;/p&gt;]];  (includes bonus for dragonborn fury)[[/roll 2d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Furious Blade&lt;/b&gt; (free, when first bloodied; usable only while wielding a bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets any enemy; +32 vs AC;  (includes bonus for dragonborn fury)2d10+9 damage. &lt;/p&gt;]] <20>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shake It Off&lt;/b&gt; (free; recharge ⚁⚂⚃⚄⚅) &lt;/p&gt;&lt;p&gt;A dragonborn automatically succeeds on a saving throw against one effect that a save can end.&lt;/p&gt;]]  <b>Shake It Off</b> (free; recharge ⚁⚂⚃⚄⚅) </p><p>A dragonborn automatically succeeds on a saving throw against one effect that a save can end.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Lord Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Al-Iborak leader and its allies deal 3d6 extra damage against any enemy that the Al-lborak leader flanks.&lt;/p&gt;]]  <b>Battle Lord Tactics</b></p><p>The Al-Iborak leader and its allies deal [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Lord Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Al-Iborak leader and its allies deal 3d6 extra damage against any enemy that the Al-lborak leader flanks.&lt;/p&gt;]] <10.5> extra damage against any enemy that the Al-lborak leader flanks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Talent&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Al-Iborak leader scores a critical hit on attack rolls of natural 19 and 20.&lt;/p&gt;]]  <b>Battle Talent</b></p><p>The Al-Iborak leader scores a critical hit on attack rolls of natural 19 and 20.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dragonborn Fury&lt;/b&gt; (only while bloodied) &lt;/p&gt;&lt;p&gt;A dragonborn gains a +1 racial bonus to attack rolls.&lt;/p&gt;]]  <b>Dragonborn Fury</b> (only while bloodied) </p><p>A dragonborn gains a +1 racial bonus to attack rolls.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Inspiring Assault&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever it scores a critical hit, an Al-Iborak leader and all allies within 5 squares of it regains 13 hit points.&lt;/p&gt;]]  <b>Inspiring Assault</b>✦ <b>Healing</b></p><p>Whenever it scores a critical hit, an Al-Iborak leader and all allies within 5 squares of it regains 13 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;No Remorse&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A dragonborn deals 2d10 extra damage on melee attacks against a prone target.&lt;/p&gt;]]  <b>No Remorse</b></p><p>A dragonborn deals [[/roll 2d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;No Remorse&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A dragonborn deals 2d10 extra damage on melee attacks against a prone target.&lt;/p&gt;]] <11> extra damage on melee attacks against a prone target.</p></tr></td></table>",

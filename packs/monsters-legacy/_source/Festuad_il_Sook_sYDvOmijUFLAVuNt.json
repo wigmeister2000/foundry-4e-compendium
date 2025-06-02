@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Allure",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wYN3R7lCvfUVT1Wj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -333,10 +335,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -996,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 230; <b>Bloodied</b> 115<hr><b>Resist</b> 20 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 21</td><td><b>Ref</b> 24</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+7)<br><b>Con</b> 11 (+6)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 16 (+9)</td><td><b>Wis</b> 20 (+11)<br><b>Cha</b> 23 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +17, Diplomacy +17, Insight +16, Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 26</td></td></tr></table><p><b>Equipment</b> fine clothing</p><p>[[/roll 0#&lt;b&gt;Allure&lt;/b&gt; (Charm) aura 1; all creatures within the aura take a -2 penalty to Will.]] <b>Allure</b> (Charm) aura 1; all creatures within the aura take a -2 penalty to Will.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Corrupting Touch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 2d6+6 damage. &lt;/p&gt;]] (⚔) <b>Corrupting Touch</b> (standard, at-will) </p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Corrupting Touch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d6+6 damage. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Corrupting Touch&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 2d6+6 damage. &lt;/p&gt;]] <13>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Charming Kiss&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; on a hit, Festuad makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +16 vs Will; the target cannot attack Festuad, and if the target is adjacent to Festuad when he is targeted by a melee or ranged attack, the target interposes itself and becomes the target of the attack instead. The effects last until Festuad or one of his allies attacks the target or until Festuad dies.&lt;/p&gt;&lt;p&gt;If the target is still under the effect of this power at the end of the encounter, Festuad can sustain this effect indefinitely by kissing the target once per day. Festuad can affect only one target at a time with his charming kiss. &lt;/p&gt;]] ⚔ <b>Charming Kiss</b> (standard, at-will) ✦ <b>Charm</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Charming Kiss&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; on a hit, Festuad makes a secondary attack against the same target. &lt;/p&gt;]]; on a hit, Festuad makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Charming Kiss&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+16 vs Will&lt;/u&gt;; the target cannot attack Festuad, and if the target is adjacent to Festuad when he is targeted by a melee or ranged attack, the target interposes itself and becomes the target of the attack instead. The effects last until Festuad or one of his allies attacks the target or until Festuad dies.&lt;/p&gt;]]; the target cannot attack Festuad, and if the target is adjacent to Festuad when he is targeted by a melee or ranged attack, the target interposes itself and becomes the target of the attack instead. The effects last until Festuad or one of his allies attacks the target or until Festuad dies.</p><p>If the target is still under the effect of this power at the end of the encounter, Festuad can sustain this effect indefinitely by kissing the target once per day. Festuad can affect only one target at a time with his charming kiss. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dominate&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +16 vs Will; the target is dominated until the end of Festuad\"s next turn. &lt;/p&gt;]] ➶ <b>Dominate</b> (minor, at-will) ✦ <b>Charm</b></p><p>Ranged 5; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dominate&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+16 vs Will&lt;/u&gt;; the target is dominated until the end of Festuad\"s next turn. &lt;/p&gt;]]; the target is dominated until the end of Festuad\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Festuad can alter his physical form to take on the appearance of any Medium humanoid, including a unique creature.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>Festuad can alter his physical form to take on the appearance of any Medium humanoid, including a unique creature.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Second Thoughts&lt;/b&gt; (immediate interrupt, when targeted by an attack, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; attacker only; +16 vs Will; the target is dominated until the end of Festuad\"s next turn. &lt;/p&gt;]] ➶ <b>Second Thoughts</b> (immediate interrupt, when targeted by an attack, at-will) ✦ <b>Charm</b></p><p>Ranged 5; attacker only; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Second Thoughts&lt;/b&gt; (immediate interrupt, when targeted by an attack, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; attacker only; &lt;u&gt;+16 vs Will&lt;/u&gt;; the target is dominated until the end of Festuad\"s next turn. &lt;/p&gt;]]; the target is dominated until the end of Festuad\"s next turn. </p></tr></td></table>",

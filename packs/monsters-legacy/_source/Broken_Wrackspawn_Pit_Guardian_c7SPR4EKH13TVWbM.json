@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Bloodwrack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"PLdTQmbM9v75t2qA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -278,23 +280,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 15 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 42</td><td><b>Ref</b> 39</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+24)<br><b>Con</b> 25 (+21)</td><td><b>Dex</b> 24 (+21)<br><b>Int</b> 10 (+14)</td><td><b>Wis</b> 27 (+22)<br><b>Cha</b> 9 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><p><b>Equipment</b> bone spear</p><p>[[/roll 0#&lt;b&gt;Bloodwrack&lt;/b&gt; aura 2; each bloodied enemy within the aura takes a -4 penalty to saving throws.]] <b>Bloodwrack</b> aura 2; each bloodied enemy within the aura takes a -4 penalty to saving throws.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 15 damage, and the target is weakened until the broken wrackspawn pit guardian drops to 0 hit points. &lt;/p&gt;]] (⚔) <b>Bone Spear</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Spear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 15 damage, and the target is weakened until the broken wrackspawn pit guardian drops to 0 hit points. &lt;/p&gt;]]; 15 damage, and the target is weakened until the broken wrackspawn pit guardian drops to 0 hit points. </p></tr></td></table>",

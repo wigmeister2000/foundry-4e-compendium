@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -366,7 +368,7 @@
 		},
 		{
 			"name":"Arboreal Hunter",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"U4xLgRbOv6PoWnsm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +404,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -412,7 +415,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yLGQ1Hj0oIOu8eXR",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -448,7 +451,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -504,23 +508,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 28; <b>Bloodied</b> 14</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 13</td><td><b>Ref</b> 14</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (forest walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+3)<br><b>Con</b> 10 (+1)</td><td><b>Dex</b> 16 (+4)<br><b>Int</b> 13 (+2)</td><td><b>Wis</b> 16 (+4)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> dragonsplitter, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragonsplitter&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d8+3 damage. &lt;/p&gt;]] (⚔) <b>Dragonsplitter</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragonsplitter&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d8+3 damage. &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragonsplitter&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d8+3 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Sphere&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Reflex; 2d4 acid damage. &lt;/p&gt;]] (➶) <b>Acid Sphere</b> (standard, at-will) ✦ <b>Acid</b></p><p>Ranged 10; [[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Sphere&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+5 vs Reflex&lt;/u&gt;; 2d4 acid damage. &lt;/p&gt;]]; [[/roll 2d4 #&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Acid Sphere&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Reflex; 2d4 acid damage. &lt;/p&gt;]] <5> acid damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Arboreal Hunter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A greenspawn sneak that starts its turn with cover also has total concealment against nonadjacent enemies.&lt;/p&gt;]]  <b>Arboreal Hunter</b></p><p>A greenspawn sneak that starts its turn with cover also has total concealment against nonadjacent enemies.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The greenspawn sneak deals 1d6 extra damage against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The greenspawn sneak deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The greenspawn sneak deals 1d6 extra damage against any target it has combat advantage against.&lt;/p&gt;]] <3.5> extra damage against any target it has combat advantage against.</p></tr></td></table>",

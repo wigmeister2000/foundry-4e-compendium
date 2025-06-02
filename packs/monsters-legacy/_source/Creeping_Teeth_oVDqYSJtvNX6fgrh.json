@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -942,23 +943,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 77; <b>Bloodied</b> 38<hr><b>Resist</b> 5 melee and ranged attacks <b>Immune</b> gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+5)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 21 (+9)<br><b>Int</b> 1 (null)</td><td><b>Wis</b> 17 (+7)<br><b>Cha</b> 1 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10, tremorsense 15<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Toothy Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+3 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] (⚔) <b>Toothy Slam</b> (standard, at-will) </p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Toothy Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 1d8+3 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Toothy Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+14 vs AC; 1d8+3 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] <7.5>  damage, and ongoing 5 damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Consume&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The creeping teeth attacks one Medium or smaller target; +12 vs Reflex;  (automatically hits creatures that the creeping teeth has combat advantage against)On a hit, the target is grabbed and pulled into the creeping teeth’s space; the target is dazed and takes ongoing 10 damage until it escapes the grab. A creature that escapes the grab shifts to a square of its choosing adjacent to the creeping teeth. The creeping teeth can move normally while creatures are engulfed within it. &lt;/p&gt;]] ⚔ <b>Consume</b> (standard, at-will) </p><p>The creeping teeth attacks one Medium or smaller target; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Consume&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The creeping teeth attacks one Medium or smaller target; &lt;u&gt;+12 vs Reflex&lt;/u&gt;;  (automatically hits creatures that the creeping teeth has combat advantage against)On a hit, the target is grabbed and pulled into the creeping teeth’s space; the target is dazed and takes ongoing 10 damage until it escapes the grab. A creature that escapes the grab shifts to a square of its choosing adjacent to the creeping teeth. The creeping teeth can move normally while creatures are engulfed within it. &lt;/p&gt;]];  (automatically hits creatures that the creeping teeth has combat advantage against)On a hit, the target is grabbed and pulled into the creeping teeth’s space; the target is dazed and takes ongoing 10 damage until it escapes the grab. A creature that escapes the grab shifts to a square of its choosing adjacent to the creeping teeth. The creeping teeth can move normally while creatures are engulfed within it. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Creeping Skitter&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The creeping teeth shifts 3 squares and designates a single target within 6 squares; that target grants the creeping teeth combat advantage until the end of the creeping teeth’s next turn.&lt;/p&gt;]]  <b>Creeping Skitter</b> (standard; at-will) </p><p>The creeping teeth shifts 3 squares and designates a single target within 6 squares; that target grants the creeping teeth combat advantage until the end of the creeping teeth’s next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Parting Shot&lt;/b&gt; (immediate reaction, when a creature escapes the creeping teeth\"s grab, at-will) &lt;/p&gt;&lt;p&gt;The creeping teeth makes a toothy slam attack against the creature that just escaped its grab.&lt;/p&gt;]] ⚔ <b>Parting Shot</b> (immediate reaction, when a creature escapes the creeping teeth\"s grab, at-will) </p><p>The creeping teeth makes a toothy slam attack against the creature that just escaped its grab.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Rain of Teeth&lt;/b&gt; (move; recharge ⚅) &lt;/p&gt;&lt;p&gt;The creeping teeth shifts 6 squares, ignoring difficult terrain.&lt;/p&gt;]]  <b>Rain of Teeth</b> (move; recharge ⚅) </p><p>The creeping teeth shifts 6 squares, ignoring difficult terrain.</p></tr></td></table>",

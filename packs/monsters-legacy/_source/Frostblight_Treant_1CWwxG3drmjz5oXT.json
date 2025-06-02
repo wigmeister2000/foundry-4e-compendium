@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Frostblight Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zLoq3Qm2bU96KScf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 476; <b>Bloodied</b> 238<hr><b>Resist</b> 15 cold <b>Vulnerable</b> fire (a frostblight treant takes ongoing 5 fire damage [save ends] when damaged by fire). </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 43</td><td><b>Fort</b> 39</td><td><b>Ref</b> 36</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 33 (+23)<br><b>Con</b> 30 (+22)</td><td><b>Dex</b> 23 (+18)<br><b>Int</b> 16 (+15)</td><td><b>Wis</b> 18 (+16)<br><b>Cha</b> 28 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Nature +22, Stealth +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Frostblight Aura&lt;/b&gt; (Necrotic) aura 3; enemies that start their turn in the aura are slow and take 10 necrotic damage.]] <b>Frostblight Aura</b> (Necrotic) aura 3; enemies that start their turn in the aura are slow and take 10 necrotic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 2d10+9 damage, and ongoing 10 cold damage (save ends). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Cold</b></p><p>Reach 3; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+32 vs AC&lt;/u&gt;; 2d10+9 damage, and ongoing 10 cold damage (save ends). &lt;/p&gt;]]; [[/roll 2d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +32 vs AC; 2d10+9 damage, and ongoing 10 cold damage (save ends). &lt;/p&gt;]] <20>  damage, and ongoing 10 cold damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shake the Shards&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies only; +32 vs AC; 2d8+6 cold damage, and the target loses any cold resistance (save ends). &lt;/p&gt;]] ᗕ <b>Shake the Shards</b> (standard, encounter) ✦ <b>Cold</b></p><p>Close burst 3; targets enemies only; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shake the Shards&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies only; &lt;u&gt;+32 vs AC&lt;/u&gt;; 2d8+6 cold damage, and the target loses any cold resistance (save ends). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shake the Shards&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies only; +32 vs AC; 2d8+6 cold damage, and the target loses any cold resistance (save ends). &lt;/p&gt;]] <15>  cold damage, and the target loses any cold resistance (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Freezing Roots&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +28 vs Reflex; the target takes 2d6+4 cold damage and is restrained (save ends). Aftereffect: Immobilized until the end of the target\"s next turn. &lt;/p&gt;]] ⚔ <b>Freezing Roots</b> (minor, at-will) ✦ <b>Cold</b></p><p>Reach 4; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Freezing Roots&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; the target takes 2d6+4 cold damage and is restrained (save ends). Aftereffect: Immobilized until the end of the target\"s next turn. &lt;/p&gt;]]; the target takes [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Freezing Roots&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +28 vs Reflex; the target takes 2d6+4 cold damage and is restrained (save ends). Aftereffect: Immobilized until the end of the target\"s next turn. &lt;/p&gt;]] <11>  cold damage and is restrained (save ends). Aftereffect: Immobilized until the end of the target\"s next turn. </p></tr></td></table>",

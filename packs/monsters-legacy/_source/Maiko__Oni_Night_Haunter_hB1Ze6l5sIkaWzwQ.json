@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -954,23 +955,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 180; <b>Bloodied</b> 90</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 12 (+5)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 18 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +13, Insight +10, Stealth +12, Thievery +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 20</td></td></tr></table><p><b>Equipment</b> morningstar .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; 1d12+5 damage, and a Medium or smaller target is pushed 1 square. &lt;/p&gt;]] (⚔) <b>Morningstar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d12+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Morningstar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; 1d12+5 damage, and a Medium or smaller target is pushed 1 square. &lt;/p&gt;]] <11.5>  damage, and a Medium or smaller target is pushed 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Hypnotic Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +11 vs Will; the target is dazed (save ends). First Failed Save: The target falls unconscious (save ends). &lt;/p&gt;]] ᗕ <b>Hypnotic Breath</b> (standard, encounter) ✦ <b>Charm, Sleep</b></p><p>Close blast 5; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Hypnotic Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm, Sleep&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+11 vs Will&lt;/u&gt;; the target is dazed (save ends). First Failed Save: The target falls unconscious (save ends). &lt;/p&gt;]]; the target is dazed (save ends). First Failed Save: The target falls unconscious (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devour Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Affects an unconscious target only; 2d10+4 psychic damage, and the Maiko regains 10 hit points. This attack does not wake the unconscious target. &lt;/p&gt;]] ⚔ <b>Devour Soul</b> (standard, at-will) ✦ <b>Healing, Psychic</b></p><p>Affects an unconscious target only; [[/roll 2d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devour Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Affects an unconscious target only; 2d10+4 psychic damage, and the Maiko regains 10 hit points. This attack does not wake the unconscious target. &lt;/p&gt;]] <15>  psychic damage, and the Maiko regains 10 hit points. This attack does not wake the unconscious target. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Gaseous Form&lt;/b&gt; (standard; sustain standard; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Maiko becomes insubstantial and gains a fly speed of 8 (hover). He can enter and move through a porous obstacle that would otherwise prevent movement (such as a door or a cracked window).&lt;/p&gt;]]  <b>Gaseous Form</b> (standard; sustain standard; encounter) ✦ <b>Polymorph</b></p><p>Maiko becomes insubstantial and gains a fly speed of 8 (hover). He can enter and move through a porous obstacle that would otherwise prevent movement (such as a door or a cracked window).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Deceptive Veil&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Maiko can disguise himself to appear as an elderly Medium or Large humanoid. A successful Insight check (opposed by the oni’s Bluff check) pierces the disguise.&lt;/p&gt;]]  <b>Deceptive Veil</b> (minor; at-will) ✦ <b>Illusion</b></p><p>Maiko can disguise himself to appear as an elderly Medium or Large humanoid. A successful Insight check (opposed by the oni’s Bluff check) pierces the disguise.</p></tr></td></table>",

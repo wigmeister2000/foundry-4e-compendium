@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"og8QeCIBDxMHl3X9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3BuLIU7vXn6kG51b",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -324,23 +326,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 149; <b>Bloodied</b> 74<hr><b>Resist</b> half damage from melee and ranged attacks <b>Vulnerable</b> 10 to close and area attacks </td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 25</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 1 (+1)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 7 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Swarm Attack&lt;/b&gt; (poison) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;An enemy that ends its turn in the aura takes 10 poison damage.&lt;/p&gt;]] ⌀ <b>Swarm Attack</b> (poison) ✦ <b>Aura</b> 1</p><p>An enemy that ends its turn in the aura takes 10 poison damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swarm&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The swarm can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The swarm cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.&lt;/p&gt;]]  <b>Swarm</b> <b></b></p><p>The swarm can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The swarm cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Swarm of Fangs&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 poison damage, and the target is slowed (save ends).&lt;/p&gt;]] ᗕ <b>Swarm of Fangs</b> (poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 1 (enemies in the burst); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Swarm of Fangs&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Swarm of Fangs&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 poison damage, and the target is slowed (save ends).&lt;/p&gt;]] <17>  poison damage, and the target is slowed (save ends).</p></tr></td></table>",

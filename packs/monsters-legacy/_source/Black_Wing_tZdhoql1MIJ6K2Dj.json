@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -902,7 +903,7 @@
 		},
 		{
 			"name":"Wild Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"iEUoNe67d8DZQwyl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -938,7 +939,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -994,23 +996,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 48; <b>Bloodied</b> 24</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 16</td><td><b>Ref</b> 19</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7 see also wild step</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+3)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 19 (+6)<br><b>Int</b> 11 (+2)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 8 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> black cloak, 2 razors</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Razor&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+4 damage, and if the target moves more than 2 squares on its turn, it takes 1d6 extra damage. &lt;/p&gt;]] (⚔) <b>Razor</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Razor&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d6+4 damage, and if the target moves more than 2 squares on its turn, it takes 1d6 extra damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Razor&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+4 damage, and if the target moves more than 2 squares on its turn, it takes 1d6 extra damage. &lt;/p&gt;]] <7.5>  damage, and if the target moves more than 2 squares on its turn, it takes [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Razor&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+4 damage, and if the target moves more than 2 squares on its turn, it takes 1d6 extra damage. &lt;/p&gt;]] <3.5> extra damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shadow Razor&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature that cannot see the black wing; +10 vs AC; 2d6+4 damage, and the target is dazed and takes ongoing 5 damage (save ends both). &lt;/p&gt;]] ⚔ <b>Shadow Razor</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Targets a creature that cannot see the black wing; [[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shadow Razor&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature that cannot see the black wing; &lt;u&gt;+10 vs AC&lt;/u&gt;; 2d6+4 damage, and the target is dazed and takes ongoing 5 damage (save ends both). &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shadow Razor&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature that cannot see the black wing; +10 vs AC; 2d6+4 damage, and the target is dazed and takes ongoing 5 damage (save ends both). &lt;/p&gt;]] <11>  damage, and the target is dazed and takes ongoing 5 damage (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Raven\"s Mantle&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The black wing becomes invisible until it attacks and shifts 1 square.&lt;/p&gt;]]  <b>Raven\"s Mantle</b> (standard; at-will) </p><p>The black wing becomes invisible until it attacks and shifts 1 square.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;On Death\"s Wings&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one dying creature; no attack roll; the target makes a death saving throw; on a failed saving throw, the black wing gains an action point.&lt;/p&gt;]] ⚔ <b>On Death\"s Wings</b> (minor 1/round, at-will) ✦ <b>Weapon</b></p><p>Targets one dying creature; no attack roll; the target makes a death saving throw; on a failed saving throw, the black wing gains an action point.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Elven Accuracy &lt;/b&gt; (free; encounter) &lt;/p&gt;&lt;p&gt;The black wing can reroll an attack roll. It must use the second roll, even if it’s lower.&lt;/p&gt;]]  <b>Elven Accuracy </b> (free; encounter) </p><p>The black wing can reroll an attack roll. It must use the second roll, even if it’s lower.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wild Step&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The black wing ignores difficult terrain when it shifts.&lt;/p&gt;]]  <b>Wild Step</b></p><p>The black wing ignores difficult terrain when it shifts.</p></tr></td></table>",

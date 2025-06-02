@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Meat Shield",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1P5roQGTdOVecNhX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 172; <b>Bloodied</b> 86<hr><b>Immune</b> blinded, gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 20</td><td><b>Ref</b> 22</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1 (clumsy), fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+6)<br><b>Con</b> 14 (+6)</td><td><b>Dex</b> 19 (+8)<br><b>Int</b> 11 (+4)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 9 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Meat Shield&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The rift render gains a +2 bonus to AC while it has an enemy grabbed.&lt;/p&gt;]]  <b>Meat Shield</b> <b></b></p><p>The rift render gains a +2 bonus to AC while it has an enemy grabbed.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The rift render must not be grabbing a creature.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, and the target is grabbed (escape DC 24). Until the target escapes the grab, it takes ongoing 5 damage.&lt;/p&gt;]] (⚔) <b>Grasping Tentacles</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The rift render must not be grabbing a creature.</p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 7 damage, and the target is grabbed (escape DC 24). Until the target escapes the grab, it takes ongoing 5 damage.&lt;/p&gt;]] <16>  damage, and the target is grabbed (escape DC 24). Until the target escapes the grab, it takes ongoing 5 damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Spatial Rift&lt;/b&gt; (teleportation) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The rift render teleports up to 5 squares. Any creatures grabbed by the rift render teleport with it, appearing in an unoccupied space adjacent to the rift render. This movement does not end the grab.&lt;/p&gt;]]  <b>Spatial Rift</b> (teleportation) ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The rift render teleports up to 5 squares. Any creatures grabbed by the rift render teleport with it, appearing in an unoccupied space adjacent to the rift render. This movement does not end the grab.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the rift render); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 9 damage, and the target is weakened (save ends). The effect also ends if the rift render is no longer grabbing the target.&lt;/p&gt;]] ⚔ <b>Bite</b> (poison) ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Melee 1 (one creature grabbed by the rift render); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the rift render); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 9 damage, and the target is weakened (save ends). The effect also ends if the rift render is no longer grabbing the target.&lt;/p&gt;]] <16>  damage, and the target is weakened (save ends). The effect also ends if the rift render is no longer grabbing the target.</p></tr></td></table>",

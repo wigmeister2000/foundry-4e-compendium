@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dimensional Bar",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tfXgiKv4UFHRG75o",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -336,10 +338,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -996,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 125; <b>Bloodied</b> 62<hr><b>Resist</b> 20 necrotic, insubstantial <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 32</td><td><b>Ref</b> 29</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, fly 5 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+16)<br><b>Con</b> 19 (+13)</td><td><b>Dex</b> 18 (+13)<br><b>Int</b> 13 (+10)</td><td><b>Wis</b> 16 (+12)<br><b>Cha</b> 21 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, telepathy 10<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> silver sword, plate armor .</p><p>[[/roll 0#&lt;b&gt;Dimensional Bar&lt;/b&gt; aura 1; creatures in the aura cannot teleport, and creatures cannot teleport into the aura.]] <b>Dimensional Bar</b> aura 1; creatures in the aura cannot teleport, and creatures cannot teleport into the aura.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs Reflex; 1d10 + 7 damage, and the target is marked until the end of the tlaikith forlorn\"s next turn. &lt;/p&gt;]] (⚔) <b>Silver Sword</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs Reflex&lt;/u&gt;; 1d10 + 7 damage, and the target is marked until the end of the tlaikith forlorn\"s next turn. &lt;/p&gt;]]; [[/roll 1d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs Reflex; 1d10 + 7 damage, and the target is marked until the end of the tlaikith forlorn\"s next turn. &lt;/p&gt;]] <12.5>  damage, and the target is marked until the end of the tlaikith forlorn\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Soul Strike&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs Reflex; 2d10 + 7 damage and the target is stunned (save ends). &lt;/p&gt;]] ⚔ <b>Soul Strike</b> (standard, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Soul Strike&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs Reflex&lt;/u&gt;; 2d10 + 7 damage and the target is stunned (save ends). &lt;/p&gt;]]; [[/roll 2d10 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Soul Strike&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs Reflex; 2d10 + 7 damage and the target is stunned (save ends). &lt;/p&gt;]] <18>  damage and the target is stunned (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Silver Arc&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +24 vs Reflex; 2d10 + 7 damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Silver Arc</b> (standard, encounter) ✦ <b>Psychic, Weapon</b></p><p>Close burst 1; [[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Silver Arc&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+24 vs Reflex&lt;/u&gt;; 2d10 + 7 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d10 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Silver Arc&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +24 vs Reflex; 2d10 + 7 damage, and the target is dazed (save ends). &lt;/p&gt;]] <18>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Telekinetic Leap&lt;/b&gt; (move, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; the tlaikith forlorn or one ally within range can fly up to 5 squares. &lt;/p&gt;]] ➶ <b>Telekinetic Leap</b> (move, encounter) </p><p>Ranged 10; the tlaikith forlorn or one ally within range can fly up to 5 squares. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Telekinetic Pull&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; +24 vs Fortitude; the target is pulled 5 squares. &lt;/p&gt;]] ➶ <b>Telekinetic Pull</b> (minor, encounter) </p><p>Ranged 5; [[/roll 1d20+24[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Telekinetic Pull&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+24 vs Fortitude&lt;/u&gt;; the target is pulled 5 squares. &lt;/p&gt;]]; the target is pulled 5 squares. </p></tr></td></table>",

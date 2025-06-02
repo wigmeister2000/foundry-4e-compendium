@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1304,23 +1306,10 @@
 				"max":10
 			},
 			"init":{
-				"value":14,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":14
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 284; <b>Bloodied</b> 142<hr><b>Resist</b> 15 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +14 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 28</td><td><b>Ref</b> 26</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, fly 6 (hover), overland flight 14</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+14)<br><b>Con</b> 22 (+13)</td><td><b>Dex</b> 21 (+12)<br><b>Int</b> 12 (+8)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 26 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic, Supernal<br><b>Alignment</b> Any</td></tr><tr><td><b>Skills</b> Intimidate +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d8+9 damage, and the target takes ongoing 5 radiant damage (save ends). Allies gain a +2 bonus to attack rolls against the target until the end of the battle dragon’s next turn. Aftereffect: The target is weakened until the end of the battle dragon’s next turn. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Radiant</b></p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d8+9 damage, and the target takes ongoing 5 radiant damage (save ends). Allies gain a +2 bonus to attack rolls against the target until the end of the battle dragon’s next turn. Aftereffect: The target is weakened until the end of the battle dragon’s next turn. &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d8+9 damage, and the target takes ongoing 5 radiant damage (save ends). Allies gain a +2 bonus to attack rolls against the target until the end of the battle dragon’s next turn. Aftereffect: The target is weakened until the end of the battle dragon’s next turn. &lt;/p&gt;]] <13.5>  damage, and the target takes ongoing 5 radiant damage (save ends). Allies gain a +2 bonus to attack rolls against the target until the end of the battle dragon’s next turn. Aftereffect: The target is weakened until the end of the battle dragon’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d8+9 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d8+9 damage. &lt;/p&gt;]]; [[/roll 1d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d8+9 damage. &lt;/p&gt;]] <13.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Draconic Frenzy&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The dragon makes a bite attack and a claw attack.&lt;/p&gt;]] ⚔ <b>Draconic Frenzy</b> (standard, at-will) </p><p>The dragon makes a bite attack and a claw attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Battle Cry&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 5; allies within the burst gain 10 temporary hit points.&lt;/p&gt;]] ᗕ <b>Battle Cry</b> (standard, recharge ⚄⚅) </p><p>Close burst 5; allies within the burst gain 10 temporary hit points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +16 vs Reflex; 4d6+7 radiant damage, and the target takes ongoing 5 radiant damage (save ends). &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚃⚄⚅) ✦ <b>Radiant</b></p><p>Close blast 5; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 4d6+7 radiant damage, and the target takes ongoing 5 radiant damage (save ends). &lt;/p&gt;]]; [[/roll 4d6+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +16 vs Reflex; 4d6+7 radiant damage, and the target takes ongoing 5 radiant damage (save ends). &lt;/p&gt;]] <21>  radiant damage, and the target takes ongoing 5 radiant damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +17 vs Will; the target is stunned until the end of the dragon\"s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+17 vs Will&lt;/u&gt;; the target is stunned until the end of the dragon\"s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of the dragon\"s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Battle Fury&lt;/b&gt; (immediate reaction, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;The battle dragon makes a bite attack against an enemy within reach.&lt;/p&gt;]] ⚔ <b>Battle Fury</b> (immediate reaction, when first bloodied, encounter) </p><p>The battle dragon makes a bite attack against an enemy within reach.</p></tr></td></table>",

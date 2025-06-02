@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6mi3zTkcUNyRQb0f",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -284,7 +286,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -332,10 +335,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -464,7 +467,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -870,10 +874,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -1303,7 +1307,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"87sA6Ucdajx3TIuS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1339,7 +1343,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1395,23 +1400,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 212; <b>Bloodied</b> 106<br><b>Regeneration</b> 5<hr><b>Vulnerable</b> silver (if Cartha takes damage from a silver weapon, his regeneration does not function on his next turn) <b>Immune</b> filth fever </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 22</td><td><b>Ref</b> 23</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4 see also slayer’s leap</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+7)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 21 (+10)<br><b>Int</b> 12 (+6)</td><td><b>Wis</b> 10 (+5)<br><b>Cha</b> 15 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +15, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> dagger  x8, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in wererat form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d4+5 damage, ongoing 3 damage (save ends), and the target is exposed to filth fever. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard; usable only while in wererat form, at-will) ✦ <b>Disease</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in wererat form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 2d4+5 damage, ongoing 3 damage (save ends), and the target is exposed to filth fever. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in wererat form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d4+5 damage, ongoing 3 damage (save ends), and the target is exposed to filth fever. &lt;/p&gt;]] <10>  damage, ongoing 3 damage (save ends), and the target is exposed to filth fever. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d4+5 damage, and ongoing 3 damage (save ends). &lt;/p&gt;&lt;p&gt;(➶) &lt;b&gt;Dagger&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +15 vs AC; 2d4+5 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard; usable only while in humanoid form, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 2d4+5 damage, and ongoing 3 damage (save ends). &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d4+5 damage, and ongoing 3 damage (save ends). &lt;/p&gt;]] <10>  damage, and ongoing 3 damage (save ends). </p><p>(➶) <b>Dagger</b> (standard; usable only while in humanoid form, at-will) ✦ <b>Weapon</b></p><p>Ranged 5/10; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d4+5 damage. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +15 vs AC; 2d4+5 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Cartha makes two basic attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>Cartha makes two basic attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bloodletting Leap&lt;/b&gt; (standard; usable only while in humanoid form, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 4d4+5 damage, and ongoing 5 damage and the target is slowed (save ends both). Effect: As a free action after the attack, Cartha uses slayer’s leap. &lt;/p&gt;]] ⚔ <b>Bloodletting Leap</b> (standard; usable only while in humanoid form, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bloodletting Leap&lt;/b&gt; (standard; usable only while in humanoid form, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 4d4+5 damage, and ongoing 5 damage and the target is slowed (save ends both). Effect: As a free action after the attack, Cartha uses slayer’s leap. &lt;/p&gt;]]; [[/roll 4d4+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bloodletting Leap&lt;/b&gt; (standard; usable only while in humanoid form, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 4d4+5 damage, and ongoing 5 damage and the target is slowed (save ends both). Effect: As a free action after the attack, Cartha uses slayer’s leap. &lt;/p&gt;]] <15>  damage, and ongoing 5 damage and the target is slowed (save ends both). Effect: As a free action after the attack, Cartha uses slayer’s leap. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;Cartha can alter his physical form to appear as a dire rat or a unique human.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) </p><p>Cartha can alter his physical form to appear as a dire rat or a unique human.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slayer\"s Leap&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;Cartha jumps to shift 3 squares. He ignores difficult terrain and can move over obstacles 1 square high.&lt;/p&gt;]]  <b>Slayer\"s Leap</b> (move; at-will) </p><p>Cartha jumps to shift 3 squares. He ignores difficult terrain and can move over obstacles 1 square high.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Cartha increases ongoing damage by 5 against any creature granting combat advantage to him.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>Cartha increases ongoing damage by 5 against any creature granting combat advantage to him.</p></tr></td></table>",

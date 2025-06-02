@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Joint Assault",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OHxbvEe3RaBMGJs7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -632,23 +634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 324; <b>Bloodied</b> 162</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 27</td><td><b>Ref</b> 23</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+13)<br><b>Con</b> 22 (+12)</td><td><b>Dex</b> 13 (+7)<br><b>Int</b> 2 (+2)</td><td><b>Wis</b> 17 (+9)<br><b>Cha</b> 6 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Joint Assault&lt;/b&gt; (mount) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The urbeast’s rider can make a basic attack during the same turn that the urbeast uses stomp or trample.&lt;/p&gt;]]  <b>Joint Assault</b> (mount) <b></b></p><p>The urbeast’s rider can make a basic attack during the same turn that the urbeast uses stomp or trample.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stomp&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 damage, and the target falls prone.&lt;/p&gt;]] (⚔) <b>Stomp</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stomp&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stomp&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 damage, and the target falls prone.&lt;/p&gt;]] <26.5>  damage, and the target falls prone.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Pinning Stomp&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The urbeast uses stomp twice. If both attacks hit the same target, the urbeast can grab the target (escape DC 20). Until the grab ends, the target cannot stand up and takes ongoing 25 damage. In addition, the urbeast cannot move or use trample while grabbing a creature in this way.&lt;/p&gt;]] ⚔ <b>Pinning Stomp</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The urbeast uses stomp twice. If both attacks hit the same target, the urbeast can grab the target (escape DC 20). Until the grab ends, the target cannot stand up and takes ongoing 25 damage. In addition, the urbeast cannot move or use trample while grabbing a creature in this way.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The urbeast must not have taken a move action on the same turn that it uses this power.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The urbeast moves up to twice its speed and can enter enemies’ spaces during the move. Each time the urbeast enters an enemy’s space for the first time during the move, it can use stomp against the enemy, and any enemy that attacked the urbeast during the move grants the urbeast combat advantage for the attack. When the move ends, the urbeast’s turn ends.&lt;/p&gt;]] ⚔ <b>Trample</b> ✦ <b>Encounter</b></p><p><i>Requirement:</i> The urbeast must not have taken a move action on the same turn that it uses this power.</p><p><i>Effect:</i> The urbeast moves up to twice its speed and can enter enemies’ spaces during the move. Each time the urbeast enters an enemy’s space for the first time during the move, it can use stomp against the enemy, and any enemy that attacked the urbeast during the move grants the urbeast combat advantage for the attack. When the move ends, the urbeast’s turn ends.</p></tr></td></table>",

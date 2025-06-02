@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -590,23 +592,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 195; <b>Bloodied</b> 97<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +20</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 42</td><td><b>Ref</b> 41</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+18)<br><b>Con</b> 27 (+21)</td><td><b>Dex</b> 24 (+20)<br><b>Int</b> 17 (+16)</td><td><b>Wis</b> 20 (+18)<br><b>Cha</b> 19 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rotting Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 2d10+7 damage, and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] (⚔) <b>Rotting Claw</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rotting Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs AC&lt;/u&gt;; 2d10+7 damage, and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rotting Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 2d10+7 damage, and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] <18>  damage, and the target takes ongoing 10 necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Orb of Decay&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +30 vs Fortitude; 2d8+10 necrotic damage, and the target is weakened and takes a -2 penalty to saving throws (save ends both). &lt;/p&gt;]] (➶) <b>Orb of Decay</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Orb of Decay&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+30 vs Fortitude&lt;/u&gt;; 2d8+10 necrotic damage, and the target is weakened and takes a -2 penalty to saving throws (save ends both). &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Orb of Decay&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +30 vs Fortitude; 2d8+10 necrotic damage, and the target is weakened and takes a -2 penalty to saving throws (save ends both). &lt;/p&gt;]] <19>  necrotic damage, and the target is weakened and takes a -2 penalty to saving throws (save ends both). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Interposing Decay&lt;/b&gt; (immediate interrupt, when hit by an attack; recharges when bloodied) &lt;/p&gt;&lt;p&gt;The rot spewer gains a +4 power bonus to AC and Reflex until the end of its next turn, as it throws a wave of rotting flesh around itself.&lt;/p&gt;]]  <b>Interposing Decay</b> (immediate interrupt, when hit by an attack; recharges when bloodied) </p><p>The rot spewer gains a +4 power bonus to AC and Reflex until the end of its next turn, as it throws a wave of rotting flesh around itself.</p></tr></td></table>",

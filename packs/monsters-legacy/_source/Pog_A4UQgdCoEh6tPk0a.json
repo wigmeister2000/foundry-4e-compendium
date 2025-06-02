@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1300,23 +1301,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 198; <b>Bloodied</b> 99</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 21</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+6)<br><b>Con</b> 19 (+8)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 14 (+6)</td><td><b>Wis</b> 18 (+8)<br><b>Cha</b> 23 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +16, Thievery +16</td><td style=\"padding-left:15px;\"><b>Senses</b>  | Low-light vision  | <br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> leather robes, hexer rod</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hexer Rod&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d6+5 damage. &lt;/p&gt;]] (⚔) <b>Hexer Rod</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hexer Rod&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d6+5 damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hexer Rod&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d6+5 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Blinding Hex&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +12 vs Fortitude; 2d6+7 damage and the target is blinded (save ends). &lt;/p&gt;]] ➶ <b>Blinding Hex</b> (standard, at-will) </p><p>Ranged 10; [[/roll 1d20+12[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Blinding Hex&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+12 vs Fortitude&lt;/u&gt;; 2d6+7 damage and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Blinding Hex&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +12 vs Fortitude; 2d6+7 damage and the target is blinded (save ends). &lt;/p&gt;]] <14>  damage and the target is blinded (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Stinging Hex&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Will; the target takes 4d6 + 8 damage if it moves during its turn (save ends). &lt;/p&gt;]] ➶ <b>Stinging Hex</b> (standard, recharge ⚄⚅) </p><p>Ranged 10; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Stinging Hex&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+16 vs Will&lt;/u&gt;; the target takes 4d6 + 8 damage if it moves during its turn (save ends). &lt;/p&gt;]]; the target takes [[/roll 4d6 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Stinging Hex&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Will; the target takes 4d6 + 8 damage if it moves during its turn (save ends). &lt;/p&gt;]] <22>  damage if it moves during its turn (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Vexing Cloud&lt;/b&gt; (standard; sustain minor, encounter) &lt;/p&gt;&lt;p&gt; (Area burst 3 within 10)automatic hit; any enemy within the zone take a –2 penalty to attack rolls. The zone grants concealment to Pog and his allies. Pog can sustain the zone as a minor action, moving it 5 squares. &lt;/p&gt;]] ✻ <b>Vexing Cloud</b> (standard; sustain minor, encounter) </p><p> (Area burst 3 within 10)automatic hit; any enemy within the zone take a –2 penalty to attack rolls. The zone grants concealment to Pog and his allies. Pog can sustain the zone as a minor action, moving it 5 squares. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Incite Bravery&lt;/b&gt; (immediate reaction, when an ally uses goblin tactics, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; the targeted ally can shift 2 more squares and make an attack. &lt;/p&gt;]] ➶ <b>Incite Bravery</b> (immediate reaction, when an ally uses goblin tactics, at-will) </p><p>Ranged 10; the targeted ally can shift 2 more squares and make an attack. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate interrupt, when targeted by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;Pog shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate interrupt, when targeted by a melee attack; at-will) </p><p>Pog shifts 1 square.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Lead from the Rear&lt;/b&gt; (immediate interrupt, when targeted by a ranged attack; at-will) &lt;/p&gt;&lt;p&gt;Pog can change the attack’s target to an adjacent ally of 12th level or lower.&lt;/p&gt;]]  <b>Lead from the Rear</b> (immediate interrupt, when targeted by a ranged attack; at-will) </p><p>Pog can change the attack’s target to an adjacent ally of 12th level or lower.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;&lt;/b&gt; (immediate reaction, when an ally within 5 squares is reduced to 0 hit points; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Pog regains 6 hit points.&lt;/p&gt;]]  <b></b> (immediate reaction, when an ally within 5 squares is reduced to 0 hit points; at-will) ✦ <b>Healing</b></p><p>Pog regains 6 hit points.</p></tr></td></table>",

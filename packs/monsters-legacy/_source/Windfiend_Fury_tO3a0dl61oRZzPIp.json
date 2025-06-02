@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Forceful Zephyr",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zCLG6uPBWcDfi7T4",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 123; <b>Bloodied</b> 61<hr><b>Resist</b> 15 lightning, 15 thunder <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 25</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 0, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+9)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 21 (+11)<br><b>Int</b> 6 (+4)</td><td><b>Wis</b> 19 (+10)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Forceful Zephyr&lt;/b&gt; aura 3; the windfiend fury slides each creature that starts its turn within the aura 1 square.]] <b>Forceful Zephyr</b> aura 3; the windfiend fury slides each creature that starts its turn within the aura 1 square.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flying Debris&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 2d8+5 damage. &lt;/p&gt;]] (⚔) <b>Flying Debris</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flying Debris&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flying Debris&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +17 vs AC; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Strike&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Fortitude; 3d8+5 lightning damage, and the target is dazed until the end of the windfiend fury’s next turn. &lt;/p&gt;]] ➶ <b>Lightning Strike</b> (standard, recharge ⚄⚅) ✦ <b>Lightning</b></p><p>Ranged 10; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Strike&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 3d8+5 lightning damage, and the target is dazed until the end of the windfiend fury’s next turn. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lightning Strike&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +16 vs Fortitude; 3d8+5 lightning damage, and the target is dazed until the end of the windfiend fury’s next turn. &lt;/p&gt;]] <18.5>  lightning damage, and the target is dazed until the end of the windfiend fury’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Storm Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Teleportation, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +16 vs Reflex; 1d10+5 thunder damage. Effect: The windfiend fury teleports to any space adjacent to the burst’s area of effect. &lt;/p&gt;]] ᗕ <b>Storm Burst</b> (standard, at-will) ✦ <b>Teleportation, Thunder</b></p><p>Close burst 2; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Storm Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Teleportation, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 1d10+5 thunder damage. Effect: The windfiend fury teleports to any space adjacent to the burst’s area of effect. &lt;/p&gt;]]; [[/roll 1d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Storm Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Teleportation, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +16 vs Reflex; 1d10+5 thunder damage. Effect: The windfiend fury teleports to any space adjacent to the burst’s area of effect. &lt;/p&gt;]] <10.5>  thunder damage. Effect: The windfiend fury teleports to any space adjacent to the burst’s area of effect. </p></tr></td></table>",

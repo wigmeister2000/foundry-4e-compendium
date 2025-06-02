@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 5",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xLUEqt4T6kNRJplf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -284,7 +286,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -332,10 +335,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -587,7 +590,7 @@
 		},
 		{
 			"name":"Bloodied Resilience",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UxClBTHNL867odDa",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -623,7 +626,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -859,23 +863,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 61; <b>Bloodied</b> 30<br><b>Regeneration</b> 5<hr><b>Vulnerable</b> silver (if the wereboar takes damage from a silver weapon, its regeneration does not function on its next turn) <b>Immune</b> moontusk fever </td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 21</td><td><b>Ref</b> 16</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 in boar form)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+8)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 10 (+3)<br><b>Int</b> 10 (+3)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 11 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +13, Endurance +11, Intimidate +8</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> hide armor , maul .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Maul&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 2d6+6 damage. &lt;/p&gt;]] (⚔) <b>Maul</b> (standard; usable only while in humanoid form, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Maul&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 2d6+6 damage. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Maul&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 2d6+6 damage. &lt;/p&gt;]] <13>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; (standard; usable only while in boar form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d8+6 damage, ongoing 5 damage (save ends), and the target is exposed to moontusk fever. &lt;/p&gt;]] (⚔) <b>Gore</b> (standard; usable only while in boar form, at-will) ✦ <b>Disease</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; (standard; usable only while in boar form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d8+6 damage, ongoing 5 damage (save ends), and the target is exposed to moontusk fever. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gore&lt;/b&gt; (standard; usable only while in boar form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d8+6 damage, ongoing 5 damage (save ends), and the target is exposed to moontusk fever. &lt;/p&gt;]] <10.5>  damage, ongoing 5 damage (save ends), and the target is exposed to moontusk fever. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Death Strike&lt;/b&gt; ( when the werebear drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;The wereboar makes a gore or a maul attack.&lt;/p&gt;]] ⚔ <b>Death Strike</b> ( when the werebear drops to 0 hit points, ) </p><p>The wereboar makes a gore or a maul attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodied Resilience&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The wereboar gains a +2 bonus to all defenses and deals ongoing 10 damage with its gore attack instead of ongoing 5 damage.&lt;/p&gt;]]  <b>Bloodied Resilience</b> (while bloodied) </p><p>The wereboar gains a +2 bonus to all defenses and deals ongoing 10 damage with its gore attack instead of ongoing 5 damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A wereboar can alter its physical form to appear as a dire boar or a unique humanoid.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>A wereboar can alter its physical form to appear as a dire boar or a unique humanoid.</p></tr></td></table>",

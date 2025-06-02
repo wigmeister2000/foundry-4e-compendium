@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Description",
-			"type":"raceFeats",
+			"type":"feature",
 			"img":"icons/svg/mystery-man.svg",
 			"system":{
 				"description":{
@@ -18,36 +18,6 @@
 					"value":""
 				},
 				"source":"",
-				"activation":{
-					"type":"",
-					"cost":0,
-					"condition":""
-				},
-				"duration":{
-					"value":null,
-					"units":""
-				},
-				"target":{
-					"value":null,
-					"width":null,
-					"units":"",
-					"type":""
-				},
-				"range":{
-					"value":null,
-					"long":null,
-					"units":""
-				},
-				"uses":{
-					"value":0,
-					"max":0,
-					"per":null
-				},
-				"consume":{
-					"type":"",
-					"target":null,
-					"amount":null
-				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
@@ -61,7 +31,8 @@
 				"recharge":{
 					"value":null,
 					"charged":false
-				}
+				},
+				"featureType":"race"
 			},
 			"effects":[],
 			"folder":null,
@@ -72,7 +43,7 @@
 		},
 		{
 			"name":"Detect",
-			"type":"raceFeats",
+			"type":"feature",
 			"img":"icons/svg/eye.svg",
 			"system":{
 				"description":{
@@ -84,36 +55,6 @@
 					"value":""
 				},
 				"source":"",
-				"activation":{
-					"type":"",
-					"cost":0,
-					"condition":""
-				},
-				"duration":{
-					"value":null,
-					"units":""
-				},
-				"target":{
-					"value":null,
-					"width":null,
-					"units":"",
-					"type":""
-				},
-				"range":{
-					"value":null,
-					"long":null,
-					"units":""
-				},
-				"uses":{
-					"value":0,
-					"max":0,
-					"per":null
-				},
-				"consume":{
-					"type":"",
-					"target":null,
-					"amount":null
-				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
@@ -127,7 +68,8 @@
 				"recharge":{
 					"value":null,
 					"charged":false
-				}
+				},
+				"featureType":"race"
 			},
 			"effects":[],
 			"folder":null,
@@ -138,7 +80,7 @@
 		},
 		{
 			"name":"Countermeasures",
-			"type":"feat",
+			"type":"feature",
 			"img":"icons/svg/cancel.svg",
 			"system":{
 				"description":{
@@ -150,36 +92,6 @@
 					"value":""
 				},
 				"source":"",
-				"activation":{
-					"type":"",
-					"cost":0,
-					"condition":""
-				},
-				"duration":{
-					"value":null,
-					"units":""
-				},
-				"target":{
-					"value":null,
-					"width":null,
-					"units":"",
-					"type":""
-				},
-				"range":{
-					"value":null,
-					"long":null,
-					"units":""
-				},
-				"uses":{
-					"value":0,
-					"max":0,
-					"per":null
-				},
-				"consume":{
-					"type":"",
-					"target":null,
-					"amount":null
-				},
 				"macro":{
 					"type":"script",
 					"scope":"global",
@@ -193,7 +105,8 @@
 				"recharge":{
 					"value":null,
 					"charged":false
-				}
+				},
+				"featureType":"feat"
 			},
 			"effects":[],
 			"folder":null,
@@ -438,28 +351,15 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"",
@@ -1411,6 +1311,6 @@
 		},
 		"detectionModes":[]
 	},
-	"folder":"mvdnQslMLuPIKahG",
+	"folder":"XH2r4zutJAPBhENn",
 	"_key":"!actors!nWKYV6zufgroHI9O"
 }

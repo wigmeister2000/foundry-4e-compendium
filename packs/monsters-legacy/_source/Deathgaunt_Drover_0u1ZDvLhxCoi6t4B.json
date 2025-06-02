@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -766,23 +767,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 52; <b>Bloodied</b> 26<hr><b>Resist</b> 5 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 15</td><td><b>Ref</b> 18</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+4)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 18 (+6)<br><b>Int</b> 8 (+1)</td><td><b>Wis</b> 6 (0)<br><b>Cha</b> 15 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, Goblin<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 2d6 + 3 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 2d6 + 3 damage. &lt;/p&gt;]]; [[/roll 2d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 2d6 + 3 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dirty Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 1d6 + 2 necrotic damage, and the target loses a healing surge. Targets a creature that grants combat advantage to the deathgaunt drover.&lt;/p&gt;]] ⚔ <b>Dirty Bite</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dirty Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 1d6 + 2 necrotic damage, and the target loses a healing surge. Targets a creature that grants combat advantage to the deathgaunt drover.&lt;/p&gt;]]; [[/roll 1d6 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dirty Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 1d6 + 2 necrotic damage, and the target loses a healing surge. Targets a creature that grants combat advantage to the deathgaunt drover.&lt;/p&gt;]] <5.5>  necrotic damage, and the target loses a healing surge. Targets a creature that grants combat advantage to the deathgaunt drover.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dark Rendering&lt;/b&gt; (standard; encounter) &lt;/p&gt;&lt;p&gt;The deathgaunt drover shifts 4 squares. At any point during that movement, it can make two melee attacks&lt;/p&gt;]]  <b>Dark Rendering</b> (standard; encounter) </p><p>The deathgaunt drover shifts 4 squares. At any point during that movement, it can make two melee attacks</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Horde Tactics&lt;/b&gt; (free, when the deathgaunt drover hits with a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The deathgaunt drover shifts 1 square&lt;/p&gt;]]  <b>Horde Tactics</b> (free, when the deathgaunt drover hits with a melee attack; at-will) </p><p>The deathgaunt drover shifts 1 square</p></tr></td></table>",

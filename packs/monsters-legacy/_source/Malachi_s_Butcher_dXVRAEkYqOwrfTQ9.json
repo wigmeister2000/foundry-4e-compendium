@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -645,10 +646,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1124,23 +1125,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 564; <b>Bloodied</b> 282<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 29</td><td><b>Ref</b> 26</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+14)<br><b>Con</b> 21 (+12)</td><td><b>Dex</b> 18 (+11)<br><b>Int</b> 6 (+5)</td><td><b>Wis</b> 18 (+11)<br><b>Cha</b> 2 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p><b>Equipment</b> cleaver</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cleaver&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d10+7 damage, and ongoing 5 damage (save ends). On a critical hit, the ongoing damage increases to 10 and has Aftereffect: ongoing 5 damage (save ends). Against a grabbed target, the butcher scores a critical hit on a natural roll of 18-20. &lt;/p&gt;]] (⚔) <b>Cleaver</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cleaver&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d10+7 damage, and ongoing 5 damage (save ends). On a critical hit, the ongoing damage increases to 10 and has Aftereffect: ongoing 5 damage (save ends). Against a grabbed target, the butcher scores a critical hit on a natural roll of 18-20. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cleaver&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d10+7 damage, and ongoing 5 damage (save ends). On a critical hit, the ongoing damage increases to 10 and has Aftereffect: ongoing 5 damage (save ends). Against a grabbed target, the butcher scores a critical hit on a natural roll of 18-20. &lt;/p&gt;]] <18>  damage, and ongoing 5 damage (save ends). On a critical hit, the ongoing damage increases to 10 and has Aftereffect: ongoing 5 damage (save ends). Against a grabbed target, the butcher scores a critical hit on a natural roll of 18-20. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d8+7 damage, and the target is grabbed. The butcher can grab only one creature at a time, and it can\"t make claw attacks while grabbing. &lt;/p&gt;]] ⚔ <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d8+7 damage, and the target is grabbed. The butcher can grab only one creature at a time, and it can\"t make claw attacks while grabbing. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 2d8+7 damage, and the target is grabbed. The butcher can grab only one creature at a time, and it can\"t make claw attacks while grabbing. &lt;/p&gt;]] <16>  damage, and the target is grabbed. The butcher can grab only one creature at a time, and it can\"t make claw attacks while grabbing. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Butchery&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The butcher makes a cleaver and a claw attack.&lt;/p&gt;]] ⚔ <b>Butchery</b> (standard, at-will) ✦ <b>Weapon</b></p><p>The butcher makes a cleaver and a claw attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mangling Maw&lt;/b&gt; (minor; requires a grabbed target, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature the butcher is grabbing; +17 vs AC; 2d10+5 damage, and the butcher regains 5 hit points. &lt;/p&gt;]] ⚔ <b>Mangling Maw</b> (minor; requires a grabbed target, at-will) </p><p>Targets a creature the butcher is grabbing; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mangling Maw&lt;/b&gt; (minor; requires a grabbed target, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature the butcher is grabbing; &lt;u&gt;+17 vs AC&lt;/u&gt;; 2d10+5 damage, and the butcher regains 5 hit points. &lt;/p&gt;]]; [[/roll 2d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mangling Maw&lt;/b&gt; (minor; requires a grabbed target, at-will) &lt;/p&gt;&lt;p&gt;Targets a creature the butcher is grabbing; +17 vs AC; 2d10+5 damage, and the butcher regains 5 hit points. &lt;/p&gt;]] <16>  damage, and the butcher regains 5 hit points. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spew Meat Mote&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;Malachi’s butcher takes 10 damage. A meat mote appears in a square of the butcher’s choice within 2 squares. It acts right after the butcher. The butcher can have only four active meat motes at a time.&lt;/p&gt;]]  <b>Spew Meat Mote</b> (minor; at-will) </p><p>Malachi’s butcher takes 10 damage. A meat mote appears in a square of the butcher’s choice within 2 squares. It acts right after the butcher. The butcher can have only four active meat motes at a time.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Rupture&lt;/b&gt; ( when reduced to 0 hit points) &lt;/p&gt;&lt;p&gt;Four meat motes appear in the butcher’s space. They take their turn immediately after the butcher is reduced to 0 hit points.&lt;/p&gt;]]  <b>Rupture</b> ( when reduced to 0 hit points) </p><p>Four meat motes appear in the butcher’s space. They take their turn immediately after the butcher is reduced to 0 hit points.</p></tr></td></table>",

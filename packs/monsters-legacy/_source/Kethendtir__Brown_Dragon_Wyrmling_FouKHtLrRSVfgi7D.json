@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +287,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -641,10 +643,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -819,10 +821,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1076,7 +1078,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8J7fIZVXQAiRyBpn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1112,7 +1114,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1168,23 +1171,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 64; <b>Bloodied</b> 32<hr><b>Resist</b> 5 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 19</td><td><b>Ref</b> 16</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, burrow 6, fly 4 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+5)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 12 (+2)<br><b>Int</b> 12 (+2)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Endurance +8, Stealth +7</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 10<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 1d8 +4 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d8 +4 damage. &lt;/p&gt;]]; [[/roll 1d8 +4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 1d8 +4 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 1d6 +4 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d6 +4 damage. &lt;/p&gt;]]; [[/roll 1d6 +4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+7 vs AC; 1d6 +4 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The dragon makes two claw attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The dragon makes two claw attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;+6 vs Fortitude; 2d8 +2 damage and the target is blinded (save ends). &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharges when first bloodied, encounter) </p><p>[[/roll 1d20+6[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs Fortitude&lt;/u&gt;; 2d8 +2 damage and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 2d8 +2#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;+6 vs Fortitude; 2d8 +2 damage and the target is blinded (save ends). &lt;/p&gt;]] <11>  damage and the target is blinded (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Sand Spray&lt;/b&gt; (immediate reaction, when an enemy targets the dragon with a ranged attack, at-will) &lt;/p&gt;&lt;p&gt;The wyrmling attacks the triggering enemy; ranged 10; +6 vs Reflex; 1d6+1 damage and the target is blinded until the end of the dragon’s next turn. &lt;/p&gt;]] ➶ <b>Sand Spray</b> (immediate reaction, when an enemy targets the dragon with a ranged attack, at-will) </p><p>The wyrmling attacks the triggering enemy; ranged 10; [[/roll 1d20+6[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Sand Spray&lt;/b&gt; (immediate reaction, when an enemy targets the dragon with a ranged attack, at-will) &lt;/p&gt;&lt;p&gt;The wyrmling attacks the triggering enemy; ranged 10; &lt;u&gt;+6 vs Reflex&lt;/u&gt;; 1d6+1 damage and the target is blinded until the end of the dragon’s next turn. &lt;/p&gt;]]; [[/roll 1d6+1#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Sand Spray&lt;/b&gt; (immediate reaction, when an enemy targets the dragon with a ranged attack, at-will) &lt;/p&gt;&lt;p&gt;The wyrmling attacks the triggering enemy; ranged 10; +6 vs Reflex; 1d6+1 damage and the target is blinded until the end of the dragon’s next turn. &lt;/p&gt;]] <4.5>  damage and the target is blinded until the end of the dragon’s next turn. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Sand Cloud&lt;/b&gt; (move; recharge ⚅) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wyrmling transforms into a cloud of sand and shifts a number of squares up to its speed. It can move through occupied squares but must end in a legal space. Any creature whose space the dragon enters takes 1d6+4 damage and is blinded (save ends). The dragon returns to its normal form at the end of this move.&lt;/p&gt;]]  <b>Sand Cloud</b> (move; recharge ⚅) ✦ <b>Polymorph</b></p><p>The wyrmling transforms into a cloud of sand and shifts a number of squares up to its speed. It can move through occupied squares but must end in a legal space. Any creature whose space the dragon enters takes [[/roll 1d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Sand Cloud&lt;/b&gt; (move; recharge ⚅) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wyrmling transforms into a cloud of sand and shifts a number of squares up to its speed. It can move through occupied squares but must end in a legal space. Any creature whose space the dragon enters takes 1d6+4 damage and is blinded (save ends). The dragon returns to its normal form at the end of this move.&lt;/p&gt;]] <7.5>  damage and is blinded (save ends). The dragon returns to its normal form at the end of this move.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wyrmling deals 1d6 extra damage against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The wyrmling deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The wyrmling deals 1d6 extra damage against any target it has combat advantage against.&lt;/p&gt;]] <3.5> extra damage against any target it has combat advantage against.</p></tr></td></table>",

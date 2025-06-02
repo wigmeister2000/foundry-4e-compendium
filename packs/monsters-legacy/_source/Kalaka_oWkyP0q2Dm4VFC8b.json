@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -547,7 +548,7 @@
 		},
 		{
 			"name":"Flawed Creation",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"phm5cqx2oJ6a1KuY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -583,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 108; <b>Bloodied</b> 54<hr><b>Resist</b> 10 variable (1/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 23</td><td><b>Ref</b> 20</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 9 (+3)</td><td><b>Wis</b> 15 (+6)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +14, Endurance +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 5<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> halberd , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 2d4+6 damage, and slide the target 1 square. &lt;/p&gt;]] (⚔) <b>Glaive</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+16 vs AC&lt;/u&gt;; 2d4+6 damage, and slide the target 1 square. &lt;/p&gt;]]; [[/roll 2d4+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 2d4+6 damage, and slide the target 1 square. &lt;/p&gt;]] <11>  damage, and slide the target 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Unexpected Reinforcements&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Conjuration, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +16 vs AC; 3d10+5 damage.. the kalaka conjures up to four duplicates of itself, which appear in four unoccupied squares in range. The kalaka and each duplicate make a melee basic attack. At the end of the kalaka’s turn, choose a duplicate or the original kalaka to remain. Remove the rest from play.&lt;/p&gt;]] ➶ <b>Unexpected Reinforcements</b> (standard, encounter) ✦ <b>Conjuration, Weapon</b></p><p>Ranged 5; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Unexpected Reinforcements&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Conjuration, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+16 vs AC&lt;/u&gt;; 3d10+5 damage.. the kalaka conjures up to four duplicates of itself, which appear in four unoccupied squares in range. The kalaka and each duplicate make a melee basic attack. At the end of the kalaka’s turn, choose a duplicate or the original kalaka to remain. Remove the rest from play.&lt;/p&gt;]]; [[/roll 3d10+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Unexpected Reinforcements&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Conjuration, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +16 vs AC; 3d10+5 damage.. the kalaka conjures up to four duplicates of itself, which appear in four unoccupied squares in range. The kalaka and each duplicate make a melee basic attack. At the end of the kalaka’s turn, choose a duplicate or the original kalaka to remain. Remove the rest from play.&lt;/p&gt;]] <21.5>  damage.. the kalaka conjures up to four duplicates of itself, which appear in four unoccupied squares in range. The kalaka and each duplicate make a melee basic attack. At the end of the kalaka’s turn, choose a duplicate or the original kalaka to remain. Remove the rest from play.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Spewing Death&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +14 vs Reflex; 2d6+4 acid damage, and the target is blinded until the start of its next turn. Miss: Half damage and the target is not blinded. &lt;/p&gt;]] ᗕ <b>Spewing Death</b> ( when reduced to 0 hit points, ) ✦ <b>Acid</b></p><p>Close burst 1; [[/roll 1d20+14[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Spewing Death&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+14 vs Reflex&lt;/u&gt;; 2d6+4 acid damage, and the target is blinded until the start of its next turn. Miss: Half damage and the target is not blinded. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Spewing Death&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +14 vs Reflex; 2d6+4 acid damage, and the target is blinded until the start of its next turn. Miss: Half damage and the target is not blinded. &lt;/p&gt;]] <11>  acid damage, and the target is blinded until the start of its next turn. Miss: Half damage and the target is not blinded. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Flawed Creation&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The kalaka takes ongoing 5 damage.&lt;/p&gt;]]  <b>Flawed Creation</b> (while bloodied) </p><p>The kalaka takes ongoing 5 damage.</p></tr></td></table>",

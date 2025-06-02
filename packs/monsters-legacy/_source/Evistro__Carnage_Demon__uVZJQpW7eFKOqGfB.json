@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -362,7 +363,7 @@
 		},
 		{
 			"name":"Carnage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gzVesWTxaUNb1AtM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -398,7 +399,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -454,23 +456,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 90; <b>Bloodied</b> 45<hr><b>Resist</b> 10 variable (1/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 18</td><td><b>Ref</b> 14</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+8)<br><b>Con</b> 20 (+8)</td><td><b>Dex</b> 12 (+4)<br><b>Int</b> 5 (0)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 7 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 1d12+5 damage. &lt;/p&gt;]] (⚔) <b>Claws</b> (standard, at-will) </p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d12+5 damage. &lt;/p&gt;]]; [[/roll 1d12+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 1d12+5 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Destructive Bite &lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Bloodied target only; +8 vs AC; 1d6+5 damage. &lt;/p&gt;]] ⚔ <b>Destructive Bite </b> (minor, at-will) </p><p>Bloodied target only; [[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Destructive Bite &lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Bloodied target only; &lt;u&gt;+8 vs AC&lt;/u&gt;; 1d6+5 damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Destructive Bite &lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Bloodied target only; +8 vs AC; 1d6+5 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Carnage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The carnage demon gains a +1 bonus to melee attacks if it has one or more allies adjacent to its target (+3 if one of these allies is another carnage demon). This bonus stacks with combat advantage.&lt;/p&gt;]]  <b>Carnage</b></p><p>The carnage demon gains a +1 bonus to melee attacks if it has one or more allies adjacent to its target (+3 if one of these allies is another carnage demon). This bonus stacks with combat advantage.</p></tr></td></table>",

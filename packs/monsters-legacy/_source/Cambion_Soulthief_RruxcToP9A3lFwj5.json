@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -546,7 +548,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EXROchknIZ2ftxjF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -996,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 156; <b>Bloodied</b> 78<hr><b>Resist</b> 15 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 33</td><td><b>Ref</b> 35</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+17)<br><b>Con</b> 18 (+15)</td><td><b>Dex</b> 25 (+18)<br><b>Int</b> 13 (+12)</td><td><b>Wis</b> 14 (+13)<br><b>Cha</b> 17 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b>  | <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> iron gauntlet, longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+27 vs AC; 2d6+8 damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+27[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+27 vs AC&lt;/u&gt;; 2d6+8 damage. &lt;/p&gt;]]; [[/roll 2d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+27 vs AC; 2d6+8 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Soul Grasp&lt;/b&gt; (standard, recharges when no enemy is affected by this power) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Will; 1d10+8 necrotic damage, and the target takes ongoing 5 necrotic damage and is slowed (save ends both). First Failed Save: The target is immobilized instead of slowed (save ends). Second Failed Save: The target is stunned instead of immobilized (save ends). &lt;/p&gt;]] (➶) <b>Soul Grasp</b> (standard, recharges when no enemy is affected by this power) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+27[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Soul Grasp&lt;/b&gt; (standard, recharges when no enemy is affected by this power) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+27 vs Will&lt;/u&gt;; 1d10+8 necrotic damage, and the target takes ongoing 5 necrotic damage and is slowed (save ends both). First Failed Save: The target is immobilized instead of slowed (save ends). Second Failed Save: The target is stunned instead of immobilized (save ends). &lt;/p&gt;]]; [[/roll 1d10+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;(➶) &lt;b&gt;Soul Grasp&lt;/b&gt; (standard, recharges when no enemy is affected by this power) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Will; 1d10+8 necrotic damage, and the target takes ongoing 5 necrotic damage and is slowed (save ends both). First Failed Save: The target is immobilized instead of slowed (save ends). Second Failed Save: The target is stunned instead of immobilized (save ends). &lt;/p&gt;]] <13.5>  necrotic damage, and the target takes ongoing 5 necrotic damage and is slowed (save ends both). First Failed Save: The target is immobilized instead of slowed (save ends). Second Failed Save: The target is stunned instead of immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Lunge&lt;/b&gt; (standard; must be invisible, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The cambion soulthief makes a longsword attack against two targets.&lt;/p&gt;]] ⚔ <b>Double Lunge</b> (standard; must be invisible, at-will) ✦ <b>Weapon</b></p><p>The cambion soulthief makes a longsword attack against two targets.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Invisibility&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The cambion soulthief becomes invisible until it attacks.&lt;/p&gt;]]  <b>Invisibility</b> (standard; at-will) ✦ <b>Illusion</b></p><p>The cambion soulthief becomes invisible until it attacks.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The cambion soulthief deals 1d6 extra damage on melee attacks against any target granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The cambion soulthief deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The cambion soulthief deals 1d6 extra damage on melee attacks against any target granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage on melee attacks against any target granting combat advantage to it.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Fuel&lt;/b&gt; (minor; a creature must be immobilized or stunned by this soulthief\"s soul grasp; at-will) &lt;/p&gt;&lt;p&gt;The cambion soulthief turns invisible until it attacks and teleports 10. The creature affected by soul grasp loses a healing surge and automatically saves against the effect of soul grasp.&lt;/p&gt;]]  <b>Soul Fuel</b> (minor; a creature must be immobilized or stunned by this soulthief\"s soul grasp; at-will) </p><p>The cambion soulthief turns invisible until it attacks and teleports 10. The creature affected by soul grasp loses a healing surge and automatically saves against the effect of soul grasp.</p></tr></td></table>",

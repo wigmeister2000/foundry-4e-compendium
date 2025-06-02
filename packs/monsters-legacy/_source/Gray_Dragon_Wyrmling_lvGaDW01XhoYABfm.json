@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 90; <b>Bloodied</b> 45<hr><b>Resist</b> 5 acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +3 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 17</td><td><b>Ref</b> 16</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 6 (overland flight)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+4)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 11 (+1)<br><b>Int</b> 12 (+2)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 11 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +6</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+3 damage, and the target is immobilized and takes ongoing 5 damage (save ends both). &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d6+3 damage, and the target is immobilized and takes ongoing 5 damage (save ends both). &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+3 damage, and the target is immobilized and takes ongoing 5 damage (save ends both). &lt;/p&gt;]] <6.5>  damage, and the target is immobilized and takes ongoing 5 damage (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d10+3 damage.. The gray dragon makes two claw attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d10+3 damage.. The gray dragon makes two claw attacks.&lt;/p&gt;]]; [[/roll 1d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d10+3 damage.. The gray dragon makes two claw attacks.&lt;/p&gt;]] <8.5>  damage.. The gray dragon makes two claw attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 4; +8 vs Fortitude; 1d6+1 acid damage, and the target is pushed 2 squares. The target also takes ongoing 5 acid damage (save ends). &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharges when first bloodied) </p><p>Close blast 4; [[/roll 1d20+8[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 4; &lt;u&gt;+8 vs Fortitude&lt;/u&gt;; 1d6+1 acid damage, and the target is pushed 2 squares. The target also takes ongoing 5 acid damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+1#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close blast 4; +8 vs Fortitude; 1d6+1 acid damage, and the target is pushed 2 squares. The target also takes ongoing 5 acid damage (save ends). &lt;/p&gt;]] <4.5>  acid damage, and the target is pushed 2 squares. The target also takes ongoing 5 acid damage (save ends). </p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -545,7 +547,7 @@
 		},
 		{
 			"name":"Soul Link",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qbVtLy01urSDcY7a",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -581,7 +583,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -591,7 +594,7 @@
 		},
 		{
 			"name":"Call of History",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1EQDyt02doZS9GYV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -627,7 +630,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -683,23 +687,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 100; <b>Bloodied</b> 50<hr><b>Resist</b> 10 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 26</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+13)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 21 (+11)<br><b>Int</b> 11 (+6)</td><td><b>Wis</b> 11 (+6)<br><b>Cha</b> 26 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +16, Athletics +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Devastating Cut&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+6 damage. &lt;/p&gt;]] (⚔) <b>Devastating Cut</b> (standard, at-will) </p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Devastating Cut&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Devastating Cut&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ghost Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +17 vs AC; 1d10+6 necrotic damage. &lt;/p&gt;]] (➶) <b>Ghost Arrow</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 10/20; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ghost Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d10+6 necrotic damage. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ghost Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +17 vs AC; 1d10+6 necrotic damage. &lt;/p&gt;]] <11.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Battle Visions&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +16 vs Will; 2d8+6 psychic damage, and the target is deafened and dominated (save ends both). While the target is dominated, the ghost legionnaire merges with the target, disappearing from sight. The legionnaire cannot attack or be attacked during this time. When the target saves, the legionnaire appears in a square adjacent to the target. Until the end of the encounter, the target gains a +5 bonus to History checks for call of history. &lt;/p&gt;]] ➶ <b>Battle Visions</b> (standard, encounter) ✦ <b>Psychic, Reliable</b></p><p>Ranged 10/20; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Battle Visions&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+16 vs Will&lt;/u&gt;; 2d8+6 psychic damage, and the target is deafened and dominated (save ends both). While the target is dominated, the ghost legionnaire merges with the target, disappearing from sight. The legionnaire cannot attack or be attacked during this time. When the target saves, the legionnaire appears in a square adjacent to the target. Until the end of the encounter, the target gains a +5 bonus to History checks for call of history. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Battle Visions&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic, Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +16 vs Will; 2d8+6 psychic damage, and the target is deafened and dominated (save ends both). While the target is dominated, the ghost legionnaire merges with the target, disappearing from sight. The legionnaire cannot attack or be attacked during this time. When the target saves, the legionnaire appears in a square adjacent to the target. Until the end of the encounter, the target gains a +5 bonus to History checks for call of history. &lt;/p&gt;]] <15>  psychic damage, and the target is deafened and dominated (save ends both). While the target is dominated, the ghost legionnaire merges with the target, disappearing from sight. The legionnaire cannot attack or be attacked during this time. When the target saves, the legionnaire appears in a square adjacent to the target. Until the end of the encounter, the target gains a +5 bonus to History checks for call of history. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Link&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of the encounter, ghost legionnaires’ hit points combine into one sum. Damage to a legionnaire deducts from that total. When that total is reduced to 0, all legionnaires are destroyed simultaneously.&lt;/p&gt;]]  <b>Soul Link</b></p><p>At the start of the encounter, ghost legionnaires’ hit points combine into one sum. Damage to a legionnaire deducts from that total. When that total is reduced to 0, all legionnaires are destroyed simultaneously.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Call of History&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any character can make a DC 25 History check as a minor action to attempt to learn more about the ghost legionnaire. If the check succeeds, the legionnaire gains vulnerable 10 to that character’s next attack.&lt;/p&gt;]]  <b>Call of History</b></p><p>Any character can make a DC 25 History check as a minor action to attempt to learn more about the ghost legionnaire. If the check succeeds, the legionnaire gains vulnerable 10 to that character’s next attack.</p></tr></td></table>",

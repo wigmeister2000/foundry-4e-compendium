@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Incite Frenzy",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QM7voE9Xp1SYyKHC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -948,7 +950,7 @@
 		},
 		{
 			"name":"Frenzied Attacks",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zl2O30hw1i9JtMKW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -984,7 +986,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -994,7 +997,7 @@
 		},
 		{
 			"name":"Unstoppable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"N3R2bp45FmjP1qXt",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1030,7 +1033,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1086,23 +1090,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 276; <b>Bloodied</b> 138 ; see also unstoppable</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2; see also unstoppable</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 27</td><td><b>Ref</b> 25</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 18 (+11)<br><b>Int</b> 10 (+7)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 10 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +18, Intimidate +12</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> greatclub , scale armor .</p><p>[[/roll 0#&lt;b&gt;Incite Frenzy&lt;/b&gt; aura 5; at the start of its turn, each ally in the aura can take a -2 penalty to all defenses to gain a +4 bonus to damage rolls until the start of its next turn.]] <b>Incite Frenzy</b> aura 5; at the start of its turn, each ally in the aura can take a -2 penalty to all defenses to gain a +4 bonus to damage rolls until the start of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 3d4+8 damage, and the target is marked until the end of Una Wyrmguard’s next turn. &lt;/p&gt;]] (⚔) <b>Greatclub</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 3d4+8 damage, and the target is marked until the end of Una Wyrmguard’s next turn. &lt;/p&gt;]]; [[/roll 3d4+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 3d4+8 damage, and the target is marked until the end of Una Wyrmguard’s next turn. &lt;/p&gt;]] <15.5>  damage, and the target is marked until the end of Una Wyrmguard’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Greatclub Frenzy&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Una Wyrmguard makes two greatclub attacks&lt;/p&gt;]] ⚔ <b>Greatclub Frenzy</b> (standard, at-will) </p><p>Una Wyrmguard makes two greatclub attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frenzied Whirl&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; +20 vs AC; 5d4+8 damage, and the target is marked until the end of Una Wyrmguard’s next turn and is knocked prone. &lt;/p&gt;]] ᗕ <b>Frenzied Whirl</b> (standard, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>Close burst 1; targets enemies; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frenzied Whirl&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; &lt;u&gt;+20 vs AC&lt;/u&gt;; 5d4+8 damage, and the target is marked until the end of Una Wyrmguard’s next turn and is knocked prone. &lt;/p&gt;]]; [[/roll 5d4+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frenzied Whirl&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; +20 vs AC; 5d4+8 damage, and the target is marked until the end of Una Wyrmguard’s next turn and is knocked prone. &lt;/p&gt;]] <20.5>  damage, and the target is marked until the end of Una Wyrmguard’s next turn and is knocked prone. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fierce Retribution&lt;/b&gt; (immediate reaction, when a target marked by una wyrmguard stands or makes an attack that does not include una as a target, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Una Wyrmguard shifts 2 squares and charges the triggering enemy.&lt;/p&gt;]] ⚔ <b>Fierce Retribution</b> (immediate reaction, when a target marked by una wyrmguard stands or makes an attack that does not include una as a target, at-will) ✦ <b>Weapon</b></p><p>Una Wyrmguard shifts 2 squares and charges the triggering enemy.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Rage&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +18 vs Will; the target takes a -2 penalty to all defenses until the end of Una Wyrmguard’s next turn. &lt;/p&gt;]] ᗕ <b>Frightful Rage</b> (minor, recharge ⚅</p><p>Close burst 3; targets enemies; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Rage&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+18 vs Will&lt;/u&gt;; the target takes a -2 penalty to all defenses until the end of Una Wyrmguard’s next turn. &lt;/p&gt;]]; the target takes a -2 penalty to all defenses until the end of Una Wyrmguard’s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Frenzied Attacks&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Una Wyrmguard can take a -2 penalty to all defenses to gain a +6 bonus to damage rolls until the start of her next turn.&lt;/p&gt;]]  <b>Frenzied Attacks</b></p><p>Una Wyrmguard can take a -2 penalty to all defenses to gain a +6 bonus to damage rolls until the start of her next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unstoppable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Una Wyrmguard makes one saving throw at the start of her turn against an effect that a save can end. Una does not fall unconscious or die immediately when reduced to 0 or fewer hp; instead, she dies if she ends her turn with 0 or fewer hp.&lt;/p&gt;]]  <b>Unstoppable</b></p><p>Una Wyrmguard makes one saving throw at the start of her turn against an effect that a save can end. Una does not fall unconscious or die immediately when reduced to 0 or fewer hp; instead, she dies if she ends her turn with 0 or fewer hp.</p></tr></td></table>",

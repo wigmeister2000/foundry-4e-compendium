@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm's Embrace",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"m4NEhfLlBD8WSAuQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -770,7 +772,7 @@
 		},
 		{
 			"name":"Squeezing Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Kqzd92JP1QF57stp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -806,7 +808,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -862,23 +865,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 244; <b>Bloodied</b> 122<hr><b>Resist</b> takes half damage from melee and ranged attacks <b>Vulnerable</b> 10 against close and area attacks </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 24</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+7)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 17 (+9)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 21 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +14, Bluff +16, Insight +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 23</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Swarm’s Embrace&lt;/b&gt; aura 1; an enemy that starts its turn in the aura takes 10 damage.]] <b>Swarm’s Embrace</b> aura 1; an enemy that starts its turn in the aura takes 10 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cursed Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs Fortitude; 1d6+4 damage, and the target is dazed (save ends). In addition, the lamia regains a number of hit points equal to the amount of damage dealt. &lt;/p&gt;]] (⚔) <b>Cursed Touch</b> (standard, at-will) ✦ <b>Healing</b></p><p>[[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cursed Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 1d6+4 damage, and the target is dazed (save ends). In addition, the lamia regains a number of hit points equal to the amount of damage dealt. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cursed Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs Fortitude; 1d6+4 damage, and the target is dazed (save ends). In addition, the lamia regains a number of hit points equal to the amount of damage dealt. &lt;/p&gt;]] <7.5>  damage, and the target is dazed (save ends). In addition, the lamia regains a number of hit points equal to the amount of damage dealt. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devouring Swarm&lt;/b&gt; (standard; sustain minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; +16 vs Fortitude; 3d6+4 damage. When the lamia sustains this power, the devouring swarm deals 3d6+4 damage to the target (no attack roll required). The target must be within this power\"s range for the lamia to sustain the power. &lt;/p&gt;]] ⚔ <b>Devouring Swarm</b> (standard; sustain minor, at-will) </p><p>Reach 5; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devouring Swarm&lt;/b&gt; (standard; sustain minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 3d6+4 damage. When the lamia sustains this power, the devouring swarm deals 3d6+4 damage to the target (no attack roll required). The target must be within this power\"s range for the lamia to sustain the power. &lt;/p&gt;]]; [[/roll [[/roll 3d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devouring Swarm&lt;/b&gt; (standard; sustain minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; +16 vs Fortitude; 3d6+4 damage. When the lamia sustains this power, the devouring swarm deals 3d6+4 damage to the target (no attack roll required). The target must be within this power\"s range for the lamia to sustain the power. &lt;/p&gt;]] <14.5> #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devouring Swarm&lt;/b&gt; (standard; sustain minor, at-will) &lt;/p&gt;&lt;p&gt;Reach 5; +16 vs Fortitude; 3d6+4 damage. When the lamia sustains this power, the devouring swarm deals 3d6+4 damage to the target (no attack roll required). The target must be within this power\"s range for the lamia to sustain the power. &lt;/p&gt;]] <14.5>  damage. When the lamia sustains this power, the devouring swarm deals 3d6+4 damage to the target (no attack roll required). The target must be within this power\"s range for the lamia to sustain the power. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Pacifying Burst&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +16 vs Will; the target is stunned (save ends). &lt;/p&gt;]] ᗕ <b>Pacifying Burst</b> (standard, recharge ⚄⚅) ✦ <b>Psychic</b></p><p>Close burst 5; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Pacifying Burst&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+16 vs Will&lt;/u&gt;; the target is stunned (save ends). &lt;/p&gt;]]; the target is stunned (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A lamia can alter its physical form to appear as an attractive Medium humanoid of any race or gender.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>A lamia can alter its physical form to appear as an attractive Medium humanoid of any race or gender.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Squeezing Swarm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;By altering its shape, a lamia can squeeze through small openings as if it were a Tiny creature.&lt;/p&gt;]]  <b>Squeezing Swarm</b></p><p>By altering its shape, a lamia can squeeze through small openings as if it were a Tiny creature.</p></tr></td></table>",

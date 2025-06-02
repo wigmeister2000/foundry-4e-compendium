@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -302,10 +304,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -606,23 +608,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 77; <b>Bloodied</b> 38 ; see also boneshard burst<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 17</td><td><b>Ref</b> 17</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+5)<br><b>Con</b> 17 (+5)</td><td><b>Dex</b> 16 (+5)<br><b>Int</b> 3 (null)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 3 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> scimitar .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Boneshard&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d4+3 damage, and ongoing 5 poison and necrotic damage (save ends). &lt;/p&gt;]] (⚔) <b>Boneshard</b> (standard, at-will) ✦ <b>Necrotic, Poison</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Boneshard&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d4+3 damage, and ongoing 5 poison and necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 1d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Boneshard&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d4+3 damage, and ongoing 5 poison and necrotic damage (save ends). &lt;/p&gt;]] <5.5>  damage, and ongoing 5 poison and necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d8+3 damage (crit 1d8 + 11) plus 5 poison damage. &lt;/p&gt;]] (⚔) <b>Scimitar</b> (standard, at-will) ✦ <b>Necrotic, Poison, Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d8+3 damage (crit 1d8 + 11) plus 5 poison damage. &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d8+3 damage (crit 1d8 + 11) plus 5 poison damage. &lt;/p&gt;]] <7.5>  damage (crit [[/roll 1d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d8+3 damage (crit 1d8 + 11) plus 5 poison damage. &lt;/p&gt;]] <15.5> ) plus 5 poison damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Boneshard Burst&lt;/b&gt; ( when first bloodied and again when the boneshard skeleton drops to 0 hit points, ) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +8 vs Reflex; 2d6+3 necrotic and poison damage. &lt;/p&gt;]] ᗕ <b>Boneshard Burst</b> ( when first bloodied and again when the boneshard skeleton drops to 0 hit points, ) ✦ <b>Necrotic, Poison</b></p><p>Close burst 3; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Boneshard Burst&lt;/b&gt; ( when first bloodied and again when the boneshard skeleton drops to 0 hit points, ) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 2d6+3 necrotic and poison damage. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Boneshard Burst&lt;/b&gt; ( when first bloodied and again when the boneshard skeleton drops to 0 hit points, ) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +8 vs Reflex; 2d6+3 necrotic and poison damage. &lt;/p&gt;]] <10>  necrotic and poison damage. </p></tr></td></table>",

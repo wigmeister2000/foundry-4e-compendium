@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -290,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -545,7 +546,7 @@
 		},
 		{
 			"name":"Pool of Shadows",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nC3ujsYfk0tNbWRK",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -581,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -591,7 +593,7 @@
 		},
 		{
 			"name":"Shadowed Strike",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"7VUhtMWgeudx3LBP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -627,7 +629,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -683,23 +686,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 154; <b>Bloodied</b> 77<hr><b>Immune</b> gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+7)<br><b>Con</b> 17 (+8)</td><td><b>Dex</b> 18 (+9)<br><b>Int</b> 1 (0)</td><td><b>Wis</b> 15 (+7)<br><b>Cha</b> 1 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +12, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 10<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+5 necrotic damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8+5 necrotic damage. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d8+5 necrotic damage. &lt;/p&gt;]] <9.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Drain Life&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Fortitude; 2d8+3 necrotic damage, and the slime regains hit points equal to the damage dealt. &lt;/p&gt;]] ⚔ <b>Drain Life</b> (standard, at-will) ✦ <b>Healing, Necrotic</b></p><p>[[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Drain Life&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 2d8+3 necrotic damage, and the slime regains hit points equal to the damage dealt. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Drain Life&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Fortitude; 2d8+3 necrotic damage, and the slime regains hit points equal to the damage dealt. &lt;/p&gt;]] <12>  necrotic damage, and the slime regains hit points equal to the damage dealt. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Engulf in Shadows&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;One light source (even magical light) within 10 squares of the shadow slime stops producing light until relit.&lt;/p&gt;]]  <b>Engulf in Shadows</b> (minor; at-will) </p><p>One light source (even magical light) within 10 squares of the shadow slime stops producing light until relit.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pool of Shadows&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The shadow slime is invisible in areas of dim light or darkness.&lt;/p&gt;]]  <b>Pool of Shadows</b></p><p>The shadow slime is invisible in areas of dim light or darkness.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shadowed Strike&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the shadow slime hits a creature that cannot see it, the attack deals an extra 2d6 damage and the target loses 1 healing surge.&lt;/p&gt;]]  <b>Shadowed Strike</b></p><p>When the shadow slime hits a creature that cannot see it, the attack deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shadowed Strike&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the shadow slime hits a creature that cannot see it, the attack deals an extra 2d6 damage and the target loses 1 healing surge.&lt;/p&gt;]] <7> damage and the target loses 1 healing surge.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Devouring Maw",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4s8oIySbYpBt7Zrx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -978,7 +980,7 @@
 				"uses":{
 					"value":3,
 					"max":"3",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -1170,23 +1172,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 291; <b>Bloodied</b> 145</td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 38</td><td><b>Ref</b> 35</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+21)<br><b>Con</b> 31 (+22)</td><td><b>Dex</b> 21 (+17)<br><b>Int</b> 4 (+9)</td><td><b>Wis</b> 24 (+19)<br><b>Cha</b> 8 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Devouring Maw&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura takes 10 damage. In addition, while the voracalith is bloodied, any enemy within the aura gains only half the benefit of healing effects.&lt;/p&gt;]] ⌀ <b>Devouring Maw</b> ✦ <b>Aura</b> 1</p><p>Any enemy that starts its turn within the aura takes 10 damage. In addition, while the voracalith is bloodied, any enemy within the aura gains only half the benefit of healing effects.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horrid Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +30 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the voracalith pulls the target 2 squares.&lt;/p&gt;]] (⚔) <b>Horrid Tentacles</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+30[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horrid Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+30 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horrid Tentacles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 5 damage, and the voracalith pulls the target 2 squares.&lt;/p&gt;]] <12>  damage, and the voracalith pulls the target 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Flurry&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The voracalith uses horrid tentacles three times, no more than twice against a single target.&lt;/p&gt;]] ⚔ <b>Tentacle Flurry</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The voracalith uses horrid tentacles three times, no more than twice against a single target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devouring Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +30 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 5 damage.&lt;/p&gt;]] ⚔ <b>Devouring Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+30[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devouring Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+30 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d12 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Devouring Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 5 damage.&lt;/p&gt;]] <31>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acidic Retribution&lt;/b&gt; (acid) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the voracalith hits with devouring bite&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +28 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 acid damage, and ongoing 15 acid damage (save ends).&lt;/p&gt;]] ᗕ <b>Acidic Retribution</b> (acid) ✦ <b>Recharge</b> when the voracalith hits with devouring bite</p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+28[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acidic Retribution&lt;/b&gt; (acid) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the voracalith hits with devouring bite&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+28 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Acidic Retribution&lt;/b&gt; (acid) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the voracalith hits with devouring bite&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 acid damage, and ongoing 15 acid damage (save ends).&lt;/p&gt;]] <13>  acid damage, and ongoing 15 acid damage (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gruesome Ending&lt;/b&gt; (fear) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The voracalith reduces an enemy to 0 hit points or fewer.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 2 (enemies in the burst); +28 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The voracalith pushes the target 2 squares, and the target is dazed (save ends).&lt;/p&gt;]] ᗕ <b>Gruesome Ending</b> (fear) ✦ <b>At-Will</b></p><p><i>Trigger:</i> The voracalith reduces an enemy to 0 hit points or fewer.</p><p><i>Attack (Free Action):</i> Close burst 2 (enemies in the burst); [[/roll 1d20+28[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gruesome Ending&lt;/b&gt; (fear) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+28 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The voracalith pushes the target 2 squares, and the target is dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;3/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The voracalith takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The voracalith gains resist 20 to the triggering damage type until the end of the encounter or until it uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>3/Encounter</b></p><p><i>Trigger:</i> The voracalith takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The voracalith gains resist 20 to the triggering damage type until the end of the encounter or until it uses variable resistance again.</p></tr></td></table>",

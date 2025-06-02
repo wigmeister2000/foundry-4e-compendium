@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -768,23 +770,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 15 fire, 20 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 26</td><td><b>Ref</b> 28</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+10)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 22 (+13)<br><b>Int</b> 10 (+7)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 10 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Burning Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 9 radiant damage. &lt;/p&gt;]] (⚔) <b>Burning Claw</b> (standard, at-will) ✦ <b>Radiant</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Burning Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 9 radiant damage. &lt;/p&gt;]]; 9 radiant damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whiteflame Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Reflex; 9 radiant damage. &lt;/p&gt;]] (⚔) <b>Whiteflame Bolt</b> (standard, at-will) ✦ <b>Radiant</b></p><p>Ranged 10; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whiteflame Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 9 radiant damage. &lt;/p&gt;]]; 9 radiant damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Whitefire Burst&lt;/b&gt; ( when the whitefire burning devil drops to 0 hit points, ) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; the target takes ongoing 9 radiant damage (save ends).&lt;/p&gt;]] ⚔ <b>Whitefire Burst</b> ( when the whitefire burning devil drops to 0 hit points, ) ✦ <b>Radiant</b></p><p>Close burst 2; the target takes ongoing 9 radiant damage (save ends).</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Brilliant Alacrity&lt;/b&gt; (free, when the whitefire burning devil is missed by a fire or radiant attack) ✦ &lt;b&gt;Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The whitefire burning devil teleports 7 squares. At the end of the movement, the burning devil makes a whiteflame bolt attack against the creature that made the triggering attack.&lt;/p&gt;]]  <b>Brilliant Alacrity</b> (free, when the whitefire burning devil is missed by a fire or radiant attack) ✦ <b>Radiant, Teleportation</b></p><p>The whitefire burning devil teleports 7 squares. At the end of the movement, the burning devil makes a whiteflame bolt attack against the creature that made the triggering attack.</p></tr></td></table>",

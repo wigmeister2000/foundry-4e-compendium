@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Frontline Command",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OEa2fYctJg7FXNwj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -288,7 +290,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -336,10 +339,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -468,7 +471,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1353,23 +1357,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 238; <b>Bloodied</b> 119</td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 25</td><td><b>Ref</b> 25</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 15 (+8)</td><td><b>Dex</b> 11 (+6)<br><b>Int</b> 19 (+10)</td><td><b>Wis</b> 12 (+7)<br><b>Cha</b> 19 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Diplomacy +15, Endurance +13, Intimidate +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> bastard sword , javelin , scale armor , short sword .</p><p>[[/roll 0#&lt;b&gt;Frontline Command&lt;/b&gt; aura 10; each ally that starts the encounter within the aura gains a +2 bonus to its initiative check.]] <b>Frontline Command</b> aura 10; each ally that starts the encounter within the aura gains a +2 bonus to its initiative check.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC;  (+20 while bloodied)2d10+5 lightning damage. &lt;/p&gt;]] (⚔) <b>Bastard Sword</b> (standard, at-will) ✦ <b>Lightning, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;;  (+20 while bloodied)2d10+5 lightning damage. &lt;/p&gt;]];  (+20 while bloodied)[[/roll 2d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC;  (+20 while bloodied)2d10+5 lightning damage. &lt;/p&gt;]] <16>  lightning damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC;  (+20 while bloodied)2d6+5 damage. &lt;/p&gt;]] (⚔) <b>Short Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;;  (+20 while bloodied)2d6+5 damage. &lt;/p&gt;]];  (+20 while bloodied)[[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC;  (+20 while bloodied)2d6+5 damage. &lt;/p&gt;]] <12>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +19 vs AC;  (+20 while bloodied)2d6+7 damage. &lt;/p&gt;]] (➶) <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+19 vs AC&lt;/u&gt;;  (+20 while bloodied)2d6+7 damage. &lt;/p&gt;]];  (+20 while bloodied)[[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +19 vs AC;  (+20 while bloodied)2d6+7 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blue Dragon Strike&lt;/b&gt; (standard; requires a bastard sword and a short sword, at-will) &lt;/p&gt;&lt;p&gt;Mishva makes a basic attack with each weapon. If both attacks hit the same target, Mishva pushes that target 2 squares and knocks it prone. &lt;/p&gt;]] ⚔ <b>Blue Dragon Strike</b> (standard; requires a bastard sword and a short sword, at-will) </p><p>Mishva makes a basic attack with each weapon. If both attacks hit the same target, Mishva pushes that target 2 squares and knocks it prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Dragonwing Wedge&lt;/b&gt; (standard; requires a bastard sword and a short sword, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Mishva makes a basic attack with each weapon against two different targets. On a hit, Mishva slides the target 2 squares&lt;/p&gt;]] ⚔ <b>Dragonwing Wedge</b> (standard; requires a bastard sword and a short sword, recharges when first bloodied) </p><p>Mishva makes a basic attack with each weapon against two different targets. On a hit, Mishva slides the target 2 squares</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +17 vs Reflex; 2d6+5 lightning damage. &lt;/p&gt;]] ᗕ <b>Dragon Breath</b> (minor, encounter) ✦ <b>Lightning</b></p><p>Close blast 5; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d6+5 lightning damage. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Breath&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +17 vs Reflex; 2d6+5 lightning damage. &lt;/p&gt;]] <12>  lightning damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stormhorn War Cry&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Close burst 5; targets Mishva and allies in the burst that can hear her; until the end of Mishva’s next turn, the target gains a +2 bonus to attack rolls and damage rolls.&lt;/p&gt;]] ᗕ <b>Stormhorn War Cry</b> (minor, encounter) </p><p>Close burst 5; targets Mishva and allies in the burst that can hear her; until the end of Mishva’s next turn, the target gains a +2 bonus to attack rolls and damage rolls.</p></tr></td></table>",

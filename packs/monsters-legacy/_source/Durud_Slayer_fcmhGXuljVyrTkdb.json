@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -950,23 +951,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 165; <b>Bloodied</b> 82</td><td style=\"padding-left: 15px;\"><b>Init</b> +23</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 35</td><td><b>Ref</b> 36</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 3 (while within the Astral Sea)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+18)<br><b>Con</b> 21 (+16)</td><td><b>Dex</b> 27 (+19)<br><b>Int</b> 21 (+16)</td><td><b>Wis</b> 23 (+17)<br><b>Cha</b> 22 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> dagger , scale armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 4d4+10 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs AC&lt;/u&gt;; 4d4+10 damage. &lt;/p&gt;]]; [[/roll 4d4+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 4d4+10 damage. &lt;/p&gt;]] <20>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Radiant Garrote&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs Reflex; 3d6+8 radiant damage, and the target is grabbed. The durud slayer can have only one target grabbed at a time. Sustain Minor: The grabbed target takes 4d4 + 10 damage. &lt;/p&gt;]] ⚔ <b>Radiant Garrote</b> (standard, at-will) ✦ <b>Radiant</b></p><p>[[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Radiant Garrote&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs Reflex&lt;/u&gt;; 3d6+8 radiant damage, and the target is grabbed. The durud slayer can have only one target grabbed at a time. Sustain Minor: The grabbed target takes 4d4 + 10 damage. &lt;/p&gt;]]; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Radiant Garrote&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs Reflex; 3d6+8 radiant damage, and the target is grabbed. The durud slayer can have only one target grabbed at a time. Sustain Minor: The grabbed target takes 4d4 + 10 damage. &lt;/p&gt;]] <18.5>  radiant damage, and the target is grabbed. The durud slayer can have only one target grabbed at a time. Sustain Minor: The grabbed target takes [[/roll 4d4 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Radiant Garrote&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+26 vs Reflex; 3d6+8 radiant damage, and the target is grabbed. The durud slayer can have only one target grabbed at a time. Sustain Minor: The grabbed target takes 4d4 + 10 damage. &lt;/p&gt;]] <20>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Implacable Determination&lt;/b&gt; (free, when an enemy within 5 squares of the durud slayer scores a critical hit; encounter) &lt;/p&gt;&lt;p&gt;The durud slayer can make a basic attack, shift 1 square, or move its speed.&lt;/p&gt;]]  <b>Implacable Determination</b> (free, when an enemy within 5 squares of the durud slayer scores a critical hit; encounter) </p><p>The durud slayer can make a basic attack, shift 1 square, or move its speed.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Retreating Step&lt;/b&gt; (immediate reaction, when an enemy grabbed by the durud slayer succeeds on its escape check) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The durud slayer teleports 8 squares.&lt;/p&gt;]]  <b>Retreating Step</b> (immediate reaction, when an enemy grabbed by the durud slayer succeeds on its escape check) ✦ <b>Teleportation</b></p><p>The durud slayer teleports 8 squares.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Slayer\"s Step&lt;/b&gt; (move; recharge ⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The durud slayer and any creature it has grabbed teleport 8 squares. If the durud slayer has a creature grabbed, that creature must end its teleport adjacent to the slayer.&lt;/p&gt;]]  <b>Slayer\"s Step</b> (move; recharge ⚅) ✦ <b>Teleportation</b></p><p>The durud slayer and any creature it has grabbed teleport 8 squares. If the durud slayer has a creature grabbed, that creature must end its teleport adjacent to the slayer.</p></tr></td></table>",

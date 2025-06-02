@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Inciting Pheromones",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3Cc4bHdG9uBP6teD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Unhindered",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2rYXZVNJFcazkMpA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -856,23 +859,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 180; <b>Bloodied</b> 90</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 25</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 18 (+11)<br><b>Int</b> 4 (+4)</td><td><b>Wis</b> 20 (+12)<br><b>Cha</b> 6 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Inciting Pheromones&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Dune reapers within the aura gain a +2 power bonus to Will and cannot become dazed.&lt;/p&gt;]] ⌀ <b>Inciting Pheromones</b> ✦ <b>Aura</b> 3</p><p>Dune reapers within the aura gain a +2 power bonus to Will and cannot become dazed.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unhindered&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the warrior moves, it pulls with it any creature grabbed by it. In addition, the creature remains grabbed, and the warrior does not provoke an opportunity attack from the grabbed creature.&lt;/p&gt;]]  <b>Unhindered</b> <b></b></p><p>When the warrior moves, it pulls with it any creature grabbed by it. In addition, the creature remains grabbed, and the warrior does not provoke an opportunity attack from the grabbed creature.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Arm Blade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 8 damage.&lt;/p&gt;]] (⚔) <b>Arm Blade</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Arm Blade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Arm Blade&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 8 damage.&lt;/p&gt;]] <22>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Leaping Slash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The warrior jumps 4 squares and then uses arm blade twice. Any creature hit by one of these attacks takes ongoing 10 damage (save ends). This movement does not provoke opportunity attacks.&lt;/p&gt;]] ⚔ <b>Leaping Slash</b> ✦ <b>At-Will</b> when first bloodied</p><p><i>Effect:</i> The warrior jumps 4 squares and then uses arm blade twice. Any creature hit by one of these attacks takes ongoing 10 damage (save ends). This movement does not provoke opportunity attacks.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Snapping Mandibles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The warrior must not have a creature grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy adjacent to the warrior hits it with a melee attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 1 (the triggering enemy); +18 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The warrior grabs the target. Whenever the target attempts to escape the grab and fails, it takes 10 damage.&lt;/p&gt;]] ⚔ <b>Snapping Mandibles</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The warrior must not have a creature grabbed.</p><p><i>Trigger:</i> An enemy adjacent to the warrior hits it with a melee attack.</p><p><i>Attack (Immediate Reaction):</i> Melee 1 (the triggering enemy); [[/roll 1d20+18[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Snapping Mandibles&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 1 (the triggering enemy); &lt;u&gt;+18 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The warrior grabs the target. Whenever the target attempts to escape the grab and fails, it takes 10 damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Compelling Musk&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The warrior misses with arm blade.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; One dune reaper within 3 squares of the warrior can make a melee basic attack as an opportunity action.&lt;/p&gt;]]  <b>Compelling Musk</b> ✦ Recharge ⚄ ⚅</p><p><i>Trigger:</i> The warrior misses with arm blade.</p><p><i>Effect (Free Action):</i> One dune reaper within 3 squares of the warrior can make a melee basic attack as an opportunity action.</p></tr></td></table>",

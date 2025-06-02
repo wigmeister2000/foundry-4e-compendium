@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Balefrost Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"JGgH5LskOSluphRB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -457,23 +459,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 470; <b>Bloodied</b> 235<hr><b>Resist</b> 15 cold, 5 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 37</td><td><b>Ref</b> 35</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+22)<br><b>Con</b> 27 (+20)</td><td><b>Dex</b> 23 (+18)<br><b>Int</b> 16 (+15)</td><td><b>Wis</b> 18 (+16)<br><b>Cha</b> 28 (+21)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Balefrost Aura&lt;/b&gt; (cold, necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn in the aura takes 15 cold and necrotic damage, and the enemy is slowed  until the start of its next turn.&lt;/p&gt;]]  <b>Balefrost Aura</b> (cold, necrotic) ✦ <b>Aura</b></p><p>Any enemy that starts its turn in the aura takes 15 cold and necrotic damage, and the enemy is slowed  until the start of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +30 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 22 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+30[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+30 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 22#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 22 damage.&lt;/p&gt;]] <33>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stygian Roots&lt;/b&gt; (cold, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (creatures in the burst); +28 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 20 cold and necrotic damage, and the target is restrained (save ends). While any target is restrained by this effect, the treant is immobilized.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Aftereffect:&lt;/i&gt; The target is immobilized (save ends).&lt;/p&gt;]] ᗕ <b>Stygian Roots</b> (cold, necrotic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 2 (creatures in the burst); [[/roll 1d20+28[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stygian Roots&lt;/b&gt; (cold, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (creatures in the burst); &lt;u&gt;+28 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 20#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stygian Roots&lt;/b&gt; (cold, necrotic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 20 cold and necrotic damage, and the target is restrained (save ends). While any target is restrained by this effect, the treant is immobilized.&lt;/p&gt;]] <38>  cold and necrotic damage, and the target is restrained (save ends). While any target is restrained by this effect, the treant is immobilized.</p><p><i>Aftereffect:</i> The target is immobilized (save ends).</p></tr></td></table>",

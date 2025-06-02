@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -902,7 +903,7 @@
 		},
 		{
 			"name":"Bloodhunt",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"YIVEHM9ANJZu4azK",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -938,7 +939,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1172,23 +1174,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 358; <b>Bloodied</b> 179<hr><b>Resist</b> 14 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 30</td><td><b>Ref</b> 35</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+11)<br><b>Con</b> 19 (+13)</td><td><b>Dex</b> 25 (+16)<br><b>Int</b> 22 (+15)</td><td><b>Wis</b> 17 (+12)<br><b>Cha</b> 24 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +23, Intimidate +21, Stealth +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> dagger  x10, hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cruel Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 1d4+7 damage, and the target is immobilized and takes ongoing 10 damage (save ends). &lt;/p&gt;]] (⚔) <b>Cruel Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cruel Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+24 vs AC&lt;/u&gt;; 1d4+7 damage, and the target is immobilized and takes ongoing 10 damage (save ends). &lt;/p&gt;]]; [[/roll 1d4+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Cruel Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+24 vs AC; 1d4+7 damage, and the target is immobilized and takes ongoing 10 damage (save ends). &lt;/p&gt;]] <9.5>  damage, and the target is immobilized and takes ongoing 10 damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blade Spray&lt;/b&gt; (standard; requires dagger, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 3; +24 vs Reflex; 6d4+7 damage, and the target is slowed (save ends). &lt;/p&gt;]] ᗕ <b>Blade Spray</b> (standard; requires dagger, recharge ⚃⚄⚅) ✦ <b>Weapon</b></p><p>close blast 3; [[/roll 1d20+24[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blade Spray&lt;/b&gt; (standard; requires dagger, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 3; &lt;u&gt;+24 vs Reflex&lt;/u&gt;; 6d4+7 damage, and the target is slowed (save ends). &lt;/p&gt;]]; [[/roll 6d4+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Blade Spray&lt;/b&gt; (standard; requires dagger, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 3; +24 vs Reflex; 6d4+7 damage, and the target is slowed (save ends). &lt;/p&gt;]] <22>  damage, and the target is slowed (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Opportune Slash&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs ; 3d6+8 damage.. Cruel Seirrah makes a cruel dagger attack against an immobilized target.&lt;/p&gt;]] ⚔ <b>Opportune Slash</b> (minor 1/round, at-will) ✦ <b>Weapon</b></p><p>+23 vs ; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Opportune Slash&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs ; 3d6+8 damage.. Cruel Seirrah makes a cruel dagger attack against an immobilized target.&lt;/p&gt;]] <18.5>  damage.. Cruel Seirrah makes a cruel dagger attack against an immobilized target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;Seirrah gains a +1 power bonus to her next attack roll against an enemy that hit her since her last turn. If the attack hits and deals damage, it deals 7 extra damage.&lt;/p&gt;]]  <b>Infernal Wrath</b> (minor; encounter) </p><p>Seirrah gains a +1 power bonus to her next attack roll against an enemy that hit her since her last turn. If the attack hits and deals damage, it deals 7 extra damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mobile Cover&lt;/b&gt; (move; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Seirrah shifts 3 squares and slides 3 squares one immobilized enemy that was adjacent to her at the start of that movement. The enemy must end adjacent to Seirrah.&lt;/p&gt;]]  <b>Mobile Cover</b> (move; recharge ⚄⚅) </p><p>Seirrah shifts 3 squares and slides 3 squares one immobilized enemy that was adjacent to her at the start of that movement. The enemy must end adjacent to Seirrah.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodhunt&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Seirrah has a +1 racial bonus to attack rolls against bloodied foes.&lt;/p&gt;]]  <b>Bloodhunt</b></p><p>Seirrah has a +1 racial bonus to attack rolls against bloodied foes.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Body Shield&lt;/b&gt; ( when seirrah is damaged by an attack while adjacent to an immobilized enemy) &lt;/p&gt;&lt;p&gt;Seirrah takes half the attack’s damage and one adjacent immobilized enemy of her choice takes the other half.&lt;/p&gt;]]  <b>Body Shield</b> ( when seirrah is damaged by an attack while adjacent to an immobilized enemy) </p><p>Seirrah takes half the attack’s damage and one adjacent immobilized enemy of her choice takes the other half.</p></tr></td></table>",

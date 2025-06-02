@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 216; <b>Bloodied</b> 108<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 35</td><td><b>Ref</b> 37</td><td><b>Will</b> 32</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+18)<br><b>Con</b> 24 (+18)</td><td><b>Dex</b> 28 (+20)<br><b>Int</b> 18 (+15)</td><td><b>Wis</b> 16 (+14)<br><b>Cha</b> 10 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +25, Athletics +23, Stealth +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+28 vs AC; 3d6+7 damage, and the ritual-born killer shifts 1 square. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>[[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs AC&lt;/u&gt;; 3d6+7 damage, and the ritual-born killer shifts 1 square. &lt;/p&gt;]]; [[/roll 3d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+28 vs AC; 3d6+7 damage, and the ritual-born killer shifts 1 square. &lt;/p&gt;]] <17.5>  damage, and the ritual-born killer shifts 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Storm of Strikes&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The ritual-born killer shifts up to 4 squares, makes one slam against all adjacent targets (without shifting), and then shifts 1 square for each attack it made.&lt;/p&gt;]] ⚔ <b>Storm of Strikes</b> (standard, encounter) </p><p>The ritual-born killer shifts up to 4 squares, makes one slam against all adjacent targets (without shifting), and then shifts 1 square for each attack it made.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wild Slams&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The ritual-born killer shifts up to 4 squares and makes up to two slam attacks.&lt;/p&gt;]] ⚔ <b>Wild Slams</b> (standard, recharge ⚄⚅) </p><p>The ritual-born killer shifts up to 4 squares and makes up to two slam attacks.</p></tr></td></table>",

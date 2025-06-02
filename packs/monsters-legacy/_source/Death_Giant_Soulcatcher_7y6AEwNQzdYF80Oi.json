@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Soulcatcher",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3HSWyYTzErwK4nap",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -772,7 +774,7 @@
 		},
 		{
 			"name":"Soul Shroud",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"HPIqJcajVNdX3TWn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -808,7 +810,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -864,23 +867,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 209; <b>Bloodied</b> 104<hr><b>Resist</b> 15 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 35</td><td><b>Ref</b> 32</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+20)<br><b>Con</b> 25 (+18)</td><td><b>Dex</b> 20 (+16)<br><b>Int</b> 12 (+12)</td><td><b>Wis</b> 22 (+17)<br><b>Cha</b> 15 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> dagger , leather armor .</p><p>[[/roll 0#&lt;b&gt;Soulcatcher&lt;/b&gt; aura 10; a creature that dies within the aura bestows one soul shard to the soulcatcher.]] <b>Soulcatcher</b> aura 10; a creature that dies within the aura bestows one soul shard to the soulcatcher.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Soul Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +27 vs AC; 2d6+8 damage and the target is immobilized until the end of the soulcatcher’s next turn. &lt;/p&gt;]] (⚔) <b>Soul Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+27[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Soul Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+27 vs AC&lt;/u&gt;; 2d6+8 damage and the target is immobilized until the end of the soulcatcher’s next turn. &lt;/p&gt;]]; [[/roll 2d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Soul Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +27 vs AC; 2d6+8 damage and the target is immobilized until the end of the soulcatcher’s next turn. &lt;/p&gt;]] <15>  damage and the target is immobilized until the end of the soulcatcher’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Soul Shrive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +26 vs Fortitude; the target is stunned and loses 1 healing surge at the start of its turn (save ends both). A target without healing surges takes damage equal to one quarter its total hit points. Each time the target loses a healing surge or takes damage from soul shrive, the soulcatcher gains a soul shard. &lt;/p&gt;]] ➶ <b>Soul Shrive</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Soul Shrive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; the target is stunned and loses 1 healing surge at the start of its turn (save ends both). A target without healing surges takes damage equal to one quarter its total hit points. Each time the target loses a healing surge or takes damage from soul shrive, the soulcatcher gains a soul shard. &lt;/p&gt;]]; the target is stunned and loses 1 healing surge at the start of its turn (save ends both). A target without healing surges takes damage equal to one quarter its total hit points. Each time the target loses a healing surge or takes damage from soul shrive, the soulcatcher gains a soul shard. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfury Detonation&lt;/b&gt; (standard; must expend 3 soul shards, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +26 vs Fortitude; 2d12+6 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]] ✻ <b>Soulfury Detonation</b> (standard; must expend 3 soul shards, at-will) ✦ <b>Necrotic</b></p><p>Area burst 2 within 10; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfury Detonation&lt;/b&gt; (standard; must expend 3 soul shards, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; 2d12+6 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Soulfury Detonation&lt;/b&gt; (standard; must expend 3 soul shards, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +26 vs Fortitude; 2d12+6 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]] <19>  necrotic damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Consume Soul Shard&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The soulcatcher expends one soul shard and regains 20 hit points.&lt;/p&gt;]]  <b>Consume Soul Shard</b> (minor; at-will) ✦ <b>Healing</b></p><p>The soulcatcher expends one soul shard and regains 20 hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Shroud&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The soul shroud contains soul shards that swirl around the soulcatcher to protect and empower it. At the start of an encounter, the soul shroud contains four soul shards. While the soul shroud is depleted of soul shards, the soulcatcher takes a –2 penalty to attack rolls.&lt;/p&gt;]]  <b>Soul Shroud</b></p><p>The soul shroud contains soul shards that swirl around the soulcatcher to protect and empower it. At the start of an encounter, the soul shroud contains four soul shards. While the soul shroud is depleted of soul shards, the soulcatcher takes a –2 penalty to attack rolls.</p></tr></td></table>",

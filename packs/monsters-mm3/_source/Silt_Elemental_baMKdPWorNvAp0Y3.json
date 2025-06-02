@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Incoherent Form",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"YQGFhSPcs5JidN26",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Silt Stride",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ysQw8a3Kdu25VcHB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -856,23 +859,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 87; <b>Bloodied</b> 43<hr><b>Vulnerable</b> 10 force (see incoherent form) </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 24</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 20 (+10)</td><td><b>Dex</b> 18 (+9)<br><b>Int</b> 4 (+2)</td><td><b>Wis</b> 15 (+7)<br><b>Cha</b> 6 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> 10</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Incoherent Form&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A silt elemental takes half damage from melee and ranged attacks. Whenever a silt elemental takes force damage, it takes full damage from the attack, even if it is from a melee or ranged attack.&lt;/p&gt;]]  <b>Incoherent Form</b> <b></b></p><p>A silt elemental takes half damage from melee and ranged attacks. Whenever a silt elemental takes force damage, it takes full damage from the attack, even if it is from a melee or ranged attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Silt Stride&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A silt elemental can walk on silt as though it were solid ground.&lt;/p&gt;]]  <b>Silt Stride</b> <b></b></p><p>A silt elemental can walk on silt as though it were solid ground.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silt Fist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage, plus an additional 2d6 damage if the target is slowed or immobilized.&lt;/p&gt;]] (⚔) <b>Silt Fist</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silt Fist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silt Fist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage, plus an additional 2d6 damage if the target is slowed or immobilized.&lt;/p&gt;]] <19>  damage, plus an additional [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silt Fist&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage, plus an additional 2d6 damage if the target is slowed or immobilized.&lt;/p&gt;]] <7> damage if the target is slowed or immobilized.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Pound to the Ground&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 11 damage and the target is knocked prone and immobilized (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the target is knocked prone.&lt;/p&gt;]] ⚔ <b>Pound to the Ground</b> ✦ <b>Encounter</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Pound to the Ground&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 11#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Pound to the Ground&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 11 damage and the target is knocked prone and immobilized (save ends).&lt;/p&gt;]] <29>  damage and the target is knocked prone and immobilized (save ends).</p><p><i>Miss:</i> Half damage, and the target is knocked prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Silt Swipe&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage and the target is immobilized until the end of the silt elemental’s next turn.&lt;/p&gt;]] ᗕ <b>Silt Swipe</b> ✦ Recharge ⚅</p><p><i>Attack:</i> Close blast 3 (enemies in the blast); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Silt Swipe&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (enemies in the blast); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Silt Swipe&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 damage and the target is immobilized until the end of the silt elemental’s next turn.&lt;/p&gt;]] <19>  damage and the target is immobilized until the end of the silt elemental’s next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Silt Shift&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The silt elemental shifts 3 squares, and can shift through enemies’ spaces. The first time during this shift that the silt elemental enters an enemy’s space, that enemy takes 5 damage and is slowed until the end of the silt elemental’s next turn.&lt;/p&gt;]]  <b>Silt Shift</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The silt elemental shifts 3 squares, and can shift through enemies’ spaces. The first time during this shift that the silt elemental enters an enemy’s space, that enemy takes 5 damage and is slowed until the end of the silt elemental’s next turn.</p></tr></td></table>",

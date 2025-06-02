@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Destructive Wake",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pOsd4TmLVMgl5cWj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -335,10 +338,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -950,7 +953,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Vw6d9i0jRATEqDxy",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -986,7 +989,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -996,7 +1000,7 @@
 		},
 		{
 			"name":"Devastating Assault",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1leYQjmRBMV6h9wq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1032,7 +1036,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1042,7 +1047,7 @@
 		},
 		{
 			"name":"Wild Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"avwLQ4dCFjYx13pe",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1078,7 +1083,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1134,23 +1140,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 70; <b>Bloodied</b> 35<hr><b>Resist</b> 5 variable (1/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 13</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 see also wild step</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+1)<br><b>Con</b> 15 (+2)</td><td><b>Dex</b> 18 (+4)<br><b>Int</b> 10 (0)</td><td><b>Wis</b> 14 (+2)<br><b>Cha</b> 12 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Nature +9, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> chainmail , longsword , short sword .</p><p>[[/roll 0#&lt;b&gt;Destructive Wake&lt;/b&gt; aura 5; any enemy in the aura takes a -5 penalty to saving throws against ongoing damage.]] <b>Destructive Wake</b> aura 5; any enemy in the aura takes a -5 penalty to saving throws against ongoing damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d8+7 damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 1d8+7 damage. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d8+7 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+5 damage. &lt;/p&gt;]] (⚔) <b>Short Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 1d6+5 damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+5 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Two-Weapon Rend&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Anise makes a longsword attack and a short sword attack against the same target. If both attacks hit, Anise deals 4 extra damage&lt;/p&gt;]] ⚔ <b>Two-Weapon Rend</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Anise makes a longsword attack and a short sword attack against the same target. If both attacks hit, Anise deals 4 extra damage</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Destabilizing Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +4 vs AC; 2d6+2 cold, fire, lightning, or thunder damage, and the target takes ongoing 5 damage of that type and a -2 penalty to AC and Fortitude (save ends both). &lt;/p&gt;]] ᗕ <b>Destabilizing Breath</b> (standard, encounter) ✦ <b>Varies</b></p><p>Close blast 5; [[/roll 1d20+4[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Destabilizing Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+4 vs AC&lt;/u&gt;; 2d6+2 cold, fire, lightning, or thunder damage, and the target takes ongoing 5 damage of that type and a -2 penalty to AC and Fortitude (save ends both). &lt;/p&gt;]]; [[/roll 2d6+2#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Destabilizing Breath&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +4 vs AC; 2d6+2 cold, fire, lightning, or thunder damage, and the target takes ongoing 5 damage of that type and a -2 penalty to AC and Fortitude (save ends both). &lt;/p&gt;]] <9>  cold, fire, lightning, or thunder damage, and the target takes ongoing 5 damage of that type and a -2 penalty to AC and Fortitude (save ends both). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Elven Accuracy &lt;/b&gt; (free; encounter) &lt;/p&gt;&lt;p&gt;Anise can reroll an attack roll. He must use the second roll, even if it’s lower.&lt;/p&gt;]]  <b>Elven Accuracy </b> (free; encounter) </p><p>Anise can reroll an attack roll. He must use the second roll, even if it’s lower.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Anise’s deals 1d6 extra damage on all attacks against targets he has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>Anise’s deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Anise’s deals 1d6 extra damage on all attacks against targets he has combat advantage against.&lt;/p&gt;]] <3.5> extra damage on all attacks against targets he has combat advantage against.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Devastating Assault&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Anise hits with a charge attack or hits a creature granting combat advantage to him, the attack also deals ongoing 5 damage (save ends).&lt;/p&gt;]]  <b>Devastating Assault</b></p><p>When Anise hits with a charge attack or hits a creature granting combat advantage to him, the attack also deals ongoing 5 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wild Step&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Anise ignores difficult terrain when he shifts.&lt;/p&gt;]]  <b>Wild Step</b></p><p>Anise ignores difficult terrain when he shifts.</p></tr></td></table>",

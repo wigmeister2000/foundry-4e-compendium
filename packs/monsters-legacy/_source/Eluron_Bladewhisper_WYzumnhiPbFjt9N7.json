@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -546,7 +547,7 @@
 		},
 		{
 			"name":"Gloomstrike",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"CQ86eYRucDw90X7x",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +583,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -998,23 +1000,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 120; <b>Bloodied</b> 60</td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 21</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+6)<br><b>Con</b> 12 (+4)</td><td><b>Dex</b> 20 (+8)<br><b>Int</b> 10 (+3)</td><td><b>Wis</b> 15 (+5)<br><b>Cha</b> 11 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +14, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> chainmail , greatsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d10+5 damage. &lt;/p&gt;]] (⚔) <b>Greatsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d10+5 damage. &lt;/p&gt;]]; [[/roll 1d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d10+5 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Finishing Move&lt;/b&gt; (free, when an adjacent enemy becomes bloodied, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Eluron Bladewhisper targets the enemy that has just become bloodied; +12 vs AC; 2d10+8 damage, ongoing 10 damage, and the target grants combat advantage (save ends both). &lt;/p&gt;]] ⚔ <b>Finishing Move</b> (free, when an adjacent enemy becomes bloodied, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>Eluron Bladewhisper targets the enemy that has just become bloodied; [[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Finishing Move&lt;/b&gt; (free, when an adjacent enemy becomes bloodied, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Eluron Bladewhisper targets the enemy that has just become bloodied; &lt;u&gt;+12 vs AC&lt;/u&gt;; 2d10+8 damage, ongoing 10 damage, and the target grants combat advantage (save ends both). &lt;/p&gt;]]; [[/roll 2d10+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Finishing Move&lt;/b&gt; (free, when an adjacent enemy becomes bloodied, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Eluron Bladewhisper targets the enemy that has just become bloodied; +12 vs AC; 2d10+8 damage, ongoing 10 damage, and the target grants combat advantage (save ends both). &lt;/p&gt;]] <19>  damage, ongoing 10 damage, and the target grants combat advantage (save ends both). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shadow Throw&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs Reflex; 1d6+5 damage, and the target slides 2 squares and is knocked prone. Eluron can make a Stealth check to become hidden from the thrown enemy. &lt;/p&gt;]] ⚔ <b>Shadow Throw</b> (minor 1/round, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shadow Throw&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs Reflex&lt;/u&gt;; 1d6+5 damage, and the target slides 2 squares and is knocked prone. Eluron can make a Stealth check to become hidden from the thrown enemy. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shadow Throw&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs Reflex; 1d6+5 damage, and the target slides 2 squares and is knocked prone. Eluron can make a Stealth check to become hidden from the thrown enemy. &lt;/p&gt;]] <8.5>  damage, and the target slides 2 squares and is knocked prone. Eluron can make a Stealth check to become hidden from the thrown enemy. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Gloomstrike&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Eluron Bladewhisper hits a target that can’t see her, the target is blinded until the end of Eluron Bladewhisper’s next turn.&lt;/p&gt;]]  <b>Gloomstrike</b></p><p>If Eluron Bladewhisper hits a target that can’t see her, the target is blinded until the end of Eluron Bladewhisper’s next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Jaunt&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Eluron Bladewhisper teleports 3 squares and becomes insubstantial until the start of her next turn.&lt;/p&gt;]]  <b>Shadow Jaunt</b> (move; encounter) ✦ <b>Teleportation</b></p><p>Eluron Bladewhisper teleports 3 squares and becomes insubstantial until the start of her next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Veil of Shadows&lt;/b&gt; (move; at-will) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Eluron Bladewhisper turns invisible until the end of her turn and moves up to her speed. Eluron Bladewhisper cannot use this power while bloodied.&lt;/p&gt;]]  <b>Veil of Shadows</b> (move; at-will) ✦ <b>Illusion</b></p><p>Eluron Bladewhisper turns invisible until the end of her turn and moves up to her speed. Eluron Bladewhisper cannot use this power while bloodied.</p></tr></td></table>",

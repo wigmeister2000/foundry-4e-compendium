@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Quicken Constructs",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1fDWGzqFpT73hjNi",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -515,10 +517,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -952,7 +954,7 @@
 		},
 		{
 			"name":"Bladed Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Jwt9ZORPG6SLqmjC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -988,7 +990,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -998,7 +1001,7 @@
 		},
 		{
 			"name":"Powerful Charger",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yvDKCWUJiHegnXt0",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1034,7 +1037,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1270,23 +1274,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 388; <b>Bloodied</b> 194<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2 (+4 against ongoing damage)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 35</td><td><b>Ref</b> 30</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+17)<br><b>Con</b> 18 (+14)</td><td><b>Dex</b> 16 (+13)<br><b>Int</b> 14 (+12)</td><td><b>Wis</b> 11 (+10)<br><b>Cha</b> 22 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +17, Athletics +22, Intimidate +21</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> adamantine sixblade, shoulderbow, plate armor .</p><p>[[/roll 0#&lt;b&gt;Quicken Constructs&lt;/b&gt; aura 5; allied constructs and living construct within the aura gain +4 to initiative rolls.]] <b>Quicken Constructs</b> aura 5; allied constructs and living construct within the aura gain +4 to initiative rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Adamantine Sixblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 1d12+11 damage (crit 19–20), the Lord of Blades slides the target 2 squares, and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. &lt;/p&gt;]] (⚔) <b>Adamantine Sixblade</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Adamantine Sixblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs AC&lt;/u&gt;; 1d12+11 damage (crit 19–20), the Lord of Blades slides the target 2 squares, and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. &lt;/p&gt;]]; [[/roll 1d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Adamantine Sixblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 1d12+11 damage (crit 19–20), the Lord of Blades slides the target 2 squares, and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. &lt;/p&gt;]] <17.5>  damage (crit 19–20), the Lord of Blades slides the target 2 squares, and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blade Mark&lt;/b&gt; (immediate interrupt, when an adjacent enemy marked by the lord of blades moves or shifts, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Lord of Blades makes a melee basic attack against the triggering enemy. An enemy hit by this attack stops moving. If this attack hits, the Lord of Blades makes a melee basic attack as a free action against a different target within reach&lt;/p&gt;]] ⚔ <b>Blade Mark</b> (immediate interrupt, when an adjacent enemy marked by the lord of blades moves or shifts, at-will) ✦ <b>Weapon</b></p><p>The Lord of Blades makes a melee basic attack against the triggering enemy. An enemy hit by this attack stops moving. If this attack hits, the Lord of Blades makes a melee basic attack as a free action against a different target within reach</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Off-Hand Slash&lt;/b&gt; (minor 1/round; requires an adamantine sixblade, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 1d12+11 damage (crit 19–20), and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. &lt;/p&gt;]] ⚔ <b>Off-Hand Slash</b> (minor 1/round; requires an adamantine sixblade, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Off-Hand Slash&lt;/b&gt; (minor 1/round; requires an adamantine sixblade, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs AC&lt;/u&gt;; 1d12+11 damage (crit 19–20), and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. &lt;/p&gt;]]; [[/roll 1d12+11#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Off-Hand Slash&lt;/b&gt; (minor 1/round; requires an adamantine sixblade, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 1d12+11 damage (crit 19–20), and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. &lt;/p&gt;]] <17.5>  damage (crit 19–20), and the target is marked until the end of the Lord of Blades’ next turn. Damage from this attack ignores 10 points of resist all. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shoulderbow&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +28 vs AC; 1d8+7 damage. &lt;/p&gt;]] ➶ <b>Shoulderbow</b> (minor 1/round, at-will) ✦ <b>Weapon</b></p><p>Ranged 20; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shoulderbow&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+28 vs AC&lt;/u&gt;; 1d8+7 damage. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Shoulderbow&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +28 vs AC; 1d8+7 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lord of Constructs&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; allied construct and living constructs gain 10 temporary hit points. A bloodied construct or living construct ally also regains 10 hit points&lt;/p&gt;]] ᗕ <b>Lord of Constructs</b> (minor, encounter) ✦ <b>Healing</b></p><p>Close burst 10; allied construct and living constructs gain 10 temporary hit points. A bloodied construct or living construct ally also regains 10 hit points</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Lordly Resolve&lt;/b&gt; (minor; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Lord of Blades gains 15 temporary hit points and ends one effect that a save can end. If he uses this power while bloodied, he also regains 15 hit points.&lt;/p&gt;]]  <b>Lordly Resolve</b> (minor; encounter) ✦ <b>Healing</b></p><p>The Lord of Blades gains 15 temporary hit points and ends one effect that a save can end. If he uses this power while bloodied, he also regains 15 hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bladed Body&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Lord of Blades deals 1d8 + 4 damage to any creature that grabs him. A creature that continues to grab him takes 1d8 + 4 damage at the start of its turn.&lt;/p&gt;]]  <b>Bladed Body</b></p><p>The Lord of Blades deals [[/roll [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bladed Body&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Lord of Blades deals 1d8 + 4 damage to any creature that grabs him. A creature that continues to grab him takes 1d8 + 4 damage at the start of its turn.&lt;/p&gt;]] <8.5> #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bladed Body&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Lord of Blades deals 1d8 + 4 damage to any creature that grabs him. A creature that continues to grab him takes 1d8 + 4 damage at the start of its turn.&lt;/p&gt;]] <8.5>  damage to any creature that grabs him. A creature that continues to grab him takes 1d8 + 4 damage at the start of its turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Powerful Charger&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When charging, the Lord of Blades deals 2d6 extra damage and pushes the target 1 square. He then shifts into the square the target vacated.&lt;/p&gt;]]  <b>Powerful Charger</b></p><p>When charging, the Lord of Blades deals [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Powerful Charger&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When charging, the Lord of Blades deals 2d6 extra damage and pushes the target 1 square. He then shifts into the square the target vacated.&lt;/p&gt;]] <7> extra damage and pushes the target 1 square. He then shifts into the square the target vacated.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -819,10 +821,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -997,10 +999,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1175,10 +1177,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1355,10 +1357,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1656,23 +1658,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 516; <b>Bloodied</b> 258</td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 25</td><td><b>Ref</b> 22</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (cannot shift)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 26 (+14)<br><b>Con</b> 25 (+13)</td><td><b>Dex</b> 10 (+6)<br><b>Int</b> 3 (+2)</td><td><b>Wis</b> 11 (+6)<br><b>Cha</b> 3 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hammerhand&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d12+4 damage (2d12 + 9 while bloodied), and the target is knocked prone and grabbed. Sustain Minor: The automaton sustains the grab, and the target takes 10 damage. The automaton cannot make hammerhand attacks while grabbing a creature. &lt;/p&gt;]] (⚔) <b>Hammerhand</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hammerhand&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d12+4 damage (2d12 + 9 while bloodied), and the target is knocked prone and grabbed. Sustain Minor: The automaton sustains the grab, and the target takes 10 damage. The automaton cannot make hammerhand attacks while grabbing a creature. &lt;/p&gt;]]; [[/roll 2d12+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hammerhand&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d12+4 damage (2d12 + 9 while bloodied), and the target is knocked prone and grabbed. Sustain Minor: The automaton sustains the grab, and the target takes 10 damage. The automaton cannot make hammerhand attacks while grabbing a creature. &lt;/p&gt;]] <17>  damage ([[/roll 2d12 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hammerhand&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d12+4 damage (2d12 + 9 while bloodied), and the target is knocked prone and grabbed. Sustain Minor: The automaton sustains the grab, and the target takes 10 damage. The automaton cannot make hammerhand attacks while grabbing a creature. &lt;/p&gt;]] <22>  while bloodied), and the target is knocked prone and grabbed. Sustain Minor: The automaton sustains the grab, and the target takes 10 damage. The automaton cannot make hammerhand attacks while grabbing a creature. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shovel&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d8+8 damage (2d8 + 13 while bloodied), and the target is pulled 2 squares. &lt;/p&gt;]] (⚔) <b>Shovel</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shovel&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d8+8 damage (2d8 + 13 while bloodied), and the target is pulled 2 squares. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shovel&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d8+8 damage (2d8 + 13 while bloodied), and the target is pulled 2 squares. &lt;/p&gt;]] <17>  damage ([[/roll 2d8 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shovel&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +15 vs AC; 2d8+8 damage (2d8 + 13 while bloodied), and the target is pulled 2 squares. &lt;/p&gt;]] <22>  while bloodied), and the target is pulled 2 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Automaton Fury Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The industrial automaton makes two hammerhand attacks and two shovel attacks. Each attack must target a different creature&lt;/p&gt;]] ⚔ <b>Automaton Fury Attack</b> (standard, at-will) </p><p>The industrial automaton makes two hammerhand attacks and two shovel attacks. Each attack must target a different creature</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The automaton moves its speed and can enter enemies’ spaces. The automaton makes an attack against each enemy whose space it enters; +13 vs Reflex; 1d10+10 damage (1d10 + 15 while bloodied), and the automaton slides the target 2 squares. &lt;/p&gt;]] ⚔ <b>Trample</b> (standard, at-will) </p><p>The automaton moves its speed and can enter enemies’ spaces. The automaton makes an attack against each enemy whose space it enters; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The automaton moves its speed and can enter enemies’ spaces. The automaton makes an attack against each enemy whose space it enters; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 1d10+10 damage (1d10 + 15 while bloodied), and the automaton slides the target 2 squares. &lt;/p&gt;]]; [[/roll 1d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The automaton moves its speed and can enter enemies’ spaces. The automaton makes an attack against each enemy whose space it enters; +13 vs Reflex; 1d10+10 damage (1d10 + 15 while bloodied), and the automaton slides the target 2 squares. &lt;/p&gt;]] <15.5>  damage ([[/roll 1d10 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The automaton moves its speed and can enter enemies’ spaces. The automaton makes an attack against each enemy whose space it enters; +13 vs Reflex; 1d10+10 damage (1d10 + 15 while bloodied), and the automaton slides the target 2 squares. &lt;/p&gt;]] <20.5>  while bloodied), and the automaton slides the target 2 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Catapult&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +13 vs Reflex; 1d8+8 damage. The burst creates an area of difficult terrain that lasts until the end of the encounter. &lt;/p&gt;]] ✻ <b>Catapult</b> (standard, at-will) </p><p>Area burst 1 within 10; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Catapult&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 1d8+8 damage. The burst creates an area of difficult terrain that lasts until the end of the encounter. &lt;/p&gt;]]; [[/roll 1d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Catapult&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +13 vs Reflex; 1d8+8 damage. The burst creates an area of difficult terrain that lasts until the end of the encounter. &lt;/p&gt;]] <12.5>  damage. The burst creates an area of difficult terrain that lasts until the end of the encounter. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fling&lt;/b&gt; (immediate reaction, when hit by an attack, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; targets the triggering enemy; +13 vs Reflex; 1d10+5 damage, the automaton slides the target 3 squares and knocks it prone. &lt;/p&gt;]] ⚔ <b>Fling</b> (immediate reaction, when hit by an attack, at-will) </p><p>Reach 3; targets the triggering enemy; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fling&lt;/b&gt; (immediate reaction, when hit by an attack, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; targets the triggering enemy; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 1d10+5 damage, the automaton slides the target 3 squares and knocks it prone. &lt;/p&gt;]]; [[/roll 1d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fling&lt;/b&gt; (immediate reaction, when hit by an attack, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; targets the triggering enemy; +13 vs Reflex; 1d10+5 damage, the automaton slides the target 3 squares and knocks it prone. &lt;/p&gt;]] <10.5>  damage, the automaton slides the target 3 squares and knocks it prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hoist&lt;/b&gt; (minor; usable only while the automaton has a creature grabbed, at-will) &lt;/p&gt;&lt;p&gt;Targets grabbed creature; +13 vs Reflex; 2d12+8 damage (2d12 + 13 while bloodied), and the target is restrained (save ends) and no longer grabbed. Only one target can be restrained in this way at a time. &lt;/p&gt;]] ⚔ <b>Hoist</b> (minor; usable only while the automaton has a creature grabbed, at-will) </p><p>Targets grabbed creature; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hoist&lt;/b&gt; (minor; usable only while the automaton has a creature grabbed, at-will) &lt;/p&gt;&lt;p&gt;Targets grabbed creature; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 2d12+8 damage (2d12 + 13 while bloodied), and the target is restrained (save ends) and no longer grabbed. Only one target can be restrained in this way at a time. &lt;/p&gt;]]; [[/roll 2d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hoist&lt;/b&gt; (minor; usable only while the automaton has a creature grabbed, at-will) &lt;/p&gt;&lt;p&gt;Targets grabbed creature; +13 vs Reflex; 2d12+8 damage (2d12 + 13 while bloodied), and the target is restrained (save ends) and no longer grabbed. Only one target can be restrained in this way at a time. &lt;/p&gt;]] <21>  damage ([[/roll 2d12 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hoist&lt;/b&gt; (minor; usable only while the automaton has a creature grabbed, at-will) &lt;/p&gt;&lt;p&gt;Targets grabbed creature; +13 vs Reflex; 2d12+8 damage (2d12 + 13 while bloodied), and the target is restrained (save ends) and no longer grabbed. Only one target can be restrained in this way at a time. &lt;/p&gt;]] <26>  while bloodied), and the target is restrained (save ends) and no longer grabbed. Only one target can be restrained in this way at a time. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when the automaton drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;The automaton explodes in a shower of metal shards and loose gears; close burst 2; +15 vs AC; 3d8+8 damage. Miss: Half damage.. &lt;/p&gt;]] ᗕ <b>Death Burst</b> ( when the automaton drops to 0 hit points, ) </p><p>The automaton explodes in a shower of metal shards and loose gears; close burst 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when the automaton drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;The automaton explodes in a shower of metal shards and loose gears; close burst 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 3d8+8 damage. Miss: Half damage.. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; ( when the automaton drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;The automaton explodes in a shower of metal shards and loose gears; close burst 2; +15 vs AC; 3d8+8 damage. Miss: Half damage.. &lt;/p&gt;]] <21.5>  damage. Miss: Half damage.. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Reverberate&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Fortitude; 3d8+8 thunder damage, and ongoing 5 damage (save ends). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Reverberate</b> ( when first bloodied, encounter) ✦ <b>Thunder</b></p><p>[[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Reverberate&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 3d8+8 thunder damage, and ongoing 5 damage (save ends). Miss: Half damage. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Reverberate&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs Fortitude; 3d8+8 thunder damage, and ongoing 5 damage (save ends). Miss: Half damage. &lt;/p&gt;]] <21.5>  thunder damage, and ongoing 5 damage (save ends). Miss: Half damage. </p></tr></td></table>",

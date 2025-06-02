@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -950,23 +951,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 51; <b>Bloodied</b> 25<hr><b>Resist</b> 10 variable (1/encounter) </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 16</td><td><b>Ref</b> 18</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+3)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 19 (+6)<br><b>Int</b> 5 (null)</td><td><b>Wis</b> 16 (+5)<br><b>Cha</b> 12 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d4+4 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d4+4 damage. &lt;/p&gt;]]; [[/roll 1d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d4+4 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Focused Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +10 vs Reflex; 2d6+4 lightning damage. &lt;/p&gt;]] ➶ <b>Focused Strike</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Ranged 10; [[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Focused Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+10 vs Reflex&lt;/u&gt;; 2d6+4 lightning damage. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Focused Strike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +10 vs Reflex; 2d6+4 lightning damage. &lt;/p&gt;]] <11>  lightning damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Lightning Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +8 vs Reflex; 1d6+4 lightning damage. The attack deals 1 extra lightning damage for each creature in the burst. &lt;/p&gt;]] ✻ <b>Lightning Burst</b> (standard, at-will) ✦ <b>Lightning</b></p><p>Area burst 2 within 10; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Lightning Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 1d6+4 lightning damage. The attack deals 1 extra lightning damage for each creature in the burst. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Lightning Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +8 vs Reflex; 1d6+4 lightning damage. The attack deals 1 extra lightning damage for each creature in the burst. &lt;/p&gt;]] <7.5>  lightning damage. The attack deals 1 extra lightning damage for each creature in the burst. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Arcane Arc&lt;/b&gt; (immediate interrupt, when an enemy moves adjacent to the runespiral demon, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Reflex; 1d6+4 lightning damage. &lt;/p&gt;]] ⚔ <b>Arcane Arc</b> (immediate interrupt, when an enemy moves adjacent to the runespiral demon, at-will) ✦ <b>Lightning</b></p><p>[[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Arcane Arc&lt;/b&gt; (immediate interrupt, when an enemy moves adjacent to the runespiral demon, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs Reflex&lt;/u&gt;; 1d6+4 lightning damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Arcane Arc&lt;/b&gt; (immediate interrupt, when an enemy moves adjacent to the runespiral demon, at-will) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Reflex; 1d6+4 lightning damage. &lt;/p&gt;]] <7.5>  lightning damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Shock&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +8 vs Reflex; 1d6+4 lightning damage, and the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Bloodied Shock</b> (free, when first bloodied, encounter) ✦ <b>Lightning</b></p><p>Close burst 1; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Shock&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 1d6+4 lightning damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Shock&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +8 vs Reflex; 1d6+4 lightning damage, and the target is dazed (save ends). &lt;/p&gt;]] <7.5>  lightning damage, and the target is dazed (save ends). </p></tr></td></table>",

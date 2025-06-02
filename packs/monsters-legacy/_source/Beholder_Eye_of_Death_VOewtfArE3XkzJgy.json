@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Eyes of the Beholder",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"42HGBdQpPcVWqytU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -634,23 +636,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 632; <b>Bloodied</b> 316<hr><b>Resist</b> 25 necrotic <b>Vulnerable</b> 25 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +21 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 38</td><td><b>Ref</b> 38</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 4 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+18)<br><b>Con</b> 26 (+22)</td><td><b>Dex</b> 26 (+22)<br><b>Int</b> 5 (+11)</td><td><b>Wis</b> 20 (+19)<br><b>Cha</b> 30 (+24)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> (understands Abyssal, Deep Speech)<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision,Darkvision<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Eyes of the Beholder&lt;/b&gt; aura 5; the beholder eye of death uses one random eye ray as a free action against any enemy that starts its turn within the aura.]] <b>Eyes of the Beholder</b> aura 5; the beholder eye of death uses one random eye ray as a free action against any enemy that starts its turn within the aura.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+31 vs AC; 4d8+10 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+31 vs AC&lt;/u&gt;; 4d8+10 damage. &lt;/p&gt;]]; [[/roll 4d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+31 vs AC; 4d8+10 damage. &lt;/p&gt;]] <28>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The beholder eye of death uses up to two different eye ray powers (chosen from the list below). Each ray must target a different creature, and using eye ray does not provoke opportunity attacks.&lt;/p&gt;&lt;p&gt;1, 2, 3, 4—Withering Ray (Necrotic): Ranged 10; +29 vs. Fortitude; 2d8 + 10 necrotic damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;&lt;p&gt;5, 6—Grave Ray (Necrotic): Ranged 10; +29 vs. Reflex; 3d8 + 10 necrotic damage.&lt;/p&gt;&lt;p&gt;7. 8—Entombing Ray: Ranged 10; +29 vs. Fortitude; the target is slowed (save ends). First Failed Saving Throw: The target is immobilized instead of slowed (save ends). Second Failed Saving Throw: The target is petrified (no save).&lt;/p&gt;&lt;p&gt;9, 10—Death Ray (Necrotic): Ranged 10; +29 vs. Fortitude; 2d8 + 10 necrotic damage, and if the target is bloodied it is dazed (save ends). First Failed Saving Throw: The target is dazed and weakened (save ends). Second Failed Saving Throw: The target is reduced to 0 hit points&lt;/p&gt;]] ➶ <b>Eye Ray</b> (standard, at-will) ✦ <b>Varies</b></p><p>The beholder eye of death uses up to two different eye ray powers (chosen from the list below). Each ray must target a different creature, and using eye ray does not provoke opportunity attacks.</p><p>1, 2, 3, 4—Withering Ray (Necrotic): Ranged 10; [[/roll 1d20+29[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;1, 2, 3, 4—Withering Ray (Necrotic): Ranged 10; &lt;u&gt;+29 vs. Fortitude&lt;/u&gt;; 2d8 + 10 necrotic damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;]]; [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;1, 2, 3, 4—Withering Ray (Necrotic): Ranged 10; +29 vs. Fortitude; 2d8 + 10 necrotic damage, and ongoing 10 necrotic damage (save ends).&lt;/p&gt;]] <19>  necrotic damage, and ongoing 10 necrotic damage (save ends).</p><p>5, 6—Grave Ray (Necrotic): Ranged 10; [[/roll 1d20+29[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;5, 6—Grave Ray (Necrotic): Ranged 10; &lt;u&gt;+29 vs. Reflex&lt;/u&gt;; 3d8 + 10 necrotic damage.&lt;/p&gt;]]; [[/roll 3d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;5, 6—Grave Ray (Necrotic): Ranged 10; +29 vs. Reflex; 3d8 + 10 necrotic damage.&lt;/p&gt;]] <23.5>  necrotic damage.</p><p>7. 8—Entombing Ray: Ranged 10; [[/roll 1d20+29[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;7. 8—Entombing Ray: Ranged 10; &lt;u&gt;+29 vs. Fortitude&lt;/u&gt;; the target is slowed (save ends). First Failed Saving Throw: The target is immobilized instead of slowed (save ends). Second Failed Saving Throw: The target is petrified (no save).&lt;/p&gt;]]; the target is slowed (save ends). First Failed Saving Throw: The target is immobilized instead of slowed (save ends). Second Failed Saving Throw: The target is petrified (no save).</p><p>9, 10—Death Ray (Necrotic): Ranged 10; [[/roll 1d20+29[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;9, 10—Death Ray (Necrotic): Ranged 10; &lt;u&gt;+29 vs. Fortitude&lt;/u&gt;; 2d8 + 10 necrotic damage, and if the target is bloodied it is dazed (save ends). First Failed Saving Throw: The target is dazed and weakened (save ends). Second Failed Saving Throw: The target is reduced to 0 hit points&lt;/p&gt;]]; [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eye Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;9, 10—Death Ray (Necrotic): Ranged 10; +29 vs. Fortitude; 2d8 + 10 necrotic damage, and if the target is bloodied it is dazed (save ends). First Failed Saving Throw: The target is dazed and weakened (save ends). Second Failed Saving Throw: The target is reduced to 0 hit points&lt;/p&gt;]] <19>  necrotic damage, and if the target is bloodied it is dazed (save ends). First Failed Saving Throw: The target is dazed and weakened (save ends). Second Failed Saving Throw: The target is reduced to 0 hit points</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Central Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; +29 vs Will; the target is slowed and loses necrotic resistance until the end of the beholder eye of death’s next turn. &lt;/p&gt;]] ➶ <b>Central Eye</b> (minor, at-will) </p><p>Ranged 20; [[/roll 1d20+29[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Central Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+29 vs Will&lt;/u&gt;; the target is slowed and loses necrotic resistance until the end of the beholder eye of death’s next turn. &lt;/p&gt;]]; the target is slowed and loses necrotic resistance until the end of the beholder eye of death’s next turn. </p></tr></td></table>",

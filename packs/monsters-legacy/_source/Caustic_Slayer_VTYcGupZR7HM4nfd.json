@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -905,7 +907,7 @@
 		},
 		{
 			"name":"Malleable Form",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"s2QRflZ7YgMEcIvk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -941,7 +943,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -997,23 +1000,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":13,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 346; <b>Bloodied</b> 173<hr><b>Resist</b> 30 acid <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 35</td><td><b>Ref</b> 37</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7 (earth walk), climb 7 see also malleable form</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+18)<br><b>Con</b> 23 (+18)</td><td><b>Dex</b> 28 (+21)<br><b>Int</b> 8 (+11)</td><td><b>Wis</b> 25 (+19)<br><b>Cha</b> 8 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +26</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +27 vs Fortitude; 1d10+7 damage, and ongoing 10 acid damage (save ends). If the target cannot see the caustic slayer, it instead takes 2d10 + 7 damage, and ongoing 15 acid damage (save ends). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Acid</b></p><p>Reach 3; [[/roll 1d20+27[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+27 vs Fortitude&lt;/u&gt;; 1d10+7 damage, and ongoing 10 acid damage (save ends). If the target cannot see the caustic slayer, it instead takes 2d10 + 7 damage, and ongoing 15 acid damage (save ends). &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +27 vs Fortitude; 1d10+7 damage, and ongoing 10 acid damage (save ends). If the target cannot see the caustic slayer, it instead takes 2d10 + 7 damage, and ongoing 15 acid damage (save ends). &lt;/p&gt;]] <12.5>  damage, and ongoing 10 acid damage (save ends). If the target cannot see the caustic slayer, it instead takes [[/roll 2d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +27 vs Fortitude; 1d10+7 damage, and ongoing 10 acid damage (save ends). If the target cannot see the caustic slayer, it instead takes 2d10 + 7 damage, and ongoing 15 acid damage (save ends). &lt;/p&gt;]] <18>  damage, and ongoing 15 acid damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eyeburn&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +27 vs Reflex; 2d6+7 acid damage, and the target is blinded until the end of the caustic slayer’s next turn. &lt;/p&gt;]] (➶) <b>Eyeburn</b> (standard, at-will) ✦ <b>Acid</b></p><p>Ranged 20; [[/roll 1d20+27[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eyeburn&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+27 vs Reflex&lt;/u&gt;; 2d6+7 acid damage, and the target is blinded until the end of the caustic slayer’s next turn. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eyeburn&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +27 vs Reflex; 2d6+7 acid damage, and the target is blinded until the end of the caustic slayer’s next turn. &lt;/p&gt;]] <14>  acid damage, and the target is blinded until the end of the caustic slayer’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slayer\"s Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Melee or ranged; the caustic slayer makes two basic attacks&lt;/p&gt;]] ⚔ <b>Slayer\"s Fury</b> (standard, at-will) </p><p>Melee or ranged; the caustic slayer makes two basic attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Caustic Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +26 vs Fortitude; 2d10+7 acid damage, and the target takes ongoing 10 acid damage and is slowed (save ends both). &lt;/p&gt;]] ᗕ <b>Caustic Breath</b> (standard, recharge ⚄⚅) ✦ <b>Acid</b></p><p>Close blast 5; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Caustic Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; 2d10+7 acid damage, and the target takes ongoing 10 acid damage and is slowed (save ends both). &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Caustic Breath&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +26 vs Fortitude; 2d10+7 acid damage, and the target takes ongoing 10 acid damage and is slowed (save ends both). &lt;/p&gt;]] <18>  acid damage, and the target takes ongoing 10 acid damage and is slowed (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Sight-Burning Cloud&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Acid, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; the burst creates a zone of corrosive grit centered on the caustic slayer that lasts until the end of its next turn. When the slayer moves, the zone moves with it, remaining centered on it. Any creature that ends its turn within the zone takes 20 acid damage and is blinded until the end of its next turn. The zone’s area is heavily obscured for all creatures except the caustic slayer, which treats it as lightly obscured. Sustain Minor: The zone persists&lt;/p&gt;]] ᗕ <b>Sight-Burning Cloud</b> (standard, recharge ⚄⚅) ✦ <b>Acid, Zone</b></p><p>Close burst 2; the burst creates a zone of corrosive grit centered on the caustic slayer that lasts until the end of its next turn. When the slayer moves, the zone moves with it, remaining centered on it. Any creature that ends its turn within the zone takes 20 acid damage and is blinded until the end of its next turn. The zone’s area is heavily obscured for all creatures except the caustic slayer, which treats it as lightly obscured. Sustain Minor: The zone persists</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Malleable Form&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A caustic slayer can squeeze through spaces as though it were a Large creature.&lt;/p&gt;]]  <b>Malleable Form</b></p><p>A caustic slayer can squeeze through spaces as though it were a Large creature.</p></tr></td></table>",

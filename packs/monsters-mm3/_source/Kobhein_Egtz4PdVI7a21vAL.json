@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -770,23 +771,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 221; <b>Bloodied</b> 110</td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 32</td><td><b>Ref</b> 31</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+16)<br><b>Con</b> 21 (+14)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 17 (+12)</td><td><b>Wis</b> 20 (+14)<br><b>Cha</b> 16 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Good</td></tr><tr><td><b>Skills</b> Endurance +19, Nature +19</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> greataxe .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 8 damage (crit 2d12 + 56).&lt;/p&gt;]] (⚔) <b>Greataxe</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d12 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 8 damage (crit 2d12 + 56).&lt;/p&gt;]] <34>  damage (crit [[/roll 2d12 + 56#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 8 damage (crit 2d12 + 56).&lt;/p&gt;]] <69> ).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frenzied Charge&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Kobhein must be bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Kobhein charges and makes the following attack in place of a melee basic attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); +24 vs. AC. Kobhein must be bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 14 damage (crit 2d12 + 62), and Kobhein knocks the target prone.&lt;/p&gt;]] ᗕ <b>Frenzied Charge</b> (weapon) ✦ Recharge ⚄ ⚅</p><p><i>Requirement:</i> Kobhein must be bloodied.</p><p><i>Effect:</i> Kobhein charges and makes the following attack in place of a melee basic attack.</p><p><i>Attack:</i> Close burst 1 (enemies in the burst); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frenzied Charge&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); &lt;u&gt;+24 vs. AC&lt;/u&gt;. Kobhein must be bloodied.&lt;/p&gt;]]. Kobhein must be bloodied.</p><p><i>Hit:</i> [[/roll 4d12 + 14#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frenzied Charge&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 14 damage (crit 2d12 + 62), and Kobhein knocks the target prone.&lt;/p&gt;]] <40>  damage (crit [[/roll 2d12 + 62#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frenzied Charge&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d12 + 14 damage (crit 2d12 + 62), and Kobhein knocks the target prone.&lt;/p&gt;]] <75> ), and Kobhein knocks the target prone.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Longtooth Shifting&lt;/b&gt; (healing) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Kobhein first becomes bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Until the end of the encounter or until he becomes unconscious, Kobhein gains a +2 bonus to damage rolls. In addition, while he is bloodied, Kobhein gains regeneration 4 (he regains 4 hit points whenever he starts his turn and has at least 1 hit point).&lt;/p&gt;]]  <b>Longtooth Shifting</b> (healing) ✦ <b>Encounter</b></p><p><i>Trigger:</i> Kobhein first becomes bloodied.</p><p><i>Effect (No Action):</i> Until the end of the encounter or until he becomes unconscious, Kobhein gains a +2 bonus to damage rolls. In addition, while he is bloodied, Kobhein gains regeneration 4 (he regains 4 hit points whenever he starts his turn and has at least 1 hit point).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Roar of Triumph&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Kobhein’s attack reduces an enemy to 0 hit points or fewer.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Each enemy in a close burst 5 takes a -2 penalty to all defenses until the end of Kobhein’s next turn.&lt;/p&gt;]]  <b>Roar of Triumph</b> <b></b></p><p><i>Trigger:</i> Kobhein’s attack reduces an enemy to 0 hit points or fewer.</p><p><i>Effect (Free Action):</i> Each enemy in a close burst 5 takes a -2 penalty to all defenses until the end of Kobhein’s next turn.</p></tr></td></table>",

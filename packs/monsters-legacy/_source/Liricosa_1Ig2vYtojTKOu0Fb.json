@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -465,10 +466,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1078,7 +1079,7 @@
 		},
 		{
 			"name":"Fundamental Awareness",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RkzW5jCNEQpqlmx9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1114,7 +1115,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1124,7 +1126,7 @@
 		},
 		{
 			"name":"Environmental Adaptation",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"f0Xm2pEVC6UJL79d",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1160,7 +1162,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1216,23 +1219,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 704; <b>Bloodied</b> 352<hr><b>Resist</b> 15 variable (at-will) <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> ++17 (see also fundamental awareness) | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 33</td><td><b>Ref</b> 33</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+15)<br><b>Con</b> 24 (+17)</td><td><b>Dex</b> 24 (+17)<br><b>Int</b> 24 (+17)</td><td><b>Wis</b> 29 (+19)<br><b>Cha</b> 26 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +20, Insight +24 see also fundamental awareness</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 20<br><b>Passive</b> Perception 29 | Insight 34</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unarmed Strike&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 2d8+7 damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]] (⚔) <b>Unarmed Strike</b> (standard, at-will) </p><p>[[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unarmed Strike&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+26 vs AC&lt;/u&gt;; 2d8+7 damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unarmed Strike&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+26 vs AC; 2d8+7 damage, and the target is dazed until the end of its next turn. &lt;/p&gt;]] <16>  damage, and the target is dazed until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blur of Fists&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Liricosa makes two unarmed strike attacks&lt;/p&gt;]] ⚔ <b>Blur of Fists</b> (standard, at-will) </p><p>Liricosa makes two unarmed strike attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;The Master\"s Touch&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+25 vs Reflex; 4d10+8 damage, and the target takes ongoing damage equal to half its bloodied value (save ends). &lt;/p&gt;]] ⚔ <b>The Master\"s Touch</b> (standard, encounter) ✦ <b>Reliable</b></p><p>[[/roll 1d20+25[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;The Master\"s Touch&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+25 vs Reflex&lt;/u&gt;; 4d10+8 damage, and the target takes ongoing damage equal to half its bloodied value (save ends). &lt;/p&gt;]]; [[/roll 4d10+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;The Master\"s Touch&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Reliable&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+25 vs Reflex; 4d10+8 damage, and the target takes ongoing damage equal to half its bloodied value (save ends). &lt;/p&gt;]] <30>  damage, and the target takes ongoing damage equal to half its bloodied value (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Awe of Truth&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +25 vs Will; 4d8+7 psychic damage, and the target is stunned (save ends). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Awe of Truth</b> (standard, recharge ⚅</p><p>Close burst 3; targets enemies; [[/roll 1d20+25[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Awe of Truth&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+25 vs Will&lt;/u&gt;; 4d8+7 psychic damage, and the target is stunned (save ends). Miss: Half damage. &lt;/p&gt;]]; [[/roll 4d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Awe of Truth&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +25 vs Will; 4d8+7 psychic damage, and the target is stunned (save ends). Miss: Half damage. &lt;/p&gt;]] <25>  psychic damage, and the target is stunned (save ends). Miss: Half damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Reorder Reality&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one to five creatures; +25 vs Fortitude; Liricosa teleports the targets, swapping their positions as he chooses. &lt;/p&gt;]] ➶ <b>Reorder Reality</b> (minor, recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>Ranged 20; targets one to five creatures; [[/roll 1d20+25[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Reorder Reality&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one to five creatures; &lt;u&gt;+25 vs Fortitude&lt;/u&gt;; Liricosa teleports the targets, swapping their positions as he chooses. &lt;/p&gt;]]; Liricosa teleports the targets, swapping their positions as he chooses. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Inevitable Consequences&lt;/b&gt; (immediate interrupt, when liricosa is missed by an attack; at-will) &lt;/p&gt;&lt;p&gt;Liricosa teleports 15 squares to a space adjacent to the triggering attacker and makes an unarmed strike attack against it.&lt;/p&gt;]]  <b>Inevitable Consequences</b> (immediate interrupt, when liricosa is missed by an attack; at-will) </p><p>Liricosa teleports 15 squares to a space adjacent to the triggering attacker and makes an unarmed strike attack against it.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fundamental Awareness&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Liricosa is always assumed to roll a 20 on any Insight, Perception, or initiative checks.&lt;/p&gt;]]  <b>Fundamental Awareness</b></p><p>Liricosa is always assumed to roll a 20 on any Insight, Perception, or initiative checks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Environmental Adaptation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Liricosa never takes damage from nonmagical environmental effects.&lt;/p&gt;]]  <b>Environmental Adaptation</b></p><p>Liricosa never takes damage from nonmagical environmental effects.</p></tr></td></table>",

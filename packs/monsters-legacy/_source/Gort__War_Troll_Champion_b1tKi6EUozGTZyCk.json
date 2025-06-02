@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OgaVrySTUKQp2E9N",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -284,7 +285,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -462,7 +464,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -690,10 +693,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -767,7 +770,7 @@
 		},
 		{
 			"name":"Battle Talent",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"D0Znho2G67QYvrA3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -803,7 +806,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -991,7 +995,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"npU9YDFiZbfOWlT1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1027,7 +1031,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1037,7 +1042,7 @@
 		},
 		{
 			"name":"Inspiring Assault",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1cBopKMxNbiCW2kz",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1073,7 +1078,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1083,7 +1089,7 @@
 		},
 		{
 			"name":"Battle Champion Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hbqDHFLG7fZBx84s",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1119,7 +1125,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1129,7 +1136,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6FgwfPnDoIYR3yjs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1165,7 +1172,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1221,23 +1229,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 242; <b>Bloodied</b> 121<br><b>Regeneration</b> 10 (if the war troll takes acid or fire damage, regeneration does not function until the end of its next turn)</td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 31</td><td><b>Ref</b> 25</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+14)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 16 (+10)<br><b>Int</b> 10 (+7)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 12 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +19, Endurance +17</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> arrows (30) , greatsword , longbow , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d12+7 damage, and the target is marked until the end of the war troll’s next turn. &lt;/p&gt;]] ⚔ <b>Greatsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d12+7 damage, and the target is marked until the end of the war troll’s next turn. &lt;/p&gt;]]; [[/roll 1d12+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 1d12+7 damage, and the target is marked until the end of the war troll’s next turn. &lt;/p&gt;]] <13.5>  damage, and the target is marked until the end of the war troll’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+7 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 2d6+7 damage. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+7 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; +20 vs AC; 1d12+3 damage. &lt;/p&gt;]] (➶) <b>Longbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 20/40; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d12+3 damage. &lt;/p&gt;]]; [[/roll 1d12+3#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Longbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20/40; +20 vs AC; 1d12+3 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Sweeping Strike&lt;/b&gt; (standard; requires greatsword, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 2; +20 vs AC; 1d12+7 damage, and the target is knocked prone. &lt;/p&gt;]] ᗕ <b>Sweeping Strike</b> (standard; requires greatsword, at-will) ✦ <b>Weapon</b></p><p>close blast 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Sweeping Strike&lt;/b&gt; (standard; requires greatsword, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d12+7 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d12+7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Sweeping Strike&lt;/b&gt; (standard; requires greatsword, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 2; +20 vs AC; 1d12+7 damage, and the target is knocked prone. &lt;/p&gt;]] <13.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Talent&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Gort can score critical hits on attack rolls of natural 19 and 20.&lt;/p&gt;]]  <b>Battle Talent</b></p><p>Gort can score critical hits on attack rolls of natural 19 and 20.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The war troll can make opportunity attacks against all enemies within its reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>The war troll can make opportunity attacks against all enemies within its reach (2 squares).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Inspiring Assault&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever he scores a critical hit, Gort and all allies within 5 squares of him regain 7 hit points.&lt;/p&gt;]]  <b>Inspiring Assault</b></p><p>Whenever he scores a critical hit, Gort and all allies within 5 squares of him regain 7 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Champion Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Gort and its allies deal an extra 2d6 damage against enemies that he flanks.&lt;/p&gt;]]  <b>Battle Champion Tactics</b></p><p>Gort and its allies deal an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Champion Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Gort and its allies deal an extra 2d6 damage against enemies that he flanks.&lt;/p&gt;]] <7> damage against enemies that he flanks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the troll is reduced to 0 hit points or fewer by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 15 hit points.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If the troll is reduced to 0 hit points or fewer by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 15 hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blood Pursuit&lt;/b&gt; (immediate reaction, when a bloodied enemy within 2 squares of the war troll moves or shifts; at-will) &lt;/p&gt;&lt;p&gt;The war troll shifts 1 square closer to the enemy.&lt;/p&gt;]]  <b>Blood Pursuit</b> (immediate reaction, when a bloodied enemy within 2 squares of the war troll moves or shifts; at-will) </p><p>The war troll shifts 1 square closer to the enemy.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Insubstantial",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EYWIUQyaxBmpv6eu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Ooze",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RjUI6SCmJHAlyVrO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Htd831ZPh5kU06RJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -377,7 +381,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1260,23 +1265,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 54; <b>Bloodied</b> 27<hr><b>Immune</b> blinded, disease, gaze effects, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 18</td><td><b>Ref</b> 17</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 (in warforged form), 0 (in ooze form), fly 6 (hover, in ooze form)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 18 (+6)</td><td><b>Dex</b> 12 (+3)<br><b>Int</b> 15 (+4)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 10 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +9, Diplomacy +7</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Insubstantial&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;In ooze form, the Builder takes half damage from any damage source, except force damage and psychic damage. Whenever the Builder takes psychic damage, it loses this trait until the start of its next turn.&lt;/p&gt;]]  <b>Insubstantial</b> <b></b></p><p>In ooze form, the Builder takes half damage from any damage source, except force damage and psychic damage. Whenever the Builder takes psychic damage, it loses this trait until the start of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ooze&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While squeezing in ooze form, the Builder moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.&lt;/p&gt;]]  <b>Ooze</b> <b></b></p><p>While squeezing in ooze form, the Builder moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While in warforged form, the Builder regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the Builder takes force or psychic damage, the regeneration does not function on the creature’s next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>While in warforged form, the Builder regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the Builder takes force or psychic damage, the regeneration does not function on the creature’s next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The Builder must be in warforged form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +10 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The Builder must be in warforged form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+10[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+10 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 4 damage.&lt;/p&gt;]] <13>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Touch&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The Builder must be in ooze form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 2 psychic damage.&lt;/p&gt;]] (⚔) <b>Psychic Touch</b> (psychic) ✦ <b>At-Will</b></p><p><i>Requirement:</i> The Builder must be in ooze form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Touch&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Psychic Touch&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 2 psychic damage.&lt;/p&gt;]] <12.5>  psychic damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Animate Objects&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature carrying equipment); +8 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 damage, and the target’s equipment animates (save ends). While the target’s equipment is animated, the target is slowed and takes a -2 penalty to attack rolls.&lt;/p&gt;]] ⚔ <b>Animate Objects</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Melee 1 (one creature carrying equipment); [[/roll 1d20+8[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Animate Objects&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature carrying equipment); &lt;u&gt;+8 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Animate Objects&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 damage, and the target’s equipment animates (save ends). While the target’s equipment is animated, the target is slowed and takes a -2 penalty to attack rolls.&lt;/p&gt;]] <15>  damage, and the target’s equipment animates (save ends). While the target’s equipment is animated, the target is slowed and takes a -2 penalty to attack rolls.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Possess Warforged&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The Builder must be in ooze form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Melee 1 (the intact body of one dead warforged); the Builder’s ooze form disappears into the target, and the Builder takes on warforged form.&lt;/p&gt;]] ⚔ <b>Possess Warforged</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The Builder must be in ooze form.</p><p><i>Effect:</i> Melee 1 (the intact body of one dead warforged); the Builder’s ooze form disappears into the target, and the Builder takes on warforged form.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Leave Body&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The Builder must be in warforged form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The warforged body the Builder occupied falls prone in the Builder’s space, and the Builder takes on ooze form and shifts up to 2 squares.&lt;/p&gt;]]  <b>Leave Body</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The Builder must be in warforged form.</p><p><i>Effect:</i> The warforged body the Builder occupied falls prone in the Builder’s space, and the Builder takes on ooze form and shifts up to 2 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fleeing Ooze&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; While in warforged form, the Builder is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The Builder uses leave body, gains 10 temporary hit points, and the warforged body it inhabited turns to dust.&lt;/p&gt;]]  <b>Fleeing Ooze</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> While in warforged form, the Builder is first bloodied.</p><p><i>Effect (Free Action):</i> The Builder uses leave body, gains 10 temporary hit points, and the warforged body it inhabited turns to dust.</p></tr></td></table>",

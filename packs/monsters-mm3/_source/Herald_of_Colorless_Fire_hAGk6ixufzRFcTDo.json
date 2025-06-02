@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Frozen in Place",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"cYFPthL37D48avqu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 244; <b>Bloodied</b> 122<hr><b>Resist</b> 15 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +25</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 37</td><td><b>Ref</b> 40</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+16)<br><b>Con</b> 20 (+18)</td><td><b>Dex</b> 30 (+23)<br><b>Int</b> 15 (+15)</td><td><b>Wis</b> 23 (+19)<br><b>Cha</b> 14 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Frozen in Place&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the herald of colorless fire takes cold damage, it cannot use flickering flame until the end of its next turn.&lt;/p&gt;]]  <b>Frozen in Place</b> <b></b></p><p>Whenever the herald of colorless fire takes cold damage, it cannot use flickering flame until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Caress of Flame&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +32 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 19 fire and force damage.&lt;/p&gt;]] (⚔) <b>Caress of Flame</b> (fire, force) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+32[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Caress of Flame&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+32 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 19#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Caress of Flame&lt;/b&gt; (fire, force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 19 fire and force damage.&lt;/p&gt;]] <35.5>  fire and force damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Storm of Colorless Fire&lt;/b&gt; (fire, force) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The herald makes the following attack twice, shifting half its speed between the attacks. The herald cannot target the same creature with both attacks.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); +30 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10+16 fire and force damage, and ongoing 15 fire damage (save ends).&lt;/p&gt;]] ᗕ <b>Storm of Colorless Fire</b> (fire, force) ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The herald makes the following attack twice, shifting half its speed between the attacks. The herald cannot target the same creature with both attacks.</p><p><i>Attack:</i> Close burst 1 (enemies in the burst); [[/roll 1d20+30[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Storm of Colorless Fire&lt;/b&gt; (fire, force) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst); &lt;u&gt;+30 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10+16#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Storm of Colorless Fire&lt;/b&gt; (fire, force) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10+16 fire and force damage, and ongoing 15 fire damage (save ends).&lt;/p&gt;]] <38>  fire and force damage, and ongoing 15 fire damage (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Flickering Flame&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The herald shifts 4 squares.&lt;/p&gt;]]  <b>Flickering Flame</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The herald shifts 4 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Unfettered Apocalypse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy scores a critical hit against the herald or the herald is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The herald creates a duplicate of itself, which appears in the nearest unoccupied square. The duplicate has the same hit points as the herald, is considered to have expended the same powers as the herald, and acts during the herald’s turn. Any effects on the herald do not transfer to the duplicate. At the end of the herald’s next turn, the duplicate disappears.&lt;/p&gt;]]  <b>Unfettered Apocalypse</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy scores a critical hit against the herald or the herald is first bloodied.</p><p><i>Effect (No Action):</i> The herald creates a duplicate of itself, which appears in the nearest unoccupied square. The duplicate has the same hit points as the herald, is considered to have expended the same powers as the herald, and acts during the herald’s turn. Any effects on the herald do not transfer to the duplicate. At the end of the herald’s next turn, the duplicate disappears.</p></tr></td></table>",

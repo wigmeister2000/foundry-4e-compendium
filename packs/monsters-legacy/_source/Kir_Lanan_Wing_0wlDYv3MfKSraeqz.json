@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -119,10 +120,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -299,10 +300,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -556,7 +557,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wKcXxR8GJbTqZiyg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -592,7 +593,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -826,23 +828,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 52; <b>Bloodied</b> 26<hr><b>Vulnerable</b> 5 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 17</td><td><b>Ref</b> 17</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, fly 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+7)<br><b>Con</b> 12 (+3)</td><td><b>Dex</b> 16 (+5)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 9 (+1)<br><b>Cha</b> 12 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Kir-Lanan<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d4+5 damage plus 1d4 necrotic damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d4+5 damage plus 1d4 necrotic damage. &lt;/p&gt;]]; [[/roll 1d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d4+5 damage plus 1d4 necrotic damage. &lt;/p&gt;]] <7.5>  damage plus [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d4+5 damage plus 1d4 necrotic damage. &lt;/p&gt;]] <2.5> necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mobile Melee Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs ; 1d10+4 damage.. While flying, a kir-lanan wing can move up to half its speed and make one melee basic attack at any point during that movement. The kir-lanan wing doesn’t provoke opportunity attacks when moving away from the target of its attack.&lt;/p&gt;]] ⚔ <b>Mobile Melee Attack</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>+7 vs ; [[/roll 1d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mobile Melee Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs ; 1d10+4 damage.. While flying, a kir-lanan wing can move up to half its speed and make one melee basic attack at any point during that movement. The kir-lanan wing doesn’t provoke opportunity attacks when moving away from the target of its attack.&lt;/p&gt;]] <9.5>  damage.. While flying, a kir-lanan wing can move up to half its speed and make one melee basic attack at any point during that movement. The kir-lanan wing doesn’t provoke opportunity attacks when moving away from the target of its attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Enfeebling Ray&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +8 vs Reflex; 1d6+3 necrotic damage, and the target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ➶ <b>Enfeebling Ray</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Enfeebling Ray&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 1d6+3 necrotic damage, and the target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Enfeebling Ray&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +8 vs Reflex; 1d6+3 necrotic damage, and the target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] <6.5>  necrotic damage, and the target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The kir-lanan wing deals an extra 1d6 damage on attacks against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The kir-lanan wing deals an extra [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The kir-lanan wing deals an extra 1d6 damage on attacks against any target it has combat advantage against.&lt;/p&gt;]] <3.5> damage on attacks against any target it has combat advantage against.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Necrotic Healing&lt;/b&gt; (immediate reaction, when damaged by a necrotic attack; encounter) &lt;/p&gt;&lt;p&gt;The kir-lanan regains 13 hit points.&lt;/p&gt;]]  <b>Necrotic Healing</b> (immediate reaction, when damaged by a necrotic attack; encounter) </p><p>The kir-lanan regains 13 hit points.</p></tr></td></table>",

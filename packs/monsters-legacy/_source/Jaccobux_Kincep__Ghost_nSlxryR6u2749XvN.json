@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -291,10 +293,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -472,10 +474,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -835,10 +837,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1017,10 +1019,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1200,10 +1202,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1684,23 +1686,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 182; <b>Bloodied</b> 91<hr><b>Resist</b> insubstantial <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 25</td><td><b>Ref</b> 25</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+8)<br><b>Con</b> 13 (+7)</td><td><b>Dex</b> 15 (+8)<br><b>Int</b> 17 (+9)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 17 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Draconic, Elven, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> magic wand  +3 .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 1d10+2 necrotic damage. &lt;/p&gt;]] (⚔) <b>Spirit Touch</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d10+2 necrotic damage. &lt;/p&gt;]]; [[/roll 1d10+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 1d10+2 necrotic damage. &lt;/p&gt;]] <7.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard; requires wand, at-will) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20; +19 vs Reflex; 2d4+3 force damage (crit 3d6+14). &lt;/p&gt;]] (➶) <b>Magic Missile</b> (standard; requires wand, at-will) ✦ <b>Arcane, Force, Implement</b></p><p>ranged 20; [[/roll 1d20+19[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard; requires wand, at-will) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20; &lt;u&gt;+19 vs Reflex&lt;/u&gt;; 2d4+3 force damage (crit 3d6+14). &lt;/p&gt;]]; [[/roll 2d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard; requires wand, at-will) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20; +19 vs Reflex; 2d4+3 force damage (crit 3d6+14). &lt;/p&gt;]] <8>  force damage (crit [[/roll 3d6+14#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Magic Missile&lt;/b&gt; (standard; requires wand, at-will) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20; +19 vs Reflex; 2d4+3 force damage (crit 3d6+14). &lt;/p&gt;]] <24.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Death\"s Visage&lt;/b&gt; (standard; requires wand, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 5; +15 vs Will; 2d6+3 psychic damage, and the target takes a -2 penalty to all defenses (save ends). &lt;/p&gt;]] ➶ <b>Death\"s Visage</b> (standard; requires wand, at-will) ✦ <b>Fear, Psychic</b></p><p>ranged 5; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Death\"s Visage&lt;/b&gt; (standard; requires wand, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 5; &lt;u&gt;+15 vs Will&lt;/u&gt;; 2d6+3 psychic damage, and the target takes a -2 penalty to all defenses (save ends). &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Death\"s Visage&lt;/b&gt; (standard; requires wand, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 5; +15 vs Will; 2d6+3 psychic damage, and the target takes a -2 penalty to all defenses (save ends). &lt;/p&gt;]] <10>  psychic damage, and the target takes a -2 penalty to all defenses (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +15 vs Will; 2d8+3 psychic damage, and the target is pushed 5 squares and is immobilized (save ends). &lt;/p&gt;]] ᗕ <b>Terrifying Shriek</b> (standard, recharge ⚄⚅) ✦ <b>Fear, Psychic</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+15 vs Will&lt;/u&gt;; 2d8+3 psychic damage, and the target is pushed 5 squares and is immobilized (save ends). &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Shriek&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +15 vs Will; 2d8+3 psychic damage, and the target is pushed 5 squares and is immobilized (save ends). &lt;/p&gt;]] <12>  psychic damage, and the target is pushed 5 squares and is immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Color Spray&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Implement, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 5; +19 vs Will; 1d6+6 radiant damage (crit 3d6+12), and the target is dazed until the end of Jaccobux\"s next turn. &lt;/p&gt;]] ᗕ <b>Color Spray</b> (standard; requires wand, encounter) ✦ <b>Arcane, Implement, Radiant</b></p><p>close blast 5; [[/roll 1d20+19[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Color Spray&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Implement, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 5; &lt;u&gt;+19 vs Will&lt;/u&gt;; 1d6+6 radiant damage (crit 3d6+12), and the target is dazed until the end of Jaccobux\"s next turn. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Color Spray&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Implement, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 5; +19 vs Will; 1d6+6 radiant damage (crit 3d6+12), and the target is dazed until the end of Jaccobux\"s next turn. &lt;/p&gt;]] <9.5>  radiant damage (crit [[/roll 3d6+12#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Color Spray&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Implement, Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;close blast 5; +19 vs Will; 1d6+6 radiant damage (crit 3d6+12), and the target is dazed until the end of Jaccobux\"s next turn. &lt;/p&gt;]] <22.5> ), and the target is dazed until the end of Jaccobux\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Spectral Ram&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10; +19 vs Fortitude; 2d10+6 force damage (crit 3d6+26), and target is pushed 3 squares and knocked prone. &lt;/p&gt;]] ➶ <b>Spectral Ram</b> (standard; requires wand, encounter) ✦ <b>Arcane, Force, Implement</b></p><p>ranged 10; [[/roll 1d20+19[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Spectral Ram&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10; &lt;u&gt;+19 vs Fortitude&lt;/u&gt;; 2d10+6 force damage (crit 3d6+26), and target is pushed 3 squares and knocked prone. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Spectral Ram&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10; +19 vs Fortitude; 2d10+6 force damage (crit 3d6+26), and target is pushed 3 squares and knocked prone. &lt;/p&gt;]] <17>  force damage (crit [[/roll 3d6+26#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Spectral Ram&lt;/b&gt; (standard; requires wand, encounter) ✦ &lt;b&gt;Arcane, Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10; +19 vs Fortitude; 2d10+6 force damage (crit 3d6+26), and target is pushed 3 squares and knocked prone. &lt;/p&gt;]] <36.5> ), and target is pushed 3 squares and knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bigby\"s Icy Grasp&lt;/b&gt; (standard; requires wand; sustain minor, daily) ✦ &lt;b&gt;Arcane, Cold, Conjuration, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Jaccobux conjures a 5-foot tall hand of ice in an unoccupied square within range, and the hand attacks one target adjacent to it; ranged 20; +19 vs Reflex; 2d8+6 cold damage (crit 3d6 + 22) and the target is grabbed (until escape, DC 23). As a move action, Jaccobux can move the hand up to 6 squares.&lt;/p&gt;&lt;p&gt;When Jaccobux sustains the hand, a target it has grabbed takes 1d8 + 6 cold damage. As a standard action, Jaccobux can attack another target with the hand, but it must release a target it has grabbed. &lt;/p&gt;]] ⚔ <b>Bigby\"s Icy Grasp</b> (standard; requires wand; sustain minor, daily) ✦ <b>Arcane, Cold, Conjuration, Implement</b></p><p>Jaccobux conjures a 5-foot tall hand of ice in an unoccupied square within range, and the hand attacks one target adjacent to it; ranged 20; [[/roll 1d20+19[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bigby\"s Icy Grasp&lt;/b&gt; (standard; requires wand; sustain minor, daily) ✦ &lt;b&gt;Arcane, Cold, Conjuration, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Jaccobux conjures a 5-foot tall hand of ice in an unoccupied square within range, and the hand attacks one target adjacent to it; ranged 20; &lt;u&gt;+19 vs Reflex&lt;/u&gt;; 2d8+6 cold damage (crit 3d6 + 22) and the target is grabbed (until escape, DC 23). As a move action, Jaccobux can move the hand up to 6 squares.&lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bigby\"s Icy Grasp&lt;/b&gt; (standard; requires wand; sustain minor, daily) ✦ &lt;b&gt;Arcane, Cold, Conjuration, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Jaccobux conjures a 5-foot tall hand of ice in an unoccupied square within range, and the hand attacks one target adjacent to it; ranged 20; +19 vs Reflex; 2d8+6 cold damage (crit 3d6 + 22) and the target is grabbed (until escape, DC 23). As a move action, Jaccobux can move the hand up to 6 squares.&lt;/p&gt;]] <15>  cold damage (crit [[/roll 3d6 + 22#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bigby\"s Icy Grasp&lt;/b&gt; (standard; requires wand; sustain minor, daily) ✦ &lt;b&gt;Arcane, Cold, Conjuration, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Jaccobux conjures a 5-foot tall hand of ice in an unoccupied square within range, and the hand attacks one target adjacent to it; ranged 20; +19 vs Reflex; 2d8+6 cold damage (crit 3d6 + 22) and the target is grabbed (until escape, DC 23). As a move action, Jaccobux can move the hand up to 6 squares.&lt;/p&gt;]] <32.5> ) and the target is grabbed (until escape, DC 23). As a move action, Jaccobux can move the hand up to 6 squares.</p><p>When Jaccobux sustains the hand, a target it has grabbed takes [[/roll 1d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bigby\"s Icy Grasp&lt;/b&gt; (standard; requires wand; sustain minor, daily) ✦ &lt;b&gt;Arcane, Cold, Conjuration, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Jaccobux sustains the hand, a target it has grabbed takes 1d8 + 6 cold damage. As a standard action, Jaccobux can attack another target with the hand, but it must release a target it has grabbed. &lt;/p&gt;]] <10.5>  cold damage. As a standard action, Jaccobux can attack another target with the hand, but it must release a target it has grabbed. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Wand of Accuracy&lt;/b&gt; (free; requires wand; encounter) ✦ &lt;b&gt;Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Jaccobux gains a +2 bonus to a single attack roll.&lt;/p&gt;]]  <b>Wand of Accuracy</b> (free; requires wand; encounter) ✦ <b>Implement</b></p><p>Jaccobux gains a +2 bonus to a single attack roll.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blur&lt;/b&gt; (minor; daily) ✦ &lt;b&gt;Arcane, Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Until the end of the encounter, Jaccobux gains a +2 power bonus to all defenses, and enemies 5 or more squares away cannot see him.&lt;/p&gt;]]  <b>Blur</b> (minor; daily) ✦ <b>Arcane, Illusion</b></p><p>Until the end of the encounter, Jaccobux gains a +2 power bonus to all defenses, and enemies 5 or more squares away cannot see him.</p></tr></td></table>",

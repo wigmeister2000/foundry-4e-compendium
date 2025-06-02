@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Halo of Stone",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2pWNTwU7Gol9texk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -810,23 +812,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 636; <b>Bloodied</b> 318</td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 43</td><td><b>Fort</b> 43</td><td><b>Ref</b> 37</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+23)<br><b>Con</b> 28 (+23)</td><td><b>Dex</b> 12 (+15)<br><b>Int</b> 16 (+17)</td><td><b>Wis</b> 17 (+17)<br><b>Cha</b> 19 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Primordial<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 20<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Halo of Stone&lt;/b&gt; (Earth) aura 2; a creature that enters or begins its turn in the aura takes 10 damage.]] <b>Halo of Stone</b> (Earth) aura 2; a creature that enters or begins its turn in the aura takes 10 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +31 vs AC; 3d10+9 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 4; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+31 vs AC&lt;/u&gt;; 3d10+9 damage. &lt;/p&gt;]]; [[/roll 3d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +31 vs AC; 3d10+9 damage. &lt;/p&gt;]] <25.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sweeping Fists&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The mordrin makes a slam attack against two different targets within reach.&lt;/p&gt;]] ⚔ <b>Sweeping Fists</b> (standard, at-will) </p><p>The mordrin makes a slam attack against two different targets within reach.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Hurl Stones&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +29 vs Reflex; 2d8+9 damage, and the target is dazed (save ends). &lt;/p&gt;]] ✻ <b>Hurl Stones</b> (standard, at-will) </p><p>Area burst 1 within 20; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Hurl Stones&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 20; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 2d8+9 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Hurl Stones&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +29 vs Reflex; 2d8+9 damage, and the target is dazed (save ends). &lt;/p&gt;]] <18>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earth Shock&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 2; +30 vs Fortitude; 3d10+9 damage, and the target is stunned until the end of the mordrin\"s next turn. Miss: Half damage, and the target is not stunned. &lt;/p&gt;]] ᗕ <b>Earth Shock</b> (standard, encounter) </p><p>Close burst 2; [[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earth Shock&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+30 vs Fortitude&lt;/u&gt;; 3d10+9 damage, and the target is stunned until the end of the mordrin\"s next turn. Miss: Half damage, and the target is not stunned. &lt;/p&gt;]]; [[/roll 3d10+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Earth Shock&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 2; +30 vs Fortitude; 3d10+9 damage, and the target is stunned until the end of the mordrin\"s next turn. Miss: Half damage, and the target is not stunned. &lt;/p&gt;]] <25.5>  damage, and the target is stunned until the end of the mordrin\"s next turn. Miss: Half damage, and the target is not stunned. </p></tr></td></table>",

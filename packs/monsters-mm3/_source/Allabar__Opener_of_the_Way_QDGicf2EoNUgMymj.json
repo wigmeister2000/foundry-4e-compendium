@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Gravity Well",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BAxVkdeyNoZ6hXPS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UidHlfDLcKY1v0Xw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -95,7 +97,7 @@
 		},
 		{
 			"name":"Bloodied Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UA298lKev6uHr4zJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -131,7 +133,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -196,7 +199,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1437,23 +1441,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1100; <b>Bloodied</b> 550</td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 45</td><td><b>Fort</b> 43</td><td><b>Ref</b> 41</td><td><b>Will</b> 43</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+25)<br><b>Con</b> 27 (+23)</td><td><b>Dex</b> 26 (+23)<br><b>Int</b> 29 (+24)</td><td><b>Wis</b> 31 (+25)<br><b>Cha</b> 28 (+24)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 50<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Arcana +29, Dungeoneering +30, History +29, Religion +29</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 35 | Insight 35</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Gravity Well&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 20&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn within the aura is pulled a number of squares depending on Allabar’s current hit points: 776 to 1,100, 1 square; 551 to 775, 2 squares; 226 to 550, 4 squares; 1 to 225, 8 squares. &lt;/p&gt;]] ⌀ <b>Gravity Well</b> ✦ <b>Aura</b> 20</p><p>Any enemy that starts its turn within the aura is pulled a number of squares depending on Allabar’s current hit points: 776 to 1,100, 1 square; 551 to 775, 2 squares; 226 to 550, 4 squares; 1 to 225, 8 squares. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking Allabar. &lt;/p&gt;]]  <b>All-Around Vision </b> <b></b></p><p>Enemies can’t gain combat advantage by flanking Allabar. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodied Fury &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Allabar is bloodied, it gains an extra standard action during each turn, even if it is dazed.&lt;/p&gt;]]  <b>Bloodied Fury </b> <b></b></p><p>Whenever Allabar is bloodied, it gains an extra standard action during each turn, even if it is dazed.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); +35 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 15 damage, and the target is restrained until the end of Allabar’s next turn.&lt;/p&gt;]] (⚔) <b>Tentacle</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 4 (one creature); [[/roll 1d20+35[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); &lt;u&gt;+35 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 15 damage, and the target is restrained until the end of Allabar’s next turn.&lt;/p&gt;]] <28.5>  damage, and the target is restrained until the end of Allabar’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Triple Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Allabar uses tentacle three times, making each attack against a different target.&lt;/p&gt;]] ⚔ <b>Triple Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Allabar uses tentacle three times, making each attack against a different target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Devour Body&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst at 0 hit points or fewer); +33 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Allabar pulls the target into its space, the target dies, and psionic boost recharges.&lt;/p&gt;]] ᗕ <b>Devour Body</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 1 (enemies in the burst at 0 hit points or fewer); [[/roll 1d20+33[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Devour Body&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (enemies in the burst at 0 hit points or fewer); &lt;u&gt;+33 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Allabar pulls the target into its space, the target dies, and psionic boost recharges.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wrath of the Forsaken World&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +33 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 25 psychic damage, and the target sprouts a hostile tentacle (save ends). While the target is affected by the hostile tentacle, any ally of the target that ends its turn within 2 squares of the target takes 20 damage.&lt;/p&gt;]] ᗕ <b>Wrath of the Forsaken World</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+33[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wrath of the Forsaken World&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+33 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 25#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wrath of the Forsaken World&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 25 psychic damage, and the target sprouts a hostile tentacle (save ends). While the target is affected by the hostile tentacle, any ally of the target that ends its turn within 2 squares of the target takes 20 damage.&lt;/p&gt;]] <47>  psychic damage, and the target sprouts a hostile tentacle (save ends). While the target is affected by the hostile tentacle, any ally of the target that ends its turn within 2 squares of the target takes 20 damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Unravel Essence&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when no enemy is affected by this power&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); +33 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 20 damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The ongoing damage increases to 25.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target is also weakened and insubstantial (save ends all).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Third Failed Saving Throw:&lt;/i&gt; The target drops to 0 hit points unless it is already below 0 hit points.&lt;/p&gt;]] ⚔ <b>Unravel Essence</b> ✦ <b>Recharge</b> when no enemy is affected by this power</p><p><i>Attack:</i> Melee 4 (one creature); [[/roll 1d20+33[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Unravel Essence&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when no enemy is affected by this power&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 4 (one creature); &lt;u&gt;+33 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 20 damage (save ends).</p><p><i>First Failed Saving Throw:</i> The ongoing damage increases to 25.</p><p><i>Second Failed Saving Throw:</i> The target is also weakened and insubstantial (save ends all).</p><p><i>Third Failed Saving Throw:</i> The target drops to 0 hit points unless it is already below 0 hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Psionic Boost&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Allabar takes psychic damage&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Allabar hits with tentacle.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The attack deals 4d10 extra psychic damage.&lt;/p&gt;]]  <b>Psionic Boost</b> (psychic) ✦ <b>Recharge</b> when Allabar takes psychic damage</p><p><i>Trigger:</i> Allabar hits with tentacle.</p><p><i>Effect (Free Action):</i> The attack deals [[/roll 4d10 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Psionic Boost&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Allabar takes psychic damage&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The attack deals 4d10 extra psychic damage.&lt;/p&gt;]] <22> extra psychic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Psychic Feedback&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy damages Allabar.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The triggering enemy is dazed (save ends).&lt;/p&gt;]]  <b>Psychic Feedback</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy damages Allabar.</p><p><i>Effect (Immediate Reaction):</i> The triggering enemy is dazed (save ends).</p></tr></td></table>",

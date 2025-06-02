@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Baphomet's Boon",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Gm14je3TkahcoqE7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -166,10 +168,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -344,10 +346,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1003,23 +1005,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 129; <b>Bloodied</b> 64</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 29</td><td><b>Ref</b> 24</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 12 (+7)<br><b>Int</b> 13 (+7)</td><td><b>Wis</b> 17 (+9)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Dungeoneering +14, Intimidate +14, Nature +16, Religion +12</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> robes, mace .</p><p>[[/roll 0#&lt;b&gt;Baphomet’s Boon&lt;/b&gt; aura 10; allies who start their turns in the aura gain a +2 bonus to attack rolls when charging.]] <b>Baphomet’s Boon</b> aura 10; allies who start their turns in the aura gain a +2 bonus to attack rolls when charging.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Great Cursed Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+6 damage plus 1d6 necrotic damage. &lt;/p&gt;]] (⚔) <b>Great Cursed Mace</b> (standard, at-will) ✦ <b>Necrotic, Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Great Cursed Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d10+6 damage plus 1d6 necrotic damage. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Great Cursed Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+6 damage plus 1d6 necrotic damage. &lt;/p&gt;]] <11.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Great Cursed Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+6 damage plus 1d6 necrotic damage. &lt;/p&gt;]] <3.5> necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The minotaur cabalist makes a charge attack; +16 vs AC; 2d6+6 damage, and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Goring Charge</b> (standard, at-will) </p><p>The minotaur cabalist makes a charge attack; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The minotaur cabalist makes a charge attack; &lt;u&gt;+16 vs AC&lt;/u&gt;; 2d6+6 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The minotaur cabalist makes a charge attack; +16 vs AC; 2d6+6 damage, and the target is knocked prone. &lt;/p&gt;]] <13>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Call Out the Beast&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; one bloodied ally in range makes a melee attack against one enemy within its reach.&lt;/p&gt;]] ➶ <b>Call Out the Beast</b> (standard, at-will) </p><p>Ranged 10; one bloodied ally in range makes a melee attack against one enemy within its reach.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Horns of Force&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +18 vs AC; 1d8+3 force damage, and the target is pushed 2 squares. &lt;/p&gt;]] ➶ <b>Horns of Force</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 5; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Horns of Force&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+18 vs AC&lt;/u&gt;; 1d8+3 force damage, and the target is pushed 2 squares. &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Horns of Force&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +18 vs AC; 1d8+3 force damage, and the target is pushed 2 squares. &lt;/p&gt;]] <7.5>  force damage, and the target is pushed 2 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ferocity&lt;/b&gt; ( when reduced to 0 hit points) &lt;/p&gt;&lt;p&gt;The minotaur cabalist makes a melee basic attack.&lt;/p&gt;]]  <b>Ferocity</b> ( when reduced to 0 hit points) </p><p>The minotaur cabalist makes a melee basic attack.</p></tr></td></table>",

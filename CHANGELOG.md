@@ -1,5 +1,52 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.17
+- Monster knowledge hotfix
+
+## Foundry 4e Compendium v1.35.16
+- Updated monster knowledge tool
+
+## Foundry 4e Compendium v1.35.15
+- Monster initiative updates to v0.6 data model
+
+## Foundry 4e Compendium v1.35.14
+- v0.6 data model updates
+
+## Foundry 4e Compendium v1.35.13
+- Merge [PR#4](https://github.com/wigmeister2000/foundry-4e-compendium/pull/4) from mbutler
+
+## Foundry 4e Compendium v1.35.12
+- Use Melee 1 for legacy monster powers without explicit range type
+
+## Foundry 4e Compendium v1.35.11
+- Fixed resistance rescaling
+
+## Foundry 4e Compendium v1.35.10
+- Fixed resource point use messages
+
+## Foundry 4e Compendium v1.35.9
+- Fixed basic attack flags
+
+## Foundry 4e Compendium v1.35.8
+- Fixed variable resistance
+
+## Foundry 4e Compendium v1.35.7
+- Merge [PR#2](https://github.com/wigmeister2000/foundry-4e-compendium/pull/2) from mbutler
+
+## Foundry 4e Compendium v1.35.6
+- Fixed instrument implements
+
+## Foundry 4e Compendium v1.35.5
+- Added option for chat messages: resource point change
+- Small fixes for some monsters
+
+## Foundry 4e Compendium v1.35.4
+- Organized traps by level
+
+## Foundry 4e Compendium v1.35.3
+- Update v0.4 powers macro fixes at-will uses
+- Fixed Kobold Slinger
+
 ## Foundry 4e Compendium v1.35.2
 - Fix Lay on Hands uses
 - Fix Crownring of Tchazzar Attack power

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Spirit Distraction",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"JLdrwN5KTQ7mP6Eg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -299,7 +301,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -828,23 +831,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 182; <b>Bloodied</b> 91<hr><b>Resist</b> necrotic 15, radiant 15 </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>Save</b> +5 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 31</td><td><b>Ref</b> 31</td><td><b>Will</b> 32 ; (+1 to all defenses against attacks made by bloodied creatures)</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+13)<br><b>Con</b> 22 (+15)</td><td><b>Dex</b> 19 (+13)<br><b>Int</b> 22 (+15)</td><td><b>Wis</b> 16 (+12)<br><b>Cha</b> 25 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +20, Religion +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> longsword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Spirit Distraction&lt;/b&gt; (charm) ✦ &lt;b&gt;Aura&lt;/b&gt; 2&lt;/p&gt;&lt;p&gt;Any creature that ends its turn within the aura grants combat advantage until the end of its next turn.&lt;/p&gt;]] ⌀ <b>Spirit Distraction</b> (charm) ✦ <b>Aura</b> 2</p><p>Any creature that ends its turn within the aura grants combat advantage until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Blade&lt;/b&gt; (psychic, radiant, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Myshal must be wielding a longsword.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 damage plus 6 psychic and radiant damage, and the target is marked until the end of Myshal’s next turn.&lt;/p&gt;]] (⚔) <b>Spirit Blade</b> (psychic, radiant, weapon) ✦ <b>At-Will</b></p><p><i>Requirement:</i> Myshal must be wielding a longsword.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Blade&lt;/b&gt; (psychic, radiant, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Blade&lt;/b&gt; (psychic, radiant, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 damage plus 6 psychic and radiant damage, and the target is marked until the end of Myshal’s next turn.&lt;/p&gt;]] <21>  damage plus 6 psychic and radiant damage, and the target is marked until the end of Myshal’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eldritch Blast&lt;/b&gt; (implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +22 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 16 damage.&lt;/p&gt;]] (➶) <b>Eldritch Blast</b> (implement) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+22[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eldritch Blast&lt;/b&gt; (implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+22 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 16#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eldritch Blast&lt;/b&gt; (implement) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 16 damage.&lt;/p&gt;]] <27>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Eldritch Strike&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Myshal must be wielding a longsword.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one or two creatures); +24 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 14 damage, and the target is marked and immobilized (save ends both).&lt;/p&gt;]] ⚔ <b>Eldritch Strike</b> (weapon) ✦ Recharge ⚄ ⚅</p><p><i>Requirement:</i> Myshal must be wielding a longsword.</p><p><i>Attack:</i> Melee 1 (one or two creatures); [[/roll 1d20+24[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Eldritch Strike&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one or two creatures); &lt;u&gt;+24 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 14#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Eldritch Strike&lt;/b&gt; (weapon) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 14 damage, and the target is marked and immobilized (save ends both).&lt;/p&gt;]] <25>  damage, and the target is marked and immobilized (save ends both).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Memory of a Thousand Lifetimes&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Myshal makes an attack roll, a skill check, or an ability check.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Myshal adds 1d6 to the triggering roll.&lt;/p&gt;]]  <b>Memory of a Thousand Lifetimes</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> Myshal makes an attack roll, a skill check, or an ability check.</p><p><i>Effect (Free Action):</i> Myshal adds [[/roll 1d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Memory of a Thousand Lifetimes&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Myshal adds 1d6 to the triggering roll.&lt;/p&gt;]] <3.5> to the triggering roll.</p></tr></td></table>",

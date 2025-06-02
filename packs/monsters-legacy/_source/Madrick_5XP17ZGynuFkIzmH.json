@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -465,10 +467,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -645,10 +647,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -722,7 +724,7 @@
 		},
 		{
 			"name":"Sneak Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VpZ9BhcoXPKN36nf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -758,7 +760,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -948,7 +951,7 @@
 		},
 		{
 			"name":"Reactive Stealth",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"U5OR0Zp9xwQhyVGe",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -984,7 +987,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1218,23 +1222,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 44; <b>Bloodied</b> 22</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 14</td><td><b>Ref</b> 16</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+2)<br><b>Con</b> 12 (+2)</td><td><b>Dex</b> 16 (+4)<br><b>Int</b> 12 (+2)</td><td><b>Wis</b> 11 (+1)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Good</td></tr><tr><td><b>Skills</b> Arcana +4, Stealth +11, Thievery +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><p><b>Equipment</b> raccoon named Bandit, adventurer\"s kit , dagger  x5, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d4+1 damage. &lt;/p&gt;&lt;p&gt;(➶) &lt;b&gt;Dagger&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Ranged 5/10; +10 vs AC; 1d4+3 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d4+1 damage. &lt;/p&gt;]]; [[/roll 1d4+1#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d4+1 damage. &lt;/p&gt;]] <3.5>  damage. </p><p>(➶) <b>Dagger</b> (standard, encounter) </p><p>Ranged 5/10; [[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+10 vs AC&lt;/u&gt;; 1d4+3 damage. &lt;/p&gt;]]; [[/roll 1d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +10 vs AC; 1d4+3 damage. &lt;/p&gt;]] <5.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sly Flourish&lt;/b&gt; (standard; requires dagger, at-will) &lt;/p&gt;&lt;p&gt;melee 1 or ranged 5/10; +10 vs AC; 1d4+6 damage. &lt;/p&gt;]] ⚔ <b>Sly Flourish</b> (standard; requires dagger, at-will) </p><p>melee 1 or ranged 5/10; [[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sly Flourish&lt;/b&gt; (standard; requires dagger, at-will) &lt;/p&gt;&lt;p&gt;melee 1 or ranged 5/10; &lt;u&gt;+10 vs AC&lt;/u&gt;; 1d4+6 damage. &lt;/p&gt;]]; [[/roll 1d4+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sly Flourish&lt;/b&gt; (standard; requires dagger, at-will) &lt;/p&gt;&lt;p&gt;melee 1 or ranged 5/10; +10 vs AC; 1d4+6 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Positioning Strike&lt;/b&gt; (standard; requires dagger, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Will; 1d4+3 damage, and slide the target 3 squares. &lt;/p&gt;]] ⚔ <b>Positioning Strike</b> (standard; requires dagger, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+10[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Positioning Strike&lt;/b&gt; (standard; requires dagger, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs Will&lt;/u&gt;; 1d4+3 damage, and slide the target 3 squares. &lt;/p&gt;]]; [[/roll 1d4+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Positioning Strike&lt;/b&gt; (standard; requires dagger, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Will; 1d4+3 damage, and slide the target 3 squares. &lt;/p&gt;]] <5.5>  damage, and slide the target 3 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sneak Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Once per round, Madrick’s attack deals an extra 2d6 damage to a target he has combat advantage against.&lt;/p&gt;]]  <b>Sneak Attack</b></p><p>Once per round, Madrick’s attack deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sneak Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Once per round, Madrick’s attack deals an extra 2d6 damage to a target he has combat advantage against.&lt;/p&gt;]] <7> damage to a target he has combat advantage against.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reactive Stealth&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If Madrick has cover or concealment when he makes an initiative check, he can make a Stealth check to escape notice.&lt;/p&gt;]]  <b>Reactive Stealth</b></p><p>If Madrick has cover or concealment when he makes an initiative check, he can make a Stealth check to escape notice.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fade Away&lt;/b&gt; (immediate reaction, when madrick takes damage; encounter) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Madrick is invisible until he attacks or until the end of his next turn.&lt;/p&gt;]]  <b>Fade Away</b> (immediate reaction, when madrick takes damage; encounter) ✦ <b>Illusion</b></p><p>Madrick is invisible until he attacks or until the end of his next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fleeting Ghost&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;Madrick can move his speed and make a Stealth check. He does not take the normal penalty from movement on this check.&lt;/p&gt;]]  <b>Fleeting Ghost</b> (move; at-will) </p><p>Madrick can move his speed and make a Stealth check. He does not take the normal penalty from movement on this check.</p></tr></td></table>",

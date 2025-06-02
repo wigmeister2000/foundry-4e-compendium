@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Cackling Depravity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EHgxIM2VqNy8GKzc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -590,7 +592,7 @@
 		},
 		{
 			"name":"Invisible Mania",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kfeNpyhAWzBZtxvF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -626,7 +628,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -860,23 +863,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 262; <b>Bloodied</b> 131</td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 30</td><td><b>Ref</b> 28</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+15)<br><b>Con</b> 23 (+14)</td><td><b>Dex</b> 21 (+13)<br><b>Int</b> 15 (+10)</td><td><b>Wis</b> 19 (+12)<br><b>Cha</b> 13 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +10, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 6<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> dagger  x2.</p><p>[[/roll 0#&lt;b&gt;Cackling Depravity&lt;/b&gt; aura 1; each enemy within the aura takes a -2 penalty to Will.]] <b>Cackling Depravity</b> aura 1; each enemy within the aura takes a -2 penalty to Will.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disembowel&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +22 vs AC; 2d8+7 damage. &lt;/p&gt;]] (⚔) <b>Disembowel</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 3; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disembowel&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+7 damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Disembowel&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +22 vs AC; 2d8+7 damage. &lt;/p&gt;]] <16>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Heartseeking Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets one or two creatures; +22 vs AC; 2d8+7 damage. Effect: The daggers return to the fomorian cackler after it makes the attack. &lt;/p&gt;]] ➶ <b>Heartseeking Daggers</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10; targets one or two creatures; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Heartseeking Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets one or two creatures; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+7 damage. Effect: The daggers return to the fomorian cackler after it makes the attack. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Heartseeking Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; targets one or two creatures; +22 vs AC; 2d8+7 damage. Effect: The daggers return to the fomorian cackler after it makes the attack. &lt;/p&gt;]] <16>  damage. Effect: The daggers return to the fomorian cackler after it makes the attack. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Evil Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +20 vs Will; the target treats the fomorian cackler as invisible (save ends). &lt;/p&gt;]] ➶ <b>Evil Eye</b> (minor, at-will) </p><p>Ranged 5; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Evil Eye&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+20 vs Will&lt;/u&gt;; the target treats the fomorian cackler as invisible (save ends). &lt;/p&gt;]]; the target treats the fomorian cackler as invisible (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Size Alteration&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;The fomorian cackler changes its size to Medium and the cackler’s reach for disembowel becomes 1. The cackler can use a minor action to return to its normal size and regain its normal reach.&lt;/p&gt;]]  <b>Size Alteration</b> (minor; at-will) </p><p>The fomorian cackler changes its size to Medium and the cackler’s reach for disembowel becomes 1. The cackler can use a minor action to return to its normal size and regain its normal reach.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Invisible Mania&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A fomorian cackler’s attacks deal 4d6 extra damage against a creature that cannot see the cackler.&lt;/p&gt;]]  <b>Invisible Mania</b></p><p>A fomorian cackler’s attacks deal [[/roll 4d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Invisible Mania&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A fomorian cackler’s attacks deal 4d6 extra damage against a creature that cannot see the cackler.&lt;/p&gt;]] <14> extra damage against a creature that cannot see the cackler.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -601,23 +602,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 122; <b>Bloodied</b> 61<hr><b>Resist</b> 15 lightning <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 29</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+11)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 23 (+14)<br><b>Int</b> 15 (+10)</td><td><b>Wis</b> 18 (+12)<br><b>Cha</b> 14 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +19</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> plate armor , spiked chain .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Chain&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d4+5 damage plus 2d6 lightning damage, and the target is pulled 1 square. &lt;/p&gt;]] (⚔) <b>Spiked Chain</b> (standard, at-will) ✦ <b>Lightning, Weapon</b></p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Chain&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d4+5 damage plus 2d6 lightning damage, and the target is pulled 1 square. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Chain&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d4+5 damage plus 2d6 lightning damage, and the target is pulled 1 square. &lt;/p&gt;]] <10>  damage plus [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spiked Chain&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d4+5 damage plus 2d6 lightning damage, and the target is pulled 1 square. &lt;/p&gt;]] <7> lightning damage, and the target is pulled 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cyclone Fling&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 1; +19 vs Fortitude; 2d8+8 damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] ᗕ <b>Cyclone Fling</b> (standard, recharge ⚃⚄⚅) </p><p>Close burst 1; [[/roll 1d20+19[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cyclone Fling&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+19 vs Fortitude&lt;/u&gt;; 2d8+8 damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cyclone Fling&lt;/b&gt; (standard, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 1; +19 vs Fortitude; 2d8+8 damage, and the target is pushed 3 squares and knocked prone. &lt;/p&gt;]] <17>  damage, and the target is pushed 3 squares and knocked prone. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Whirlwind Escape&lt;/b&gt; (move; at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Adjacent creatures are pushed 1 square, and the archon zephyrhaunt teleports 8 squares.&lt;/p&gt;]]  <b>Whirlwind Escape</b> (move; at-will) ✦ <b>Teleportation</b></p><p>Adjacent creatures are pushed 1 square, and the archon zephyrhaunt teleports 8 squares.</p></tr></td></table>",

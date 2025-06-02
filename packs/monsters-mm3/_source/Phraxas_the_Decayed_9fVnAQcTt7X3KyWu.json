@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Bulwark of the Blood Rift",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"wckz1ZGD2mQsBA75",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Lord of Despair",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RwGesJhzYlaBnFgx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Lord of Misery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DdUF0c7YjALzqWfv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -144,7 +147,7 @@
 		},
 		{
 			"name":"Master of Baernaloths",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3s2tMhiuWlDfJcgP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -180,7 +183,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -190,7 +194,7 @@
 		},
 		{
 			"name":"Unstoppable",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tVver3fsbBhRHzdF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -226,7 +230,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -291,7 +296,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1172,7 +1178,7 @@
 				"uses":{
 					"value":3,
 					"max":"3",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -1364,23 +1370,10 @@
 				"max":10
 			},
 			"init":{
-				"value":35,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":20,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":35
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1184; <b>Bloodied</b> 592<hr><b>Immune</b> poison, disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +35 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 49</td><td><b>Fort</b> 44</td><td><b>Ref</b> 48</td><td><b>Will</b> 47</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover), teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 32 (+26)<br><b>Con</b> 40 (+30)</td><td><b>Dex</b> 46 (+33)<br><b>Int</b> 31 (+25)</td><td><b>Wis</b> 29 (+24)<br><b>Cha</b> 48 (+34)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Primordial, telepathy 20<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Arcana +32, Insight +31, Intimidate +41</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10,Darkvision<br><b>Passive</b> Perception 34 | Insight 41</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Lord of Misery&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;While Phraxas is bloodied, any enemy that ends its turn within the aura takes 15 damage.&lt;/p&gt;]] ⌀ <b>Lord of Misery</b> ✦ <b>Aura</b> 3</p><p>While Phraxas is bloodied, any enemy that ends its turn within the aura takes 15 damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Master of Baernaloths&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Phraxas has fewer than four baernaloth viziers with him at the start of his turn, he summons 2d4 baernaloth viziers, to a maximum of 8 baernaloth viziers. Each vizier appears in an unoccupied space within 10 squares of Phraxas.&lt;/p&gt;]]  <b>Master of Baernaloths</b> <b></b></p><p>Whenever Phraxas has fewer than four baernaloth viziers with him at the start of his turn, he summons [[/roll 2d4 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Master of Baernaloths&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever Phraxas has fewer than four baernaloth viziers with him at the start of his turn, he summons 2d4 baernaloth viziers, to a maximum of 8 baernaloth viziers. Each vizier appears in an unoccupied space within 10 squares of Phraxas.&lt;/p&gt;]] <5> baernaloth viziers, to a maximum of 8 baernaloth viziers. Each vizier appears in an unoccupied space within 10 squares of Phraxas.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unstoppable&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Phraxas makes saving throws against ongoing damage at the start of his turn as well as at the end of his turn.&lt;/p&gt;]]  <b>Unstoppable</b> <b></b></p><p>Phraxas makes saving throws against ongoing damage at the start of his turn as well as at the end of his turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Plague Touch&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +34 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 30 poison damage (save ends). In addition, the target is exposed to wasting plague.&lt;/p&gt;]] (⚔) <b>Plague Touch</b> (disease, poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+34[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Plague Touch&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+34 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 30 poison damage (save ends). In addition, the target is exposed to wasting plague.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Vile Compulsion&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +34 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Phraxas slides the target 5 squares, and the target makes a basic attack against an ally. The target is then dominated (save ends).&lt;/p&gt;]] ➶ <b>Vile Compulsion</b> (charm) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+34[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Vile Compulsion&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+34 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Phraxas slides the target 5 squares, and the target makes a basic attack against an ally. The target is then dominated (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dread Word&lt;/b&gt; (fear) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 4 (creatures in the burst); +34 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d10 + 10  damage, and the target moves its speed away from Phraxas by the safest route possible.&lt;/p&gt;]] ᗕ <b>Dread Word</b> (fear) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 4 (creatures in the burst); [[/roll 1d20+34[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dread Word&lt;/b&gt; (fear) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 4 (creatures in the burst); &lt;u&gt;+34 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 5d10 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dread Word&lt;/b&gt; (fear) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d10 + 10  damage, and the target moves its speed away from Phraxas by the safest route possible.&lt;/p&gt;]] <37.5>   damage, and the target moves its speed away from Phraxas by the safest route possible.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Nightmare Dreamscape&lt;/b&gt; (fear, psychic, zone) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Phraxas creates a zone in an area burst 3 within 20 squares. The zone lasts until the end of Phraxas’s next turn. Any enemy that ends its turn within the zone takes 20 psychic damage and is dazed until the end of its next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; The zone persists, and Phraxas can move it 5 squares.&lt;/p&gt;]]  <b>Nightmare Dreamscape</b> (fear, psychic, zone) ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> Phraxas creates a zone in an area burst 3 within 20 squares. The zone lasts until the end of Phraxas’s next turn. Any enemy that ends its turn within the zone takes 20 psychic damage and is dazed until the end of its next turn.</p><p><i>Sustain Minor:</i> The zone persists, and Phraxas can move it 5 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Gesture of Nausea&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +34 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d8 + 9 poison damage, and the target takes a -2 penalty to all defenses and is slowed (save ends). In addition, the target is exposed to wasting plague.&lt;/p&gt;]] ➶ <b>Gesture of Nausea</b> (disease, poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+34[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Gesture of Nausea&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+34 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 5d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Gesture of Nausea&lt;/b&gt; (disease, poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d8 + 9 poison damage, and the target takes a -2 penalty to all defenses and is slowed (save ends). In addition, the target is exposed to wasting plague.&lt;/p&gt;]] <31.5>  poison damage, and the target takes a -2 penalty to all defenses and is slowed (save ends). In addition, the target is exposed to wasting plague.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;3/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Phraxas takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; Phraxas gains resist 30 to the triggering damage type until the end of the encounter or until he uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>3/Encounter</b></p><p><i>Trigger:</i> Phraxas takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> Phraxas gains resist 30 to the triggering damage type until the end of the encounter or until he uses variable resistance again.</p></tr></td></table>",

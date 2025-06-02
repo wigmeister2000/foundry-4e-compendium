@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Dragon Affinity",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3mjcYewGRX8PsrAb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1130,7 +1132,7 @@
 		},
 		{
 			"name":"Dragonborn Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"tKrgEeMaOv8Q9XWc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1166,7 +1168,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1222,23 +1225,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 430; <b>Bloodied</b> 215<hr><b>Resist</b> 10 cold, 10 fire, 15 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 35</td><td><b>Ref</b> 34</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+19)<br><b>Con</b> 23 (+17)</td><td><b>Dex</b> 18 (+15)<br><b>Int</b> 25 (+18)</td><td><b>Wis</b> 22 (+17)<br><b>Cha</b> 28 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Lawful Good</td></tr><tr><td><b>Skills</b> Athletics +24, Diplomacy +25, Heal +22, History +23, Insight +22, Intimidate +25, Religion +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 32</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Dragon Affinity&lt;/b&gt; aura 10; each ally within the aura has resist 10 radiant.]] <b>Dragon Affinity</b> aura 10; each ally within the aura has resist 10 radiant.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragontalon Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 3d6+9 damage. &lt;/p&gt;]] (⚔) <b>Dragontalon Blade</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragontalon Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+28 vs AC&lt;/u&gt;; 3d6+9 damage. &lt;/p&gt;]]; [[/roll 3d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dragontalon Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 3d6+9 damage. &lt;/p&gt;]] <19.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Legion Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Kuyutha makes a dragontalon blade attack, and one ally within 10 squares of Kuyutha and of 25th level or lower slides 1 square and makes a basic attack.&lt;/p&gt;]] ⚔ <b>Legion Attack</b> (standard, at-will) </p><p>Kuyutha makes a dragontalon blade attack, and one ally within 10 squares of Kuyutha and of 25th level or lower slides 1 square and makes a basic attack.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bahamut\"s Blade&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 4d6+9 damage, and the target takes ongoing 10 radiant damage and is blinded (save ends both). &lt;/p&gt;]] ⚔ <b>Bahamut\"s Blade</b> (standard, recharges when first bloodied) ✦ <b>Radiant, Weapon</b></p><p>Reach 2; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bahamut\"s Blade&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+30 vs AC&lt;/u&gt;; 4d6+9 damage, and the target takes ongoing 10 radiant damage and is blinded (save ends both). &lt;/p&gt;]]; [[/roll 4d6+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bahamut\"s Blade&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 4d6+9 damage, and the target takes ongoing 10 radiant damage and is blinded (save ends both). &lt;/p&gt;]] <23>  damage, and the target takes ongoing 10 radiant damage and is blinded (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Coldfire Breath&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 6; +27 vs Reflex; 4d12 cold and fire damage. &lt;/p&gt;]] ᗕ <b>Coldfire Breath</b> (standard, recharge ⚃⚄⚅) ✦ <b>Cold, Fire</b></p><p>Close blast 6; [[/roll 1d20+27[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Coldfire Breath&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 6; &lt;u&gt;+27 vs Reflex&lt;/u&gt;; 4d12 cold and fire damage. &lt;/p&gt;]]; [[/roll 4d12 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Coldfire Breath&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Cold, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 6; +27 vs Reflex; 4d12 cold and fire damage. &lt;/p&gt;]] <26> cold and fire damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Will of Bahamut&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 5; +25 vs Will; the target is stunned until the end of Kuyutha’s next turn. &lt;/p&gt;]] ᗕ <b>Will of Bahamut</b> (standard, encounter) </p><p>Close burst 5; [[/roll 1d20+25[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Will of Bahamut&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+25 vs Will&lt;/u&gt;; the target is stunned until the end of Kuyutha’s next turn. &lt;/p&gt;]]; the target is stunned until the end of Kuyutha’s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Draconic Healing&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one ally; the target regains 20 hit points&lt;/p&gt;]] ➶ <b>Draconic Healing</b> (minor, recharge ⚃⚄⚅) ✦ <b>Healing</b></p><p>Ranged 20; targets one ally; the target regains 20 hit points</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dragonborn Fury&lt;/b&gt; (only while bloodied) &lt;/p&gt;&lt;p&gt;Kuyutha gains a +1 racial bonus to attack rolls.&lt;/p&gt;]]  <b>Dragonborn Fury</b> (only while bloodied) </p><p>Kuyutha gains a +1 racial bonus to attack rolls.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GiWrUcLvCF81Vbfq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Intruding Terror",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LgxYqZkSdcR51pD3",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -95,7 +97,7 @@
 		},
 		{
 			"name":"Mind Scream",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"rKHsf8ejFW7nwViL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -131,7 +133,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -196,7 +199,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1045,7 +1049,7 @@
 		},
 		{
 			"name":"Soul Gems",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ckpKlfD9eR5Xsr4H",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1081,7 +1085,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1091,7 +1096,7 @@
 		},
 		{
 			"name":"Undead Reaction Time",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"qsgrU4RHNzAaO5Qy",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1127,7 +1132,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1137,7 +1143,7 @@
 		},
 		{
 			"name":"Indestructible",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RnpSmU4QwCPWkAYr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1173,7 +1179,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1229,23 +1236,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 964; <b>Bloodied</b> 482<br><b>Regeneration</b> 20 (if a demilich takes radiant damage, regeneration doesn’t function until the end of its next turn).<hr><b>Resist</b> 10 necrotic, 10 cold, 10 lightning, 10 psychic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 38</td><td><b>Ref</b> 41</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+17)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 25 (+20)<br><b>Int</b> 30 (+23)</td><td><b>Wis</b> 27 (+21)<br><b>Cha</b> 21 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +28, History +28, Insight +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Intruding Terror&lt;/b&gt; (Fear) aura 5; any living creature within the aura takes a -2 penalty to all defenses.]] <b>Intruding Terror</b> (Fear) aura 5; any living creature within the aura takes a -2 penalty to all defenses.</p><p>[[/roll 0#&lt;b&gt;Mind Scream&lt;/b&gt; (Psychic) aura 5; any living creature that starts its turn within the aura takes 10 psychic damage.]] <b>Mind Scream</b> (Psychic) aura 5; any living creature that starts its turn within the aura takes 10 psychic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +30 vs Reflex; 3d8+8 necrotic damage. &lt;/p&gt;]] (➶) <b>Shadow Ray</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 20; [[/roll 1d20+30[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+30 vs Reflex&lt;/u&gt;; 3d8+8 necrotic damage. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Ray&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +30 vs Reflex; 3d8+8 necrotic damage. &lt;/p&gt;]] <21.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Trap the Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +30 vs Fortitude; the target is stunned (save ends). First Failed Saving Throw: The target is stunned and loses 1d4 healing surges (save ends). Second Failed Saving Throw: The target dies and its soul is trapped in one of the demilich’s soul gems. Sir Deron can have up to six souls trapped in its soul gems at any time. In the Theater of the Fleshless, a target made soulless by this attack is reduced to an empty skin—the perfect costume. The trapped souls can be freed with a Raise Dead ritual. &lt;/p&gt;]] ➶ <b>Trap the Soul</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 20; [[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Trap the Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+30 vs Fortitude&lt;/u&gt;; the target is stunned (save ends). First Failed Saving Throw: The target is stunned and loses 1d4 healing surges (save ends). Second Failed Saving Throw: The target dies and its soul is trapped in one of the demilich’s soul gems. Sir Deron can have up to six souls trapped in its soul gems at any time. In the Theater of the Fleshless, a target made soulless by this attack is reduced to an empty skin—the perfect costume. The trapped souls can be freed with a Raise Dead ritual. &lt;/p&gt;]]; the target is stunned (save ends). First Failed Saving Throw: The target is stunned and loses [[/roll 1d4 #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Trap the Soul&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +30 vs Fortitude; the target is stunned (save ends). First Failed Saving Throw: The target is stunned and loses 1d4 healing surges (save ends). Second Failed Saving Throw: The target dies and its soul is trapped in one of the demilich’s soul gems. Sir Deron can have up to six souls trapped in its soul gems at any time. In the Theater of the Fleshless, a target made soulless by this attack is reduced to an empty skin—the perfect costume. The trapped souls can be freed with a Raise Dead ritual. &lt;/p&gt;]] <2.5> healing surges (save ends). Second Failed Saving Throw: The target dies and its soul is trapped in one of the demilich’s soul gems. Sir Deron can have up to six souls trapped in its soul gems at any time. In the Theater of the Fleshless, a target made soulless by this attack is reduced to an empty skin—the perfect costume. The trapped souls can be freed with a Raise Dead ritual. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +30 vs Reflex; 3d8+8 necrotic and lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is not dazed. Secondary Attack: Two attacks, each against a different target within 5 squares of the primary target; make these attacks whether the primary attack succeeds or fails; +28 vs. Reflex each; 2d8 + 7 necrotic and lightning damage each. &lt;/p&gt;]] ➶ <b>Void Lightning</b> (standard, at-will) ✦ <b>Necrotic, Lightning</b></p><p>Ranged 20; [[/roll 1d20+30[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+30 vs Reflex&lt;/u&gt;; 3d8+8 necrotic and lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is not dazed. Secondary Attack: Two attacks, each against a different target within 5 squares of the primary target; make these attacks whether the primary attack succeeds or fails; +28 vs. Reflex each; 2d8 + 7 necrotic and lightning damage each. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +30 vs Reflex; 3d8+8 necrotic and lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is not dazed. Secondary Attack: Two attacks, each against a different target within 5 squares of the primary target; make these attacks whether the primary attack succeeds or fails; +28 vs. Reflex each; 2d8 + 7 necrotic and lightning damage each. &lt;/p&gt;]] <21.5>  necrotic and lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is not dazed. Secondary Attack: Two attacks, each against a different target within 5 squares of the primary target; make these attacks whether the primary attack succeeds or fails; +28 vs. Reflex each; [[/roll 2d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Void Lightning&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +30 vs Reflex; 3d8+8 necrotic and lightning damage, and the target is dazed (save ends). Miss: Half damage, and the target is not dazed. Secondary Attack: Two attacks, each against a different target within 5 squares of the primary target; make these attacks whether the primary attack succeeds or fails; +28 vs. Reflex each; 2d8 + 7 necrotic and lightning damage each. &lt;/p&gt;]] <16>  necrotic and lightning damage each. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Prismatic Burst&lt;/b&gt; (standard; requires a trapped soul, at-will) ✦ &lt;b&gt;Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 10; +28 vs Reflex; 3d8+8 cold, fire, lightning, and thunder damage, and the target is stunned until the end of the demilich’s next turn. &lt;/p&gt;]] ✻ <b>Prismatic Burst</b> (standard; requires a trapped soul, at-will) ✦ <b>Cold, Fire, Lightning, Thunder</b></p><p>Area burst 3 within 10; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Prismatic Burst&lt;/b&gt; (standard; requires a trapped soul, at-will) ✦ &lt;b&gt;Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 10; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 3d8+8 cold, fire, lightning, and thunder damage, and the target is stunned until the end of the demilich’s next turn. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Prismatic Burst&lt;/b&gt; (standard; requires a trapped soul, at-will) ✦ &lt;b&gt;Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 10; +28 vs Reflex; 3d8+8 cold, fire, lightning, and thunder damage, and the target is stunned until the end of the demilich’s next turn. &lt;/p&gt;]] <21.5>  cold, fire, lightning, and thunder damage, and the target is stunned until the end of the demilich’s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Soul Step&lt;/b&gt; (minor; requires a trapped soul; recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Sir Deron teleports up to 20 squares. Line of sight is not required.&lt;/p&gt;]]  <b>Soul Step</b> (minor; requires a trapped soul; recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>Sir Deron teleports up to 20 squares. Line of sight is not required.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Soul Gems&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The six soul gems contain spirits of the demilich’s victims. At the start of the encounter, the soul gems contain three souls. Crushing a gem releases the soul to the Shadowfell.&lt;/p&gt;]]  <b>Soul Gems</b></p><p>The six soul gems contain spirits of the demilich’s victims. At the start of the encounter, the soul gems contain three souls. Crushing a gem releases the soul to the Shadowfell.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Undead Reaction Time&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The demilich acts two times in a round, on initiative counts 30 and 10. It cannot delay or ready actions. On each turn, it gains a standard action. It can use one immediate action between each turn.&lt;/p&gt;]]  <b>Undead Reaction Time</b></p><p>The demilich acts two times in a round, on initiative counts 30 and 10. It cannot delay or ready actions. On each turn, it gains a standard action. It can use one immediate action between each turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the demilich is reduced to 0 hit points, it crumbles into dust (leaving its soul gems behind), but it is not destroyed. The demilich reappears in 1d10 days within 1 square of its phylactery, unless the phylactery is found and destroyed.&lt;/p&gt;]]  <b>Indestructible</b></p><p>When the demilich is reduced to 0 hit points, it crumbles into dust (leaving its soul gems behind), but it is not destroyed. The demilich reappears in [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the demilich is reduced to 0 hit points, it crumbles into dust (leaving its soul gems behind), but it is not destroyed. The demilich reappears in 1d10 days within 1 square of its phylactery, unless the phylactery is found and destroyed.&lt;/p&gt;]] <5.5> days within 1 square of its phylactery, unless the phylactery is found and destroyed.</p></tr></td></table>",

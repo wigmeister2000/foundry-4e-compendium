@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Life Scourge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"hYMapdtB6Nn897KZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -817,21 +819,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 29; <b>Bloodied</b> 14</td><td style=\"padding-left: 15px;\"></td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 12</td><td><b>Ref</b> 12</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (0)<br><b>Con</b> 13 (+1)</td><td><b>Dex</b> 10 (0)<br><b>Int</b> 13 (+1)</td><td><b>Wis</b> 16 (+3)<br><b>Cha</b> 13 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Diplomacy +6, Intimidate +6</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> battleaxe .</p><p>[[/roll 0#&lt;b&gt;Life Scourge&lt;/b&gt; aura 2; each creature within the aura cannot regain hit points.]] <b>Life Scourge</b> aura 2; each creature within the aura cannot regain hit points.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Shroud&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Illusion, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d10+3 damage, and the goblin acolyte of Maglubiyet becomes invisible to the target until the end of the acolyte\"s next turn. &lt;/p&gt;]] (⚔) <b>Slashing Shroud</b> (standard, at-will) ✦ <b>Illusion, Weapon</b></p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Shroud&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Illusion, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 1d10+3 damage, and the goblin acolyte of Maglubiyet becomes invisible to the target until the end of the acolyte\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Shroud&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Illusion, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+6 vs AC; 1d10+3 damage, and the goblin acolyte of Maglubiyet becomes invisible to the target until the end of the acolyte\"s next turn. &lt;/p&gt;]] <8.5>  damage, and the goblin acolyte of Maglubiyet becomes invisible to the target until the end of the acolyte\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hand of Maglubiyet&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Fortitude; 1d6+5 force damage, and the goblin acolyte of Maglubiyet chooses either to slide the target 3 squares or to immobilize the target until the end of the acolyte\"s next turn. &lt;/p&gt;]] ➶ <b>Hand of Maglubiyet</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 10; [[/roll 1d20+5[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hand of Maglubiyet&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+5 vs Fortitude&lt;/u&gt;; 1d6+5 force damage, and the goblin acolyte of Maglubiyet chooses either to slide the target 3 squares or to immobilize the target until the end of the acolyte\"s next turn. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hand of Maglubiyet&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Fortitude; 1d6+5 force damage, and the goblin acolyte of Maglubiyet chooses either to slide the target 3 squares or to immobilize the target until the end of the acolyte\"s next turn. &lt;/p&gt;]] <8.5>  force damage, and the goblin acolyte of Maglubiyet chooses either to slide the target 3 squares or to immobilize the target until the end of the acolyte\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Maglubiyet\"s Fists&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The goblin acolyte of Maglubiyet makes two hand of Maglubiyet attacks, each against a different target.&lt;/p&gt;]] ➶ <b>Maglubiyet\"s Fists</b> (standard, recharge ⚄⚅) </p><p>The goblin acolyte of Maglubiyet makes two hand of Maglubiyet attacks, each against a different target.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate reaction, when the goblin acolyte of maglubiyet is missed by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The acolyte shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate reaction, when the goblin acolyte of maglubiyet is missed by a melee attack; at-will) </p><p>The acolyte shifts 1 square.</p></tr></td></table>",

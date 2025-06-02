@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"25",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -753,7 +754,7 @@
 		},
 		{
 			"name":"Chromatic Cloak",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"RygFOj0WAfpot6BG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -789,7 +790,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -845,23 +847,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"",

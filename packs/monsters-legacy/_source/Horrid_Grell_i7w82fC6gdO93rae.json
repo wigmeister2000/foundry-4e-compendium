@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -467,10 +468,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -590,23 +591,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 192; <b>Bloodied</b> 96<hr><b>Immune</b> gaze </td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26 (28 while the horrid grell has an enemy grabbed)</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1 (clumsy), fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+5)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 9 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 12<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Rake&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 3d8+5 damage, and the target is slowed and takes a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] (⚔) <b>Tentacle Rake</b> (standard, at-will) ✦ <b>Poison</b></p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Rake&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 3d8+5 damage, and the target is slowed and takes a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle Rake&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 3d8+5 damage, and the target is slowed and takes a -2 penalty to attack rolls (save ends both). &lt;/p&gt;]] <18.5>  damage, and the target is slowed and takes a -2 penalty to attack rolls (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Grab&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +14 vs Fortitude; 2d8+5 damage, and the target is grabbed. The grell can grab only one creature at a time. &lt;/p&gt;]] ⚔ <b>Tentacle Grab</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+14[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Grab&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+14 vs Fortitude&lt;/u&gt;; 2d8+5 damage, and the target is grabbed. The grell can grab only one creature at a time. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Grab&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +14 vs Fortitude; 2d8+5 damage, and the target is grabbed. The grell can grab only one creature at a time. &lt;/p&gt;]] <14>  damage, and the target is grabbed. The grell can grab only one creature at a time. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Venomous Bite&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Grabbed targets only; +14 vs AC; 1d8+5 damage, and the target is stunned (save ends). &lt;/p&gt;]] ⚔ <b>Venomous Bite</b> (minor 1/round, at-will) ✦ <b>Poison</b></p><p>Grabbed targets only; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Venomous Bite&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Grabbed targets only; &lt;u&gt;+14 vs AC&lt;/u&gt;; 1d8+5 damage, and the target is stunned (save ends). &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Venomous Bite&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Grabbed targets only; +14 vs AC; 1d8+5 damage, and the target is stunned (save ends). &lt;/p&gt;]] <9.5>  damage, and the target is stunned (save ends). </p></tr></td></table>",

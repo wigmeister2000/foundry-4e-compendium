@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -410,23 +411,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 108; <b>Bloodied</b> 54<hr><b>Resist</b> 15 necrotic, insubstantial <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 28</td><td><b>Ref</b> 29</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 7 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+14)<br><b>Con</b> 18 (+12)</td><td><b>Dex</b> 24 (+15)<br><b>Int</b> 12 (+9)</td><td><b>Wis</b> 14 (+10)<br><b>Cha</b> 15 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ephermeral Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 2d8+7 damage. &lt;/p&gt;]] (⚔) <b>Ephermeral Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ephermeral Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 2d8+7 damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ephermeral Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 2d8+7 damage. &lt;/p&gt;]] <16>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Manifold Strike&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets three enemies in area; +20 vs AC; 1d10+7 damage. The doomsept shifts 2 squares for each successful attack. &lt;/p&gt;]] ᗕ <b>Manifold Strike</b> (standard, recharge ⚅</p><p>Close burst 3; targets three enemies in area; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Manifold Strike&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets three enemies in area; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d10+7 damage. The doomsept shifts 2 squares for each successful attack. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Manifold Strike&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Close burst 3; targets three enemies in area; +20 vs AC; 1d10+7 damage. The doomsept shifts 2 squares for each successful attack. &lt;/p&gt;]] <12.5>  damage. The doomsept shifts 2 squares for each successful attack. </p></tr></td></table>",

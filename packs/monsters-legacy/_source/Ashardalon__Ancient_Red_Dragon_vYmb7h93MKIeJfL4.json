@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 20",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"stwPyiNlnqh2OZkj",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Abyssal Cyclone",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"cIEnwevKTa1GklbA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -330,7 +333,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -732,10 +736,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1632,10 +1636,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1755,23 +1759,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1200; <b>Bloodied</b> 600<br><b>Regeneration</b> 20<hr><b>Resist</b> 40 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +22 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 46</td><td><b>Fort</b> 48</td><td><b>Ref</b> 42</td><td><b>Will</b> 43</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 12, fly 12 (hover), overland flight 15</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 34 (+27)<br><b>Con</b> 30 (+25)</td><td><b>Dex</b> 25 (+22)<br><b>Int</b> 22 (+21)</td><td><b>Wis</b> 22 (+21)<br><b>Cha</b> 19 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +24, Insight +26, Intimidate +24</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Abyssal Cyclone&lt;/b&gt; (Fire) aura 5; at the start of Ashardalon’s turn, any creature within the aura takes 20 fire damage and is pulled 3 squares.]] <b>Abyssal Cyclone</b> (Fire) aura 5; at the start of Ashardalon’s turn, any creature within the aura takes 20 fire damage and is pulled 3 squares.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 4d12+12 fire damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 4; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+35 vs AC&lt;/u&gt;; 4d12+12 fire damage. &lt;/p&gt;]]; [[/roll 4d12+12#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 4d12+12 fire damage. &lt;/p&gt;]] <38>  fire damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 3d8+10 damage. This attack scores a critical hit on a roll of 18, 19, or 20 (a roll of 18 or 19 is not an automatic hit, however). &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 4; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+35 vs AC&lt;/u&gt;; 3d8+10 damage. This attack scores a critical hit on a roll of 18, 19, or 20 (a roll of 18 or 19 is not an automatic hit, however). &lt;/p&gt;]]; [[/roll 3d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 3d8+10 damage. This attack scores a critical hit on a roll of 18, 19, or 20 (a roll of 18 or 19 is not an automatic hit, however). &lt;/p&gt;]] <23.5>  damage. This attack scores a critical hit on a roll of 18, 19, or 20 (a roll of 18 or 19 is not an automatic hit, however). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Demonic Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ashardalon makes two claw attacks and one bite attack&lt;/p&gt;]] ⚔ <b>Demonic Fury</b> (standard, at-will) </p><p>Ashardalon makes two claw attacks and one bite attack</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Torrent&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +33 vs Fortitude; 6d10+10 fire damage, and the target slides 5 squares and is immobilized (save ends). &lt;/p&gt;]] ᗕ <b>Abyssal Torrent</b> (standard, recharge ⚄⚅) ✦ <b>Fire</b></p><p>Close burst 5; [[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Torrent&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+33 vs Fortitude&lt;/u&gt;; 6d10+10 fire damage, and the target slides 5 squares and is immobilized (save ends). &lt;/p&gt;]]; [[/roll 6d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Abyssal Torrent&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +33 vs Fortitude; 6d10+10 fire damage, and the target slides 5 squares and is immobilized (save ends). &lt;/p&gt;]] <43>  fire damage, and the target slides 5 squares and is immobilized (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +33 vs Reflex; 8d12+10 fire damage, and Ashardalon makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +33 vs Fortitude; the target’s fire resistance is negated until the end of the encounter. Miss: Half damage, and no secondary attack. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Fire</b></p><p>Close blast 5; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 8d12+10 fire damage, and Ashardalon makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 8d12+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +33 vs Reflex; 8d12+10 fire damage, and Ashardalon makes a secondary attack against the same target. &lt;/p&gt;]] <62>  fire damage, and Ashardalon makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+33 vs Fortitude&lt;/u&gt;; the target’s fire resistance is negated until the end of the encounter. Miss: Half damage, and no secondary attack. &lt;/p&gt;]]; the target’s fire resistance is negated until the end of the encounter. Miss: Half damage, and no secondary attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dominating Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +35 vs Will; the target is dominated until the end of Ashardalon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Dominating Presence</b> (standard, encounter) ✦ <b>Charm</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+35[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dominating Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+35 vs Will&lt;/u&gt;; the target is dominated until the end of Ashardalon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is dominated until the end of Ashardalon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ashardalon explodes in a burst of flame; close burst 10; +33 vs Reflex; 4d10+15 fire damage. Miss: Half damage. In addition, a balor appears in part of the space formerly occupied by Ashardalon. &lt;/p&gt;]] ᗕ <b>Death Burst</b> (standard, at-will) ✦ <b>Fire</b></p><p>Ashardalon explodes in a burst of flame; close burst 10; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ashardalon explodes in a burst of flame; close burst 10; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 4d10+15 fire damage. Miss: Half damage. In addition, a balor appears in part of the space formerly occupied by Ashardalon. &lt;/p&gt;]]; [[/roll 4d10+15#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Burst&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ashardalon explodes in a burst of flame; close burst 10; +33 vs Reflex; 4d10+15 fire damage. Miss: Half damage. In addition, a balor appears in part of the space formerly occupied by Ashardalon. &lt;/p&gt;]] <37>  fire damage. Miss: Half damage. In addition, a balor appears in part of the space formerly occupied by Ashardalon. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Strike&lt;/b&gt; (immediate reaction, when an enemy moves to a position where it flanks ashardalon, at-will) &lt;/p&gt;&lt;p&gt;Ashardalon attacks the triggering enemy with his tail: reach 4; +32 vs Reflex; 6d10+12 damage, and the target is pushed 3 squares. &lt;/p&gt;]] ⚔ <b>Tail Strike</b> (immediate reaction, when an enemy moves to a position where it flanks ashardalon, at-will) </p><p>Ashardalon attacks the triggering enemy with his tail: reach 4; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Strike&lt;/b&gt; (immediate reaction, when an enemy moves to a position where it flanks ashardalon, at-will) &lt;/p&gt;&lt;p&gt;Ashardalon attacks the triggering enemy with his tail: reach 4; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 6d10+12 damage, and the target is pushed 3 squares. &lt;/p&gt;]]; [[/roll 6d10+12#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tail Strike&lt;/b&gt; (immediate reaction, when an enemy moves to a position where it flanks ashardalon, at-will) &lt;/p&gt;&lt;p&gt;Ashardalon attacks the triggering enemy with his tail: reach 4; +32 vs Reflex; 6d10+12 damage, and the target is pushed 3 squares. &lt;/p&gt;]] <45>  damage, and the target is pushed 3 squares. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon’s breath weapon recharges, and the dragon uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) ✦ <b>Psychic</b></p><p>The dragon’s breath weapon recharges, and the dragon uses it immediately.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -953,23 +955,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 81; <b>Bloodied</b> 40<hr><b>Resist</b> 5 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 18</td><td><b>Ref</b> 20</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+6)<br><b>Con</b> 15 (+7)</td><td><b>Dex</b> 15 (+7)<br><b>Int</b> 20 (+10)</td><td><b>Wis</b> 19 (+9)<br><b>Cha</b> 12 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, telepathy 5<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Athletics +11, Bluff +11, Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> greatsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shardblade&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 damage.&lt;/p&gt;]] (⚔) <b>Shardblade</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shardblade&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shardblade&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 7 damage.&lt;/p&gt;]] <18>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Shadows&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 psychic damage, and the target is blinded until the end of the executioner’s next turn.&lt;/p&gt;]] (➶) <b>Mind Shadows</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Shadows&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Shadows&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 psychic damage, and the target is blinded until the end of the executioner’s next turn.&lt;/p&gt;]] <8.5>  psychic damage, and the target is blinded until the end of the executioner’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Psychic Infiltration&lt;/b&gt; (psychic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature that cannot see the executioner); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target takes ongoing 20 psychic damage and is dazed (save ends both). Until the target saves against this effect or drops to 0 hit points or fewer, the executioner is removed from play. When this effect ends, the executioner appears in an unoccupied square of its choice adjacent to the target.&lt;/p&gt;]] ⚔ <b>Psychic Infiltration</b> (psychic, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature that cannot see the executioner); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Psychic Infiltration&lt;/b&gt; (psychic, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature that cannot see the executioner); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target takes ongoing 20 psychic damage and is dazed (save ends both). Until the target saves against this effect or drops to 0 hit points or fewer, the executioner is removed from play. When this effect ends, the executioner appears in an unoccupied square of its choice adjacent to the target.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shardswarm&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Each enemy adjacent to the executioner grants combat advantage until the end of the executioner’s next turn. The executioner then teleports 3 squares.&lt;/p&gt;]]  <b>Shardswarm</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Effect:</i> Each enemy adjacent to the executioner grants combat advantage until the end of the executioner’s next turn. The executioner then teleports 3 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Psionic Boost&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The executioner hits with shardblade or mind shadows.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The attack deals 2d6 extra psychic damage.&lt;/p&gt;]]  <b>Psionic Boost</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Trigger:</i> The executioner hits with shardblade or mind shadows.</p><p><i>Effect (Free Action):</i> The attack deals [[/roll 2d6 #&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Psionic Boost&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The attack deals 2d6 extra psychic damage.&lt;/p&gt;]] <7> extra psychic damage.</p></tr></td></table>",

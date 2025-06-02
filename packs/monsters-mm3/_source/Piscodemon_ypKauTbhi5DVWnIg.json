@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Demonic Rally",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"C8E6iaO2y7klYNUx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"All-Around Vision",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SLnD57yEFf04d8TO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1029,7 +1032,7 @@
 				"uses":{
 					"value":2,
 					"max":"2",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -1221,23 +1224,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 138; <b>Bloodied</b> 69</td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 25</td><td><b>Ref</b> 27</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+14)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 21 (+12)<br><b>Int</b> 30 (+17)</td><td><b>Wis</b> 23 (+13)<br><b>Cha</b> 27 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, telepathy 20<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Arcana +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Demonic Rally&lt;/b&gt; (healing) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Any bloodied demon that ends its turn within the aura regains 5 hit points.&lt;/p&gt;]] ⌀ <b>Demonic Rally</b> (healing) ✦ <b>Aura</b> 3</p><p>Any bloodied demon that ends its turn within the aura regains 5 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;All-Around Vision&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Enemies can’t gain combat advantage by flanking the piscodemon.&lt;/p&gt;]]  <b>All-Around Vision</b> <b></b></p><p>Enemies can’t gain combat advantage by flanking the piscodemon.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The piscodemon must not have two creatures grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and the target is grabbed.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The piscodemon must not have two creatures grabbed.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and the target is grabbed.&lt;/p&gt;]] <15>  damage, and the target is grabbed.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Writhing Tentacles&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the piscodemon); +19 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 poison damage, and the target takes ongoing 10 poison damage and is weakened (save ends both).&lt;/p&gt;]] ⚔ <b>Writhing Tentacles</b> (poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature grabbed by the piscodemon); [[/roll 1d20+19[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Writhing Tentacles&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature grabbed by the piscodemon); &lt;u&gt;+19 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Writhing Tentacles&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 poison damage, and the target takes ongoing 10 poison damage and is weakened (save ends both).&lt;/p&gt;]] <15>  poison damage, and the target takes ongoing 10 poison damage and is weakened (save ends both).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Vision of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +17 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 6 psychic damage, and the target is slowed (save ends). In addition, the target makes a melee basic attack as a free action against a target of the piscodemon’s choice.&lt;/p&gt;]] ➶ <b>Vision of Madness</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+17[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Vision of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+17 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Vision of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 6 psychic damage, and the target is slowed (save ends). In addition, the target makes a melee basic attack as a free action against a target of the piscodemon’s choice.&lt;/p&gt;]] <16.5>  psychic damage, and the target is slowed (save ends). In addition, the target makes a melee basic attack as a free action against a target of the piscodemon’s choice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Writhing Ground&lt;/b&gt; (zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); +17 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 6 damage, and the target is slowed (save ends). The burst creates a zone that lasts until the end of the encounter. Any creature that starts its turn within the zone is slowed (save ends).&lt;/p&gt;]] ✻ <b>Writhing Ground</b> (zone) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 1 within 10 (creatures in the burst); [[/roll 1d20+17[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Writhing Ground&lt;/b&gt; (zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (creatures in the burst); &lt;u&gt;+17 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Writhing Ground&lt;/b&gt; (zone) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 6 damage, and the target is slowed (save ends). The burst creates a zone that lasts until the end of the encounter. Any creature that starts its turn within the zone is slowed (save ends).&lt;/p&gt;]] <22.5>  damage, and the target is slowed (save ends). The burst creates a zone that lasts until the end of the encounter. Any creature that starts its turn within the zone is slowed (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Wail&lt;/b&gt; (fear, thunder) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The piscodemon is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 3 (creatures in the burst); +17 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 6 thunder damage, and the piscodemon pushes the target 5 squares.&lt;/p&gt;]] ᗕ <b>Bloodied Wail</b> (fear, thunder) <b></b></p><p><i>Trigger:</i> The piscodemon is first bloodied.</p><p><i>Attack (Free Action):</i> Close burst 3 (creatures in the burst); [[/roll 1d20+17[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Wail&lt;/b&gt; (fear, thunder) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Free Action):&lt;/i&gt; Close burst 3 (creatures in the burst); &lt;u&gt;+17 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Wail&lt;/b&gt; (fear, thunder) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 6 thunder damage, and the piscodemon pushes the target 5 squares.&lt;/p&gt;]] <24>  thunder damage, and the piscodemon pushes the target 5 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;2/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The piscodemon takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The piscodemon gains resist 15 to the triggering damage type until the end of the encounter or until it uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>2/Encounter</b></p><p><i>Trigger:</i> The piscodemon takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The piscodemon gains resist 15 to the triggering damage type until the end of the encounter or until it uses variable resistance again.</p></tr></td></table>",

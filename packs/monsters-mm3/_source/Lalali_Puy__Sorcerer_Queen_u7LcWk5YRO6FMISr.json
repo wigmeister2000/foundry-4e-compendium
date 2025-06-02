@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Ravenous Ghosts",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Q8YZpV2xDU0KPTmh",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Oba's Ambition",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"oPhqLiJSCcZ2B3OU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,7 +336,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1582,23 +1586,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1032; <b>Bloodied</b> 516</td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 39</td><td><b>Ref</b> 39</td><td><b>Will</b> 42</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+15)<br><b>Con</b> 26 (+22)</td><td><b>Dex</b> 22 (+20)<br><b>Int</b> 27 (+22)</td><td><b>Wis</b> 25 (+21)<br><b>Cha</b> 31 (+24)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +27, Diplomacy +29, History +27, Insight +26, Nature +26, Religion +27</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p><b>Equipment</b> totem, multiple necklaces</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Ravenous Ghosts&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Allies within the aura deal 2d6 extra necrotic damage on melee attacks.&lt;/p&gt;]] ⌀ <b>Ravenous Ghosts</b> (necrotic) ✦ <b>Aura</b> 5</p><p>Allies within the aura deal [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Ravenous Ghosts&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Allies within the aura deal 2d6 extra necrotic damage on melee attacks.&lt;/p&gt;]] <7> extra necrotic damage on melee attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Oba\"s Ambition&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Lalali-Puy regains a spent action point when an enemy cursed by her drops to 0 hit points or fewer.&lt;/p&gt;]]  <b>Oba\"s Ambition</b> <b></b></p><p>Lalali-Puy regains a spent action point when an enemy cursed by her drops to 0 hit points or fewer.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Repelling Touch&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +34 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 9 force damage, and Lalali-Puy pushes the target 5 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Lalali-Puy pushes each enemy cursed by her, other than the target, 2 squares.&lt;/p&gt;]] (⚔) <b>Repelling Touch</b> (force) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+34[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Repelling Touch&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+34 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Repelling Touch&lt;/b&gt; (force) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 9 force damage, and Lalali-Puy pushes the target 5 squares.&lt;/p&gt;]] <36>  force damage, and Lalali-Puy pushes the target 5 squares.</p><p><i>Effect:</i> Lalali-Puy pushes each enemy cursed by her, other than the target, 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Maw&lt;/b&gt; (force, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +34 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 9 force damage, and Lalali-Puy slides the target 4 squares.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Lalali-Puy slides each enemy cursed by her, other than the target, 2 squares.&lt;/p&gt;]] (➶) <b>Spirit Maw</b> (force, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+34[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Maw&lt;/b&gt; (force, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+34 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Spirit Maw&lt;/b&gt; (force, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 9 force damage, and Lalali-Puy slides the target 4 squares.&lt;/p&gt;]] <36>  force damage, and Lalali-Puy slides the target 4 squares.</p><p><i>Effect:</i> Lalali-Puy slides each enemy cursed by her, other than the target, 2 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Spirit Gale&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 15 (enemies in the burst); +32 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 3 necrotic and psychic damage, and the target is immobilized (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One enemy cursed by Lalali-Puy that she can see is immobilized (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The cursed enemy is stunned instead of immobilized.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage, and the target is slowed until the end of Lalali-Puy’s next turn.&lt;/p&gt;]] ✻ <b>Spirit Gale</b> (necrotic, psychic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Attack:</i> Area burst 2 within 15 (enemies in the burst); [[/roll 1d20+32[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Spirit Gale&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 15 (enemies in the burst); &lt;u&gt;+32 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d10 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Spirit Gale&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 3 necrotic and psychic damage, and the target is immobilized (save ends).&lt;/p&gt;]] <36>  necrotic and psychic damage, and the target is immobilized (save ends).</p><p><i>Effect:</i> One enemy cursed by Lalali-Puy that she can see is immobilized (save ends).</p><p><i>First Failed Saving Throw:</i> The cursed enemy is stunned instead of immobilized.</p><p><i>Miss:</i> Half damage, and the target is slowed until the end of Lalali-Puy’s next turn.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Oba\"s Curse&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One creature within 15 squares of Lalali-Puy is cursed (save ends). When Lalali-Puy deals damage with a melee or a ranged attack to a target other than the cursed creature, the cursed creature takes an equal amount of damage.&lt;/p&gt;]]  <b>Oba\"s Curse</b> ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> One creature within 15 squares of Lalali-Puy is cursed (save ends). When Lalali-Puy deals damage with a melee or a ranged attack to a target other than the cursed creature, the cursed creature takes an equal amount of damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Grasp&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 15 (one creature cursed by Lalali-Puy in the burst); +32 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Lalali-Puy ends one effect on her, including one that does not normally end on a save, and subjects the target to the same effect (save ends).&lt;/p&gt;]] ᗕ <b>Oba\"s Grasp</b> ✦ Recharge ⚅</p><p><i>Attack:</i> Close burst 15 (one creature cursed by Lalali-Puy in the burst); [[/roll 1d20+32[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Grasp&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 15 (one creature cursed by Lalali-Puy in the burst); &lt;u&gt;+32 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Lalali-Puy ends one effect on her, including one that does not normally end on a save, and subjects the target to the same effect (save ends).</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Oba\"s Blessing&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Lalali-Puy removes her curse from one enemy she can see and ends one effect on her or an ally within 20 squares of her.&lt;/p&gt;]]  <b>Oba\"s Blessing</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> Lalali-Puy removes her curse from one enemy she can see and ends one effect on her or an ally within 20 squares of her.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Punishment&lt;/b&gt; (psychic, teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy hits Lalali-Puy.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 15 (the triggering enemy); +32 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 6 psychic damage, and Lalali-Puy teleports the target 10 squares.&lt;/p&gt;]] ᗕ <b>Oba\"s Punishment</b> (psychic, teleportation) ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy hits Lalali-Puy.</p><p><i>Attack (Immediate Reaction):</i> Close burst 15 (the triggering enemy); [[/roll 1d20+32[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Punishment&lt;/b&gt; (psychic, teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 15 (the triggering enemy); &lt;u&gt;+32 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Punishment&lt;/b&gt; (psychic, teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d8 + 6 psychic damage, and Lalali-Puy teleports the target 10 squares.&lt;/p&gt;]] <33>  psychic damage, and Lalali-Puy teleports the target 10 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Vengeance&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Lalali-Puy is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 15 (enemies in the burst); +32 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 3 necrotic and psychic damage, and the target is stunned until the end of Lalali-Puy’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The target is subjected to Oba’s curse (save ends).&lt;/p&gt;]] ᗕ <b>Oba\"s Vengeance</b> (necrotic, psychic) ✦ <b>Encounter</b></p><p><i>Trigger:</i> Lalali-Puy is first bloodied.</p><p><i>Attack (No Action):</i> Close burst 15 (enemies in the burst); [[/roll 1d20+32[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Vengeance&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (No Action):&lt;/i&gt; Close burst 15 (enemies in the burst); &lt;u&gt;+32 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d10 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Oba\"s Vengeance&lt;/b&gt; (necrotic, psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d10 + 3 necrotic and psychic damage, and the target is stunned until the end of Lalali-Puy’s next turn.&lt;/p&gt;]] <36>  necrotic and psychic damage, and the target is stunned until the end of Lalali-Puy’s next turn.</p><p><i>Effect:</i> The target is subjected to Oba’s curse (save ends).</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 15",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kdyqi8rgHoXLpQeK",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Aura of Ruin",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TtzxhQM4kdYgvpr5",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -380,10 +383,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -638,7 +641,7 @@
 		},
 		{
 			"name":"Bloodthirst",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lCapkKSUeL2YnbMi",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -674,7 +677,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -908,23 +912,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 472; <b>Bloodied</b> 236<br><b>Regeneration</b> 15 (if an abhorrent reaper takes radiant damage, regeneration doesn’t function until the end of its next turn)<hr><b>Resist</b> 10 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, fear, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 38</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 12 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+21)<br><b>Con</b> 20 (+18)</td><td><b>Dex</b> 21 (+18)<br><b>Int</b> 18 (+17)</td><td><b>Wis</b> 16 (+16)<br><b>Cha</b> 24 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +25</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> robes, sickle .</p><p>[[/roll 0#&lt;b&gt;Aura of Ruin&lt;/b&gt; aura 5; any ally within the aura deals 1d6 extra necrotic damage with melee attacks.]] <b>Aura of Ruin</b> aura 5; any ally within the aura deals 1d6 extra necrotic damage with melee attacks.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Abhorrent Sickle&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 3d8+9 necrotic damage. &lt;/p&gt;]] (⚔) <b>Abhorrent Sickle</b> (standard, at-will) ✦ <b>Necrotic, Weapon</b></p><p>Reach 2; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Abhorrent Sickle&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+33 vs AC&lt;/u&gt;; 3d8+9 necrotic damage. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Abhorrent Sickle&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 3d8+9 necrotic damage. &lt;/p&gt;]] <22.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hateful Charge&lt;/b&gt; (standard; requires sickle; usable only when charging, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 3d8+9 necrotic damage, and the target is knocked prone and is immobilized until the end of the abhorrent reaper’s next turn. &lt;/p&gt;]] ⚔ <b>Hateful Charge</b> (standard; requires sickle; usable only when charging, at-will) ✦ <b>Necrotic, Weapon</b></p><p>[[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hateful Charge&lt;/b&gt; (standard; requires sickle; usable only when charging, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+33 vs AC&lt;/u&gt;; 3d8+9 necrotic damage, and the target is knocked prone and is immobilized until the end of the abhorrent reaper’s next turn. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hateful Charge&lt;/b&gt; (standard; requires sickle; usable only when charging, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+33 vs AC; 3d8+9 necrotic damage, and the target is knocked prone and is immobilized until the end of the abhorrent reaper’s next turn. &lt;/p&gt;]] <22.5>  necrotic damage, and the target is knocked prone and is immobilized until the end of the abhorrent reaper’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hate\"s Cleave&lt;/b&gt; (standard; requires sickle, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +31 vs AC; 4d6+9 necrotic damage. &lt;/p&gt;]] ᗕ <b>Hate\"s Cleave</b> (standard; requires sickle, at-will) ✦ <b>Necrotic, Weapon</b></p><p>Close burst 2; targets enemies; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hate\"s Cleave&lt;/b&gt; (standard; requires sickle, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; &lt;u&gt;+31 vs AC&lt;/u&gt;; 4d6+9 necrotic damage. &lt;/p&gt;]]; [[/roll 4d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Hate\"s Cleave&lt;/b&gt; (standard; requires sickle, at-will) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +31 vs AC; 4d6+9 necrotic damage. &lt;/p&gt;]] <23>  necrotic damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodthirst&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an abhorrent reaper bloodies an enemy, one of the abhorrent reaper’s allies can make a melee basic attack against the bloodied creature as a free action.&lt;/p&gt;]]  <b>Bloodthirst</b></p><p>When an abhorrent reaper bloodies an enemy, one of the abhorrent reaper’s allies can make a melee basic attack against the bloodied creature as a free action.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Umbral Phantasm&lt;/b&gt; (immediate interrupt, when the abhorrent reaper would take damage; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The abhorrent reaper terror becomes insubstantial until it attacks or until the end of its next turn.&lt;/p&gt;]]  <b>Umbral Phantasm</b> (immediate interrupt, when the abhorrent reaper would take damage; recharge ⚄⚅) </p><p>The abhorrent reaper terror becomes insubstantial until it attacks or until the end of its next turn.</p></tr></td></table>",

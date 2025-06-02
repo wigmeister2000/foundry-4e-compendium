@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Ambush",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KYM2SpJHQAjEXCRN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 208; <b>Bloodied</b> 104<hr><b>Resist</b> 10 acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 26</td><td><b>Ref</b> 24</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 19 (+10)</td><td><b>Wis</b> 21 (+11)<br><b>Cha</b> 15 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +13, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 5<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ambush&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mimic deals 3d6 extra damage against surprised foes.&lt;/p&gt;]]  <b>Ambush</b> <b></b></p><p>The mimic deals [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ambush&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mimic deals 3d6 extra damage against surprised foes.&lt;/p&gt;]] <10.5> extra damage against surprised foes.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 7 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 7 damage.&lt;/p&gt;]] <20.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crushing Tendrils&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature, or two creatures if the mimic has no creatures grabbed); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 7 damage, and the mimic grabs the target (escape DC 25) until the end of the mimic’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Standard:&lt;/i&gt; Each grab persists until the end of the mimic’s next turn, and each grabbed target takes 15 acid damage.&lt;/p&gt;]] ⚔ <b>Crushing Tendrils</b> (acid) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature, or two creatures if the mimic has no creatures grabbed); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crushing Tendrils&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature, or two creatures if the mimic has no creatures grabbed); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crushing Tendrils&lt;/b&gt; (acid) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 7 damage, and the mimic grabs the target (escape DC 25) until the end of the mimic’s next turn.&lt;/p&gt;]] <20.5>  damage, and the mimic grabs the target (escape DC 25) until the end of the mimic’s next turn.</p><p><i>Sustain Standard:</i> Each grab persists until the end of the mimic’s next turn, and each grabbed target takes 15 acid damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravening Maw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature grabbed by the mimic); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 7 damage.&lt;/p&gt;]] ⚔ <b>Ravening Maw</b> ✦ <b>At-Will</b> (1/round)</p><p><i>Attack:</i> Melee 3 (one creature grabbed by the mimic); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravening Maw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature grabbed by the mimic); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ravening Maw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 7 damage.&lt;/p&gt;]] <20.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shapeshift&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mimic assumes one of the following forms without changing its size. It remains in the chosen form until it uses this power again.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Ooze Form:&lt;/i&gt; The mimic becomes an ooze. When it squeezes while in this form, it moves its full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Object Form:&lt;/i&gt; While in this form, the mimic has resist 15 to all damage, is immobilized, and cannot attack. In addition, a creature must succeed on a DC 29 Perception check to notice that the mimic is a creature.&lt;/p&gt;]]  <b>Shapeshift</b> (polymorph) ✦ <b>At-Will</b> (1/round)</p><p><i>Effect:</i> The mimic assumes one of the following forms without changing its size. It remains in the chosen form until it uses this power again.</p><p><i>Ooze Form:</i> The mimic becomes an ooze. When it squeezes while in this form, it moves its full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing.</p><p><i>Object Form:</i> While in this form, the mimic has resist 15 to all damage, is immobilized, and cannot attack. In addition, a creature must succeed on a DC 29 Perception check to notice that the mimic is a creature.</p></tr></td></table>",

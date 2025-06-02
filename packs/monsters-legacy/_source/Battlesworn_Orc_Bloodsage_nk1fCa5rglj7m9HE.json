@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -594,23 +596,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 37</td><td><b>Ref</b> 38</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 while charging)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+19)<br><b>Con</b> 24 (+20)</td><td><b>Dex</b> 26 (+21)<br><b>Int</b> 10 (+13)</td><td><b>Wis</b> 29 (+22)<br><b>Cha</b> 17 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><p><b>Equipment</b> hide armor , longspear .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 14 damage. &lt;/p&gt;]] (⚔) <b>Longspear</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longspear&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+33 vs AC&lt;/u&gt;; 14 damage. &lt;/p&gt;]]; 14 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Blood Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +31 vs Reflex; 14 lightning damage, and any enemy adjacent to the target takes 7 necrotic damage, or 14 necrotic damage if the target is bloodied. &lt;/p&gt;]] (➶) <b>Blood Bolt</b> (standard, at-will) ✦ <b>Lightning, Necrotic</b></p><p>Ranged 20; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Blood Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 14 lightning damage, and any enemy adjacent to the target takes 7 necrotic damage, or 14 necrotic damage if the target is bloodied. &lt;/p&gt;]]; 14 lightning damage, and any enemy adjacent to the target takes 7 necrotic damage, or 14 necrotic damage if the target is bloodied. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blood Energy Burst&lt;/b&gt; ( when the battlesworn orc bloodsage drops to 0 hit points, ) ✦ &lt;b&gt;Lightning, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +29 vs Reflex; 14 lightning and necrotic damage. Effect: Each ally within the burst can make a melee basic attack as a free action. &lt;/p&gt;]] ᗕ <b>Blood Energy Burst</b> ( when the battlesworn orc bloodsage drops to 0 hit points, ) ✦ <b>Lightning, Necrotic</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blood Energy Burst&lt;/b&gt; ( when the battlesworn orc bloodsage drops to 0 hit points, ) ✦ &lt;b&gt;Lightning, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 14 lightning and necrotic damage. Effect: Each ally within the burst can make a melee basic attack as a free action. &lt;/p&gt;]]; 14 lightning and necrotic damage. Effect: Each ally within the burst can make a melee basic attack as a free action. </p></tr></td></table>",

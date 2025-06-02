@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -950,23 +951,10 @@
 				"max":10
 			},
 			"init":{
-				"value":24,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":12,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":24
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 356; <b>Bloodied</b> 178<hr><b>Resist</b> 15 poison, 15 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +24 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 37</td><td><b>Ref</b> 39</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+19)<br><b>Con</b> 22 (+18)</td><td><b>Dex</b> 27 (+20)<br><b>Int</b> 16 (+15)</td><td><b>Wis</b> 24 (+19)<br><b>Cha</b> 22 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Any</td></tr><tr><td><b>Skills</b> Acrobatics +25, Athletics +24, Streetwise +23</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p><b>Equipment</b> duelist’s cloak, parrying dagger, leather armor , rapier .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier and Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 3d8+7 damage, and the exalted gallant makes a secondary attack. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +28 vs Reflex; 3d4+7 damage and slide 1 square. &lt;/p&gt;]] (⚔) <b>Rapier and Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier and Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs AC&lt;/u&gt;; 3d8+7 damage, and the exalted gallant makes a secondary attack. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier and Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 3d8+7 damage, and the exalted gallant makes a secondary attack. &lt;/p&gt;]] <20.5>  damage, and the exalted gallant makes a secondary attack. </p><p><i>Secondary Attack</i> [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier and Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 3d4+7 damage and slide 1 square. &lt;/p&gt;]]; [[/roll 3d4+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Rapier and Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +28 vs Reflex; 3d4+7 damage and slide 1 square. &lt;/p&gt;]] <14.5>  damage and slide 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Pinning Blades&lt;/b&gt; (standard; requires combat advantage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs Reflex; 2d8+7 damage and the target takes ongoing 10 damage, is immobilized, and grants combat advantage to all creatures (save ends all). &lt;/p&gt;]] ⚔ <b>Pinning Blades</b> (standard; requires combat advantage, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Pinning Blades&lt;/b&gt; (standard; requires combat advantage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs Reflex&lt;/u&gt;; 2d8+7 damage and the target takes ongoing 10 damage, is immobilized, and grants combat advantage to all creatures (save ends all). &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Pinning Blades&lt;/b&gt; (standard; requires combat advantage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs Reflex; 2d8+7 damage and the target takes ongoing 10 damage, is immobilized, and grants combat advantage to all creatures (save ends all). &lt;/p&gt;]] <16>  damage and the target takes ongoing 10 damage, is immobilized, and grants combat advantage to all creatures (save ends all). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dazing Dagger&lt;/b&gt; (minor 1/round; requires combat advantage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs Reflex; 1d4+7 damage and the target is dazed until the end of the exalted gallant\"s next turn. &lt;/p&gt;]] ⚔ <b>Dazing Dagger</b> (minor 1/round; requires combat advantage, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dazing Dagger&lt;/b&gt; (minor 1/round; requires combat advantage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs Reflex&lt;/u&gt;; 1d4+7 damage and the target is dazed until the end of the exalted gallant\"s next turn. &lt;/p&gt;]]; [[/roll 1d4+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dazing Dagger&lt;/b&gt; (minor 1/round; requires combat advantage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs Reflex; 1d4+7 damage and the target is dazed until the end of the exalted gallant\"s next turn. &lt;/p&gt;]] <9.5>  damage and the target is dazed until the end of the exalted gallant\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Blink Step&lt;/b&gt; (minor; recharge ⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The exalted gallant gains teleport 5 until the end of its next turn.&lt;/p&gt;]]  <b>Blink Step</b> (minor; recharge ⚅) ✦ <b>Teleportation</b></p><p>The exalted gallant gains teleport 5 until the end of its next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cloak Tangle&lt;/b&gt; (immediate interrupt, when hit with a melee attack that targets ac or reflex; at-will) &lt;/p&gt;&lt;p&gt;The exalted gallant gains a +4 bonus to AC and Reflex until the end of its next turn. Additionally the exalted gallant can shift 2 squares and the creature that made the attack that triggered this power grants combat advantage to the exalted gallant until the end of its next turn.&lt;/p&gt;]]  <b>Cloak Tangle</b> (immediate interrupt, when hit with a melee attack that targets ac or reflex; at-will) </p><p>The exalted gallant gains a +4 bonus to AC and Reflex until the end of its next turn. Additionally the exalted gallant can shift 2 squares and the creature that made the attack that triggered this power grants combat advantage to the exalted gallant until the end of its next turn.</p></tr></td></table>",

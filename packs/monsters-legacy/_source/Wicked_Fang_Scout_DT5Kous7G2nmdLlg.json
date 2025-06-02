@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -546,7 +548,7 @@
 		},
 		{
 			"name":"Pack Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"opDvN0cdGM92Cx5r",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -638,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 77; <b>Bloodied</b> 38</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 19</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+6)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 15 (+5)<br><b>Int</b> 10 (+3)</td><td><b>Wis</b> 14 (+5)<br><b>Cha</b> 10 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> shadar-kai short sword, crossbow bolts (20) , hand crossbow , hide armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadar-Kai Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage (crit 1d6+15), or 1d6+11 damage (crit 1d6+17) while bloodied. &lt;/p&gt;]] (⚔) <b>Shadar-Kai Short Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadar-Kai Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d6+9 damage (crit 1d6+15), or 1d6+11 damage (crit 1d6+17) while bloodied. &lt;/p&gt;]]; [[/roll 1d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadar-Kai Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage (crit 1d6+15), or 1d6+11 damage (crit 1d6+17) while bloodied. &lt;/p&gt;]] <12.5>  damage (crit [[/roll 1d6+15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadar-Kai Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage (crit 1d6+15), or 1d6+11 damage (crit 1d6+17) while bloodied. &lt;/p&gt;]] <18.5> ), or [[/roll 1d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadar-Kai Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage (crit 1d6+15), or 1d6+11 damage (crit 1d6+17) while bloodied. &lt;/p&gt;]] <14.5>  damage (crit [[/roll 1d6+17#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadar-Kai Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage (crit 1d6+15), or 1d6+11 damage (crit 1d6+17) while bloodied. &lt;/p&gt;]] <20.5> ) while bloodied. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage, or 1d6+11 damage while bloodied. &lt;/p&gt;]] (➶) <b>Hand Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d6+9 damage, or 1d6+11 damage while bloodied. &lt;/p&gt;]]; [[/roll 1d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage, or 1d6+11 damage while bloodied. &lt;/p&gt;]] <12.5>  damage, or [[/roll 1d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d6+9 damage, or 1d6+11 damage while bloodied. &lt;/p&gt;]] <14.5>  damage while bloodied. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Cowardly Shot&lt;/b&gt; (standard; requires hand crossbow, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10/20; +12 vs AC; 1d6+9 damage, or 1d6+11 damage while bloodied; the gnoll scout can shift 2 squares both before and after making the attack. &lt;/p&gt;]] ➶ <b>Cowardly Shot</b> (standard; requires hand crossbow, at-will) ✦ <b>Weapon</b></p><p>ranged 10/20; [[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Cowardly Shot&lt;/b&gt; (standard; requires hand crossbow, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10/20; &lt;u&gt;+12 vs AC&lt;/u&gt;; 1d6+9 damage, or 1d6+11 damage while bloodied; the gnoll scout can shift 2 squares both before and after making the attack. &lt;/p&gt;]]; [[/roll 1d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Cowardly Shot&lt;/b&gt; (standard; requires hand crossbow, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10/20; +12 vs AC; 1d6+9 damage, or 1d6+11 damage while bloodied; the gnoll scout can shift 2 squares both before and after making the attack. &lt;/p&gt;]] <12.5>  damage, or [[/roll 1d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Cowardly Shot&lt;/b&gt; (standard; requires hand crossbow, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 10/20; +12 vs AC; 1d6+9 damage, or 1d6+11 damage while bloodied; the gnoll scout can shift 2 squares both before and after making the attack. &lt;/p&gt;]] <14.5>  damage while bloodied; the gnoll scout can shift 2 squares both before and after making the attack. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gnoll scout deals an extra 5 damage on melee and ranged attacks against an enemy that has two or more of the scout’s allies adjacent to it.&lt;/p&gt;]]  <b>Pack Attack</b></p><p>The gnoll scout deals an extra 5 damage on melee and ranged attacks against an enemy that has two or more of the scout’s allies adjacent to it.</p></tr></td></table>",

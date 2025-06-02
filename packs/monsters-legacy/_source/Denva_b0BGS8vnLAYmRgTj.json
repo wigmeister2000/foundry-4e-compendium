@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -467,10 +468,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -647,10 +648,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1126,23 +1127,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 206; <b>Bloodied</b> 103</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 23</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 10 (+5)<br><b>Int</b> 17 (+8)</td><td><b>Wis</b> 8 (+4)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +15, Insight +9, Intimidate +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 19</td></td></tr></table><p><b>Equipment</b> heavy shield , longsword , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) </p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Whirling Slashes&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs ; 2d6+5 damage.. Denva makes two longsword attacks. Each one that hits also slides the target 2 squares.&lt;/p&gt;]] ⚔ <b>Whirling Slashes</b> (standard, at-will) ✦ <b>Weapon</b></p><p>+15 vs ; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Whirling Slashes&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs ; 2d6+5 damage.. Denva makes two longsword attacks. Each one that hits also slides the target 2 squares.&lt;/p&gt;]] <12>  damage.. Denva makes two longsword attacks. Each one that hits also slides the target 2 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Vice&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+6 damage, and one ally adjacent to the target can make a melee basic attack against it as a free action, adding +4 to the damage roll. &lt;/p&gt;]] ⚔ <b>Crushing Vice</b> (standard, recharge ⚃⚄⚅) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Vice&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+6 damage, and one ally adjacent to the target can make a melee basic attack against it as a free action, adding +4 to the damage roll. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Crushing Vice&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+6 damage, and one ally adjacent to the target can make a melee basic attack against it as a free action, adding +4 to the damage roll. &lt;/p&gt;]] <15>  damage, and one ally adjacent to the target can make a melee basic attack against it as a free action, adding +4 to the damage roll. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Aberrant Howl&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+6 damage, and Denva and one ally within 5 squares regain 15 hit points. This power can bring a creature reduced to 0 hp back to life. &lt;/p&gt;]] ⚔ <b>Aberrant Howl</b> (standard, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Aberrant Howl&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+6 damage, and Denva and one ally within 5 squares regain 15 hit points. This power can bring a creature reduced to 0 hp back to life. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Aberrant Howl&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+6 damage, and Denva and one ally within 5 squares regain 15 hit points. This power can bring a creature reduced to 0 hp back to life. &lt;/p&gt;]] <15>  damage, and Denva and one ally within 5 squares regain 15 hit points. This power can bring a creature reduced to 0 hp back to life. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Knight\"s Move&lt;/b&gt; (move, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; one ally takes a move action as a free action.&lt;/p&gt;]] ➶ <b>Knight\"s Move</b> (move, encounter) </p><p>Ranged 10; one ally takes a move action as a free action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slimy Skin&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;If Denva is adjacent to an enemy, she shifts to any other square adjacent to that enemy. She can also use this power with the escape action, gaining +2 to the check to escape. If she escapes, she can shift 1 square.&lt;/p&gt;]]  <b>Slimy Skin</b> (move; at-will) </p><p>If Denva is adjacent to an enemy, she shifts to any other square adjacent to that enemy. She can also use this power with the escape action, gaining +2 to the check to escape. If she escapes, she can shift 1 square.</p></tr></td></table>",

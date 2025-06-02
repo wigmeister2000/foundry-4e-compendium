@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -546,7 +548,7 @@
 		},
 		{
 			"name":"Mind Stab",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Anf9jEqt3GsOLHPC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -948,7 +951,7 @@
 		},
 		{
 			"name":"Wild Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"TNnhgKIEp7H35PbF",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -984,7 +987,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1040,23 +1044,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 144; <b>Bloodied</b> 72</td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 20</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 3 see also wild step</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+7)<br><b>Con</b> 12 (+5)</td><td><b>Dex</b> 18 (+8)<br><b>Int</b> 14 (+6)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 20 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +13, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mind Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs Reflex; 2d6+5 force damage. &lt;/p&gt;&lt;p&gt;(➶) &lt;b&gt;Mind Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +12 vs Reflex; 2d6+5 force damage. &lt;/p&gt;]] (⚔) <b>Mind Blade</b> (standard, at-will) ✦ <b>Force</b></p><p>[[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mind Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs Reflex&lt;/u&gt;; 2d6+5 force damage. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mind Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs Reflex; 2d6+5 force damage. &lt;/p&gt;]] <12>  force damage. </p><p>(➶) <b>Mind Blade</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 5/10; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mind Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; 2d6+5 force damage. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mind Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +12 vs Reflex; 2d6+5 force damage. &lt;/p&gt;]] <12>  force damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Slices&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee or Ranged; Vaedin makes two basic attacks. &lt;/p&gt;]] ⚔ <b>Quick Slices</b> (standard, at-will) ✦ <b>Force</b></p><p>Melee or Ranged; Vaedin makes two basic attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mind Slip&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;Vaedin becomes invisible to two targets until the end of his next turn. He becomes insubstantial to and gains concealment against all other enemies until the end of his next turn.&lt;/p&gt;]]  <b>Mind Slip</b> (standard; at-will) </p><p>Vaedin becomes invisible to two targets until the end of his next turn. He becomes insubstantial to and gains concealment against all other enemies until the end of his next turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mind Stab&lt;/b&gt;✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Vaedin hits a target from which he is hidden or invisible, that target takes ongoing 15 psychic damage (save ends).&lt;/p&gt;]]  <b>Mind Stab</b>✦ <b>Psychic</b></p><p>When Vaedin hits a target from which he is hidden or invisible, that target takes ongoing 15 psychic damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wild Step&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Vaedin ignores difficult terrain when he shifts.&lt;/p&gt;]]  <b>Wild Step</b></p><p>Vaedin ignores difficult terrain when he shifts.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Elven Accuracy &lt;/b&gt; (free; encounter) &lt;/p&gt;&lt;p&gt;Vaedin can reroll an attack roll. He must use the second roll, even if it’s lower.&lt;/p&gt;]]  <b>Elven Accuracy </b> (free; encounter) </p><p>Vaedin can reroll an attack roll. He must use the second roll, even if it’s lower.</p></tr></td></table>",

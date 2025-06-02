@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -463,10 +464,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -641,10 +642,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -898,7 +899,7 @@
 		},
 		{
 			"name":"Prone Rendering",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"KweYTDO6GuMmvlJR",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -934,7 +935,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -990,23 +992,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 420; <b>Bloodied</b> 210</td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 32</td><td><b>Ref</b> 31</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+16)<br><b>Con</b> 20 (+14)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 7 (+7)</td><td><b>Wis</b> 18 (+13)<br><b>Cha</b> 12 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +21</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +21 vs AC; 2d12+7 damage (3d12 + 7 damage while bloodied), and the target falls prone. See also prone rending. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+21 vs AC&lt;/u&gt;; 2d12+7 damage (3d12 + 7 damage while bloodied), and the target falls prone. See also prone rending. &lt;/p&gt;]]; [[/roll 2d12+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +21 vs AC; 2d12+7 damage (3d12 + 7 damage while bloodied), and the target falls prone. See also prone rending. &lt;/p&gt;]] <20>  damage ([[/roll 3d12 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +21 vs AC; 2d12+7 damage (3d12 + 7 damage while bloodied), and the target falls prone. See also prone rending. &lt;/p&gt;]] <26.5>  damage while bloodied), and the target falls prone. See also prone rending. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Claw Flurry&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Old Silverclaws makes two claw attacks. While bloodied, it makes two claw attacks and a quick bite&lt;/p&gt;]] ⚔ <b>Claw Flurry</b> (standard, at-will) </p><p>Old Silverclaws makes two claw attacks. While bloodied, it makes two claw attacks and a quick bite</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Bite&lt;/b&gt; (free, when old silverclaws hits a bloodied enemy with a claw attack, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+7 damage (and, while bloodied, ongoing 5 damage [save ends]). See also prone rending. &lt;/p&gt;]] ⚔ <b>Quick Bite</b> (free, when old silverclaws hits a bloodied enemy with a claw attack, at-will) </p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Bite&lt;/b&gt; (free, when old silverclaws hits a bloodied enemy with a claw attack, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 1d8+7 damage (and, while bloodied, ongoing 5 damage [save ends]). See also prone rending. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Bite&lt;/b&gt; (free, when old silverclaws hits a bloodied enemy with a claw attack, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+7 damage (and, while bloodied, ongoing 5 damage [save ends]). See also prone rending. &lt;/p&gt;]] <11.5>  damage (and, while bloodied, ongoing 5 damage [save ends]). See also prone rending. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Taste for Blood&lt;/b&gt; (free, when an enemy within 5 squares becomes bloodied, encounter) &lt;/p&gt;&lt;p&gt;Old Silverclaws moves adjacent to the triggering enemy and bites; +22 vs AC; 2d8+7 damage. See also prone rending. &lt;/p&gt;]] ⚔ <b>Taste for Blood</b> (free, when an enemy within 5 squares becomes bloodied, encounter) </p><p>Old Silverclaws moves adjacent to the triggering enemy and bites; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Taste for Blood&lt;/b&gt; (free, when an enemy within 5 squares becomes bloodied, encounter) &lt;/p&gt;&lt;p&gt;Old Silverclaws moves adjacent to the triggering enemy and bites; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+7 damage. See also prone rending. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Taste for Blood&lt;/b&gt; (free, when an enemy within 5 squares becomes bloodied, encounter) &lt;/p&gt;&lt;p&gt;Old Silverclaws moves adjacent to the triggering enemy and bites; +22 vs AC; 2d8+7 damage. See also prone rending. &lt;/p&gt;]] <16>  damage. See also prone rending. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Howl&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +18 vs Will; the target is dazed (save ends). &lt;/p&gt;]] ᗕ <b>Terrifying Howl</b> (minor, encounter) ✦ <b>Fear</b></p><p>Close burst 5; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Terrifying Howl&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+18 vs Will&lt;/u&gt;; the target is dazed (save ends). &lt;/p&gt;]]; the target is dazed (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Prone Rendering&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Old Silverclaws can score a critical hit against a prone target on an attack roll of 18-20.&lt;/p&gt;]]  <b>Prone Rendering</b></p><p>Old Silverclaws can score a critical hit against a prone target on an attack roll of 18-20.</p></tr></td></table>",

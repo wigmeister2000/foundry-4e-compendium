@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -469,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -724,7 +726,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"aCBhVJPIOu82Lt41",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -760,7 +762,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -770,7 +773,7 @@
 		},
 		{
 			"name":"Stand Your Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LCbxtq0a9py2l3Dw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -806,7 +809,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -862,23 +866,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 81; <b>Bloodied</b> 40</td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>Save</b> +5 against poison</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 21</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+5)<br><b>Con</b> 17 (+6)</td><td><b>Dex</b> 20 (+8)<br><b>Int</b> 13 (+4)</td><td><b>Wis</b> 14 (+5)<br><b>Cha</b> 14 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Giant<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +13, Intimidate +10, Thievery +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> dagger  x4, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 2d4+5 damage. &lt;/p&gt;&lt;p&gt;(➶) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +12 vs AC; 2d4+5 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 2d4+5 damage. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 2d4+5 damage. &lt;/p&gt;]] <10>  damage. </p><p>(➶) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 5/10; [[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+12 vs AC&lt;/u&gt;; 2d4+5 damage. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +12 vs AC; 2d4+5 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Murderous Slice&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Reflex; 2d4+5 damage and the target takes ongoing 5 damage (save ends). &lt;/p&gt;]] ⚔ <b>Murderous Slice</b> (standard, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>[[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Murderous Slice&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs Reflex&lt;/u&gt;; 2d4+5 damage and the target takes ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Murderous Slice&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Reflex; 2d4+5 damage and the target takes ongoing 5 damage (save ends). &lt;/p&gt;]] <10>  damage and the target takes ongoing 5 damage (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Slippery Dodge&lt;/b&gt; (move; recharges when adrik starts his turn adjacent to more than one enemy) &lt;/p&gt;&lt;p&gt;Adrik ends any mark condition affecting him and then shifts 3 squares.&lt;/p&gt;]]  <b>Slippery Dodge</b> (move; recharges when adrik starts his turn adjacent to more than one enemy) </p><p>Adrik ends any mark condition affecting him and then shifts 3 squares.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Adrik deals 1d6 extra damage against any target he has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>Adrik deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Adrik deals 1d6 extra damage against any target he has combat advantage against.&lt;/p&gt;]] <3.5> extra damage against any target he has combat advantage against.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand Your Ground&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect forces a dwarf to move—through a pull, a push, or a slide—the dwarf moves 1 square less than the effect specifies. When an attack would knock the dwarf prone, the dwarf can roll a saving throw to avoid falling prone.&lt;/p&gt;]]  <b>Stand Your Ground</b></p><p>When an effect forces a dwarf to move—through a pull, a push, or a slide—the dwarf moves 1 square less than the effect specifies. When an attack would knock the dwarf prone, the dwarf can roll a saving throw to avoid falling prone.</p></tr></td></table>",

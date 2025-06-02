@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -546,7 +547,7 @@
 		},
 		{
 			"name":"On the Lady's Authority",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"eryu2hEjYoOqdA1W",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -582,7 +583,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 78; <b>Bloodied</b> 39</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 20</td><td><b>Ref</b> 18</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+7)<br><b>Con</b> 14 (+5)</td><td><b>Dex</b> 11 (+3)<br><b>Int</b> 13 (+4)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 11 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Lawful good</td></tr><tr><td><b>Skills</b> Intimidate +8, Streetwise +8</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> bastard sword , heavy shield , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d10+7 damage, and the target is marked until the end of Son of Mercy warden\"s next turn. &lt;/p&gt;]] (⚔) <b>Bastard Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 1d10+7 damage, and the target is marked until the end of Son of Mercy warden\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bastard Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 1d10+7 damage, and the target is marked until the end of Son of Mercy warden\"s next turn. &lt;/p&gt;]] <12.5>  damage, and the target is marked until the end of Son of Mercy warden\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Compulsory Punishment&lt;/b&gt; (standard; requires bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 2d10+7 damage, and whenever the target deals damage, it takes 5 damage (save ends). &lt;/p&gt;]] ⚔ <b>Compulsory Punishment</b> (standard; requires bastard sword, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Compulsory Punishment&lt;/b&gt; (standard; requires bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 2d10+7 damage, and whenever the target deals damage, it takes 5 damage (save ends). &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Compulsory Punishment&lt;/b&gt; (standard; requires bastard sword, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 2d10+7 damage, and whenever the target deals damage, it takes 5 damage (save ends). &lt;/p&gt;]] <18>  damage, and whenever the target deals damage, it takes 5 damage (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Price of Crime&lt;/b&gt; (opportunity, when a target is marked by the son of mercy warden moves or shifts, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs ; 2d6+5 damage.. The Son of Mercy warden makes a bastard sword attack against the triggering enemy.&lt;/p&gt;]] ⚔ <b>Price of Crime</b> (opportunity, when a target is marked by the son of mercy warden moves or shifts, at-will) ✦ <b>Weapon</b></p><p>+12 vs ; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Price of Crime&lt;/b&gt; (opportunity, when a target is marked by the son of mercy warden moves or shifts, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs ; 2d6+5 damage.. The Son of Mercy warden makes a bastard sword attack against the triggering enemy.&lt;/p&gt;]] <12>  damage.. The Son of Mercy warden makes a bastard sword attack against the triggering enemy.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;On the Lady\"s Authority&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the Son of Mercy warden saves against an ongoing effect or condition with the charm or fear keywords, it can make a bastard sword attack against an adjacent enemy as a free action.&lt;/p&gt;]]  <b>On the Lady\"s Authority</b></p><p>Whenever the Son of Mercy warden saves against an ongoing effect or condition with the charm or fear keywords, it can make a bastard sword attack against an adjacent enemy as a free action.</p></tr></td></table>",

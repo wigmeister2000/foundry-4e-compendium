@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1436,7 +1438,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"eEN2YBhWVoFamAw7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1472,7 +1474,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1528,23 +1531,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 288; <b>Bloodied</b> 144 ; see also bloodied breath<hr><b>Resist</b> 15 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 17</td><td><b>Ref</b> 19</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (hover), overland flight 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+6)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 21 (+8)<br><b>Int</b> 13 (+4)</td><td><b>Wis</b> 11 (+3)<br><b>Cha</b> 19 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +13, Bluff +12, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d10+6 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d10+6 damage. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d10+6 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d8+6 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+11 vs AC&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +11 vs AC; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Draconic Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The dragon makes two claw attacks and one bite attack&lt;/p&gt;]] ⚔ <b>Draconic Fury</b> (standard, at-will) </p><p>The dragon makes two claw attacks and one bite attack</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +9 vs Fortitude; 1d12+4 poison damage, and the target takes ongoing 5 poison damage and treats the dragon as invisible (save ends both). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Poison</b></p><p>Close blast 5; [[/roll 1d20+9[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+9 vs Fortitude&lt;/u&gt;; 1d12+4 poison damage, and the target takes ongoing 5 poison damage and treats the dragon as invisible (save ends both). Miss: Half damage. &lt;/p&gt;]]; [[/roll 1d12+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +9 vs Fortitude; 1d12+4 poison damage, and the target takes ongoing 5 poison damage and treats the dragon as invisible (save ends both). Miss: Half damage. &lt;/p&gt;]] <10.5>  poison damage, and the target takes ongoing 5 poison damage and treats the dragon as invisible (save ends both). Miss: Half damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +9 vs Will; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+9[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+9 vs Will&lt;/u&gt;; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of the dragon’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Snap&lt;/b&gt; (immediate interrupt, when an enemy moves adjacent to the dragon, at-will) &lt;/p&gt;&lt;p&gt;The dragon makes a bite attack against the triggering enemy. On a hit, the target also grants combat advantage to the dragon (save ends)&lt;/p&gt;]] ⚔ <b>Quick Snap</b> (immediate interrupt, when an enemy moves adjacent to the dragon, at-will) </p><p>The dragon makes a bite attack against the triggering enemy. On a hit, the target also grants combat advantage to the dragon (save ends)</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;Breath weapon recharges, and the dragon uses it&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>Breath weapon recharges, and the dragon uses it</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Quicksilver Form&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon becomes a liquid wave of quicksilver and shifts 4 squares. It remains in quicksilver form until the end of its next turn. While in quicksilver form, the dragon can’t attack or fly, but it gains a climb speed of 6, ignores difficult terrain, and doesn’t provoke opportunity attacks. It can squeeze through any aperture a Tiny creature could fit through. The dragon can return to its normal form as a free action on its turn. When it returns to normal, each creature within 2 squares grants combat advantage to the dragon until the end of the dragon’s next turn. Sustain Minor: The quicksilver form persists.&lt;/p&gt;]]  <b>Quicksilver Form</b> (move; encounter) ✦ <b>Polymorph</b></p><p>The dragon becomes a liquid wave of quicksilver and shifts 4 squares. It remains in quicksilver form until the end of its next turn. While in quicksilver form, the dragon can’t attack or fly, but it gains a climb speed of 6, ignores difficult terrain, and doesn’t provoke opportunity attacks. It can squeeze through any aperture a Tiny creature could fit through. The dragon can return to its normal form as a free action on its turn. When it returns to normal, each creature within 2 squares grants combat advantage to the dragon until the end of the dragon’s next turn. Sustain Minor: The quicksilver form persists.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon deals 1d6 extra damage against a target granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The dragon deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The dragon deals 1d6 extra damage against a target granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage against a target granting combat advantage to it.</p></tr></td></table>",

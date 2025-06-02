@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -592,23 +593,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":13,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 346; <b>Bloodied</b> 173<hr><b>Resist</b> 25 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +25 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 35</td><td><b>Ref</b> 39</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+17)<br><b>Con</b> 17 (+15)</td><td><b>Dex</b> 28 (+21)<br><b>Int</b> 17 (+15)</td><td><b>Wis</b> 23 (+18)<br><b>Cha</b> 21 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +22, Stealth +27</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><p><b>Equipment</b> leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Claw&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +30 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 21 necrotic damage (plus 6d6 necrotic damage if the target is granting combat advantage to the reaper), and the target is slowed (save ends).&lt;/p&gt;]] (⚔) <b>Shadow Claw</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+30[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Claw&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+30 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll [[/roll 6d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Claw&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 21 necrotic damage (plus 6d6 necrotic damage if the target is granting combat advantage to the reaper), and the target is slowed (save ends).&lt;/p&gt;]] <21> + 21#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadow Claw&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 21 necrotic damage (plus 6d6 necrotic damage if the target is granting combat advantage to the reaper), and the target is slowed (save ends).&lt;/p&gt;]] <42>  necrotic damage (plus 6d6 necrotic damage if the target is granting combat advantage to the reaper), and the target is slowed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hysterical Shadows&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); +28 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 17 psychic damage, and the target falls prone. The target also takes ongoing 15 psychic damage (save ends). The target cannot stand up while taking the ongoing psychic damage.&lt;/p&gt;]] ✻ <b>Hysterical Shadows</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 2 within 10 (enemies in the burst); [[/roll 1d20+28[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hysterical Shadows&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 (enemies in the burst); &lt;u&gt;+28 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 17#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hysterical Shadows&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 17 psychic damage, and the target falls prone. The target also takes ongoing 15 psychic damage (save ends). The target cannot stand up while taking the ongoing psychic damage.&lt;/p&gt;]] <27.5>  psychic damage, and the target falls prone. The target also takes ongoing 15 psychic damage (save ends). The target cannot stand up while taking the ongoing psychic damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shadow Cloak&lt;/b&gt; (illusion) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The reaper is invisible until it hits or misses with an attack, or until the start of the reaper’s next turn.&lt;/p&gt;]]  <b>Shadow Cloak</b> (illusion) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> The reaper is invisible until it hits or misses with an attack, or until the start of the reaper’s next turn.</p></tr></td></table>",

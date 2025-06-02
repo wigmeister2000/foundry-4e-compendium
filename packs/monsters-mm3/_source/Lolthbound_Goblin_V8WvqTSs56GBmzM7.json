@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Drow Inspiration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"JcwyalKb3ZGA4v0I",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -108,7 +109,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1001,28 +1003,15 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 45; <b>Bloodied</b> 22</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 15</td><td><b>Ref</b> 16</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+3)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 17 (+4)<br><b>Int</b> 8 (0)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 9 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> leather armor , war pick .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drow Inspiration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While within 5 squares of a drow ally, the goblin gains a +2 power bonus to attack rolls and all defenses.&lt;/p&gt;]]  <b>Drow Inspiration</b> <b></b></p><p>While within 5 squares of a drow ally, the goblin gains a +2 power bonus to attack rolls and all defenses.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, or 3d8 + 2 damage if the goblin scores a critical hit, and the target is marked until the end of the goblin’s next turn.&lt;/p&gt;]] (⚔) <b>War Pick</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, or 3d8 + 2 damage if the goblin scores a critical hit, and the target is marked until the end of the goblin’s next turn.&lt;/p&gt;]] <11>  damage, or [[/roll 3d8 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;War Pick&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, or 3d8 + 2 damage if the goblin scores a critical hit, and the target is marked until the end of the goblin’s next turn.&lt;/p&gt;]] <15.5>  damage if the goblin scores a critical hit, and the target is marked until the end of the goblin’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stinging Blow&lt;/b&gt; (poison, weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +8 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, or 3d8 + 2 damage if the goblin scores a critical hit, and any ongoing poison damage the target is taking increases by 5.&lt;/p&gt;]] ⚔ <b>Stinging Blow</b> (poison, weapon) ✦ <b>Encounter</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+8[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stinging Blow&lt;/b&gt; (poison, weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+8 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 2#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stinging Blow&lt;/b&gt; (poison, weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, or 3d8 + 2 damage if the goblin scores a critical hit, and any ongoing poison damage the target is taking increases by 5.&lt;/p&gt;]] <11>  damage, or [[/roll 3d8 + 2#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stinging Blow&lt;/b&gt; (poison, weapon) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 2 damage, or 3d8 + 2 damage if the goblin scores a critical hit, and any ongoing poison damage the target is taking increases by 5.&lt;/p&gt;]] <15.5>  damage if the goblin scores a critical hit, and any ongoing poison damage the target is taking increases by 5.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lolthbound Shriek&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast that are not drow, goblins, or spiders); +6 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 thunder damage.&lt;/p&gt;]] ᗕ <b>Lolthbound Shriek</b> (thunder) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close blast 5 (creatures in the blast that are not drow, goblins, or spiders); [[/roll 1d20+6[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lolthbound Shriek&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (creatures in the blast that are not drow, goblins, or spiders); &lt;u&gt;+6 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Lolthbound Shriek&lt;/b&gt; (thunder) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 thunder damage.&lt;/p&gt;]] <11> thunder damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drow Protector&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A melee or ranged attack hits or misses an adjacent drow ally.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The triggering attack targets the goblin instead.&lt;/p&gt;]]  <b>Drow Protector</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> A melee or ranged attack hits or misses an adjacent drow ally.</p><p><i>Effect (Immediate Interrupt):</i> The triggering attack targets the goblin instead.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The goblin is missed by a melee attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The goblin shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> The goblin is missed by a melee attack.</p><p><i>Effect (Immediate Reaction):</i> The goblin shifts 1 square.</p></tr></td></table>",

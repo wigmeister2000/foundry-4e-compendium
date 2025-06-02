@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Bloodlust",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UstFu06bN9r4Qkv1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -513,10 +515,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":"When Nezrebe Makes A Critical Hit With Winnower",
@@ -693,10 +695,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -994,23 +996,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 462; <b>Bloodied</b> 231 ; see savage frenzy<hr><b>Resist</b> 15 acid, 10 variable (1/encounter) <b>Immune</b> fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 39</td><td><b>Ref</b> 36</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+21)<br><b>Con</b> 23 (+18)</td><td><b>Dex</b> 23 (+18)<br><b>Int</b> 21 (+17)</td><td><b>Wis</b> 25 (+19)<br><b>Cha</b> 22 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Endurance +23, Intimidate +23, Nature +24</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 29 | Insight 29</td></td></tr></table><p><b>Equipment</b> Winnower</p><p>[[/roll 0#&lt;b&gt;Bloodlust&lt;/b&gt; aura 3; each ally within the aura gains a +2 bonus to attack rolls.]] <b>Bloodlust</b> aura 3; each ally within the aura gains a +2 bonus to attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Winnower&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +32 vs AC; 2d8+9 damage, and the target is marked until the end of Nezrebe\"s next turn. &lt;/p&gt;]] (⚔) <b>Winnower</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Winnower&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+32 vs AC&lt;/u&gt;; 2d8+9 damage, and the target is marked until the end of Nezrebe\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Winnower&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +32 vs AC; 2d8+9 damage, and the target is marked until the end of Nezrebe\"s next turn. &lt;/p&gt;]] <18>  damage, and the target is marked until the end of Nezrebe\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Bloody Phlegm&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +30 vs Reflex; 1d8+6 acid damage, and the target is blinded (save ends). &lt;/p&gt;]] ➶ <b>Bloody Phlegm</b> (standard, at-will) ✦ <b>Acid</b></p><p>Ranged 10; [[/roll 1d20+30[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Bloody Phlegm&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+30 vs Reflex&lt;/u&gt;; 1d8+6 acid damage, and the target is blinded (save ends). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Bloody Phlegm&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +30 vs Reflex; 1d8+6 acid damage, and the target is blinded (save ends). &lt;/p&gt;]] <10.5>  acid damage, and the target is blinded (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rending Assault&lt;/b&gt; (standard; requires winnower, recharges when nezrebe is first bloodied or makes a critical hit) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 4d8+9 damage, and the target takes ongoing 5 damage (save ends) and is marked until the end of Nezrebe’s next turn. &lt;/p&gt;]] ⚔ <b>Rending Assault</b> (standard; requires winnower, recharges when nezrebe is first bloodied or makes a critical hit) ✦ <b>Weapon</b></p><p>[[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rending Assault&lt;/b&gt; (standard; requires winnower, recharges when nezrebe is first bloodied or makes a critical hit) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs AC&lt;/u&gt;; 4d8+9 damage, and the target takes ongoing 5 damage (save ends) and is marked until the end of Nezrebe’s next turn. &lt;/p&gt;]]; [[/roll 4d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rending Assault&lt;/b&gt; (standard; requires winnower, recharges when nezrebe is first bloodied or makes a critical hit) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 4d8+9 damage, and the target takes ongoing 5 damage (save ends) and is marked until the end of Nezrebe’s next turn. &lt;/p&gt;]] <27>  damage, and the target takes ongoing 5 damage (save ends) and is marked until the end of Nezrebe’s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Bite&lt;/b&gt; (minor, recharges when nezrebe makes a critical hit with winnower) &lt;/p&gt;&lt;p&gt;+30 vs Reflex; 1d12+9 damage, and ongoing 10 damage (save ends). Aftereffect: Target is dazed (save ends). &lt;/p&gt;]] ⚔ <b>Savage Bite</b> (minor, recharges when nezrebe makes a critical hit with winnower) </p><p>[[/roll 1d20+30[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Bite&lt;/b&gt; (minor, recharges when nezrebe makes a critical hit with winnower) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs Reflex&lt;/u&gt;; 1d12+9 damage, and ongoing 10 damage (save ends). Aftereffect: Target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d12+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Savage Bite&lt;/b&gt; (minor, recharges when nezrebe makes a critical hit with winnower) &lt;/p&gt;&lt;p&gt;+30 vs Reflex; 1d12+9 damage, and ongoing 10 damage (save ends). Aftereffect: Target is dazed (save ends). &lt;/p&gt;]] <15.5>  damage, and ongoing 10 damage (save ends). Aftereffect: Target is dazed (save ends). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Savage Frenzy&lt;/b&gt; (free action, when first bloodied) &lt;/p&gt;&lt;p&gt;Nezrebe makes a melee basic attack against each adjacent enemy.&lt;/p&gt;]]  <b>Savage Frenzy</b> (free action, when first bloodied) </p><p>Nezrebe makes a melee basic attack against each adjacent enemy.</p></tr></td></table>",

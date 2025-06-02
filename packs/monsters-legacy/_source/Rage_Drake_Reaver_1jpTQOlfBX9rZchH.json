@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -465,10 +466,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -542,7 +543,7 @@
 		},
 		{
 			"name":"Reaving Rage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4N0jGqX1u8Ua7Rix",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -578,7 +579,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -634,23 +636,10 @@
 				"max":10
 			},
 			"init":{
-				"value":2,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":2
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 56; <b>Bloodied</b> 28<hr><b>Immune</b> fear (while bloodied only) </td><td style=\"padding-left: 15px;\"><b>Init</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 15</td><td><b>Fort</b> 15</td><td><b>Ref</b> 13</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+5)<br><b>Con</b> 16 (+4)</td><td><b>Dex</b> 12 (+2)<br><b>Int</b> 7 (null)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 11 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+4 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+6 vs AC&lt;/u&gt;; 1d6+4 damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+6 vs AC; 1d6+4 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Raking Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;When the rage drake reaver charges, it makes two claw attacks against a single target.&lt;/p&gt;]] ⚔ <b>Raking Charge</b> (standard, at-will) </p><p>When the rage drake reaver charges, it makes two claw attacks against a single target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Enraging Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d10+3 damage, and the rage drake reaver makes a secondary attack. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +5 vs Will; until the end of its next turn, when it attacks, the target can only make a melee basic attack. &lt;/p&gt;]] ⚔ <b>Enraging Bite</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Enraging Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d10+3 damage, and the rage drake reaver makes a secondary attack. &lt;/p&gt;]]; [[/roll 1d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Enraging Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d10+3 damage, and the rage drake reaver makes a secondary attack. &lt;/p&gt;]] <8.5>  damage, and the rage drake reaver makes a secondary attack. </p><p><i>Secondary Attack</i> [[/roll 1d20+5[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Enraging Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+5 vs Will&lt;/u&gt;; until the end of its next turn, when it attacks, the target can only make a melee basic attack. &lt;/p&gt;]]; until the end of its next turn, when it attacks, the target can only make a melee basic attack. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Reaving Rage&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;While bloodied, the rage drake reaver gains a +2 bonus to attack rolls (and triggers the meteorite’s attack, if it is nearby).&lt;/p&gt;]]  <b>Reaving Rage</b> (while bloodied) </p><p>While bloodied, the rage drake reaver gains a +2 bonus to attack rolls (and triggers the meteorite’s attack, if it is nearby).</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -547,7 +548,7 @@
 		},
 		{
 			"name":"Hive Mind",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Suax8Vm3LBnji9zr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -583,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -593,7 +595,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3doSgpPOscjEm1nk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -629,7 +631,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -865,23 +868,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 229; <b>Bloodied</b> 114<hr><b>Resist</b> 15 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +23</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 37</td><td><b>Ref</b> 39</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+19)<br><b>Con</b> 21 (+17)</td><td><b>Dex</b> 28 (+21)<br><b>Int</b> 6 (+10)</td><td><b>Wis</b> 26 (+20)<br><b>Cha</b> 15 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 3d6+10 necrotic damage, and the black bloodspawn shifts 1 square. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs AC&lt;/u&gt;; 3d6+10 necrotic damage, and the black bloodspawn shifts 1 square. &lt;/p&gt;]]; [[/roll 3d6+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 3d6+10 necrotic damage, and the black bloodspawn shifts 1 square. &lt;/p&gt;]] <20.5>  necrotic damage, and the black bloodspawn shifts 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Black Blood Sting&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +28 vs Reflex; 2d8+5 necrotic damage, and ongoing 15 poison damage (save ends). The target cannot spend healing surges until it ends the ongoing damage. Miss: The black bloodspawn hunter shifts 3 squares. &lt;/p&gt;]] ⚔ <b>Black Blood Sting</b> (standard, encounter) ✦ <b>Necrotic, Poison</b></p><p>Reach 2; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Black Blood Sting&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 2d8+5 necrotic damage, and ongoing 15 poison damage (save ends). The target cannot spend healing surges until it ends the ongoing damage. Miss: The black bloodspawn hunter shifts 3 squares. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Black Blood Sting&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +28 vs Reflex; 2d8+5 necrotic damage, and ongoing 15 poison damage (save ends). The target cannot spend healing surges until it ends the ongoing damage. Miss: The black bloodspawn hunter shifts 3 squares. &lt;/p&gt;]] <14>  necrotic damage, and ongoing 15 poison damage (save ends). The target cannot spend healing surges until it ends the ongoing damage. Miss: The black bloodspawn hunter shifts 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hunter\"s Tongue&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +28 vs Reflex; 1d6+5 necrotic damage. If one attack hits, the target is knocked prone. If two attacks hit, the target is knocked prone and immobilized (save ends). If all three attacks hit, the target is knocked prone, immobilized, weakened (save ends both), and loses a healing surge. &lt;/p&gt;]] ⚔ <b>Hunter\"s Tongue</b> (standard, recharge ⚃⚄⚅) ✦ <b>Necrotic</b></p><p>Reach 3; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hunter\"s Tongue&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 1d6+5 necrotic damage. If one attack hits, the target is knocked prone. If two attacks hit, the target is knocked prone and immobilized (save ends). If all three attacks hit, the target is knocked prone, immobilized, weakened (save ends both), and loses a healing surge. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Hunter\"s Tongue&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +28 vs Reflex; 1d6+5 necrotic damage. If one attack hits, the target is knocked prone. If two attacks hit, the target is knocked prone and immobilized (save ends). If all three attacks hit, the target is knocked prone, immobilized, weakened (save ends both), and loses a healing surge. &lt;/p&gt;]] <8.5>  necrotic damage. If one attack hits, the target is knocked prone. If two attacks hit, the target is knocked prone and immobilized (save ends). If all three attacks hit, the target is knocked prone, immobilized, weakened (save ends both), and loses a healing surge. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hive Mind&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The black bloodspawn gains combat advantage against any target that is adjacent to two or more black bloodspawn.&lt;/p&gt;]]  <b>Hive Mind</b></p><p>The black bloodspawn gains combat advantage against any target that is adjacent to two or more black bloodspawn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The black bloodspawn deals an extra 2d6 damage against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The black bloodspawn deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The black bloodspawn deals an extra 2d6 damage against any target it has combat advantage against.&lt;/p&gt;]] <7> damage against any target it has combat advantage against.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Caustic Blood&lt;/b&gt; (immediate reaction, when hit by a melee attack; at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The black bloodspawn hunter deals 10 necrotic damage to the attacker.&lt;/p&gt;]]  <b>Caustic Blood</b> (immediate reaction, when hit by a melee attack; at-will) ✦ <b>Necrotic</b></p><p>The black bloodspawn hunter deals 10 necrotic damage to the attacker.</p></tr></td></table>",

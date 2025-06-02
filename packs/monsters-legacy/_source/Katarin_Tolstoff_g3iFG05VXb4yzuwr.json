@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -469,10 +470,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -649,10 +650,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -950,23 +951,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 84; <b>Bloodied</b> 42</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 22</td><td><b>Ref</b> 24</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+5)<br><b>Con</b> 12 (+6)</td><td><b>Dex</b> 17 (+8)<br><b>Int</b> 21 (+10)</td><td><b>Wis</b> 16 (+8)<br><b>Cha</b> 14 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> dagger , wand implement .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d4+5 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 1d4+5 damage. &lt;/p&gt;]]; [[/roll 1d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d4+5 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Corruption Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +18 vs Fortitude; 1d8+7 necrotic damage, and the target is weakened until the end of its next turn. &lt;/p&gt;]] ➶ <b>Corruption Bolt</b> (standard, at-will) ✦ <b>Necrotic </b></p><p>Ranged 10; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Corruption Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 1d8+7 necrotic damage, and the target is weakened until the end of its next turn. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Corruption Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic &lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +18 vs Fortitude; 1d8+7 necrotic damage, and the target is weakened until the end of its next turn. &lt;/p&gt;]] <11.5>  necrotic damage, and the target is weakened until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Cloud of Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force &lt;/b&gt;&lt;/p&gt;&lt;p&gt;1 square within 10; +18 vs Reflex; 1d6+7 force damage; until the end of Katarin’s next turn, any creature that enters or starts its turn in the spell’s area takes 3 force damage. &lt;/p&gt;]] ✻ <b>Cloud of Daggers</b> (standard, at-will) ✦ <b>Force </b></p><p>1 square within 10; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Cloud of Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force &lt;/b&gt;&lt;/p&gt;&lt;p&gt;1 square within 10; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 1d6+7 force damage; until the end of Katarin’s next turn, any creature that enters or starts its turn in the spell’s area takes 3 force damage. &lt;/p&gt;]]; [[/roll 1d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Cloud of Daggers&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force &lt;/b&gt;&lt;/p&gt;&lt;p&gt;1 square within 10; +18 vs Reflex; 1d6+7 force damage; until the end of Katarin’s next turn, any creature that enters or starts its turn in the spell’s area takes 3 force damage. &lt;/p&gt;]] <10.5>  force damage; until the end of Katarin’s next turn, any creature that enters or starts its turn in the spell’s area takes 3 force damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Death Pulse&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;burst 3 within 20; +16 vs Will; each enemy in the burst takes 2d6 + 7 necrotic damage, and ongoing 5 necrotic (save ends). &lt;/p&gt;]] ✻ <b>Death Pulse</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>burst 3 within 20; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Death Pulse&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;burst 3 within 20; &lt;u&gt;+16 vs Will&lt;/u&gt;; each enemy in the burst takes 2d6 + 7 necrotic damage, and ongoing 5 necrotic (save ends). &lt;/p&gt;]]; each enemy in the burst takes [[/roll 2d6 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Death Pulse&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;burst 3 within 20; +16 vs Will; each enemy in the burst takes 2d6 + 7 necrotic damage, and ongoing 5 necrotic (save ends). &lt;/p&gt;]] <14>  necrotic damage, and ongoing 5 necrotic (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sly Shift&lt;/b&gt; (move 1/ round; at-will) &lt;/p&gt;&lt;p&gt;Katarin shifts 2 squares.&lt;/p&gt;]]  <b>Sly Shift</b> (move 1/ round; at-will) </p><p>Katarin shifts 2 squares.</p></tr></td></table>",

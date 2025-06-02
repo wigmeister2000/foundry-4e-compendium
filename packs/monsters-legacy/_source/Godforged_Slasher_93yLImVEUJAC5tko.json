@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Spinning Blades",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"c1J0mfNVvabE8XSQ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -812,23 +814,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 328; <b>Bloodied</b> 164<hr><b>Immune</b> disease, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 43</td><td><b>Ref</b> 41</td><td><b>Will</b> 40</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (cannot shift)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+24)<br><b>Con</b> 28 (+23)</td><td><b>Dex</b> 27 (+22)<br><b>Int</b> 2 (+10)</td><td><b>Wis</b> 24 (+21)<br><b>Cha</b> 8 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 31</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Spinning Blades&lt;/b&gt; aura 1; each creature that starts its turn in the aura takes 20 damage.]] <b>Spinning Blades</b> aura 1; each creature that starts its turn in the aura takes 20 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Blades&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +32 vs AC; 4d8+10 damage. &lt;/p&gt;]] (⚔) <b>Slashing Blades</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Blades&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+32 vs AC&lt;/u&gt;; 4d8+10 damage. &lt;/p&gt;]]; [[/roll 4d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slashing Blades&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +32 vs AC; 4d8+10 damage. &lt;/p&gt;]] <28>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flensing Blades&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +32 vs AC; 2d8+6 damage, and ongoing 15 damage (save ends). &lt;/p&gt;]] ᗕ <b>Flensing Blades</b> (standard, recharges when first bloodied) </p><p>Close burst 2; targets enemies; [[/roll 1d20+32[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flensing Blades&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; &lt;u&gt;+32 vs AC&lt;/u&gt;; 2d8+6 damage, and ongoing 15 damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Flensing Blades&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +32 vs AC; 2d8+6 damage, and ongoing 15 damage (save ends). &lt;/p&gt;]] <15>  damage, and ongoing 15 damage (save ends). </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hasty Repair&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; targets one shattered progeny; the shattered progeny is destroyed and the godforged slasher regains 40 hit points&lt;/p&gt;]] ⚔ <b>Hasty Repair</b> (minor, at-will) ✦ <b>Healing</b></p><p>Reach 2; targets one shattered progeny; the shattered progeny is destroyed and the godforged slasher regains 40 hit points</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shattered Progeny&lt;/b&gt; (free, when reduced to 246, 164, 82, and 0 hit points) &lt;/p&gt;&lt;p&gt;Place a shattered progeny token in an unoccupied space adjacent to the godforged slasher, and reduce the godforged slasher’s spinning blades damage by 5.&lt;/p&gt;]]  <b>Shattered Progeny</b> (free, when reduced to 246, 164, 82, and 0 hit points) </p><p>Place a shattered progeny token in an unoccupied space adjacent to the godforged slasher, and reduce the godforged slasher’s spinning blades damage by 5.</p></tr></td></table>",

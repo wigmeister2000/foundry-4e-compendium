@@ -1,12 +1,15 @@
 {
 	"name":"Tempest Fan +1",
-	"type":"equipment",
+	"type":"weapon",
 	"img":"icons/svg/chest.svg",
 	"system":{
 		"description":{
 			"value":"<p class=\"flavour\"><i>The tines of this metal fan resemble lightning, augmented with ripples of electricity.</i></p><p class=\"basics\"><b>Wondrous Item</b><b>:</b> Uncommon</p>\n<p class=\"basics\"><b>Enhancement Bonus:</b> attack rolls and damage rolls</p><p class=\"basics\"><b>Critical:</b> +1d6 lightning damage per plus</p>\n<p class=\"subheading\"><b>Property:</b></p> <p>Wizards can use this fan as an implement for wizard powers and wizards paragon path powers.</p>\n<p class=\"subheading\"><b>Power ✦ Daily (Move Action)</b></p><p>You or an adjacent ally teleports up to 5 squares. Each enemy within a close burst 3 of this new location takes 1d6 lightning damage.</p><p>Level 15: Teleport 10 squares and enemies take 3d6 lightning damage.</p><p>Level 25: Teleport 15 squares and enemies take 5d6 lightning damage.</p>",
 			"chat":"",
 			"unidentified":""
+		},
+		"descriptionGM":{
+			"value":""
 		},
 		"source":"",
 		"quantity":1,
@@ -16,6 +19,7 @@
 		"equipped":true,
 		"rarity":"",
 		"identified":true,
+		"container":null,
 		"activation":{
 			"type":"",
 			"cost":0,
@@ -32,25 +36,25 @@
 			"type":""
 		},
 		"range":{
-			"value":null,
-			"long":null,
+			"value":0,
+			"long":0,
 			"units":""
 		},
 		"uses":{
 			"value":0,
-			"max":0,
-			"per":null
+			"max":"0",
+			"per":""
 		},
 		"consume":{
 			"type":"",
-			"target":null,
+			"target":"",
 			"amount":null
 		},
 		"armour":{
 			"value":10,
 			"type":"other",
 			"subType":"",
-			"ac":-1,
+			"ac":0,
 			"fort":0,
 			"ref":0,
 			"wil":0,
@@ -59,7 +63,7 @@
 			"movePenValue":0,
 			"skillCheck":false,
 			"skillCheckValue":0,
-			"enhance":1
+			"enhance":0
 		},
 		"hp":{
 			"value":0,
@@ -72,20 +76,119 @@
 			"scope":"global",
 			"launchOrder":"off",
 			"command":"",
-			"author":""
+			"author":"",
+			"autoanimationHook":""
 		},
 		"level":"5",
-		"speed":{
-			"value":null,
-			"conditions":""
+		"weaponType":"implement",
+		"weaponHand":"hOff",
+		"properties":{
+			"amm":false,
+			"bru":false,
+			"def":false,
+			"hic":false,
+			"imp":true,
+			"lof":false,
+			"lom":false,
+			"off":false,
+			"rch":false,
+			"rel":false,
+			"sml":false,
+			"spc":false,
+			"thv":false,
+			"tlg":false,
+			"two":false,
+			"ver":false,
+			"mou":false,
+			"sto":false
 		},
-		"strength":0,
-		"stealth":false,
-		"proficient":true
+		"proficient":false,
+		"proficientI":true,
+		"profBonus":0,
+		"profImpBonus":"0",
+		"enhance":"1",
+		"isRanged":false,
+		"damageDice":{
+			"parts":[
+				[
+					"",
+					"",
+					""
+				]
+			]
+		},
+		"damage":{
+			"parts":[]
+		},
+		"damageCrit":{
+			"parts":[]
+		},
+		"damageImp":{
+			"parts":[]
+		},
+		"damageCritImp":{
+			"parts":[]
+		},
+		"damageType":{
+			"physical":true
+		},
+		"brutalNum":0,
+		"weaponGroup":{
+			"axe":false,
+			"blowgun":false,
+			"bow":false,
+			"cbow":false,
+			"dragon":false,
+			"flail":false,
+			"garrote":false,
+			"ham":false,
+			"bladeH":false,
+			"bladeL":false,
+			"mace":false,
+			"pik":false,
+			"pole":false,
+			"sling":false,
+			"spear":false,
+			"staff":false,
+			"unarm":false,
+			"whip":false
+		},
+		"attackForm":"@profBonus+@enhance",
+		"attackFormImp":"@profImpBonus+@enhanceImp",
+		"damageForm":"@enhance",
+		"damageFormImp":"@enhanceImp",
+		"critDamageForm":"",
+		"critDamageFormImp":"1d6[lightning]",
+		"critRange":20,
+		"critRangeImp":20,
+		"weaponBaseType":"custom",
+		"damageTypeWeapon":false,
+		"chatFlavor":"",
+		"implement":{
+			"holyS":false,
+			"ki":false,
+			"orb":false,
+			"rod":false,
+			"staff":false,
+			"tome":false,
+			"totem":false,
+			"wand":false
+		},
+		"brutal":0,
+		"implementGroup":{
+			"holyS":false,
+			"ki":false,
+			"orb":false,
+			"rod":false,
+			"staff":false,
+			"tome":false,
+			"totem":false,
+			"wand":false
+		},
+		"weaponBaseTypeCustom":"Wizard Implement"
 	},
 	"effects":[],
 	"folder":null,
-	"sort":0,
 	"flags":{},
 	"_id":"tITvh4y7M83XPgiU",
 	"_key":"!items!tITvh4y7M83XPgiU"

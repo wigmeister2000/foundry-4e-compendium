@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -469,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -650,10 +652,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1087,7 +1089,7 @@
 		},
 		{
 			"name":"Stand Your Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"twHeZ749ipmPMXSY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1123,7 +1125,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1179,23 +1182,10 @@
 				"max":10
 			},
 			"init":{
-				"value":1,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":1
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 46; <b>Bloodied</b> 23</td><td style=\"padding-left: 15px;\"><b>Init</b> +1 | <b>Save</b> +5 against poison effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 16</td><td><b>Ref</b> 13</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+4)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 10 (+1)<br><b>Int</b> 11 (+1)</td><td><b>Wis</b> 16 (+4)<br><b>Cha</b> 13 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven<br><b>Alignment</b> Lawful good</td></tr><tr><td><b>Skills</b> Dungeoneering +6, Endurance +5, Religion +6</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> adventurer\"s kit , chainmail , crossbow , crossbow bolts (20) , holy symbol , warhammer .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 damage. &lt;/p&gt;]] (⚔) <b>Warhammer</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d10+4 damage. &lt;/p&gt;]]; [[/roll 1d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Warhammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +5 vs AC; 1d8 damage. &lt;/p&gt;]] (➶) <b>Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+5 vs AC&lt;/u&gt;; 1d8 damage. &lt;/p&gt;]]; [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +5 vs AC; 1d8 damage. &lt;/p&gt;]] <4.5> damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Priest\"s Shield&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 damage, and Ragnum or one adjacent ally gains a +1 power bonus to AC until the end of Ragnum\"s next turn. &lt;/p&gt;]] ⚔ <b>Priest\"s Shield</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Priest\"s Shield&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d10+4 damage, and Ragnum or one adjacent ally gains a +1 power bonus to AC until the end of Ragnum\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Priest\"s Shield&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 damage, and Ragnum or one adjacent ally gains a +1 power bonus to AC until the end of Ragnum\"s next turn. &lt;/p&gt;]] <9.5>  damage, and Ragnum or one adjacent ally gains a +1 power bonus to AC until the end of Ragnum\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wrathful Thunder&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 thunder damage, and the target is dazed until the end of Ragnum\"s next turn. &lt;/p&gt;]] ⚔ <b>Wrathful Thunder</b> (standard, encounter) ✦ <b>Thunder, Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wrathful Thunder&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d10+4 thunder damage, and the target is dazed until the end of Ragnum\"s next turn. &lt;/p&gt;]]; [[/roll 1d10+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Wrathful Thunder&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d10+4 thunder damage, and the target is dazed until the end of Ragnum\"s next turn. &lt;/p&gt;]] <9.5>  thunder damage, and the target is dazed until the end of Ragnum\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cure Light Wounds&lt;/b&gt; (standard, daily) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee touch; the target regains a number of hit points equal to its surge value +3.&lt;/p&gt;]] ⚔ <b>Cure Light Wounds</b> (standard, daily) ✦ <b>Healing</b></p><p>Melee touch; the target regains a number of hit points equal to its surge value +3.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Healing Word&lt;/b&gt; (minor 2/encounter, [1/round]) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;One ally; the target spends a healing surge and regains an additional 1d6+3 hit points.&lt;/p&gt;]] ᗕ <b>Healing Word</b> (minor 2/encounter, [1/round]) ✦ <b>Healing</b></p><p>One ally; the target spends a healing surge and regains an additional [[/roll 1d6+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Healing Word&lt;/b&gt; (minor 2/encounter, [1/round]) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;One ally; the target spends a healing surge and regains an additional 1d6+3 hit points.&lt;/p&gt;]] <6.5>  hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand Your Ground&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect forces a dwarf to move—through a pull, a push, or a slide—the dwarf moves 1 square less than the effect specifies. When an attack would knock the dwarf prone, the dwarf can roll a saving throw to avoid falling prone.&lt;/p&gt;]]  <b>Stand Your Ground</b></p><p>When an effect forces a dwarf to move—through a pull, a push, or a slide—the dwarf moves 1 square less than the effect specifies. When an attack would knock the dwarf prone, the dwarf can roll a saving throw to avoid falling prone.</p></tr></td></table>",

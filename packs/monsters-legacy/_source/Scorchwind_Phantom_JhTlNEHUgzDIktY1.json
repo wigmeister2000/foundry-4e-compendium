@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -592,23 +593,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 54; <b>Bloodied</b> 27<hr><b>Resist</b> insubstantial <b>Vulnerable</b> cold (a scorchwind phantom that takes cold damage is slowed and cannot use disperse until the end of the attacker’s next turn) <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover); phasing</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+4)<br><b>Con</b> 18 (+8)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 7 (+2)</td><td><b>Wis</b> 17 (+7)<br><b>Cha</b> 7 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scorchwind Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +12 vs Reflex; 2d4+5 fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. &lt;/p&gt;]] (⚔) <b>Scorchwind Lash</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 2; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scorchwind Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; 2d4+5 fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scorchwind Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +12 vs Reflex; 2d4+5 fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. &lt;/p&gt;]] <10>  fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Roiling Surge&lt;/b&gt; (standard; after the scorchwind phantom uses disperse, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scorchwind phantom flies its speed and can move through enemies’ spaces. This movement does not provoke opportunity attacks. The scorchwind phantom makes an attack against any creature whose space it moves into; +12 vs Reflex; 2d8+5 fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. &lt;/p&gt;]] ⚔ <b>Roiling Surge</b> (standard; after the scorchwind phantom uses disperse, recharge ⚄⚅) ✦ <b>Fire</b></p><p>The scorchwind phantom flies its speed and can move through enemies’ spaces. This movement does not provoke opportunity attacks. The scorchwind phantom makes an attack against any creature whose space it moves into; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Roiling Surge&lt;/b&gt; (standard; after the scorchwind phantom uses disperse, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scorchwind phantom flies its speed and can move through enemies’ spaces. This movement does not provoke opportunity attacks. The scorchwind phantom makes an attack against any creature whose space it moves into; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; 2d8+5 fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Roiling Surge&lt;/b&gt; (standard; after the scorchwind phantom uses disperse, recharge ⚄⚅) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scorchwind phantom flies its speed and can move through enemies’ spaces. This movement does not provoke opportunity attacks. The scorchwind phantom makes an attack against any creature whose space it moves into; +12 vs Reflex; 2d8+5 fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. &lt;/p&gt;]] <14>  fire damage, and the target grants combat advantage until the end of the scorchwind phantom’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Disperse&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The scorchwind phantom transforms into scalding steam occasionally flashing with motes of fire. Until it resumes its normal form, it cannot attack or be attacked. At the start of its turn, it can resume its normal form in any space within 8 squares of its position when it used disperse; until the end of that turn, its attacks make targets blinded instead of causing them to grant combat advantage. A creature that encounters a scorchwind phantom in steam form can recognize it as a creature with a successful DC 24 Perception check.&lt;/p&gt;]]  <b>Disperse</b> (standard; at-will) ✦ <b>Polymorph</b></p><p>The scorchwind phantom transforms into scalding steam occasionally flashing with motes of fire. Until it resumes its normal form, it cannot attack or be attacked. At the start of its turn, it can resume its normal form in any space within 8 squares of its position when it used disperse; until the end of that turn, its attacks make targets blinded instead of causing them to grant combat advantage. A creature that encounters a scorchwind phantom in steam form can recognize it as a creature with a successful DC 24 Perception check.</p></tr></td></table>",

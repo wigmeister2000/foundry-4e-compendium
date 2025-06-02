@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Flame Sphere",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xBMeWz3m8VoiANcO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Evasive Haze",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Nf9VCXWr8HA1eoci",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,7 +336,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1029,7 +1033,7 @@
 				"uses":{
 					"value":2,
 					"max":"2",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -1221,23 +1225,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 187; <b>Bloodied</b> 93<hr><b>Resist</b> 20 fire <b>Vulnerable</b> 5 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 38</td><td><b>Ref</b> 40</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+13)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 29 (+22)<br><b>Int</b> 15 (+15)</td><td><b>Wis</b> 21 (+18)<br><b>Cha</b> 18 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Flame Sphere&lt;/b&gt; (fire) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any creature that ends its turn within the aura takes 10 fire damage.&lt;/p&gt;]] ⌀ <b>Flame Sphere</b> (fire) ✦ <b>Aura</b> 1</p><p>Any creature that ends its turn within the aura takes 10 fire damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Evasive Haze&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The zythar gains a +2 bonus to all defenses against ranged attacks.&lt;/p&gt;]]  <b>Evasive Haze</b> <b></b></p><p>The zythar gains a +2 bonus to all defenses against ranged attacks.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Slam&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +31 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 fire damage, and the zythar teleports 4 squares.&lt;/p&gt;]] (⚔) <b>Fiery Slam</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+31[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Slam&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+31 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fiery Slam&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 fire damage, and the zythar teleports 4 squares.&lt;/p&gt;]] <13>  fire damage, and the zythar teleports 4 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Flame Bolt&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +33 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d6 + 7 fire damage, and ongoing 10 fire damage (save ends).&lt;/p&gt;]] (➶) <b>Flame Bolt</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Flame Bolt&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+33 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 5d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Flame Bolt&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 5d6 + 7 fire damage, and ongoing 10 fire damage (save ends).&lt;/p&gt;]] <24.5>  fire damage, and ongoing 10 fire damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tendrils of Flame&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature taking ongoing fire damage); +33 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 10 fire damage, and the ongoing fire damage taken by the target increases by 5. In addition, the target loses any fire resistance until it saves against the ongoing fire damage.&lt;/p&gt;]] ➶ <b>Tendrils of Flame</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature taking ongoing fire damage); [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tendrils of Flame&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature taking ongoing fire damage); &lt;u&gt;+33 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 6d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tendrils of Flame&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 6d6 + 10 fire damage, and the ongoing fire damage taken by the target increases by 5. In addition, the target loses any fire resistance until it saves against the ongoing fire damage.&lt;/p&gt;]] <31>  fire damage, and the ongoing fire damage taken by the target increases by 5. In addition, the target loses any fire resistance until it saves against the ongoing fire damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Abyssal Flameburst&lt;/b&gt; (fire, zone) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The zythar creates a zone in an area burst 2 within 20 squares that lasts until the end of the zythar’s next turn. Any creature that enters the zone or ends its turn there takes 25 fire damage. The zone blocks line of sight.&lt;/p&gt;]]  <b>Abyssal Flameburst</b> (fire, zone) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> The zythar creates a zone in an area burst 2 within 20 squares that lasts until the end of the zythar’s next turn. Any creature that enters the zone or ends its turn there takes 25 fire damage. The zone blocks line of sight.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Curse of the Balor&lt;/b&gt; (fire) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The zythar drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The zythar explodes, creating a zone in a close burst 1 that lasts until the end of the encounter. Any creature that starts its turn within the zone takes 10 fire damage.&lt;/p&gt;]] ᗕ <b>Curse of the Balor</b> (fire) <b></b></p><p><i>Trigger:</i> The zythar drops to 0 hit points.</p><p><i>Effect (No Action):</i> The zythar explodes, creating a zone in a close burst 1 that lasts until the end of the encounter. Any creature that starts its turn within the zone takes 10 fire damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Variable Resistance&lt;/b&gt; ✦ &lt;b&gt;2/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The zythar takes acid, cold, fire, lightning, or thunder damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The zythar gains resist 15 to the triggering damage type until the end of the encounter or until it uses variable resistance again.&lt;/p&gt;]]  <b>Variable Resistance</b> ✦ <b>2/Encounter</b></p><p><i>Trigger:</i> The zythar takes acid, cold, fire, lightning, or thunder damage.</p><p><i>Effect (Free Action):</i> The zythar gains resist 15 to the triggering damage type until the end of the encounter or until it uses variable resistance again.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -724,7 +726,7 @@
 		},
 		{
 			"name":"Battle Dancer",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"NwaARE8iblrjMDOt",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -760,7 +762,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -816,23 +819,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 138; <b>Bloodied</b> 69<hr><b>Resist</b> 10 poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 22</td><td><b>Ref</b> 26</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 6 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+10)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 25 (+14)<br><b>Int</b> 11 (+7)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 13 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Nature +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> bone armor, stingblade, xen’drik boomerang  x10.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stingblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+8 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] (⚔) <b>Stingblade</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stingblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+8 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stingblade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+8 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <12.5>  damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Xen\"drik Boomerang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +19 vs AC; 2d6+7 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] (➶) <b>Xen\"drik Boomerang</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>Ranged 5/10; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Xen\"drik Boomerang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d6+7 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Xen\"drik Boomerang&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5/10; +19 vs AC; 2d6+7 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <14>  damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Whirling Dervish&lt;/b&gt; (standard; requires a stingblade, recharge ⚅&lt;/p&gt;&lt;p&gt;The drow stingblade shifts 4 squares, making a stingblade attack within each square it shifts into against an enemy within reach.&lt;/p&gt;]] ⚔ <b>Whirling Dervish</b> (standard; requires a stingblade, recharge ⚅</p><p>The drow stingblade shifts 4 squares, making a stingblade attack within each square it shifts into against an enemy within reach.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Reflex; until the end of the drow stingblade’s next turn, the target grants combat advantage to all attackers and cannot benefi t from invisibility or concealment. &lt;/p&gt;]] ➶ <b>Darkfire</b> (minor, encounter) </p><p>Ranged 10; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Darkfire&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; until the end of the drow stingblade’s next turn, the target grants combat advantage to all attackers and cannot benefi t from invisibility or concealment. &lt;/p&gt;]]; until the end of the drow stingblade’s next turn, the target grants combat advantage to all attackers and cannot benefi t from invisibility or concealment. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Dancer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If, on its turn, a drow stingblade ends its move at least 4 squares away from its starting position, it deals 2d6 extra damage on its melee and ranged attacks until the start of its next turn.&lt;/p&gt;]]  <b>Battle Dancer</b></p><p>If, on its turn, a drow stingblade ends its move at least 4 squares away from its starting position, it deals [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battle Dancer&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If, on its turn, a drow stingblade ends its move at least 4 squares away from its starting position, it deals 2d6 extra damage on its melee and ranged attacks until the start of its next turn.&lt;/p&gt;]] <7> extra damage on its melee and ranged attacks until the start of its next turn.</p></tr></td></table>",

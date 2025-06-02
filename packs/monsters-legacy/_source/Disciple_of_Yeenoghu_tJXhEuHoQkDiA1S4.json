@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -544,7 +546,7 @@
 		},
 		{
 			"name":"Pack Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jrhF8d43CmyZlnNx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -580,7 +582,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -636,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 62; <b>Bloodied</b> 31</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 18</td><td><b>Ref</b> 20</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+3)<br><b>Con</b> 14 (+5)</td><td><b>Dex</b> 12 (+4)<br><b>Int</b> 18 (+7)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 11 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Religion +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> ritual robes, sacrificial dagger</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sacrificial Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 2d4+5 damage, or 2d4+7 damage while bloodied. &lt;/p&gt;]] (⚔) <b>Sacrificial Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sacrificial Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs AC&lt;/u&gt;; 2d4+5 damage, or 2d4+7 damage while bloodied. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sacrificial Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 2d4+5 damage, or 2d4+7 damage while bloodied. &lt;/p&gt;]] <10>  damage, or [[/roll 2d4+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sacrificial Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs AC; 2d4+5 damage, or 2d4+7 damage while bloodied. &lt;/p&gt;]] <12>  damage while bloodied. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Destruction&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs Reflex; 2d8+5 necrotic damage, or 2d8+10 necrotic damage while bloodied. &lt;/p&gt;]] (➶) <b>Ray of Destruction</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Destruction&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs Reflex&lt;/u&gt;; 2d8+5 necrotic damage, or 2d8+10 necrotic damage while bloodied. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Destruction&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs Reflex; 2d8+5 necrotic damage, or 2d8+10 necrotic damage while bloodied. &lt;/p&gt;]] <14>  necrotic damage, or [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Ray of Destruction&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs Reflex; 2d8+5 necrotic damage, or 2d8+10 necrotic damage while bloodied. &lt;/p&gt;]] <19>  necrotic damage while bloodied. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Ruinous Burst&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +10 vs Reflex; 3d10+5 fire and necrotic damage, or 3d10+5 fire and necrotic damage while bloodied. &lt;/p&gt;]] ✻ <b>Ruinous Burst</b> (standard, recharge ⚅</p><p>Area burst 2 within 10; [[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Ruinous Burst&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; &lt;u&gt;+10 vs Reflex&lt;/u&gt;; 3d10+5 fire and necrotic damage, or 3d10+5 fire and necrotic damage while bloodied. &lt;/p&gt;]]; [[/roll [[/roll 3d10+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Ruinous Burst&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +10 vs Reflex; 3d10+5 fire and necrotic damage, or 3d10+5 fire and necrotic damage while bloodied. &lt;/p&gt;]] <21.5> #&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Ruinous Burst&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +10 vs Reflex; 3d10+5 fire and necrotic damage, or 3d10+5 fire and necrotic damage while bloodied. &lt;/p&gt;]] <21.5>  fire and necrotic damage, or 3d10+5 fire and necrotic damage while bloodied. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The disciple of Yeenoghu deals an extra 5 damage on melee and ranged attacks against an enemy that has two or more of the disciple’s allies adjacent to it.&lt;/p&gt;]]  <b>Pack Attack</b></p><p>The disciple of Yeenoghu deals an extra 5 damage on melee and ranged attacks against an enemy that has two or more of the disciple’s allies adjacent to it.</p></tr></td></table>",

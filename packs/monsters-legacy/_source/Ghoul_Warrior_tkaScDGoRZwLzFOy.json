@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -590,23 +591,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 222; <b>Bloodied</b> 111<hr><b>Resist</b> 25 necrotic <b>Vulnerable</b> 15 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +21</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 36</td><td><b>Ref</b> 35</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+20)<br><b>Con</b> 22 (+18)</td><td><b>Dex</b> 24 (+19)<br><b>Int</b> 22 (+18)</td><td><b>Wis</b> 20 (+17)<br><b>Cha</b> 22 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> +5 bone sword (magical only in an undead’s hands), bone armor</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 2d8+6 necrotic damage (crit 5d6 + 22), and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] (⚔) <b>Bone Sword</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+30 vs AC&lt;/u&gt;; 2d8+6 necrotic damage (crit 5d6 + 22), and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 2d8+6 necrotic damage (crit 5d6 + 22), and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] <15>  necrotic damage (crit [[/roll 5d6 + 22#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bone Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+30 vs AC; 2d8+6 necrotic damage (crit 5d6 + 22), and the target takes ongoing 10 necrotic damage (save ends). &lt;/p&gt;]] <39.5> ), and the target takes ongoing 10 necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ghoulish Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Target must be immobilized, stunned, or unconscious; +30 vs AC; 3d8+9 damage, and the target is stunned (save ends). &lt;/p&gt;]] ⚔ <b>Ghoulish Bite</b> (standard, at-will) </p><p>Target must be immobilized, stunned, or unconscious; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ghoulish Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Target must be immobilized, stunned, or unconscious; &lt;u&gt;+30 vs AC&lt;/u&gt;; 3d8+9 damage, and the target is stunned (save ends). &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Ghoulish Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Target must be immobilized, stunned, or unconscious; +30 vs AC; 3d8+9 damage, and the target is stunned (save ends). &lt;/p&gt;]] <22.5>  damage, and the target is stunned (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bone Sword Flurry&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; all enemies in burst; +28 vs AC; 3d8+9 necrotic damage, and the target is immobilized (save ends; -2 penalty to the saving throw). &lt;/p&gt;]] ⚔ <b>Bone Sword Flurry</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Close burst 1; all enemies in burst; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bone Sword Flurry&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; all enemies in burst; &lt;u&gt;+28 vs AC&lt;/u&gt;; 3d8+9 necrotic damage, and the target is immobilized (save ends; -2 penalty to the saving throw). &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Bone Sword Flurry&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; all enemies in burst; +28 vs AC; 3d8+9 necrotic damage, and the target is immobilized (save ends; -2 penalty to the saving throw). &lt;/p&gt;]] <22.5>  necrotic damage, and the target is immobilized (save ends; -2 penalty to the saving throw). </p></tr></td></table>",

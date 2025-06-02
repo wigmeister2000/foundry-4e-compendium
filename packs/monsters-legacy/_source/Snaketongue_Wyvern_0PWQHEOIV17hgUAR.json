@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Venom Enhancement",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Ix93etn8QYrbAfpv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,10 +334,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -946,7 +949,7 @@
 		},
 		{
 			"name":"Slither Away",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"XHDubIKC96x8gPdB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -982,7 +985,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1038,23 +1042,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 106; <b>Bloodied</b> 53</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 24</td><td><b>Ref</b> 20</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+12)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 17 (+8)<br><b>Int</b> 2 (+1)</td><td><b>Wis</b> 15 (+7)<br><b>Cha</b> 8 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Venom Enhancement&lt;/b&gt; aura 2; each enemy within the aura that has ongoing poison damage takes a –2 penalty to all defenses and saving throws.]] <b>Venom Enhancement</b> aura 2; each enemy within the aura that has ongoing poison damage takes a –2 penalty to all defenses and saving throws.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 1d8+7 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 1d8+7 damage. &lt;/p&gt;]]; [[/roll 1d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 1d8+7 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6+7 damage, and the target is knocked prone. &lt;/p&gt;]] (⚔) <b>Claws</b> (standard, at-will) </p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d6+7 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 1d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6+7 damage, and the target is knocked prone. &lt;/p&gt;]] <10.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 1d6+4 and the wyvern makes a secondary attack against the same target. Secondary Attack: +13 vs. Fortitude; ongoing 10 poison damage (save ends). &lt;/p&gt;]] ⚔ <b>Sting</b> (standard, at-will) ✦ <b>Poison</b></p><p>Reach 2; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+15 vs AC&lt;/u&gt;; 1d6+4 and the wyvern makes a secondary attack against the same target. Secondary Attack: +13 vs. Fortitude; ongoing 10 poison damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +15 vs AC; 1d6+4 and the wyvern makes a secondary attack against the same target. Secondary Attack: +13 vs. Fortitude; ongoing 10 poison damage (save ends). &lt;/p&gt;]] <7.5>  and the wyvern makes a secondary attack against the same target. Secondary Attack: +13 vs. Fortitude; ongoing 10 poison damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Flyby Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The wyvern flies 8 squares and makes one melee basic attack at any point during that movement. The wyvern doesn’t provoke opportunity attacks when moving away from the target&lt;/p&gt;]] ⚔ <b>Flyby Attack</b> (standard, at-will) </p><p>The wyvern flies 8 squares and makes one melee basic attack at any point during that movement. The wyvern doesn’t provoke opportunity attacks when moving away from the target</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Aerial Agility&lt;/b&gt; (while mounted by a rider of 10th level or higher; at-will) ✦ &lt;b&gt;Mount&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While flying, the wyvern grants its rider a +2 bonus to all defenses.&lt;/p&gt;]]  <b>Aerial Agility</b> (while mounted by a rider of 10th level or higher; at-will) ✦ <b>Mount</b></p><p>While flying, the wyvern grants its rider a +2 bonus to all defenses.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slither Away&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;The wyvern gains a +2 bonus to speed and a +2 bonus to all defenses.&lt;/p&gt;]]  <b>Slither Away</b> (while bloodied) </p><p>The wyvern gains a +2 bonus to speed and a +2 bonus to all defenses.</p></tr></td></table>",

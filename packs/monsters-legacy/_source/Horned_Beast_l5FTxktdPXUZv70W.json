@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -589,23 +590,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 43</td><td><b>Ref</b> 41</td><td><b>Will</b> 42</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 31 (+25)<br><b>Con</b> 25 (+22)</td><td><b>Dex</b> 24 (+22)<br><b>Int</b> 8 (+14)</td><td><b>Wis</b> 28 (+24)<br><b>Cha</b> 13 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 34 | Insight 34</td></td></tr></table><p><b>Equipment</b> greataxe .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 18 damage. &lt;/p&gt;]] (⚔) <b>Greataxe</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+33 vs AC&lt;/u&gt;; 18 damage. &lt;/p&gt;]]; 18 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The horned beast makes a charge attack; +34 vs AC; 13 damage, and the target is pushed 2 squares. The horned beast shifts 2 squares after the attack to remain adjacent to the target. &lt;/p&gt;]] ⚔ <b>Goring Charge</b> (standard, at-will) </p><p>The horned beast makes a charge attack; [[/roll 1d20+34[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The horned beast makes a charge attack; &lt;u&gt;+34 vs AC&lt;/u&gt;; 13 damage, and the target is pushed 2 squares. The horned beast shifts 2 squares after the attack to remain adjacent to the target. &lt;/p&gt;]]; 13 damage, and the target is pushed 2 squares. The horned beast shifts 2 squares after the attack to remain adjacent to the target. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Deathly Inferno&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +31 vs Reflex; 13 fire damage. &lt;/p&gt;]] ᗕ <b>Deathly Inferno</b> ( when reduced to 0 hit points, ) ✦ <b>Fire, Necrotic</b></p><p>Close burst 3; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Deathly Inferno&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 13 fire damage. &lt;/p&gt;]]; 13 fire damage. </p></tr></td></table>",

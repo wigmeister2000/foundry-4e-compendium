@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Teeth and Tongues",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"kiuZNKQ7ErGBsTP6",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -276,23 +278,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 148; <b>Bloodied</b> 74<hr><b>Resist</b> half damage from melee and ranged attacks; 10 necrotic <b>Vulnerable</b> 10 close and area attacks, 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 27</td><td><b>Ref</b> 28</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 4 (altitude limit 3)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+9)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 7 (+5)</td><td><b>Wis</b> 19 (+11)<br><b>Cha</b> 14 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Teeth and Tongues&lt;/b&gt; aura 1; any enemy that starts its turn within the aura takes 7 damage.]] <b>Teeth and Tongues</b> aura 1; any enemy that starts its turn within the aura takes 7 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chomping Maws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+20 vs Reflex; 1d10+6 damage and the target is grabbed. The target takes 5 damage at the end of its turn as long as it is grabbed by the gibbering heads swarm. The swarm can continue to make additional attacks—against the same target or others—while maintaining grabs, and can sustain all grabs with a single minor action. &lt;/p&gt;]] (⚔) <b>Chomping Maws</b> (standard, at-will) </p><p>[[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chomping Maws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs Reflex&lt;/u&gt;; 1d10+6 damage and the target is grabbed. The target takes 5 damage at the end of its turn as long as it is grabbed by the gibbering heads swarm. The swarm can continue to make additional attacks—against the same target or others—while maintaining grabs, and can sustain all grabs with a single minor action. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chomping Maws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+20 vs Reflex; 1d10+6 damage and the target is grabbed. The target takes 5 damage at the end of its turn as long as it is grabbed by the gibbering heads swarm. The swarm can continue to make additional attacks—against the same target or others—while maintaining grabs, and can sustain all grabs with a single minor action. &lt;/p&gt;]] <11.5>  damage and the target is grabbed. The target takes 5 damage at the end of its turn as long as it is grabbed by the gibbering heads swarm. The swarm can continue to make additional attacks—against the same target or others—while maintaining grabs, and can sustain all grabs with a single minor action. </p></tr></td></table>",

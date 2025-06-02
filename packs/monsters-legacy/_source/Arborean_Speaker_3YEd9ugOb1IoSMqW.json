@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Poison Spores",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0X3D6FIRoGxyvjqm",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -156,10 +158,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -637,23 +639,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 109; <b>Bloodied</b> 54<hr><b>Vulnerable</b> 5 fire (pushed 1 square when it takes fire damage) </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 23</td><td><b>Ref</b> 21</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 21 (+10)</td><td><b>Dex</b> 17 (+8)<br><b>Int</b> 14 (+7)</td><td><b>Wis</b> 20 (+10)<br><b>Cha</b> 17 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Diplomacy +13, Insight +15, Nature +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 25</td></td></tr></table><p><b>Equipment</b> robes, scythe .</p><p>[[/roll 0#&lt;b&gt;Poison Spores&lt;/b&gt; (Poison) aura 5; enemies that enter or start their turns in the aura take 5 poison damage.]] <b>Poison Spores</b> (Poison) aura 5; enemies that enter or start their turns in the aura take 5 poison damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scythe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+2 damage, and ongoing 5 poison damage and the target is slowed (save ends both). &lt;/p&gt;]] (⚔) <b>Scythe</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scythe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d10+2 damage, and ongoing 5 poison damage and the target is slowed (save ends both). &lt;/p&gt;]]; [[/roll 1d10+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scythe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+2 damage, and ongoing 5 poison damage and the target is slowed (save ends both). &lt;/p&gt;]] <7.5>  damage, and ongoing 5 poison damage and the target is slowed (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Invigorating Spores&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 5; allies within burst regain 5 hit points and immediately shift 3 squares.&lt;/p&gt;]] ᗕ <b>Invigorating Spores</b> (standard, at-will) </p><p>Close burst 5; allies within burst regain 5 hit points and immediately shift 3 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Choking Spores&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +14 vs AC; enemies within burst take 2d4 + 4 poison damage and are dazed and take ongoing 5 poison damage (save ends both). &lt;/p&gt;]] ᗕ <b>Choking Spores</b> (standard, recharge ⚄⚅) ✦ <b>Poison</b></p><p>Close burst 5; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Choking Spores&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+14 vs AC&lt;/u&gt;; enemies within burst take 2d4 + 4 poison damage and are dazed and take ongoing 5 poison damage (save ends both). &lt;/p&gt;]]; enemies within burst take [[/roll 2d4 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Choking Spores&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +14 vs AC; enemies within burst take 2d4 + 4 poison damage and are dazed and take ongoing 5 poison damage (save ends both). &lt;/p&gt;]] <9>  poison damage and are dazed and take ongoing 5 poison damage (save ends both). </p></tr></td></table>",

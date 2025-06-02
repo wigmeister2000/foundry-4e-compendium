@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Aura of Thought Eating",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"E6Fj0sCfwhV82AWX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -412,7 +414,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lOWu4DEviA2ZxQzo",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -448,7 +450,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -864,23 +867,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 22; <b>Bloodied</b> 11<hr><b>Resist</b> Insubstantial <b>Vulnerable</b> 5 psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 14</td><td><b>Fort</b> 13</td><td><b>Ref</b> 13</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+1)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 12 (+2)<br><b>Int</b> 4 (null)</td><td><b>Wis</b> 16 (+4)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Aura of Thought Eating&lt;/b&gt; aura 5; a fell taint within the aura has a +2 bonus to all defenses.]] <b>Aura of Thought Eating</b> aura 5; a fell taint within the aura has a +2 bonus to all defenses.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs Reflex; 1d6+4 psychic damage. &lt;/p&gt;]] (⚔) <b>Tendril Caress</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+5 vs Reflex&lt;/u&gt;; 1d6+4 psychic damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs Reflex; 1d6+4 psychic damage. &lt;/p&gt;]] <7.5>  psychic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tendril Flick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Reflex; 1d4+3 psychic damage. &lt;/p&gt;]] ➶ <b>Tendril Flick</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 10; [[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tendril Flick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+5 vs Reflex&lt;/u&gt;; 1d4+3 psychic damage. &lt;/p&gt;]]; [[/roll 1d4+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Tendril Flick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Reflex; 1d4+3 psychic damage. &lt;/p&gt;]] <5.5>  psychic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fell Taint Feeding&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a helpless or unconscious creature; the fell taint wisp loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the fell taint wisp kills the target, it regains all of its hit points.&lt;/p&gt;]]  <b>Fell Taint Feeding</b> (standard; at-will) ✦ <b>Healing</b></p><p>Targets a helpless or unconscious creature; the fell taint wisp loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the fell taint wisp kills the target, it regains all of its hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A fell taint wisp deals 1d6 extra damage to any target granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A fell taint wisp deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A fell taint wisp deals 1d6 extra damage to any target granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage to any target granting combat advantage to it.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Coalesce&lt;/b&gt; (minor; recharge ⚄⚅) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Until the end of its next turn, the fell taint wisp loses insubstantial but whenever an enemy hits the fell taint wisp, that enemy takes 5 psychic damage and all fell taints within 5 squares of it regain 5 hit points.&lt;/p&gt;]]  <b>Coalesce</b> (minor; recharge ⚄⚅) ✦ <b>Healing</b></p><p>Until the end of its next turn, the fell taint wisp loses insubstantial but whenever an enemy hits the fell taint wisp, that enemy takes 5 psychic damage and all fell taints within 5 squares of it regain 5 hit points.</p></tr></td></table>",

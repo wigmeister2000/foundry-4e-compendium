@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Avalanche of Blades",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"myu0vwIsFGHSDQWT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"36",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -770,7 +772,7 @@
 		},
 		{
 			"name":"Earth Reaver",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xQzbCXnrgiyENHBs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -806,7 +808,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -816,7 +819,7 @@
 		},
 		{
 			"name":"Indiscriminate Carnage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"xkr4zeb9LVogYil1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -852,7 +855,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -908,23 +912,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 540; <b>Bloodied</b> 270<hr><b>Resist</b> 5 to all damage <b>Immune</b> charm, fear </td><td style=\"padding-left: 15px;\"><b>Init</b> +23 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 47</td><td><b>Fort</b> 46</td><td><b>Ref</b> 42</td><td><b>Will</b> 43</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 see also earth reaver</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 33 (+25)<br><b>Con</b> 30 (+24)</td><td><b>Dex</b> 25 (+21)<br><b>Int</b> 4 (+11)</td><td><b>Wis</b> 11 (+14)<br><b>Cha</b> 27 (+22)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> longsword  x100.</p><p>[[/roll 0#&lt;b&gt;Avalanche of Blades&lt;/b&gt; aura 3; each creature that enters the aura or starts its turn there takes 10 damage.]] <b>Avalanche of Blades</b> aura 3; each creature that enters the aura or starts its turn there takes 10 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whirling Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +36 vs AC; 4d8+4 damage. &lt;/p&gt;]] (⚔) <b>Whirling Blade</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 3; [[/roll 1d20+36[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whirling Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+36 vs AC&lt;/u&gt;; 4d8+4 damage. &lt;/p&gt;]]; [[/roll 4d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Whirling Blade&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +36 vs AC; 4d8+4 damage. &lt;/p&gt;]] <22>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hundred Hands&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; targets each enemy within reach; +36 vs AC; 4d6+8 damage, and the target is knocked prone. Special: When charging, the hundred-handed one can use this power in place of a melee basic attack. &lt;/p&gt;]] ⚔ <b>Hundred Hands</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 3; targets each enemy within reach; [[/roll 1d20+36[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hundred Hands&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; targets each enemy within reach; &lt;u&gt;+36 vs AC&lt;/u&gt;; 4d6+8 damage, and the target is knocked prone. Special: When charging, the hundred-handed one can use this power in place of a melee basic attack. &lt;/p&gt;]]; [[/roll 4d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hundred Hands&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; targets each enemy within reach; +36 vs AC; 4d6+8 damage, and the target is knocked prone. Special: When charging, the hundred-handed one can use this power in place of a melee basic attack. &lt;/p&gt;]] <22>  damage, and the target is knocked prone. Special: When charging, the hundred-handed one can use this power in place of a melee basic attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hail of Steel&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +34 vs AC; 4d6+8 damage, and the target is marked until the end of the hundred-handed one’s next turn. &lt;/p&gt;]] ✻ <b>Hail of Steel</b> (standard, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>Area burst 1 within 20; [[/roll 1d20+34[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hail of Steel&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; &lt;u&gt;+34 vs AC&lt;/u&gt;; 4d6+8 damage, and the target is marked until the end of the hundred-handed one’s next turn. &lt;/p&gt;]]; [[/roll 4d6+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Hail of Steel&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 20; +34 vs AC; 4d6+8 damage, and the target is marked until the end of the hundred-handed one’s next turn. &lt;/p&gt;]] <22>  damage, and the target is marked until the end of the hundred-handed one’s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blades of Death&lt;/b&gt; ( when the hundred-handed one hits a creature with an opportunity attack) &lt;/p&gt;&lt;p&gt;The target is dazed until the end of the hundred-handed one’s next turn.&lt;/p&gt;]]  <b>Blades of Death</b> ( when the hundred-handed one hits a creature with an opportunity attack) </p><p>The target is dazed until the end of the hundred-handed one’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Earth Reaver&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A hundred-handed one ignores difficult terrain.&lt;/p&gt;]]  <b>Earth Reaver</b></p><p>A hundred-handed one ignores difficult terrain.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indiscriminate Carnage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A hundred-handed one can score a critical hit against a prone creature on a roll of 17-20.&lt;/p&gt;]]  <b>Indiscriminate Carnage</b></p><p>A hundred-handed one can score a critical hit against a prone creature on a roll of 17-20.</p></tr></td></table>",

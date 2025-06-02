@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1446,7 +1447,7 @@
 		},
 		{
 			"name":"Warding Blade",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"EgPjLwlpCKfiFAoT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1482,7 +1483,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1718,23 +1720,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 412; <b>Bloodied</b> 206</td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2 (+7 against charm effects)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 35</td><td><b>Ref</b> 37</td><td><b>Will</b> 39</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+12)<br><b>Con</b> 14 (+13)</td><td><b>Dex</b> 17 (+14)<br><b>Int</b> 20 (+16)</td><td><b>Wis</b> 13 (+12)<br><b>Cha</b> 24 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +23, History +18, Intimidate +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 1d4+6 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs AC&lt;/u&gt;; 1d4+6 damage. &lt;/p&gt;]]; [[/roll 1d4+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 1d4+6 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eyebite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Reflex; 2d6+11 psychic damage, and Loratha is invisible to the target until the start of her next turn. &lt;/p&gt;]] ➶ <b>Eyebite</b> (standard, at-will) ✦ <b>Charm, Psychic</b></p><p>Ranged 10; [[/roll 1d20+27[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eyebite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+27 vs Reflex&lt;/u&gt;; 2d6+11 psychic damage, and Loratha is invisible to the target until the start of her next turn. &lt;/p&gt;]]; [[/roll 2d6+11#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Eyebite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Reflex; 2d6+11 psychic damage, and Loratha is invisible to the target until the start of her next turn. &lt;/p&gt;]] <18>  psychic damage, and Loratha is invisible to the target until the start of her next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Bewitching Whispers&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Will; until the end of Loratha\"s next turn, the target treats all creatures as enemies for the purpose of opportunity attacks and must take every opportunity attack possible (with a +5 bonus to the attack roll). &lt;/p&gt;]] ➶ <b>Bewitching Whispers</b> (standard, recharge ⚄⚅) ✦ <b>Charm</b></p><p>Ranged 10; [[/roll 1d20+27[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Bewitching Whispers&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+27 vs Will&lt;/u&gt;; until the end of Loratha\"s next turn, the target treats all creatures as enemies for the purpose of opportunity attacks and must take every opportunity attack possible (with a +5 bonus to the attack roll). &lt;/p&gt;]]; until the end of Loratha\"s next turn, the target treats all creatures as enemies for the purpose of opportunity attacks and must take every opportunity attack possible (with a +5 bonus to the attack roll). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Curse of the Golden Mist&lt;/b&gt; (standard; sustain standard, daily) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Will; the target loses its next standard action. Loratha must make a new attack roll when she sustains this effect. If the attack misses, the effect ends. &lt;/p&gt;]] ➶ <b>Curse of the Golden Mist</b> (standard; sustain standard, daily) ✦ <b>Charm</b></p><p>Ranged 10; [[/roll 1d20+27[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Curse of the Golden Mist&lt;/b&gt; (standard; sustain standard, daily) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+27 vs Will&lt;/u&gt;; the target loses its next standard action. Loratha must make a new attack roll when she sustains this effect. If the attack misses, the effect ends. &lt;/p&gt;]]; the target loses its next standard action. Loratha must make a new attack roll when she sustains this effect. If the attack misses, the effect ends. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Thirsting Tendrils&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Fortitude; 3d6+11 damage, and Loratha can spend a healing surge to regain 113 hit points. &lt;/p&gt;]] ➶ <b>Thirsting Tendrils</b> (standard, encounter) ✦ <b>Healing</b></p><p>Ranged 10; [[/roll 1d20+27[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Thirsting Tendrils&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+27 vs Fortitude&lt;/u&gt;; 3d6+11 damage, and Loratha can spend a healing surge to regain 113 hit points. &lt;/p&gt;]]; [[/roll 3d6+11#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Thirsting Tendrils&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +27 vs Fortitude; 3d6+11 damage, and Loratha can spend a healing surge to regain 113 hit points. &lt;/p&gt;]] <21.5>  damage, and Loratha can spend a healing surge to regain 113 hit points. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Twofold Curse&lt;/b&gt; (minor `/round; at-will) &lt;/p&gt;&lt;p&gt;Loratha can place her Warlock’s Curse on the two nearest enemies she can see. Once per round, when Loratha damages a cursed enemy, she can deal 3d6 extra damage to that target.&lt;/p&gt;]]  <b>Twofold Curse</b> (minor `/round; at-will) </p><p>Loratha can place her Warlock’s Curse on the two nearest enemies she can see. Once per round, when Loratha damages a cursed enemy, she can deal [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Twofold Curse&lt;/b&gt; (minor `/round; at-will) &lt;/p&gt;&lt;p&gt;Loratha can place her Warlock’s Curse on the two nearest enemies she can see. Once per round, when Loratha damages a cursed enemy, she can deal 3d6 extra damage to that target.&lt;/p&gt;]] <10.5> extra damage to that target.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wings of the Fiend&lt;/b&gt; (minor; daily) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Loratha grows wings and gains a fl y speed of 6 until the end of the encounter.&lt;/p&gt;]]  <b>Wings of the Fiend</b> (minor; daily) ✦ <b>Polymorph</b></p><p>Loratha grows wings and gains a fl y speed of 6 until the end of the encounter.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Loratha teleports up to 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>Loratha teleports up to 5 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infuriating Elusiveness&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Illusion, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Loratha becomes invisible and then teleports up to 4 squares. The invisibility lasts until the start of Loratha’s next turn.&lt;/p&gt;]]  <b>Infuriating Elusiveness</b> (move; encounter) ✦ <b>Illusion, Teleportation</b></p><p>Loratha becomes invisible and then teleports up to 4 squares. The invisibility lasts until the start of Loratha’s next turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Warding Blade&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a creature Loratha has cursed makes a melee attack against her, that creature takes 5 damage.&lt;/p&gt;]]  <b>Warding Blade</b></p><p>When a creature Loratha has cursed makes a melee attack against her, that creature takes 5 damage.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -548,7 +550,7 @@
 		},
 		{
 			"name":"Kobold Sorcery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"N5uw42eI1QmSc8sE",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -584,7 +586,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -955,7 +958,7 @@
 		},
 		{
 			"name":"Trap Sense",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6WGeKzrYlfOEscjt",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -991,7 +994,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1047,23 +1051,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 176; <b>Bloodied</b> 88</td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 19</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+7)<br><b>Con</b> 19 (+9)</td><td><b>Dex</b> 22 (+11)<br><b>Int</b> 14 (+7)</td><td><b>Wis</b> 16 (+8)<br><b>Cha</b> 24 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d4+5 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d4+5 damage. &lt;/p&gt;]]; [[/roll 2d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d4+5 damage. &lt;/p&gt;]] <10>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Venom Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; three attacks against up to three different targets; +15 vs Reflex; 1d8+5 poison damage, and Three-Tooth pushes the target 3 squares. &lt;/p&gt;]] (➶) <b>Venom Bolt</b> (standard, at-will) ✦ <b>Implement, Poison</b></p><p>Ranged 20; three attacks against up to three different targets; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Venom Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; three attacks against up to three different targets; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d8+5 poison damage, and Three-Tooth pushes the target 3 squares. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Venom Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Implement, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; three attacks against up to three different targets; +15 vs Reflex; 1d8+5 poison damage, and Three-Tooth pushes the target 3 squares. &lt;/p&gt;]] <9.5>  poison damage, and Three-Tooth pushes the target 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Resonating Orb&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20; +15 vs Reflex; 2d8+5 force damage, and the target is knocked prone. Damage from this attack ignores temporary hit points. &lt;/p&gt;]] ✻ <b>Resonating Orb</b> (standard, recharge ⚄⚅) ✦ <b>Force, Implement</b></p><p>Area burst 2 within 20; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Resonating Orb&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 2d8+5 force damage, and the target is knocked prone. Damage from this attack ignores temporary hit points. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Resonating Orb&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 20; +15 vs Reflex; 2d8+5 force damage, and the target is knocked prone. Damage from this attack ignores temporary hit points. &lt;/p&gt;]] <14>  force damage, and the target is knocked prone. Damage from this attack ignores temporary hit points. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Kobold Sorcery&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When Three-Tooth rolls an even number on an attack roll with an implement power (whether the attack hits or misses), she slides the target 1 square after the attack.&lt;/p&gt;]]  <b>Kobold Sorcery</b></p><p>When Three-Tooth rolls an even number on an attack roll with an implement power (whether the attack hits or misses), she slides the target 1 square after the attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Trap Sense&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three-Tooth gains a +2 bonus to all defenses against traps.&lt;/p&gt;]]  <b>Trap Sense</b></p><p>Three-Tooth gains a +2 bonus to all defenses against traps.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blinking Shifty&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Healing, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three-Tooth teleports 2 squares and regains 3 hit points.&lt;/p&gt;]]  <b>Blinking Shifty</b> (minor; at-will) ✦ <b>Healing, Teleportation</b></p><p>Three-Tooth teleports 2 squares and regains 3 hit points.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Teleport Escape&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Three-Tooth teleports 10 squares.&lt;/p&gt;]]  <b>Teleport Escape</b> (move; encounter) ✦ <b>Teleportation</b></p><p>Three-Tooth teleports 10 squares.</p></tr></td></table>",

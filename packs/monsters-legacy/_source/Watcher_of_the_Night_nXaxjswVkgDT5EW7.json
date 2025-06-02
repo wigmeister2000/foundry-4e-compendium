@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -470,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1263,7 +1264,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gvbMuAaZVqtCnGsk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1299,7 +1300,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1355,23 +1357,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 194; <b>Bloodied</b> 97</td><td style=\"padding-left: 15px;\"><b>Init</b> +16 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 26</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+8)<br><b>Con</b> 19 (+10)</td><td><b>Dex</b> 22 (+12)<br><b>Int</b> 14 (+8)</td><td><b>Wis</b> 19 (+10)<br><b>Cha</b> 13 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +10, History +10, Stealth +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> watcher\"s signet, dagger , leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 3d4+5 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 3d4+5 damage. &lt;/p&gt;]]; [[/roll 3d4+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 3d4+5 damage. &lt;/p&gt;]] <12.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Watcher of the Night makes two dagger attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) ✦ <b>Weapon</b></p><p>The Watcher of the Night makes two dagger attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Arcane Blade&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon, Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 4d4+10 damage; the Watcher of the Night can choose to do normal damage with this attack, or have the attack deal cold, fire, lightning, or thunder damage instead. &lt;/p&gt;]] ⚔ <b>Arcane Blade</b> (standard, encounter) ✦ <b>Weapon, Varies</b></p><p>[[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Arcane Blade&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon, Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs Reflex&lt;/u&gt;; 4d4+10 damage; the Watcher of the Night can choose to do normal damage with this attack, or have the attack deal cold, fire, lightning, or thunder damage instead. &lt;/p&gt;]]; [[/roll 4d4+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Arcane Blade&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon, Varies&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Reflex; 4d4+10 damage; the Watcher of the Night can choose to do normal damage with this attack, or have the attack deal cold, fire, lightning, or thunder damage instead. &lt;/p&gt;]] <20>  damage; the Watcher of the Night can choose to do normal damage with this attack, or have the attack deal cold, fire, lightning, or thunder damage instead. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;No More Secrets&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Close burst 10; targets one creature; the target gains 10 vulnerability to cold, fire, lightning, or thunder (Watcher of the Night’s choice) until the end of the Watcher’s next turn.&lt;/p&gt;]] ᗕ <b>No More Secrets</b> (minor, encounter) </p><p>Close burst 10; targets one creature; the target gains 10 vulnerability to cold, fire, lightning, or thunder (Watcher of the Night’s choice) until the end of the Watcher’s next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Watcher\"s Signet&lt;/b&gt; (minor; encounter) &lt;/p&gt;&lt;p&gt;The Watcher of the Night gains a +5 bonus to Stealth checks until the end of its next turn.&lt;/p&gt;]]  <b>Watcher\"s Signet</b> (minor; encounter) </p><p>The Watcher of the Night gains a +5 bonus to Stealth checks until the end of its next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Watcher of the Night can teleport 5 squares.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The Watcher of the Night can teleport 5 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Night\"s Embrace&lt;/b&gt; (immediate reaction, when hit or missed by a melee attack; recharge ⚄⚅) ✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The Watcher of the Night gains total concealment from the attacking creature until the end of the Watcher’s next turn. The Watcher of the Night can use this power even in the radius of a revelation sphere and this power does not end when the Watcher of the Night enters the radius of a revelation sphere.&lt;/p&gt;]]  <b>Night\"s Embrace</b> (immediate reaction, when hit or missed by a melee attack; recharge ⚄⚅) ✦ <b>Illusion</b></p><p>The Watcher of the Night gains total concealment from the attacking creature until the end of the Watcher’s next turn. The Watcher of the Night can use this power even in the radius of a revelation sphere and this power does not end when the Watcher of the Night enters the radius of a revelation sphere.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A Watcher of the Night deals 2d6 extra damage against any target granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>A Watcher of the Night deals [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A Watcher of the Night deals 2d6 extra damage against any target granting combat advantage to it.&lt;/p&gt;]] <7> extra damage against any target granting combat advantage to it.</p></tr></td></table>",

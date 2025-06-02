@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Elemental Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jb5VsyDf2SG879aw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -521,10 +523,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -828,23 +830,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 640; <b>Bloodied</b> 320<hr><b>Resist</b> 15 variable (3/encounter) <b>Immune</b> disease, fear, poison, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +21 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 44</td><td><b>Ref</b> 37</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 38 (+28)<br><b>Con</b> 30 (+24)</td><td><b>Dex</b> 25 (+21)<br><b>Int</b> 3 (+10)</td><td><b>Wis</b> 27 (+22)<br><b>Cha</b> 15 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Elemental Presence&lt;/b&gt; (Acid, Cold, Fire, Lightning, Thunder) aura 5; each creature that starts its turn within the aura takes 15 acid, cold, fire, lightning, and thunder damage.]] <b>Elemental Presence</b> (Acid, Cold, Fire, Lightning, Thunder) aura 5; each creature that starts its turn within the aura takes 15 acid, cold, fire, lightning, and thunder damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+29 vs AC; 3d10+14 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>[[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+29 vs AC&lt;/u&gt;; 3d10+14 damage. &lt;/p&gt;]]; [[/roll 3d10+14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+29 vs AC; 3d10+14 damage. &lt;/p&gt;]] <30.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Colossal Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +29 vs AC; 3d10+14 damage, and the primordial colossus can make a secondary attack. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; close blast 3; +28 vs  or  (whichever is lower); 3d8 acid, cold, fire, lightning, and thunder damage, and the target is knocked prone. &lt;/p&gt;]] ᗕ <b>Colossal Slam</b> (standard, at-will) ✦ <b>Acid, Cold, Fire, Lightning, Thunder</b></p><p>Close blast 3; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Colossal Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+29 vs AC&lt;/u&gt;; 3d10+14 damage, and the primordial colossus can make a secondary attack. &lt;/p&gt;]]; [[/roll 3d10+14#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Colossal Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +29 vs AC; 3d10+14 damage, and the primordial colossus can make a secondary attack. &lt;/p&gt;]] <30.5>  damage, and the primordial colossus can make a secondary attack. </p><p><i>Secondary Attack</i> close blast 3; +28 vs  or  (whichever is lower); [[/roll 3d8 #&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Colossal Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; close blast 3; +28 vs  or  (whichever is lower); 3d8 acid, cold, fire, lightning, and thunder damage, and the target is knocked prone. &lt;/p&gt;]] <13.5> acid, cold, fire, lightning, and thunder damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Primordial Stone&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +29 vs Reflex; 3d6+14 damage, and the primordial colossus can make a secondary attack that is a burst 5 centered on the target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +28 vs Fortitude; 3d8 acid, cold, fire, lightning, and thunder damage, and the secondary target is knocked prone. &lt;/p&gt;]] ➶ <b>Primordial Stone</b> (standard, at-will) ✦ <b>Acid, Cold, Fire, Lightning, Thunder</b></p><p>Ranged 20; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Primordial Stone&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 3d6+14 damage, and the primordial colossus can make a secondary attack that is a burst 5 centered on the target. &lt;/p&gt;]]; [[/roll 3d6+14#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Primordial Stone&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +29 vs Reflex; 3d6+14 damage, and the primordial colossus can make a secondary attack that is a burst 5 centered on the target. &lt;/p&gt;]] <24.5>  damage, and the primordial colossus can make a secondary attack that is a burst 5 centered on the target. </p><p><i>Secondary Attack</i> [[/roll 1d20+28[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Primordial Stone&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+28 vs Fortitude&lt;/u&gt;; 3d8 acid, cold, fire, lightning, and thunder damage, and the secondary target is knocked prone. &lt;/p&gt;]]; [[/roll 3d8 #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Primordial Stone&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +28 vs Fortitude; 3d8 acid, cold, fire, lightning, and thunder damage, and the secondary target is knocked prone. &lt;/p&gt;]] <13.5> acid, cold, fire, lightning, and thunder damage, and the secondary target is knocked prone. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Reactive Kick&lt;/b&gt; (immediate reaction, when an enemy moves adjacent to the primordial colossus, recharges when first bloodied) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; +30 vs Fortitude; 3d8+7 acid, cold, fire, lightning, and thunder damage, and the target is pushed 4 squares and knocked prone. &lt;/p&gt;]] ⚔ <b>Reactive Kick</b> (immediate reaction, when an enemy moves adjacent to the primordial colossus, recharges when first bloodied) ✦ <b>Acid, Cold, Fire, Lightning, Thunder</b></p><p>Targets the triggering creature; [[/roll 1d20+30[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Reactive Kick&lt;/b&gt; (immediate reaction, when an enemy moves adjacent to the primordial colossus, recharges when first bloodied) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; &lt;u&gt;+30 vs Fortitude&lt;/u&gt;; 3d8+7 acid, cold, fire, lightning, and thunder damage, and the target is pushed 4 squares and knocked prone. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Reactive Kick&lt;/b&gt; (immediate reaction, when an enemy moves adjacent to the primordial colossus, recharges when first bloodied) ✦ &lt;b&gt;Acid, Cold, Fire, Lightning, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; +30 vs Fortitude; 3d8+7 acid, cold, fire, lightning, and thunder damage, and the target is pushed 4 squares and knocked prone. &lt;/p&gt;]] <20.5>  acid, cold, fire, lightning, and thunder damage, and the target is pushed 4 squares and knocked prone. </p></tr></td></table>",

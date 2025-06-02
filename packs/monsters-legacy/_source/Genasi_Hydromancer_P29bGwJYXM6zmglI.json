@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -465,10 +467,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":"When The Target Saves Against This Attack'S Ongoing Damage Or When It Drops To 0 Hit Points Or Fewer",
@@ -1122,23 +1124,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 91; <b>Bloodied</b> 45</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>Save</b> +2 against ongoing damage</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 21</td><td><b>Ref</b> 20</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+6)<br><b>Con</b> 19 (+8)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 13 (+5)</td><td><b>Wis</b> 13 (+5)<br><b>Cha</b> 17 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +12, Arcana +10, Stealth +12</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> robes, scimitar .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 2d8+4 damage (crit 1d8+20). &lt;/p&gt;]] (⚔) <b>Scimitar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 2d8+4 damage (crit 1d8+20). &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 2d8+4 damage (crit 1d8+20). &lt;/p&gt;]] <13>  damage (crit [[/roll 1d8+20#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 2d8+4 damage (crit 1d8+20). &lt;/p&gt;]] <24.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Wave Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +13 vs AC; 2d6+4 damage, and the genasi hydrmancer slides the target 3 squares. &lt;/p&gt;]] (➶) <b>Wave Bolt</b> (standard, at-will) </p><p>Ranged 5; [[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Wave Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+13 vs AC&lt;/u&gt;; 2d6+4 damage, and the genasi hydrmancer slides the target 3 squares. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Wave Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +13 vs AC; 2d6+4 damage, and the genasi hydrmancer slides the target 3 squares. &lt;/p&gt;]] <11>  damage, and the genasi hydrmancer slides the target 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Drowning Touch&lt;/b&gt; (standard, recharges when the target saves against this attack’s ongoing damage or when it drops to 0 hit points or fewer) &lt;/p&gt;&lt;p&gt;+12 vs Fortitude; the target is dazed and takes ongoing 10 damage (save ends both). &lt;/p&gt;]] ⚔ <b>Drowning Touch</b> (standard, recharges when the target saves against this attack’s ongoing damage or when it drops to 0 hit points or fewer) </p><p>[[/roll 1d20+12[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Drowning Touch&lt;/b&gt; (standard, recharges when the target saves against this attack’s ongoing damage or when it drops to 0 hit points or fewer) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs Fortitude&lt;/u&gt;; the target is dazed and takes ongoing 10 damage (save ends both). &lt;/p&gt;]]; the target is dazed and takes ongoing 10 damage (save ends both). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Whirling Vortex&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +12 vs Reflex; 2d8+6 damage, and the genasi hydromancer slides the target 3 squares. &lt;/p&gt;]] ᗕ <b>Whirling Vortex</b> (standard, recharge ⚄⚅) </p><p>Close burst 2; targets enemies; [[/roll 1d20+12[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Whirling Vortex&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; &lt;u&gt;+12 vs Reflex&lt;/u&gt;; 2d8+6 damage, and the genasi hydromancer slides the target 3 squares. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Whirling Vortex&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close burst 2; targets enemies; +12 vs Reflex; 2d8+6 damage, and the genasi hydromancer slides the target 3 squares. &lt;/p&gt;]] <15>  damage, and the genasi hydromancer slides the target 3 squares. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Liquid Body&lt;/b&gt; (immediate interrupt, when hit by an enemy\"s attack; recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The genasi hydromancer takes half damage from the triggering attack.&lt;/p&gt;]]  <b>Liquid Body</b> (immediate interrupt, when hit by an enemy\"s attack; recharges when first bloodied) </p><p>The genasi hydromancer takes half damage from the triggering attack.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Swift Current&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The genasi hydromancer shifts 6 squares. During its movement, the hydromancer can move through enemy-ocupied spaces, move across liquid, and ignore difficult terrain and hazardous terrain effects.&lt;/p&gt;]]  <b>Swift Current</b> (move; encounter) </p><p>The genasi hydromancer shifts 6 squares. During its movement, the hydromancer can move through enemy-ocupied spaces, move across liquid, and ignore difficult terrain and hazardous terrain effects.</p></tr></td></table>",

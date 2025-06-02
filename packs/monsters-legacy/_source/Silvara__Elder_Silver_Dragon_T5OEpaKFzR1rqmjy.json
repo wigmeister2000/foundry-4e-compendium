@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1660,23 +1662,10 @@
 				"max":10
 			},
 			"init":{
-				"value":21,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":21
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 908; <b>Bloodied</b> 454 ; see also bloodied breath<hr><b>Resist</b> 30 cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +21 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 37</td><td><b>Ref</b> 36</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (hover), overland flight 15</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+21)<br><b>Con</b> 27 (+20)</td><td><b>Dex</b> 25 (+19)<br><b>Int</b> 20 (+17)</td><td><b>Wis</b> 22 (+18)<br><b>Cha</b> 25 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Elven<br><b>Alignment</b> Good</td></tr><tr><td><b>Skills</b> Arcana +22, Bluff +24, Diplomacy +24, Insight +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 28 | Insight 33</td></td></tr></table><p><b>Equipment</b> hunting club, obsidian dagger, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +31 vs AC; 4d6+9 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+31 vs AC&lt;/u&gt;; 4d6+9 damage. &lt;/p&gt;]]; [[/roll 4d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +31 vs AC; 4d6+9 damage. &lt;/p&gt;]] <23>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +31 vs AC; 3d6+9 damage. &lt;/p&gt;]] (⚔) <b>Silver Claw</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+31 vs AC&lt;/u&gt;; 3d6+9 damage. &lt;/p&gt;]]; [[/roll 3d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +31 vs AC; 3d6+9 damage. &lt;/p&gt;]] <19.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dragon\"s Onslaught&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Silvara makes a claw attack against each enemy in reach.&lt;/p&gt;]] ⚔ <b>Dragon\"s Onslaught</b> (standard, at-will) </p><p>Silvara makes a claw attack against each enemy in reach.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +29 vs Reflex; 3d8+9 cold damage, and the target is slowed and gains vulnerable 5 to all damage (save ends both). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Cold</b></p><p>Close blast 5; [[/roll 1d20+29[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+29 vs Reflex&lt;/u&gt;; 3d8+9 cold damage, and the target is slowed and gains vulnerable 5 to all damage (save ends both). Miss: Half damage. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +29 vs Reflex; 3d8+9 cold damage, and the target is slowed and gains vulnerable 5 to all damage (save ends both). Miss: Half damage. &lt;/p&gt;]] <22.5>  cold damage, and the target is slowed and gains vulnerable 5 to all damage (save ends both). Miss: Half damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; +29 vs Will; the target is stunned until the end of Silvara’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 10; targets enemies; [[/roll 1d20+29[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets enemies; &lt;u&gt;+29 vs Will&lt;/u&gt;; the target is stunned until the end of Silvara’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). &lt;/p&gt;]]; the target is stunned until the end of Silvara’s next turn. Aftereffect: The target takes a -2 penalty to attack rolls (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Wing Slice&lt;/b&gt; (immediate reaction, when an enemy attacks silvara while flanking her or attacks one of silvara\"s allies, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +31 vs AC; 3d6+9 damage. &lt;/p&gt;]] ⚔ <b>Wing Slice</b> (immediate reaction, when an enemy attacks silvara while flanking her or attacks one of silvara\"s allies, at-will) </p><p>Reach 3; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Wing Slice&lt;/b&gt; (immediate reaction, when an enemy attacks silvara while flanking her or attacks one of silvara\"s allies, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+31 vs AC&lt;/u&gt;; 3d6+9 damage. &lt;/p&gt;]]; [[/roll 3d6+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Wing Slice&lt;/b&gt; (immediate reaction, when an enemy attacks silvara while flanking her or attacks one of silvara\"s allies, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +31 vs AC; 3d6+9 damage. &lt;/p&gt;]] <19.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Enfolding Wings&lt;/b&gt; (immediate interrupt, when an enemy within 3 squares of silvara attacks an ally that is also within 3 squares; at-will) &lt;/p&gt;&lt;p&gt;The target of the attack slides to a space adjacent to Silvara, and the attack targets Silvara instead.&lt;/p&gt;]]  <b>Enfolding Wings</b> (immediate interrupt, when an enemy within 3 squares of silvara attacks an ally that is also within 3 squares; at-will) </p><p>The target of the attack slides to a space adjacent to Silvara, and the attack targets Silvara instead.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;Breath weapon recharges, and Silvara uses it&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>Breath weapon recharges, and Silvara uses it</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Silvara alters her form to appear as a unique female elf (see “Change Shape,” MM2 216).&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>Silvara alters her form to appear as a unique female elf (see “Change Shape,” MM2 216).</p></tr></td></table>",

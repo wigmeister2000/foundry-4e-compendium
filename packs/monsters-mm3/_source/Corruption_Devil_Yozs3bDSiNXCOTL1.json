@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Corruptive Presence",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0XTOgGFBhsr1ikxJ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"25",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -996,23 +999,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 208; <b>Bloodied</b> 104</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>Save</b> +5 against fear or charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 34</td><td><b>Ref</b> 34</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+17)<br><b>Con</b> 24 (+18)</td><td><b>Dex</b> 15 (+13)<br><b>Int</b> 25 (+18)</td><td><b>Wis</b> 27 (+19)<br><b>Cha</b> 24 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Bluff +23, Diplomacy +23, Insight +24</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 29 | Insight 34</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Corruptive Presence&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Enemies within the aura take a -2 penalty to saving throws.&lt;/p&gt;]] ⌀ <b>Corruptive Presence</b> ✦ <b>Aura</b> 5</p><p>Enemies within the aura take a -2 penalty to saving throws.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Corrupting Claws&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +27 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 10 psychic damage (save ends).&lt;/p&gt;]] (⚔) <b>Corrupting Claws</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+27[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Corrupting Claws&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+27 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 10 psychic damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Corruption&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); +25 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; Ongoing 5 psychic damage (save ends).&lt;/p&gt;]] (➶) <b>Word of Corruption</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 20 (one creature); [[/roll 1d20+25[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Word of Corruption&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 20 (one creature); &lt;u&gt;+25 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> Ongoing 5 psychic damage (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sway the Corrupt&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One enemy within 10 squares of the devil that is taking ongoing psychic damage is dominated until the end of its next turn.&lt;/p&gt;]]  <b>Sway the Corrupt</b> (charm) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> One enemy within 10 squares of the devil that is taking ongoing psychic damage is dominated until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Doom the Corrupt&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One ally or dominated creature within 10 squares of the devil makes a melee basic attack against a creature of the devil’s choice. If that attack hits, the target of the attack is also immobilized (save ends).&lt;/p&gt;]]  <b>Doom the Corrupt</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> One ally or dominated creature within 10 squares of the devil makes a melee basic attack against a creature of the devil’s choice. If that attack hits, the target of the attack is also immobilized (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Desperate Measures&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One of the devil’s allies within 5 squares of it can make a basic attack as a free action and can score a critical hit on a roll of 19–20 with this attack. The ally grants combat advantage until the devil’s next turn. While the devil is bloodied, this power affects each of the devil’s allies within 5 squares.&lt;/p&gt;]]  <b>Desperate Measures</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> One of the devil’s allies within 5 squares of it can make a basic attack as a free action and can score a critical hit on a roll of 19–20 with this attack. The ally grants combat advantage until the devil’s next turn. While the devil is bloodied, this power affects each of the devil’s allies within 5 squares.</p></tr></td></table>",

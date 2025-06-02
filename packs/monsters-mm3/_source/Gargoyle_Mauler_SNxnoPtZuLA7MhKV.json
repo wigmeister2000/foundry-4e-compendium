@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -764,23 +765,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 692; <b>Bloodied</b> 346<hr><b>Immune</b> petrification </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 32</td><td><b>Ref</b> 32</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+16)<br><b>Con</b> 21 (+14)</td><td><b>Dex</b> 24 (+16)<br><b>Int</b> 15 (+11)</td><td><b>Wis</b> 16 (+12)<br><b>Cha</b> 20 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +23 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+23[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+23 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 6 damage, and ongoing 10 damage (save ends).&lt;/p&gt;]] <15>  damage, and ongoing 10 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mauling Claws&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mauler uses claw four times, no more than twice against a single target. If two attacks hit the same target, the target is dazed (save ends).&lt;/p&gt;]] ⚔ <b>Mauling Claws</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The mauler uses claw four times, no more than twice against a single target. If two attacks hit the same target, the target is dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flying Strike&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; 5, or when the mauler uses stone form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mauler flies 8 squares and makes the following attack four times at any point during its move. This move does not provoke opportunity attacks.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 12 damage, and the mauler slides the target 3 squares.&lt;/p&gt;]] ⚔ <b>Flying Strike</b> ✦ <b>Recharge</b> 5, or when the mauler uses stone form</p><p><i>Effect:</i> The mauler flies 8 squares and makes the following attack four times at any point during its move. This move does not provoke opportunity attacks.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flying Strike&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; 5, or when the mauler uses stone form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Flying Strike&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; 5, or when the mauler uses stone form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 12 damage, and the mauler slides the target 3 squares.&lt;/p&gt;]] <30>  damage, and the mauler slides the target 3 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stone Form&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mauler becomes a statue and gains resist 30 all, tremorsense 10, and regeneration 5 (it regains 5 hit points whenever it starts its turn and has at least 1 hit point). It loses all other senses and can take no actions in stone form other than reverting to its normal form (a standard action).&lt;/p&gt;]]  <b>Stone Form</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The mauler becomes a statue and gains resist 30 all, tremorsense 10, and regeneration 5 (it regains 5 hit points whenever it starts its turn and has at least 1 hit point). It loses all other senses and can take no actions in stone form other than reverting to its normal form (a standard action).</p></tr></td></table>",

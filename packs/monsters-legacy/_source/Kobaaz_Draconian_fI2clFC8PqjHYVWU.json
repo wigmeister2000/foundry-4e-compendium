@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -542,7 +543,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"dA56mWjGLXfRs709",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -578,7 +579,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -634,23 +636,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 57; <b>Bloodied</b> 28 ; see also ice statue</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 17</td><td><b>Ref</b> 15</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, fly 5 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+6)<br><b>Con</b> 17 (+5)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 11 (+2)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 11 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> glaive , scale armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +9 vs AC; 2d4+4 damage, and the target slides 3 squares. &lt;/p&gt;]] (⚔) <b>Glaive</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+9 vs AC&lt;/u&gt;; 2d4+4 damage, and the target slides 3 squares. &lt;/p&gt;]]; [[/roll 2d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Glaive&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +9 vs AC; 2d4+4 damage, and the target slides 3 squares. &lt;/p&gt;]] <9>  damage, and the target slides 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Arching Blade&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The kobaaz draconian makes a glaive attack against each enemy within reach. If an attack hits, the target is also knocked prone. After these attacks are made, the draconian can shift 1 square&lt;/p&gt;]] ⚔ <b>Arching Blade</b> (standard, encounter) </p><p>The kobaaz draconian makes a glaive attack against each enemy within reach. If an attack hits, the target is also knocked prone. After these attacks are made, the draconian can shift 1 square</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Ice Statue&lt;/b&gt; ( when the kobaaz draconian drops to 0 hit points, ) ✦ &lt;b&gt;Cold, Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The kobaaz draconian crystallizes into an icy statue. It becomes blocking terrain, and any creature that starts its turn within 2 squares of the statue takes 5 cold damage and is slowed until the end of its current turn&lt;/p&gt;]] ᗕ <b>Ice Statue</b> ( when the kobaaz draconian drops to 0 hit points, ) ✦ <b>Cold, Polymorph</b></p><p>The kobaaz draconian crystallizes into an icy statue. It becomes blocking terrain, and any creature that starts its turn within 2 squares of the statue takes 5 cold damage and is slowed until the end of its current turn</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A kobaaz draconian can make opportunity attacks against all enemies within its weapon’s reach.&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>A kobaaz draconian can make opportunity attacks against all enemies within its weapon’s reach.</p></tr></td></table>",

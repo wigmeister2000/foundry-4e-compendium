@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Wave of Retribution",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"njNPmCUXb8TSg6Rl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -812,23 +814,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 341; <b>Bloodied</b> 170</td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 40</td><td><b>Fort</b> 44</td><td><b>Ref</b> 41</td><td><b>Will</b> 42</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+24)<br><b>Con</b> 31 (+25)</td><td><b>Dex</b> 25 (+22)<br><b>Int</b> 9 (+14)</td><td><b>Wis</b> 27 (+23)<br><b>Cha</b> 24 (+22)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 33 | Insight 33</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Wave of Retribution&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the light of Amoth takes damage, any enemy within 2 squares of that creature takes 5 damage.&lt;/p&gt;]]  <b>Wave of Retribution</b> <b></b></p><p>Whenever the light of Amoth takes damage, any enemy within 2 squares of that creature takes 5 damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fist of Wrath&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +35 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10+20 damage&lt;/p&gt;]] (⚔) <b>Fist of Wrath</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+35[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fist of Wrath&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+35 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10+20#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Fist of Wrath&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10+20 damage&lt;/p&gt;]] <42>  damage</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Fury of the Dead&lt;/b&gt; ✦ Recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The light of Amoth uses fist of wrath against each enemy within 2 squares of it.&lt;/p&gt;]] ⚔ <b>Fury of the Dead</b> ✦ Recharge ⚅</p><p><i>Effect:</i> The light of Amoth uses fist of wrath against each enemy within 2 squares of it.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Legacy of Kalandurren&lt;/b&gt; (cold) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +32 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10+20 cold damage, and the target is immobilized (save ends).&lt;/p&gt;]] ᗕ <b>Legacy of Kalandurren</b> (cold) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+32[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Legacy of Kalandurren&lt;/b&gt; (cold) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+32 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10+20#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Legacy of Kalandurren&lt;/b&gt; (cold) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10+20 cold damage, and the target is immobilized (save ends).&lt;/p&gt;]] <42>  cold damage, and the target is immobilized (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Unfettered Apocalypse&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy scores a critical hit against the light of Amoth or the light of Amoth is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The light of Amoth creates a duplicate of itself, which appears in the nearest unoccupied squares. The duplicate has the same hit points as the light of Amoth, is considered to have expended the same powers as the light of Amoth, and acts during the light of Amoth’s turn. Any effects on the light of Amoth do not transfer to the duplicate. At the end of the light of Amoth’s next turn, the duplicate disappears.&lt;/p&gt;]]  <b>Unfettered Apocalypse</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> An enemy scores a critical hit against the light of Amoth or the light of Amoth is first bloodied.</p><p><i>Effect (No Action):</i> The light of Amoth creates a duplicate of itself, which appears in the nearest unoccupied squares. The duplicate has the same hit points as the light of Amoth, is considered to have expended the same powers as the light of Amoth, and acts during the light of Amoth’s turn. Any effects on the light of Amoth do not transfer to the duplicate. At the end of the light of Amoth’s next turn, the duplicate disappears.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Smothering Shadows",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VeiJbR0hg1IvEoOw",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Action Recovery",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OndBsghITYN1yAxq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Shadow Movement",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"A8oHp3dlyIRESNBc",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -380,7 +384,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1271,21 +1276,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 760; <b>Bloodied</b> 380<hr><b>Vulnerable</b> 10 radiant <b>Immune</b> necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> ++0 (see shadow movement) | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 28</td><td><b>Ref</b> 27</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+12)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 17 (+11)<br><b>Int</b> 19 (+12)</td><td><b>Wis</b> 19 (+12)<br><b>Cha</b> 22 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Draconic<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision,Truesight 5<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Smothering Shadows&lt;/b&gt; (necrotic) ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Bright light within the aura is reduced to dim light. Each nonminion enemy that ends its turn in the aura takes 5 (10 while the avatar is bloodied) necrotic damage.&lt;/p&gt;]] ⌀ <b>Smothering Shadows</b> (necrotic) ✦ <b>Aura</b> 5</p><p>Bright light within the aura is reduced to dim light. Each nonminion enemy that ends its turn in the aura takes 5 (10 while the avatar is bloodied) necrotic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Action Recovery&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the avatar ends his turn, any dazing, stunning, or dominating effect on him ends.&lt;/p&gt;]]  <b>Action Recovery</b> <b></b></p><p>Whenever the avatar ends his turn, any dazing, stunning, or dominating effect on him ends.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shadow Movement&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The avatar takes a full turn on initiative count 25 and initiative count 15. He can take two immediate actions per round, but only one between one turn and the next.&lt;/p&gt;]]  <b>Shadow Movement</b> <b></b></p><p>The avatar takes a full turn on initiative count 25 and initiative count 15. He can take two immediate actions per round, but only one between one turn and the next.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Reaper\"s Touch&lt;/b&gt; (cold, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 cold and necrotic damage, and the target is slowed (save ends).&lt;/p&gt;]] (⚔) <b>Reaper\"s Touch</b> (cold, necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Reaper\"s Touch&lt;/b&gt; (cold, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Reaper\"s Touch&lt;/b&gt; (cold, necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 cold and necrotic damage, and the target is slowed (save ends).&lt;/p&gt;]] <26.5>  cold and necrotic damage, and the target is slowed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Lash&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 necrotic damage, and the avatar slides the target up to 2 squares.&lt;/p&gt;]] (➶) <b>Shadow Lash</b> (necrotic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Lash&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadow Lash&lt;/b&gt; (necrotic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 necrotic damage, and the avatar slides the target up to 2 squares.&lt;/p&gt;]] <26.5>  necrotic damage, and the avatar slides the target up to 2 squares.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The avatar makes two basic attacks.&lt;/p&gt;]]  <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The avatar makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Clinging Darkness&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 squares (enemies in the burst); +19 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 14 necrotic damage, and the target is immobilized and takes ongoing 5 necrotic damage (save ends both).&lt;/p&gt;]] ✻ <b>Clinging Darkness</b> (necrotic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 2 within 10 squares (enemies in the burst); [[/roll 1d20+19[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Clinging Darkness&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 2 within 10 squares (enemies in the burst); &lt;u&gt;+19 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 14#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Clinging Darkness&lt;/b&gt; (necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 14 necrotic damage, and the target is immobilized and takes ongoing 5 necrotic damage (save ends both).&lt;/p&gt;]] <18.5>  necrotic damage, and the target is immobilized and takes ongoing 5 necrotic damage (save ends both).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Seductive Whispers&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +19 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The avatar slides the target up to 4 squares.&lt;/p&gt;]] ➶ <b>Seductive Whispers</b> (charm) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+19[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Seductive Whispers&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+19 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The avatar slides the target up to 4 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Action Lash&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 10 squares of the avatar spends an action point.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Interrupt):&lt;/i&gt; Ranged 10 (one creature); +19 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target loses a healing surge. If it has no healing surges, the target instead takes damage equal to its healing surge value.&lt;/p&gt;]] ➶ <b>Action Lash</b> (charm) ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy within 10 squares of the avatar spends an action point.</p><p><i>Attack (Immediate Interrupt):</i> Ranged 10 (one creature); [[/roll 1d20+19[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Action Lash&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Interrupt):&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+19 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target loses a healing surge. If it has no healing surges, the target instead takes damage equal to its healing surge value.</p></tr></td></table>",

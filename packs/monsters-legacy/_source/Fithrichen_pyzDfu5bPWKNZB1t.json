@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -290,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -593,23 +594,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 121; <b>Bloodied</b> 60</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 22</td><td><b>Ref</b> 20</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+10)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 6 (+4)</td><td><b>Wis</b> 15 (+8)<br><b>Cha</b> 22 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 10<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+4 damage, and ongoing 5 poison damage (save ends). First Failed Save: The target is slowed (save ends). Second Failed Save: The target becomes unconscious (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+4 damage, and ongoing 5 poison damage (save ends). First Failed Save: The target is slowed (save ends). Second Failed Save: The target becomes unconscious (save ends). &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+4 damage, and ongoing 5 poison damage (save ends). First Failed Save: The target is slowed (save ends). Second Failed Save: The target becomes unconscious (save ends). &lt;/p&gt;]] <8.5>  damage, and ongoing 5 poison damage (save ends). First Failed Save: The target is slowed (save ends). Second Failed Save: The target becomes unconscious (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Disgorge Spiders&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;crawling poisonous spiders cover the area, attacking the targets; Close blast 3; targets enemies in blast; +16 vs Reflex; 1d6+6 poison damage, and ongoing 5 poison damage (save ends). The zone is difficult terrain until the end of the encounter. The fithrichen can move the zone up to 3 squares as a minor action once per round. After the zone is created, any enemy that enters or starts its turn inside the zone is subject to attack. &lt;/p&gt;]] ᗕ <b>Disgorge Spiders</b> (standard, encounter) ✦ <b>Poison, Zone</b></p><p>crawling poisonous spiders cover the area, attacking the targets; Close blast 3; targets enemies in blast; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Disgorge Spiders&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;crawling poisonous spiders cover the area, attacking the targets; Close blast 3; targets enemies in blast; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 1d6+6 poison damage, and ongoing 5 poison damage (save ends). The zone is difficult terrain until the end of the encounter. The fithrichen can move the zone up to 3 squares as a minor action once per round. After the zone is created, any enemy that enters or starts its turn inside the zone is subject to attack. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Disgorge Spiders&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Poison, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;crawling poisonous spiders cover the area, attacking the targets; Close blast 3; targets enemies in blast; +16 vs Reflex; 1d6+6 poison damage, and ongoing 5 poison damage (save ends). The zone is difficult terrain until the end of the encounter. The fithrichen can move the zone up to 3 squares as a minor action once per round. After the zone is created, any enemy that enters or starts its turn inside the zone is subject to attack. &lt;/p&gt;]] <9.5>  poison damage, and ongoing 5 poison damage (save ends). The zone is difficult terrain until the end of the encounter. The fithrichen can move the zone up to 3 squares as a minor action once per round. After the zone is created, any enemy that enters or starts its turn inside the zone is subject to attack. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Cloud of Darkness&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; this power creates a zone of darkness that remains in place until the end of the fithrichen’s next turn. The zone blocks line of sight for all creatures except the fithrichen and other shunned. Any creature entirely within the area (except those immune) is blinded.&lt;/p&gt;]] ⚔ <b>Cloud of Darkness</b> (minor, encounter) ✦ <b>Zone</b></p><p>Close burst 1; this power creates a zone of darkness that remains in place until the end of the fithrichen’s next turn. The zone blocks line of sight for all creatures except the fithrichen and other shunned. Any creature entirely within the area (except those immune) is blinded.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -905,7 +907,7 @@
 		},
 		{
 			"name":"Stand Your Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8KqBW3yrePDoIsXp",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -941,7 +943,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -997,23 +1000,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 190; <b>Bloodied</b> 95</td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 21</td><td><b>Ref</b> 22</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 see also dwarven pursuit</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+7)<br><b>Con</b> 15 (+6)</td><td><b>Dex</b> 18 (+8)<br><b>Int</b> 12 (+5)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 10 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Dwarven, Elven, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +9, Dungeoneering +11, History +10, Insight +10, Thievery +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 20</td></td></tr></table><p><b>Equipment</b> eight gold rings (10 gp each), key-ring with dozens of keys, battleaxe , leather armor , thieves’ tools , throwing hammer  x3.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Battleaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d10+6 damage, and the target is marked and slowed (save ends both). First Failed Saving Throw: Ongoing 5 poison damage, and the target is slowed (save ends both). &lt;/p&gt;]] (⚔) <b>Battleaxe</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Battleaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 1d10+6 damage, and the target is marked and slowed (save ends both). First Failed Saving Throw: Ongoing 5 poison damage, and the target is slowed (save ends both). &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Battleaxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 1d10+6 damage, and the target is marked and slowed (save ends both). First Failed Saving Throw: Ongoing 5 poison damage, and the target is slowed (save ends both). &lt;/p&gt;]] <11.5>  damage, and the target is marked and slowed (save ends both). First Failed Saving Throw: Ongoing 5 poison damage, and the target is slowed (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Throwing Hammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee or ranged 5/10; +16 vs AC; 2d6+3 damage, and the target is knocked prone. &lt;/p&gt;]] (⚔) <b>Throwing Hammer</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Melee or ranged 5/10; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Throwing Hammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee or ranged 5/10; &lt;u&gt;+16 vs AC&lt;/u&gt;; 2d6+3 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Throwing Hammer&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee or ranged 5/10; +16 vs AC; 2d6+3 damage, and the target is knocked prone. &lt;/p&gt;]] <10>  damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dwarven Tempest Footwork&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Imre makes a melee attack with his axe and another with his throwing hammer. After the attacks, any target hit at least once slides 1 square&lt;/p&gt;]] ⚔ <b>Dwarven Tempest Footwork</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Imre makes a melee attack with his axe and another with his throwing hammer. After the attacks, any target hit at least once slides 1 square</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Parrying Counterstrike&lt;/b&gt; (opportunity, when an enemy marked by imre leaves a square adjacent to him or makes an attack that doesn’t include him, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Imre makes a battleaxe attack against the triggering enemy.&lt;/p&gt;]] ⚔ <b>Parrying Counterstrike</b> (opportunity, when an enemy marked by imre leaves a square adjacent to him or makes an attack that doesn’t include him, at-will) ✦ <b>Weapon</b></p><p>Imre makes a battleaxe attack against the triggering enemy.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stand Your Ground&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When an effect forces a dwarf to move—through a pull, a push, or a slide—the dwarf moves 1 square less than the effect specifies. When an attack would knock the dwarf prone, the dwarf can roll a saving throw to avoid falling prone.&lt;/p&gt;]]  <b>Stand Your Ground</b></p><p>When an effect forces a dwarf to move—through a pull, a push, or a slide—the dwarf moves 1 square less than the effect specifies. When an attack would knock the dwarf prone, the dwarf can roll a saving throw to avoid falling prone.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Dwarven Pursuit&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;Imre can shift 2 squares, but he must end this movement adjacent to an enemy.&lt;/p&gt;]]  <b>Dwarven Pursuit</b> (move; at-will) </p><p>Imre can shift 2 squares, but he must end this movement adjacent to an enemy.</p></tr></td></table>",

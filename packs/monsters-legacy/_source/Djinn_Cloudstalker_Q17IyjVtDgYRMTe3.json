@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"29",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -771,23 +772,10 @@
 				"max":10
 			},
 			"init":{
-				"value":25,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":13,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":25
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 173; <b>Bloodied</b> 86<hr><b>Resist</b> 15 lightning, 15 thunder <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +25</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 38</td><td><b>Fort</b> 35</td><td><b>Ref</b> 38</td><td><b>Will</b> 36 ; see also cloud form</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 8 (hover); see also cloud form</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+18)<br><b>Con</b> 23 (+18)</td><td><b>Dex</b> 28 (+21)<br><b>Int</b> 23 (+18)</td><td><b>Wis</b> 18 (+16)<br><b>Cha</b> 25 (+19)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +26</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> katar  x2.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 2d8+9 damage (crit 3d8 + 18). &lt;/p&gt;]] (⚔) <b>Katar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+29[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+29 vs AC&lt;/u&gt;; 2d8+9 damage (crit 3d8 + 18). &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 2d8+9 damage (crit 3d8 + 18). &lt;/p&gt;]] <18>  damage (crit [[/roll 3d8 + 18#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Katar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +29 vs AC; 2d8+9 damage (crit 3d8 + 18). &lt;/p&gt;]] <31.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Biting Wind&lt;/b&gt; (standard; usable only in cloud form, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; targets a creature within reach or within the cloud form zone; +31 vs AC; 4d8+9 cold damage, and the target is knocked prone. The djinn cloudstalker returns to its humanoid form after the attack. See also cloud form. &lt;/p&gt;]] ⚔ <b>Biting Wind</b> (standard; usable only in cloud form, at-will) ✦ <b>Cold</b></p><p>Reach 2; targets a creature within reach or within the cloud form zone; [[/roll 1d20+31[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Biting Wind&lt;/b&gt; (standard; usable only in cloud form, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; targets a creature within reach or within the cloud form zone; &lt;u&gt;+31 vs AC&lt;/u&gt;; 4d8+9 cold damage, and the target is knocked prone. The djinn cloudstalker returns to its humanoid form after the attack. See also cloud form. &lt;/p&gt;]]; [[/roll 4d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Biting Wind&lt;/b&gt; (standard; usable only in cloud form, at-will) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; targets a creature within reach or within the cloud form zone; +31 vs AC; 4d8+9 cold damage, and the target is knocked prone. The djinn cloudstalker returns to its humanoid form after the attack. See also cloud form. &lt;/p&gt;]] <27>  cold damage, and the target is knocked prone. The djinn cloudstalker returns to its humanoid form after the attack. See also cloud form. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Cloud Form&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Polymorph, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; the djinn cloudstalker disperses into a billowing cloud. The burst creates a cloudy zone until the cloudstalker uses a minor action to end the effect or is forced to resume humanoid form. While in cloud form, the cloudstalker cannot be attacked and can use only biting wind and turbulence. It can fly at half speed as a move action, squeeze as though it were a Tiny creature, and move through enemy-occupied spaces.&lt;/p&gt;&lt;p&gt;The cloudstalker can resume its normal form as a minor action. When it does so, it appears in any unoccupied space within the burst’s area. It must resume its humanoid form after using biting wind, or if the zone is destroyed&lt;/p&gt;]] ᗕ <b>Cloud Form</b> (standard, at-will) ✦ <b>Polymorph, Zone</b></p><p>Close burst 1; the djinn cloudstalker disperses into a billowing cloud. The burst creates a cloudy zone until the cloudstalker uses a minor action to end the effect or is forced to resume humanoid form. While in cloud form, the cloudstalker cannot be attacked and can use only biting wind and turbulence. It can fly at half speed as a move action, squeeze as though it were a Tiny creature, and move through enemy-occupied spaces.</p><p>The cloudstalker can resume its normal form as a minor action. When it does so, it appears in any unoccupied space within the burst’s area. It must resume its humanoid form after using biting wind, or if the zone is destroyed</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Turbulence&lt;/b&gt; (minor 1/round; usable only in cloud form, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; +26 vs Fortitude; the djinn cloudstalker slides the target 2 squares and knocks it prone. &lt;/p&gt;]] ᗕ <b>Turbulence</b> (minor 1/round; usable only in cloud form, at-will) </p><p>Close burst 1; targets enemies; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Turbulence&lt;/b&gt; (minor 1/round; usable only in cloud form, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; the djinn cloudstalker slides the target 2 squares and knocks it prone. &lt;/p&gt;]]; the djinn cloudstalker slides the target 2 squares and knocks it prone. </p></tr></td></table>",

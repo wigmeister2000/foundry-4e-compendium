@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"yirwtguRj01GK8ps",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -587,7 +589,7 @@
 		},
 		{
 			"name":"Troll Healing",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ORC3915uy02vohZg",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -623,7 +625,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -679,23 +682,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 109; <b>Bloodied</b> 54 ; see also troll healing<br><b>Regeneration</b> 10 (if the troll takes acid or fire damage, regeneration does not function until the end of its next turn)</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 5 (+3)</td><td><b>Wis</b> 13 (+7)<br><b>Cha</b> 11 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +15, Endurance +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 2d8+5 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+16 vs AC&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +16 vs AC; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Timber Toss&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 15; +16 vs Reflex; 2d6+5 damage. If you hit the creature in the origin square of the burst, that creature takes 1d6 extra damage. &lt;/p&gt;]] ✻ <b>Timber Toss</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Area burst 1 within 15; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Timber Toss&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 15; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 2d6+5 damage. If you hit the creature in the origin square of the burst, that creature takes 1d6 extra damage. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Timber Toss&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 15; +16 vs Reflex; 2d6+5 damage. If you hit the creature in the origin square of the burst, that creature takes 1d6 extra damage. &lt;/p&gt;]] <12>  damage. If you hit the creature in the origin square of the burst, that creature takes [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Timber Toss&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 15; +16 vs Reflex; 2d6+5 damage. If you hit the creature in the origin square of the burst, that creature takes 1d6 extra damage. &lt;/p&gt;]] <3.5> extra damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Timber Swing&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +16 vs Fortitude; 4d8+3 damage, and the target is pushed 3 squares. &lt;/p&gt;]] ⚔ <b>Timber Swing</b> (standard, encounter) ✦ <b>Weapon</b></p><p>Reach 3; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Timber Swing&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 4d8+3 damage, and the target is pushed 3 squares. &lt;/p&gt;]]; [[/roll 4d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Timber Swing&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +16 vs Fortitude; 4d8+3 damage, and the target is pushed 3 squares. &lt;/p&gt;]] <21>  damage, and the target is pushed 3 squares. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Troll Healing&lt;/b&gt;✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 10 hit points.&lt;/p&gt;]]  <b>Troll Healing</b>✦ <b>Healing</b></p><p>If the troll is reduced to 0 hit points by an attack that does not deal acid or fire damage, it rises on its next turn (as a move action) with 10 hit points.</p></tr></td></table>",

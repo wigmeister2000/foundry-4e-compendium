@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZhsAuYOPek36x1Qb",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 180; <b>Bloodied</b> 90<hr><b>Resist</b> 10 cold, 10 necrotic <b>Vulnerable</b> 5 fire, 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 27</td><td><b>Ref</b> 26</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+14)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 20 (+12)<br><b>Int</b> 19 (+11)</td><td><b>Wis</b> 19 (+11)<br><b>Cha</b> 13 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; (healing) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The winter wight regains 10 hit points whenever it starts its turn and has at least 1 hit point. If a winter wight takes fire damage, its regeneration doesn’t function until the end of its next turn.&lt;/p&gt;]]  <b>Regeneration</b> (healing) <b></b></p><p>The winter wight regains 10 hit points whenever it starts its turn and has at least 1 hit point. If a winter wight takes fire damage, its regeneration doesn’t function until the end of its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +20 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 10 cold damage.&lt;/p&gt;]] (⚔) <b>Ice Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+20[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+20 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d12 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Ice Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d12 + 10 cold damage.&lt;/p&gt;]] <29.5>  cold damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blackfire&lt;/b&gt; (cold, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 cold and necrotic damage, and the target takes ongoing 10 cold and necrotic damage and is dazed (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is stunned instead of dazed (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target is knocked unconscious instead of stunned (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Third Failed Saving Throw:&lt;/i&gt; The target dies.&lt;/p&gt;]] ⚔ <b>Blackfire</b> (cold, necrotic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blackfire&lt;/b&gt; (cold, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blackfire&lt;/b&gt; (cold, necrotic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 7 cold and necrotic damage, and the target takes ongoing 10 cold and necrotic damage and is dazed (save ends both).&lt;/p&gt;]] <20>  cold and necrotic damage, and the target takes ongoing 10 cold and necrotic damage and is dazed (save ends both).</p><p><i>First Failed Saving Throw:</i> The target is stunned instead of dazed (save ends both).</p><p><i>Second Failed Saving Throw:</i> The target is knocked unconscious instead of stunned (save ends both).</p><p><i>Third Failed Saving Throw:</i> The target dies.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blackfire Shroud&lt;/b&gt; (cold, necrotic) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The winter wight drops to 0 hit points.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 5 (creatures in the burst); +18 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 7 cold and necrotic damage, and ongoing 10 cold and necrotic damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The burst creates an area of difficult terrain that lasts until the end of the encounter.&lt;/p&gt;]] ᗕ <b>Blackfire Shroud</b> (cold, necrotic) <b></b></p><p><i>Trigger:</i> The winter wight drops to 0 hit points.</p><p><i>Attack (Immediate Reaction):</i> Close burst 5 (creatures in the burst); [[/roll 1d20+18[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blackfire Shroud&lt;/b&gt; (cold, necrotic) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Close burst 5 (creatures in the burst); &lt;u&gt;+18 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blackfire Shroud&lt;/b&gt; (cold, necrotic) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d6 + 7 cold and necrotic damage, and ongoing 10 cold and necrotic damage (save ends).&lt;/p&gt;]] <21>  cold and necrotic damage, and ongoing 10 cold and necrotic damage (save ends).</p><p><i>Effect:</i> The burst creates an area of difficult terrain that lasts until the end of the encounter.</p></tr></td></table>",

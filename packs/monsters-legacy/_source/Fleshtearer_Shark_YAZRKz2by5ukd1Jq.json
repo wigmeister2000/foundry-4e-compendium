@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -718,7 +719,7 @@
 		},
 		{
 			"name":"Waterborn",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"rRdcaow6mKHSWkfO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -754,7 +755,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -810,23 +812,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 128; <b>Bloodied</b> 64</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 23</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1 (clumsy), swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 16 (+8)<br><b>Int</b> 2 (+1)</td><td><b>Wis</b> 18 (+9)<br><b>Cha</b> 15 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 2d8+7 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 2d8+7 damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 2d8+7 damage. &lt;/p&gt;]] <16>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lockjaw Charge&lt;/b&gt; (standard; usable only while the flesheater shark is not grabbing a creature, at-will) &lt;/p&gt;&lt;p&gt;The shark charges and makes the following attack in place of a melee basic attack; +14 vs AC; 2d8+7 damage, and the target is grabbed. When the grab ends, the target takes ongoing 5 damage (save ends). &lt;/p&gt;]] ⚔ <b>Lockjaw Charge</b> (standard; usable only while the flesheater shark is not grabbing a creature, at-will) </p><p>The shark charges and makes the following attack in place of a melee basic attack; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lockjaw Charge&lt;/b&gt; (standard; usable only while the flesheater shark is not grabbing a creature, at-will) &lt;/p&gt;&lt;p&gt;The shark charges and makes the following attack in place of a melee basic attack; &lt;u&gt;+14 vs AC&lt;/u&gt;; 2d8+7 damage, and the target is grabbed. When the grab ends, the target takes ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Lockjaw Charge&lt;/b&gt; (standard; usable only while the flesheater shark is not grabbing a creature, at-will) &lt;/p&gt;&lt;p&gt;The shark charges and makes the following attack in place of a melee basic attack; +14 vs AC; 2d8+7 damage, and the target is grabbed. When the grab ends, the target takes ongoing 5 damage (save ends). &lt;/p&gt;]] <16>  damage, and the target is grabbed. When the grab ends, the target takes ongoing 5 damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shredding Teeth&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;no attack roll ; Targets a creature grabbed by the flesheater shark; 3d8+7 damage. &lt;/p&gt;]] ⚔ <b>Shredding Teeth</b> (standard, at-will) </p><p>no attack roll ; Targets a creature grabbed by the flesheater shark; [[/roll 3d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Shredding Teeth&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;no attack roll ; Targets a creature grabbed by the flesheater shark; 3d8+7 damage. &lt;/p&gt;]] <20.5>  damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Feeding Frenzy&lt;/b&gt; ( when the flesheater shark starts its turn within 5 squares of a bloodied cerature; at-will) &lt;/p&gt;&lt;p&gt;The shark must make a bite attack against a creature adjacent to it. If the shark is grabbing a creature, the grab ends.&lt;/p&gt;]]  <b>Feeding Frenzy</b> ( when the flesheater shark starts its turn within 5 squares of a bloodied cerature; at-will) </p><p>The shark must make a bite attack against a creature adjacent to it. If the shark is grabbing a creature, the grab ends.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Waterborn&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While in water, a fleshtearer shark gains a +2 bonus to damage rolls against any creature without a swim speed.&lt;/p&gt;]]  <b>Waterborn</b></p><p>While in water, a fleshtearer shark gains a +2 bonus to damage rolls against any creature without a swim speed.</p></tr></td></table>",

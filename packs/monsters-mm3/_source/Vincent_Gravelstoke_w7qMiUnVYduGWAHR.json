@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Stone Cold Slayer",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"VnBM8TUEDwSleZjC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -818,23 +820,10 @@
 				"max":10
 			},
 			"init":{
-				"value":16,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":16
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 90; <b>Bloodied</b> 45</td><td style=\"padding-left: 15px;\"><b>Init</b> +16</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 21</td><td><b>Ref</b> 25</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+9)<br><b>Con</b> 12 (+7)</td><td><b>Dex</b> 22 (+12)<br><b>Int</b> 13 (+7)</td><td><b>Wis</b> 13 (+7)<br><b>Cha</b> 7 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> leather armor , rapier .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Stone Cold Slayer&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Any creature killed by Vincent is petrified. As long as the creature remains petrified, it cannot be raised from the dead. Vincent can end the effect by touching the petrified creature. The effect can also be ended by spilling one or more drops of Vincent’s blood on the petrified creature.&lt;/p&gt;]]  <b>Stone Cold Slayer</b> <b></b></p><p>Any creature killed by Vincent is petrified. As long as the creature remains petrified, it cannot be raised from the dead. Vincent can end the effect by touching the petrified creature. The effect can also be ended by spilling one or more drops of Vincent’s blood on the petrified creature.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Poisoned Rapier&lt;/b&gt; (necrotic, poison, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +15 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 necrotic and poison damage. If the target is granting combat advantage to Vincent, it also takes ongoing 10 damage (save ends).&lt;/p&gt;]] (⚔) <b>Poisoned Rapier</b> (necrotic, poison, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+15[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Poisoned Rapier&lt;/b&gt; (necrotic, poison, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+15 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Poisoned Rapier&lt;/b&gt; (necrotic, poison, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 8 necrotic and poison damage. If the target is granting combat advantage to Vincent, it also takes ongoing 10 damage (save ends).&lt;/p&gt;]] <15>  necrotic and poison damage. If the target is granting combat advantage to Vincent, it also takes ongoing 10 damage (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shadow Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Vincent is first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Vincent is removed from play. At the start of his next turn, he reappears in a square within 10 squares of his previous location and can make the following attack as a standard action.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 12 damage, and the target cannot spend healing surges (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ⚔ <b>Shadow Strike</b> (weapon) ✦ <b>Recharge</b> when Vincent is first bloodied</p><p><i>Effect:</i> Vincent is removed from play. At the start of his next turn, he reappears in a square within 10 squares of his previous location and can make the following attack as a standard action.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shadow Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Vincent is first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Shadow Strike&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; when Vincent is first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 12 damage, and the target cannot spend healing surges (save ends).&lt;/p&gt;]] <30>  damage, and the target cannot spend healing surges (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fade into the Shadows&lt;/b&gt; (illusion) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Vincent becomes insubstantial and gains partial concealment until the start of his next turn. The effect ends immediately if Vincent attacks or takes radiant damage. While insubstantial, he takes half damage from all attacks except those that deal force damage.&lt;/p&gt;]]  <b>Fade into the Shadows</b> (illusion) ✦ <b>Encounter</b></p><p><i>Effect:</i> Vincent becomes insubstantial and gains partial concealment until the start of his next turn. The effect ends immediately if Vincent attacks or takes radiant damage. While insubstantial, he takes half damage from all attacks except those that deal force damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Parry&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy hits Vincent with a melee attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; Vincent gains a +4 power bonus to all defenses against the triggering attack.&lt;/p&gt;]]  <b>Parry</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy hits Vincent with a melee attack.</p><p><i>Effect (Immediate Interrupt):</i> Vincent gains a +4 power bonus to all defenses against the triggering attack.</p></tr></td></table>",

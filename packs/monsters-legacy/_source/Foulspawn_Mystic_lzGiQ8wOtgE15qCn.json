@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Foul Insight",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"o4LNSJB6XuzIhR1b",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 218; <b>Bloodied</b> 109</td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 26</td><td><b>Ref</b> 30</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+7)<br><b>Con</b> 19 (+11)</td><td><b>Dex</b> 20 (+12)<br><b>Int</b> 26 (+15)</td><td><b>Wis</b> 10 (+7)<br><b>Cha</b> 23 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech, telepathy 10<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +20, Intimidate +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> staff implement .</p><p>[[/roll 0#&lt;b&gt;Foul Insight&lt;/b&gt; aura 10; each ally in the aura can reroll one attack roll, check, or saving throw on its turn.]] <b>Foul Insight</b> aura 10; each ally in the aura can reroll one attack roll, check, or saving throw on its turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+4 damage, and the target is dazed until the end of the foulspawn mystic\"s next turn, pushed 4 squares, and knocked prone. &lt;/p&gt;]] (⚔) <b>Twisted Staff</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+4 damage, and the target is dazed until the end of the foulspawn mystic\"s next turn, pushed 4 squares, and knocked prone. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Twisted Staff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+4 damage, and the target is dazed until the end of the foulspawn mystic\"s next turn, pushed 4 squares, and knocked prone. &lt;/p&gt;]] <8.5>  damage, and the target is dazed until the end of the foulspawn mystic\"s next turn, pushed 4 squares, and knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Forking Warp&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; targets two different creatures; +19 vs Reflex; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] ➶ <b>Forking Warp</b> (standard, at-will) </p><p>Ranged 10; targets two different creatures; [[/roll 1d20+19[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Forking Warp&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; targets two different creatures; &lt;u&gt;+19 vs Reflex&lt;/u&gt;; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Forking Warp&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; targets two different creatures; +19 vs Reflex; 1d10+6 damage, and the target is dazed (save ends). &lt;/p&gt;]] <11.5>  damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;hole in the Sky&lt;/b&gt; (standard, recharges when the foulspawn mystic uses bend space) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +18 vs Will; targets hit by the attack vanish into an extradimensional space that measures 10-squares-by-10-squares (save ends). When a creature saves, it returns in a safe, unoccupied space of the foulspawn mystic’s choosing. Aftereffect: The creature is dazed (save ends). Aberrant creatures gain +2 to saving throws against this power. &lt;/p&gt;]] ✻ <b>hole in the Sky</b> (standard, recharges when the foulspawn mystic uses bend space) ✦ <b>Teleportation</b></p><p>Area burst 1 within 10; [[/roll 1d20+18[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;hole in the Sky&lt;/b&gt; (standard, recharges when the foulspawn mystic uses bend space) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+18 vs Will&lt;/u&gt;; targets hit by the attack vanish into an extradimensional space that measures 10-squares-by-10-squares (save ends). When a creature saves, it returns in a safe, unoccupied space of the foulspawn mystic’s choosing. Aftereffect: The creature is dazed (save ends). Aberrant creatures gain +2 to saving throws against this power. &lt;/p&gt;]]; targets hit by the attack vanish into an extradimensional space that measures 10-squares-by-10-squares (save ends). When a creature saves, it returns in a safe, unoccupied space of the foulspawn mystic’s choosing. Aftereffect: The creature is dazed (save ends). Aberrant creatures gain +2 to saving throws against this power. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bend Space&lt;/b&gt; (immediate interrupt, when the foulspawn mystic would be hit by an attack; recharge ⚃⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The foulspawn mystic teleports 4 squares.&lt;/p&gt;]]  <b>Bend Space</b> (immediate interrupt, when the foulspawn mystic would be hit by an attack; recharge ⚃⚄⚅) ✦ <b>Teleportation</b></p><p>The foulspawn mystic teleports 4 squares.</p></tr></td></table>",

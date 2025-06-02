@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -773,23 +774,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 77; <b>Bloodied</b> 38</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 18</td><td><b>Ref</b> 19</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+4)<br><b>Con</b> 13 (+4)</td><td><b>Dex</b> 16 (+6)<br><b>Int</b> 19 (+7)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 17 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +8, Arcana +12, Religion +12, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blackfire Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs Reflex; 2d6+4 fire and necrotic damage. &lt;/p&gt;]] (⚔) <b>Blackfire Touch</b> (standard, at-will) ✦ <b>Fire, Necrotic</b></p><p>[[/roll 1d20+11[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blackfire Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs Reflex&lt;/u&gt;; 2d6+4 fire and necrotic damage. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Blackfire Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs Reflex; 2d6+4 fire and necrotic damage. &lt;/p&gt;]] <11>  fire and necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Beshadowed Mind&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 2d6+4 necrotic damage, and the target has no line of sight to anything more than 2 squares from it (save ends). &lt;/p&gt;]] ➶ <b>Beshadowed Mind</b> (standard, recharge ⚃⚄⚅) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+11[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Beshadowed Mind&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Will&lt;/u&gt;; 2d6+4 necrotic damage, and the target has no line of sight to anything more than 2 squares from it (save ends). &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Beshadowed Mind&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Will; 2d6+4 necrotic damage, and the target has no line of sight to anything more than 2 squares from it (save ends). &lt;/p&gt;]] <11>  necrotic damage, and the target has no line of sight to anything more than 2 squares from it (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Deep Shadow&lt;/b&gt; (standard; sustain minor, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Aura 2; thick, writhing shadows surround the shadar-kai witch. The witch and any other shadow creatures in the aura gain concealment. In addition, enemies that enter or start their turns in the aura take 5 necrotic damage, and enemies (including flying ones) also treat the area within the aura as difficult terrain. The shadar-kai witch can sustain the aura as a minor action. However, the effect ends if she uses shadow jaunt or moves more than half her speed on her turn.&lt;/p&gt;]] ᗕ <b>Deep Shadow</b> (standard; sustain minor, encounter) ✦ <b>Necrotic</b></p><p>Aura 2; thick, writhing shadows surround the shadar-kai witch. The witch and any other shadow creatures in the aura gain concealment. In addition, enemies that enter or start their turns in the aura take 5 necrotic damage, and enemies (including flying ones) also treat the area within the aura as difficult terrain. The shadar-kai witch can sustain the aura as a minor action. However, the effect ends if she uses shadow jaunt or moves more than half her speed on her turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Jaunt&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The shadar-kai witch teleports 3 squares and becomes insubstantial until the start of her next turn.&lt;/p&gt;]]  <b>Shadow Jaunt</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The shadar-kai witch teleports 3 squares and becomes insubstantial until the start of her next turn.</p></tr></td></table>",

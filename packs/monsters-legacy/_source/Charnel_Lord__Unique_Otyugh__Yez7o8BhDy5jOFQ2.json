@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Otyugh Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"0a2oNvr9YOWCepwA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -695,10 +698,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -818,23 +821,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 212; <b>Bloodied</b> 106<hr><b>Resist</b> 5 necrotic <b>Immune</b> disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 27</td><td><b>Ref</b> 21</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, swim 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+11)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 11 (+5)<br><b>Int</b> 6 (+3)</td><td><b>Wis</b> 16 (+8)<br><b>Cha</b> 5 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Otyugh Stench&lt;/b&gt; aura 1; enemies in the aura take a -2 penalty to attack rolls.]] <b>Otyugh Stench</b> aura 1; enemies in the aura take a -2 penalty to attack rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Charnel Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +17 vs AC; 1d8+6 damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] (⚔) <b>Charnel Lash</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 3; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Charnel Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+6 damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Charnel Lash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +17 vs AC; 1d8+6 damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] <10.5>  damage, and ongoing 5 necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lifeleech&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +17 vs AC; target is pulled 2 squares and grabbed (until escape). Grabbed target takes 5 necrotic damage, and the Charnel Lord regains 5 hit points when grabbed and at the start of the grabbed target\"s turn. &lt;/p&gt;]] (⚔) <b>Lifeleech</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Reach 3; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Lifeleech&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+17 vs AC&lt;/u&gt;; target is pulled 2 squares and grabbed (until escape). Grabbed target takes 5 necrotic damage, and the Charnel Lord regains 5 hit points when grabbed and at the start of the grabbed target\"s turn. &lt;/p&gt;]]; target is pulled 2 squares and grabbed (until escape). Grabbed target takes 5 necrotic damage, and the Charnel Lord regains 5 hit points when grabbed and at the start of the grabbed target\"s turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Charnel Frenzy&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +17 vs AC; 1d8+6 damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] ᗕ <b>Charnel Frenzy</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Close burst 3; [[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Charnel Frenzy&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+6 damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Charnel Frenzy&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +17 vs AC; 1d8+6 damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] <10.5>  damage, and ongoing 5 necrotic damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rotting Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d6+6 necrotic damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] ⚔ <b>Rotting Bite</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rotting Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 2d6+6 necrotic damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Rotting Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d6+6 necrotic damage, and ongoing 5 necrotic damage (save ends). &lt;/p&gt;]] <13>  necrotic damage, and ongoing 5 necrotic damage (save ends). </p></tr></td></table>",

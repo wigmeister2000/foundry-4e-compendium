@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -366,7 +367,7 @@
 		},
 		{
 			"name":"Blood Frenzy",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QVtg7pN26FsacxIC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +403,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -458,23 +460,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 24</td><td><b>Ref</b> 23</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 (7 on a charge, ice walk), swim 6 (7 on a charge)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 14 (+7)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 10 (+5)</td><td><b>Wis</b> 12 (+6)<br><b>Cha</b> 10 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> javelin  x3, trident .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC;  (+19 against a bloodied target)7 damage (10 damage to a bloodied target), and the target is marked until the end of the arctic sahuagin guard’s next turn. &lt;/p&gt;]] (⚔) <b>Trident</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;;  (+19 against a bloodied target)7 damage (10 damage to a bloodied target), and the target is marked until the end of the arctic sahuagin guard’s next turn. &lt;/p&gt;]];  (+19 against a bloodied target)7 damage (10 damage to a bloodied target), and the target is marked until the end of the arctic sahuagin guard’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; +18 vs AC;  (+19 against a bloodied target)7 damage (10 damage to a bloodied target). &lt;/p&gt;]] ➶ <b>Javelin</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 10/20; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Javelin&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10/20; &lt;u&gt;+18 vs AC&lt;/u&gt;;  (+19 against a bloodied target)7 damage (10 damage to a bloodied target). &lt;/p&gt;]];  (+19 against a bloodied target)7 damage (10 damage to a bloodied target). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blood Frenzy&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The arctic sahuagin gains a +1 bonus to attack rolls and a +2 bonus to damage rolls against bloodied enemies.&lt;/p&gt;]]  <b>Blood Frenzy</b></p><p>The arctic sahuagin gains a +1 bonus to attack rolls and a +2 bonus to damage rolls against bloodied enemies.</p></tr></td></table>",

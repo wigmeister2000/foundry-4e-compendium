@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -593,23 +594,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 152; <b>Bloodied</b> 76</td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 28</td><td><b>Ref</b> 29</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+11)<br><b>Con</b> 16 (+11)</td><td><b>Dex</b> 15 (+10)<br><b>Int</b> 18 (+12)</td><td><b>Wis</b> 15 (+10)<br><b>Cha</b> 18 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +15, Insight +15, Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 25</td></td></tr></table><p><b>Equipment</b> frost weapon  +3 longsword , leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+6 damage (crit 3d6+14 cold damage). Moyshanna can choose to make this weapon\"s damage cold. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Cold, Weapon</b></p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 1d8+6 damage (crit 3d6+14 cold damage). Moyshanna can choose to make this weapon\"s damage cold. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+6 damage (crit 3d6+14 cold damage). Moyshanna can choose to make this weapon\"s damage cold. &lt;/p&gt;]] <10.5>  damage (crit [[/roll 3d6+14#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+21 vs AC; 1d8+6 damage (crit 3d6+14 cold damage). Moyshanna can choose to make this weapon\"s damage cold. &lt;/p&gt;]] <24.5>  cold damage). Moyshanna can choose to make this weapon\"s damage cold. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Frost Longsword&lt;/b&gt; (free; daily) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Moyshanna can use this power when she hits with a longsword attack. The target takes an extra 2d8 cold damage and is slowed until the end of Moyshanna’s next turn.&lt;/p&gt;]]  <b>Frost Longsword</b> (free; daily) ✦ <b>Cold</b></p><p>Moyshanna can use this power when she hits with a longsword attack. The target takes an extra [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Frost Longsword&lt;/b&gt; (free; daily) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Moyshanna can use this power when she hits with a longsword attack. The target takes an extra 2d8 cold damage and is slowed until the end of Moyshanna’s next turn.&lt;/p&gt;]] <9> cold damage and is slowed until the end of Moyshanna’s next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadow Jaunt&lt;/b&gt; (move; recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Moyshanna teleports 3 squares and becomes insubstantial until the start of her next turn.&lt;/p&gt;]]  <b>Shadow Jaunt</b> (move; recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>Moyshanna teleports 3 squares and becomes insubstantial until the start of her next turn.</p></tr></td></table>",

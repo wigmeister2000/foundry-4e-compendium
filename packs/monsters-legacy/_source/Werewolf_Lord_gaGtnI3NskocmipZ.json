@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"508LUE9W4Ktz7rpG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -49,7 +50,7 @@
 		},
 		{
 			"name":"Blood Moon",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GyH6R8LkYFJOz9Ie",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -85,7 +86,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -150,7 +152,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -198,10 +201,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -330,7 +333,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -378,10 +382,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -989,7 +993,7 @@
 		},
 		{
 			"name":"Change Shape",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"67CEQsTDnIhmjGqk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1025,7 +1029,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1081,23 +1086,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 264; <b>Bloodied</b> 132<br><b>Regeneration</b> 10<hr><b>Vulnerable</b> silver (if the werewolf lord takes damage from a silver weapon, its regeneration does not function on its next turn) <b>Immune</b> greater moon fever </td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 27</td><td><b>Ref</b> 22</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 in wolf form)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 17 (+9)</td><td><b>Dex</b> 12 (+7)<br><b>Int</b> 13 (+7)</td><td><b>Wis</b> 15 (+8)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +17, Bluff +14, Endurance +14, Intimidate +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> chain armor, falchion .</p><p>[[/roll 0#&lt;b&gt;Blood Moon&lt;/b&gt; aura 5; the werewolf lord and any ally within the aura gain a +2 bonus to attack rolls and a +5 bonus to damage rolls against bloodied targets.]] <b>Blood Moon</b> aura 5; the werewolf lord and any ally within the aura gain a +2 bonus to attack rolls and a +5 bonus to damage rolls against bloodied targets.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 4d4+6 damage (crit 8d4+22). &lt;/p&gt;]] (⚔) <b>Falchion</b> (standard; usable only while in humanoid form, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 4d4+6 damage (crit 8d4+22). &lt;/p&gt;]]; [[/roll 4d4+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 4d4+6 damage (crit 8d4+22). &lt;/p&gt;]] <16>  damage (crit [[/roll 8d4+22#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Falchion&lt;/b&gt; (standard; usable only while in humanoid form, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 4d4+6 damage (crit 8d4+22). &lt;/p&gt;]] <42> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in wolf form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d12+3 damage, and the target is exposed to greater moon frenzy. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard; usable only while in wolf form, at-will) ✦ <b>Disease</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in wolf form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 2d12+3 damage, and the target is exposed to greater moon frenzy. &lt;/p&gt;]]; [[/roll 2d12+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard; usable only while in wolf form, at-will) ✦ &lt;b&gt;Disease&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 2d12+3 damage, and the target is exposed to greater moon frenzy. &lt;/p&gt;]] <16>  damage, and the target is exposed to greater moon frenzy. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Canine Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The werewolf lord makes two melee basic attacks&lt;/p&gt;]] ⚔ <b>Canine Fury</b> (standard, at-will) </p><p>The werewolf lord makes two melee basic attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Speed of the Wolf&lt;/b&gt; (standard; usable only in wolf form, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;The werewolf lord shifts 6 squares and makes a bite attack.&lt;/p&gt;]] ⚔ <b>Speed of the Wolf</b> (standard; usable only in wolf form, recharge ⚄⚅) </p><p>The werewolf lord shifts 6 squares and makes a bite attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Savage Howl&lt;/b&gt; (minor, encounter) &lt;/p&gt;&lt;p&gt;Close burst 10; each ally in the burst gains 15 temporary hit points. In addition, each ally that has a bite attack makes a bite attack as a free action&lt;/p&gt;]] ᗕ <b>Savage Howl</b> (minor, encounter) </p><p>Close burst 10; each ally in the burst gains 15 temporary hit points. In addition, each ally that has a bite attack makes a bite attack as a free action</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A werewolf lord can alter its physical form to appear as a dire wolf or a unique humanoid.&lt;/p&gt;]]  <b>Change Shape</b></p><p>A werewolf lord can alter its physical form to appear as a dire wolf or a unique humanoid.</p></tr></td></table>",

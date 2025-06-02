@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Sneaky",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"grilRMwVDnLye3PT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 38; <b>Bloodied</b> 19</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 13</td><td><b>Ref</b> 15</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+3)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 18 (+5)<br><b>Int</b> 9 (0)</td><td><b>Wis</b> 13 (+2)<br><b>Cha</b> 9 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +10, Thievery +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> leather armor ,  triflik\"s blade (silvered weapon).</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sneaky&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When shifting, Triflik can move into a space occupied by an ally of his level or lower. The ally shifts into Triflik’s previous space as a free action.&lt;/p&gt;]]  <b>Sneaky</b> <b></b></p><p>When shifting, Triflik can move into a space occupied by an ally of his level or lower. The ally shifts into Triflik’s previous space as a free action.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Triflik\"s Blade&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +7 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 3 damage, or 2d6 + 3 damage if Triflik has combat advantage against the target.&lt;/p&gt;]] (⚔) <b>Triflik\"s Blade</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+7[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Triflik\"s Blade&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+7 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Triflik\"s Blade&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 3 damage, or 2d6 + 3 damage if Triflik has combat advantage against the target.&lt;/p&gt;]] <6.5>  damage, or [[/roll 2d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Triflik\"s Blade&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 3 damage, or 2d6 + 3 damage if Triflik has combat advantage against the target.&lt;/p&gt;]] <10>  damage if Triflik has combat advantage against the target.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Power of the Blade&lt;/b&gt; (weapon) ✦ &lt;b&gt;Recharge&lt;/b&gt; if the attack misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Triflik uses Triflik’s blade and targets his choice of Fortitude or Reflex instead of AC.&lt;/p&gt;]] ⚔ <b>Power of the Blade</b> (weapon) ✦ <b>Recharge</b> if the attack misses</p><p><i>Effect:</i> Triflik uses Triflik’s blade and targets his choice of Fortitude or Reflex instead of AC.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Triflik is missed by an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Triflik shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> ✦ <b>At-Will</b></p><p><i>Trigger:</i> Triflik is missed by an attack.</p><p><i>Effect:</i> Triflik shifts 1 square.</p></tr></td></table>",

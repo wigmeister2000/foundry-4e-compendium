@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Biting Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5spqFN7hQjWMeocV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Flowing Mass",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"m6K7yYsqNckI3EQM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ZfwhMSKqWLFj4pnt",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -902,23 +906,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 172; <b>Bloodied</b> 86<hr><b>Resist</b> half damage from melee and ranged attacks <b>Vulnerable</b> 10 against close and area attacks </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 20</td><td><b>Ref</b> 21</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+7)<br><b>Con</b> 14 (+6)</td><td><b>Dex</b> 20 (+9)<br><b>Int</b> 1 (null)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 3 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Biting Swarm&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that ends its turn in the aura takes 5 damage.&lt;/p&gt;]] ⌀ <b>Biting Swarm</b> ✦ <b>Aura</b> 1</p><p>Any enemy that ends its turn in the aura takes 5 damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Flowing Mass&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The cifal ignores difficult terrain.&lt;/p&gt;]]  <b>Flowing Mass</b> <b></b></p><p>The cifal ignores difficult terrain.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swarm&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The cifal can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The cifal cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.&lt;/p&gt;]]  <b>Swarm</b> <b></b></p><p>The cifal can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The cifal cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one or two creatures); +11 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 6 damage, and the cifal can slide the target 1 square. If it does so, the cifal can then shift 1 square into the  space the target vacated.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one or two creatures); [[/roll 1d20+11[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one or two creatures); &lt;u&gt;+11 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d12 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d12 + 6 damage, and the cifal can slide the target 1 square. If it does so, the cifal can then shift 1 square into the  space the target vacated.&lt;/p&gt;]] <12.5>  damage, and the cifal can slide the target 1 square. If it does so, the cifal can then shift 1 square into the  space the target vacated.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The cifal uses slam twice.&lt;/p&gt;]] ⚔ <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The cifal uses slam twice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cloud of Vermin&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +11 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 damage, and the target is slowed and takes ongoing 5 damage (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The cifal shifts up to its speed to any square in the burst.&lt;/p&gt;]] ᗕ <b>Cloud of Vermin</b> ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+11[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cloud of Vermin&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+11 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Cloud of Vermin&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 damage, and the target is slowed and takes ongoing 5 damage (save ends both).&lt;/p&gt;]] <13>  damage, and the target is slowed and takes ongoing 5 damage (save ends both).</p><p><i>Effect:</i> The cifal shifts up to its speed to any square in the burst.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Spawned Swarm&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The cifal takes damage from a close or an area attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Close burst 2; the area is filled with stinging insects until the end of the cifal’s next turn. Any enemy that enters or starts its turn in the area is slowed and takes ongoing 5 damage (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is restrained instead of slowed (save ends).&lt;/p&gt;]] ᗕ <b>Spawned Swarm</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Trigger:</i> The cifal takes damage from a close or an area attack.</p><p><i>Effect (No Action):</i> Close burst 2; the area is filled with stinging insects until the end of the cifal’s next turn. Any enemy that enters or starts its turn in the area is slowed and takes ongoing 5 damage (save ends both).</p><p><i>First Failed Saving Throw:</i> The target is restrained instead of slowed (save ends).</p></tr></td></table>",

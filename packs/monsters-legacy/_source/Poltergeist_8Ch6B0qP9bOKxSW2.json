@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -772,23 +773,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 42; <b>Bloodied</b> 21<hr><b>Resist</b> insubstantial <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 17</td><td><b>Ref</b> 18</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 6 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+5)<br><b>Con</b> 17 (+6)</td><td><b>Dex</b> 20 (+8)<br><b>Int</b> 13 (+4)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 20 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d6+6 necrotic damage. &lt;/p&gt;]] (⚔) <b>Spirit Touch</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d6+6 necrotic damage. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Spirit Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+13 vs AC; 1d6+6 necrotic damage. &lt;/p&gt;]] <9.5>  necrotic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Away&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Reflex; 1d6+8 necrotic damage, and the target is pushed 3 squares. &lt;/p&gt;]] ➶ <b>Hurl Away</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+11[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Away&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Reflex&lt;/u&gt;; 1d6+8 necrotic damage, and the target is pushed 3 squares. &lt;/p&gt;]]; [[/roll 1d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Hurl Away&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Reflex; 1d6+8 necrotic damage, and the target is pushed 3 squares. &lt;/p&gt;]] <11.5>  necrotic damage, and the target is pushed 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Kinetic Claw&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Fortitude; 2d6+10 necrotic damage, and the target slides 5 squares and is restrained (save ends). &lt;/p&gt;]] ➶ <b>Kinetic Claw</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+11[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Kinetic Claw&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+11 vs Fortitude&lt;/u&gt;; 2d6+10 necrotic damage, and the target slides 5 squares and is restrained (save ends). &lt;/p&gt;]]; [[/roll 2d6+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Kinetic Claw&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +11 vs Fortitude; 2d6+10 necrotic damage, and the target slides 5 squares and is restrained (save ends). &lt;/p&gt;]] <17>  necrotic damage, and the target slides 5 squares and is restrained (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Flinging Rebuke&lt;/b&gt; (immediate interrupt, when an enemy moves adjacent to the poltergeist; encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The poltergeist shifts up to 1 square and uses hurl away on the triggering enemy. If the attack hits, the target is knocked prone.&lt;/p&gt;]]  <b>Flinging Rebuke</b> (immediate interrupt, when an enemy moves adjacent to the poltergeist; encounter) ✦ <b>Necrotic</b></p><p>The poltergeist shifts up to 1 square and uses hurl away on the triggering enemy. If the attack hits, the target is knocked prone.</p></tr></td></table>",

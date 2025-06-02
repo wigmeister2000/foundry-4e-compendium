@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -588,23 +589,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 41; <b>Bloodied</b> 20</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 15</td><td><b>Ref</b> 12</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 (forest walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 17 (+4)</td><td><b>Dex</b> 10 (+1)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 14 (+3)<br><b>Cha</b> 6 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Striking Vine&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;]] (⚔) <b>Striking Vine</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Striking Vine&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Striking Vine&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 damage.&lt;/p&gt;]] <9.5>  damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Impaling Thorn&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the vine doesn’t have a creature grabbed&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage, and the vine grabs the target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Standard:&lt;/i&gt; The vine sustains the grab, the target takes 2d8 + 4 damage, and the vine regains 5 hit points.&lt;/p&gt;]] ⚔ <b>Impaling Thorn</b> (healing) ✦ <b>Recharge</b> when the vine doesn’t have a creature grabbed</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Impaling Thorn&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the vine doesn’t have a creature grabbed&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Impaling Thorn&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the vine doesn’t have a creature grabbed&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 4 damage, and the vine grabs the target.&lt;/p&gt;]] <8.5>  damage, and the vine grabs the target.</p><p><i>Sustain Standard:</i> The vine sustains the grab, the target takes [[/roll 2d8 + 4#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Impaling Thorn&lt;/b&gt; (healing) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the vine doesn’t have a creature grabbed&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Standard:&lt;/i&gt; The vine sustains the grab, the target takes 2d8 + 4 damage, and the vine regains 5 hit points.&lt;/p&gt;]] <13>  damage, and the vine regains 5 hit points.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pulling Vines&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The vine shifts 1 square, pulling any creatures it has grabbed into spaces adjacent to it.&lt;/p&gt;]]  <b>Pulling Vines</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The vine shifts 1 square, pulling any creatures it has grabbed into spaces adjacent to it.</p></tr></td></table>",

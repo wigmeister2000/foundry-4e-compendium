@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blood Moon",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"GbsMCzX0579r4wFD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"eBk125mHoUiJgEzC",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -333,7 +336,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1218,23 +1222,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 320; <b>Bloodied</b> 160<hr><b>Immune</b> greater moon frenzy </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 25</td><td><b>Fort</b> 27</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (10 in wolf form)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 24 (+13)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 7 (+4)</td><td><b>Wis</b> 14 (+8)<br><b>Cha</b> 12 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Athletics +18, Endurance +16, Intimidate +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> greatclub .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Blood Moon&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Varrg and any ally in the aura gains a +5 bonus to damage rolls against bloodied targets.&lt;/p&gt;]] ⌀ <b>Blood Moon</b> ✦ <b>Aura</b> 5</p><p>Varrg and any ally in the aura gains a +5 bonus to damage rolls against bloodied targets.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Varrg regains 10 hit points whenever he starts his turn and has at least 1 hit point. If Varrg takes damage from a silvered weapon, his regeneration does not function on his next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>Varrg regains 10 hit points whenever he starts his turn and has at least 1 hit point. If Varrg takes damage from a silvered weapon, his regeneration does not function on his next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Varrg must be in giant or hybrid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 10 damage.&lt;/p&gt;]] (⚔) <b>Greatclub</b> (weapon) ✦ <b>At-Will</b></p><p><i>Requirement:</i> Varrg must be in giant or hybrid form.</p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatclub&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 10 damage.&lt;/p&gt;]] <26.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Varrg must be in dire wolf or hybrid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +18 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 damage. At the end of the encounter, the target must make a saving throw. On a failure, the target contracts greater moon frenzy (stage 1).&lt;/p&gt;]] (⚔) <b>Bite</b> (disease) ✦ <b>At-Will</b></p><p><i>Requirement:</i> Varrg must be in dire wolf or hybrid form.</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+18[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+18 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (disease) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 13 damage. At the end of the encounter, the target must make a saving throw. On a failure, the target contracts greater moon frenzy (stage 1).&lt;/p&gt;]] <26.5>  damage. At the end of the encounter, the target must make a saving throw. On a failure, the target contracts greater moon frenzy (stage 1).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Speed of the Wolf&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Varrg must be in dire wolf or hybrid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Varrg uses bite, shifts up to 6 squares, and uses bite again.&lt;/p&gt;]]  <b>Speed of the Wolf</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> Varrg must be in dire wolf or hybrid form.</p><p><i>Effect:</i> Varrg uses bite, shifts up to 6 squares, and uses bite again.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Sweeping Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; Varrg must be in giant or hybrid form.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Varrg uses greatclub twice.&lt;/p&gt;]]  <b>Sweeping Strike</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> Varrg must be in giant or hybrid form.</p><p><i>Effect:</i> Varrg uses greatclub twice.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Varrg alters his physical form to appear as a dire wolf, a hill giant, or a humanoid hybrid of the two. The new form persists until Varrg uses change shape again or until he drops to 0 hit points.&lt;/p&gt;]]  <b>Change Shape</b> (polymorph) ✦ <b>At-Will</b> (1/round)</p><p><i>Effect:</i> Varrg alters his physical form to appear as a dire wolf, a hill giant, or a humanoid hybrid of the two. The new form persists until Varrg uses change shape again or until he drops to 0 hit points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Savage Howl&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 5 (allies in the burst); each target gains 15 temporary hit points, and each target that has a bite attack can make a bite attack as a free action.&lt;/p&gt;]] ᗕ <b>Savage Howl</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> Close burst 5 (allies in the burst); each target gains 15 temporary hit points, and each target that has a bite attack can make a bite attack as a free action.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Leader of the Pack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3XhuymlPvH2F19xK",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Bloodlust",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"bOWn91r05PdJiC2u",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Pack Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"J1ekzBudYbv76aNS",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -548,23 +552,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 106; <b>Bloodied</b> 53</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 21</td><td><b>Ref</b> 18</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 16 (+7)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 13 (+5)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 15 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Insight +10, Intimidate +11, Religion +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 20</td></td></tr></table><p><b>Equipment</b> heavy flail, hide armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Leader of the Pack&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 5&lt;/p&gt;&lt;p&gt;Allies in the aura gain a +1 bonus to attack rolls, or +2 while the demonic scourge is bloodied.&lt;/p&gt;]] ⌀ <b>Leader of the Pack</b> ✦ <b>Aura</b> 5</p><p>Allies in the aura gain a +1 bonus to attack rolls, or +2 while the demonic scourge is bloodied.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloodlust&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;If the demonic scourge bloodies an enemy with a melee attack, an ally adjacent to the struck enemy can make a melee attack against that enemy as an immediate reaction.&lt;/p&gt;]]  <b>Bloodlust</b> <b></b></p><p>If the demonic scourge bloodies an enemy with a melee attack, an ally adjacent to the struck enemy can make a melee attack against that enemy as an immediate reaction.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Attack&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The demonic scourge’s attacks deal 5 extra damage to any enemy that has two or more of the demonic scourge’s allies adjacent to it.&lt;/p&gt;]]  <b>Pack Attack</b> <b></b></p><p>The demonic scourge’s attacks deal 5 extra damage to any enemy that has two or more of the demonic scourge’s allies adjacent to it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heavy Flail&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +13 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 13 damage, or 2d6 + 15 while bloodied. If the target is bloodied after taking this damage, it falls prone.&lt;/p&gt;]] (⚔) <b>Heavy Flail</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+13[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heavy Flail&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+13 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heavy Flail&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 13 damage, or 2d6 + 15 while bloodied. If the target is bloodied after taking this damage, it falls prone.&lt;/p&gt;]] <20>  damage, or [[/roll 2d6 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Heavy Flail&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 13 damage, or 2d6 + 15 while bloodied. If the target is bloodied after taking this damage, it falls prone.&lt;/p&gt;]] <22>  while bloodied. If the target is bloodied after taking this damage, it falls prone.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Overwhelming Attack&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The demonic scourge’s bloodlust trait applies to two allies instead of one until the end of its current turn.&lt;/p&gt;]]  <b>Overwhelming Attack</b> ✦ <b>Encounter</b></p><p><i>Effect:</i> The demonic scourge’s bloodlust trait applies to two allies instead of one until the end of its current turn.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration 10",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Gpzxjic2HBdhs74t",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -152,10 +154,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -284,7 +286,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -694,10 +697,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1175,23 +1178,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 336; <b>Bloodied</b> 168<br><b>Regeneration</b> 10 (regeneration does not function while Ferranifer is exposed to direct sunlight)<hr><b>Resist</b> 15 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 34</td><td><b>Fort</b> 28</td><td><b>Ref</b> 32</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+9)<br><b>Con</b> 16 (+12)</td><td><b>Dex</b> 22 (+15)<br><b>Int</b> 17 (+12)</td><td><b>Wis</b> 19 (+13)<br><b>Cha</b> 24 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Acrobatics +20, Arcana +17, Athletics +14, Bluff +21, Intimidate +21, Religion +17, Stealth +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> black cloak</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 2d6+6 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 2d6+6 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 2d6+6 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]] <13>  necrotic damage, and the target is dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Foul Dart&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +22 vs Reflex;  (Mistress Ferranifer makes two attacks against two different targets)2d6+7 force and necrotic damage per attack. &lt;/p&gt;]] (➶) <b>Foul Dart</b> (standard, at-will) ✦ <b>Force, Necrotic</b></p><p>Ranged 10; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Foul Dart&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+22 vs Reflex&lt;/u&gt;;  (Mistress Ferranifer makes two attacks against two different targets)2d6+7 force and necrotic damage per attack. &lt;/p&gt;]];  (Mistress Ferranifer makes two attacks against two different targets)[[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Foul Dart&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +22 vs Reflex;  (Mistress Ferranifer makes two attacks against two different targets)2d6+7 force and necrotic damage per attack. &lt;/p&gt;]] <14>  force and necrotic damage per attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs Fortitude; 2d12+6 damage, and the target is weakened (save ends), and Mistress Ferranifer regains 84 hit points. &lt;/p&gt;]] ⚔ <b>Blood Drain</b> (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ <b>Healing</b></p><p>[[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 2d12+6 damage, and the target is weakened (save ends), and Mistress Ferranifer regains 84 hit points. &lt;/p&gt;]]; [[/roll 2d12+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Blood Drain&lt;/b&gt; (standard; requires combat advantage, recharges when an adjacent creature becomes bloodied) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+20 vs Fortitude; 2d12+6 damage, and the target is weakened (save ends), and Mistress Ferranifer regains 84 hit points. &lt;/p&gt;]] <19>  damage, and the target is weakened (save ends), and Mistress Ferranifer regains 84 hit points. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mist Form&lt;/b&gt; (standard; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ferranifer becomes insubstantial and gains a fly speed of 12, but she cannot make attacks. She can remain in mist form for up to 1 hour or end the effect as a minor action.&lt;/p&gt;]]  <b>Mist Form</b> (standard; encounter) ✦ <b>Polymorph</b></p><p>Ferranifer becomes insubstantial and gains a fly speed of 12, but she cannot make attacks. She can remain in mist form for up to 1 hour or end the effect as a minor action.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Blackfire&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +22 vs Reflex; on a hit, the target loses 1 healing surge and gains the “engulfed in midnight flames” condition (save ends). While engulfed, any creature that starts its turn in a space adjacent to the target takes 5 cold and 5 necrotic damage. First Failed Saving Throw: The target gains the “engulfed in midnight flames” condition (save ends) and cannot spend healing surges until it takes a short rest. Second Failed Saving Throw: The target gains the “engulfed in midnight flames” condition (save ends) and cannot spend healing surges until it takes an extended rest. &lt;/p&gt;]] ➶ <b>Blackfire</b> (minor, encounter) ✦ <b>Cold, Necrotic</b></p><p>Ranged 10; [[/roll 1d20+22[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Blackfire&lt;/b&gt; (minor, encounter) ✦ &lt;b&gt;Cold, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+22 vs Reflex&lt;/u&gt;; on a hit, the target loses 1 healing surge and gains the “engulfed in midnight flames” condition (save ends). While engulfed, any creature that starts its turn in a space adjacent to the target takes 5 cold and 5 necrotic damage. First Failed Saving Throw: The target gains the “engulfed in midnight flames” condition (save ends) and cannot spend healing surges until it takes a short rest. Second Failed Saving Throw: The target gains the “engulfed in midnight flames” condition (save ends) and cannot spend healing surges until it takes an extended rest. &lt;/p&gt;]]; on a hit, the target loses 1 healing surge and gains the “engulfed in midnight flames” condition (save ends). While engulfed, any creature that starts its turn in a space adjacent to the target takes 5 cold and 5 necrotic damage. First Failed Saving Throw: The target gains the “engulfed in midnight flames” condition (save ends) and cannot spend healing surges until it takes a short rest. Second Failed Saving Throw: The target gains the “engulfed in midnight flames” condition (save ends) and cannot spend healing surges until it takes an extended rest. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; +22 vs Will; the target is dominated (save ends with a -2 penalty to the saving throw). Ferranifer can dominate one creature at a time. &lt;/p&gt;]] ➶ <b>Dominating Gaze</b> (minor, recharge ⚅</p><p>Ranged 5; [[/roll 1d20+22[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (minor, recharge ⚅&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+22 vs Will&lt;/u&gt;; the target is dominated (save ends with a -2 penalty to the saving throw). Ferranifer can dominate one creature at a time. &lt;/p&gt;]]; the target is dominated (save ends with a -2 penalty to the saving throw). Ferranifer can dominate one creature at a time. </p></tr></td></table>",

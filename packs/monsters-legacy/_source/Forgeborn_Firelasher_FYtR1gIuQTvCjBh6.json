@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -955,23 +957,10 @@
 				"max":10
 			},
 			"init":{
-				"value":23,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":23
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 200; <b>Bloodied</b> 100<hr><b>Resist</b> 15 fire <b>Immune</b> charm, fear, sleep </td><td style=\"padding-left: 15px;\"><b>Init</b> +23</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 42</td><td><b>Fort</b> 40</td><td><b>Ref</b> 41</td><td><b>Will</b> 40 ; see also fury of the forge</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 6 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+19)<br><b>Con</b> 26 (+22)</td><td><b>Dex</b> 29 (+23)<br><b>Int</b> 23 (+20)</td><td><b>Wis</b> 26 (+22)<br><b>Cha</b> 18 (+18)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> (understands Abyssal, Primordial, and Supernal)<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 32 | Insight 32</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Darkfire Slash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 3d8+10 fire damage, and the target is dazed until the beginning of its next turn. &lt;/p&gt;]] (⚔) <b>Darkfire Slash</b> (standard, at-will) ✦ <b>Fire</b></p><p>Reach 2; [[/roll 1d20+33[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Darkfire Slash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+33 vs AC&lt;/u&gt;; 3d8+10 fire damage, and the target is dazed until the beginning of its next turn. &lt;/p&gt;]]; [[/roll 3d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Darkfire Slash&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +33 vs AC; 3d8+10 fire damage, and the target is dazed until the beginning of its next turn. &lt;/p&gt;]] <23.5>  fire damage, and the target is dazed until the beginning of its next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Flame Pulse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Reflex; 3d8+10 fire damage. &lt;/p&gt;]] (➶) <b>Flame Pulse</b> (standard, at-will) ✦ <b>Fire</b></p><p>Ranged 10; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Flame Pulse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 3d8+10 fire damage. &lt;/p&gt;]]; [[/roll 3d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Flame Pulse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Reflex; 3d8+10 fire damage. &lt;/p&gt;]] <23.5>  fire damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lash of Fire&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Reflex; 4d8+10 fire and psychic damage, and the target takes ongoing 15 fire damage (save ends). &lt;/p&gt;]] ➶ <b>Lash of Fire</b> (standard, recharge ⚃⚄⚅) ✦ <b>Fire, Psychic</b></p><p>Ranged 10; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lash of Fire&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 4d8+10 fire and psychic damage, and the target takes ongoing 15 fire damage (save ends). &lt;/p&gt;]]; [[/roll 4d8+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Lash of Fire&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Fire, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +31 vs Reflex; 4d8+10 fire and psychic damage, and the target takes ongoing 15 fire damage (save ends). &lt;/p&gt;]] <28>  fire and psychic damage, and the target takes ongoing 15 fire damage (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Defensive Flare&lt;/b&gt; (immediate reaction, when the firelasher is hit by a melee attack, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +31 vs Reflex; the target is dazed until the end of its next turn. A target already dazed is also weakened until the end of its next turn. &lt;/p&gt;]] ⚔ <b>Defensive Flare</b> (immediate reaction, when the firelasher is hit by a melee attack, at-will) ✦ <b>Charm</b></p><p>Reach 2; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Defensive Flare&lt;/b&gt; (immediate reaction, when the firelasher is hit by a melee attack, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; the target is dazed until the end of its next turn. A target already dazed is also weakened until the end of its next turn. &lt;/p&gt;]]; the target is dazed until the end of its next turn. A target already dazed is also weakened until the end of its next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Fury of the Forge&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +31 vs Reflex; 4d10+9 cold, fire, and lightning damage. Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Fury of the Forge</b> ( when reduced to 0 hit points, ) ✦ <b>Cold, Fire, Lightning</b></p><p>Close burst 3; [[/roll 1d20+31[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Fury of the Forge&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+31 vs Reflex&lt;/u&gt;; 4d10+9 cold, fire, and lightning damage. Miss: Half damage. &lt;/p&gt;]]; [[/roll 4d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Fury of the Forge&lt;/b&gt; ( when reduced to 0 hit points, ) ✦ &lt;b&gt;Cold, Fire, Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +31 vs Reflex; 4d10+9 cold, fire, and lightning damage. Miss: Half damage. &lt;/p&gt;]] <31>  cold, fire, and lightning damage. Miss: Half damage. </p></tr></td></table>",

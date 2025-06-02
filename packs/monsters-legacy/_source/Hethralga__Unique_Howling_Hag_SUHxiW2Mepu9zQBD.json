@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -952,23 +953,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 126; <b>Bloodied</b> 63</td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 25</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+11)<br><b>Con</b> 22 (+12)</td><td><b>Dex</b> 21 (+11)<br><b>Int</b> 13 (+7)</td><td><b>Wis</b> 18 (+10)<br><b>Cha</b> 19 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +15, Insight +15, Nature +15</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 20 | Insight 25</td></td></tr></table><p><b>Equipment</b> quarterstaff .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+5 damage. &lt;/p&gt;]] (⚔) <b>Quarterstaff</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d10+5 damage. &lt;/p&gt;]]; [[/roll 1d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quarterstaff&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+5 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Howl&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +16 vs Fortitude; 1d6+6 thunder damage, and the target is pushed 3 squares. &lt;/p&gt;]] ᗕ <b>Howl</b> (standard, at-will) ✦ <b>Thunder</b></p><p>Close blast 3; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Howl&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 1d6+6 thunder damage, and the target is pushed 3 squares. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Howl&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +16 vs Fortitude; 1d6+6 thunder damage, and the target is pushed 3 squares. &lt;/p&gt;]] <9.5>  thunder damage, and the target is pushed 3 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shriek of Pain&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +16 vs Fortitude; 3d6+6 thunder damage, or 3d6+11 thunder damage if the howling hag is bloodied. Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Shriek of Pain</b> (standard, recharges when first bloodied) ✦ <b>Thunder</b></p><p>Close blast 5; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shriek of Pain&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 3d6+6 thunder damage, or 3d6+11 thunder damage if the howling hag is bloodied. Miss: Half damage. &lt;/p&gt;]]; [[/roll 3d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shriek of Pain&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +16 vs Fortitude; 3d6+6 thunder damage, or 3d6+11 thunder damage if the howling hag is bloodied. Miss: Half damage. &lt;/p&gt;]] <16.5>  thunder damage, or [[/roll 3d6+11#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shriek of Pain&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +16 vs Fortitude; 3d6+6 thunder damage, or 3d6+11 thunder damage if the howling hag is bloodied. Miss: Half damage. &lt;/p&gt;]] <21.5>  thunder damage if the howling hag is bloodied. Miss: Half damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; at-will) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A howling hag can alter its physical form to appear as an old crone of any Medium humanoid race.&lt;/p&gt;]]  <b>Change Shape</b> (minor; at-will) ✦ <b>Polymorph</b></p><p>A howling hag can alter its physical form to appear as an old crone of any Medium humanoid race.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Step&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The howling hag can teleport 10 squares.&lt;/p&gt;]]  <b>Fey Step</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The howling hag can teleport 10 squares.</p></tr></td></table>",

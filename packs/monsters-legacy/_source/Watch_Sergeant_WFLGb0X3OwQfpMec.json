@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -722,7 +723,7 @@
 		},
 		{
 			"name":"Phalanx Soldier",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Fp7ZsxQLch4MUEkn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -758,7 +759,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -814,23 +816,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 104; <b>Bloodied</b> 52</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 22</td><td><b>Ref</b> 22</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 16 (+8)</td><td><b>Dex</b> 16 (+8)<br><b>Int</b> 13 (+6)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 16 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> chainmail , crossbow , crossbow bolt  x10, longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+7 damage, and the target is marked until the end of the watch sergeant’s next turn. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d8+7 damage, and the target is marked until the end of the watch sergeant’s next turn. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d8+7 damage, and the target is marked until the end of the watch sergeant’s next turn. &lt;/p&gt;]] <16>  damage, and the target is marked until the end of the watch sergeant’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +14 vs AC; 2d8+5 damage. &lt;/p&gt;]] ➶ <b>Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+14 vs AC&lt;/u&gt;; 2d8+5 damage. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +14 vs AC; 2d8+5 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Line Support&lt;/b&gt; (immediate reaction, when an enemy marked by the watch sergeant makes an attack that does not include the watch sergeant, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC;  (targets triggering enemy)2d8+7 damage, and the target is pushed 1 square. &lt;/p&gt;]] ⚔ <b>Line Support</b> (immediate reaction, when an enemy marked by the watch sergeant makes an attack that does not include the watch sergeant, at-will) </p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Line Support&lt;/b&gt; (immediate reaction, when an enemy marked by the watch sergeant makes an attack that does not include the watch sergeant, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;;  (targets triggering enemy)2d8+7 damage, and the target is pushed 1 square. &lt;/p&gt;]];  (targets triggering enemy)[[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Line Support&lt;/b&gt; (immediate reaction, when an enemy marked by the watch sergeant makes an attack that does not include the watch sergeant, at-will) &lt;/p&gt;&lt;p&gt;+16 vs AC;  (targets triggering enemy)2d8+7 damage, and the target is pushed 1 square. &lt;/p&gt;]] <16>  damage, and the target is pushed 1 square. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Call to Arms&lt;/b&gt; (free, when first bloodied, at-will) &lt;/p&gt;&lt;p&gt;Close burst 10; targets allies; the target makes a melee basic attack or shifts 3 squares as a free action.&lt;/p&gt;]] ᗕ <b>Call to Arms</b> (free, when first bloodied, at-will) </p><p>Close burst 10; targets allies; the target makes a melee basic attack or shifts 3 squares as a free action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Phalanx Soldier&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The watch patroller gains a +2 bonus to AC while at least one watch patroller or watch sergeant is adjacent to it.&lt;/p&gt;]]  <b>Phalanx Soldier</b></p><p>The watch patroller gains a +2 bonus to AC while at least one watch patroller or watch sergeant is adjacent to it.</p></tr></td></table>",

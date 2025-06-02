@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -467,10 +468,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -648,10 +649,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -771,23 +772,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 48; <b>Bloodied</b> 24</td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 16</td><td><b>Ref</b> 15</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 while charging)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 16 (+4)</td><td><b>Dex</b> 15 (+3)<br><b>Int</b> 9 (0)</td><td><b>Wis</b> 13 (+2)<br><b>Cha</b> 8 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Endurance +9, Intimidate +5, Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><p><b>Equipment</b> greataxe , handaxe  x2, leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15). &lt;/p&gt;]] (⚔) <b>Greataxe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d12 + 3 damage (crit 1d12 + 15). &lt;/p&gt;]]; [[/roll 1d12 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15). &lt;/p&gt;]] <9.5>  damage (crit [[/roll 1d12 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15). &lt;/p&gt;]] <21.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Handaxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5/10; +7 vs AC; 1d6 + 3 damage. &lt;/p&gt;]] ➶ <b>Handaxe</b> (standard, at-will) </p><p>Ranged 5/10; [[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Handaxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5/10; &lt;u&gt;+7 vs AC&lt;/u&gt;; 1d6 + 3 damage. &lt;/p&gt;]]; [[/roll 1d6 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Handaxe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5/10; +7 vs AC; 1d6 + 3 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Marauder\"s Onsluaght&lt;/b&gt; (standard; requires a greataxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15), and the target is pushed 1 square (2 squares on a charge). Special: When charging, the Turakbar orc marauder can use this power in place of a melee basic attack. &lt;/p&gt;]] ⚔ <b>Marauder\"s Onsluaght</b> (standard; requires a greataxe, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Marauder\"s Onsluaght&lt;/b&gt; (standard; requires a greataxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d12 + 3 damage (crit 1d12 + 15), and the target is pushed 1 square (2 squares on a charge). Special: When charging, the Turakbar orc marauder can use this power in place of a melee basic attack. &lt;/p&gt;]]; [[/roll 1d12 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Marauder\"s Onsluaght&lt;/b&gt; (standard; requires a greataxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15), and the target is pushed 1 square (2 squares on a charge). Special: When charging, the Turakbar orc marauder can use this power in place of a melee basic attack. &lt;/p&gt;]] <9.5>  damage (crit [[/roll 1d12 + 15#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Marauder\"s Onsluaght&lt;/b&gt; (standard; requires a greataxe, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15), and the target is pushed 1 square (2 squares on a charge). Special: When charging, the Turakbar orc marauder can use this power in place of a melee basic attack. &lt;/p&gt;]] <21.5> ), and the target is pushed 1 square (2 squares on a charge). Special: When charging, the Turakbar orc marauder can use this power in place of a melee basic attack. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Warrior\"s Surge&lt;/b&gt; (standard; usable only while bloodied, encounter) ✦ &lt;b&gt;Healing, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15), and the Turakbar orc marauder regains 12 hit points. &lt;/p&gt;]] ⚔ <b>Warrior\"s Surge</b> (standard; usable only while bloodied, encounter) ✦ <b>Healing, Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Warrior\"s Surge&lt;/b&gt; (standard; usable only while bloodied, encounter) ✦ &lt;b&gt;Healing, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d12 + 3 damage (crit 1d12 + 15), and the Turakbar orc marauder regains 12 hit points. &lt;/p&gt;]]; [[/roll 1d12 + 3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Warrior\"s Surge&lt;/b&gt; (standard; usable only while bloodied, encounter) ✦ &lt;b&gt;Healing, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15), and the Turakbar orc marauder regains 12 hit points. &lt;/p&gt;]] <9.5>  damage (crit [[/roll 1d12 + 15#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Warrior\"s Surge&lt;/b&gt; (standard; usable only while bloodied, encounter) ✦ &lt;b&gt;Healing, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d12 + 3 damage (crit 1d12 + 15), and the Turakbar orc marauder regains 12 hit points. &lt;/p&gt;]] <21.5> ), and the Turakbar orc marauder regains 12 hit points. </p></tr></td></table>",

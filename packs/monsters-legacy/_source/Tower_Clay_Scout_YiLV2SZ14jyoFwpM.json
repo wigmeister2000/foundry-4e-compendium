@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"3",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -366,7 +368,7 @@
 		},
 		{
 			"name":"Guard Area",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LIXkpK6onbyt8VhU",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +404,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -412,7 +415,7 @@
 		},
 		{
 			"name":"Limited Invisibility",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DrLbWhFVYq7IORm9",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -448,7 +451,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -559,10 +563,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -682,23 +686,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 31; <b>Bloodied</b> 15<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 13</td><td><b>Ref</b> 14</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 3 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+1)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 15 (+3)<br><b>Int</b> 10 (+1)</td><td><b>Wis</b> 10 (+1)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+3 vs AC; 1d6 damage, and the homunculus makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +2 vs Fortitude; the target is slowed (save ends). See also guard area. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+3[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+3 vs AC&lt;/u&gt;; 1d6 damage, and the homunculus makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+3 vs AC; 1d6 damage, and the homunculus makes a secondary attack against the same target. &lt;/p&gt;]] <3.5> damage, and the homunculus makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+2[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+2 vs Fortitude&lt;/u&gt;; the target is slowed (save ends). See also guard area. &lt;/p&gt;]]; the target is slowed (save ends). See also guard area. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Reflex; 1d6+3 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] (➶) <b>Mind Touch</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 10; [[/roll 1d20+5[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+5 vs Reflex&lt;/u&gt;; 1d6+3 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +5 vs Reflex; 1d6+3 psychic damage, and the target is dazed (save ends). &lt;/p&gt;]] <6.5>  psychic damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Guard Area&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The tower clay scout gains a +4 bonus to attack rolls against targets within 5 squares of the tower.&lt;/p&gt;]]  <b>Guard Area</b></p><p>The tower clay scout gains a +4 bonus to attack rolls against targets within 5 squares of the tower.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Limited Invisibility&lt;/b&gt;✦ &lt;b&gt;Illusion&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The tower clay scout is invisible to dazed creatures.&lt;/p&gt;]]  <b>Limited Invisibility</b>✦ <b>Illusion</b></p><p>The tower clay scout is invisible to dazed creatures.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Redirect&lt;/b&gt; (immediate interrupt, when targeted by a melee or ranged attack; at-will) &lt;/p&gt;&lt;p&gt;The tower clay scout makes an attack against the attacker; targets the triggering attacker; +4 vs. Will; the triggering attack targets a creature adjacent to the tower clay scout instead (as chosen by the clay scout).&lt;/p&gt;]]  <b>Redirect</b> (immediate interrupt, when targeted by a melee or ranged attack; at-will) </p><p>The tower clay scout makes an attack against the attacker; targets the triggering attacker; [[/roll 1d20+4[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Redirect&lt;/b&gt; (immediate interrupt, when targeted by a melee or ranged attack; at-will) &lt;/p&gt;&lt;p&gt;The tower clay scout makes an attack against the attacker; targets the triggering attacker; &lt;u&gt;+4 vs. Will&lt;/u&gt;; the triggering attack targets a creature adjacent to the tower clay scout instead (as chosen by the clay scout).&lt;/p&gt;]]; the triggering attack targets a creature adjacent to the tower clay scout instead (as chosen by the clay scout).</p></tr></td></table>",

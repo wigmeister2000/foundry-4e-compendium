@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -540,7 +541,7 @@
 		},
 		{
 			"name":"Liquid Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"D9SIj67VkPxAaC1n",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -576,7 +577,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -632,23 +634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":27,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":13,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":27
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 201; <b>Bloodied</b> 100</td><td style=\"padding-left: 15px;\"><b>Init</b> +27</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 43</td><td><b>Fort</b> 42</td><td><b>Ref</b> 41</td><td><b>Will</b> 36</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, burrow 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+24)<br><b>Con</b> 21 (+19)</td><td><b>Dex</b> 28 (+23)<br><b>Int</b> 12 (+15)</td><td><b>Wis</b> 17 (+17)<br><b>Cha</b> 14 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +28</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +34 vs AC; 3d8 + 10 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+34[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+34 vs AC&lt;/u&gt;; 3d8 + 10 damage. &lt;/p&gt;]]; [[/roll 3d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +34 vs AC; 3d8 + 10 damage. &lt;/p&gt;]] <23.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Watery Embrace&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; +32 vs Reflex; On a hit, the target is grabbed and pulled up to 3 squares and into the waterveiled assassin’s space; the target takes ongoing 15 damage until it escapes the grab. A creature that escapes the grab shifts to a square of its choosing adjacent to the waterveiled assassin. The waterveiled assassin moves at half speed while creatures are engulfed within it. The waterveiled assassin attacks one or two Medium or smaller targets&lt;/p&gt;]] ⚔ <b>Watery Embrace</b> (standard, recharge ⚄⚅) </p><p>Reach 2; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Watery Embrace&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; On a hit, the target is grabbed and pulled up to 3 squares and into the waterveiled assassin’s space; the target takes ongoing 15 damage until it escapes the grab. A creature that escapes the grab shifts to a square of its choosing adjacent to the waterveiled assassin. The waterveiled assassin moves at half speed while creatures are engulfed within it. The waterveiled assassin attacks one or two Medium or smaller targets&lt;/p&gt;]]; On a hit, the target is grabbed and pulled up to 3 squares and into the waterveiled assassin’s space; the target takes ongoing 15 damage until it escapes the grab. A creature that escapes the grab shifts to a square of its choosing adjacent to the waterveiled assassin. The waterveiled assassin moves at half speed while creatures are engulfed within it. The waterveiled assassin attacks one or two Medium or smaller targets</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sudden Deluge&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Reach 2; +32 vs Reflex; 5d12 + 9 damage, and the target is pushed 4 squares and dazed (save ends). &lt;/p&gt;]] ⚔ <b>Sudden Deluge</b> (standard, recharge ⚅</p><p>Reach 2; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sudden Deluge&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 5d12 + 9 damage, and the target is pushed 4 squares and dazed (save ends). &lt;/p&gt;]]; [[/roll 5d12 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Sudden Deluge&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Reach 2; +32 vs Reflex; 5d12 + 9 damage, and the target is pushed 4 squares and dazed (save ends). &lt;/p&gt;]] <41.5>  damage, and the target is pushed 4 squares and dazed (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Liquid Body&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A waterveiled assassin has complete control over its watery form. It can flow through small cracks and move through earth, walls, and other obstacles. It ignores difficult terrain and can burrow in this manner.&lt;/p&gt;]]  <b>Liquid Body</b></p><p>A waterveiled assassin has complete control over its watery form. It can flow through small cracks and move through earth, walls, and other obstacles. It ignores difficult terrain and can burrow in this manner.</p></tr></td></table>",

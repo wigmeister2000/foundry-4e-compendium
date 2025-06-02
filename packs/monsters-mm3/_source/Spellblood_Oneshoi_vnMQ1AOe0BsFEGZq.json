@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Unbound Arcana",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"5PBnHMt6Gob1RNQI",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -39,7 +39,8 @@
 					"weapons":[],
 					"armour":[]
 				},
-				"level":null
+				"level":null,
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -104,7 +105,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -284,7 +286,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -995,23 +998,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 139; <b>Bloodied</b> 69<hr><b>Resist</b> 5 acid, 5 cold, 5 fire, 5 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 24</td><td><b>Ref</b> 21</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+11)<br><b>Con</b> 19 (+9)</td><td><b>Dex</b> 12 (+6)<br><b>Int</b> 16 (+8)</td><td><b>Wis</b> 14 (+7)<br><b>Cha</b> 20 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><p><b>Equipment</b> Horizon\"s Span, leather armor .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unbound Arcana&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When he rolls initiative and at the end of each of his turns, roll a d20. Until he rolls again, Oneshoi can use the power corresponding to the result at-will: 1–10, cold steel; 11–17, spellblood teleport; 18–20, lightning rod.&lt;/p&gt;]]  <b>Unbound Arcana</b> <b></b></p><p>When he rolls initiative and at the end of each of his turns, roll a [[/roll d20#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unbound Arcana&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When he rolls initiative and at the end of each of his turns, roll a d20. Until he rolls again, Oneshoi can use the power corresponding to the result at-will: 1–10, cold steel; 11–17, spellblood teleport; 18–20, lightning rod.&lt;/p&gt;]] <10.5> . Until he rolls again, Oneshoi can use the power corresponding to the result at-will: 1–10, cold steel; 11–17, spellblood teleport; 18–20, lightning rod.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horizon\"s Span&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 9 damage. On a critical hit, Horizon’s Span deals 33 + 2d12 + 3d10 damage and another 2d12 + 3d10 damage to the target at the start of Oneshoi’s next turn.&lt;/p&gt;]] (⚔) <b>Horizon\"s Span</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horizon\"s Span&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horizon\"s Span&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 9 damage. On a critical hit, Horizon’s Span deals 33 + 2d12 + 3d10 damage and another 2d12 + 3d10 damage to the target at the start of Oneshoi’s next turn.&lt;/p&gt;]] <22>  damage. On a critical hit, Horizon’s Span deals 33 + [[/roll [[/roll 2d12 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horizon\"s Span&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 9 damage. On a critical hit, Horizon’s Span deals 33 + 2d12 + 3d10 damage and another 2d12 + 3d10 damage to the target at the start of Oneshoi’s next turn.&lt;/p&gt;]] <16> #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horizon\"s Span&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 9 damage. On a critical hit, Horizon’s Span deals 33 + 2d12 + 3d10 damage and another 2d12 + 3d10 damage to the target at the start of Oneshoi’s next turn.&lt;/p&gt;]] <16> [[/roll [[/roll d10 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horizon\"s Span&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 9 damage. On a critical hit, Horizon’s Span deals 33 + 2d12 + 3d10 damage and another 2d12 + 3d10 damage to the target at the start of Oneshoi’s next turn.&lt;/p&gt;]] <5.5> #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Horizon\"s Span&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 9 damage. On a critical hit, Horizon’s Span deals 33 + 2d12 + 3d10 damage and another 2d12 + 3d10 damage to the target at the start of Oneshoi’s next turn.&lt;/p&gt;]] <5.5> damage and another 2d12 + 3d10 damage to the target at the start of Oneshoi’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Leaping Fire&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 10 (one creature); +14 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 fire damage.&lt;/p&gt;]] (⚔) <b>Leaping Fire</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 10 (one creature); [[/roll 1d20+14[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Leaping Fire&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 10 (one creature); &lt;u&gt;+14 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Leaping Fire&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 10 fire damage.&lt;/p&gt;]] <19>  fire damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Rod&lt;/b&gt; (lightning) ✦ &lt;b&gt;See unbound arcana&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Oneshoi uses Horizon’s Span, and then makes a secondary attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; Close burst 10 (one creature in the burst); +14 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 lightning damage, and Oneshoi repeats the attack with the burst centered on the target who was hit. He continues repeating the attack until he misses.&lt;/p&gt;]] ᗕ <b>Lightning Rod</b> (lightning) ✦ <b>See unbound arcana</b></p><p><i>Effect:</i> Oneshoi uses Horizon’s Span, and then makes a secondary attack.</p><p><i>Secondary Attack:</i> Close burst 10 (one creature in the burst); [[/roll 1d20+14[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Rod&lt;/b&gt; (lightning) ✦ &lt;b&gt;See unbound arcana&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; Close burst 10 (one creature in the burst); &lt;u&gt;+14 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Lightning Rod&lt;/b&gt; (lightning) ✦ &lt;b&gt;See unbound arcana&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 5 lightning damage, and Oneshoi repeats the attack with the burst centered on the target who was hit. He continues repeating the attack until he misses.&lt;/p&gt;]] <9.5>  lightning damage, and Oneshoi repeats the attack with the burst centered on the target who was hit. He continues repeating the attack until he misses.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Spellblood Teleport&lt;/b&gt; (teleportation) ✦ &lt;b&gt;See unbound arcana&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Close burst 1 (allies in the burst). Oneshoi and each target can teleport up to 10 squares as a free action.&lt;/p&gt;]]  <b>Spellblood Teleport</b> (teleportation) ✦ <b>See unbound arcana</b></p><p><i>Effect:</i> Close burst 1 (allies in the burst). Oneshoi and each target can teleport up to 10 squares as a free action.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cold Steel&lt;/b&gt; (cold) ✦ &lt;b&gt;See unbound arcana&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; If Oneshoi’s hits with his next melee attack, the target takes 1d6 extra cold damage.&lt;/p&gt;]]  <b>Cold Steel</b> (cold) ✦ <b>See unbound arcana</b></p><p><i>Effect:</i> If Oneshoi’s hits with his next melee attack, the target takes [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cold Steel&lt;/b&gt; (cold) ✦ &lt;b&gt;See unbound arcana&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; If Oneshoi’s hits with his next melee attack, the target takes 1d6 extra cold damage.&lt;/p&gt;]] <3.5> extra cold damage.</p></tr></td></table>",

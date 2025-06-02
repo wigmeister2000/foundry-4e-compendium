@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Intoxicating Musk",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"q0leB4LUjaEfTdOH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -816,23 +818,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 128; <b>Bloodied</b> 64<hr><b>Immune</b> chaos phage </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 24</td><td><b>Ref</b> 25</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 9 (+5)<br><b>Con</b> 16 (+9)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 9 (+5)</td><td><b>Wis</b> 6 (+4)<br><b>Cha</b> 23 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Arcana +15, Endurance +13, Insight +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 19</td></td></tr></table><p><b>Equipment</b> robes, fleshy orb</p><p>[[/roll 0#&lt;b&gt;Intoxicating Musk&lt;/b&gt; (Poison) aura 3; all creatures other than Anax who start their turns within the aura take a -2 penalty to attack rolls and their melee attacks gain a +5 bonus to damage rolls.]] <b>Intoxicating Musk</b> (Poison) aura 3; all creatures other than Anax who start their turns within the aura take a -2 penalty to attack rolls and their melee attacks gain a +5 bonus to damage rolls.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bewildering Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d4+2 damage, and Anax makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +17 vs Will; the target is dominated until the end of Anax\"s next turn. &lt;/p&gt;]] (⚔) <b>Bewildering Caress</b> (standard, at-will) ✦ <b>Fear</b></p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bewildering Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 1d4+2 damage, and Anax makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 1d4+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bewildering Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+18 vs AC; 1d4+2 damage, and Anax makes a secondary attack against the same target. &lt;/p&gt;]] <4.5>  damage, and Anax makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bewildering Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+17 vs Will&lt;/u&gt;; the target is dominated until the end of Anax\"s next turn. &lt;/p&gt;]]; the target is dominated until the end of Anax\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;madness Blossoms&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +17 vs Reflex; 1d6+5 psychic damage, and the target is dazed until the end of Anax\"s next turn. &lt;/p&gt;]] ➶ <b>madness Blossoms</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 20; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;madness Blossoms&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 1d6+5 psychic damage, and the target is dazed until the end of Anax\"s next turn. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;madness Blossoms&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +17 vs Reflex; 1d6+5 psychic damage, and the target is dazed until the end of Anax\"s next turn. &lt;/p&gt;]] <8.5>  psychic damage, and the target is dazed until the end of Anax\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Elemental Conflagration&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +15 vs Reflex; 1d8+6 damage, and the target slides 3 squares and grants combat advantage to any enemy (save ends). &lt;/p&gt;]] ✻ <b>Elemental Conflagration</b> (standard, recharge ⚅</p><p>Area burst 1 within 10; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Elemental Conflagration&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 1d8+6 damage, and the target slides 3 squares and grants combat advantage to any enemy (save ends). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Elemental Conflagration&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +15 vs Reflex; 1d8+6 damage, and the target slides 3 squares and grants combat advantage to any enemy (save ends). &lt;/p&gt;]] <10.5>  damage, and the target slides 3 squares and grants combat advantage to any enemy (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Corrosive Vomit&lt;/b&gt; (immediate reaction, encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +15 vs Reflex; 2d6+6 acid damage, and ongoing 10 acid damage (save ends). &lt;/p&gt;]] ᗕ <b>Corrosive Vomit</b> (immediate reaction, encounter) ✦ <b>Acid</b></p><p>Close blast 5; [[/roll 1d20+15[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Corrosive Vomit&lt;/b&gt; (immediate reaction, encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+15 vs Reflex&lt;/u&gt;; 2d6+6 acid damage, and ongoing 10 acid damage (save ends). &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Corrosive Vomit&lt;/b&gt; (immediate reaction, encounter) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +15 vs Reflex; 2d6+6 acid damage, and ongoing 10 acid damage (save ends). &lt;/p&gt;]] <13>  acid damage, and ongoing 10 acid damage (save ends). </p></tr></td></table>",

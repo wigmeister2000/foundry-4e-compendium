@@ -2,7 +2,7 @@ import { registerConfigurations } from "./config.js";
 import { addCbuilderXMLImportButton } from "./tools/cbuilder_xml_import.js";
 import { addActorContextMenuAdjustMonster, addActorContextMenuMM3Math, addActorContextMenuFindAndReplace, addFolderContextMenuAdjustMonster, addFolderContextMenuMM3Math, addActorContextMenuMonsterKnowledge, addFolderContextMenuMonsterKnowledge } from "./tools/adjust_monster.js";
 import { addBuildEquipmentButton } from "./tools/cbuilder_xml_import.js";
-import { createHPchangeMessage, createSurgeChangeMessage } from "./tools/hp-chat-messages.js";
+import { createHPchangeMessage, createSurgeChangeMessage, createResourceChangeMessage } from "./tools/chat-messages.js";
 import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
 import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
 import { addActorContextMenuImportConfig, addActorContextMenuCopyID } from "./tools/actor-import-config.js";
@@ -25,6 +25,7 @@ export class DnD4ECompendium {
         IMPORT_CONFIG: "actor-import-config",
         HP_MESSAGES: "hp-messages",
         SURGE_MESSAGES: "surge-messages",
+        RESOURCE_MESSAGES: "resource-messages",
         CONDITION_MESSAGES: "condition-messages",
         ENCOUNTER_DIFFICULTY: "encounter-difficulty",
         APPEND_DURATION: "append-duration"
@@ -45,6 +46,7 @@ export class DnD4ECompendium {
         Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuMonsterKnowledge);
         Hooks.on("preUpdateActor", createHPchangeMessage);
         Hooks.on("preUpdateActor", createSurgeChangeMessage);
+        Hooks.on("preUpdateActor", createResourceChangeMessage);
         Hooks.on("combatStart", createEffectsMessageCombat);
         Hooks.on("combatRound", createEffectsMessageCombat);
         Hooks.on("combatTurn", createEffectsMessageCombat);

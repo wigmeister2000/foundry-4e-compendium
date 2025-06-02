@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Close Attachment",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"1U9RZHCcQ5gA62mM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -812,23 +814,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 280; <b>Bloodied</b> 140</td><td style=\"padding-left: 15px;\"><b>Init</b> +11 | <b>AP</b> 1 | <b>Save</b> +2 (+5 against charm and fear effects)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 26</td><td><b>Ref</b> 28</td><td><b>Will</b> 29 (+4 against charm and fear effects)</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+10)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 18 (+11)<br><b>Int</b> 20 (+12)</td><td><b>Wis</b> 10 (+7)<br><b>Cha</b> 22 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic, Elven, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +17, Bluff +18, Diplomacy +18, Insight +12, Nature +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 17 | Insight 22</td></td></tr></table><p><b>Equipment</b> robes</p><p>[[/roll 0#&lt;b&gt;Close Attachment&lt;/b&gt; aura 3; each ally that starts its turn within the aura can shift 1 square as a minor action instead of as a move action.]] <b>Close Attachment</b> aura 3; each ally that starts its turn within the aura can shift 1 square as a minor action instead of as a move action.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unarmed Throw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 2d6+6 damage, Empress Donata slides the target 3 squares, and the target is knocked prone. &lt;/p&gt;]] (⚔) <b>Unarmed Throw</b> (standard, at-will) </p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unarmed Throw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 2d6+6 damage, Empress Donata slides the target 3 squares, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Unarmed Throw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 2d6+6 damage, Empress Donata slides the target 3 squares, and the target is knocked prone. &lt;/p&gt;]] <13>  damage, Empress Donata slides the target 3 squares, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Dominating Murmur&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets one enemy in the burst; +19 vs Will; the target is dominated until the end of Empress Donata’s next turn. A creature dominated in this way is considered an ally with regard to Empress Donata’s other powers. &lt;/p&gt;]] ᗕ <b>Dominating Murmur</b> (standard, at-will) ✦ <b>Charm</b></p><p>Close burst 10; targets one enemy in the burst; [[/roll 1d20+19[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Dominating Murmur&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; targets one enemy in the burst; &lt;u&gt;+19 vs Will&lt;/u&gt;; the target is dominated until the end of Empress Donata’s next turn. A creature dominated in this way is considered an ally with regard to Empress Donata’s other powers. &lt;/p&gt;]]; the target is dominated until the end of Empress Donata’s next turn. A creature dominated in this way is considered an ally with regard to Empress Donata’s other powers. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Perfect Command&lt;/b&gt; (minor, at-will) &lt;/p&gt;&lt;p&gt;Close burst 10; an ally in the burst makes a basic attack as a free action. Empress Donata cannot use this power on the same creature more than once in a round&lt;/p&gt;]] ᗕ <b>Perfect Command</b> (minor, at-will) </p><p>Close burst 10; an ally in the burst makes a basic attack as a free action. Empress Donata cannot use this power on the same creature more than once in a round</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Extreme Devotion&lt;/b&gt; (immediate interrupt, when empress donata is attacked; encounter) &lt;/p&gt;&lt;p&gt;An ally within 3 squares of Empress Donata shifts 3 squares, ending the move adjacent to her. Empress Donata gains a +4 bonus to all defenses against the triggering attack. If the attack misses Empress Donata, it instead hits the ally who shifted adjacent to her.&lt;/p&gt;]]  <b>Extreme Devotion</b> (immediate interrupt, when empress donata is attacked; encounter) </p><p>An ally within 3 squares of Empress Donata shifts 3 squares, ending the move adjacent to her. Empress Donata gains a +4 bonus to all defenses against the triggering attack. If the attack misses Empress Donata, it instead hits the ally who shifted adjacent to her.</p></tr></td></table>",

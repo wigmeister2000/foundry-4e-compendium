@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -469,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1130,23 +1132,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 152; <b>Bloodied</b> 76</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 18</td><td><b>Ref</b> 20</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+5)<br><b>Con</b> 12 (+4)</td><td><b>Dex</b> 18 (+7)<br><b>Int</b> 15 (+5)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 16 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> case with 20 bolts, cloth armor (basic clothing) , hand crossbow , rapier .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flourishing Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8+6 damage, and Ralsor shifts 1 square. &lt;/p&gt;]] (⚔) <b>Flourishing Rapier</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flourishing Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 1d8+6 damage, and Ralsor shifts 1 square. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flourishing Rapier&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+12 vs AC; 1d8+6 damage, and Ralsor shifts 1 square. &lt;/p&gt;]] <10.5>  damage, and Ralsor shifts 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 6/12; +12 vs AC; 2d6+4 damage. &lt;/p&gt;]] (➶) <b>Hand Crossbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 6/12; [[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 6/12; &lt;u&gt;+12 vs AC&lt;/u&gt;; 2d6+4 damage. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Hand Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 6/12; +12 vs AC; 2d6+4 damage. &lt;/p&gt;]] <11>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Point-Blank Skewer&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ralsor makes one rapier attack and one hand crossbow attack against the same target without provoking opportunity attacks. He can shift 1 square before, after, or between the attacks&lt;/p&gt;]] ⚔ <b>Point-Blank Skewer</b> (standard, recharge ⚃⚄⚅) ✦ <b>Weapon</b></p><p>Ralsor makes one rapier attack and one hand crossbow attack against the same target without provoking opportunity attacks. He can shift 1 square before, after, or between the attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Throw Caution to the Storm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +10 vs Fortitude; 4d10+4 thunder damage, and the target is pushed 1. If Ralsor misses all targets with this attack, he grants combat advantage until the end of his next turn. &lt;/p&gt;]] ᗕ <b>Throw Caution to the Storm</b> (standard, encounter) ✦ <b>Thunder</b></p><p>Close burst 1; [[/roll 1d20+10[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Throw Caution to the Storm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+10 vs Fortitude&lt;/u&gt;; 4d10+4 thunder damage, and the target is pushed 1. If Ralsor misses all targets with this attack, he grants combat advantage until the end of his next turn. &lt;/p&gt;]]; [[/roll 4d10+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Throw Caution to the Storm&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +10 vs Fortitude; 4d10+4 thunder damage, and the target is pushed 1. If Ralsor misses all targets with this attack, he grants combat advantage until the end of his next turn. &lt;/p&gt;]] <26>  thunder damage, and the target is pushed 1. If Ralsor misses all targets with this attack, he grants combat advantage until the end of his next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bladed Comeback&lt;/b&gt; (immediate reaction, when ralsor takes damage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Reflex; 1d8+6 damage. &lt;/p&gt;]] ⚔ <b>Bladed Comeback</b> (immediate reaction, when ralsor takes damage, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+10[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bladed Comeback&lt;/b&gt; (immediate reaction, when ralsor takes damage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs Reflex&lt;/u&gt;; 1d8+6 damage. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bladed Comeback&lt;/b&gt; (immediate reaction, when ralsor takes damage, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs Reflex; 1d8+6 damage. &lt;/p&gt;]] <10.5>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Windy Retreat&lt;/b&gt; (free, when ralsor hits with a melee attack; at-will) &lt;/p&gt;&lt;p&gt;If Ralsor is dazed or immobilized, that condition ends. In addition, Ralsor shifts 1 square.&lt;/p&gt;]]  <b>Windy Retreat</b> (free, when ralsor hits with a melee attack; at-will) </p><p>If Ralsor is dazed or immobilized, that condition ends. In addition, Ralsor shifts 1 square.</p></tr></td></table>",

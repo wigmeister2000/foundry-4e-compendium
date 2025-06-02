@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"g1Txlvs5hCAdo4Xr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -650,23 +652,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 48; <b>Bloodied</b> 24<hr><b>Immune</b> fire, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 17</td><td><b>Ref</b> 15</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 18 (+6)</td><td><b>Dex</b> 12 (+3)<br><b>Int</b> 6 (0)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 14 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +8</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mephit regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the mephit takes cold or psychic damage, its regeneration does not function on its next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>The mephit regains 5 hit points whenever it starts its turn and has at least 1 hit point. When the mephit takes cold or psychic damage, its regeneration does not function on its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 6 damage plus 1d10 fire damage.&lt;/p&gt;]] (⚔) <b>Slam</b> (fire) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 6 damage plus 1d10 fire damage.&lt;/p&gt;]] <5.5> + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (fire) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d10 + 6 damage plus 1d10 fire damage.&lt;/p&gt;]] <11.5>  damage plus 1d10 fire damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Molten Blast&lt;/b&gt; (fire) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the mephit uses magma form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +7 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 fire damage, and ongoing 5 fire damage (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Molten Blast</b> (fire) ✦ <b>Recharge</b> when the mephit uses magma form</p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+7[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Molten Blast&lt;/b&gt; (fire) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the mephit uses magma form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+7 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Molten Blast&lt;/b&gt; (fire) ✦ &lt;b&gt;Recharge&lt;/b&gt; when the mephit uses magma form&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 fire damage, and ongoing 5 fire damage (save ends).&lt;/p&gt;]] <13>  fire damage, and ongoing 5 fire damage (save ends).</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Magma Form&lt;/b&gt; (fire, poison, polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mephit takes the shape of a Large pool of magma, occupying 4 squares instead of 1, until the mephit ends the effect as a minor action. While the mephit is in this form, the mephit cannot attack. If squeezing in this form, the mephit moves at full speed rather than half speed, and the mephit does not grant combat advantage for squeezing. While the mephit is in this form, it can enter occupied spaces and creatures can enter its space. A creature that starts its turn in the mephit’s space takes 2d6 fire and poison damage.&lt;/p&gt;]]  <b>Magma Form</b> (fire, poison, polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> The mephit takes the shape of a Large pool of magma, occupying 4 squares instead of 1, until the mephit ends the effect as a minor action. While the mephit is in this form, the mephit cannot attack. If squeezing in this form, the mephit moves at full speed rather than half speed, and the mephit does not grant combat advantage for squeezing. While the mephit is in this form, it can enter occupied spaces and creatures can enter its space. A creature that starts its turn in the mephit’s space takes [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Magma Form&lt;/b&gt; (fire, poison, polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mephit takes the shape of a Large pool of magma, occupying 4 squares instead of 1, until the mephit ends the effect as a minor action. While the mephit is in this form, the mephit cannot attack. If squeezing in this form, the mephit moves at full speed rather than half speed, and the mephit does not grant combat advantage for squeezing. While the mephit is in this form, it can enter occupied spaces and creatures can enter its space. A creature that starts its turn in the mephit’s space takes 2d6 fire and poison damage.&lt;/p&gt;]] <7> fire and poison damage.</p></tr></td></table>",

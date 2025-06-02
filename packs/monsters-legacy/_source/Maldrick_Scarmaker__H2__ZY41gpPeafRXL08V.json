@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Aura of Abyssal Majesty",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6FWMBUgve0m8j1ID",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -514,10 +517,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1357,23 +1360,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 148; <b>Bloodied</b> 74<hr><b>Resist</b> 10 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +8 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 22</td><td><b>Ref</b> 21</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, fly 9</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+4)<br><b>Con</b> 20 (+9)</td><td><b>Dex</b> 18 (+8)<br><b>Int</b> 10 (+4)</td><td><b>Wis</b> 12 (+5)<br><b>Cha</b> 13 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Arcana +9, Intimidate +12, Religion +9, Stealth +10, Thievery +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> rod, +2 elven cloak, leather armor , mace .</p><p>[[/roll 0#&lt;b&gt;Aura of Abyssal Majesty&lt;/b&gt; aura 5; demons in the aura gain 5 regeneration.]] <b>Aura of Abyssal Majesty</b> aura 5; demons in the aura gain 5 regeneration.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+3 damage. &lt;/p&gt;]] (⚔) <b>Mace</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d10+3 damage. &lt;/p&gt;]]; [[/roll 1d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+3 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eldritch Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex; 1d10+8 damage. &lt;/p&gt;]] (➶) <b>Eldritch Blast</b> (standard, at-will) ✦ <b>Arcane, Implement</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eldritch Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 1d10+8 damage. &lt;/p&gt;]]; [[/roll 1d10+8#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Eldritch Blast&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Reflex; 1d10+8 damage. &lt;/p&gt;]] <13.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dire Radiance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Fortitude; 1d6+8 damage, and if the target moves nearer to Maldrick on its next turn, it takes an extra 1d6+8 damage. &lt;/p&gt;]] ➶ <b>Dire Radiance</b> (standard, at-will) ✦ <b>Arcane, Implement</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dire Radiance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 1d6+8 damage, and if the target moves nearer to Maldrick on its next turn, it takes an extra 1d6+8 damage. &lt;/p&gt;]]; [[/roll [[/roll 1d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dire Radiance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Fortitude; 1d6+8 damage, and if the target moves nearer to Maldrick on its next turn, it takes an extra 1d6+8 damage. &lt;/p&gt;]] <11.5> #&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Dire Radiance&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Fortitude; 1d6+8 damage, and if the target moves nearer to Maldrick on its next turn, it takes an extra 1d6+8 damage. &lt;/p&gt;]] <11.5>  damage, and if the target moves nearer to Maldrick on its next turn, it takes an extra 1d6+8 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Infernal Moon Curse&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Fortitude; 2d8+8 poison damage, and the target is held immobilized 5 feet off the ground until the end of Maldrick\"s next turn. &lt;/p&gt;]] ➶ <b>Infernal Moon Curse</b> (standard, encounter) ✦ <b>Arcane, Implement</b></p><p>Ranged 10; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Infernal Moon Curse&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 2d8+8 poison damage, and the target is held immobilized 5 feet off the ground until the end of Maldrick\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Infernal Moon Curse&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Arcane, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +13 vs Fortitude; 2d8+8 poison damage, and the target is held immobilized 5 feet off the ground until the end of Maldrick\"s next turn. &lt;/p&gt;]] <17>  poison damage, and the target is held immobilized 5 feet off the ground until the end of Maldrick\"s next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spined Tail&lt;/b&gt; (immediate reaction, when an enemy enters an adjacent square, ) &lt;/p&gt;&lt;p&gt;+13 vs AC; 1d10+8 damage. &lt;/p&gt;]] ⚔ <b>Spined Tail</b> (immediate reaction, when an enemy enters an adjacent square, ) </p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spined Tail&lt;/b&gt; (immediate reaction, when an enemy enters an adjacent square, ) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d10+8 damage. &lt;/p&gt;]]; [[/roll 1d10+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Spined Tail&lt;/b&gt; (immediate reaction, when an enemy enters an adjacent square, ) &lt;/p&gt;&lt;p&gt;+13 vs AC; 1d10+8 damage. &lt;/p&gt;]] <13.5>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dark One\"s Own Luck&lt;/b&gt; (free; encounter) ✦ &lt;b&gt;Arcane&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Maldrick can reroll one attack roll, skill check, ability check, or saving throw, using the higher of the two results.&lt;/p&gt;]]  <b>Dark One\"s Own Luck</b> (free; encounter) ✦ <b>Arcane</b></p><p>Maldrick can reroll one attack roll, skill check, ability check, or saving throw, using the higher of the two results.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Warlock\"s Curse&lt;/b&gt; (minor 1/round; at-will) &lt;/p&gt;&lt;p&gt;Maldrick places his curse on the nearest enemy that he can see and that is not already cursed. Maldrick\"s arcane attacks deal 1d6 extra damage against the enemy. The curse lasts until the end of the encounter or until the enemy drops to 0 hit points or fewer.&lt;/p&gt;]]  <b>Warlock\"s Curse</b> (minor 1/round; at-will) </p><p>Maldrick places his curse on the nearest enemy that he can see and that is not already cursed. Maldrick\"s arcane attacks deal [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Warlock\"s Curse&lt;/b&gt; (minor 1/round; at-will) &lt;/p&gt;&lt;p&gt;Maldrick places his curse on the nearest enemy that he can see and that is not already cursed. Maldrick\"s arcane attacks deal 1d6 extra damage against the enemy. The curse lasts until the end of the encounter or until the enemy drops to 0 hit points or fewer.&lt;/p&gt;]] <3.5> extra damage against the enemy. The curse lasts until the end of the encounter or until the enemy drops to 0 hit points or fewer.</p></tr></td></table>",

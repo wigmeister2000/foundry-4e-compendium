@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"5",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -366,7 +367,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4R7LE6rIGMJxuzv8",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +403,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -590,7 +592,7 @@
 		},
 		{
 			"name":"Bat Sense",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Eg51RLb4UoexMWzA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -626,7 +628,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -682,23 +685,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 38; <b>Bloodied</b> 19</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 16</td><td><b>Fort</b> 14</td><td><b>Ref</b> 15</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (0)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 17 (+4)<br><b>Int</b> 10 (+1)</td><td><b>Wis</b> 18 (+5)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Goblin<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> flail , leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 1d10+3 damage. &lt;/p&gt;]] (⚔) <b>Flail</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+5 vs AC&lt;/u&gt;; 1d10+3 damage. &lt;/p&gt;]]; [[/roll 1d10+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 1d10+3 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Globe of Darkness&lt;/b&gt; (minor, recharge ⚄⚅) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; the burst creates a zone of darkness that remains in place until the end of the goblin bat handler’s next turn. The zone blocks line of sight for all enemies&lt;/p&gt;]] ✻ <b>Globe of Darkness</b> (minor, recharge ⚄⚅) ✦ <b>Zone</b></p><p>Area burst 2 within 10; the burst creates a zone of darkness that remains in place until the end of the goblin bat handler’s next turn. The zone blocks line of sight for all enemies</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The goblin bat handler deals 1d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The goblin bat handler deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The goblin bat handler deals 1d6 extra damage against any creature granting combat advantage to it.&lt;/p&gt;]] <3.5> extra damage against any creature granting combat advantage to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bat Sense&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The bat handler gains any blindsight or darkvision of any allied bat within 5 squares.&lt;/p&gt;]]  <b>Bat Sense</b></p><p>The bat handler gains any blindsight or darkvision of any allied bat within 5 squares.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate reaction, when missed by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The goblin bat handler shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate reaction, when missed by a melee attack; at-will) </p><p>The goblin bat handler shifts 1 square.</p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"27",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -542,7 +543,7 @@
 		},
 		{
 			"name":"Cracked Stone",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"3MSzZF6xL2h0btPH",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -578,7 +579,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -812,23 +814,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 388; <b>Bloodied</b> 194 ; see also cracked stone</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 34</td><td><b>Ref</b> 30</td><td><b>Will</b> 32</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 2 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+16)<br><b>Con</b> 26 (+18)</td><td><b>Dex</b> 12 (+11)<br><b>Int</b> 19 (+14)</td><td><b>Wis</b> 17 (+13)<br><b>Cha</b> 23 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Bluff +21, Endurance +23, Intimidate +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Truesight 6<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> robes, crown</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +27 vs AC; 2d10+7 damage, and the target is pushed 2 squares. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+27[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+27 vs AC&lt;/u&gt;; 2d10+7 damage, and the target is pushed 2 squares. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +27 vs AC; 2d10+7 damage, and the target is pushed 2 squares. &lt;/p&gt;]] <18>  damage, and the target is pushed 2 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stone Swat&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 3; +27 vs AC; 3d10+7 damage, and the target is pushed 2d4 squares and knocked prone. &lt;/p&gt;]] ᗕ <b>Stone Swat</b> (standard, recharge ⚄⚅) </p><p>Close blast 3; [[/roll 1d20+27[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stone Swat&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+27 vs AC&lt;/u&gt;; 3d10+7 damage, and the target is pushed 2d4 squares and knocked prone. &lt;/p&gt;]]; [[/roll 3d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stone Swat&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 3; +27 vs AC; 3d10+7 damage, and the target is pushed 2d4 squares and knocked prone. &lt;/p&gt;]] <23.5>  damage, and the target is pushed [[/roll 2d4 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Stone Swat&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Close blast 3; +27 vs AC; 3d10+7 damage, and the target is pushed 2d4 squares and knocked prone. &lt;/p&gt;]] <5> squares and knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Evil Eye&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +25 vs Will; Cachlain slides the target 3 squares, and the target makes a melee basic attack against a target of Cachlain’s choice. &lt;/p&gt;]] ➶ <b>Evil Eye</b> (minor 1/round, at-will) ✦ <b>Charm</b></p><p>Ranged 10; [[/roll 1d20+25[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Evil Eye&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+25 vs Will&lt;/u&gt;; Cachlain slides the target 3 squares, and the target makes a melee basic attack against a target of Cachlain’s choice. &lt;/p&gt;]]; Cachlain slides the target 3 squares, and the target makes a melee basic attack against a target of Cachlain’s choice. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cracked Stone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While bloodied, Cachlain has a -2 penalty to defenses and his attacks deal 1d10 extra damage.&lt;/p&gt;]]  <b>Cracked Stone</b></p><p>While bloodied, Cachlain has a -2 penalty to defenses and his attacks deal [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cracked Stone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While bloodied, Cachlain has a -2 penalty to defenses and his attacks deal 1d10 extra damage.&lt;/p&gt;]] <5.5> extra damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Stone Defense&lt;/b&gt; (immediate reaction, when hit and damaged by an attack; recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;Cachlain gains resist 5 to all damage until the end of his next turn.&lt;/p&gt;]]  <b>Stone Defense</b> (immediate reaction, when hit and damaged by an attack; recharge ⚃⚄⚅) </p><p>Cachlain gains resist 5 to all damage until the end of his next turn.</p></tr></td></table>",

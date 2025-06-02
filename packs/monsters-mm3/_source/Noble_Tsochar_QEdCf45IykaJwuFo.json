@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Psychic Scream",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"MjSkP83x0CUrGaB7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Parasitic Mind",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"oRunyQxhlAKaFXiM",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1225,23 +1228,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 184; <b>Bloodied</b> 92<hr><b>Immune</b> dazed </td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 19</td><td><b>Ref</b> 21</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (+3)<br><b>Con</b> 12 (+5)</td><td><b>Dex</b> 14 (+6)<br><b>Int</b> 17 (+7)</td><td><b>Wis</b> 18 (+8)<br><b>Cha</b> 22 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, telepathy 10<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Arcana +12, Dungeoneering +13, Religion +12</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 18</td></td></tr></table><p><b>Equipment</b> orb,  robes.</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Psychic Scream&lt;/b&gt; (psychic) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Enemies in the aura take 5 psychic damage whenever the tsochar takes psychic damage.&lt;/p&gt;]] ⌀ <b>Psychic Scream</b> (psychic) ✦ <b>Aura</b> 1</p><p>Enemies in the aura take 5 psychic damage whenever the tsochar takes psychic damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Parasitic Mind&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of its turn, the tsochar makes saving throws to end any stunning or dominating effect on it.&lt;/p&gt;]]  <b>Parasitic Mind</b> <b></b></p><p>At the start of its turn, the tsochar makes saving throws to end any stunning or dominating effect on it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 6 poison damage.&lt;/p&gt;]] (⚔) <b>Tentacle</b> (poison) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; (poison) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 6 poison damage.&lt;/p&gt;]] <17>  poison damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Violet Lightning&lt;/b&gt; (implement, lightning, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +12 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 lightning and psychic damage, and the target is dazed until the end of its next turn.&lt;/p&gt;]] ➶ <b>Violet Lightning</b> (implement, lightning, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+12[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Violet Lightning&lt;/b&gt; (implement, lightning, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+12 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Violet Lightning&lt;/b&gt; (implement, lightning, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 8 lightning and psychic damage, and the target is dazed until the end of its next turn.&lt;/p&gt;]] <17>  lightning and psychic damage, and the target is dazed until the end of its next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Double Attack&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The tsochar uses violet lightning twice.&lt;/p&gt;]] ➶ <b>Double Attack</b> ✦ <b>At-Will</b></p><p><i>Effect:</i> The tsochar uses violet lightning twice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Insanity Vortex&lt;/b&gt; (charm, implement, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); +12 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 psychic damage, and the target makes a melee basic attack as a free action against a creature the tsochar chooses.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ✻ <b>Insanity Vortex</b> (charm, implement, psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Area burst 1 within 10 (enemies in the burst); [[/roll 1d20+12[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Insanity Vortex&lt;/b&gt; (charm, implement, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Area burst 1 within 10 (enemies in the burst); &lt;u&gt;+12 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 10#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Insanity Vortex&lt;/b&gt; (charm, implement, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 10 psychic damage, and the target makes a melee basic attack as a free action against a creature the tsochar chooses.&lt;/p&gt;]] <20.5>  psychic damage, and the target makes a melee basic attack as a free action against a creature the tsochar chooses.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Pierce the Barrier&lt;/b&gt; (psychic, zone) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Area burst 2 within 10. The burst creates a zone that lasts until the end of the tsochar’s next turn. Any enemy that ends its turn in the zone takes 5 psychic damage. As the zone ends, four tsochar parasites appear in unoccupied squares in the zone.&lt;/p&gt;]]  <b>Pierce the Barrier</b> (psychic, zone) ✦ <b>Encounter</b></p><p><i>Effect:</i> Area burst 2 within 10. The burst creates a zone that lasts until the end of the tsochar’s next turn. Any enemy that ends its turn in the zone takes 5 psychic damage. As the zone ends, four tsochar parasites appear in unoccupied squares in the zone.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infestation Unveiled&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The tsochar drops below 1 hit point from an attack that does not deal psychic damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; A tsochar parasite appears in the tsochar’s space or the nearest unoccupied square.&lt;/p&gt;]]  <b>Infestation Unveiled</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The tsochar drops below 1 hit point from an attack that does not deal psychic damage.</p><p><i>Effect (No Action):</i> A tsochar parasite appears in the tsochar’s space or the nearest unoccupied square.</p></tr></td></table>",

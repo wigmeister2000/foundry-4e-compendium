@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QdtM1RJKnr2o9TNh",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -632,23 +634,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 320; <b>Bloodied</b> 160</td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 29</td><td><b>Ref</b> 27</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+13)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 21 (+13)<br><b>Int</b> 4 (+5)</td><td><b>Wis</b> 7 (+6)<br><b>Cha</b> 22 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The beckoner can make opportunity attacks against enemies within 2 squares of it.&lt;/p&gt;]]  <b>Threatening Reach</b> <b></b></p><p>The beckoner can make opportunity attacks against enemies within 2 squares of it.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The beckoner must have fewer than two creatures grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 13 damage, and the target is grabbed (escape DC 22) until the end of the beckoner’s next turn.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; One of the beckoner’s grabs persists, and the creature on which the grab persists takes 2d10 + 13 damage.&lt;/p&gt;]] (⚔) <b>Tentacle</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The beckoner must have fewer than two creatures grabbed.</p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 13 damage, and the target is grabbed (escape DC 22) until the end of the beckoner’s next turn.&lt;/p&gt;]] <24>  damage, and the target is grabbed (escape DC 22) until the end of the beckoner’s next turn.</p><p><i>Sustain Minor:</i> One of the beckoner’s grabs persists, and the creature on which the grab persists takes [[/roll 2d10 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Sustain Minor:&lt;/i&gt; One of the beckoner’s grabs persists, and the creature on which the grab persists takes 2d10 + 13 damage.&lt;/p&gt;]] <24>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Flurry&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The beckoner must have no creature grabbed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The beckoner uses tentacle twice.&lt;/p&gt;]] ⚔ <b>Tentacle Flurry</b> ✦ <b>At-Will</b></p><p><i>Requirement:</i> The beckoner must have no creature grabbed.</p><p><i>Effect:</i> The beckoner uses tentacle twice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Star Wisps&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The beckoner calls forth up to three star wisps, which appear within 5 squares of the beckoner and act immediately after it in the initiative order. The star wisps remain until destroyed or until the beckoner takes a minor action to dispel them. A beckoner can have no more than three star wisps present at a given time.&lt;/p&gt;]]  <b>Star Wisps</b> ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The beckoner calls forth up to three star wisps, which appear within 5 squares of the beckoner and act immediately after it in the initiative order. The star wisps remain until destroyed or until the beckoner takes a minor action to dispel them. A beckoner can have no more than three star wisps present at a given time.</p></tr></td></table>",

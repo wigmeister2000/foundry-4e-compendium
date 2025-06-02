@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -728,7 +729,7 @@
 		},
 		{
 			"name":"Indestructible",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6JgVmM2dSjEZ1YBT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -764,7 +765,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -820,23 +822,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 210; <b>Bloodied</b> 105<hr><b>Resist</b> 5 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 23</td><td><b>Ref</b> 24</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+8)<br><b>Con</b> 17 (+8)</td><td><b>Dex</b> 18 (+9)<br><b>Int</b> 12 (+6)</td><td><b>Wis</b> 17 (+8)<br><b>Cha</b> 23 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Bluff +16, Diplomacy +16, Insight +13, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 18 | Insight 23</td></td></tr></table><p><b>Equipment</b> book of love poems, flask of blood</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Muse\"s Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs Reflex; 2d6+4 psychic damage, and the target is slowed and takes a -2 penalty to Will (save ends both). &lt;/p&gt;]] (⚔) <b>Muse\"s Touch</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+14[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Muse\"s Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+14 vs Reflex&lt;/u&gt;; 2d6+4 psychic damage, and the target is slowed and takes a -2 penalty to Will (save ends both). &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Muse\"s Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+14 vs Reflex; 2d6+4 psychic damage, and the target is slowed and takes a -2 penalty to Will (save ends both). &lt;/p&gt;]] <11>  psychic damage, and the target is slowed and takes a -2 penalty to Will (save ends both). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Beguiling Eyes&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +14 vs Will; 2d6+4 psychic damage, and the vampire muse makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +13 vs Will; the target is dominated (save ends). Aftereffect: The target falls prone. The vampire muse can dominate only one creature at a time. &lt;/p&gt;]] ➶ <b>Beguiling Eyes</b> (standard, at-will) ✦ <b>Charm, Gaze, Psychic</b></p><p>Ranged 20; [[/roll 1d20+14[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Beguiling Eyes&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+14 vs Will&lt;/u&gt;; 2d6+4 psychic damage, and the vampire muse makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Beguiling Eyes&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +14 vs Will; 2d6+4 psychic damage, and the vampire muse makes a secondary attack against the same target. &lt;/p&gt;]] <11>  psychic damage, and the vampire muse makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+13[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Beguiling Eyes&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm, Gaze, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+13 vs Will&lt;/u&gt;; the target is dominated (save ends). Aftereffect: The target falls prone. The vampire muse can dominate only one creature at a time. &lt;/p&gt;]]; the target is dominated (save ends). Aftereffect: The target falls prone. The vampire muse can dominate only one creature at a time. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Song of Lovers Parted&lt;/b&gt; (standard; sustain minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; deafened and dominated creatures are immune; +14 vs Will; the target is pushed 3 squares and slowed (save ends). When the muse sustains the power, a target slowed by the power is pushed 3 squares. &lt;/p&gt;]] ᗕ <b>Song of Lovers Parted</b> (standard; sustain minor, at-will) ✦ <b>Charm</b></p><p>Close burst 10; deafened and dominated creatures are immune; [[/roll 1d20+14[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Song of Lovers Parted&lt;/b&gt; (standard; sustain minor, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 10; deafened and dominated creatures are immune; &lt;u&gt;+14 vs Will&lt;/u&gt;; the target is pushed 3 squares and slowed (save ends). When the muse sustains the power, a target slowed by the power is pushed 3 squares. &lt;/p&gt;]]; the target is pushed 3 squares and slowed (save ends). When the muse sustains the power, a target slowed by the power is pushed 3 squares. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Fey Leap&lt;/b&gt; (move; recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire muse teleports up to 10 squares.&lt;/p&gt;]]  <b>Fey Leap</b> (move; recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>The vampire muse teleports up to 10 squares.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Indestructible&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a vampire muse is reduced to 0 hit points, its body and possessions crumble into dust, but it is not destroyed. It reappears (along with its possessions) in 30 days within 1 square of its blood cauldron, unless the blood cauldron is also found and destroyed.&lt;/p&gt;]]  <b>Indestructible</b></p><p>When a vampire muse is reduced to 0 hit points, its body and possessions crumble into dust, but it is not destroyed. It reappears (along with its possessions) in 30 days within 1 square of its blood cauldron, unless the blood cauldron is also found and destroyed.</p></tr></td></table>",

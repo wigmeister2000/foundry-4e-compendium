@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Rusting Defense",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"8eE0n6CFNdyutV4L",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -454,23 +456,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 66; <b>Bloodied</b> 33</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 16</td><td><b>Ref</b> 21</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 8 (+2)<br><b>Con</b> 10 (+3)</td><td><b>Dex</b> 20 (+8)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 15 (+5)<br><b>Cha</b> 12 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Rusting Defense&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever an attack using a metal weapon hits the rust monster, the weapon used in the attack is rusting until the end of the encounter. While the weapon is rusting, attacks with the weapon take a -1 penalty to attack rolls. If the weapon used to attack the rust monster is already rusting, the penalty to attack rolls worsens by 1 (to a maximum penalty of -5).&lt;/p&gt;]]  <b>Rusting Defense</b> <b></b></p><p>Whenever an attack using a metal weapon hits the rust monster, the weapon used in the attack is rusting until the end of the encounter. While the weapon is rusting, attacks with the weapon take a -1 penalty to attack rolls. If the weapon used to attack the rust monster is already rusting, the penalty to attack rolls worsens by 1 (to a maximum penalty of -5).</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 damage. If the target is wearing heavy armor, the armor is rusting until the end of the encounter. While the armor is rusting, the target takes a -1 penalty to AC. If the target is wearing armor that is already rusting, increase the penalty to AC by 1 (to a maximum penalty of -5).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The rust monster shifts 1 square.&lt;/p&gt;]] (⚔) <b>Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 5 damage. If the target is wearing heavy armor, the armor is rusting until the end of the encounter. While the armor is rusting, the target takes a -1 penalty to AC. If the target is wearing armor that is already rusting, increase the penalty to AC by 1 (to a maximum penalty of -5).&lt;/p&gt;]] <14>  damage. If the target is wearing heavy armor, the armor is rusting until the end of the encounter. While the armor is rusting, the target takes a -1 penalty to AC. If the target is wearing armor that is already rusting, increase the penalty to AC by 1 (to a maximum penalty of -5).</p><p><i>Effect:</i> The rust monster shifts 1 square.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Devour Metal&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature wearing or wielding a rusting item); +9 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The rusting item is destroyed. If the item was magical, residuum worth the item’s market value can be retrieved from the rust monster after the creature is slain.&lt;/p&gt;]] ⚔ <b>Devour Metal</b> ✦ <b>Recharge</b> if the power misses</p><p><i>Attack:</i> Melee 1 (one creature wearing or wielding a rusting item); [[/roll 1d20+9[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Devour Metal&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; if the power misses&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature wearing or wielding a rusting item); &lt;u&gt;+9 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The rusting item is destroyed. If the item was magical, residuum worth the item’s market value can be retrieved from the rust monster after the creature is slain.</p></tr></td></table>",

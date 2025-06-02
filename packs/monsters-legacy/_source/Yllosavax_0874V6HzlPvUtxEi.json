@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -239,7 +240,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1439,7 +1441,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"A7gjrEBiomMqyHUO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1475,7 +1477,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1711,23 +1714,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 732; <b>Bloodied</b> 366<hr><b>Resist</b> 20 cold, 10 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 32</td><td><b>Ref</b> 31</td><td><b>Will</b> 28</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (hover), overland flight 12</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 25 (+16)<br><b>Con</b> 23 (+15)</td><td><b>Dex</b> 16 (+12)<br><b>Int</b> 22 (+15)</td><td><b>Wis</b> 17 (+12)<br><b>Cha</b> 17 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Arcana +20, Insight +17, Religion +20</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 4d6+7 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 4d6+7 damage. &lt;/p&gt;]]; [[/roll 4d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 4d6+7 damage. &lt;/p&gt;]] <21>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d6+7 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d6+7 damage. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d6+7 damage. &lt;/p&gt;]] <14>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Dragon Onslaught&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Yllosavax makes a claw attack against each enemy within reach. She also attacks one creature with a bite&lt;/p&gt;]] ᗕ <b>Dragon Onslaught</b> (standard, at-will) </p><p>Yllosavax makes a claw attack against each enemy within reach. She also attacks one creature with a bite</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +18 vs Reflex; 2d8+7 cold damage, and the target gains vulnerable 5 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Cold</b></p><p>Close blast 5; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 2d8+7 cold damage, and the target gains vulnerable 5 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; +18 vs Reflex; 2d8+7 cold damage, and the target gains vulnerable 5 to all damage (save ends). Miss: Half damage. &lt;/p&gt;]] <16>  cold damage, and the target gains vulnerable 5 to all damage (save ends). Miss: Half damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mesmerizing Reflections&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +20 vs Will; the target makes a basic attack with a +2 bonus to the attack roll and the damage roll against a creature of Yllosavax’s choice. &lt;/p&gt;]] ᗕ <b>Mesmerizing Reflections</b> (standard, at-will) ✦ <b>Charm</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Mesmerizing Reflections&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Charm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+20 vs Will&lt;/u&gt;; the target makes a basic attack with a +2 bonus to the attack roll and the damage roll against a creature of Yllosavax’s choice. &lt;/p&gt;]]; the target makes a basic attack with a +2 bonus to the attack roll and the damage roll against a creature of Yllosavax’s choice. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (free, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;Breath weapon recharges, and Yllosavax uses it&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (free, when first bloodied, encounter) </p><p>Breath weapon recharges, and Yllosavax uses it</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Silver Backlash&lt;/b&gt; (immediate reaction, when yllosavax is hit by a melee attack while bloodied, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +18 vs Reflex; 1d6+5 radiant damage. &lt;/p&gt;]] ᗕ <b>Silver Backlash</b> (immediate reaction, when yllosavax is hit by a melee attack while bloodied, at-will) ✦ <b>Radiant</b></p><p>Close blast 3; [[/roll 1d20+18[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Silver Backlash&lt;/b&gt; (immediate reaction, when yllosavax is hit by a melee attack while bloodied, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+18 vs Reflex&lt;/u&gt;; 1d6+5 radiant damage. &lt;/p&gt;]]; [[/roll 1d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Silver Backlash&lt;/b&gt; (immediate reaction, when yllosavax is hit by a melee attack while bloodied, at-will) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +18 vs Reflex; 1d6+5 radiant damage. &lt;/p&gt;]] <8.5>  radiant damage. </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Door of Fog&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; the burst creates a zone of heavily obscured squares that lasts until the end of the encounter. Effect: Yllosavax teleports 20 squares and does not need line of sight to her destination.&lt;/p&gt;]]  <b>Door of Fog</b> (move; encounter) ✦ <b>Teleportation, Zone</b></p><p>Close burst 3; the burst creates a zone of heavily obscured squares that lasts until the end of the encounter. Effect: Yllosavax teleports 20 squares and does not need line of sight to her destination.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Yllosavax can make opportunity attacks against all enemies within her reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>Yllosavax can make opportunity attacks against all enemies within her reach (2 squares).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Change Shape&lt;/b&gt; (minor; encounter) ✦ &lt;b&gt;Polymorph&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Yllosavax alters her physical form to take on the appearance of a young, white-haired female eladrin.&lt;/p&gt;]]  <b>Change Shape</b> (minor; encounter) ✦ <b>Polymorph</b></p><p>Yllosavax alters her physical form to take on the appearance of a young, white-haired female eladrin.</p></tr></td></table>",

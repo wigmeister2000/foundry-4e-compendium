@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Inspire Fear",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WVNKJd3gZe0HvC1t",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -335,10 +337,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -516,10 +518,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -593,7 +595,7 @@
 		},
 		{
 			"name":"Opportunistic",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"zuLtJ05poQCk3xKB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -629,7 +631,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -685,23 +688,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 316; <b>Bloodied</b> 158<hr><b>Resist</b> 15 necrotic <b>Vulnerable</b> 5 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 27</td><td><b>Fort</b> 27</td><td><b>Ref</b> 25</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 17 (+9)<br><b>Int</b> 4 (+3)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 18 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Inspire Fear&lt;/b&gt; (Fear) aura 5; any enemy that starts its turn within the aura takes a -2 penalty to attack rolls until the end of its next turn.]] <b>Inspire Fear</b> (Fear) aura 5; any enemy that starts its turn within the aura takes a -2 penalty to attack rolls until the end of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gaping Maw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 3d8+8 necrotic damage, and ongoing 10 necrotic damage (save ends), and the target is knocked prone. &lt;/p&gt;]] (⚔) <b>Gaping Maw</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>[[/roll 1d20+16[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gaping Maw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs AC&lt;/u&gt;; 3d8+8 necrotic damage, and ongoing 10 necrotic damage (save ends), and the target is knocked prone. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gaping Maw&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+16 vs AC; 3d8+8 necrotic damage, and ongoing 10 necrotic damage (save ends), and the target is knocked prone. &lt;/p&gt;]] <21.5>  necrotic damage, and ongoing 10 necrotic damage (save ends), and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Doom Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The charnel hound makes two attacks; +14 vs AC; 2d8+8 necrotic damage each. If both attacks hit the same target, the charnel hound makes a gaping maw attack against the target. &lt;/p&gt;]] ⚔ <b>Doom Claws</b> (standard, at-will) ✦ <b>Necrotic</b></p><p>The charnel hound makes two attacks; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Doom Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The charnel hound makes two attacks; &lt;u&gt;+14 vs AC&lt;/u&gt;; 2d8+8 necrotic damage each. If both attacks hit the same target, the charnel hound makes a gaping maw attack against the target. &lt;/p&gt;]]; [[/roll 2d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Doom Claws&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The charnel hound makes two attacks; +14 vs AC; 2d8+8 necrotic damage each. If both attacks hit the same target, the charnel hound makes a gaping maw attack against the target. &lt;/p&gt;]] <17>  necrotic damage each. If both attacks hit the same target, the charnel hound makes a gaping maw attack against the target. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Assimilation&lt;/b&gt; (free, when a creature is reduced to 0 hit points or fewer by the charnel hound; at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; +16 vs. Fortitude; the target loses a healing surge, and the charnel hound regains 79 hit points.&lt;/p&gt;]]  <b>Assimilation</b> (free, when a creature is reduced to 0 hit points or fewer by the charnel hound; at-will) ✦ <b>Healing, Necrotic</b></p><p>Targets the triggering creature; [[/roll 1d20+16[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Assimilation&lt;/b&gt; (free, when a creature is reduced to 0 hit points or fewer by the charnel hound; at-will) ✦ &lt;b&gt;Healing, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the triggering creature; &lt;u&gt;+16 vs. Fortitude&lt;/u&gt;; the target loses a healing surge, and the charnel hound regains 79 hit points.&lt;/p&gt;]]; the target loses a healing surge, and the charnel hound regains 79 hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Opportunistic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A charnel hound scores a critical hit on a roll of 18–20 and deals 2d8 extra damage against prone targets.&lt;/p&gt;]]  <b>Opportunistic</b></p><p>A charnel hound scores a critical hit on a roll of 18–20 and deals [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Opportunistic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A charnel hound scores a critical hit on a roll of 18–20 and deals 2d8 extra damage against prone targets.&lt;/p&gt;]] <9> extra damage against prone targets.</p></tr></td></table>",

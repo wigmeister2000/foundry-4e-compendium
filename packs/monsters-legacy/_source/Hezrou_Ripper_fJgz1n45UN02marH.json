@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Noxious Stench",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UQA0RGWyk3n7DZiq",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -586,7 +588,7 @@
 		},
 		{
 			"name":"Demonic Step",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lJVuwzfKRdZrsXgn",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -622,7 +624,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -678,23 +681,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 305; <b>Bloodied</b> 152<hr><b>Resist</b> 20 force, 20 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 39</td><td><b>Ref</b> 35</td><td><b>Will</b> 35</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 see also demonic step</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+22)<br><b>Con</b> 25 (+20)</td><td><b>Dex</b> 20 (+18)<br><b>Int</b> 8 (+12)</td><td><b>Wis</b> 20 (+18)<br><b>Cha</b> 16 (+16)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Intimidate +21, Stealth +23</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 28 | Insight 28</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Noxious Stench&lt;/b&gt; (Poison) aura 2; enemies in the aura take a –2 penalty to attack rolls. While the hezrou is bloodied, enemies within its aura are also weakened.]] <b>Noxious Stench</b> (Poison) aura 2; enemies in the aura take a –2 penalty to attack rolls. While the hezrou is bloodied, enemies within its aura are also weakened.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 3d10+9 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+30 vs AC&lt;/u&gt;; 3d10+9 damage. &lt;/p&gt;]]; [[/roll 3d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 3d10+9 damage. &lt;/p&gt;]] <25.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 3d8+9 damage. &lt;/p&gt;]] ⚔ <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+30[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+30 vs AC&lt;/u&gt;; 3d8+9 damage. &lt;/p&gt;]]; [[/roll 3d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +30 vs AC; 3d8+9 damage. &lt;/p&gt;]] <22.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Combination Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The hezrou makes one slam attack and one bite attack&lt;/p&gt;]] ⚔ <b>Combination Attack</b> (standard, at-will) </p><p>The hezrou makes one slam attack and one bite attack</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Demonic Step&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The hezrou ignores difficult terrain, seeming to phase through it.&lt;/p&gt;]]  <b>Demonic Step</b></p><p>The hezrou ignores difficult terrain, seeming to phase through it.</p></tr></td></table>",

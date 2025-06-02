@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"14",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -952,23 +953,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 97; <b>Bloodied</b> 48<hr><b>Immune</b> meenlock corruption </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 20</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+4)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 18 (+8)<br><b>Int</b> 13 (+5)</td><td><b>Wis</b> 11 (+4)<br><b>Cha</b> 20 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +9, Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +14 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+14[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+14 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] <14>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Maddening Whispers&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature affected by this stalker’s horrid link); +12 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] ➶ <b>Maddening Whispers</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature affected by this stalker’s horrid link); [[/roll 1d20+12[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Maddening Whispers&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature affected by this stalker’s horrid link); &lt;u&gt;+12 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Maddening Whispers&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] <7.5>  psychic damage, and the target is dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twisting Whispers&lt;/b&gt; (charm, disease, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature affected by this stalker’s horrid link); +12 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 psychic damage, and the target makes a basic attack against one creature of the stalker’s choice. The target is then exposed to meenlock corruption.&lt;/p&gt;]] ➶ <b>Twisting Whispers</b> (charm, disease, psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature affected by this stalker’s horrid link); [[/roll 1d20+12[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twisting Whispers&lt;/b&gt; (charm, disease, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature affected by this stalker’s horrid link); &lt;u&gt;+12 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d6 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Twisting Whispers&lt;/b&gt; (charm, disease, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d6 + 4 psychic damage, and the target makes a basic attack against one creature of the stalker’s choice. The target is then exposed to meenlock corruption.&lt;/p&gt;]] <7.5>  psychic damage, and the target makes a basic attack against one creature of the stalker’s choice. The target is then exposed to meenlock corruption.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Dimension Step&lt;/b&gt; (teleportation) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The stalker teleports 8 squares.&lt;/p&gt;]]  <b>Dimension Step</b> (teleportation) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> The stalker teleports 8 squares.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Horrid Link&lt;/b&gt; (psychic) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The stalker forges a link with one creature within 10 squares of it. The link lasts until the start of the stalker’s next turn or until the stalker uses horrid link again. Whenever the stalker takes damage, the target of its horrid link takes 1d10 + 5 psychic damage.&lt;/p&gt;]] ➶ <b>Horrid Link</b> (psychic) ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> The stalker forges a link with one creature within 10 squares of it. The link lasts until the start of the stalker’s next turn or until the stalker uses horrid link again. Whenever the stalker takes damage, the target of its horrid link takes [[/roll 1d10 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Horrid Link&lt;/b&gt; (psychic) ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The stalker forges a link with one creature within 10 squares of it. The link lasts until the start of the stalker’s next turn or until the stalker uses horrid link again. Whenever the stalker takes damage, the target of its horrid link takes 1d10 + 5 psychic damage.&lt;/p&gt;]] <10.5>  psychic damage.</p></tr></td></table>",

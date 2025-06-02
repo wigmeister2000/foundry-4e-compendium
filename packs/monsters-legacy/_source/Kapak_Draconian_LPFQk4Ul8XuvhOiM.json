@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -470,10 +472,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -727,7 +729,7 @@
 		},
 		{
 			"name":"Draconian Sniper",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"ojeCOKmQAFsfVxip",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -763,7 +765,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -819,23 +822,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 45; <b>Bloodied</b> 22 ; see also acid pool</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 15</td><td><b>Ref</b> 17</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, fly 6 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 14 (+4)<br><b>Con</b> 15 (+4)</td><td><b>Dex</b> 19 (+6)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 14 (+4)<br><b>Cha</b> 12 (+3)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p><b>Equipment</b> arrow  x20, leather armor , short sword , shortbow .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d6+4 damage. &lt;/p&gt;]] (⚔) <b>Short Sword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d6+4 damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Short Sword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+9 vs AC; 1d6+4 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +9 vs AC; 1d8+4 damage. &lt;/p&gt;]] (➶) <b>Shortbow</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+9 vs AC&lt;/u&gt;; 1d8+4 damage. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shortbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +9 vs AC; 1d8+4 damage. &lt;/p&gt;]] <8.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Apply Poison&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The draconian gains a +4 bonus to all defenses and to Stealth checks until the start of its next turn, and it applies poison to its short sword or shortbow by licking the weapon. The next attack with that weapon deals 2d6 extra poison damage.&lt;/p&gt;]]  <b>Apply Poison</b> (standard; at-will) ✦ <b>Poison</b></p><p>The draconian gains a +4 bonus to all defenses and to Stealth checks until the start of its next turn, and it applies poison to its short sword or shortbow by licking the weapon. The next attack with that weapon deals [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Apply Poison&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The draconian gains a +4 bonus to all defenses and to Stealth checks until the start of its next turn, and it applies poison to its short sword or shortbow by licking the weapon. The next attack with that weapon deals 2d6 extra poison damage.&lt;/p&gt;]] <7> extra poison damage.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Acid Pool&lt;/b&gt; ( when the draconian drops to 0 hit points, ) ✦ &lt;b&gt;Acid, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The draconian dissolves into a pool of acid; close burst 1; +7 vs Reflex; 2d8+4 acid damage. Effect: The draconian’s square and all squares in the burst become a zone that lasts until the end of the encounter. Any creature that enters the zone or starts its turn there takes 5 acid damage. &lt;/p&gt;]] ⚔ <b>Acid Pool</b> ( when the draconian drops to 0 hit points, ) ✦ <b>Acid, Zone</b></p><p>The draconian dissolves into a pool of acid; close burst 1; [[/roll 1d20+7[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Acid Pool&lt;/b&gt; ( when the draconian drops to 0 hit points, ) ✦ &lt;b&gt;Acid, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The draconian dissolves into a pool of acid; close burst 1; &lt;u&gt;+7 vs Reflex&lt;/u&gt;; 2d8+4 acid damage. Effect: The draconian’s square and all squares in the burst become a zone that lasts until the end of the encounter. Any creature that enters the zone or starts its turn there takes 5 acid damage. &lt;/p&gt;]]; [[/roll 2d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Acid Pool&lt;/b&gt; ( when the draconian drops to 0 hit points, ) ✦ &lt;b&gt;Acid, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The draconian dissolves into a pool of acid; close burst 1; +7 vs Reflex; 2d8+4 acid damage. Effect: The draconian’s square and all squares in the burst become a zone that lasts until the end of the encounter. Any creature that enters the zone or starts its turn there takes 5 acid damage. &lt;/p&gt;]] <13>  acid damage. Effect: The draconian’s square and all squares in the burst become a zone that lasts until the end of the encounter. Any creature that enters the zone or starts its turn there takes 5 acid damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Draconian Sniper&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A hidden kapak draconian that misses with a ranged attack remains hidden.&lt;/p&gt;]]  <b>Draconian Sniper</b></p><p>A hidden kapak draconian that misses with a ranged attack remains hidden.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Drunkard",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"DYC3ZLPjdKOc0Jnt",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -458,23 +460,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 85; <b>Bloodied</b> 42</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 20</td><td><b>Ref</b> 16</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+7)<br><b>Con</b> 15 (+5)</td><td><b>Dex</b> 10 (+3)<br><b>Int</b> 8 (+2)</td><td><b>Wis</b> 15 (+5)<br><b>Cha</b> 12 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Endurance +10, Heal +10</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> mace ,  robes.</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drunkard&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of each of Michael’s turns, roll a d6. On a 1 or a 2, Michael is dazed until the start of his next turn. On a 5 or a 6, his melee attacks deal 3d6 extra damage until the start of his next turn.&lt;/p&gt;]]  <b>Drunkard</b> <b></b></p><p>At the start of each of Michael’s turns, roll a [[/roll d6#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drunkard&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of each of Michael’s turns, roll a d6. On a 1 or a 2, Michael is dazed until the start of his next turn. On a 5 or a 6, his melee attacks deal 3d6 extra damage until the start of his next turn.&lt;/p&gt;]] <3.5> . On a 1 or a 2, Michael is dazed until the start of his next turn. On a 5 or a 6, his melee attacks deal [[/roll 3d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Drunkard&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of each of Michael’s turns, roll a d6. On a 1 or a 2, Michael is dazed until the start of his next turn. On a 5 or a 6, his melee attacks deal 3d6 extra damage until the start of his next turn.&lt;/p&gt;]] <10.5> extra damage until the start of his next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 4 damage.&lt;/p&gt;]] (⚔) <b>Mace</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d8 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d8 + 4 damage.&lt;/p&gt;]] <17.5>  damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Liquid Fortitude&lt;/b&gt; (healing) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One adjacent ally can spend a healing surge, and it takes a -2 penalty to attack rolls until the end of its next turn.&lt;/p&gt;]]  <b>Liquid Fortitude</b> (healing) ✦ <b>Encounter</b></p><p><i>Effect:</i> One adjacent ally can spend a healing surge, and it takes a -2 penalty to attack rolls until the end of its next turn.</p></tr></td></table>",

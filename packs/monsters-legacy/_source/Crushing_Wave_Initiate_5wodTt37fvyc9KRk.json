@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -288,10 +289,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"6",
 				"rechargeCondition":"",
@@ -769,23 +770,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 89; <b>Bloodied</b> 44<hr><b>Resist</b> 5 lightning </td><td style=\"padding-left: 15px;\"><b>Init</b> +9</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 21</td><td><b>Ref</b> 20</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 17 (+7)<br><b>Int</b> 11 (+4)</td><td><b>Wis</b> 14 (+6)<br><b>Cha</b> 16 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Primordial<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> chainmail , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d8+3 lightning damage, and the target is marked until the end of the encounter, until the initiate is knocked unconscious, or until another mark supersedes this one. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Lightning, Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 2d8+3 lightning damage, and the target is marked until the end of the encounter, until the initiate is knocked unconscious, or until another mark supersedes this one. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Lightning, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d8+3 lightning damage, and the target is marked until the end of the encounter, until the initiate is knocked unconscious, or until another mark supersedes this one. &lt;/p&gt;]] <12>  lightning damage, and the target is marked until the end of the encounter, until the initiate is knocked unconscious, or until another mark supersedes this one. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stroke of Lightning&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d8+3 lightning damage, and the initiate teleports the target to a space of the initiate’s choosing within 8 squares of the initiate that does not include hindering terrain. The initiate then makes a secondary attack, which is a close burst 1 centered on the target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; +15 vs AC;  (targets enemies)2d8+3 lightning damage. &lt;/p&gt;]] ⚔ <b>Stroke of Lightning</b> (standard, recharge ⚅</p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stroke of Lightning&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 2d8+3 lightning damage, and the initiate teleports the target to a space of the initiate’s choosing within 8 squares of the initiate that does not include hindering terrain. The initiate then makes a secondary attack, which is a close burst 1 centered on the target. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stroke of Lightning&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;+15 vs AC; 2d8+3 lightning damage, and the initiate teleports the target to a space of the initiate’s choosing within 8 squares of the initiate that does not include hindering terrain. The initiate then makes a secondary attack, which is a close burst 1 centered on the target. &lt;/p&gt;]] <12>  lightning damage, and the initiate teleports the target to a space of the initiate’s choosing within 8 squares of the initiate that does not include hindering terrain. The initiate then makes a secondary attack, which is a close burst 1 centered on the target. </p><p><i>Secondary Attack:</i> [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stroke of Lightning&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; &lt;u&gt;+15 vs AC&lt;/u&gt;;  (targets enemies)2d8+3 lightning damage. &lt;/p&gt;]];  (targets enemies)[[/roll 2d8+3#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stroke of Lightning&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; +15 vs AC;  (targets enemies)2d8+3 lightning damage. &lt;/p&gt;]] <12>  lightning damage. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Elemental Assault&lt;/b&gt; (immediate reaction, when an enemy marked by the initiate and within 10 squares of it hits with an attack that does not include the initiate; at-will) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The initiate teleports to a square adjacent to the triggering enemy and makes a longsword attack as a free action.&lt;/p&gt;]]  <b>Elemental Assault</b> (immediate reaction, when an enemy marked by the initiate and within 10 squares of it hits with an attack that does not include the initiate; at-will) ✦ <b>Teleportation</b></p><p>The initiate teleports to a square adjacent to the triggering enemy and makes a longsword attack as a free action.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Swift Current&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The Crushing Wave initiate shifts 6 squares. During this movement, the initiate can move across liquid and through enemies’ spaces, ignoring difficult terrain and hazardous terrain effects. It takes no penalties for squeezing during this movement.&lt;/p&gt;]]  <b>Swift Current</b> (move; encounter) </p><p>The Crushing Wave initiate shifts 6 squares. During this movement, the initiate can move across liquid and through enemies’ spaces, ignoring difficult terrain and hazardous terrain effects. It takes no penalties for squeezing during this movement.</p></tr></td></table>",

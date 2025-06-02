@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -766,23 +767,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 46; <b>Bloodied</b> 23</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 16</td><td><b>Ref</b> 15</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+4)<br><b>Con</b> 14 (+3)</td><td><b>Dex</b> 15 (+3)<br><b>Int</b> 2 (null)</td><td><b>Wis</b> 9 (0)<br><b>Cha</b> 4 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision , tremorsense 10<br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Mandibles&lt;/b&gt; (standard; usable only while the hive soldier does not have a creature grabbed, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+3 damage, and the target is grabbed. &lt;/p&gt;]] (⚔) <b>Grasping Mandibles</b> (standard; usable only while the hive soldier does not have a creature grabbed, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Mandibles&lt;/b&gt; (standard; usable only while the hive soldier does not have a creature grabbed, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d8+3 damage, and the target is grabbed. &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Grasping Mandibles&lt;/b&gt; (standard; usable only while the hive soldier does not have a creature grabbed, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 1d8+3 damage, and the target is grabbed. &lt;/p&gt;]] <7.5>  damage, and the target is grabbed. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Acid Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the hive soldier; +10 vs AC; 1d6+3 acid damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] ⚔ <b>Acid Sting</b> (standard, at-will) ✦ <b>Acid</b></p><p>Targets a creature grabbed by the hive soldier; [[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Acid Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the hive soldier; &lt;u&gt;+10 vs AC&lt;/u&gt;; 1d6+3 acid damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Acid Sting&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature grabbed by the hive soldier; +10 vs AC; 1d6+3 acid damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] <6.5>  acid damage, and ongoing 5 acid damage (save ends). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Convulsion&lt;/b&gt; ( when the hive soldier drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; +8 vs Reflex; the target is knocked prone. &lt;/p&gt;]] ᗕ <b>Death Convulsion</b> ( when the hive soldier drops to 0 hit points, ) </p><p>Close burst 1; targets enemies; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Death Convulsion&lt;/b&gt; ( when the hive soldier drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 1; targets enemies; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; the target is knocked prone. &lt;/p&gt;]]; the target is knocked prone. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Hive Soldier Frenzy&lt;/b&gt; (free, when any giant ant within 10 squares of the hive soldier drops to 0 hit points; at-will) &lt;/p&gt;&lt;p&gt;The soldier gains a +2 bonus to attack rolls until the end of its next turn.&lt;/p&gt;]]  <b>Hive Soldier Frenzy</b> (free, when any giant ant within 10 squares of the hive soldier drops to 0 hit points; at-will) </p><p>The soldier gains a +2 bonus to attack rolls until the end of its next turn.</p></tr></td></table>",

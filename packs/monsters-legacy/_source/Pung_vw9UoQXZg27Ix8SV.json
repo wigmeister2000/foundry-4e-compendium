@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Ecstatic Fury",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"CW5tx6huBe1T2L8U",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,7 +289,8 @@
 					"defBonus":0,
 					"formula":"7",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1175,23 +1178,10 @@
 				"max":10
 			},
 			"init":{
-				"value":1,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":0,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":1
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 31; <b>Bloodied</b> 15 ; see also wild swing</td><td style=\"padding-left: 15px;\"><b>Init</b> +1</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 13</td><td><b>Fort</b> 14</td><td><b>Ref</b> 13</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+2)<br><b>Con</b> 13 (+2)</td><td><b>Dex</b> 10 (+1)<br><b>Int</b> 8 (0)</td><td><b>Wis</b> 8 (0)<br><b>Cha</b> 16 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Endurance +7, Intimidate +9</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 10 | Insight 10</td></td></tr></table><p><b>Equipment</b> robes, flail .</p><p>[[/roll 0#&lt;b&gt;Ecstatic Fury&lt;/b&gt; aura 3; any ally that starts its turn in the aura slides 1 square and gains +1 bonus to attack rolls until the start of its next turn.]] <b>Ecstatic Fury</b> aura 3; any ally that starts its turn in the aura slides 1 square and gains +1 bonus to attack rolls until the start of its next turn.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d10+1 damage. &lt;/p&gt;]] (⚔) <b>Flail</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+7[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+7 vs AC&lt;/u&gt;; 1d10+1 damage. &lt;/p&gt;]]; [[/roll 1d10+1#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Flail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+7 vs AC; 1d10+1 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bitter Epithets&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +7 vs Will; 1d6+3 psychic damage, and the target takes 3 extra psychic damage if it ends its next turn closer to the mad prophet than where he began. &lt;/p&gt;]] (➶) <b>Bitter Epithets</b> (standard, at-will) ✦ <b>Fear, Psychic</b></p><p>Ranged 10; [[/roll 1d20+7[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bitter Epithets&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+7 vs Will&lt;/u&gt;; 1d6+3 psychic damage, and the target takes 3 extra psychic damage if it ends its next turn closer to the mad prophet than where he began. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Bitter Epithets&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fear, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +7 vs Will; 1d6+3 psychic damage, and the target takes 3 extra psychic damage if it ends its next turn closer to the mad prophet than where he began. &lt;/p&gt;]] <6.5>  psychic damage, and the target takes 3 extra psychic damage if it ends its next turn closer to the mad prophet than where he began. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Perilous Order&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; targets one ally; the target makes a charge attack and deals 3 extra damage.&lt;/p&gt;]] ➶ <b>Perilous Order</b> (standard, at-will) </p><p>Ranged 5; targets one ally; the target makes a charge attack and deals 3 extra damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Incite Bloodlust&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;Close burst 5; targets allies; the target makes a melee basic attack and deals 3 extra damage on hit (6 extra damage against prone targets).&lt;/p&gt;]] ᗕ <b>Incite Bloodlust</b> (standard, encounter) </p><p>Close burst 5; targets allies; the target makes a melee basic attack and deals 3 extra damage on hit (6 extra damage against prone targets).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wild Swing&lt;/b&gt; (standard; requires flail, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets 1d4 random creatures in the burst; +5 vs AC; 1d10+1 damage, and the target is knocked prone. &lt;/p&gt;]] ᗕ <b>Wild Swing</b> (standard; requires flail, recharges when first bloodied) ✦ <b>Weapon</b></p><p>Close burst 1; targets [[/roll 1d4 #&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wild Swing&lt;/b&gt; (standard; requires flail, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets 1d4 random creatures in the burst; [[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wild Swing&lt;/b&gt; (standard; requires flail, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets 1d4 random creatures in the burst; &lt;u&gt;+5 vs AC&lt;/u&gt;; 1d10+1 damage, and the target is knocked prone. &lt;/p&gt;]]; 1d10+1 damage, and the target is knocked prone. &lt;/p&gt;]] <2.5> random creatures in the burst; +5 vs AC; [[/roll 1d10+1#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Wild Swing&lt;/b&gt; (standard; requires flail, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; targets 1d4 random creatures in the burst; +5 vs AC; 1d10+1 damage, and the target is knocked prone. &lt;/p&gt;]] <6.5>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rise Fool!&lt;/b&gt; (minor, recharge ⚃⚄⚅) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets one dead ally; the target regains 1 hit point and stands up as a free action.&lt;/p&gt;]] ⚔ <b>Rise Fool!</b> (minor, recharge ⚃⚄⚅) ✦ <b>Healing</b></p><p>Targets one dead ally; the target regains 1 hit point and stands up as a free action.</p></tr></td></table>",

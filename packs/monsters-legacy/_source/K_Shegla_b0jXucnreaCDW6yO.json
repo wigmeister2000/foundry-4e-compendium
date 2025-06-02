@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -289,10 +291,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -421,7 +423,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1086,7 +1089,7 @@
 		},
 		{
 			"name":"Blood Frenzy",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"D9bBiFKoxM3a7vfr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1122,7 +1125,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1356,23 +1360,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 244; <b>Bloodied</b> 122 ; see also kraken shroud</td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 16 (+9)</td><td><b>Wis</b> 20 (+11)<br><b>Cha</b> 13 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +14, Religion +14</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 21</td></td></tr></table><p><b>Equipment</b> leather armor , scimitar , trident , war pick .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+6 damage, and the target is immobilized until the end of K’Shegla’s next turn. &lt;/p&gt;]] (⚔) <b>Pick</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+6 damage, and the target is immobilized until the end of K’Shegla’s next turn. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Pick&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+6 damage, and the target is immobilized until the end of K’Shegla’s next turn. &lt;/p&gt;]] <10.5>  damage, and the target is immobilized until the end of K’Shegla’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+6 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] (⚔) <b>Scimitar</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 1d8+6 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Scimitar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 1d8+6 damage, and ongoing 5 damage (save ends). &lt;/p&gt;]] <10.5>  damage, and ongoing 5 damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 3/6; +15 vs AC; 2d4+6 damage. &lt;/p&gt;]] (➶) <b>Trident</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Ranged 3/6; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 3/6; &lt;u&gt;+15 vs AC&lt;/u&gt;; 2d4+6 damage. &lt;/p&gt;]]; [[/roll 2d4+6#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Trident&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 3/6; +15 vs AC; 2d4+6 damage. &lt;/p&gt;]] <11>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Melee or Ranged; K’Shegla makes two basic attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Melee or Ranged; K’Shegla makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chill of the Deep&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +16 vs Fortitude; 3d6+4 cold damage, and the target is slowed (save ends). K’Shegla pushes the target 3 squares. A target that is already slowed or immobilized is restrained (save ends). &lt;/p&gt;]] ᗕ <b>Chill of the Deep</b> (standard, recharge ⚄⚅) ✦ <b>Cold</b></p><p>Close blast 3; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chill of the Deep&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 3d6+4 cold damage, and the target is slowed (save ends). K’Shegla pushes the target 3 squares. A target that is already slowed or immobilized is restrained (save ends). &lt;/p&gt;]]; [[/roll 3d6+4#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Chill of the Deep&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Cold&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +16 vs Fortitude; 3d6+4 cold damage, and the target is slowed (save ends). K’Shegla pushes the target 3 squares. A target that is already slowed or immobilized is restrained (save ends). &lt;/p&gt;]] <14.5>  cold damage, and the target is slowed (save ends). K’Shegla pushes the target 3 squares. A target that is already slowed or immobilized is restrained (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Devouring Curse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; +16 vs Will; 2d6+4 psychic damage, and the target is dazed and takes ongoing 10 damage (save ends both). &lt;/p&gt;]] ᗕ <b>Devouring Curse</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Close blast 5; targets enemies; [[/roll 1d20+16[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Devouring Curse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; &lt;u&gt;+16 vs Will&lt;/u&gt;; 2d6+4 psychic damage, and the target is dazed and takes ongoing 10 damage (save ends both). &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Devouring Curse&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; +16 vs Will; 2d6+4 psychic damage, and the target is dazed and takes ongoing 10 damage (save ends both). &lt;/p&gt;]] <11>  psychic damage, and the target is dazed and takes ongoing 10 damage (save ends both). </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blood Frenzy&lt;/b&gt;&lt;/p&gt;&lt;p&gt;K’Shegla gains a +2 bonus to attack rolls and a +5 bonus to damage rolls against bloodied enemies and those taking untyped ongoing damage.&lt;/p&gt;]]  <b>Blood Frenzy</b></p><p>K’Shegla gains a +2 bonus to attack rolls and a +5 bonus to damage rolls against bloodied enemies and those taking untyped ongoing damage.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Kraken Shroud&lt;/b&gt; (free, when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;Any mark on K’Shegla ends. He gains concealment. K’Shegla cannot be marked until the end of his next turn.&lt;/p&gt;]]  <b>Kraken Shroud</b> (free, when first bloodied; encounter) </p><p>Any mark on K’Shegla ends. He gains concealment. K’Shegla cannot be marked until the end of his next turn.</p></tr></td></table>",

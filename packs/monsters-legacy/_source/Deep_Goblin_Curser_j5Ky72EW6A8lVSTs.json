@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"8",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -946,23 +947,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 54; <b>Bloodied</b> 27</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 15</td><td><b>Ref</b> 16</td><td><b>Will</b> 17</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 10 (+2)<br><b>Con</b> 14 (+4)</td><td><b>Dex</b> 15 (+4)<br><b>Int</b> 9 (+1)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 18 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Goblin<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +11, Thievery +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> stone mace, 2 potions of healing</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d8 + 2 damage, and the target is slowed until the end of the deep goblin curser’s next turn. &lt;/p&gt;]] (⚔) <b>Stone Mace</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+8[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+8 vs AC&lt;/u&gt;; 1d8 + 2 damage, and the target is slowed until the end of the deep goblin curser’s next turn. &lt;/p&gt;]]; [[/roll 1d8 + 2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stone Mace&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+8 vs AC; 1d8 + 2 damage, and the target is slowed until the end of the deep goblin curser’s next turn. &lt;/p&gt;]] <6.5>  damage, and the target is slowed until the end of the deep goblin curser’s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Caveroot Curse&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +8 vs Reflex; 2d6 + 1 damage, and the target is restrained (save ends). &lt;/p&gt;]] ➶ <b>Caveroot Curse</b> (standard, at-will) </p><p>Ranged 10; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Caveroot Curse&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 2d6 + 1 damage, and the target is restrained (save ends). &lt;/p&gt;]]; [[/roll 2d6 + 1#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Caveroot Curse&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +8 vs Reflex; 2d6 + 1 damage, and the target is restrained (save ends). &lt;/p&gt;]] <8>  damage, and the target is restrained (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rage Rot Curse&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +8 vs Fortitude; . the target takes a –2 penalty to attack rolls until the end of the curser’s next turn and, if it attacks during its next turn, it takes 2d6 + 6 necrotic damage.&lt;/p&gt;]] ⚔ <b>Rage Rot Curse</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+8[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rage Rot Curse&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+8 vs Fortitude&lt;/u&gt;; . the target takes a –2 penalty to attack rolls until the end of the curser’s next turn and, if it attacks during its next turn, it takes 2d6 + 6 necrotic damage.&lt;/p&gt;]]; . the target takes a –2 penalty to attack rolls until the end of the curser’s next turn and, if it attacks during its next turn, it takes [[/roll 2d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Rage Rot Curse&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +8 vs Fortitude; . the target takes a –2 penalty to attack rolls until the end of the curser’s next turn and, if it attacks during its next turn, it takes 2d6 + 6 necrotic damage.&lt;/p&gt;]] <13>  necrotic damage.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Incite Bravery&lt;/b&gt; (immediate reaction, when an ally uses goblin tactics, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10; +8 vs  or  (whichever is lower); . the triggering ally can shift 2 more squares as a free action and make an attack as a free action.&lt;/p&gt;]] ➶ <b>Incite Bravery</b> (immediate reaction, when an ally uses goblin tactics, at-will) </p><p>Ranged 10; +8 vs  or  (whichever is lower); . the triggering ally can shift 2 more squares as a free action and make an attack as a free action.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Goblin Tactics&lt;/b&gt; (immediate reaction, when missed by a melee attack; at-will) &lt;/p&gt;&lt;p&gt;The deep goblin curser shifts 1 square.&lt;/p&gt;]]  <b>Goblin Tactics</b> (immediate reaction, when missed by a melee attack; at-will) </p><p>The deep goblin curser shifts 1 square.</p></tr></td></table>",

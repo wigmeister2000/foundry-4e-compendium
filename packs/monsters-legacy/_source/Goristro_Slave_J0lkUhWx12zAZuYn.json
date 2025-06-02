@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -463,10 +464,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"4",
 				"rechargeCondition":"",
@@ -942,23 +943,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 450; <b>Bloodied</b> 225 ; see also raging frenzy<hr><b>Resist</b> 20 variable (2/encounter; see “Resist,” Monster Manual, 282) </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 33</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+17)<br><b>Con</b> 25 (+16)</td><td><b>Dex</b> 12 (+10)<br><b>Int</b> 6 (+7)</td><td><b>Wis</b> 17 (+12)<br><b>Cha</b> 12 (+10)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> chains</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +22 vs AC; 2d10 + 8 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d10 + 8 damage. &lt;/p&gt;]]; [[/roll 2d10 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +22 vs AC; 2d10 + 8 damage. &lt;/p&gt;]] <19>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The goristro makes two slam attacks. &lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The goristro makes two slam attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Lashing Chains&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +22 vs AC; 3d10 + 8 damage, and the target is grabbed. Effect: One other creature grabbed by the goristro slides to a space adjacent to the target of the attack, takes 15 damage, and is no longer grabbed. &lt;/p&gt;]] ➶ <b>Lashing Chains</b> (standard, at-will) </p><p>Ranged 5; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Lashing Chains&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+22 vs AC&lt;/u&gt;; 3d10 + 8 damage, and the target is grabbed. Effect: One other creature grabbed by the goristro slides to a space adjacent to the target of the attack, takes 15 damage, and is no longer grabbed. &lt;/p&gt;]]; [[/roll 3d10 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Lashing Chains&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 5; +22 vs AC; 3d10 + 8 damage, and the target is grabbed. Effect: One other creature grabbed by the goristro slides to a space adjacent to the target of the attack, takes 15 damage, and is no longer grabbed. &lt;/p&gt;]] <24.5>  damage, and the target is grabbed. Effect: One other creature grabbed by the goristro slides to a space adjacent to the target of the attack, takes 15 damage, and is no longer grabbed. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Goristro Stomp&lt;/b&gt; (immediate reaction, when a nonadjacent enemy moves adjacent to the goristro, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;+22 vs AC; 4d8 + 6 damage, and the target is pushed 2 squares and knocked prone. The goristro attacks the triggering enemy&lt;/p&gt;]] ⚔ <b>Goristro Stomp</b> (immediate reaction, when a nonadjacent enemy moves adjacent to the goristro, recharge ⚃⚄⚅) </p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Goristro Stomp&lt;/b&gt; (immediate reaction, when a nonadjacent enemy moves adjacent to the goristro, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 4d8 + 6 damage, and the target is pushed 2 squares and knocked prone. The goristro attacks the triggering enemy&lt;/p&gt;]]; [[/roll 4d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Goristro Stomp&lt;/b&gt; (immediate reaction, when a nonadjacent enemy moves adjacent to the goristro, recharge ⚃⚄⚅) &lt;/p&gt;&lt;p&gt;+22 vs AC; 4d8 + 6 damage, and the target is pushed 2 squares and knocked prone. The goristro attacks the triggering enemy&lt;/p&gt;]] <24>  damage, and the target is pushed 2 squares and knocked prone. The goristro attacks the triggering enemy</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Raging Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8 + 6 damage. Targets triggering enemy&lt;/p&gt;]] ⚔ <b>Raging Frenzy</b> (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) </p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Raging Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8 + 6 damage. Targets triggering enemy&lt;/p&gt;]]; [[/roll 2d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Raging Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8 + 6 damage. Targets triggering enemy&lt;/p&gt;]] <15>  damage. Targets triggering enemy</p></tr></td></table>",

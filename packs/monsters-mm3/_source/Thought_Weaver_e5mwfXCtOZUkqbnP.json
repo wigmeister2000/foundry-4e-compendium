@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Multitasking Brain",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"w9FT0tP2CMIoeLJ1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Coordinated Strike",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"q8nedvPmhEHfiILX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -514,7 +516,8 @@
 					"defBonus":0,
 					"formula":"32",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -692,7 +695,8 @@
 					"defBonus":0,
 					"formula":"31",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1224,23 +1228,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 500; <b>Bloodied</b> 250</td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 38</td><td><b>Ref</b> 38</td><td><b>Will</b> 41</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+16)<br><b>Con</b> 26 (+21)</td><td><b>Dex</b> 24 (+20)<br><b>Int</b> 26 (+21)</td><td><b>Wis</b> 32 (+24)<br><b>Cha</b> 24 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> telepathy 40<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Insight +29</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 34 | Insight 39</td></td></tr></table><p><b>Equipment</b> chromatic disk</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Multitasking Brain&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While dazed, the thought weaver can spend a standard action and a minor action instead of only a standard action, and it can still take immediate actions.&lt;/p&gt;]]  <b>Multitasking Brain</b> <b></b></p><p>While dazed, the thought weaver can spend a standard action and a minor action instead of only a standard action, and it can still take immediate actions.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Coordinated Strike&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Once per round during its turn, the weaver can spend a standard action, a move action, or a minor action to allow one ally within 5 squares of it to immediately use an action of the same type as a free action.&lt;/p&gt;]]  <b>Coordinated Strike</b> <b></b></p><p>Once per round during its turn, the weaver can spend a standard action, a move action, or a minor action to allow one ally within 5 squares of it to immediately use an action of the same type as a free action.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Command the Puppet&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One creature dominated by the weaver within 10 squares of it takes 2d6 + 10 psychic damage. In addition, the weaver slides the creature 5 squares. The creature then uses an at-will attack of the weaver’s choice against one of its allies of the weaver’s choice.&lt;/p&gt;]]  <b>Command the Puppet</b> (charm, psychic) ✦ <b>At-Will</b></p><p><i>Effect:</i> One creature dominated by the weaver within 10 squares of it takes [[/roll 2d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Command the Puppet&lt;/b&gt; (charm, psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; One creature dominated by the weaver within 10 squares of it takes 2d6 + 10 psychic damage. In addition, the weaver slides the creature 5 squares. The creature then uses an at-will attack of the weaver’s choice against one of its allies of the weaver’s choice.&lt;/p&gt;]] <17>  psychic damage. In addition, the weaver slides the creature 5 squares. The creature then uses an at-will attack of the weaver’s choice against one of its allies of the weaver’s choice.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Mental Puppet&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when no creature is dominated by this power&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +32 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The weaver slides the target 5 squares. The target then makes a basic attack against one of its allies of the weaver’s choice. In addition, the target is dominated (save ends).&lt;/p&gt;]] ➶ <b>Mental Puppet</b> (charm) ✦ <b>Recharge</b> when no creature is dominated by this power</p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+32[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Mental Puppet&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when no creature is dominated by this power&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+32 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The weaver slides the target 5 squares. The target then makes a basic attack against one of its allies of the weaver’s choice. In addition, the target is dominated (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quick Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +32 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 damage.&lt;/p&gt;]] (⚔) <b>Quick Strike</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+32[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quick Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+32 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Quick Strike&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 damage.&lt;/p&gt;]] <17>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Spike&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); +31 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 psychic damage, the target takes a -2 penalty to all defenses until the end of the thought weaver’s next turn, and the thought weaver slides the target 3 squares.&lt;/p&gt;]] (➶) <b>Mind Spike</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Ranged 10 (one creature); [[/roll 1d20+31[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Spike&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 10 (one creature); &lt;u&gt;+31 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Mind Spike&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 10 psychic damage, the target takes a -2 penalty to all defenses until the end of the thought weaver’s next turn, and the thought weaver slides the target 3 squares.&lt;/p&gt;]] <17>  psychic damage, the target takes a -2 penalty to all defenses until the end of the thought weaver’s next turn, and the thought weaver slides the target 3 squares.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Extract Psionic Soul&lt;/b&gt; (healing, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Requirement:&lt;/i&gt; The weaver must be holding a chromatic disk.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one bloodied creature that has psionic powers); +30 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 12 psychic damage, and the target is dazed (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The weaver regains 25 hit points.&lt;/p&gt;]] ➶ <b>Extract Psionic Soul</b> (healing, psychic) ✦ Recharge ⚄ ⚅</p><p><i>Requirement:</i> The weaver must be holding a chromatic disk.</p><p><i>Attack:</i> Ranged 5 (one bloodied creature that has psionic powers); [[/roll 1d20+30[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Extract Psionic Soul&lt;/b&gt; (healing, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one bloodied creature that has psionic powers); &lt;u&gt;+30 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d12 + 12#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Extract Psionic Soul&lt;/b&gt; (healing, psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d12 + 12 psychic damage, and the target is dazed (save ends).&lt;/p&gt;]] <25>  psychic damage, and the target is dazed (save ends).</p><p><i>Miss:</i> Half damage.</p><p><i>Effect:</i> The weaver regains 25 hit points.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Guardian Puppet&lt;/b&gt; (charm) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy willingly leaves a square adjacent to a creature dominated by the weaver.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The dominated creature makes a basic attack against the triggering enemy.&lt;/p&gt;]]  <b>Guardian Puppet</b> (charm) ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy willingly leaves a square adjacent to a creature dominated by the weaver.</p><p><i>Effect (Immediate Interrupt):</i> The dominated creature makes a basic attack against the triggering enemy.</p></tr></td></table>",

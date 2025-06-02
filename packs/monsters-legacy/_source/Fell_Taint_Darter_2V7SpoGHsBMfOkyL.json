@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"4",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -366,7 +367,7 @@
 		},
 		{
 			"name":"Darter's Dodge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"24pZx1LCFsWk9Dqv",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -402,7 +403,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -638,23 +640,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 17; <b>Bloodied</b> 8<hr><b>Resist</b> Insubstantial <b>Vulnerable</b> 5 Psychic </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 13</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 1, fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (0)<br><b>Con</b> 13 (+1)</td><td><b>Dex</b> 16 (+3)<br><b>Int</b> 4 (null)</td><td><b>Wis</b> 12 (+1)<br><b>Cha</b> 10 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs Reflex; 1d6+4 psychic damage. &lt;/p&gt;]] (⚔) <b>Tendril Caress</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+4[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+4 vs Reflex&lt;/u&gt;; 1d6+4 psychic damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tendril Caress&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs Reflex; 1d6+4 psychic damage. &lt;/p&gt;]] <7.5>  psychic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mind Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs Will; 1d4+4 psychic damage, and the target is knocked prone. The fell taint darter must move at least 2 squares before using this attack, and it can continue moving its fly speed after the attack. &lt;/p&gt;]] ⚔ <b>Mind Slam</b> (standard, at-will) ✦ <b>Psychic</b></p><p>[[/roll 1d20+4[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mind Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+4 vs Will&lt;/u&gt;; 1d4+4 psychic damage, and the target is knocked prone. The fell taint darter must move at least 2 squares before using this attack, and it can continue moving its fly speed after the attack. &lt;/p&gt;]]; [[/roll 1d4+4#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Mind Slam&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+4 vs Will; 1d4+4 psychic damage, and the target is knocked prone. The fell taint darter must move at least 2 squares before using this attack, and it can continue moving its fly speed after the attack. &lt;/p&gt;]] <6.5>  psychic damage, and the target is knocked prone. The fell taint darter must move at least 2 squares before using this attack, and it can continue moving its fly speed after the attack. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fell Taint Feeding&lt;/b&gt; (standard; at-will) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a helpless or unconscious creature; the fell taint darter loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the Fell Taint Darter kills the target, it regains all of its hit points.&lt;/p&gt;]]  <b>Fell Taint Feeding</b> (standard; at-will) ✦ <b>Healing</b></p><p>Targets a helpless or unconscious creature; the fell taint darter loses insubstantial and its fly speed until the end of its next turn, and it makes a coup de grace against the target. If the Fell Taint Darter kills the target, it regains all of its hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Darter\"s Dodge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The fell taint darter has +4 to AC vs. opportunity attacks.&lt;/p&gt;]]  <b>Darter\"s Dodge</b></p><p>The fell taint darter has +4 to AC vs. opportunity attacks.</p></tr></td></table>",

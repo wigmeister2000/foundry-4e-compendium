@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Swarm Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jE0bsoxn9cFeHDBd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nwL41DuWEMUYa679",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"16",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -858,23 +861,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 276; <b>Bloodied</b> 138<hr><b>Resist</b> half damage from melee and ranged attacks <b>Vulnerable</b> 10 to close and area attacks </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 24</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 18 (+9)<br><b>Int</b> 3 (+1)</td><td><b>Wis</b> 15 (+7)<br><b>Cha</b> 5 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Swarm Attack&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any enemy that starts its turn in the aura takes 10 damage.&lt;/p&gt;]] ⌀ <b>Swarm Attack</b> ✦ <b>Aura</b> 1</p><p>Any enemy that starts its turn in the aura takes 10 damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Swarm&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mob can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The mob cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.&lt;/p&gt;]]  <b>Swarm</b> <b></b></p><p>The mob can occupy the same space as another creature, and an enemy can enter its space, which is difficult terrain. The mob cannot be pulled, pushed, or slid by melee or ranged attacks. It can squeeze through any opening that is large enough for at least one of the creatures it comprises.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gnashing Host&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature and each creature in the mob’s space); +16 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 13 damage, and the target is slowed until the end of the mob’s next turn.&lt;/p&gt;]] (⚔) <b>Gnashing Host</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature and each creature in the mob’s space); [[/roll 1d20+16[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gnashing Host&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature and each creature in the mob’s space); &lt;u&gt;+16 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 13#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Gnashing Host&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 13 damage, and the target is slowed until the end of the mob’s next turn.&lt;/p&gt;]] <22>  damage, and the target is slowed until the end of the mob’s next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Flowing Mob&lt;/b&gt; ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mob shifts up to its speed.&lt;/p&gt;]]  <b>Flowing Mob</b> ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> The mob shifts up to its speed.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Breakaway Hordeling&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy hits the mob.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Up to four hordeling breakaways (roll a d4 to determine the exact number) appear in squares within 2 squares of the mob. They can appear in occupied squares and act on the mob’s turn. Hordeling breakaways created in this fashion are worth no experience points.&lt;/p&gt;]]  <b>Breakaway Hordeling</b> ✦ <b>At-Will</b> (1/round)</p><p><i>Trigger:</i> An enemy hits the mob.</p><p><i>Effect (No Action):</i> Up to four hordeling breakaways (roll a [[/roll d4 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Breakaway Hordeling&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; (1/round)&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Up to four hordeling breakaways (roll a d4 to determine the exact number) appear in squares within 2 squares of the mob. They can appear in occupied squares and act on the mob’s turn. Hordeling breakaways created in this fashion are worth no experience points.&lt;/p&gt;]] <2.5> to determine the exact number) appear in squares within 2 squares of the mob. They can appear in occupied squares and act on the mob’s turn. Hordeling breakaways created in this fashion are worth no experience points.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Scattering Swarm&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; A close or an area attack hits the mob.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Interrupt):&lt;/i&gt; The triggering attack deals only half damage to the mob.&lt;/p&gt;]]  <b>Scattering Swarm</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> A close or an area attack hits the mob.</p><p><i>Effect (Immediate Interrupt):</i> The triggering attack deals only half damage to the mob.</p></tr></td></table>",

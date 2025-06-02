@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -643,10 +644,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -946,23 +947,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 620; <b>Bloodied</b> 310<hr><b>Resist</b> 20 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, fear, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 31</td><td><b>Ref</b> 27</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 10 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 9 (+5)</td><td><b>Wis</b> 9 (+5)<br><b>Cha</b> 16 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> understands Common and Draconic<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Endurance +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC; 2d6+6 damage. Against a stunned target, this attack deals an extra 2d8 necrotic damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+18 vs AC&lt;/u&gt;; 2d6+6 damage. Against a stunned target, this attack deals an extra 2d8 necrotic damage. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC; 2d6+6 damage. Against a stunned target, this attack deals an extra 2d8 necrotic damage. &lt;/p&gt;]] <13>  damage. Against a stunned target, this attack deals an extra [[/roll 2d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +18 vs AC; 2d6+6 damage. Against a stunned target, this attack deals an extra 2d8 necrotic damage. &lt;/p&gt;]] <9> necrotic damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +16 vs Reflex; 2d8+5 necrotic damage, and the target is stunned until the end of the fettered dracolich\"s next turn. Miss: Half damage, and the target is not stunned. Hit or Miss: The target loses any necrotic resistance it has (save ends). &lt;/p&gt;]] ᗕ <b>Breath Weapon</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic</b></p><p>Close blast 10; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 2d8+5 necrotic damage, and the target is stunned until the end of the fettered dracolich\"s next turn. Miss: Half damage, and the target is not stunned. Hit or Miss: The target loses any necrotic resistance it has (save ends). &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Breath Weapon&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 10; +16 vs Reflex; 2d8+5 necrotic damage, and the target is stunned until the end of the fettered dracolich\"s next turn. Miss: Half damage, and the target is not stunned. Hit or Miss: The target loses any necrotic resistance it has (save ends). &lt;/p&gt;]] <14>  necrotic damage, and the target is stunned until the end of the fettered dracolich\"s next turn. Miss: Half damage, and the target is not stunned. Hit or Miss: The target loses any necrotic resistance it has (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; +15 vs Will; the target is stunned until the end of the fettered dracolich\"s next turn. Aftereffect: The target takes a -2 penalty to attack rolls until the end of the encounter. &lt;/p&gt;]] ᗕ <b>Frightful Presence</b> (standard, encounter) ✦ <b>Fear</b></p><p>Close burst 5; targets enemies; [[/roll 1d20+15[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Frightful Presence&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fear&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; targets enemies; &lt;u&gt;+15 vs Will&lt;/u&gt;; the target is stunned until the end of the fettered dracolich\"s next turn. Aftereffect: The target takes a -2 penalty to attack rolls until the end of the encounter. &lt;/p&gt;]]; the target is stunned until the end of the fettered dracolich\"s next turn. Aftereffect: The target takes a -2 penalty to attack rolls until the end of the encounter. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bloodied Breath&lt;/b&gt; (immediate reaction, when first bloodied, encounter) &lt;/p&gt;&lt;p&gt;The fettered dracolich\"s breath weapon recharges automatically, and the dracolich uses it immediately.&lt;/p&gt;]] ᗕ <b>Bloodied Breath</b> (immediate reaction, when first bloodied, encounter) </p><p>The fettered dracolich\"s breath weapon recharges automatically, and the dracolich uses it immediately.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crazed Lashing&lt;/b&gt; (immediate reaction, when an enemy moves into a position that flanks the fettered dracolich, at-will) &lt;/p&gt;&lt;p&gt;the fettered dracolich makes a tail slap attack against the target; Reach 2; targets the triggering enemy; +18 vs AC; 2d4+6 damage, and the target is pushed 1 square. &lt;/p&gt;]] ⚔ <b>Crazed Lashing</b> (immediate reaction, when an enemy moves into a position that flanks the fettered dracolich, at-will) </p><p>the fettered dracolich makes a tail slap attack against the target; Reach 2; targets the triggering enemy; [[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crazed Lashing&lt;/b&gt; (immediate reaction, when an enemy moves into a position that flanks the fettered dracolich, at-will) &lt;/p&gt;&lt;p&gt;the fettered dracolich makes a tail slap attack against the target; Reach 2; targets the triggering enemy; &lt;u&gt;+18 vs AC&lt;/u&gt;; 2d4+6 damage, and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 2d4+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crazed Lashing&lt;/b&gt; (immediate reaction, when an enemy moves into a position that flanks the fettered dracolich, at-will) &lt;/p&gt;&lt;p&gt;the fettered dracolich makes a tail slap attack against the target; Reach 2; targets the triggering enemy; +18 vs AC; 2d4+6 damage, and the target is pushed 1 square. &lt;/p&gt;]] <11>  damage, and the target is pushed 1 square. </p></tr></td></table>",

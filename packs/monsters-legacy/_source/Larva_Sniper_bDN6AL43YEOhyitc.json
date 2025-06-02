@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -290,10 +292,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1090,7 +1092,7 @@
 		},
 		{
 			"name":"Squeezing Swarm",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"y5jJ6UVIs8SA9hkP",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -1126,7 +1128,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1182,23 +1185,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 306; <b>Bloodied</b> 153<hr><b>Resist</b> 10 necrotic, takes half damage from melee and ranged attacks <b>Vulnerable</b> 10 radiant, 10 against close and area attacks <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 33</td><td><b>Ref</b> 36</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 15 (+12)<br><b>Con</b> 21 (+15)</td><td><b>Dex</b> 17 (+13)<br><b>Int</b> 27 (+18)</td><td><b>Wis</b> 23 (+16)<br><b>Cha</b> 16 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Acrobatics +18, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 26 | Insight 26</td></td></tr></table><p><b>Equipment</b> leather armor , longbow .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stinging Swipe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 2d8+2 poison damage. &lt;/p&gt;]] (⚔) <b>Stinging Swipe</b> (standard, at-will) ✦ <b>Poison</b></p><p>[[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stinging Swipe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+28 vs AC&lt;/u&gt;; 2d8+2 poison damage. &lt;/p&gt;]]; [[/roll 2d8+2#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Stinging Swipe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+28 vs AC; 2d8+2 poison damage. &lt;/p&gt;]] <11>  poison damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Wasp-Flight Arrow&lt;/b&gt; (standard; requires longbow, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20/40; +28 vs AC; 1d10+2 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] (➶) <b>Wasp-Flight Arrow</b> (standard; requires longbow, at-will) ✦ <b>Poison, Weapon</b></p><p>ranged 20/40; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Wasp-Flight Arrow&lt;/b&gt; (standard; requires longbow, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20/40; &lt;u&gt;+28 vs AC&lt;/u&gt;; 1d10+2 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 1d10+2#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Wasp-Flight Arrow&lt;/b&gt; (standard; requires longbow, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20/40; +28 vs AC; 1d10+2 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <7.5>  damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Disrupting Double Arrow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Requires longbow; the larva sniper makes two wasp-flight arrow attacks. If both attacks hit the same target, it takes ongoing 10 poison damage and is dazed (save ends both).&lt;/p&gt;]] ➶ <b>Disrupting Double Arrow</b> (standard, at-will) ✦ <b>Poison, Weapon</b></p><p>Requires longbow; the larva sniper makes two wasp-flight arrow attacks. If both attacks hit the same target, it takes ongoing 10 poison damage and is dazed (save ends both).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔➶ &lt;b&gt;Escaping Sting&lt;/b&gt; (immediate reaction, when targeted by a melee attack, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The larva sniper shifts up to 3 squares and makes a basic attack.&lt;/p&gt;]] ⚔➶ <b>Escaping Sting</b> (immediate reaction, when targeted by a melee attack, at-will) ✦ <b>Poison, Weapon</b></p><p>The larva sniper shifts up to 3 squares and makes a basic attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔➶ &lt;b&gt;Vespine Speed&lt;/b&gt; (minor 1/round, at-will) ✦ &lt;b&gt;Poison, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The larva sniper makes a basic attack.&lt;/p&gt;]] ⚔➶ <b>Vespine Speed</b> (minor 1/round, at-will) ✦ <b>Poison, Weapon</b></p><p>The larva sniper makes a basic attack.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Vengeful Hive&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +24 vs Fortitude; 3d8+5 poison damage. &lt;/p&gt;]] ᗕ <b>Vengeful Hive</b> ( when first bloodied, encounter) ✦ <b>Poison</b></p><p>Close burst 2; [[/roll 1d20+24[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Vengeful Hive&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+24 vs Fortitude&lt;/u&gt;; 3d8+5 poison damage. &lt;/p&gt;]]; [[/roll 3d8+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Vengeful Hive&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +24 vs Fortitude; 3d8+5 poison damage. &lt;/p&gt;]] <18.5>  poison damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Squeezing Swarm&lt;/b&gt;&lt;/p&gt;&lt;p&gt;By altering its shape, a larva sniper can squeeze through small openings as if it were a Tiny creature.&lt;/p&gt;]]  <b>Squeezing Swarm</b></p><p>By altering its shape, a larva sniper can squeeze through small openings as if it were a Tiny creature.</p></tr></td></table>",

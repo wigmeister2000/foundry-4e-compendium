@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -362,7 +363,7 @@
 		},
 		{
 			"name":"Unstoppable Charger",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"fR0ymK42W5b9q1zG",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -398,7 +399,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -408,7 +410,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QD803vJLqjBIMFdr",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -444,7 +446,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -680,23 +683,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 362; <b>Bloodied</b> 181</td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2 (+4 against ongoing damage)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 35</td><td><b>Fort</b> 35</td><td><b>Ref</b> 30</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 28 (+18)<br><b>Con</b> 21 (+14)</td><td><b>Dex</b> 18 (+13)<br><b>Int</b> 5 (+6)</td><td><b>Wis</b> 18 (+13)<br><b>Cha</b> 8 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Axe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d10+9 damage, and 9 damage to one enemy adjacent to the target. Effect: The target is marked until the end of the warforged titan’s next turn. &lt;/p&gt;]] (⚔) <b>Axe</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Axe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d10+9 damage, and 9 damage to one enemy adjacent to the target. Effect: The target is marked until the end of the warforged titan’s next turn. &lt;/p&gt;]]; [[/roll 2d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Axe&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d10+9 damage, and 9 damage to one enemy adjacent to the target. Effect: The target is marked until the end of the warforged titan’s next turn. &lt;/p&gt;]] <20>  damage, and 9 damage to one enemy adjacent to the target. Effect: The target is marked until the end of the warforged titan’s next turn. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammer&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d8+9 damage, the warforged titan slides the target 2 squares, and the target is knocked prone. Miss: 9 damage. &lt;/p&gt;]] ⚔ <b>Hammer</b> (minor 1/round, at-will) </p><p>Reach 3; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammer&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d8+9 damage, the warforged titan slides the target 2 squares, and the target is knocked prone. Miss: 9 damage. &lt;/p&gt;]]; [[/roll 2d8+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Hammer&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d8+9 damage, the warforged titan slides the target 2 squares, and the target is knocked prone. Miss: 9 damage. &lt;/p&gt;]] <18>  damage, the warforged titan slides the target 2 squares, and the target is knocked prone. Miss: 9 damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Warforged Resolve&lt;/b&gt; (minor; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The warforged titan gains 12 temporary hit points and can make a saving throw against an ongoing damage effect. If it uses this power while bloodied, it also regains 12 hit points.&lt;/p&gt;]]  <b>Warforged Resolve</b> (minor; encounter) ✦ <b>Healing</b></p><p>The warforged titan gains 12 temporary hit points and can make a saving throw against an ongoing damage effect. If it uses this power while bloodied, it also regains 12 hit points.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unstoppable Charger&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A warforged titan can take additional actions after it resolves its charge attack.&lt;/p&gt;]]  <b>Unstoppable Charger</b></p><p>A warforged titan can take additional actions after it resolves its charge attack.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A warforged titan can make opportunity attacks against all enemies within its reach (3 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>A warforged titan can make opportunity attacks against all enemies within its reach (3 squares).</p></tr></td></table>",

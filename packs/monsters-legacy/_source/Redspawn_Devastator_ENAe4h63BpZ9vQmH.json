@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -542,7 +543,7 @@
 		},
 		{
 			"name":"Fiery Wrath",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"9lSzktuCUJWRiyZA",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -578,7 +579,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -588,7 +590,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"6lTUmbocQLEM8RG1",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -624,7 +626,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -680,23 +683,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 572; <b>Bloodied</b> 286<hr><b>Resist</b> 10 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 39</td><td><b>Ref</b> 37</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 8 (clumsy)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 29 (+21)<br><b>Con</b> 26 (+20)</td><td><b>Dex</b> 16 (+15)<br><b>Int</b> 5 (+9)</td><td><b>Wis</b> 17 (+15)<br><b>Cha</b> 11 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Draconic<br><b>Alignment</b> Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 25 | Insight 25</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 3d10+9 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+28 vs AC&lt;/u&gt;; 3d10+9 damage. &lt;/p&gt;]]; [[/roll 3d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 3d10+9 damage. &lt;/p&gt;]] <25.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Explosive Charge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The redspawn devastator charges an enemy; +28 vs Reflex; 3d12+10 fire damage, and the target is pushed 4 squares and takes ongoing 10 fire damage (save ends). &lt;/p&gt;]] ⚔ <b>Explosive Charge</b> (standard, encounter) ✦ <b>Fire</b></p><p>The redspawn devastator charges an enemy; [[/roll 1d20+28[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Explosive Charge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The redspawn devastator charges an enemy; &lt;u&gt;+28 vs Reflex&lt;/u&gt;; 3d12+10 fire damage, and the target is pushed 4 squares and takes ongoing 10 fire damage (save ends). &lt;/p&gt;]]; [[/roll 3d12+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Explosive Charge&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The redspawn devastator charges an enemy; +28 vs Reflex; 3d12+10 fire damage, and the target is pushed 4 squares and takes ongoing 10 fire damage (save ends). &lt;/p&gt;]] <29.5>  fire damage, and the target is pushed 4 squares and takes ongoing 10 fire damage (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fling&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 2d10+9 damage. If the attack hits, the redspawn devastator makes a secondary attack against the same target. &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; +28 vs Fortitude; the target is pushed 6 squares and knocked prone. &lt;/p&gt;]] ⚔ <b>Fling</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fling&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+28 vs AC&lt;/u&gt;; 2d10+9 damage. If the attack hits, the redspawn devastator makes a secondary attack against the same target. &lt;/p&gt;]]; [[/roll 2d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fling&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 2d10+9 damage. If the attack hits, the redspawn devastator makes a secondary attack against the same target. &lt;/p&gt;]] <20>  damage. If the attack hits, the redspawn devastator makes a secondary attack against the same target. </p><p><i>Secondary Attack</i> [[/roll 1d20+28[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Fling&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack&lt;/i&gt; &lt;u&gt;+28 vs Fortitude&lt;/u&gt;; the target is pushed 6 squares and knocked prone. &lt;/p&gt;]]; the target is pushed 6 squares and knocked prone. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Fiery Wrath&lt;/b&gt; (only while bloodied) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The devastator’s bite attack deals 10 extra fire damage, and the target takes ongoing 10 fire damage (save ends). If the target takes a standard action on its turn, it cannot save against the ongoing fire damage that turn.&lt;/p&gt;]]  <b>Fiery Wrath</b> (only while bloodied) ✦ <b>Fire</b></p><p>The devastator’s bite attack deals 10 extra fire damage, and the target takes ongoing 10 fire damage (save ends). If the target takes a standard action on its turn, it cannot save against the ongoing fire damage that turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The redspawn devastator can make opportunity attacks against all enemies within its reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>The redspawn devastator can make opportunity attacks against all enemies within its reach (2 squares).</p></tr></td></table>",

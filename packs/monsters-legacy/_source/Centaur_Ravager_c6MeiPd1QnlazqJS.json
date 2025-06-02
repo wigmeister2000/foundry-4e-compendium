@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -442,14 +443,12 @@
 				},
 				"damage":{
 					"parts":[
-						[
-						]
+						[]
 					]
 				},
 				"damageCrit":{
 					"parts":[
-						[
-						]
+						[]
 					]
 				},
 				"damageImp":{
@@ -473,10 +472,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":"When First Bloodied",
@@ -653,10 +652,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -776,23 +775,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 150; <b>Bloodied</b> 75</td><td style=\"padding-left: 15px;\"><b>Init</b> +10</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 26</td><td><b>Ref</b> 24</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 18 (+10)<br><b>Int</b> 9 (+5)</td><td><b>Wis</b> 16 (+9)<br><b>Cha</b> 10 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Elven<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +17, Nature +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> greatsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+6 damage, plus 1d10 damage when charging. &lt;/p&gt;]] (⚔) <b>Greatsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d10+6 damage, plus 1d10 damage when charging. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+6 damage, plus 1d10 damage when charging. &lt;/p&gt;]] <11.5>  damage, plus [[/roll 1d10 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d10+6 damage, plus 1d10 damage when charging. &lt;/p&gt;]] <5.5> damage when charging. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Berserk Rush&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Fortitude; 2d10+6 damage (plus 1d10 damage when charging), and the target is pushed 2 squares and knocked prone. Special: When charging, the centaur ravager can use this power in place of a melee basic attack. &lt;/p&gt;]] ⚔ <b>Berserk Rush</b> (standard, recharges when first bloodied) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Berserk Rush&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs Fortitude&lt;/u&gt;; 2d10+6 damage (plus 1d10 damage when charging), and the target is pushed 2 squares and knocked prone. Special: When charging, the centaur ravager can use this power in place of a melee basic attack. &lt;/p&gt;]]; [[/roll 2d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Berserk Rush&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Fortitude; 2d10+6 damage (plus 1d10 damage when charging), and the target is pushed 2 squares and knocked prone. Special: When charging, the centaur ravager can use this power in place of a melee basic attack. &lt;/p&gt;]] <17>  damage (plus [[/roll 1d10 #&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Berserk Rush&lt;/b&gt; (standard, recharges when first bloodied) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs Fortitude; 2d10+6 damage (plus 1d10 damage when charging), and the target is pushed 2 squares and knocked prone. Special: When charging, the centaur ravager can use this power in place of a melee basic attack. &lt;/p&gt;]] <5.5> damage when charging), and the target is pushed 2 squares and knocked prone. Special: When charging, the centaur ravager can use this power in place of a melee basic attack. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Kick&lt;/b&gt; (immediate reaction, when a creature moves into a space where it flanks the centaur ravager, at-will) &lt;/p&gt;&lt;p&gt;Targets the triggering creatures; +14 vs AC; 1d6+6 damage. &lt;/p&gt;]] ⚔ <b>Quick Kick</b> (immediate reaction, when a creature moves into a space where it flanks the centaur ravager, at-will) </p><p>Targets the triggering creatures; [[/roll 1d20+14[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Kick&lt;/b&gt; (immediate reaction, when a creature moves into a space where it flanks the centaur ravager, at-will) &lt;/p&gt;&lt;p&gt;Targets the triggering creatures; &lt;u&gt;+14 vs AC&lt;/u&gt;; 1d6+6 damage. &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Quick Kick&lt;/b&gt; (immediate reaction, when a creature moves into a space where it flanks the centaur ravager, at-will) &lt;/p&gt;&lt;p&gt;Targets the triggering creatures; +14 vs AC; 1d6+6 damage. &lt;/p&gt;]] <9.5>  damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brash Retaliation&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 3d10+6 damage, and the centaur ravager pushes the target 2 squares. &lt;/p&gt;]] ⚔ <b>Brash Retaliation</b> (free, when first bloodied, encounter) ✦ <b>Weapon</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brash Retaliation&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 3d10+6 damage, and the centaur ravager pushes the target 2 squares. &lt;/p&gt;]]; [[/roll 3d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Brash Retaliation&lt;/b&gt; (free, when first bloodied, encounter) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 3d10+6 damage, and the centaur ravager pushes the target 2 squares. &lt;/p&gt;]] <22.5>  damage, and the centaur ravager pushes the target 2 squares. </p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -729,7 +731,7 @@
 		},
 		{
 			"name":"Combat Advantage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WNcqvJCxLmSKX1Od",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -765,7 +767,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -775,7 +778,7 @@
 		},
 		{
 			"name":"Astral Resonance",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"QcBpObuJMzUqygls",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -811,7 +814,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -1045,23 +1049,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 128; <b>Bloodied</b> 64<hr><b>Resist</b> 10 radiant </td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 29</td><td><b>Ref</b> 29</td><td><b>Will</b> 30</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 see also astral leap</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+13)<br><b>Con</b> 20 (+13)</td><td><b>Dex</b> 20 (+13)<br><b>Int</b> 18 (+12)</td><td><b>Wis</b> 22 (+14)<br><b>Cha</b> 19 (+12)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Giant, Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> crossbow , longsword .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d8+7 radiant damage. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Radiant, Weapon</b></p><p>Reach 2; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+7 radiant damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +22 vs AC; 2d8+7 radiant damage. &lt;/p&gt;]] <16>  radiant damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +22 vs AC; 2d8+7 radiant damage. &lt;/p&gt;]] (➶) <b>Crossbow</b> (standard, at-will) ✦ <b>Radiant, Weapon</b></p><p>Ranged 15/30; [[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; &lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+7 radiant damage. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Crossbow&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 15/30; +22 vs AC; 2d8+7 radiant damage. &lt;/p&gt;]] <16>  radiant damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Shadows&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +20 vs Will;  (enemies only)1d8+7 radiant damage, and the astral giant becomes invisible until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Astral Shadows</b> (standard, recharge ⚄⚅) ✦ <b>Radiant</b></p><p>Close burst 5; [[/roll 1d20+20[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Shadows&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; &lt;u&gt;+20 vs Will&lt;/u&gt;;  (enemies only)1d8+7 radiant damage, and the astral giant becomes invisible until the end of its next turn. &lt;/p&gt;]];  (enemies only)[[/roll 1d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Astral Shadows&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Radiant&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; +20 vs Will;  (enemies only)1d8+7 radiant damage, and the astral giant becomes invisible until the end of its next turn. &lt;/p&gt;]] <11.5>  radiant damage, and the astral giant becomes invisible until the end of its next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Star-stride&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +20 vs Reflex; 3d8+7 radiant damage, and the astral giant teleports 3 squares and gains combat advantage against all enemies until the end of its next turn. &lt;/p&gt;]] ᗕ <b>Star-stride</b> (standard, encounter) ✦ <b>Radiant, Teleportation</b></p><p>Close burst 3; [[/roll 1d20+20[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Star-stride&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+20 vs Reflex&lt;/u&gt;; 3d8+7 radiant damage, and the astral giant teleports 3 squares and gains combat advantage against all enemies until the end of its next turn. &lt;/p&gt;]]; [[/roll 3d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Star-stride&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Radiant, Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; +20 vs Reflex; 3d8+7 radiant damage, and the astral giant teleports 3 squares and gains combat advantage against all enemies until the end of its next turn. &lt;/p&gt;]] <20.5>  radiant damage, and the astral giant teleports 3 squares and gains combat advantage against all enemies until the end of its next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The astral giant deals an extra 2d6 damage against any target it has combat advantage against.&lt;/p&gt;]]  <b>Combat Advantage</b></p><p>The astral giant deals an extra [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Combat Advantage&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The astral giant deals an extra 2d6 damage against any target it has combat advantage against.&lt;/p&gt;]] <7> damage against any target it has combat advantage against.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Astral Resonance&lt;/b&gt;&lt;/p&gt;&lt;p&gt;As long as the astral giant has an unbloodied astral giant ally within 10 squares, it receives a +2 bonus to attack rolls.&lt;/p&gt;]]  <b>Astral Resonance</b></p><p>As long as the astral giant has an unbloodied astral giant ally within 10 squares, it receives a +2 bonus to attack rolls.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Astral Leap&lt;/b&gt; (move; only within the astral sea; recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The astral giant can fly up to 10 squares.&lt;/p&gt;]]  <b>Astral Leap</b> (move; only within the astral sea; recharges when first bloodied) </p><p>The astral giant can fly up to 10 squares.</p></tr></td></table>",

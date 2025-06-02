@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Binding Field",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"gKVOA3sb1njfM2t5",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Child of Chains",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"2D1AWfcYd5zOjIRl",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -862,23 +865,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 110; <b>Bloodied</b> 55<hr><b>Resist</b> 10 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 24</td><td><b>Fort</b> 22</td><td><b>Ref</b> 20</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+8)<br><b>Con</b> 22 (+11)</td><td><b>Dex</b> 16 (+8)<br><b>Int</b> 18 (+9)</td><td><b>Wis</b> 19 (+9)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Binding Field&lt;/b&gt; ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Squares within the aura are difficult terrain for enemies.&lt;/p&gt;]] ⌀ <b>Binding Field</b> ✦ <b>Aura</b> 3</p><p>Squares within the aura are difficult terrain for enemies.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Child of Chains &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;While immobilized or restrained, the chained cambion gains a +2 bonus to attack rolls and gains a +2 bonus to attempts to escape a grab and to saving throws against effects that immobilize or restrain.&lt;/p&gt;]]  <b>Child of Chains </b> <b></b></p><p>While immobilized or restrained, the chained cambion gains a +2 bonus to attack rolls and gains a +2 bonus to attempts to escape a grab and to saving throws against effects that immobilize or restrain.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chain Lash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 8 damage, and a dazed target is immobilized (save ends).&lt;/p&gt;]] (⚔) <b>Chain Lash</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 3 (one creature); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chain Lash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 3 (one creature); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Chain Lash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 8 damage, and a dazed target is immobilized (save ends).&lt;/p&gt;]] <18.5>  damage, and a dazed target is immobilized (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Vile Fetters&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 5 (one creature); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 psychic damage, and if the target ends its next turn closer to the chained cambion, it is dazed (save ends).&lt;/p&gt;]] ⚔ <b>Vile Fetters</b> (psychic) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 5 (one creature); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Vile Fetters&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 5 (one creature); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Vile Fetters&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 psychic damage, and if the target ends its next turn closer to the chained cambion, it is dazed (save ends).&lt;/p&gt;]] <13>  psychic damage, and if the target ends its next turn closer to the chained cambion, it is dazed (save ends).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unfettered Scream&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); +13 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 psychic damage, and the chained cambion pushes the target 2 squares. The target is also dazed (save ends).&lt;/p&gt;]] ᗕ <b>Unfettered Scream</b> (psychic) ✦ Recharge ⚄ ⚅</p><p><i>Attack:</i> Close blast 3 (creatures in the blast); [[/roll 1d20+13[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unfettered Scream&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 3 (creatures in the blast); &lt;u&gt;+13 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Unfettered Scream&lt;/b&gt; (psychic) ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 6 psychic damage, and the chained cambion pushes the target 2 squares. The target is also dazed (save ends).&lt;/p&gt;]] <13>  psychic damage, and the chained cambion pushes the target 2 squares. The target is also dazed (save ends).</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mind Shackles&lt;/b&gt; (psychic) ✦ &lt;b&gt;Recharge&lt;/b&gt; when first bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Two enemies adjacent to each other in a close burst 5 are psychically shackled (save ends; each enemy makes a separate saving throw against this effect). While psychically shackled, an enemy takes 10 psychic damage at the start and the end of its turn if it isn’t adjacent to the other creature that was affected by this power.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Aftereffect:&lt;/i&gt; The effect persists, and the damage decreases to 5 (save ends).&lt;/p&gt;]]  <b>Mind Shackles</b> (psychic) ✦ <b>Recharge</b> when first bloodied</p><p><i>Effect:</i> Two enemies adjacent to each other in a close burst 5 are psychically shackled (save ends; each enemy makes a separate saving throw against this effect). While psychically shackled, an enemy takes 10 psychic damage at the start and the end of its turn if it isn’t adjacent to the other creature that was affected by this power.</p><p><i>Aftereffect:</i> The effect persists, and the damage decreases to 5 (save ends).</p></tr></td></table>",

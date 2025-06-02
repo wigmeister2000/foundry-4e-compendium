@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"6",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -766,23 +768,10 @@
 				"max":10
 			},
 			"init":{
-				"value":22,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":22
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 328; <b>Bloodied</b> 164</td><td style=\"padding-left: 15px;\"><b>Init</b> +22</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 41</td><td><b>Fort</b> 43</td><td><b>Ref</b> 40</td><td><b>Will</b> 38</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 32 (+25)<br><b>Con</b> 28 (+23)</td><td><b>Dex</b> 26 (+22)<br><b>Int</b> 4 (+11)</td><td><b>Wis</b> 17 (+17)<br><b>Cha</b> 22 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Endurance +28, Intimidate +25</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +6 vs AC; 2d8 + 11 damage, and ongoing 10 acid damage (save ends), and the target is pushed 1 square. &lt;/p&gt;]] (⚔) <b>Tail</b> (standard, at-will) ✦ <b>Acid</b></p><p>Reach 3; [[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+6 vs AC&lt;/u&gt;; 2d8 + 11 damage, and ongoing 10 acid damage (save ends), and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 2d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tail&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 3; +6 vs AC; 2d8 + 11 damage, and ongoing 10 acid damage (save ends), and the target is pushed 1 square. &lt;/p&gt;]] <20>  damage, and ongoing 10 acid damage (save ends), and the target is pushed 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +6 vs AC; 4d8 + 11 damage, and the target is pushed 1 square. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+6 vs AC&lt;/u&gt;; 4d8 + 11 damage, and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 4d8 + 11#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +6 vs AC; 4d8 + 11 damage, and the target is pushed 1 square. &lt;/p&gt;]] <29>  damage, and the target is pushed 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Claw Storm&lt;/b&gt; (standard, encounter) &lt;/p&gt;&lt;p&gt;The golothomas makes four claw attacks. &lt;/p&gt;]] ⚔ <b>Claw Storm</b> (standard, encounter) </p><p>The golothomas makes four claw attacks. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dimensional Reach&lt;/b&gt; (minor, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 10; the golothomas can reach between dimensions to strike at distant targets with its claws. &lt;/p&gt;]] ➶ <b>Dimensional Reach</b> (minor, recharge ⚄⚅) </p><p>Ranged 10; the golothomas can reach between dimensions to strike at distant targets with its claws. </p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"13",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -586,23 +587,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 130; <b>Bloodied</b> 65<hr><b>Resist</b> 5 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 23</td><td><b>Ref</b> 22</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+10)<br><b>Con</b> 20 (+10)</td><td><b>Dex</b> 18 (+9)<br><b>Int</b> 10 (+5)</td><td><b>Wis</b> 8 (+4)<br><b>Cha</b> 16 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 1d10+5 damage, and ongoing 5 damage. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>[[/roll 1d20+13[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+13 vs AC&lt;/u&gt;; 1d10+5 damage, and ongoing 5 damage. &lt;/p&gt;]]; [[/roll 1d10+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+13 vs AC; 1d10+5 damage, and ongoing 5 damage. &lt;/p&gt;]] <10.5>  damage, and ongoing 5 damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Gut Maw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Provokes opportunity attacks unless the target is immobilized; +13 vs Reflex; 2d8+5 damage, and the ghoul regains 10 hit points. &lt;/p&gt;]] ⚔ <b>Gut Maw</b> (standard, at-will) </p><p>Provokes opportunity attacks unless the target is immobilized; [[/roll 1d20+13[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Gut Maw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Provokes opportunity attacks unless the target is immobilized; &lt;u&gt;+13 vs Reflex&lt;/u&gt;; 2d8+5 damage, and the ghoul regains 10 hit points. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Gut Maw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Provokes opportunity attacks unless the target is immobilized; +13 vs Reflex; 2d8+5 damage, and the ghoul regains 10 hit points. &lt;/p&gt;]] <14>  damage, and the ghoul regains 10 hit points. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Passing Consumption&lt;/b&gt; (immediate reaction, when missed by a melee attack made by an adjacent attacker, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The ghoul can make a gut maw attack that doesn’t provoke opportunity attacks.&lt;/p&gt;]] ⚔ <b>Passing Consumption</b> (immediate reaction, when missed by a melee attack made by an adjacent attacker, recharges when first bloodied) </p><p>The ghoul can make a gut maw attack that doesn’t provoke opportunity attacks.</p></tr></td></table>",

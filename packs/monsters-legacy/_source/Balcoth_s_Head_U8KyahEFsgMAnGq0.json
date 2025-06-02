@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Unstable Reality",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"l7ehOyxgACRNGuJz",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -766,7 +768,7 @@
 		},
 		{
 			"name":"Ritual Knowledge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"huMEjiaHQmfVo0vx",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -802,7 +804,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -860,21 +863,8 @@
 			"init":{
 				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":-11,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":0
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 856; <b>Bloodied</b> 428<hr><b>Resist</b> half damage from close and area attacks <b>Immune</b> fire </td><td style=\"padding-left: 15px;\"><b>Init</b> ++0 (see ritual knowledge) | <b>AP</b> 2 | <b>Save</b> +5; whenever an attack applies an effect to Balcoth that a save can end, he makes an immediate saving throw. If it succeeds, Balcoth is unaffected by the effect. Balcoth makes saving throws at the end of each of his turns as normal.</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 35</td><td><b>Ref</b> 33</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 0, fly 1 (hover), teleport 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+16)<br><b>Con</b> 22 (+17)</td><td><b>Dex</b> 16 (+14)<br><b>Int</b> 33 (+22)</td><td><b>Wis</b> 29 (+20)<br><b>Cha</b> 28 (+20)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> All<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td><b>Skills</b> Arcana +27, Diplomacy +31, Insight +31</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 30 | Insight 41</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Unstable Reality&lt;/b&gt; (Teleportation) aura 2; Balcoth can teleport any creature that ends its turn within the aura 5 squares. When he does, he can also deal 10 damage to that creature, or 15 damage if Balcoth is bloodied.]] <b>Unstable Reality</b> (Teleportation) aura 2; Balcoth can teleport any creature that ends its turn within the aura 5 squares. When he does, he can also deal 10 damage to that creature, or 15 damage if Balcoth is bloodied.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Forceful Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2 or Ranged 10; +26 vs Reflex; 2d10+9 force damage, and Balcoth pushes the target 10 squares. &lt;/p&gt;]] (⚔) <b>Forceful Gaze</b> (standard, at-will) ✦ <b>Force</b></p><p>Reach 2 or Ranged 10; [[/roll 1d20+26[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Forceful Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2 or Ranged 10; &lt;u&gt;+26 vs Reflex&lt;/u&gt;; 2d10+9 force damage, and Balcoth pushes the target 10 squares. &lt;/p&gt;]]; [[/roll 2d10+9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Forceful Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2 or Ranged 10; +26 vs Reflex; 2d10+9 force damage, and Balcoth pushes the target 10 squares. &lt;/p&gt;]] <20>  force damage, and Balcoth pushes the target 10 squares. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Word of Dissolution&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 20; +26 vs Fortitude; 1d10+6 damage, and the target takes ongoing 10 damage (save ends). First Failed Save: The target instead takes ongoing 20 damage (save ends). Second Failed Save: The target is reduced to 0 hit points. &lt;/p&gt;]] ➶ <b>Word of Dissolution</b> (standard, recharge ⚄⚅) </p><p>Ranged 20; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Word of Dissolution&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; 1d10+6 damage, and the target takes ongoing 10 damage (save ends). First Failed Save: The target instead takes ongoing 20 damage (save ends). Second Failed Save: The target is reduced to 0 hit points. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Word of Dissolution&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Ranged 20; +26 vs Fortitude; 1d10+6 damage, and the target takes ongoing 10 damage (save ends). First Failed Save: The target instead takes ongoing 20 damage (save ends). Second Failed Save: The target is reduced to 0 hit points. &lt;/p&gt;]] <11.5>  damage, and the target takes ongoing 10 damage (save ends). First Failed Save: The target instead takes ongoing 20 damage (save ends). Second Failed Save: The target is reduced to 0 hit points. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Arcane Censure&lt;/b&gt; (minor, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +26 vs Fortitude; the target is restrained (save ends). First Failed Save: The target is instead removed from play (save ends). When this effect ends, the target returns in a square of his or her choice within 5 squares of Balcoth. &lt;/p&gt;]] ᗕ <b>Arcane Censure</b> (minor, recharges when first bloodied) </p><p>Close burst 3; targets enemies; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Arcane Censure&lt;/b&gt; (minor, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; the target is restrained (save ends). First Failed Save: The target is instead removed from play (save ends). When this effect ends, the target returns in a square of his or her choice within 5 squares of Balcoth. &lt;/p&gt;]]; the target is restrained (save ends). First Failed Save: The target is instead removed from play (save ends). When this effect ends, the target returns in a square of his or her choice within 5 squares of Balcoth. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Manifold Self&lt;/b&gt; (free, when balcoth’s head starts its turn; there must be fewer than 3 balcoth’s heads in play; at-will) &lt;/p&gt;&lt;p&gt;Balcoth duplicates himself until there are three Balcoth’s heads in play. When Balcoth creates a new duplicate, it appears within 5 squares of him. One duplicate acts on an initiative count equal to Balcoth’s -5, and the other on Balcoth’s initiative count -10. Balcoth’s head and its duplicates have identical statistics, share the same pool of hit points and powers, but each gets a full set of actions. When Balcoth takes damage while more than one duplicate is present, the duplicate that took the damage is destroyed.&lt;/p&gt;]]  <b>Manifold Self</b> (free, when balcoth’s head starts its turn; there must be fewer than 3 balcoth’s heads in play; at-will) </p><p>Balcoth duplicates himself until there are three Balcoth’s heads in play. When Balcoth creates a new duplicate, it appears within 5 squares of him. One duplicate acts on an initiative count equal to Balcoth’s -5, and the other on Balcoth’s initiative count -10. Balcoth’s head and its duplicates have identical statistics, share the same pool of hit points and powers, but each gets a full set of actions. When Balcoth takes damage while more than one duplicate is present, the duplicate that took the damage is destroyed.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ritual Knowledge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Balcoth is warned of danger. His initiative check result in any combat is equal to the highest rolled result + 5.&lt;/p&gt;]]  <b>Ritual Knowledge</b></p><p>Balcoth is warned of danger. His initiative check result in any combat is equal to the highest rolled result + 5.</p></tr></td></table>",

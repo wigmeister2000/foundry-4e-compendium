@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"25",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -241,7 +242,8 @@
 					"defBonus":0,
 					"formula":"25",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -774,23 +776,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 376; <b>Bloodied</b> 188</td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 30</td><td><b>Ref</b> 32</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, fly 6, teleport 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+16)<br><b>Con</b> 20 (+15)</td><td><b>Dex</b> 20 (+15)<br><b>Int</b> 26 (+18)</td><td><b>Wis</b> 19 (+14)<br><b>Cha</b> 24 (+17)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision<br><b>Passive</b> Perception 24 | Insight 24</td></td></tr></table><p><b>Equipment</b> robe, orb, dagger .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+25 vs AC; 2d4+8 damage. &lt;/p&gt;]] (⚔) <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+25[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+25 vs AC&lt;/u&gt;; 2d4+8 damage. &lt;/p&gt;]]; [[/roll 2d4+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+25 vs AC; 2d4+8 damage. &lt;/p&gt;]] <13>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fragment Spike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one or two creatures; +25 vs Will; 3d8+8 force damage, and the target is knocked prone. &lt;/p&gt;]] (➶) <b>Fragment Spike</b> (standard, at-will) ✦ <b>Force, Implement</b></p><p>Ranged 20; targets one or two creatures; [[/roll 1d20+25[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fragment Spike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one or two creatures; &lt;u&gt;+25 vs Will&lt;/u&gt;; 3d8+8 force damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 3d8+8#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Fragment Spike&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; targets one or two creatures; +25 vs Will; 3d8+8 force damage, and the target is knocked prone. &lt;/p&gt;]] <21.5>  force damage, and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Vortex of Lakal&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force, Implement, Radiant, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; +26 vs Fortitude; 2d10+7 radiant damage, and the target is pulled 2 squares toward the origin square of the burst and slowed (save ends). The burst creates a zone that lasts until the end of the durud fragment mage’s next turn. Any creature that ends its turn within the zone takes 20 force damage. &lt;/p&gt;]] ✻ <b>Vortex of Lakal</b> (standard, recharge ⚄⚅) ✦ <b>Force, Implement, Radiant, Zone</b></p><p>Area burst 3 within 20; [[/roll 1d20+26[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Vortex of Lakal&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force, Implement, Radiant, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; &lt;u&gt;+26 vs Fortitude&lt;/u&gt;; 2d10+7 radiant damage, and the target is pulled 2 squares toward the origin square of the burst and slowed (save ends). The burst creates a zone that lasts until the end of the durud fragment mage’s next turn. Any creature that ends its turn within the zone takes 20 force damage. &lt;/p&gt;]]; [[/roll 2d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Vortex of Lakal&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Force, Implement, Radiant, Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; +26 vs Fortitude; 2d10+7 radiant damage, and the target is pulled 2 squares toward the origin square of the burst and slowed (save ends). The burst creates a zone that lasts until the end of the durud fragment mage’s next turn. Any creature that ends its turn within the zone takes 20 force damage. &lt;/p&gt;]] <18>  radiant damage, and the target is pulled 2 squares toward the origin square of the burst and slowed (save ends). The burst creates a zone that lasts until the end of the durud fragment mage’s next turn. Any creature that ends its turn within the zone takes 20 force damage. </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Implacable Determination&lt;/b&gt; (free, when an enemy within 5 squares of the durud fragment mage scores a critical hit; encounter) &lt;/p&gt;&lt;p&gt;The durud fragment mage can make a basic attack, shift 1 square, or move its speed.&lt;/p&gt;]]  <b>Implacable Determination</b> (free, when an enemy within 5 squares of the durud fragment mage scores a critical hit; encounter) </p><p>The durud fragment mage can make a basic attack, shift 1 square, or move its speed.</p></tr></td></table>",

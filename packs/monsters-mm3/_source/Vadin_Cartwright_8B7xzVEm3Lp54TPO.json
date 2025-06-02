@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Maddening Barrage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"UtL8Q6yJesznfoCX",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -625,7 +626,7 @@
 				"uses":{
 					"value":3,
 					"max":"3",
-					"per":"encounter"
+					"per":"enc"
 				},
 				"consume":{
 					"type":"",
@@ -821,28 +822,15 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
 				"feat":0,
 				"item":0,
 				"power":0,
 				"race":0,
 				"untyped":0,
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 212; <b>Bloodied</b> 106</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 23</td><td><b>Ref</b> 21</td><td><b>Will</b> 22</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+11)<br><b>Con</b> 18 (+9)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 16 (+8)</td><td><b>Wis</b> 19 (+9)<br><b>Cha</b> 16 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p><b>Equipment</b> +2 vicious mace, holy symbol of Tharzidun, chainmail .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Maddening Barrage&lt;/b&gt; (psychic) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Enemies take a -2 penalty to all defenses while in the aura. Any enemy marked by Vadin takes 10 psychic damage if it leaves the aura.&lt;/p&gt;]] ⌀ <b>Maddening Barrage</b> (psychic) ✦ <b>Aura</b> 1</p><p>Enemies take a -2 penalty to all defenses while in the aura. Any enemy marked by Vadin takes 10 psychic damage if it leaves the aura.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Vicious Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one or two creatures); +15 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage, or 25 + 2d12 damage on a critical hit.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Vadin marks the target until the end of his next turn.&lt;/p&gt;]] (⚔) <b>Vicious Mace</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one or two creatures); [[/roll 1d20+15[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Vicious Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one or two creatures); &lt;u&gt;+15 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Vicious Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage, or 25 + 2d12 damage on a critical hit.&lt;/p&gt;]] <18>  damage, or 25 + [[/roll 2d12 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Vicious Mace&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 9 damage, or 25 + 2d12 damage on a critical hit.&lt;/p&gt;]] <13> damage on a critical hit.</p><p><i>Effect:</i> Vadin marks the target until the end of his next turn.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Howl of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 psychic damage, and the target is stunned (save ends).&lt;/p&gt;]] ᗕ <b>Howl of Madness</b> (psychic) ✦ <b>Encounter</b></p><p><i>Attack:</i> Close burst 3 (enemies in the burst); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Howl of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 3 (enemies in the burst); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Howl of Madness&lt;/b&gt; (psychic) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 psychic damage, and the target is stunned (save ends).&lt;/p&gt;]] <12.5>  psychic damage, and the target is stunned (save ends).</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crazed Retribution&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; An enemy within 5 squares of Vadin bloodies an ally.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 5 (triggering enemy in the burst); +13 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 psychic damage.&lt;/p&gt;]] ⚔ <b>Crazed Retribution</b> (psychic) ✦ <b>At-Will</b></p><p><i>Trigger:</i> An enemy within 5 squares of Vadin bloodies an ally.</p><p><i>Attack (Immediate Reaction):</i> Melee 5 (triggering enemy in the burst); [[/roll 1d20+13[ vs. Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crazed Retribution&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack (Immediate Reaction):&lt;/i&gt; Melee 5 (triggering enemy in the burst); &lt;u&gt;+13 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 1d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crazed Retribution&lt;/b&gt; (psychic) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 1d8 + 8 psychic damage.&lt;/p&gt;]] <12.5>  psychic damage.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Bound to the Deck&lt;/b&gt; ✦ &lt;b&gt;3/Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Vadin rolls initiative or his hit point total first drops to 141 or 70.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Vadin draws a new card from among the cards in his possession and immediately uses the power associated with that card.&lt;/p&gt;]]  <b>Bound to the Deck</b> ✦ <b>3/Encounter</b></p><p><i>Trigger:</i> Vadin rolls initiative or his hit point total first drops to 141 or 70.</p><p><i>Effect (No Action):</i> Vadin draws a new card from among the cards in his possession and immediately uses the power associated with that card.</p></tr></td></table>",

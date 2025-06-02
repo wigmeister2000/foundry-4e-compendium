@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Warped Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"B4cw2l81fJO6s0yZ",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"15",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -513,10 +515,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"6",
 				"rechargeCondition":"",
@@ -636,23 +638,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 110; <b>Bloodied</b> 55</td><td style=\"padding-left: 15px;\"><b>Init</b> +7</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 23</td><td><b>Ref</b> 16</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5, climb 5, swim 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+9)<br><b>Con</b> 22 (+11)</td><td><b>Dex</b> 14 (+7)<br><b>Int</b> 4 (+2)</td><td><b>Wis</b> 8 (+4)<br><b>Cha</b> 18 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; all-around vision,Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Warped Ground&lt;/b&gt; aura 3; enemies treat the area within the aura as difficult terrain.]] <b>Warped Ground</b> aura 3; enemies treat the area within the aura as difficult terrain.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6+6 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Acid</b></p><p>[[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+15 vs AC&lt;/u&gt;; 1d6+6 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+15 vs AC; 1d6+6 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] <9.5>  damage, and ongoing 5 acid damage (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Gibbering Feast&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;unnatural mouths appear on the targets and bite them; Close burst 5; targets dazed creatures in the burst; +15 vs AC; 1d6+6 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] ᗕ <b>Gibbering Feast</b> (standard, recharge ⚅</p><p>unnatural mouths appear on the targets and bite them; Close burst 5; targets dazed creatures in the burst; [[/roll 1d20+15[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Gibbering Feast&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;unnatural mouths appear on the targets and bite them; Close burst 5; targets dazed creatures in the burst; &lt;u&gt;+15 vs AC&lt;/u&gt;; 1d6+6 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Gibbering Feast&lt;/b&gt; (standard, recharge ⚅&lt;/p&gt;&lt;p&gt;unnatural mouths appear on the targets and bite them; Close burst 5; targets dazed creatures in the burst; +15 vs AC; 1d6+6 damage, and ongoing 5 acid damage (save ends). &lt;/p&gt;]] <9.5>  damage, and ongoing 5 acid damage (save ends). </p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gibbering&lt;/b&gt; (free, once on its turn before it takes other actions, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; deafened creatures are immune; +12 vs Will; the target is dazed until the end of the gibbering mouther\"s next turn. &lt;/p&gt;]] ᗕ <b>Gibbering</b> (free, once on its turn before it takes other actions, at-will) ✦ <b>Psychic</b></p><p>Close burst 5; deafened creatures are immune; [[/roll 1d20+12[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Gibbering&lt;/b&gt; (free, once on its turn before it takes other actions, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 5; deafened creatures are immune; &lt;u&gt;+12 vs Will&lt;/u&gt;; the target is dazed until the end of the gibbering mouther\"s next turn. &lt;/p&gt;]]; the target is dazed until the end of the gibbering mouther\"s next turn. </p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"12",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -540,7 +541,7 @@
 		},
 		{
 			"name":"Ravenous Charge",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"WrFjo1Y4Awvn5RT7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -576,7 +577,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -586,7 +588,7 @@
 		},
 		{
 			"name":"Pack Attack",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"SwmnJEaY8Vxlg3fR",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -622,7 +624,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -632,7 +635,7 @@
 		},
 		{
 			"name":"Blood Scent",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FJlBa1z23xjYoKdD",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -668,7 +671,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -724,23 +728,10 @@
 				"max":10
 			},
 			"init":{
-				"value":7,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":7
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 238; <b>Bloodied</b> 119</td><td style=\"padding-left: 15px;\"><b>Init</b> +7 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 23</td><td><b>Fort</b> 25</td><td><b>Ref</b> 23</td><td><b>Will</b> 21</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+9)<br><b>Con</b> 19 (+8)</td><td><b>Dex</b> 16 (+7)<br><b>Int</b> 4 (+1)</td><td><b>Wis</b> 17 (+7)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 17 | Insight 17</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+12 vs AC; 2d8+5 damage, and the target is knocked prone. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+12[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+12 vs AC&lt;/u&gt;; 2d8+5 damage, and the target is knocked prone. &lt;/p&gt;]]; [[/roll 2d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+12 vs AC; 2d8+5 damage, and the target is knocked prone. &lt;/p&gt;]] <14>  damage, and the target is knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Savage Rend&lt;/b&gt; (minor; target must be prone, at-will) &lt;/p&gt;&lt;p&gt;+10 vs Fortitude; 1d8+5 damage, and the target cannot stand until the end of its next turn. &lt;/p&gt;]] ⚔ <b>Savage Rend</b> (minor; target must be prone, at-will) </p><p>[[/roll 1d20+10[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Savage Rend&lt;/b&gt; (minor; target must be prone, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs Fortitude&lt;/u&gt;; 1d8+5 damage, and the target cannot stand until the end of its next turn. &lt;/p&gt;]]; [[/roll 1d8+5#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Savage Rend&lt;/b&gt; (minor; target must be prone, at-will) &lt;/p&gt;&lt;p&gt;+10 vs Fortitude; 1d8+5 damage, and the target cannot stand until the end of its next turn. &lt;/p&gt;]] <9.5>  damage, and the target cannot stand until the end of its next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blood-Hunter&lt;/b&gt; (immediate reaction, when an enemy within 6 squares is bloodied, at-will) &lt;/p&gt;&lt;p&gt;The hound charges the bloodied enemy.&lt;/p&gt;]] ⚔ <b>Blood-Hunter</b> (immediate reaction, when an enemy within 6 squares is bloodied, at-will) </p><p>The hound charges the bloodied enemy.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ravenous Charge&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the hound charges a bloodied enemy, its movement does not provoke opportunity attacks.&lt;/p&gt;]]  <b>Ravenous Charge</b></p><p>When the hound charges a bloodied enemy, its movement does not provoke opportunity attacks.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Pack Attack&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The hound of Yeenoghu deals an extra 5 damage on melee attacks against an enemy that has two or more of the hound’s allies adjacent to it.&lt;/p&gt;]]  <b>Pack Attack</b></p><p>The hound of Yeenoghu deals an extra 5 damage on melee attacks against an enemy that has two or more of the hound’s allies adjacent to it.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Blood Scent&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The hound of Yeenoghu remembers the taste of the blood of any creature it has ever bitten, even once. It gains a +10 bonus to Perception checks to detect or track such a creature.&lt;/p&gt;]]  <b>Blood Scent</b></p><p>The hound of Yeenoghu remembers the taste of the blood of any creature it has ever bitten, even once. It gains a +10 bonus to Perception checks to detect or track such a creature.</p></tr></td></table>",

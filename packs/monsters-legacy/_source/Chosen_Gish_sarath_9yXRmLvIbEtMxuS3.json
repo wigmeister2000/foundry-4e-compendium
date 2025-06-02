@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -661,10 +662,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -964,23 +965,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 342; <b>Bloodied</b> 171</td><td style=\"padding-left: 15px;\"><b>Init</b> +13 | <b>AP</b> 1 | <b>Save</b> +2 (+4 against charm effects)</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 32</td><td><b>Fort</b> 29</td><td><b>Ref</b> 30</td><td><b>Will</b> 31</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5 see also astral stride</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+12)<br><b>Con</b> 19 (+13)</td><td><b>Dex</b> 15 (+11)<br><b>Int</b> 21 (+14)</td><td><b>Wis</b> 15 (+11)<br><b>Cha</b> 19 (+13)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +19, History +16, Insight +16</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 21 | Insight 26</td></td></tr></table><p><b>Equipment</b> silver longsword, chainmail .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8 + 7 damage, plus 1d8 psychic damage.. &lt;/p&gt;]] (⚔) <b>Silver Longsword</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 1d8 + 7 damage, plus 1d8 psychic damage.. &lt;/p&gt;]]; [[/roll [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8 + 7 damage, plus 1d8 psychic damage.. &lt;/p&gt;]] <4.5> + 7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 1d8 + 7 damage, plus 1d8 psychic damage.. &lt;/p&gt;]] <11.5>  damage, plus 1d8 psychic damage.. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The gish’sarath makes two silver longsword attacks. &lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>The gish’sarath makes two silver longsword attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +21 vs Reflex; 3d6 + 5 force damage and the gish’sarath pushes the target 1 square. &lt;/p&gt;]] ➶ <b>Force Bolt</b> (standard, at-will) ✦ <b>Force</b></p><p>Ranged 10; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 3d6 + 5 force damage and the gish’sarath pushes the target 1 square. &lt;/p&gt;]]; [[/roll 3d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Force Bolt&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Force&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +21 vs Reflex; 3d6 + 5 force damage and the gish’sarath pushes the target 1 square. &lt;/p&gt;]] <15.5>  force damage and the gish’sarath pushes the target 1 square. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Storm of Stars&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 5; +23 vs AC; 2d8 + 6 fire damage. The gish’sarath makes four attacks, no more than two of&lt;/p&gt;&lt;p&gt;these against a single target.&lt;/p&gt;]] ➶ <b>Storm of Stars</b> (standard, encounter) ✦ <b>Fire</b></p><p>ranged 5; [[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Storm of Stars&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 5; &lt;u&gt;+23 vs AC&lt;/u&gt;; 2d8 + 6 fire damage. The gish’sarath makes four attacks, no more than two of&lt;/p&gt;]]; [[/roll 2d8 + 6#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Storm of Stars&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 5; +23 vs AC; 2d8 + 6 fire damage. The gish’sarath makes four attacks, no more than two of&lt;/p&gt;]] <15>  fire damage. The gish’sarath makes four attacks, no more than two of</p><p>these against a single target.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Astral Stride&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The chosen gith\"sarath teleports 6 squares and gains the insubstantial and phasing qualities until the start of its next turn.&lt;/p&gt;]]  <b>Astral Stride</b> (move; encounter) ✦ <b>Teleportation</b></p><p>The chosen gith\"sarath teleports 6 squares and gains the insubstantial and phasing qualities until the start of its next turn.</p></tr></td></table>",

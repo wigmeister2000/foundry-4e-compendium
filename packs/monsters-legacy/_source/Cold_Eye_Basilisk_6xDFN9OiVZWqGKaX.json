@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Icy Aura",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"fKh3XME42sbz6yGV",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"22",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -457,23 +459,10 @@
 				"max":10
 			},
 			"init":{
-				"value":11,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":11
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 151; <b>Bloodied</b> 75<hr><b>Immune</b> cold </td><td style=\"padding-left: 15px;\"><b>Init</b> +11</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 31</td><td><b>Fort</b> 27</td><td><b>Ref</b> 22</td><td><b>Will</b> 23</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4 (ice walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+12)<br><b>Con</b> 23 (+13)</td><td><b>Dex</b> 13 (+8)<br><b>Int</b> 2 (+3)</td><td><b>Wis</b> 15 (+9)<br><b>Cha</b> 8 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Icy Aura&lt;/b&gt; aura 2; any non-cold creature that starts its turn in the aura is slowed and enemies treat the area within the aura as difficult terrain.]] <b>Icy Aura</b> aura 2; any non-cold creature that starts its turn in the aura is slowed and enemies treat the area within the aura as difficult terrain.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8+6 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+22[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+22 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+22 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Freezing Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Gaze&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +20 vs Fortitude; 2d6 cold damage and ongoing 5 cold damage (save ends). First Failed Saving Throw: Ongoing 5 cold damage and the target is immobilized (save ends). Second Failed Saving Throw: Ongoing 10 cold damage and the target is stunned (save ends). Third Failed Saving Throw: Ongoing 15 cold damage and the target is frozen (save ends). A frozen target is stunned and unaware of its surroundings. &lt;/p&gt;]] ᗕ <b>Freezing Gaze</b> (standard, at-will) ✦ <b>Cold, Gaze</b></p><p>Close blast 3; [[/roll 1d20+20[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Freezing Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Gaze&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; &lt;u&gt;+20 vs Fortitude&lt;/u&gt;; 2d6 cold damage and ongoing 5 cold damage (save ends). First Failed Saving Throw: Ongoing 5 cold damage and the target is immobilized (save ends). Second Failed Saving Throw: Ongoing 10 cold damage and the target is stunned (save ends). Third Failed Saving Throw: Ongoing 15 cold damage and the target is frozen (save ends). A frozen target is stunned and unaware of its surroundings. &lt;/p&gt;]]; [[/roll 2d6 #&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Freezing Gaze&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Cold, Gaze&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; +20 vs Fortitude; 2d6 cold damage and ongoing 5 cold damage (save ends). First Failed Saving Throw: Ongoing 5 cold damage and the target is immobilized (save ends). Second Failed Saving Throw: Ongoing 10 cold damage and the target is stunned (save ends). Third Failed Saving Throw: Ongoing 15 cold damage and the target is frozen (save ends). A frozen target is stunned and unaware of its surroundings. &lt;/p&gt;]] <7> cold damage and ongoing 5 cold damage (save ends). First Failed Saving Throw: Ongoing 5 cold damage and the target is immobilized (save ends). Second Failed Saving Throw: Ongoing 10 cold damage and the target is stunned (save ends). Third Failed Saving Throw: Ongoing 15 cold damage and the target is frozen (save ends). A frozen target is stunned and unaware of its surroundings. </p></tr></td></table>",

@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -470,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -547,7 +548,7 @@
 		},
 		{
 			"name":"Brutal Bruiser",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"OQvoEyLk7sGz5X9U",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -583,7 +584,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -639,23 +641,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 107; <b>Bloodied</b> 53</td><td style=\"padding-left: 15px;\"><b>Init</b> +6</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 21</td><td><b>Ref</b> 19</td><td><b>Will</b> 19</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+9)<br><b>Con</b> 17 (+7)</td><td><b>Dex</b> 15 (+6)<br><b>Int</b> 9 (+3)</td><td><b>Wis</b> 15 (+6)<br><b>Cha</b> 11 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Intimidate +9</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> greatsword , scale armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 4d6+5 damage. &lt;/p&gt;]] (⚔) <b>Greatsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+11 vs AC&lt;/u&gt;; 4d6+5 damage. &lt;/p&gt;]]; [[/roll 4d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+11 vs AC; 4d6+5 damage. &lt;/p&gt;]] <19>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Deadly Sweep&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +13 vs Fortitude; 2d6+5 damage, and the target is knocked prone until the end of Julius’s next turn. &lt;/p&gt;]] ᗕ <b>Deadly Sweep</b> (standard, recharge ⚄⚅) ✦ <b>Weapon</b></p><p>Close burst 1; [[/roll 1d20+13[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Deadly Sweep&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+13 vs Fortitude&lt;/u&gt;; 2d6+5 damage, and the target is knocked prone until the end of Julius’s next turn. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Deadly Sweep&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 1; +13 vs Fortitude; 2d6+5 damage, and the target is knocked prone until the end of Julius’s next turn. &lt;/p&gt;]] <12>  damage, and the target is knocked prone until the end of Julius’s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Feed the Void&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;targets a bloodied, living enemy; +11 vs AC; 6d6+5 necrotic damage. &lt;/p&gt;]] ⚔ <b>Feed the Void</b> (standard, encounter) ✦ <b>Necrotic, Weapon</b></p><p>targets a bloodied, living enemy; [[/roll 1d20+11[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Feed the Void&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;targets a bloodied, living enemy; &lt;u&gt;+11 vs AC&lt;/u&gt;; 6d6+5 necrotic damage. &lt;/p&gt;]]; [[/roll 6d6+5#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Feed the Void&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;targets a bloodied, living enemy; +11 vs AC; 6d6+5 necrotic damage. &lt;/p&gt;]] <26>  necrotic damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Brutal Bruiser&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Julius deals 1d6 extra damage on attacks made against slowed or immobilized foes or against any creature granting combat advantage to him.&lt;/p&gt;]]  <b>Brutal Bruiser</b></p><p>Julius deals [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Brutal Bruiser&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Julius deals 1d6 extra damage on attacks made against slowed or immobilized foes or against any creature granting combat advantage to him.&lt;/p&gt;]] <3.5> extra damage on attacks made against slowed or immobilized foes or against any creature granting combat advantage to him.</p></tr></td></table>",

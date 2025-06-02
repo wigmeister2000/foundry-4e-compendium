@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"34",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +290,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -470,10 +471,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1136,23 +1137,10 @@
 				"max":10
 			},
 			"init":{
-				"value":20,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":20
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1295; <b>Bloodied</b> 647<hr><b>Resist</b> 30 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +20 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 45</td><td><b>Fort</b> 41</td><td><b>Ref</b> 43</td><td><b>Will</b> 42</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, teleport 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+20)<br><b>Con</b> 27 (+22)</td><td><b>Dex</b> 23 (+20)<br><b>Int</b> 30 (+24)</td><td><b>Wis</b> 24 (+21)<br><b>Cha</b> 29 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +29, Bluff +28, History +29, Insight +26, Religion +29</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 31 | Insight 36</td></td></tr></table><p><b>Equipment</b> scarlet robe, rod of dispater  +6 .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smiting Rod&lt;/b&gt; (standard; requires rod of dispater, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+34 vs AC; 2d8+10 damage (crit 8d8+10), and the target is pushed 2 squares and dazed (save ends). &lt;/p&gt;]] (⚔) <b>Smiting Rod</b> (standard; requires rod of dispater, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+34[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smiting Rod&lt;/b&gt; (standard; requires rod of dispater, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+34 vs AC&lt;/u&gt;; 2d8+10 damage (crit 8d8+10), and the target is pushed 2 squares and dazed (save ends). &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smiting Rod&lt;/b&gt; (standard; requires rod of dispater, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+34 vs AC; 2d8+10 damage (crit 8d8+10), and the target is pushed 2 squares and dazed (save ends). &lt;/p&gt;]] <19>  damage (crit [[/roll 8d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Smiting Rod&lt;/b&gt; (standard; requires rod of dispater, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+34 vs AC; 2d8+10 damage (crit 8d8+10), and the target is pushed 2 squares and dazed (save ends). &lt;/p&gt;]] <46> ), and the target is pushed 2 squares and dazed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Scathing Rod&lt;/b&gt; (standard; requires rod of dispater, at-will) ✦ &lt;b&gt;Acid, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20; +32 vs Reflex; 2d8+10 acid damage, and the target takes a -2 penalty to attacks rolls until the end of Dispater\"s next turn. &lt;/p&gt;]] ➶ <b>Scathing Rod</b> (standard; requires rod of dispater, at-will) ✦ <b>Acid, Implement</b></p><p>ranged 20; [[/roll 1d20+32[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Scathing Rod&lt;/b&gt; (standard; requires rod of dispater, at-will) ✦ &lt;b&gt;Acid, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20; &lt;u&gt;+32 vs Reflex&lt;/u&gt;; 2d8+10 acid damage, and the target takes a -2 penalty to attacks rolls until the end of Dispater\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Scathing Rod&lt;/b&gt; (standard; requires rod of dispater, at-will) ✦ &lt;b&gt;Acid, Implement&lt;/b&gt;&lt;/p&gt;&lt;p&gt;ranged 20; +32 vs Reflex; 2d8+10 acid damage, and the target takes a -2 penalty to attacks rolls until the end of Dispater\"s next turn. &lt;/p&gt;]] <19>  acid damage, and the target takes a -2 penalty to attacks rolls until the end of Dispater\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Inveigle&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Will; 2d8+10 psychic damage, and the target slides 3 squares and is dominated (save ends). Aftereffect: The target is dazed until the end of its next turn. &lt;/p&gt;]] ➶ <b>Inveigle</b> (standard, recharge ⚃⚄⚅) ✦ <b>Charm, Psychic</b></p><p>Ranged 20; [[/roll 1d20+32[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Inveigle&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; &lt;u&gt;+32 vs Will&lt;/u&gt;; 2d8+10 psychic damage, and the target slides 3 squares and is dominated (save ends). Aftereffect: The target is dazed until the end of its next turn. &lt;/p&gt;]]; [[/roll 2d8+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Inveigle&lt;/b&gt; (standard, recharge ⚃⚄⚅) ✦ &lt;b&gt;Charm, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 20; +32 vs Will; 2d8+10 psychic damage, and the target slides 3 squares and is dominated (save ends). Aftereffect: The target is dazed until the end of its next turn. &lt;/p&gt;]] <19>  psychic damage, and the target slides 3 squares and is dominated (save ends). Aftereffect: The target is dazed until the end of its next turn. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blasphemous Reply&lt;/b&gt; (immediate reaction, when hit by a melee attack, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the attacker; +32 vs Will; 3d8+10 thunder damage, and the target is pushed 1 square. &lt;/p&gt;]] ⚔ <b>Blasphemous Reply</b> (immediate reaction, when hit by a melee attack, at-will) ✦ <b>Thunder</b></p><p>Targets the attacker; [[/roll 1d20+32[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blasphemous Reply&lt;/b&gt; (immediate reaction, when hit by a melee attack, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the attacker; &lt;u&gt;+32 vs Will&lt;/u&gt;; 3d8+10 thunder damage, and the target is pushed 1 square. &lt;/p&gt;]]; [[/roll 3d8+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Blasphemous Reply&lt;/b&gt; (immediate reaction, when hit by a melee attack, at-will) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets the attacker; +32 vs Will; 3d8+10 thunder damage, and the target is pushed 1 square. &lt;/p&gt;]] <23.5>  thunder damage, and the target is pushed 1 square. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Gates of Dis&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Conjuration, Fire&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area wall 10 within 20 squares. Dispater conjures a lattice of scalding iron that lasts until the start of his next turn. The wall blocks movement and line of effect, but it does not block line of sight. Creatures that end their turn adjacent to the wall take 10 fire damage. Creatures pulled, pushed, or slid adjacent to the wall take 20 fire damage. The wall is 4 squares high and cannot be destroyed.&lt;/p&gt;]] ✻ <b>Gates of Dis</b> (minor, at-will) ✦ <b>Conjuration, Fire</b></p><p>Area wall 10 within 20 squares. Dispater conjures a lattice of scalding iron that lasts until the start of his next turn. The wall blocks movement and line of effect, but it does not block line of sight. Creatures that end their turn adjacent to the wall take 10 fire damage. Creatures pulled, pushed, or slid adjacent to the wall take 20 fire damage. The wall is 4 squares high and cannot be destroyed.</p></tr></td><tr><td><h4><b>Free</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Diabolic Awe&lt;/b&gt; (free 1/round, when an enemy within 10 squares becomes bloodied or takes a critical hit; at-will) ✦ &lt;b&gt;Fear, Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The enemy is pushed 3 squares away from Dispater and is dazed until the end of Dispater’s next turn. Creatures with the devil keyword within 10 squares of Dispater regain 20 hit points.&lt;/p&gt;]]  <b>Diabolic Awe</b> (free 1/round, when an enemy within 10 squares becomes bloodied or takes a critical hit; at-will) ✦ <b>Fear, Healing</b></p><p>The enemy is pushed 3 squares away from Dispater and is dazed until the end of Dispater’s next turn. Creatures with the devil keyword within 10 squares of Dispater regain 20 hit points.</p></tr></td></table>",

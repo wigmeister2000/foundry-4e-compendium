@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Undulating Winds",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"jbHh5SaedTpXOLuN",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Flat Body",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FMWs8g1NZJzrxjI7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -98,7 +100,7 @@
 		},
 		{
 			"name":"Unhindered",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"68lfz35muLcHg7EY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -134,7 +136,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -199,7 +202,8 @@
 					"defBonus":0,
 					"formula":"30",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1266,23 +1270,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 952; <b>Bloodied</b> 476<hr><b>Resist</b> 15 lightning, 15 thunder <b>Immune</b> dazed, stunned </td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 39</td><td><b>Fort</b> 39</td><td><b>Ref</b> 35</td><td><b>Will</b> 37</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 4, fly 12 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+22)<br><b>Con</b> 30 (+22)</td><td><b>Dex</b> 22 (+18)<br><b>Int</b> 2 (+8)</td><td><b>Wis</b> 27 (+20)<br><b>Cha</b> 8 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 30 | Insight 30</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Undulating Winds&lt;/b&gt; (thunder) ✦ &lt;b&gt;Aura&lt;/b&gt; 3&lt;/p&gt;&lt;p&gt;Any creature that starts its turn within the aura or within the elder’s space takes 15 thunder damage, and the elder slides it 3 squares to a square within the aura.&lt;/p&gt;]] ⌀ <b>Undulating Winds</b> (thunder) ✦ <b>Aura</b> 3</p><p>Any creature that starts its turn within the aura or within the elder’s space takes 15 thunder damage, and the elder slides it 3 squares to a square within the aura.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Flat Body&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Creatures can enter and end their moves in the elder’s space.&lt;/p&gt;]]  <b>Flat Body</b> <b></b></p><p>Creatures can enter and end their moves in the elder’s space.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unhindered&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the cloud ray elder moves, it pulls with it any creature grabbed by it. In addition, the creature remains grabbed, and the elder does not provoke an opportunity attack from the grabbed creature.&lt;/p&gt;]]  <b>Unhindered</b> <b></b></p><p>When the cloud ray elder moves, it pulls with it any creature grabbed by it. In addition, the creature remains grabbed, and the elder does not provoke an opportunity attack from the grabbed creature.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 5 (one creature); +30 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 thunder damage, and ongoing 10 thunder damage (save ends).&lt;/p&gt;]] (⚔) <b>Sting</b> (thunder) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 5 (one creature); [[/roll 1d20+30[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 5 (one creature); &lt;u&gt;+30 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Sting&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 10 thunder damage, and ongoing 10 thunder damage (save ends).&lt;/p&gt;]] <21>  thunder damage, and ongoing 10 thunder damage (save ends).</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Thunder Lash&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 5 (one creature); +30 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 10 damage, and the elder makes a secondary attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; Close burst 5 centered on the primary target (enemies in the burst other than the primary target); +28 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 6 thunder damage, and the secondary target is pushed 3 squares away from the primary target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ⚔ <b>Thunder Lash</b> (thunder) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 5 (one creature); [[/roll 1d20+30[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Thunder Lash&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 5 (one creature); &lt;u&gt;+30 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Thunder Lash&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 10 damage, and the elder makes a secondary attack.&lt;/p&gt;]] <32>  damage, and the elder makes a secondary attack.</p><p><i>Secondary Attack:</i> Close burst 5 centered on the primary target (enemies in the burst other than the primary target); [[/roll 1d20+28[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Thunder Lash&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Secondary Attack:&lt;/i&gt; Close burst 5 centered on the primary target (enemies in the burst other than the primary target); &lt;u&gt;+28 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d8 + 6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Thunder Lash&lt;/b&gt; (thunder) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d8 + 6 thunder damage, and the secondary target is pushed 3 squares away from the primary target.&lt;/p&gt;]] <24>  thunder damage, and the secondary target is pushed 3 squares away from the primary target.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Scooping Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); +28 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 10 damage, and the elder can grab the target if the elder has fewer than three creatures grabbed.&lt;/p&gt;]] ᗕ <b>Scooping Bite</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Close blast 5 (enemies in the blast); [[/roll 1d20+28[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Scooping Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close blast 5 (enemies in the blast); &lt;u&gt;+28 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Scooping Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d10 + 10 damage, and the elder can grab the target if the elder has fewer than three creatures grabbed.&lt;/p&gt;]] <26.5>  damage, and the elder can grab the target if the elder has fewer than three creatures grabbed.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Gliding Menace&lt;/b&gt; ✦ Recharge ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The elder flies its speed and uses thunder lash and scooping bite, each at a different point during the movement. It does not provoke opportunity attacks when moving away from the target of each attack.&lt;/p&gt;]] ⚔ <b>Gliding Menace</b> ✦ Recharge ⚄ ⚅</p><p><i>Effect:</i> The elder flies its speed and uses thunder lash and scooping bite, each at a different point during the movement. It does not provoke opportunity attacks when moving away from the target of each attack.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crush&lt;/b&gt; ✦ &lt;b&gt;At-Will (1/round)&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one, two, or three creatures grabbed by the elder); +28 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 14 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The elder sustains each of its grabs.&lt;/p&gt;]] ⚔ <b>Crush</b> ✦ <b>At-Will (1/round)</b></p><p><i>Attack:</i> Melee 1 (one, two, or three creatures grabbed by the elder); [[/roll 1d20+28[ vs. Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crush&lt;/b&gt; ✦ &lt;b&gt;At-Will (1/round)&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one, two, or three creatures grabbed by the elder); &lt;u&gt;+28 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 14#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Crush&lt;/b&gt; ✦ &lt;b&gt;At-Will (1/round)&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 14 damage.&lt;/p&gt;]] <36>  damage.</p><p><i>Effect:</i> The elder sustains each of its grabs.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dream Flight&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The elder is first bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The elder teleports 15 squares, teleporting with it any creature grabbed by it. The elder then makes the following attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); +29 vs. Fortitude&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dazed and slowed (save ends both).&lt;/p&gt;&lt;p&gt;&lt;i&gt;First Failed Saving Throw:&lt;/i&gt; The target is instead stunned (save ends).&lt;/p&gt;&lt;p&gt;&lt;i&gt;Second Failed Saving Throw:&lt;/i&gt; The target is instead unconscious (save ends).&lt;/p&gt;]] ᗕ <b>Dream Flight</b> (teleportation) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The elder is first bloodied.</p><p><i>Effect (Free Action):</i> The elder teleports 15 squares, teleporting with it any creature grabbed by it. The elder then makes the following attack.</p><p><i>Attack:</i> Close burst 2 (enemies in the burst); [[/roll 1d20+29[ vs. Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Dream Flight&lt;/b&gt; (teleportation) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 2 (enemies in the burst); &lt;u&gt;+29 vs. Fortitude&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dazed and slowed (save ends both).</p><p><i>First Failed Saving Throw:</i> The target is instead stunned (save ends).</p><p><i>Second Failed Saving Throw:</i> The target is instead unconscious (save ends).</p></tr></td></table>",

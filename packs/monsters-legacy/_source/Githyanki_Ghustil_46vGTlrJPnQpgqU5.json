@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -120,10 +121,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -312,10 +313,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1149,23 +1150,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 108; <b>Bloodied</b> 54</td><td style=\"padding-left: 15px;\"><b>Init</b> +15 | <b>Save</b> +2 against charm effects</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 26</td><td><b>Will</b> 27</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 13 (+8)<br><b>Con</b> 18 (+11)</td><td><b>Dex</b> 19 (+11)<br><b>Int</b> 16 (+10)</td><td><b>Wis</b> 23 (+13)<br><b>Cha</b> 14 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech, Draconic<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +15, Religion +15</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><p><b>Equipment</b> silver longsword, cloth armor (basic clothing) .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+3 damage plus 1d6 psychic damage. &lt;/p&gt;]] (⚔) <b>Silver Longsword</b> (standard, at-will) ✦ <b>Psychic, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+3 damage plus 1d6 psychic damage. &lt;/p&gt;]]; [[/roll 1d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+3 damage plus 1d6 psychic damage. &lt;/p&gt;]] <7.5>  damage plus [[/roll 1d6 #&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Silver Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 1d8+3 damage plus 1d6 psychic damage. &lt;/p&gt;]] <3.5> psychic damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Necrotic Smite&lt;/b&gt; (standard; usable only while affected by cloak of shadows, at-will) ✦ &lt;b&gt;Necrotic, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+3 damage plus 1d8 necrotic damage plus 1d8 radiant damage. &lt;/p&gt;]] ⚔ <b>Necrotic Smite</b> (standard; usable only while affected by cloak of shadows, at-will) ✦ <b>Necrotic, Radiant, Weapon</b></p><p>[[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Necrotic Smite&lt;/b&gt; (standard; usable only while affected by cloak of shadows, at-will) ✦ &lt;b&gt;Necrotic, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+3 damage plus 1d8 necrotic damage plus 1d8 radiant damage. &lt;/p&gt;]]; [[/roll 2d8+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Necrotic Smite&lt;/b&gt; (standard; usable only while affected by cloak of shadows, at-will) ✦ &lt;b&gt;Necrotic, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+3 damage plus 1d8 necrotic damage plus 1d8 radiant damage. &lt;/p&gt;]] <12>  damage plus [[/roll [[/roll 1d8 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Necrotic Smite&lt;/b&gt; (standard; usable only while affected by cloak of shadows, at-will) ✦ &lt;b&gt;Necrotic, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+3 damage plus 1d8 necrotic damage plus 1d8 radiant damage. &lt;/p&gt;]] <4.5> #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Necrotic Smite&lt;/b&gt; (standard; usable only while affected by cloak of shadows, at-will) ✦ &lt;b&gt;Necrotic, Radiant, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+19 vs AC; 2d8+3 damage plus 1d8 necrotic damage plus 1d8 radiant damage. &lt;/p&gt;]] <4.5> necrotic damage plus 1d8 radiant damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cloak of Shadows&lt;/b&gt; (standard; at-will) &lt;/p&gt;&lt;p&gt;The githyanki ghustil gains total concealment against all enemies until the end of its next turn.&lt;/p&gt;]]  <b>Cloak of Shadows</b> (standard; at-will) </p><p>The githyanki ghustil gains total concealment against all enemies until the end of its next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Capture Divinity&lt;/b&gt; (immediate reaction, when an enemy within 10 squares of the githyanki ghustil uses a divine power; encounter) ✦ &lt;b&gt;Healing&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The githyanki ghustil regains 27 hit points.&lt;/p&gt;]]  <b>Capture Divinity</b> (immediate reaction, when an enemy within 10 squares of the githyanki ghustil uses a divine power; encounter) ✦ <b>Healing</b></p><p>The githyanki ghustil regains 27 hit points.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Gift of Vlaakith&lt;/b&gt; (minor; recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;One githyanki ally within 10 squares of the githyanki ghustil gains 15 temporary hit points.&lt;/p&gt;]]  <b>Gift of Vlaakith</b> (minor; recharge ⚄⚅) </p><p>One githyanki ally within 10 squares of the githyanki ghustil gains 15 temporary hit points.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Telekinetic Leap&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The githyanki ghustil or an ally within 10 squares of it can fly 5 squares.&lt;/p&gt;]]  <b>Telekinetic Leap</b> (move; encounter) </p><p>The githyanki ghustil or an ally within 10 squares of it can fly 5 squares.</p></tr></td></table>",

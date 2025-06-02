@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Shifting Scales",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FlCr0fRgaJWPzOQ7",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -153,10 +155,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -764,7 +766,7 @@
 		},
 		{
 			"name":"Bloody Rampage",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"LT1MId7pPhW2wrGu",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -800,7 +802,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -856,23 +859,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 332; <b>Bloodied</b> 166</td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 19</td><td><b>Fort</b> 24</td><td><b>Ref</b> 19</td><td><b>Will</b> 18</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 can\"t shift</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+8)<br><b>Con</b> 19 (+7)</td><td><b>Dex</b> 14 (+5)<br><b>Int</b> 1 (null)</td><td><b>Wis</b> 12 (+4)<br><b>Cha</b> 1 (null)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Shifting Scales&lt;/b&gt; aura 2; any enemy the starts its turn within the aura takes 5 damage, and the scale golem slides the enemy 1 square.]] <b>Shifting Scales</b> aura 2; any enemy the starts its turn within the aura takes 5 damage, and the scale golem slides the enemy 1 square.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 2d8+6 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+10 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The golem makes two slam attacks&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The golem makes two slam attacks</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Golem Rampage&lt;/b&gt; (standard, recharge 5; see also bloody rampage) &lt;/p&gt;&lt;p&gt;The scale golem moves up to its speed plus 2 and can move through enemies’ spaces. When it enters a creature’s space, the golem makes a slam attack against that creature. On each use of golem rampage, the golem can make only one slam attack against each creature&lt;/p&gt;]] ⚔ <b>Golem Rampage</b> (standard, recharge 5; see also bloody rampage) </p><p>The scale golem moves up to its speed plus 2 and can move through enemies’ spaces. When it enters a creature’s space, the golem makes a slam attack against that creature. On each use of golem rampage, the golem can make only one slam attack against each creature</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Eviscerating Explosion&lt;/b&gt; ( when first bloodied and again when the scale golem drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 3; +8 vs Reflex; 3d8+6 damage. &lt;/p&gt;]] ᗕ <b>Eviscerating Explosion</b> ( when first bloodied and again when the scale golem drops to 0 hit points, ) </p><p>Close burst 3; [[/roll 1d20+8[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Eviscerating Explosion&lt;/b&gt; ( when first bloodied and again when the scale golem drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+8 vs Reflex&lt;/u&gt;; 3d8+6 damage. &lt;/p&gt;]]; [[/roll 3d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Eviscerating Explosion&lt;/b&gt; ( when first bloodied and again when the scale golem drops to 0 hit points, ) &lt;/p&gt;&lt;p&gt;Close burst 3; +8 vs Reflex; 3d8+6 damage. &lt;/p&gt;]] <19.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Bloody Rampage&lt;/b&gt; (while bloodied) &lt;/p&gt;&lt;p&gt;Golem rampage recharges on 4 5 6.&lt;/p&gt;]]  <b>Bloody Rampage</b> (while bloodied) </p><p>Golem rampage recharges on 4 5 6.</p></tr></td></table>",

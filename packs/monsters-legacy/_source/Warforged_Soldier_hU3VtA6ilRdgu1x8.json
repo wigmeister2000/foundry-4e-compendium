@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -184,7 +185,7 @@
 		},
 		{
 			"name":"Battlefield Tactics",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Mm4hODGrUuyBEW2L",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -220,7 +221,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -454,23 +456,10 @@
 				"max":10
 			},
 			"init":{
-				"value":6,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":6
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 56; <b>Bloodied</b> 28</td><td style=\"padding-left: 15px;\"><b>Init</b> +6 | <b>Save</b> +2 against ongoing damage</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 20</td><td><b>Fort</b> 17</td><td><b>Ref</b> 15</td><td><b>Will</b> 14</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+6)<br><b>Con</b> 16 (+5)</td><td><b>Dex</b> 14 (+4)<br><b>Int</b> 10 (+2)</td><td><b>Wis</b> 12 (+3)<br><b>Cha</b> 10 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> Any</td></tr><tr><td><b>Skills</b> Endurance +8, Intimidate +7</td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> heavy shield , longsword , plate armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 1d8+4 damage, and the target is marked until the end of the warforged soldier’s next turn. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) </p><p>[[/roll 1d20+9[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+9 vs AC&lt;/u&gt;; 1d8+4 damage, and the target is marked until the end of the warforged soldier’s next turn. &lt;/p&gt;]]; [[/roll 1d8+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+9 vs AC; 1d8+4 damage, and the target is marked until the end of the warforged soldier’s next turn. &lt;/p&gt;]] <8.5>  damage, and the target is marked until the end of the warforged soldier’s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Battlefield Tactics&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The warforged soldier gains a +1 bonus to melee attacks if it has an ally adjacent to the target.&lt;/p&gt;]]  <b>Battlefield Tactics</b></p><p>The warforged soldier gains a +1 bonus to melee attacks if it has an ally adjacent to the target.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Warforged Resolve&lt;/b&gt; (minor; only while bloodied; encounter) &lt;/p&gt;&lt;p&gt;The warforged soldier gains 14 temporary hit points.&lt;/p&gt;]]  <b>Warforged Resolve</b> (minor; only while bloodied; encounter) </p><p>The warforged soldier gains 14 temporary hit points.</p></tr></td></table>",

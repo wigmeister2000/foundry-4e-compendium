@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Lethal Fascination",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Za4sMTXKVCyAxjkd",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"28",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -460,23 +462,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":8,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 199; <b>Bloodied</b> 99<hr><b>Resist</b> 20 necrotic <b>Vulnerable</b> 10 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 37</td><td><b>Fort</b> 33</td><td><b>Ref</b> 33</td><td><b>Will</b> 34</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+16)<br><b>Con</b> 23 (+16)</td><td><b>Dex</b> 22 (+16)<br><b>Int</b> 10 (+10)</td><td><b>Wis</b> 25 (+17)<br><b>Cha</b> 3 (+6)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common, Draconic<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Lethal Fascination&lt;/b&gt; aura 5; the aura is difficult terrain for enemies.]] <b>Lethal Fascination</b> aura 5; the aura is difficult terrain for enemies.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 2d6+7 poison and necrotic damage, and ongoing 10 poison and necrotic damage (save ends). Aftereffect: The target is dazed until the end of the bone naga’s next turn. In addition, a target is marked as long as it suffers any effect from the bite. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) ✦ <b>Necrotic, Poison</b></p><p>Reach 2; [[/roll 1d20+28[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+28 vs AC&lt;/u&gt;; 2d6+7 poison and necrotic damage, and ongoing 10 poison and necrotic damage (save ends). Aftereffect: The target is dazed until the end of the bone naga’s next turn. In addition, a target is marked as long as it suffers any effect from the bite. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Necrotic, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +28 vs AC; 2d6+7 poison and necrotic damage, and ongoing 10 poison and necrotic damage (save ends). Aftereffect: The target is dazed until the end of the bone naga’s next turn. In addition, a target is marked as long as it suffers any effect from the bite. &lt;/p&gt;]] <14>  poison and necrotic damage, and ongoing 10 poison and necrotic damage (save ends). Aftereffect: The target is dazed until the end of the bone naga’s next turn. In addition, a target is marked as long as it suffers any effect from the bite. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Death Lure&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +24 vs Will; 2d6+7 necrotic and psychic damage, and the target is marked (save ends) and pulled 1 square closer to the bone naga. &lt;/p&gt;]] ᗕ <b>Death Lure</b> (standard, recharge ⚄⚅) ✦ <b>Necrotic, Psychic</b></p><p>Close burst 3; targets enemies; [[/roll 1d20+24[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Death Lure&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; &lt;u&gt;+24 vs Will&lt;/u&gt;; 2d6+7 necrotic and psychic damage, and the target is marked (save ends) and pulled 1 square closer to the bone naga. &lt;/p&gt;]]; [[/roll 2d6+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Death Lure&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Necrotic, Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 3; targets enemies; +24 vs Will; 2d6+7 necrotic and psychic damage, and the target is marked (save ends) and pulled 1 square closer to the bone naga. &lt;/p&gt;]] <14>  necrotic and psychic damage, and the target is marked (save ends) and pulled 1 square closer to the bone naga. </p></tr></td></table>",

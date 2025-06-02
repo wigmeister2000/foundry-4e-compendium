@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"10",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -109,10 +110,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1133,23 +1134,10 @@
 				"max":10
 			},
 			"init":{
-				"value":4,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":4
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 79; <b>Bloodied</b> 39</td><td style=\"padding-left: 15px;\"><b>Init</b> +4</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 21</td><td><b>Fort</b> 19</td><td><b>Ref</b> 19</td><td><b>Will</b> 20</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (8 while charging)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 11 (+3)<br><b>Con</b> 15 (+5)</td><td><b>Dex</b> 12 (+4)<br><b>Int</b> 14 (+5)</td><td><b>Wis</b> 16 (+6)<br><b>Cha</b> 8 (+2)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Giant<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Arcana +10, Nature +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><p><b>Equipment</b> 5 acid jars, 5 glue flasks, 5 stink bombs, club , leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+4 damage. &lt;/p&gt;]] (⚔) <b>Club</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+10[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+10 vs AC&lt;/u&gt;; 1d6+4 damage. &lt;/p&gt;]]; [[/roll 1d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Club&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+10 vs AC; 1d6+4 damage. &lt;/p&gt;]] <7.5>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Warrior\"s Surge&lt;/b&gt; (standard; usable only while bloodied, encounter) ✦ &lt;b&gt;Healing, Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The orc raider makes a melee basic attack and regains 11 hit points.&lt;/p&gt;]] ⚔ <b>Warrior\"s Surge</b> (standard; usable only while bloodied, encounter) ✦ <b>Healing, Weapon</b></p><p>The orc raider makes a melee basic attack and regains 11 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Acid Jar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +11 vs Reflex; 1d10+4 acid damage, and each creature adjacent to the target takes 2 acid damage. &lt;/p&gt;]] ➶ <b>Acid Jar</b> (standard, at-will) ✦ <b>Acid</b></p><p>Ranged 5; [[/roll 1d20+11[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Acid Jar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; &lt;u&gt;+11 vs Reflex&lt;/u&gt;; 1d10+4 acid damage, and each creature adjacent to the target takes 2 acid damage. &lt;/p&gt;]]; [[/roll 1d10+4#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Acid Jar&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 5; +11 vs Reflex; 1d10+4 acid damage, and each creature adjacent to the target takes 2 acid damage. &lt;/p&gt;]] <9.5>  acid damage, and each creature adjacent to the target takes 2 acid damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Caustic Glue&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10 squares; +11 vs Reflex; 1d4+2 acid damage and is slowed (save ends). &lt;/p&gt;]] ✻ <b>Caustic Glue</b> (standard, at-will) ✦ <b>Acid</b></p><p>Area burst 1 within 10 squares; [[/roll 1d20+11[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Caustic Glue&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10 squares; &lt;u&gt;+11 vs Reflex&lt;/u&gt;; 1d4+2 acid damage and is slowed (save ends). &lt;/p&gt;]]; [[/roll 1d4+2#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Caustic Glue&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10 squares; +11 vs Reflex; 1d4+2 acid damage and is slowed (save ends). &lt;/p&gt;]] <4.5>  acid damage and is slowed (save ends). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Stink Bomb&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 3; The blast creates a zone that lasts until the end of the orc alchemist’s next turn. Creatures within the zone take a -2 penalty to attack rolls and to all defenses.&lt;/p&gt;]] ᗕ <b>Stink Bomb</b> (standard, at-will) ✦ <b>Zone</b></p><p>Close blast 3; The blast creates a zone that lasts until the end of the orc alchemist’s next turn. Creatures within the zone take a -2 penalty to attack rolls and to all defenses.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Alchemical Barrage&lt;/b&gt; (standard; recharge ⚅) ✦ &lt;b&gt;Acid&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The orc alchemist makes two attacks, choosing any combination of acid jar, caustic glue, and stink bomb.&lt;/p&gt;]]  <b>Alchemical Barrage</b> (standard; recharge ⚅) ✦ <b>Acid</b></p><p>The orc alchemist makes two attacks, choosing any combination of acid jar, caustic glue, and stink bomb.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Blood Ground",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"goE0kJOWLmswcxqT",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"26",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -511,10 +513,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1173,23 +1175,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 508; <b>Bloodied</b> 254</td><td style=\"padding-left: 15px;\"><b>Init</b> +18 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 36</td><td><b>Fort</b> 37</td><td><b>Ref</b> 34</td><td><b>Will</b> 33</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8 (earth walk)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 27 (+19)<br><b>Con</b> 24 (+18)</td><td><b>Dex</b> 25 (+18)<br><b>Int</b> 17 (+14)</td><td><b>Wis</b> 23 (+17)<br><b>Cha</b> 19 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal, Common<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +24, Intimidate +20, Nature +22</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 27 | Insight 27</td></td></tr></table><p><b>Equipment</b> greataxe .</p><p>[[/roll 0#&lt;b&gt;Blood Ground&lt;/b&gt; aura 3; a creature in the aura that makes a melee attack against a bloodied target gains a +3 bonus to damage rolls, and a bloodied creature that makes a melee attack gains a +5 bonus to damage rolls. The two bonuses stack.]] <b>Blood Ground</b> aura 3; a creature in the aura that makes a melee attack against a bloodied target gains a +3 bonus to damage rolls, and a bloodied creature that makes a melee attack gains a +5 bonus to damage rolls. The two bonuses stack.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 3d6+8 damage (crit 9d6+26). &lt;/p&gt;]] (⚔) <b>Greataxe</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 3d6+8 damage (crit 9d6+26). &lt;/p&gt;]]; [[/roll 3d6+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 3d6+8 damage (crit 9d6+26). &lt;/p&gt;]] <18.5>  damage (crit [[/roll 9d6+26#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greataxe&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 3d6+8 damage (crit 9d6+26). &lt;/p&gt;]] <57.5> ). </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Brutal Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The aspect of Baphomet charges a creature and makes the following attack in addition to the normal melee basic attack; +24 vs Fortitude; 3d12+8 damage, slide the target 2 squares , and the target is knocked prone. &lt;/p&gt;]] ⚔ <b>Brutal Charge</b> (standard, at-will) </p><p>The aspect of Baphomet charges a creature and makes the following attack in addition to the normal melee basic attack; [[/roll 1d20+24[ vs Fortitude]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Brutal Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The aspect of Baphomet charges a creature and makes the following attack in addition to the normal melee basic attack; &lt;u&gt;+24 vs Fortitude&lt;/u&gt;; 3d12+8 damage, slide the target 2 squares , and the target is knocked prone. &lt;/p&gt;]]; [[/roll 3d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Brutal Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The aspect of Baphomet charges a creature and makes the following attack in addition to the normal melee basic attack; +24 vs Fortitude; 3d12+8 damage, slide the target 2 squares , and the target is knocked prone. &lt;/p&gt;]] <27.5>  damage, slide the target 2 squares , and the target is knocked prone. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bloodied Outrage&lt;/b&gt; (standard; usable only while bloodied, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The aspect of Baphomet makes two greataxe attacks. If both attacks hit the same target, the target is dazed (save ends)&lt;/p&gt;]] ⚔ <b>Bloodied Outrage</b> (standard; usable only while bloodied, at-will) ✦ <b>Weapon</b></p><p>The aspect of Baphomet makes two greataxe attacks. If both attacks hit the same target, the target is dazed (save ends)</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slashing Horns&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 1d12+8 damage, and slide the target 2 squares. &lt;/p&gt;]] ⚔ <b>Slashing Horns</b> (minor 1/round, at-will) </p><p>Reach 2; [[/roll 1d20+26[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slashing Horns&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+26 vs AC&lt;/u&gt;; 1d12+8 damage, and slide the target 2 squares. &lt;/p&gt;]]; [[/roll 1d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Slashing Horns&lt;/b&gt; (minor 1/round, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +26 vs AC; 1d12+8 damage, and slide the target 2 squares. &lt;/p&gt;]] <14.5>  damage, and slide the target 2 squares. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bellow&lt;/b&gt; (immediate reaction, when first bloodied, encounter) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +24 vs Fortitude; 2d8+7 thunder damage, push the target 2 squares, and the target is dazed until the end of the aspect\"s next turn. &lt;/p&gt;]] ᗕ <b>Bellow</b> (immediate reaction, when first bloodied, encounter) ✦ <b>Fear, Thunder</b></p><p>Close burst 2; [[/roll 1d20+24[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bellow&lt;/b&gt; (immediate reaction, when first bloodied, encounter) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+24 vs Fortitude&lt;/u&gt;; 2d8+7 thunder damage, push the target 2 squares, and the target is dazed until the end of the aspect\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Bellow&lt;/b&gt; (immediate reaction, when first bloodied, encounter) ✦ &lt;b&gt;Fear, Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +24 vs Fortitude; 2d8+7 thunder damage, push the target 2 squares, and the target is dazed until the end of the aspect\"s next turn. &lt;/p&gt;]] <16>  thunder damage, push the target 2 squares, and the target is dazed until the end of the aspect\"s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Ferocity&lt;/b&gt; ( when reduced to 0 hit points) &lt;/p&gt;&lt;p&gt;The aspect of Baphomet makes a melee basic attack as a free action.&lt;/p&gt;]]  <b>Ferocity</b> ( when reduced to 0 hit points) </p><p>The aspect of Baphomet makes a melee basic attack as a free action.</p></tr></td></table>",

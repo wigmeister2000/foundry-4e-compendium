@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Rain Wall",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"BG7KuFS9nxLm2tQY",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"23",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -155,10 +157,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -592,7 +594,7 @@
 		},
 		{
 			"name":"Mark of the Tempest",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nxsY8AqMCvBrSoGW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -628,7 +630,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -684,23 +687,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":7,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 168; <b>Bloodied</b> 84<hr><b>Resist</b> 15 lightning, 15 thunder <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 30</td><td><b>Ref</b> 30</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> fly 8 (hover)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 19 (+12)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 20 (+13)<br><b>Int</b> 17 (+11)</td><td><b>Wis</b> 15 (+10)<br><b>Cha</b> 17 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Primordial<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><p><b>Equipment</b> light shield , longsword , plate armor .</p><p>[[/roll 0#&lt;b&gt;Rain Wall&lt;/b&gt; aura 1; each enemy that starts its turn within the aura must make a DC 22 Athletics check or Acrobatics check. An enemy that fails the check is knocked prone.]] <b>Rain Wall</b> aura 1; each enemy that starts its turn within the aura must make a DC 22 Athletics check or Acrobatics check. An enemy that fails the check is knocked prone.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 2d8+7 damage, and the target is marked until the end of the storm archon squallshield\"s next turn. &lt;/p&gt;]] (⚔) <b>Longsword</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+23[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+23 vs AC&lt;/u&gt;; 2d8+7 damage, and the target is marked until the end of the storm archon squallshield\"s next turn. &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Longsword&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+23 vs AC; 2d8+7 damage, and the target is marked until the end of the storm archon squallshield\"s next turn. &lt;/p&gt;]] <16>  damage, and the target is marked until the end of the storm archon squallshield\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Snarling Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +21 vs Reflex; 2d8+7 lightning damage, and the target is marked (save ends). Each enemy adjacent to the largest takes half damage and is marked (save ends). &lt;/p&gt;]] ➶ <b>Snarling Lightning</b> (standard, recharge ⚄⚅) ✦ <b>Lightning</b></p><p>Ranged 10; [[/roll 1d20+21[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Snarling Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+21 vs Reflex&lt;/u&gt;; 2d8+7 lightning damage, and the target is marked (save ends). Each enemy adjacent to the largest takes half damage and is marked (save ends). &lt;/p&gt;]]; [[/roll 2d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Snarling Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +21 vs Reflex; 2d8+7 lightning damage, and the target is marked (save ends). Each enemy adjacent to the largest takes half damage and is marked (save ends). &lt;/p&gt;]] <16>  lightning damage, and the target is marked (save ends). Each enemy adjacent to the largest takes half damage and is marked (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Pursuing Storm&lt;/b&gt; (move; recharge ⚄⚅) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The storm archon squallshield teleports 7 squares to a space adjacent to a creature it has marked. The target grants combat advantage to the squallshield until the end of the squallshield’s turn.&lt;/p&gt;]]  <b>Pursuing Storm</b> (move; recharge ⚄⚅) ✦ <b>Teleportation</b></p><p>The storm archon squallshield teleports 7 squares to a space adjacent to a creature it has marked. The target grants combat advantage to the squallshield until the end of the squallshield’s turn.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Mark of the Tempest&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When a storm archon squallshield hits a creature marked by it with a ranged or melee attack, that creature is slowed (save ends).&lt;/p&gt;]]  <b>Mark of the Tempest</b></p><p>When a storm archon squallshield hits a creature marked by it with a ranged or melee attack, that creature is slowed (save ends).</p></tr></td></table>",

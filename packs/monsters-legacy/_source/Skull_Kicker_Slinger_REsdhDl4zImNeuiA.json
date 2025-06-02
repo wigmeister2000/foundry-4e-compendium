@@ -109,10 +109,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -289,10 +289,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -722,7 +722,7 @@
 		},
 		{
 			"name":"Trap Sense",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"lQhYjBtGcnfJ9NRo",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -758,7 +758,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -814,23 +815,10 @@
 				"max":10
 			},
 			"init":{
-				"value":3,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":3
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 24; <b>Bloodied</b> 12</td><td style=\"padding-left: 15px;\"><b>Init</b> +3</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 13</td><td><b>Fort</b> 12</td><td><b>Ref</b> 14</td><td><b>Will</b> 12</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 9 (null)<br><b>Con</b> 12 (+1)</td><td><b>Dex</b> 17 (+3)<br><b>Int</b> 9 (null)</td><td><b>Wis</b> 12 (+1)<br><b>Cha</b> 10 (0)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Draconic<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Acrobatics +8, Stealth +10, Thievery +10</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 11 | Insight 11</td></td></tr></table><p><b>Equipment</b> Glue Shot Sling Bullets (3), dagger , leather armor , sling , sling bullets (20) .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 1d6+3 damage. &lt;/p&gt;]] ⚔ <b>Dagger</b> (standard, at-will) ✦ <b>Weapon</b></p><p>[[/roll 1d20+5[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+5 vs AC&lt;/u&gt;; 1d6+3 damage. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Dagger&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+5 vs AC; 1d6+3 damage. &lt;/p&gt;]] <6.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Sling&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10/20; +6 vs AC; 1d6+3 damage; see also Glue Shot. &lt;/p&gt;]] ➶ <b>Sling</b> (standard, at-will) ✦ <b>Weapon</b></p><p>Range 10/20; [[/roll 1d20+6[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Sling&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10/20; &lt;u&gt;+6 vs AC&lt;/u&gt;; 1d6+3 damage; see also Glue Shot. &lt;/p&gt;]]; [[/roll 1d6+3#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Sling&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Weapon&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Range 10/20; +6 vs AC; 1d6+3 damage; see also Glue Shot. &lt;/p&gt;]] <6.5>  damage; see also Glue Shot. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;➶ &lt;b&gt;Glue Shot&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Ranged 10/20; the target is immobilized (save ends)&lt;/p&gt;]] ➶ <b>Glue Shot</b> (standard, at-will) </p><p>Ranged 10/20; the target is immobilized (save ends)</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shifty&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;The kobold shifts 1 square as a minor action.&lt;/p&gt;]]  <b>Shifty</b> (minor; at-will) </p><p>The kobold shifts 1 square as a minor action.</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Trap Sense&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The kobold gains a +2 bonus to all defenses against traps.&lt;/p&gt;]]  <b>Trap Sense</b></p><p>The kobold gains a +2 bonus to all defenses against traps.</p></tr></td></table>",

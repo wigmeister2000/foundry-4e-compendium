@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -768,23 +769,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 110; <b>Bloodied</b> 55</td><td style=\"padding-left: 15px;\"><b>Init</b> +17</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 26</td><td><b>Ref</b> 27</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 17 (+10)<br><b>Con</b> 20 (+12)</td><td><b>Dex</b> 23 (+13)<br><b>Int</b> 3 (+3)</td><td><b>Wis</b> 16 (+10)<br><b>Cha</b> 11 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Athletics +15, Stealth +18</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hook&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+6 damage. &lt;/p&gt;]] (⚔) <b>Hook</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hook&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d8+6 damage. &lt;/p&gt;]]; [[/roll 2d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Hook&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 2d8+6 damage. &lt;/p&gt;]] <15>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Horror\"s Pounce&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The hook horror darkfiend charges and makes the following attack in place of a melee basic attack; +19 vs AC; 2d12+6 damage. If the darkfiend has combat advantage against the target, this attack deals 2d12 extra damage. &lt;/p&gt;]] ⚔ <b>Horror\"s Pounce</b> (standard, at-will) </p><p>The hook horror darkfiend charges and makes the following attack in place of a melee basic attack; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Horror\"s Pounce&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The hook horror darkfiend charges and makes the following attack in place of a melee basic attack; &lt;u&gt;+19 vs AC&lt;/u&gt;; 2d12+6 damage. If the darkfiend has combat advantage against the target, this attack deals 2d12 extra damage. &lt;/p&gt;]]; [[/roll 2d12+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Horror\"s Pounce&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The hook horror darkfiend charges and makes the following attack in place of a melee basic attack; +19 vs AC; 2d12+6 damage. If the darkfiend has combat advantage against the target, this attack deals 2d12 extra damage. &lt;/p&gt;]] <19>  damage. If the darkfiend has combat advantage against the target, this attack deals [[/roll 2d12 #&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Horror\"s Pounce&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The hook horror darkfiend charges and makes the following attack in place of a melee basic attack; +19 vs AC; 2d12+6 damage. If the darkfiend has combat advantage against the target, this attack deals 2d12 extra damage. &lt;/p&gt;]] <13> extra damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Fiend\"s Darkness&lt;/b&gt; (standard; sustain minor, recharge ⚄⚅) ✦ &lt;b&gt;Zone&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; this power creates a zone of darkness that remains in place until the end of the darkfiend’s next turn. The zone blocks line of sight for all creatures that do not have blindsight. Any creature entirely within the area is blinded unless it has blindsight. While inside the zone, the darkfiend is hidden from creatures that do not have blindsight, gaining combat advantage against them&lt;/p&gt;]] ᗕ <b>Fiend\"s Darkness</b> (standard; sustain minor, recharge ⚄⚅) ✦ <b>Zone</b></p><p>Close burst 2; this power creates a zone of darkness that remains in place until the end of the darkfiend’s next turn. The zone blocks line of sight for all creatures that do not have blindsight. Any creature entirely within the area is blinded unless it has blindsight. While inside the zone, the darkfiend is hidden from creatures that do not have blindsight, gaining combat advantage against them</p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shriek of Horror&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; +17 vs Will; 3d6+6 damage, and the target is immobilized and deafened (save ends both). Miss: Half damage, and the target is deafened (save ends). &lt;/p&gt;]] ᗕ <b>Shriek of Horror</b> ( when first bloodied, encounter) ✦ <b>Thunder</b></p><p>Close blast 5; targets enemies; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shriek of Horror&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; &lt;u&gt;+17 vs Will&lt;/u&gt;; 3d6+6 damage, and the target is immobilized and deafened (save ends both). Miss: Half damage, and the target is deafened (save ends). &lt;/p&gt;]]; [[/roll 3d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Shriek of Horror&lt;/b&gt; ( when first bloodied, encounter) ✦ &lt;b&gt;Thunder&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close blast 5; targets enemies; +17 vs Will; 3d6+6 damage, and the target is immobilized and deafened (save ends both). Miss: Half damage, and the target is deafened (save ends). &lt;/p&gt;]] <16.5>  damage, and the target is immobilized and deafened (save ends both). Miss: Half damage, and the target is deafened (save ends). </p></tr></td></table>",

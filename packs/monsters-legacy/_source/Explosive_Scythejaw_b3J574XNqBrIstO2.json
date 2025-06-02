@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"18",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -285,10 +286,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -718,7 +719,7 @@
 		},
 		{
 			"name":"Lie in Wait",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"cu8ApYi4PDTXNfOe",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -754,7 +755,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -810,23 +812,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 108; <b>Bloodied</b> 54<hr><b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 26</td><td><b>Ref</b> 22</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 16 (+9)<br><b>Con</b> 24 (+13)</td><td><b>Dex</b> 14 (+8)<br><b>Int</b> 1 (+1)</td><td><b>Wis</b> 19 (+10)<br><b>Cha</b> 12 (+7)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td><b>Skills</b> Stealth +13</td><td style=\"padding-left:15px;\"><b>Senses</b> Blindsight 10<br><b>Passive</b> Perception 20 | Insight 20</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Iron Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 1d12+8 damage. &lt;/p&gt;]] (⚔) <b>Iron Jaws</b> (standard, at-will) </p><p>[[/roll 1d20+18[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Iron Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+18 vs AC&lt;/u&gt;; 1d12+8 damage. &lt;/p&gt;]]; [[/roll 1d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Iron Jaws&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+18 vs AC; 1d12+8 damage. &lt;/p&gt;]] <14.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clampdown&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs Reflex; 2d12+8 damage, and the target is grabbed and takes ongoing 10 damage until it escapes. The grab ends if the scythejaw attacks or fails to sustain the grab. While it has a target grabbed, the scythejaw gains a +4 bonus to all defenses. &lt;/p&gt;]] ⚔ <b>Clampdown</b> (standard, at-will) </p><p>[[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clampdown&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+16 vs Reflex&lt;/u&gt;; 2d12+8 damage, and the target is grabbed and takes ongoing 10 damage until it escapes. The grab ends if the scythejaw attacks or fails to sustain the grab. While it has a target grabbed, the scythejaw gains a +4 bonus to all defenses. &lt;/p&gt;]]; [[/roll 2d12+8#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Clampdown&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+16 vs Reflex; 2d12+8 damage, and the target is grabbed and takes ongoing 10 damage until it escapes. The grab ends if the scythejaw attacks or fails to sustain the grab. While it has a target grabbed, the scythejaw gains a +4 bonus to all defenses. &lt;/p&gt;]] <21>  damage, and the target is grabbed and takes ongoing 10 damage until it escapes. The grab ends if the scythejaw attacks or fails to sustain the grab. While it has a target grabbed, the scythejaw gains a +4 bonus to all defenses. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Timed Explosion&lt;/b&gt; ( when reduced to 0 hit points by clockwork timer, encounter) &lt;/p&gt;&lt;p&gt;Close burst 3; +16 vs Reflex; 3d12+6 damage. Miss: Half damage.. &lt;/p&gt;]] ᗕ <b>Timed Explosion</b> ( when reduced to 0 hit points by clockwork timer, encounter) </p><p>Close burst 3; [[/roll 1d20+16[ vs Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Timed Explosion&lt;/b&gt; ( when reduced to 0 hit points by clockwork timer, encounter) &lt;/p&gt;&lt;p&gt;Close burst 3; &lt;u&gt;+16 vs Reflex&lt;/u&gt;; 3d12+6 damage. Miss: Half damage.. &lt;/p&gt;]]; [[/roll 3d12+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Timed Explosion&lt;/b&gt; ( when reduced to 0 hit points by clockwork timer, encounter) &lt;/p&gt;&lt;p&gt;Close burst 3; +16 vs Reflex; 3d12+6 damage. Miss: Half damage.. &lt;/p&gt;]] <25.5>  damage. Miss: Half damage.. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Clockwork Timer&lt;/b&gt; ( when first bloodied; encounter) &lt;/p&gt;&lt;p&gt;While bloodied, at the end of each creature’s turn the explosive scythejaw takes damage equal to its healing surge value.&lt;/p&gt;]]  <b>Clockwork Timer</b> ( when first bloodied; encounter) </p><p>While bloodied, at the end of each creature’s turn the explosive scythejaw takes damage equal to its healing surge value.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Lie in Wait&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of combat, a scythejaw hides behind a false floor or wall panel. In this state, it gains a +5 bonus to Stealth checks. It readies, then attacks when a creature moves into reach.&lt;/p&gt;]]  <b>Lie in Wait</b></p><p>At the start of combat, a scythejaw hides behind a false floor or wall panel. In this state, it gains a +5 bonus to Stealth checks. It readies, then attacks when a creature moves into reach.</p></tr></td></table>",

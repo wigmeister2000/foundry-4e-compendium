@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"3",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -184,7 +185,7 @@
 		},
 		{
 			"name":"Anchoring Claws",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"l95YuhXiq6IpUKkB",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -220,7 +221,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -454,23 +456,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 17</td><td><b>Fort</b> 17</td><td><b>Ref</b> 18</td><td><b>Will</b> 13</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8, climb 4</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 7 (null)<br><b>Con</b> 15 (+3)</td><td><b>Dex</b> 18 (+5)<br><b>Int</b> 3 (null)</td><td><b>Wis</b> 12 (+2)<br><b>Cha</b> 10 (+1)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> ; tremorsense 10<br><b>Passive</b> Perception 12 | Insight 12</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Jumping Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+3 vs Reflex; 6 damage. &lt;/p&gt;]] (⚔) <b>Jumping Claw</b> (standard, at-will) </p><p>[[/roll 1d20+3[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Jumping Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+3 vs Reflex&lt;/u&gt;; 6 damage. &lt;/p&gt;]]; 6 damage. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Anchoring Claws&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A creature that starts its turn adjacent to three or more crawling claws is immobilized until the start of its next turn.&lt;/p&gt;]]  <b>Anchoring Claws</b></p><p>A creature that starts its turn adjacent to three or more crawling claws is immobilized until the start of its next turn.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Digit Slide&lt;/b&gt; (move; encounter) &lt;/p&gt;&lt;p&gt;The crawling gauntlet shifts up to 8 squares.&lt;/p&gt;]]  <b>Digit Slide</b> (move; encounter) </p><p>The crawling gauntlet shifts up to 8 squares.</p></tr></td></table>",

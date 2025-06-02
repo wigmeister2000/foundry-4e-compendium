@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Grasping Thorns",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"nyAQqzKZ0whlVx28",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"19",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -408,7 +410,7 @@
 		},
 		{
 			"name":"Threatening Reach",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"4kzc9spNHGU58mYf",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -444,7 +446,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -500,23 +503,10 @@
 				"max":10
 			},
 			"init":{
-				"value":8,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":1,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":8
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 141; <b>Bloodied</b> 70</td><td style=\"padding-left: 15px;\"><b>Init</b> +8</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 28</td><td><b>Ref</b> 23</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 23 (+13)<br><b>Con</b> 21 (+12)</td><td><b>Dex</b> 13 (+8)<br><b>Int</b> 3 (+3)</td><td><b>Wis</b> 15 (+9)<br><b>Cha</b> 12 (+8)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Unaligned</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 19 | Insight 19</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Grasping Thorns&lt;/b&gt; aura 2; enemies treat the area within the aura as difficult terrain; at the start of the warthorn battlebriar’s turn, enemies in the aura take 5 damage.]] <b>Grasping Thorns</b> aura 2; enemies treat the area within the aura as difficult terrain; at the start of the warthorn battlebriar’s turn, enemies in the aura take 5 damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 1d8+6 damage, and the target is pulled 1 square. &lt;/p&gt;]] (⚔) <b>Claw</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+19[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+19 vs AC&lt;/u&gt;; 1d8+6 damage, and the target is pulled 1 square. &lt;/p&gt;]]; [[/roll 1d8+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +19 vs AC; 1d8+6 damage, and the target is pulled 1 square. &lt;/p&gt;]] <10.5>  damage, and the target is pulled 1 square. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thorn Burst&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +17 vs Reflex; 2d8+1 damage, plus the target is slowed until the end of the warthorn battlebriar’s next turn. &lt;/p&gt;]] ᗕ <b>Thorn Burst</b> (standard, at-will) </p><p>Close burst 2; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thorn Burst&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d8+1 damage, plus the target is slowed until the end of the warthorn battlebriar’s next turn. &lt;/p&gt;]]; [[/roll 2d8+1#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Thorn Burst&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 2; +17 vs Reflex; 2d8+1 damage, plus the target is slowed until the end of the warthorn battlebriar’s next turn. &lt;/p&gt;]] <10>  damage, plus the target is slowed until the end of the warthorn battlebriar’s next turn. </p></tr></td><tr><td><h4><b>-</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Threatening Reach&lt;/b&gt;&lt;/p&gt;&lt;p&gt;A warthorn battlebriar can make opportunity attacks against all enemies within its reach (2 squares).&lt;/p&gt;]]  <b>Threatening Reach</b></p><p>A warthorn battlebriar can make opportunity attacks against all enemies within its reach (2 squares).</p></tr></td></table>",

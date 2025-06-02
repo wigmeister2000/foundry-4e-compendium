@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -110,10 +111,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -242,7 +243,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1131,23 +1133,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 228; <b>Bloodied</b> 114<hr><b>Resist</b> 10 necrotic </td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 24</td><td><b>Ref</b> 26</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+7)<br><b>Con</b> 18 (+10)</td><td><b>Dex</b> 16 (+9)<br><b>Int</b> 22 (+12)</td><td><b>Wis</b> 9 (+5)<br><b>Cha</b> 20 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +17, Stealth +14</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 15 | Insight 15</td></td></tr></table><p><b>Equipment</b> leather armor .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadowfire Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d6+4 fire and necrotic damage, and the shade witch is invisible to the target until she attacks. &lt;/p&gt;]] (⚔) <b>Shadowfire Touch</b> (standard, at-will) ✦ <b>Fire, Necrotic</b></p><p>[[/roll 1d20+17[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadowfire Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;u&gt;+17 vs AC&lt;/u&gt;; 2d6+4 fire and necrotic damage, and the shade witch is invisible to the target until she attacks. &lt;/p&gt;]]; [[/roll 2d6+4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Shadowfire Touch&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Fire, Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;+17 vs AC; 2d6+4 fire and necrotic damage, and the shade witch is invisible to the target until she attacks. &lt;/p&gt;]] <11>  fire and necrotic damage, and the shade witch is invisible to the target until she attacks. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadowed Eye&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Reflex; 2d6+5 psychic damage, and the target has no line of sight to anything beyond 2 squares until the end of the shade witch\"s next turn. &lt;/p&gt;]] (➶) <b>Shadowed Eye</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Ranged 10; [[/roll 1d20+17[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadowed Eye&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+17 vs Reflex&lt;/u&gt;; 2d6+5 psychic damage, and the target has no line of sight to anything beyond 2 squares until the end of the shade witch\"s next turn. &lt;/p&gt;]]; [[/roll 2d6+5#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Shadowed Eye&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Reflex; 2d6+5 psychic damage, and the target has no line of sight to anything beyond 2 squares until the end of the shade witch\"s next turn. &lt;/p&gt;]] <12>  psychic damage, and the target has no line of sight to anything beyond 2 squares until the end of the shade witch\"s next turn. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔➶ &lt;b&gt;Shadow Fury&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Malachi’s shade witch makes two basic attacks.&lt;/p&gt;]] ⚔➶ <b>Shadow Fury</b> (standard, at-will) </p><p>Malachi’s shade witch makes two basic attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Soul Flaying&lt;/b&gt; (standard, recharges when a target within sight becomes bloodied) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Will; 4d8+7 necrotic damage, and the target can\"t use healing surges until the end of the shade witch\"s next turn. &lt;/p&gt;]] ➶ <b>Soul Flaying</b> (standard, recharges when a target within sight becomes bloodied) ✦ <b>Necrotic</b></p><p>Ranged 10; [[/roll 1d20+17[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Soul Flaying&lt;/b&gt; (standard, recharges when a target within sight becomes bloodied) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; &lt;u&gt;+17 vs Will&lt;/u&gt;; 4d8+7 necrotic damage, and the target can\"t use healing surges until the end of the shade witch\"s next turn. &lt;/p&gt;]]; [[/roll 4d8+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Soul Flaying&lt;/b&gt; (standard, recharges when a target within sight becomes bloodied) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Ranged 10; +17 vs Will; 4d8+7 necrotic damage, and the target can\"t use healing surges until the end of the shade witch\"s next turn. &lt;/p&gt;]] <25>  necrotic damage, and the target can\"t use healing surges until the end of the shade witch\"s next turn. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Shade Voice&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +16 vs Fortitude; 3d6+7 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]] ✻ <b>Shade Voice</b> (standard, encounter) ✦ <b>Necrotic</b></p><p>Area burst 2 within 10; [[/roll 1d20+16[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Shade Voice&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; &lt;u&gt;+16 vs Fortitude&lt;/u&gt;; 3d6+7 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]]; [[/roll 3d6+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Shade Voice&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Necrotic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 2 within 10; +16 vs Fortitude; 3d6+7 necrotic damage, and the target is dazed (save ends). &lt;/p&gt;]] <17.5>  necrotic damage, and the target is dazed (save ends). </p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadowbite Jaunt&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Malachi’s shade witch teleports 6 squares and becomes insubstantial until the start of her next turn. Enemies adjacent to her when she teleports take 1d10 + 5 necrotic damage and are knocked prone.&lt;/p&gt;]]  <b>Shadowbite Jaunt</b> (move; encounter) ✦ <b>Teleportation</b></p><p>Malachi’s shade witch teleports 6 squares and becomes insubstantial until the start of her next turn. Enemies adjacent to her when she teleports take [[/roll 1d10 + 5#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Shadowbite Jaunt&lt;/b&gt; (move; encounter) ✦ &lt;b&gt;Teleportation&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Malachi’s shade witch teleports 6 squares and becomes insubstantial until the start of her next turn. Enemies adjacent to her when she teleports take 1d10 + 5 necrotic damage and are knocked prone.&lt;/p&gt;]] <10.5>  necrotic damage and are knocked prone.</p></tr></td></table>",

@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"One with Master",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"rBHYLo70CO5qAcFE",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -456,23 +458,10 @@
 				"max":10
 			},
 			"init":{
-				"value":18,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":10,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":18
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1; a missed attack never damages a minion.<hr><b>Resist</b> 10 acid </td><td style=\"padding-left: 15px;\"><b>Init</b> +18</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 30</td><td><b>Fort</b> 27</td><td><b>Ref</b> 29</td><td><b>Will</b> 26</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 21 (+13)<br><b>Con</b> 24 (+15)</td><td><b>Dex</b> 22 (+14)<br><b>Int</b> 26 (+16)</td><td><b>Wis</b> 20 (+13)<br><b>Cha</b> 24 (+15)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> unaligned</td></tr><tr><td><b>Skills</b> Stealth +19</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision , tremorsense 5<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;One with Master&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The mimic spawn can end its move in the same space as an impersonator mimic. While it occupies an impersonator mimic’s space, the mimic spawn moves with the impersonator mimic and cannot attack, be targeted, or take damage. Up to four mimic spawns can occupy an impersonator mimic’s space.&lt;/p&gt;]]  <b>One with Master</b> <b></b></p><p>The mimic spawn can end its move in the same space as an impersonator mimic. While it occupies an impersonator mimic’s space, the mimic spawn moves with the impersonator mimic and cannot attack, be targeted, or take damage. Up to four mimic spawns can occupy an impersonator mimic’s space.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +21 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 12 damage.&lt;/p&gt;]] (⚔) <b>Slam</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+21[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+21 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> 12 damage.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Shapeshift&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The mimic assumes one of the following forms. It can’t change its size. It remains in the chosen form until it uses this power again.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Ooze Form:&lt;/i&gt; The mimic becomes an ooze. When it squeezes while it is in this form, it moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing,&lt;/p&gt;&lt;p&gt;&lt;i&gt;Object Form:&lt;/i&gt; While in this form, the mimic has resist 10 to all damage, is immobilized, and cannot attack. In addition, a creature must succeed on a DC 31 Perception check to notice that the mimic is a living creature.&lt;/p&gt;]]  <b>Shapeshift</b> (polymorph) ✦ <b>At-Will</b> 1/round</p><p><i>Effect:</i> The mimic assumes one of the following forms. It can’t change its size. It remains in the chosen form until it uses this power again.</p><p><i>Ooze Form:</i> The mimic becomes an ooze. When it squeezes while it is in this form, it moves at full speed rather than half speed, it doesn’t take the -5 penalty to attack rolls, and it doesn’t grant combat advantage for squeezing,</p><p><i>Object Form:</i> While in this form, the mimic has resist 10 to all damage, is immobilized, and cannot attack. In addition, a creature must succeed on a DC 31 Perception check to notice that the mimic is a living creature.</p></tr></td></table>",

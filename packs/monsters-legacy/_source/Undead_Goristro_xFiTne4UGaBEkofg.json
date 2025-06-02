@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"24",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -463,10 +464,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":"When First Bloodied",
@@ -641,10 +642,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -819,10 +820,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -942,23 +943,10 @@
 				"max":10
 			},
 			"init":{
-				"value":12,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":12
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 500; <b>Bloodied</b> 250<hr><b>Resist</b> 20 necrotic <b>Vulnerable</b> 15 radiant <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +12 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 33</td><td><b>Fort</b> 36</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 8</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 30 (+20)<br><b>Con</b> 30 (+20)</td><td><b>Dex</b> 14 (+12)<br><b>Int</b> 6 (+8)</td><td><b>Wis</b> 17 (+13)<br><b>Cha</b> 8 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Abyssal<br><b>Alignment</b> Chaotic evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 23 | Insight 23</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d12+10 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 3; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d12+10 damage. &lt;/p&gt;]]; [[/roll 2d12+10#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 3; +24 vs AC; 2d12+10 damage. &lt;/p&gt;]] <23>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Double Attack&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The undead goristro makes two slam attacks.&lt;/p&gt;]] ⚔ <b>Double Attack</b> (standard, at-will) </p><p>The undead goristro makes two slam attacks.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Deadly Rampage&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The undead goristro moves its speed and can move through enemy spaces. Each time it enters a creature’s space, it makes a gore attack; +24 vs AC; 2d10+10 damage, and the target is pushed 2 squares and knocked prone. The goristro must end its move in an unoccupied space. &lt;/p&gt;]] ⚔ <b>Deadly Rampage</b> (standard, recharges when first bloodied) </p><p>The undead goristro moves its speed and can move through enemy spaces. Each time it enters a creature’s space, it makes a gore attack; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Deadly Rampage&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The undead goristro moves its speed and can move through enemy spaces. Each time it enters a creature’s space, it makes a gore attack; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d10+10 damage, and the target is pushed 2 squares and knocked prone. The goristro must end its move in an unoccupied space. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Deadly Rampage&lt;/b&gt; (standard, recharges when first bloodied) &lt;/p&gt;&lt;p&gt;The undead goristro moves its speed and can move through enemy spaces. Each time it enters a creature’s space, it makes a gore attack; +24 vs AC; 2d10+10 damage, and the target is pushed 2 squares and knocked prone. The goristro must end its move in an unoccupied space. &lt;/p&gt;]] <21>  damage, and the target is pushed 2 squares and knocked prone. The goristro must end its move in an unoccupied space. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The undead goristro makes a charge attack; +24 vs AC; 3d12+10 damage, and the target is pushed 2 squares and knocked prone. &lt;/p&gt;]] ⚔ <b>Goring Charge</b> (standard, at-will) </p><p>The undead goristro makes a charge attack; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The undead goristro makes a charge attack; &lt;u&gt;+24 vs AC&lt;/u&gt;; 3d12+10 damage, and the target is pushed 2 squares and knocked prone. &lt;/p&gt;]]; [[/roll 3d12+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Goring Charge&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;The undead goristro makes a charge attack; +24 vs AC; 3d12+10 damage, and the target is pushed 2 squares and knocked prone. &lt;/p&gt;]] <29.5>  damage, and the target is pushed 2 squares and knocked prone. </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Raging Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;The undead goristro makes a frenzied gore attack against the enemy; +24 vs AC; 2d10+10 damage. &lt;/p&gt;]] ⚔ <b>Raging Frenzy</b> (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) </p><p>The undead goristro makes a frenzied gore attack against the enemy; [[/roll 1d20+24[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Raging Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;The undead goristro makes a frenzied gore attack against the enemy; &lt;u&gt;+24 vs AC&lt;/u&gt;; 2d10+10 damage. &lt;/p&gt;]]; [[/roll 2d10+10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Raging Frenzy&lt;/b&gt; (immediate reaction, when attacked by an adjacent enemy while bloodied, at-will) &lt;/p&gt;&lt;p&gt;The undead goristro makes a frenzied gore attack against the enemy; +24 vs AC; 2d10+10 damage. &lt;/p&gt;]] <21>  damage. </p></tr></td></table>",

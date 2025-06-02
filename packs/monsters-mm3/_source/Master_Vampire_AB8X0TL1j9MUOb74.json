@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Burned by Sunlight",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"806leIzVyNAwWYkO",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Regeneration",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"Iw2atSzBufP9eRZE",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"17",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1042,23 +1045,10 @@
 				"max":10
 			},
 			"init":{
-				"value":15,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":9,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":15
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 98; <b>Bloodied</b> 49<hr><b>Resist</b> 10 necrotic <b>Immune</b> disease, poison </td><td style=\"padding-left: 15px;\"><b>Init</b> +15</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 26</td><td><b>Fort</b> 25</td><td><b>Ref</b> 24</td><td><b>Will</b> 24</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 7, climb 4 (spider climb)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 20 (+11)</td><td><b>Dex</b> 20 (+11)<br><b>Int</b> 15 (+8)</td><td><b>Wis</b> 17 (+9)<br><b>Cha</b> 21 (+11)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common<br><b>Alignment</b> evil</td></tr><tr><td><b>Skills</b> Acrobatics +16, Athletics +17, Bluff +16, Insight +14, Stealth +16</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 19 | Insight 24</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Burned by Sunlight &lt;/b&gt; (radiant) &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Whenever the vampire starts its turn in direct sunlight, it takes 10 radiant damage.&lt;/p&gt;]]  <b>Burned by Sunlight </b> (radiant) <b></b></p><p>Whenever the vampire starts its turn in direct sunlight, it takes 10 radiant damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Regeneration&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;The vampire regains 10 hit points whenever it starts its turn and has at least 1 hit point. When the vampire takes radiant damage, its regeneration does not function on its next turn.&lt;/p&gt;]]  <b>Regeneration</b> <b></b></p><p>The vampire regains 10 hit points whenever it starts its turn and has at least 1 hit point. When the vampire takes radiant damage, its regeneration does not function on its next turn.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 5 damage.&lt;/p&gt;]] (⚔) <b>Claw</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 5#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Claw&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 5 damage.&lt;/p&gt;]] <15.5>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (healing) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one dazed, dominated, stunned, or unconscious creature); +17 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 10 damage, and the vampire regains 20 hit points.&lt;/p&gt;]] ⚔ <b>Bite</b> (healing) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one dazed, dominated, stunned, or unconscious creature); [[/roll 1d20+17[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (healing) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one dazed, dominated, stunned, or unconscious creature); &lt;u&gt;+17 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 4d10 + 10#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (healing) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 4d10 + 10 damage, and the vampire regains 20 hit points.&lt;/p&gt;]] <32>  damage, and the vampire regains 20 hit points.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Cloud of Bats&lt;/b&gt; (polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; The vampire assumes the form of a cloud of bats until the start of its next turn. While in this form, the vampire cannot attack but becomes insubstantial, gains fly 8 (hover), gains a +5 power bonus to Stealth checks, and can move through enemies’ spaces.&lt;/p&gt;]]  <b>Cloud of Bats</b> (polymorph) ✦ <b>At-Will</b></p><p><i>Effect:</i> The vampire assumes the form of a cloud of bats until the start of its next turn. While in this form, the vampire cannot attack but becomes insubstantial, gains fly 8 (hover), gains a +5 power bonus to Stealth checks, and can move through enemies’ spaces.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when no creature is dominated by this power&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); +17 vs. Will&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; The target is dominated until the end of the vampire’s next turn.&lt;/p&gt;]] ➶ <b>Dominating Gaze</b> (charm) ✦ <b>Recharge</b> when no creature is dominated by this power</p><p><i>Attack:</i> Ranged 5 (one creature); [[/roll 1d20+17[ vs. Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;➶ &lt;b&gt;Dominating Gaze&lt;/b&gt; (charm) ✦ &lt;b&gt;Recharge&lt;/b&gt; when no creature is dominated by this power&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Ranged 5 (one creature); &lt;u&gt;+17 vs. Will&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> The target is dominated until the end of the vampire’s next turn.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Mist Form&lt;/b&gt; (polymorph) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The vampire takes damage while bloodied.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; The vampire becomes insubstantial and gains fly 12. The vampire cannot attack or use cloud of bats. This effect lasts for 1 hour or until the vampire ends it as a minor action.&lt;/p&gt;]]  <b>Mist Form</b> (polymorph) ✦ <b>Encounter</b></p><p><i>Trigger:</i> The vampire takes damage while bloodied.</p><p><i>Effect (No Action):</i> The vampire becomes insubstantial and gains fly 12. The vampire cannot attack or use cloud of bats. This effect lasts for 1 hour or until the vampire ends it as a minor action.</p></tr></td></table>",

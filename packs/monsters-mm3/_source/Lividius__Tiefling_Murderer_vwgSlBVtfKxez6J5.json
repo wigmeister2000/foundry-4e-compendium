@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Hell's Embrace",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"FilJBMHE3XRYPLDs",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"9",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1001,23 +1003,10 @@
 				"max":10
 			},
 			"init":{
-				"value":5,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":3,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":5
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 240; <b>Bloodied</b> 120<hr><b>Resist</b> 7 fire </td><td style=\"padding-left: 15px;\"><b>Init</b> +5 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 18</td><td><b>Fort</b> 17</td><td><b>Ref</b> 15</td><td><b>Will</b> 15</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 5</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 18 (+6)<br><b>Con</b> 20 (+7)</td><td><b>Dex</b> 17 (+5)<br><b>Int</b> 12 (+3)</td><td><b>Wis</b> 13 (+3)<br><b>Cha</b> 16 (+5)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Elven, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Athletics +11, Bluff +12, Intimidate +10, Stealth +11</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 13 | Insight 13</td></td></tr></table><p><b>Equipment</b> chainmail , greatsword .</p><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⌀ &lt;b&gt;Hell\"s Embrace&lt;/b&gt; (cold) ✦ &lt;b&gt;Aura&lt;/b&gt; 1&lt;/p&gt;&lt;p&gt;Any creature that exits the aura on its turn takes 5 cold damage.&lt;/p&gt;]] ⌀ <b>Hell\"s Embrace</b> (cold) ✦ <b>Aura</b> 1</p><p>Any creature that exits the aura on its turn takes 5 cold damage.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +9 vs. AC, or +10 vs. AC if the target is bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 damage.&lt;/p&gt;]] (⚔) <b>Greatsword</b> (weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+9 vs. AC&lt;/u&gt;, or +10 vs. AC if the target is bloodied&lt;/p&gt;]], or +10 vs. AC if the target is bloodied</p><p><i>Hit:</i> [[/roll 2d10 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Greatsword&lt;/b&gt; (weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 damage.&lt;/p&gt;]] <15>  damage.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blade of Avernus&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (creatures in the burst); +9 vs. AC, or +10 vs. AC if the target is bloodied&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 fire damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Miss:&lt;/i&gt; Half damage.&lt;/p&gt;]] ᗕ <b>Blade of Avernus</b> (fire, weapon) ✦ <b>At-Will</b></p><p><i>Attack:</i> Close burst 1 (creatures in the burst); [[/roll 1d20+9[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blade of Avernus&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Close burst 1 (creatures in the burst); &lt;u&gt;+9 vs. AC&lt;/u&gt;, or +10 vs. AC if the target is bloodied&lt;/p&gt;]], or +10 vs. AC if the target is bloodied</p><p><i>Hit:</i> [[/roll 2d10 + 4#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Blade of Avernus&lt;/b&gt; (fire, weapon) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d10 + 4 fire damage.&lt;/p&gt;]] <15>  fire damage.</p><p><i>Miss:</i> Half damage.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Fire Step&lt;/b&gt; (fire, teleportation) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Lividius teleports 5 squares. Each creature adjacent to the square he teleports from or appears in takes 5 fire damage, or 10 fire damage if Lividius is bloodied.&lt;/p&gt;]] ᗕ <b>Fire Step</b> (fire, teleportation) ✦ <b>At-Will</b></p><p><i>Effect:</i> Lividius teleports 5 squares. Each creature adjacent to the square he teleports from or appears in takes 5 fire damage, or 10 fire damage if Lividius is bloodied.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Heart of Nessus&lt;/b&gt; (fire, polymorph) ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Lividius is dazed or stunned by an attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (No Action):&lt;/i&gt; Lividius and all of his gear transform into living flame and remain in this form until he is no longer dazed or stunned. While in this form, he takes half damage from all attacks, his aura deals fire damage instead of cold damage, and any enemy that hits him with an attack takes fire damage equal to half the damage dealt.&lt;/p&gt;]]  <b>Heart of Nessus</b> (fire, polymorph) ✦ <b>At-Will</b></p><p><i>Trigger:</i> Lividius is dazed or stunned by an attack.</p><p><i>Effect (No Action):</i> Lividius and all of his gear transform into living flame and remain in this form until he is no longer dazed or stunned. While in this form, he takes half damage from all attacks, his aura deals fire damage instead of cold damage, and any enemy that hits him with an attack takes fire damage equal to half the damage dealt.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (fire) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; Lividius is hit by an enemy’s attack.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The triggering enemy takes 1d6 + 7 fire damage.&lt;/p&gt;]]  <b>Infernal Wrath</b> (fire) ✦ <b>Encounter</b></p><p><i>Trigger:</i> Lividius is hit by an enemy’s attack.</p><p><i>Effect (Free Action):</i> The triggering enemy takes [[/roll 1d6 + 7#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Infernal Wrath&lt;/b&gt; (fire) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Free Action):&lt;/i&gt; The triggering enemy takes 1d6 + 7 fire damage.&lt;/p&gt;]] <10.5>  fire damage.</p></tr></td></table>",

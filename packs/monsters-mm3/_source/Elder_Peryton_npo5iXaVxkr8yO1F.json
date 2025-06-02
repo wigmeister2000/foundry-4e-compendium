@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Peryton's Prey",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"IoNv4UDMsw96HhVL",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -52,7 +53,7 @@
 		},
 		{
 			"name":"Unhindered",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"i3lqYCQx7GrdVokW",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -88,7 +89,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -153,7 +155,8 @@
 					"defBonus":0,
 					"formula":"11",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -1036,23 +1039,10 @@
 				"max":10
 			},
 			"init":{
-				"value":9,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":6,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":9
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 144; <b>Bloodied</b> 72</td><td style=\"padding-left: 15px;\"><b>Init</b> +9 | <b>AP</b> 1 | <b>Save</b> +2</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 22</td><td><b>Fort</b> 20</td><td><b>Ref</b> 18</td><td><b>Will</b> 16</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 2, fly 10</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 20 (+8)<br><b>Con</b> 16 (+6)</td><td><b>Dex</b> 18 (+7)<br><b>Int</b> 13 (+4)</td><td><b>Wis</b> 17 (+6)<br><b>Cha</b> 12 (+4)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> -<br><b>Alignment</b> Chaotic Evil</td></tr><tr><td></td><td style=\"padding-left:15px;\"><b>Senses</b> <br><b>Passive</b> Perception 16 | Insight 16</td></td></tr></table><hr><table><tr><td><h4><b>Traits</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Peryton\"s Prey&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;At the start of each of its turns, the peryton chooses one creature it can see. That creature is the peryton’s prey until the start of the peryton’s next turn.&lt;/p&gt;]]  <b>Peryton\"s Prey</b> <b></b></p><p>At the start of each of its turns, the peryton chooses one creature it can see. That creature is the peryton’s prey until the start of the peryton’s next turn.</p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Unhindered&lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;/p&gt;&lt;p&gt;When the peryton moves on its turn, it pulls with it any creature grabbed by it. The peryton can pull the creature vertically off a solid surface. During this movement, the creature remains grabbed, and this movement does not provoke an opportunity attack from the grabbed creature.&lt;/p&gt;]]  <b>Unhindered</b> <b></b></p><p>When the peryton moves on its turn, it pulls with it any creature grabbed by it. The peryton can pull the creature vertically off a solid surface. During this movement, the creature remains grabbed, and this movement does not provoke an opportunity attack from the grabbed creature.</p></tr></td><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Antler Bash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage, or 2d8 + 8 against a creature designated as the peryton’s prey. In addition, the target falls prone.&lt;/p&gt;]] (⚔) <b>Antler Bash</b> ✦ <b>At-Will</b></p><p><i>Attack:</i> Melee 2 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Antler Bash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 2 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d8 + 3#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Antler Bash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage, or 2d8 + 8 against a creature designated as the peryton’s prey. In addition, the target falls prone.&lt;/p&gt;]] <12>  damage, or [[/roll 2d8 + 8#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Antler Bash&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d8 + 3 damage, or 2d8 + 8 against a creature designated as the peryton’s prey. In addition, the target falls prone.&lt;/p&gt;]] <17>  against a creature designated as the peryton’s prey. In addition, the target falls prone.</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Claw Snatch&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Before and after the attack, the peryton can fly up to half its fly speed.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one Medium or smaller creature designated as the peryton’s prey); +9 vs. Reflex&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 8 damage, and the target is grabbed (escape DC 15).&lt;/p&gt;]] ⚔ <b>Claw Snatch</b> ✦ Recharge ⚃ ⚄ ⚅</p><p><i>Effect:</i> Before and after the attack, the peryton can fly up to half its fly speed.</p><p><i>Attack:</i> Melee 1 (one Medium or smaller creature designated as the peryton’s prey); [[/roll 1d20+9[ vs. Reflex]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Claw Snatch&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one Medium or smaller creature designated as the peryton’s prey); &lt;u&gt;+9 vs. Reflex&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 3d6 + 8#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Claw Snatch&lt;/b&gt; ✦ Recharge ⚃ ⚄ ⚅&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 3d6 + 8 damage, and the target is grabbed (escape DC 15).&lt;/p&gt;]] <18.5>  damage, and the target is grabbed (escape DC 15).</p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Feast&lt;/b&gt; (healing) ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Melee 1 (one dying humanoid). The target dies, and the peryton regains 20 hit points.&lt;/p&gt;]] ⚔ <b>Feast</b> (healing) ✦ <b>Encounter</b></p><p><i>Effect:</i> Melee 1 (one dying humanoid). The target dies, and the peryton regains 20 hit points.</p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cursed Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); +11 vs. AC&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect:&lt;/i&gt; Until the end of the peryton’s next turn, the target takes 5 damage whenever it attacks a creature other than the peryton.&lt;/p&gt;]] ⚔ <b>Cursed Bite</b> ✦ <b>At-Will</b> 1/round</p><p><i>Attack:</i> Melee 1 (one creature); [[/roll 1d20+11[ vs. AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cursed Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Attack:&lt;/i&gt; Melee 1 (one creature); &lt;u&gt;+11 vs. AC&lt;/u&gt;&lt;/p&gt;]]</p><p><i>Hit:</i> [[/roll 2d6 + 7#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Cursed Bite&lt;/b&gt; ✦ &lt;b&gt;At-Will&lt;/b&gt; 1/round&lt;/p&gt;&lt;p&gt;&lt;i&gt;Hit:&lt;/i&gt; 2d6 + 7 damage.&lt;/p&gt;]] <14>  damage.</p><p><i>Effect:</i> Until the end of the peryton’s next turn, the target takes 5 damage whenever it attacks a creature other than the peryton.</p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Stealth Dive&lt;/b&gt; ✦ &lt;b&gt;Encounter&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;i&gt;Trigger:&lt;/i&gt; The creature designated as the peryton’s prey makes an attack that doesn’t include the peryton as a target.&lt;/p&gt;&lt;p&gt;&lt;i&gt;Effect (Immediate Reaction):&lt;/i&gt; The peryton charges the triggering creature.&lt;/p&gt;]] ⚔ <b>Stealth Dive</b> ✦ <b>Encounter</b></p><p><i>Trigger:</i> The creature designated as the peryton’s prey makes an attack that doesn’t include the peryton as a target.</p><p><i>Effect (Immediate Reaction):</i> The peryton charges the triggering creature.</p></tr></td></table>",

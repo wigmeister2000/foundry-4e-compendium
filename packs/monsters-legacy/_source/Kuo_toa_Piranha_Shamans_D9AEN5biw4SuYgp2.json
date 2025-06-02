@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"21",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -107,10 +108,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -1127,23 +1128,10 @@
 				"max":10
 			},
 			"init":{
-				"value":13,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":5,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":13
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 117; <b>Bloodied</b> 58</td><td style=\"padding-left: 15px;\"><b>Init</b> +13</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 28</td><td><b>Fort</b> 25</td><td><b>Ref</b> 28</td><td><b>Will</b> 29</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, swim 6</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 12 (+9)<br><b>Con</b> 15 (+10)</td><td><b>Dex</b> 20 (+13)<br><b>Int</b> 15 (+10)</td><td><b>Wis</b> 18 (+12)<br><b>Cha</b> 23 (+14)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Deep Speech<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Arcana +15, Nature +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 22 | Insight 22</td></td></tr></table><p><b>Equipment</b> torn rags, sand orb, light shield .</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 1d10+6 damage. &lt;/p&gt;]] (⚔) <b>Bite</b> (standard, at-will) </p><p>[[/roll 1d20+21[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;&lt;u&gt;+21 vs AC&lt;/u&gt;; 1d10+6 damage. &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Bite&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;+21 vs AC; 1d10+6 damage. &lt;/p&gt;]] <11.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Psychic Fangs&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +19 vs Will; 2d6+6 damage. &lt;/p&gt;]] ✻ <b>Psychic Fangs</b> (standard, at-will) ✦ <b>Psychic</b></p><p>Area burst 1 within 10; [[/roll 1d20+19[ vs Will]#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Psychic Fangs&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; &lt;u&gt;+19 vs Will&lt;/u&gt;; 2d6+6 damage. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;✻ &lt;b&gt;Psychic Fangs&lt;/b&gt; (standard, at-will) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 1 within 10; +19 vs Will; 2d6+6 damage. &lt;/p&gt;]] <13>  damage. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Bane Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; +19 vs Fortitude; 1d10+6 lightning damage, and the target takes ongoing 10 poison (save ends). &lt;/p&gt;]] ✻ <b>Bane Lightning</b> (standard, recharge ⚄⚅) ✦ <b>Lightning, Poison</b></p><p>Area burst 3 within 20; [[/roll 1d20+19[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Bane Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; &lt;u&gt;+19 vs Fortitude&lt;/u&gt;; 1d10+6 lightning damage, and the target takes ongoing 10 poison (save ends). &lt;/p&gt;]]; [[/roll 1d10+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;✻ &lt;b&gt;Bane Lightning&lt;/b&gt; (standard, recharge ⚄⚅) ✦ &lt;b&gt;Lightning, Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Area burst 3 within 20; +19 vs Fortitude; 1d10+6 lightning damage, and the target takes ongoing 10 poison (save ends). &lt;/p&gt;]] <11.5>  lightning damage, and the target takes ongoing 10 poison (save ends). </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Wave&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +19 vs Will; 3d10+7 psychic damage, and the target is slowed (save ends). Effect: The kuo-toa shifts its speed. &lt;/p&gt;]] ᗕ <b>Psychic Wave</b> (standard, encounter) ✦ <b>Psychic</b></p><p>Close burst 2; [[/roll 1d20+19[ vs Will]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Wave&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; &lt;u&gt;+19 vs Will&lt;/u&gt;; 3d10+7 psychic damage, and the target is slowed (save ends). Effect: The kuo-toa shifts its speed. &lt;/p&gt;]]; [[/roll 3d10+7#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;Psychic Wave&lt;/b&gt; (standard, encounter) ✦ &lt;b&gt;Psychic&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Close burst 2; +19 vs Will; 3d10+7 psychic damage, and the target is slowed (save ends). Effect: The kuo-toa shifts its speed. &lt;/p&gt;]] <23.5>  psychic damage, and the target is slowed (save ends). Effect: The kuo-toa shifts its speed. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Piranha Command&lt;/b&gt; (minor; at-will) &lt;/p&gt;&lt;p&gt;A piranha swarm within sight shifts 1. If the swarm is in a creature’s space, that creature moves with the swarm.&lt;/p&gt;]]  <b>Piranha Command</b> (minor; at-will) </p><p>A piranha swarm within sight shifts 1. If the swarm is in a creature’s space, that creature moves with the swarm.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Slick Maneuver&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;A kuo-toa adjacent to an enemy shifts to any other square adjacent to that enemy.&lt;/p&gt;]]  <b>Slick Maneuver</b> (move; at-will) </p><p>A kuo-toa adjacent to an enemy shifts to any other square adjacent to that enemy.</p></tr></td></table>",

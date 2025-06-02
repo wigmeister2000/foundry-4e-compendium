@@ -6,7 +6,7 @@
 	"items":[
 		{
 			"name":"Corruption",
-			"type":"classFeats",
+			"type":"feature",
 			"_id":"pWyUxgH296ZQzoMk",
 			"img":"icons/svg/aura.svg",
 			"system":{
@@ -42,7 +42,8 @@
 				"proficiencies":{
 					"weapons":[],
 					"armour":[]
-				}
+				},
+				"featureType":"class"
 			},
 			"effects":[],
 			"folder":null,
@@ -107,7 +108,8 @@
 					"defBonus":0,
 					"formula":"35",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -285,7 +287,8 @@
 					"defBonus":0,
 					"formula":"33",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -331,10 +334,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -509,10 +512,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -988,23 +991,10 @@
 				"max":10
 			},
 			"init":{
-				"value":17,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":2,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":17
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 1104; <b>Bloodied</b> 552<hr><b>Resist</b> acid 10, cold 10, electricity 10, fire 20, necrotic 20 <b>Immune</b> poison, disease </td><td style=\"padding-left: 15px;\"><b>Init</b> +17 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 44</td><td><b>Fort</b> 43</td><td><b>Ref</b> 40 (30 when bloodied)</td><td><b>Will</b> 41</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6 (0 when bloodied)</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 32 (+26)<br><b>Con</b> 28 (+24)</td><td><b>Dex</b> 15 (+17)<br><b>Int</b> 26 (+23)</td><td><b>Wis</b> 30 (+25)<br><b>Cha</b> 26 (+23)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Supernal<br><b>Alignment</b> Evil</td></tr><tr><td><b>Skills</b> Intimidate +28</td><td style=\"padding-left:15px;\"><b>Senses</b> Darkvision<br><b>Passive</b> Perception 35 | Insight 35</td></td></tr></table><p>[[/roll 0#&lt;b&gt;Corruption&lt;/b&gt; (Necrotic) aura 10; any creature that enters or starts its turn in the aura takes 20 necrotic damage.]] <b>Corruption</b> (Necrotic) aura 10; any creature that enters or starts its turn in the aura takes 20 necrotic damage.</p><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 3d8 + 9 damage. &lt;/p&gt;]] (⚔) <b>Slam</b> (standard, at-will) </p><p>Reach 4; [[/roll 1d20+35[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; &lt;u&gt;+35 vs AC&lt;/u&gt;; 3d8 + 9 damage. &lt;/p&gt;]]; [[/roll 3d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Slam&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 4; +35 vs AC; 3d8 + 9 damage. &lt;/p&gt;]] <22.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Corrupting Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Range 20; targets two creatures; +33 vs Reflex; 3d8 + 9 damage. &lt;/p&gt;]] (➶) <b>Corrupting Bolt</b> (standard, at-will) </p><p>Range 20; targets two creatures; [[/roll 1d20+33[ vs Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Corrupting Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Range 20; targets two creatures; &lt;u&gt;+33 vs Reflex&lt;/u&gt;; 3d8 + 9 damage. &lt;/p&gt;]]; [[/roll 3d8 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;(➶) &lt;b&gt;Corrupting Bolt&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Range 20; targets two creatures; +33 vs Reflex; 3d8 + 9 damage. &lt;/p&gt;]] <22.5>  damage. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will until first bloodied) &lt;/p&gt;&lt;p&gt;Ragnorra moves its speed and can move through enemies’ spaces. When it enters and enemy’s space Ragnorra makes the following attack: +33 vs. Reflex; 2d10 + 9 and the target is knocked prone. Ragnorra must end this move in an unoccupied space, but can make a melee basic attack at the end of this move. &lt;/p&gt;]] ⚔ <b>Trample</b> (standard, at-will until first bloodied) </p><p>Ragnorra moves its speed and can move through enemies’ spaces. When it enters and enemy’s space Ragnorra makes the following attack: [[/roll 1d20+33[ vs. Reflex]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will until first bloodied) &lt;/p&gt;&lt;p&gt;Ragnorra moves its speed and can move through enemies’ spaces. When it enters and enemy’s space Ragnorra makes the following attack: &lt;u&gt;+33 vs. Reflex&lt;/u&gt;; 2d10 + 9 and the target is knocked prone. Ragnorra must end this move in an unoccupied space, but can make a melee basic attack at the end of this move. &lt;/p&gt;]]; [[/roll 2d10 + 9#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Trample&lt;/b&gt; (standard, at-will until first bloodied) &lt;/p&gt;&lt;p&gt;Ragnorra moves its speed and can move through enemies’ spaces. When it enters and enemy’s space Ragnorra makes the following attack: +33 vs. Reflex; 2d10 + 9 and the target is knocked prone. Ragnorra must end this move in an unoccupied space, but can make a melee basic attack at the end of this move. &lt;/p&gt;]] <20>  and the target is knocked prone. Ragnorra must end this move in an unoccupied space, but can make a melee basic attack at the end of this move. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;True Mother Chord&lt;/b&gt; (standard, when ragnorra is bloodied, encounter) &lt;/p&gt;&lt;p&gt;Close burst 10; targets up to 4 enemies in the burst; +33 vs Fortitude; 1d12 + 9 and ongoing 15 damage (save ends). Aftereffect: the target is dazed and takes ongoing 5 damage (save ends both). &lt;/p&gt;]] ᗕ <b>True Mother Chord</b> (standard, when ragnorra is bloodied, encounter) </p><p>Close burst 10; targets up to 4 enemies in the burst; [[/roll 1d20+33[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;True Mother Chord&lt;/b&gt; (standard, when ragnorra is bloodied, encounter) &lt;/p&gt;&lt;p&gt;Close burst 10; targets up to 4 enemies in the burst; &lt;u&gt;+33 vs Fortitude&lt;/u&gt;; 1d12 + 9 and ongoing 15 damage (save ends). Aftereffect: the target is dazed and takes ongoing 5 damage (save ends both). &lt;/p&gt;]]; [[/roll 1d12 + 9#&lt;p style=\"background-color:darkred;color:white;\"&gt;ᗕ &lt;b&gt;True Mother Chord&lt;/b&gt; (standard, when ragnorra is bloodied, encounter) &lt;/p&gt;&lt;p&gt;Close burst 10; targets up to 4 enemies in the burst; +33 vs Fortitude; 1d12 + 9 and ongoing 15 damage (save ends). Aftereffect: the target is dazed and takes ongoing 5 damage (save ends both). &lt;/p&gt;]] <15.5>  and ongoing 15 damage (save ends). Aftereffect: the target is dazed and takes ongoing 5 damage (save ends both). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt; &lt;b&gt;Reflect Power &lt;/b&gt; (immediate reaction, when missed by a power that attacks against fortitude, reflex, or will; recharge ⚅) &lt;/p&gt;&lt;p&gt;Ragnorra reflects a portion of the power back onto the character who attacked her; that character takes 20 damage of the same type as the attack.&lt;/p&gt;]]  <b>Reflect Power </b> (immediate reaction, when missed by a power that attacks against fortitude, reflex, or will; recharge ⚅) </p><p>Ragnorra reflects a portion of the power back onto the character who attacked her; that character takes 20 damage of the same type as the attack.</p></tr></td></table>",

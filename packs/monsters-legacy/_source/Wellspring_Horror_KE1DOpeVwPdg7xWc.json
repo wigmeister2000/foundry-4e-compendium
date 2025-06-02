@@ -61,7 +61,8 @@
 					"defBonus":0,
 					"formula":"20",
 					"damageType":{},
-					"effectType":{}
+					"effectType":{},
+					"isBasic":true
 				},
 				"hit":{
 					"shareDamageRoll":false,
@@ -287,10 +288,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"",
 				"rechargeCondition":null,
@@ -465,10 +466,10 @@
 				"requirements":"",
 				"weaponType":"none",
 				"weaponUse":"none",
-				"rangeType":null,
+				"rangeType":"melee",
 				"rangeTextShort":"",
 				"rangeText":"",
-				"rangePower":null,
+				"rangePower":1,
 				"area":null,
 				"rechargeRoll":"5",
 				"rechargeCondition":"",
@@ -1122,23 +1123,10 @@
 				"max":10
 			},
 			"init":{
-				"value":10,
+				"value":0,
 				"ability":"",
-				"bonus":[
-					{
-						"name":"Base",
-						"value":4,
-						"active":true,
-						"note":""
-					},
-					{
-						"name":"Negate",
-						"value":0,
-						"active":true,
-						"note":""
-					}
-				],
-				"notes":""
+				"notes":"",
+				"base":10
 			}
 		},
 		"biography":"<table><tr><td><b>HP</b> 635; <b>Bloodied</b> 317</td><td style=\"padding-left: 15px;\"><b>Init</b> +10 | <b>AP</b> 2 | <b>Save</b> +5</td></tr><tr><td style=\"text-align: center; background-color:lightgrey; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td><b>AC</b> 29</td><td><b>Fort</b> 28</td><td><b>Ref</b> 26</td><td><b>Will</b> 25</td></tr></table></td><td style=\"padding-left:15px;\"><b>Speed</b> 6, climb 3</td></tr><tr><td style=\"text-align: center; padding:0px 5px 0px 5px;\"><table><tr style=\"border 0px; padding:0px 5px 0px 5px;\"><td>Ability Scores</td><td><b>Str</b> 22 (+12)<br><b>Con</b> 15 (+8)</td><td><b>Dex</b> 19 (+10)<br><b>Int</b> 8 (+5)</td><td><b>Wis</b> 6 (+4)<br><b>Cha</b> 17 (+9)</td></tr></table><td style=\"padding-left:15px;\"><b>Languages</b> Common, Deep Speech<br><b>Alignment</b> Chaotic evil</td></tr><tr><td><b>Skills</b> Athletics +17</td><td style=\"padding-left:15px;\"><b>Senses</b> Low-light vision<br><b>Passive</b> Perception 14 | Insight 14</td></td></tr></table><hr><table><tr><td><h4><b>Standard</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+6 damage, and the target is grabbed. The Wellspring horror can grab up to three targets. &lt;/p&gt;]] (⚔) <b>Tentacle</b> (standard, at-will) </p><p>Reach 2; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; &lt;u&gt;+20 vs AC&lt;/u&gt;; 2d6+6 damage, and the target is grabbed. The Wellspring horror can grab up to three targets. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;(⚔) &lt;b&gt;Tentacle&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Reach 2; +20 vs AC; 2d6+6 damage, and the target is grabbed. The Wellspring horror can grab up to three targets. &lt;/p&gt;]] <13>  damage, and the target is grabbed. The Wellspring horror can grab up to three targets. </p></tr></td><tr><td><p style=\"background-color:darkred;color:white;\">[[/roll 0#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Rip&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Targets a creature the Wellspring horror has grabbed; +18 vs Fortitude; 5d6+6 damage, and the target is pushed 3 squares, knocked prone, and no longer grabbed. &lt;/p&gt;]] ⚔ <b>Tentacle Rip</b> (standard, recharge ⚄⚅) </p><p>Targets a creature the Wellspring horror has grabbed; [[/roll 1d20+18[ vs Fortitude]#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Rip&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Targets a creature the Wellspring horror has grabbed; &lt;u&gt;+18 vs Fortitude&lt;/u&gt;; 5d6+6 damage, and the target is pushed 3 squares, knocked prone, and no longer grabbed. &lt;/p&gt;]]; [[/roll 5d6+6#&lt;p style=\"background-color:darkred;color:white;\"&gt;⚔ &lt;b&gt;Tentacle Rip&lt;/b&gt; (standard, recharge ⚄⚅) &lt;/p&gt;&lt;p&gt;Targets a creature the Wellspring horror has grabbed; +18 vs Fortitude; 5d6+6 damage, and the target is pushed 3 squares, knocked prone, and no longer grabbed. &lt;/p&gt;]] <23.5>  damage, and the target is pushed 3 squares, knocked prone, and no longer grabbed. </p></tr></td><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tentacle Flurry&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; +20 vs AC; 2d6+6 damage, and the target slides 1 square and is knocked prone. &lt;/p&gt;]] ᗕ <b>Tentacle Flurry</b> (standard, at-will) </p><p>Close burst 1; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tentacle Flurry&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; &lt;u&gt;+20 vs AC&lt;/u&gt;; 2d6+6 damage, and the target slides 1 square and is knocked prone. &lt;/p&gt;]]; [[/roll 2d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;ᗕ &lt;b&gt;Tentacle Flurry&lt;/b&gt; (standard, at-will) &lt;/p&gt;&lt;p&gt;Close burst 1; +20 vs AC; 2d6+6 damage, and the target slides 1 square and is knocked prone. &lt;/p&gt;]] <13>  damage, and the target slides 1 square and is knocked prone. </p></tr></td><tr><td><h4><b>Minor</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature the Wellspring horror has grabbed; +20 vs AC; 1d6+6 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] ⚔ <b>Bite</b> (minor, at-will) ✦ <b>Poison</b></p><p>Targets a creature the Wellspring horror has grabbed; [[/roll 1d20+20[ vs AC]#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature the Wellspring horror has grabbed; &lt;u&gt;+20 vs AC&lt;/u&gt;; 1d6+6 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]]; [[/roll 1d6+6#&lt;p style=\"background-color:green;color:white;\"&gt;⚔ &lt;b&gt;Bite&lt;/b&gt; (minor, at-will) ✦ &lt;b&gt;Poison&lt;/b&gt;&lt;/p&gt;&lt;p&gt;Targets a creature the Wellspring horror has grabbed; +20 vs AC; 1d6+6 damage, and ongoing 5 poison damage (save ends). &lt;/p&gt;]] <9.5>  damage, and ongoing 5 poison damage (save ends). </p></tr></td><tr><td><h4><b>Triggered</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tentacle Block&lt;/b&gt; (immediate reaction, usable when targeted by a melee or ranged attack; requires a target the wellspring horror has grabbed; at-will) &lt;/p&gt;&lt;p&gt;The Wellspring horror changes the attack’s target from itself to a creature it is grabbing other than the attacker.&lt;/p&gt;]]  <b>Tentacle Block</b> (immediate reaction, usable when targeted by a melee or ranged attack; requires a target the wellspring horror has grabbed; at-will) </p><p>The Wellspring horror changes the attack’s target from itself to a creature it is grabbing other than the attacker.</p></tr></td><tr><td><h4><b>Move</b></h4></td></tr><tr><td><p style=\"background-color:green;color:white;\">[[/roll 0#&lt;p style=\"background-color:green;color:white;\"&gt; &lt;b&gt;Tentacle Scuttle&lt;/b&gt; (move; at-will) &lt;/p&gt;&lt;p&gt;The Wellspring horror shifts 2 squares.&lt;/p&gt;]]  <b>Tentacle Scuttle</b> (move; at-will) </p><p>The Wellspring horror shifts 2 squares.</p></tr></td></table>",
