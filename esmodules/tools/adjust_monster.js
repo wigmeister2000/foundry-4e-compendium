@@ -1054,14 +1054,14 @@ async function addMonsterKnowledge(actor) {
 
     // Powers and Traits
     const powers = actor.items.contents.filter(x => x.type === "power").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
-    const traits = actor.items.contents.filter(x => x.type === "feats").filter(x => x.featureType === "class").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
+    const traits = actor.items.contents.filter(x => x.type === "feature" && x.system.featureType === "class").map(x => "<h3>" + x.name + "</h3>" + x.system.description.value);
     descriptionHard.push("<h2>Traits</h2>" + traits.join(""));
     descriptionHard.push("<h2>Powers</h2>" + powers.join(""));
 
     const moderate = {
         "name": `Monster Knowledge (DC ${dcModerate})`,
         "type": "feature",
-        "featureType": "destiny",
+        "system.featureType": "destiny",
         "img": "icons/svg/book.svg",
         "system.description.value": descriptionModerate.join("")
     };
@@ -1069,7 +1069,7 @@ async function addMonsterKnowledge(actor) {
     const hard = {
         "name": `Monster Knowledge (DC ${dcHard})`,
         "type": "feature",
-        "featureType": "destiny",
+        "system.featureType": "destiny",
         "img": "icons/svg/book.svg",
         "system.description.value": descriptionHard.join("")
     };
