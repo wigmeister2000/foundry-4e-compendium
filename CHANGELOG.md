@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.17
+- Monster knowledge hotfix
+
 ## Foundry 4e Compendium v1.35.16
 - Updated monster knowledge tool
 
