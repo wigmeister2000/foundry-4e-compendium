@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.18
+- Removed bar2 from prototype tokens
+
 ## Foundry 4e Compendium v1.35.17
 - Monster knowledge hotfix
 
