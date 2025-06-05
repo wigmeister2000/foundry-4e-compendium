@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.19
+- Updated Area wall powers to v0.6 data model
+- Merge [PR#5](https://github.com/wigmeister2000/foundry-4e-compendium/pull/5) from NightB1ade
+
 ## Foundry 4e Compendium v1.35.18
 - Removed bar2 from prototype tokens
 
