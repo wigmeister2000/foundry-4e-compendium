@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.20
+- Updated feature types
+
 ## Foundry 4e Compendium v1.35.19
 - Updated Area wall powers to v0.6 data model
 - Merge [PR#5](https://github.com/wigmeister2000/foundry-4e-compendium/pull/5) from NightB1ade
