@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.35.21
+- Burble compatibility
+
 ## Foundry 4e Compendium v1.35.20
 - Updated feature types
 
