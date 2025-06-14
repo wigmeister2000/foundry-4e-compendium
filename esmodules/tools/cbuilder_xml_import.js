@@ -222,7 +222,7 @@ async function parseCharacter(xml, core = false) {
                         "max": powerPoints,
                         "sr": true,
                         "lr": true,
-                        "label": "Power"
+                        "label": "Power Points"
                     }
                 });
             }

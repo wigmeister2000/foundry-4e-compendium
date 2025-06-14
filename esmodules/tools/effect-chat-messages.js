@@ -60,7 +60,7 @@ export async function createEffectsMessageCombat(combat, state, time) {
         const name = token.document.name;
         const effects = token.document.actorLink ? Actor.get(token.document.actorId).effects.map(x => x)?.filter(x => temporaryQ(x)) : token.document.actor.effects?.filter(x => !x.disabled);
         if (effects?.length > 0) {
-            const header = `<p><b>Round</b> ${state.round}</p><p><b>${name}</b> has the following temporary effects:</p>`;
+            const header = `<p><strong>Round</strong> ${state.round}</p><p><strong>${name}</strong> has the following temporary effects:</p>`;
 
             const effectLines = [];
 
@@ -72,7 +72,7 @@ export async function createEffectsMessageCombat(combat, state, time) {
             const message = header + '<table>' + effectLines.join("") + "</table>";
             await createMessage(message);
         } else {
-            await createMessage(`<p><b>Round</b> ${state.round}</p><p><b>${name}</b> has no temporary effects.</p>`);
+            await createMessage(`<p><strong>Round</strong> ${state.round}</p><p><strong>${name}</strong> has no temporary effects.</p>`);
         }
     }
 }
@@ -88,7 +88,7 @@ export async function createEffectsMessageSelected() {
             const effects = token.document.actorLink ? Actor.get(token.document.actorId).effects.map(x => x)?.filter(x => temporaryQ(x)) : token.document.actor.effects?.filter(x => !x.disabled);
 
             if (effects && effects.length > 0) {
-                const header = `<p><b>${name}</b> has the following temporary effects:</p>`;
+                const header = `<strong>${name}</strong> has the following temporary effects:<br>`;
 
                 const effectsLines = [];
 
@@ -100,7 +100,7 @@ export async function createEffectsMessageSelected() {
                 const message = header + '<table>' + effectsLines.join("") + "</table>";
                 messageParts.push(message);
             } else {
-                messageParts.push(`<p><b>${name}</b> has no temporary effects.</p>`);
+                messageParts.push(`<strong>${name}</strong> has no temporary effects.`);
             }
         }
 

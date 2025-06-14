@@ -84,13 +84,13 @@ async function encounterSummarySelected(characters, partyLevel) {
         decrease = totalXP - characters * lookup.encounterXP[partyLevel + 4];
     }
 
-    const decreaseMessage = decrease ? `Remove <b>${decrease} XP</b> to make it ${difficultyTable[difficulty - 1].toLowerCase()}.<br>` : "";
-    const increaseMessage = increase ? `Add <b>${increase} XP</b> to make it ${difficultyTable[difficulty + 1].toLowerCase()}.<br>` : "";
+    const decreaseMessage = decrease ? `Remove <strong>${decrease} XP</strong> to make it ${difficultyTable[difficulty - 1].toLowerCase()}.<br>` : "";
+    const increaseMessage = increase ? `Add <strong>${increase} XP</strong> to make it ${difficultyTable[difficulty + 1].toLowerCase()}.<br>` : "";
 
     await createPrivateMessage(
-        `<b>Encounter Level</b>: ${encounterLevel}<br>
-        <b>XP</b>: ${totalXP} (${Math.floor(totalXP / characters)} XP per character)<br>
-        <b>Difficulty</b>: ${difficultyTable[difficulty]}<br>
+        `<strong>Encounter Level</strong>: ${encounterLevel}<br>
+        <strong>XP</strong>: ${totalXP} (${Math.floor(totalXP / characters)} XP per character)<br>
+        <strong>Difficulty</strong>: ${difficultyTable[difficulty]}<br>
         ` + decreaseMessage + increaseMessage
     );
 }

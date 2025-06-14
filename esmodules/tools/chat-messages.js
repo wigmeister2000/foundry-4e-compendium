@@ -27,20 +27,20 @@ export async function createHPchangeMessage(actor, change, options, userId) {
                 diffTempHP = newTempHP - oldTempHP;
             }
 
-            let message = `<b>${name}</b>`;
+            let message = `<strong>${name}</strong>`;
 
             if (diffTempHP > 0) {
-                message += `<p>+${diffTempHP} Temp HP</p>`;
+                message += `<br>+${diffTempHP} Temp HP`;
             }
             else if (diffTempHP < 0) {
-                message += `<p>-${Math.abs(diffTempHP)} Temp HP</p>`;
+                message += `<br>-${Math.abs(diffTempHP)} Temp HP`;
             }
 
             if (diffHP > 0) {
-                message += `<p>+${diffHP} HP</p>`;
+                message += `<br>+${diffHP} HP`;
             }
             else if (diffHP < 0) {
-                message += `<p>-${Math.abs(diffHP)} HP</p>`;
+                message += `<br>-${Math.abs(diffHP)} HP`;
             }
 
             if (diffHP || diffTempHP) {
@@ -63,13 +63,13 @@ export async function createSurgeChangeMessage(actor, change, options, userId) {
                 diffSurges = newSurges - oldSurges;
             }
 
-            let message = `<b>${name}</b>`;
+            let message = `<strong>${name}</strong>`;
 
             if (diffSurges > 0) {
-                message += `<p>+${diffSurges} healing surge(s)</p>`;
+                message += `<br>+${diffSurges} healing surge(s)`;
             }
             else if (diffSurges < 0) {
-                message += `<p>-${Math.abs(diffSurges)} healing surge(s)</p>`;
+                message += `<br>-${Math.abs(diffSurges)} healing surge(s)`;
             }
 
             if (diffSurges) {
@@ -105,30 +105,30 @@ export async function createResourceChangeMessage(actor, change, options, userId
             }
 
 
-            let message = `<b>${name}</b>`;
+            let message = `<strong>${name}</strong>`;
             const label1 = actor.system.resources.primary.label != "" ? actor.system.resources.primary.label : actor.system.resources.primary.placeholder;
             const label2 = actor.system.resources.secondary.label != "" ? actor.system.resources.secondary.label : actor.system.resources.secondary.placeholder;
             const label3 = actor.system.resources.tertiary.label != "" ? actor.system.resources.tertiary.label : actor.system.resources.tertiary.placeholder;
 
             if (diffResource1 > 0) {
-                message += `<p>+${diffResource1} ` + label1 + " point(s)</p>";
+                message += `<br>+${diffResource1} ` + label1;
             }
             else if (diffResource1 < 0) {
-                message += `<p>-${Math.abs(diffResource1)} ` + label1 + " point(s)</p>";
+                message += `<br>-${Math.abs(diffResource1)} ` + label1;
             }
 
             if (diffResource2 > 0) {
-                message += `<p>+${diffResource2} ` + label2 + " point(s)</p>";
+                message += `<br>+${diffResource2} ` + label2;
             }
             else if (diffResource2 < 0) {
-                message += `<p>-${Math.abs(diffResource2)} ` + label2 + " point(s)</p>";
+                message += `<br>-${Math.abs(diffResource2)} ` + label2;
             }
 
             if (diffResource3 > 0) {
-                message += `<p>+${diffResource3} ` + label3 + " point(s)</p>";
+                message += `<br>+${diffResource3} ` + label3;
             }
             else if (diffResource3 < 0) {
-                message += `<p>-${Math.abs(diffResource3)} ` + label3 + " point(s)</p>";
+                message += `<br>-${Math.abs(diffResource3)} ` + label3;
             }
 
             if (diffResource1 || diffResource2 || diffResource3) {
