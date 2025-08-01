@@ -1,6 +1,6 @@
 import { DnD4ECompendium } from "../dnd-4e-compendium.js";
 import { lookup } from "./lookup_tables.js";
-import { escapeRegExp, capitalize, union, randomChoice } from "./utility.js";
+import { escapeRegExp, capitalize, union, randomChoice, dropFirst, dropAll } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
 
 export function fetchRandomMonster(level, role, legacy) {
@@ -639,4 +639,31 @@ export function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
     const encounter = fetchRandomMonsters(encounterSpecs);
 
     return encounter;
+}
+
+export function substituteMinions(monsters, pcLevel) {
+    const tier = Math.ceil(pcLevel / 10);
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
+    const target = filtered.length > 0 ? randomChoice(filtered) : [];
+
+    if (target) {
+
+        const substituteSpecs = [{
+            role: target.role,
+            level: target.level,
+            count: 3 + tier,
+            batch: true,
+            legacy: target.legacy
+        }];
+
+        substituteSpecs[0].role.secondary = "minion";
+
+        const minions = fetchRandomMonsters(substituteSpecs);
+        console.log(minions);
+
+        const purged = dropFirst(monsters, target);
+        console.log(purged);
+
+        return [...purged, ...minions]
+    }
 }
