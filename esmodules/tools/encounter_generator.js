@@ -322,3 +322,206 @@ export function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
 
     return encounter;
 }
+
+export function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
+    const encounterSpecs = [];
+
+    if (difficulty === "easy") {
+        // Front line
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["brute", "soldier"]),
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel - 4,
+            count: 3,
+            batch: batch,
+            legacy: legacy
+        });
+
+        // Rear line
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["controller", "artillery"]),
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel - 2,
+            count: 2,
+            batch: batch,
+            legacy: legacy
+        });
+
+    } else if (difficulty === "standard") {
+        const variant = randomChoice([1, 2]);
+
+        switch (variant) {
+            case 1: {
+                // Front line
+                encounterSpecs.push({
+                    role: {
+                        primary: randomChoice(["brute", "soldier"]),
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel,
+                    count: 3,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Rear line
+                encounterSpecs.push({
+                    role: {
+                        primary: randomChoice(["controller", "artillery"]),
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel,
+                    count: 2,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+            case 2: {
+                // Front line
+                encounterSpecs.push({
+                    role: {
+                        primary: randomChoice(["brute", "soldier"]),
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel - 2,
+                    count: 3,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Rear line
+                encounterSpecs.push({
+                    role: {
+                        primary: randomChoice(["controller", "artillery"]),
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 3,
+                    count: 2,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+        }
+
+    } else if (difficulty === "hard") {
+        const variant = randomChoice([1, 2]);
+
+        switch (variant) {
+            case 1: {
+                // Front line
+                encounterSpecs.push({
+                    role: {
+                        primary: randomChoice(["brute", "soldier"]),
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 2,
+                    count: 3,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Controller
+                encounterSpecs.push({
+                    role: {
+                        primary: "controller",
+                        secondary: "standard",
+                        leader: "any"
+                    },
+                    level: pcLevel + 4,
+                    count: 1,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Artillery / Lurker
+                encounterSpecs.push({
+                    role: {
+                        primary: randomChoice(["artillery", "lurker"]),
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 4,
+                    count: 1,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+            case 2: {
+                // Front line
+                encounterSpecs.push({
+                    role: {
+                        primary: randomChoice(["brute", "soldier"]),
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel,
+                    count: 3,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Artillery
+                encounterSpecs.push({
+                    role: {
+                        primary: "artillery",
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 1,
+                    count: 2,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Controller
+                encounterSpecs.push({
+                    role: {
+                        primary: "controller",
+                        secondary: "standard",
+                        leader: "any"
+                    },
+                    level: pcLevel + 2,
+                    count: 1,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Lurker
+                encounterSpecs.push({
+                    role: {
+                        primary: "lurker",
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 2,
+                    count: 1,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+        }
+    }
+
+    const encounter = fetchRandomMonsters(encounterSpecs);
+
+    return encounter;
+}
