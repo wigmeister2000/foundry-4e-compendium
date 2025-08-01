@@ -9,3 +9,8 @@ export function capitalize(string) {
 export function union() {
     return [...new Set([...arguments].flat())];
 }
+
+export function randomChoice(array){
+    const i = Math.floor(Math.random() * array.length);
+    return array[i]; 
+}
