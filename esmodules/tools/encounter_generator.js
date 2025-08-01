@@ -7,23 +7,33 @@ export function fetchRandomMonster(level, role, legacy) {
     let filtered = monsterIndex.filter(x => x.level === level && x.legacy === legacy);
 
     if (role != {}) {
-        filtered = filtered.filter(x => x.role.primary === role.primary && x.role.secondary === role.secondary && x.role.leader === role.leader);
+        if (role.primary != "any") {
+            filtered = filtered.filter(x => x.role.primary === role.primary);
+        }
+
+        if (role.secondary != "any") {
+            filtered = filtered.filter(x => x.role.secondary === role.secondary);
+        }
+
+        if (role.leader != "any") {
+            filtered = filtered.filter(x => x.role.leader === role.leader);
+        }
     }
 
     return filtered.length > 0 ? randomChoice(filtered) : [];
 }
 
-export function fetchRandomMonsters(specs){
+export function fetchRandomMonsters(specs) {
     const monsters = [];
-    
-    for (const spec of specs){
-        if (!spec.batch){
-            for (let i = 0; i < spec.count; i++){
+
+    for (const spec of specs) {
+        if (!spec.batch) {
+            for (let i = 0; i < spec.count; i++) {
                 monsters.push(fetchRandomMonster(spec.level, spec.role, spec.legacy));
             }
         } else {
             const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy);
-            for (let i = 0; i < spec.count; i++){
+            for (let i = 0; i < spec.count; i++) {
                 monsters.push(monster);
             }
         }
@@ -41,13 +51,13 @@ export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch =
             role: {
                 primary: "controller",
                 secondary: "standard",
-                leader: false
+                leader: "any"
             },
             level: pcLevel - 2,
             count: 1,
             batch: batch,
             legacy: legacy
-         });
+        });
 
         // Skirmishers
         encounterSpecs.push({
@@ -60,7 +70,7 @@ export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch =
             count: 6,
             batch: batch,
             legacy: legacy
-         });
+        });
 
     } else if (difficulty === "standard") {
         // Controller
@@ -68,13 +78,13 @@ export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch =
             role: {
                 primary: "controller",
                 secondary: "standard",
-                leader: false
+                leader: "any"
             },
             level: pcLevel + 1,
             count: 1,
             batch: batch,
             legacy: legacy
-         });
+        });
 
         // Skirmishers
         encounterSpecs.push({
@@ -87,7 +97,7 @@ export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch =
             count: 6,
             batch: batch,
             legacy: legacy
-         });
+        });
 
     } else if (difficulty === "hard") {
         // Controller
@@ -95,13 +105,13 @@ export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch =
             role: {
                 primary: "controller",
                 secondary: "standard",
-                leader: false
+                leader: "any"
             },
             level: pcLevel + 5,
             count: 1,
             batch: batch,
             legacy: legacy
-         });
+        });
 
         // Skirmishers
         encounterSpecs.push({
@@ -114,7 +124,198 @@ export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch =
             count: 5,
             batch: batch,
             legacy: legacy
-         });
+        });
+    }
+
+    const encounter = fetchRandomMonsters(encounterSpecs);
+
+    return encounter;
+}
+
+export function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) {
+    const encounterSpecs = [];
+
+    if (difficulty === "easy") {
+        // Commander
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["controller", "soldier"]),
+                secondary: "standard",
+                leader: "any"
+            },
+            level: pcLevel,
+            count: 1,
+            batch: batch,
+            legacy: legacy
+        });
+
+        // Troops
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["brute", "soldier"]),
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel - 3,
+            count: 4,
+            batch: batch,
+            legacy: legacy
+        });
+
+    } else if (difficulty === "standard") {
+        // Commander
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["controller", "soldier"]),
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel + 3,
+            count: 1,
+            batch: batch,
+            legacy: legacy
+        });
+
+        // Troops
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["brute", "soldier"]),
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel - 2,
+            count: 5,
+            batch: batch,
+            legacy: legacy
+        });
+
+    } else if (difficulty === "hard") {
+        // Commander
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["controller", "soldier"]),
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel + 6,
+            count: 1,
+            batch: batch,
+            legacy: legacy
+        });
+
+        // Troops
+        encounterSpecs.push({
+            role: {
+                primary: randomChoice(["brute", "soldier"]),
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel + 1,
+            count: 3,
+            batch: batch,
+            legacy: legacy
+        });
+
+        // Artillery
+        encounterSpecs.push({
+            role: {
+                primary: "artillery",
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel + 1,
+            count: 2,
+            batch: batch,
+            legacy: legacy
+        });
+
+    }
+
+    const encounter = fetchRandomMonsters(encounterSpecs);
+
+    return encounter;
+}
+
+export function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
+    const encounterSpecs = [];
+
+    if (difficulty === "easy") {
+        // Solo
+        encounterSpecs.push({
+            role: {
+                primary: "any",
+                secondary: "solo",
+                leader: "any"
+            },
+            level: pcLevel - 2,
+            count: 1,
+            batch: batch,
+            legacy: legacy
+        });
+
+    } else if (difficulty === "standard") {
+        // Solo
+        encounterSpecs.push({
+            role: {
+                primary: "any",
+                secondary: "solo",
+                leader: "any"
+            },
+            level: randomChoice([pcLevel, pcLevel + 1]),
+            count: 1,
+            batch: batch,
+            legacy: legacy
+        });
+
+    } else if (difficulty === "hard") {
+        const variant = randomChoice([1, 2]);
+
+        switch (variant) {
+            case 1: {
+                // Solo
+                encounterSpecs.push({
+                    role: {
+                        primary: "any",
+                        secondary: "solo",
+                        leader: "any"
+                    },
+                    level: pcLevel + 3,
+                    count: 1,
+                    batch: batch,
+                    legacy: legacy
+                });
+                break;
+            }
+            case 2: {
+                // Solo
+                encounterSpecs.push({
+                    role: {
+                        primary: "any",
+                        secondary: "solo",
+                        leader: "any"
+                    },
+                    level: pcLevel + 1,
+                    count: 1,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                // Elite
+                encounterSpecs.push({
+                    role: {
+                        primary: "any",
+                        secondary: "elite",
+                        leader: false
+                    },
+                    level: pcLevel,
+                    count: 1,
+                    batch: batch,
+                    legacy: legacy
+                });
+                break;
+            }
+        }
+
     }
 
     const encounter = fetchRandomMonsters(encounterSpecs);
