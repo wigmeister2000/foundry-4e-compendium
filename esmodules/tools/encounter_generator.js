@@ -525,3 +525,118 @@ export function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
 
     return encounter;
 }
+
+export function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
+    const encounterSpecs = [];
+
+    if (difficulty === "easy") {
+        // Skirmishers
+        encounterSpecs.push({
+            role: {
+                primary: "skirmisher",
+                secondary: "standard",
+                leader: false
+            },
+            level: pcLevel - 4,
+            count: 7,
+            batch: batch,
+            legacy: legacy
+        });
+
+    } else if (difficulty === "standard") {
+        const variant = randomChoice([1, 2]);
+
+        switch (variant) {
+            case 1: {
+                // Skirmishers
+                encounterSpecs.push({
+                    role: {
+                        primary: "skirmisher",
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel - 2,
+                    count: 7,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+            case 2: {
+                // Skirmishers
+                encounterSpecs.push({
+                    role: {
+                        primary: "skirmisher",
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel,
+                    count: 5,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+        }
+
+    } else if (difficulty === "hard") {
+        const variant = randomChoice([1, 2, 3]);
+
+        switch (variant) {
+            case 1: {
+                // Skirmishers
+                encounterSpecs.push({
+                    role: {
+                        primary: "skirmisher",
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 7,
+                    count: 3,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+            case 2: {
+                // Skirmishers
+                encounterSpecs.push({
+                    role: {
+                        primary: "skirmisher",
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 5,
+                    count: 4,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+            case 3: {
+                // Skirmishers
+                encounterSpecs.push({
+                    role: {
+                        primary: "skirmisher",
+                        secondary: "standard",
+                        leader: false
+                    },
+                    level: pcLevel + 2,
+                    count: 6,
+                    batch: batch,
+                    legacy: legacy
+                });
+
+                break;
+            }
+        }
+    }
+
+    const encounter = fetchRandomMonsters(encounterSpecs);
+
+    return encounter;
+}
