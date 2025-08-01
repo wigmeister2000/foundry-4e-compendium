@@ -648,31 +648,50 @@ export function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
 
 export function substituteMinions(monsters, pcLevel) {
     const tier = Math.ceil(pcLevel / 10);
-    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
+    const counts = countOccurences(monsters.map(x => x.name));
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 2 + tier);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
 
     if (Object.keys(target).length > 0) {
 
         const substituteSpecs = [{
-            role: target.role,
+            role: {
+                primary: target.role.primary,
+                secondary: "minion",
+                leader: target.role.leader
+            },
             level: target.level,
-            count: 3 + tier,
+            count: 1,
             batch: true,
             legacy: target.legacy
         }];
 
-        substituteSpecs[0].role.secondary = "minion";
+        const modifiedMonsters = [];
+        let dropped = 0;
+
+        for (const monster of monsters) {
+            if (dropped < 3 + tier && monster.name === target.name) {
+                dropped++
+            } else {
+                modifiedMonsters.push(monster);
+            }
+        }
 
         const substitute = fetchRandomMonsters(substituteSpecs);
-        const purged = dropFirst(monsters, target);
 
-        return [...purged, ...substitute]
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
     }
 }
 
 export function substituteElite(monsters, pcLevel) {
     const counts = countOccurences(monsters.map(x => x.name));
-    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 4);
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 1);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
 
     if (Object.keys(target).length > 0) {
