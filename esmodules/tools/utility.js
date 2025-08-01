@@ -34,3 +34,9 @@ export function dropAll(arr, value) {
     }
     return arr;
 }
+
+export function countOccurences(arr) {
+    const tally = {};
+    arr.forEach(x => tally[x] = (tally[x] || 0) + 1);
+    return tally;
+}
