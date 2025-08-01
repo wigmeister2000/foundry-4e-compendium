@@ -6,11 +6,13 @@ import { createHPchangeMessage, createSurgeChangeMessage, createResourceChangeMe
 import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
 import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
 import { addActorContextMenuImportConfig, addActorContextMenuCopyID } from "./tools/actor-import-config.js";
+import { encounterBattlefieldControl, fetchRandomMonster, fetchRandomMonsters } from "./tools/encounter_generator.js";
 
 Hooks.once("init", function () {
     DnD4ECompendium.initialize();
     registerConfigurations();
     DnD4ECompendium.registerHotKeys();
+    DnD4ECompendium.registerAPI();
 });
 
 export class DnD4ECompendium {
@@ -50,6 +52,13 @@ export class DnD4ECompendium {
         Hooks.on("combatStart", createEffectsMessageCombat);
         Hooks.on("combatRound", createEffectsMessageCombat);
         Hooks.on("combatTurn", createEffectsMessageCombat);
+    }
+    
+    static registerAPI() {
+        game.modules.get(DnD4ECompendium.ID).api = {};
+        game.modules.get(DnD4ECompendium.ID).api.fetchRandomMonster = fetchRandomMonster;
+        game.modules.get(DnD4ECompendium.ID).api.fetchRandomMonsters = fetchRandomMonsters;
+        game.modules.get(DnD4ECompendium.ID).api.encounterBattlefieldControl = encounterBattlefieldControl;
     }
 
     static registerHotKeys() {
