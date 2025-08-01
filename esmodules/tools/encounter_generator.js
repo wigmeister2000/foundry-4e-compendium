@@ -1,12 +1,12 @@
 import { DnD4ECompendium } from "../dnd-4e-compendium.js";
 import { lookup } from "./lookup_tables.js";
-import { escapeRegExp, capitalize, union, randomChoice, dropFirst, dropAll } from "./utility.js";
+import { escapeRegExp, capitalize, union, randomChoice, dropFirst, dropAll, countOccurences } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
 
 export function fetchRandomMonster(level, role, legacy) {
     let filtered = monsterIndex.filter(x => x.level === level && x.legacy === legacy);
 
-    if (role != {}) {
+    if (Object.keys(role).length > 0) {
         if (role.primary != "any") {
             filtered = filtered.filter(x => x.role.primary === role.primary);
         }
@@ -20,7 +20,7 @@ export function fetchRandomMonster(level, role, legacy) {
         }
     }
 
-    return filtered.length > 0 ? randomChoice(filtered) : [];
+    return filtered.length > 0 ? randomChoice(filtered) : {};
 }
 
 export function fetchRandomMonsters(specs) {
@@ -29,12 +29,17 @@ export function fetchRandomMonsters(specs) {
     for (const spec of specs) {
         if (!spec.batch) {
             for (let i = 0; i < spec.count; i++) {
-                monsters.push(fetchRandomMonster(spec.level, spec.role, spec.legacy));
+                const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy);
+                if (Object.keys(monster).length > 0) {
+                    monsters.push(monster);
+                }
             }
         } else {
             const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy);
-            for (let i = 0; i < spec.count; i++) {
-                monsters.push(monster);
+            if (Object.keys(monster).length > 0) {
+                for (let i = 0; i < spec.count; i++) {
+                    monsters.push(monster);
+                }
             }
         }
     }
@@ -644,9 +649,9 @@ export function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
 export function substituteMinions(monsters, pcLevel) {
     const tier = Math.ceil(pcLevel / 10);
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
-    const target = filtered.length > 0 ? randomChoice(filtered) : [];
+    const target = filtered.length > 0 ? randomChoice(filtered) : {};
 
-    if (target) {
+    if (Object.keys(target).length > 0) {
 
         const substituteSpecs = [{
             role: target.role,
@@ -658,12 +663,93 @@ export function substituteMinions(monsters, pcLevel) {
 
         substituteSpecs[0].role.secondary = "minion";
 
-        const minions = fetchRandomMonsters(substituteSpecs);
-        console.log(minions);
-
+        const substitute = fetchRandomMonsters(substituteSpecs);
         const purged = dropFirst(monsters, target);
-        console.log(purged);
 
-        return [...purged, ...minions]
+        return [...purged, ...substitute]
+    }
+}
+
+export function substituteElite(monsters, pcLevel) {
+    const counts = countOccurences(monsters.map(x => x.name));
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 4);
+    const target = filtered.length > 0 ? randomChoice(filtered) : {};
+
+    if (Object.keys(target).length > 0) {
+
+        const substituteSpecs = [{
+            role: {
+                primary: target.role.primary,
+                secondary: "elite",
+                leader: target.role.leader
+            },
+            level: target.level,
+            count: 1,
+            batch: true,
+            legacy: target.legacy
+        }];
+
+        const modifiedMonsters = [];
+        let dropped = 0;
+
+        for (const monster of monsters) {
+            if (dropped < 2 && monster.name === target.name) {
+                dropped++
+            } else {
+                modifiedMonsters.push(monster);
+            }
+        }
+
+        const substitute = fetchRandomMonsters(substituteSpecs);
+
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
+    }
+}
+
+export function substituteSolo(monsters, pcLevel) {
+    const counts = countOccurences(monsters.map(x => x.name));
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 4);
+    const target = filtered.length > 0 ? randomChoice(filtered) : {};
+
+    if (Object.keys(target).length > 0) {
+
+        const substituteSpecs = [{
+            role: {
+                primary: target.role.primary,
+                secondary: "solo",
+                leader: target.role.leader
+            },
+            level: target.level,
+            count: 1,
+            batch: true,
+            legacy: target.legacy
+        }];
+
+        const modifiedMonsters = [];
+        let dropped = 0;
+
+        for (const monster of monsters) {
+            if (dropped < 5 && monster.name === target.name) {
+                dropped++
+            } else {
+                modifiedMonsters.push(monster);
+            }
+        }
+
+        const substitute = fetchRandomMonsters(substituteSpecs);
+
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
     }
 }
