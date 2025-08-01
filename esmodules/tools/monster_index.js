@@ -1,4 +1,4 @@
-export const monsterIndex = [
+export const monsterIndex =
 	[
 		{
 			"name": "Aarakocra Darter",
@@ -25596,9 +25596,7 @@ export const monsterIndex = [
 				"leader": false
 			},
 			"legacy": false
-		}
-	],
-	[
+		},
 		{
 			"name": "Aberrant Flinger",
 			"_id": "P5MX80FGi6EUNZro",
@@ -58578,4 +58576,3 @@ export const monsterIndex = [
 			"legacy": true
 		}
 	]
-]

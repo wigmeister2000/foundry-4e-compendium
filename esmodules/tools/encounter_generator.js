@@ -2,9 +2,10 @@ import { DnD4ECompendium } from "../dnd-4e-compendium.js";
 import { lookup } from "./lookup_tables.js";
 import { escapeRegExp, capitalize, union, randomChoice, dropFirst, dropAll, countOccurences } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
+import { trapIndex } from "./trap_index.js";
 
-export function fetchRandomMonster(level, role, legacy) {
-    let filtered = monsterIndex.filter(x => x.level === level && x.legacy === legacy);
+export function fetchRandomMonster(level, role, legacy, index = monsterIndex) {
+    let filtered = index.filter(x => x.level === level && x.legacy === legacy);
 
     if (Object.keys(role).length > 0) {
         if (role.primary != "any") {
@@ -23,19 +24,19 @@ export function fetchRandomMonster(level, role, legacy) {
     return filtered.length > 0 ? randomChoice(filtered) : {};
 }
 
-export function fetchRandomMonsters(specs) {
+export function fetchRandomMonsters(specs, index = monsterIndex) {
     const monsters = [];
 
     for (const spec of specs) {
         if (!spec.batch) {
             for (let i = 0; i < spec.count; i++) {
-                const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy);
+                const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy, index);
                 if (Object.keys(monster).length > 0) {
                     monsters.push(monster);
                 }
             }
         } else {
-            const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy);
+            const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy, index);
             if (Object.keys(monster).length > 0) {
                 for (let i = 0; i < spec.count; i++) {
                     monsters.push(monster);
@@ -656,12 +657,12 @@ export function substituteMinions(monsters, pcLevel) {
 
         const substituteSpecs = [{
             role: {
-                primary: target.role.primary,
+                primary: target.legacy ? "any" : target.role.primary, // Account for legacy minions not having a primary role
                 secondary: "minion",
                 leader: target.role.leader
             },
             level: target.level,
-            count: 1,
+            count: 3 + tier,
             batch: true,
             legacy: target.legacy
         }];
@@ -762,6 +763,48 @@ export function substituteSolo(monsters, pcLevel) {
         }
 
         const substitute = fetchRandomMonsters(substituteSpecs);
+
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
+    }
+}
+
+export function substituteTrap(monsters, pcLevel) {
+    const counts = countOccurences(monsters.map(x => x.name));
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
+    const target = filtered.length > 0 ? randomChoice(filtered) : {};
+
+    if (Object.keys(target).length > 0) {
+
+        const substituteSpecs = [{
+            role: {
+                primary: "any",
+                secondary: target.role.secondary,
+                leader: false
+            },
+            level: target.level,
+            count: 1,
+            batch: true,
+            legacy: false
+        }];
+
+        const modifiedMonsters = [];
+        let dropped = 0;
+
+        for (const monster of monsters) {
+            if (dropped < 1 && monster.name === target.name) {
+                dropped++
+            } else {
+                modifiedMonsters.push(monster);
+            }
+        }
+
+        const substitute = fetchRandomMonsters(substituteSpecs, trapIndex);
 
         if (substitute.length > 0) {
             return modifiedMonsters.concat(substitute);

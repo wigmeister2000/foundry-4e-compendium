@@ -6,7 +6,7 @@ import { createHPchangeMessage, createSurgeChangeMessage, createResourceChangeMe
 import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
 import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
 import { addActorContextMenuImportConfig, addActorContextMenuCopyID } from "./tools/actor-import-config.js";
-import { encounterBattlefieldControl, encounterCommanderAndTroops, encounterDoubleLine, encounterDragonsDen, encounterWolfPack, fetchRandomMonster, fetchRandomMonsters, substituteElite, substituteMinions, substituteSolo } from "./tools/encounter_generator.js";
+import { encounterBattlefieldControl, encounterCommanderAndTroops, encounterDoubleLine, encounterDragonsDen, encounterWolfPack, fetchRandomMonster, fetchRandomMonsters, substituteElite, substituteMinions, substituteSolo, substituteTrap } from "./tools/encounter_generator.js";
 
 Hooks.once("init", function () {
     DnD4ECompendium.initialize();
@@ -66,6 +66,7 @@ export class DnD4ECompendium {
         game.modules.get(DnD4ECompendium.ID).api.substituteMinions = substituteMinions;
         game.modules.get(DnD4ECompendium.ID).api.substituteElite = substituteElite;
         game.modules.get(DnD4ECompendium.ID).api.substituteSolo = substituteSolo;
+        game.modules.get(DnD4ECompendium.ID).api.substituteTrap = substituteTrap;
     }
 
     static registerHotKeys() {
