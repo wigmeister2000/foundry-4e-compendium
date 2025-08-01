@@ -10,7 +10,27 @@ export function union() {
     return [...new Set([...arguments].flat())];
 }
 
-export function randomChoice(array){
+export function randomChoice(array) {
     const i = Math.floor(Math.random() * array.length);
-    return array[i]; 
+    return array[i];
+}
+
+export function dropFirst(arr, value) {
+    let index = arr.indexOf(value);
+    if (index > -1) {
+        arr.splice(index, 1);
+    }
+    return arr;
+}
+
+export function dropAll(arr, value) {
+    let i = 0;
+    while (i < arr.length) {
+        if (arr[i] === value) {
+            arr.splice(i, 1);
+        } else {
+            ++i;
+        }
+    }
+    return arr;
 }
