@@ -1,6 +1,4 @@
-import { DnD4ECompendium } from "../dnd-4e-compendium.js";
-import { lookup } from "./lookup_tables.js";
-import { escapeRegExp, capitalize, union, randomChoice, dropFirst, dropAll, countOccurences } from "./utility.js";
+import { randomChoice, countOccurences } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
 import { trapIndex } from "./trap_index.js";
 
