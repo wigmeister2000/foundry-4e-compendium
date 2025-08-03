@@ -1,14 +1,36 @@
-import { randomChoice, countOccurences } from "./utility.js";
+import { randomChoice, countOccurences, capitalize } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
 import { trapIndex } from "./trap_index.js";
+import { createPrivateMessage } from "./utility.js";
 
-export function randomEncounter(type){
-    switch (type){
+export function randomEncounter(type) {
+    switch (type) {
         case "Battlefield Control": return encounterBattlefieldControl;
         case "Commander and Troops": return encounterCommanderAndTroops;
         case "Dragon's Den": return encounterDragonsDen;
         case "Wolf Pack": return encounterWolfPack;
     }
+}
+
+export async function makeEncounterMessage(encounter, pcLevel, difficulty) {
+    const counts = countOccurences(encounter.map(x => x.name));
+    const byName = {};
+
+    for (const monster of encounter) {
+        if (!byName[monster.name]) {
+            byName[monster.name] = monster;
+        }
+    }
+
+    const lines = [
+        "<strong>" + capitalize(difficulty) + " encounter for five level " + pcLevel + " characters</strong>"
+    ];
+
+    for (const key in counts) {
+        lines.push(counts[key] + " " + key);
+    }
+
+    return createPrivateMessage(lines.join("<br>"));
 }
 
 function fetchRandomMonster(level, role, legacy, index = monsterIndex) {

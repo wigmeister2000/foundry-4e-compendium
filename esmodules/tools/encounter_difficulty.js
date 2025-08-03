@@ -1,14 +1,6 @@
 import { DnD4ECompendium } from "../dnd-4e-compendium.js";
 import { lookup } from "./lookup_tables.js";
-
-async function createPrivateMessage(message) {
-    return ChatMessage.create({
-        user: game.user._id,
-        speaker: game.user.name,
-        content: message,
-        whisper: [game.user]
-    });
-}
+import { createPrivateMessage } from "./utility.js";
 
 export async function encounterDifficultyDialogue() {
     new Dialog({

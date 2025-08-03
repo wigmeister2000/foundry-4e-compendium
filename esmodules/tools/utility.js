@@ -40,3 +40,12 @@ export function countOccurences(arr) {
     arr.forEach(x => tally[x] = (tally[x] || 0) + 1);
     return tally;
 }
+
+export async function createPrivateMessage(message) {
+    return ChatMessage.create({
+        user: game.user._id,
+        speaker: game.user.name,
+        content: message,
+        whisper: [game.user]
+    });
+}
