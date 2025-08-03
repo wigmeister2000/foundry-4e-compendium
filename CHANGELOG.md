@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.36.1
+- Random encounter hotfix
+
 ## Foundry 4e Compendium v1.36
 - Random encounter generator (DMG p. 193)
 - Added ritual categories

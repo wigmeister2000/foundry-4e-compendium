@@ -38,6 +38,7 @@ async function randomEncounterDialog() {
             templates: [
                 { id: "Random", name: "Random" },
                 { id: "Battlefield Control", name: "Battlefield Control" },
+                { id: "Commander and Troops", name: "Commander and Troops"},
                 { id: "Double Line", name: "Double Line" },
                 { id: "Dragon's Den", name: "Dragon's Den" },
                 { id: "Wolf Pack", name: "Wolf Pack" }
