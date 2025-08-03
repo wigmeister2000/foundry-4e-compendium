@@ -1,4 +1,4 @@
-export const trapIndex =
+export const trapsIndex =
 	[
 		{
 			"name": "Abyssal Breach",
@@ -9,6 +9,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -20,6 +21,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -31,6 +33,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -42,6 +45,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -53,6 +57,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -64,6 +69,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -75,6 +81,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -86,6 +93,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -97,6 +105,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -108,6 +117,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -119,6 +129,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -130,6 +141,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -141,6 +153,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -152,6 +165,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -163,6 +177,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -174,6 +189,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -185,6 +201,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -196,6 +213,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -207,6 +225,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -218,6 +237,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -229,6 +249,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -240,6 +261,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -251,6 +273,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -262,6 +285,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -273,6 +297,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -284,6 +309,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -295,6 +321,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -306,6 +333,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -317,6 +345,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -328,6 +357,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -339,6 +369,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -350,6 +381,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -361,6 +393,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -372,6 +405,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -383,6 +417,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -394,6 +429,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -405,6 +441,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -416,6 +453,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -427,6 +465,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -438,6 +477,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -449,6 +489,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -460,6 +501,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -471,6 +513,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -482,6 +525,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -493,6 +537,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -504,6 +549,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -515,6 +561,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -526,6 +573,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -537,6 +585,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -548,6 +597,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -559,6 +609,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -570,6 +621,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -581,6 +633,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -592,6 +645,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -603,6 +657,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -614,6 +669,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -625,6 +681,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -636,6 +693,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -647,6 +705,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -658,6 +717,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -669,6 +729,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -680,6 +741,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -691,6 +753,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -702,6 +765,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -713,6 +777,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -724,6 +789,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -735,6 +801,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -746,6 +813,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -757,6 +825,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -768,6 +837,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -779,6 +849,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -790,6 +861,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -801,6 +873,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -812,6 +885,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -823,6 +897,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -834,6 +909,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -845,6 +921,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -856,6 +933,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -867,6 +945,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -878,6 +957,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -889,6 +969,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -900,6 +981,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -911,6 +993,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -922,6 +1005,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -933,6 +1017,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -944,6 +1029,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -955,6 +1041,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -966,6 +1053,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -977,6 +1065,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -988,6 +1077,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -999,6 +1089,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1010,6 +1101,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1021,6 +1113,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1032,6 +1125,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1043,6 +1137,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1054,6 +1149,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1065,6 +1161,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1076,6 +1173,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1087,6 +1185,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1098,6 +1197,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1109,6 +1209,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1120,6 +1221,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1131,6 +1233,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1142,6 +1245,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1153,6 +1257,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1164,6 +1269,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1175,6 +1281,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1186,6 +1293,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1197,6 +1305,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1208,6 +1317,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1219,6 +1329,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1230,6 +1341,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1241,6 +1353,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1252,6 +1365,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1263,6 +1377,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1274,6 +1389,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1285,6 +1401,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1296,6 +1413,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1307,6 +1425,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1318,6 +1437,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1329,6 +1449,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1340,6 +1461,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1351,6 +1473,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1362,6 +1485,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1373,6 +1497,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1384,6 +1509,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1395,6 +1521,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1406,6 +1533,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1417,6 +1545,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1428,6 +1557,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1439,6 +1569,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1450,6 +1581,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1461,6 +1593,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1472,6 +1605,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1483,6 +1617,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1494,6 +1629,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1505,6 +1641,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1516,6 +1653,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1527,6 +1665,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1538,6 +1677,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1549,6 +1689,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1560,6 +1701,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1571,6 +1713,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1582,6 +1725,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1593,6 +1737,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1604,6 +1749,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1615,6 +1761,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1626,6 +1773,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1637,6 +1785,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1648,6 +1797,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1659,6 +1809,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1670,6 +1821,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1681,6 +1833,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1692,6 +1845,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1703,6 +1857,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1714,6 +1869,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1725,6 +1881,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1736,6 +1893,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1747,6 +1905,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1758,6 +1917,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1769,6 +1929,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1780,6 +1941,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1791,6 +1953,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1802,6 +1965,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1813,6 +1977,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1824,6 +1989,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1835,6 +2001,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1846,6 +2013,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1857,6 +2025,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1868,6 +2037,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1879,6 +2049,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1890,6 +2061,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1901,6 +2073,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1912,6 +2085,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1923,6 +2097,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1934,6 +2109,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1945,6 +2121,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1956,6 +2133,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1967,6 +2145,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -1978,6 +2157,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -1989,6 +2169,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2000,6 +2181,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2011,6 +2193,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2022,6 +2205,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2033,6 +2217,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2044,6 +2229,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2055,6 +2241,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2066,6 +2253,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2077,6 +2265,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2088,6 +2277,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2099,6 +2289,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2110,6 +2301,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2121,6 +2313,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2132,6 +2325,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2143,6 +2337,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2154,6 +2349,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2165,6 +2361,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2176,6 +2373,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2187,6 +2385,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2198,6 +2397,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2209,6 +2409,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2220,6 +2421,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2231,6 +2433,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2242,6 +2445,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2253,6 +2457,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2264,6 +2469,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2275,6 +2481,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2286,6 +2493,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2297,6 +2505,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2308,6 +2517,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2319,6 +2529,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2330,6 +2541,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2341,6 +2553,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2352,6 +2565,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2363,6 +2577,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2374,6 +2589,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2385,6 +2601,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2396,6 +2613,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2407,6 +2625,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2418,6 +2637,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2429,6 +2649,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2440,6 +2661,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2451,6 +2673,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2462,6 +2685,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2473,6 +2697,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2484,6 +2709,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2495,6 +2721,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2506,6 +2733,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2517,6 +2745,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2528,6 +2757,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2539,6 +2769,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2550,6 +2781,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2561,6 +2793,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2572,6 +2805,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2583,6 +2817,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2594,6 +2829,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2605,6 +2841,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2616,6 +2853,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2627,6 +2865,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2638,6 +2877,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2649,6 +2889,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2660,6 +2901,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2671,6 +2913,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2682,6 +2925,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2693,6 +2937,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2704,6 +2949,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2715,6 +2961,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2726,6 +2973,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2737,6 +2985,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2748,6 +2997,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2759,6 +3009,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2770,6 +3021,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2781,6 +3033,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2792,6 +3045,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2803,6 +3057,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2814,6 +3069,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2825,6 +3081,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2836,6 +3093,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2847,6 +3105,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2858,6 +3117,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2869,6 +3129,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2880,6 +3141,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2891,6 +3153,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2902,6 +3165,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2913,6 +3177,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2924,6 +3189,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2935,6 +3201,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2946,6 +3213,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2957,6 +3225,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2968,6 +3237,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -2979,6 +3249,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -2990,6 +3261,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3001,6 +3273,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3012,6 +3285,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3023,6 +3297,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3034,6 +3309,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3045,6 +3321,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3056,6 +3333,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3067,6 +3345,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3078,6 +3357,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3089,6 +3369,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3100,6 +3381,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3111,6 +3393,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3122,6 +3405,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3133,6 +3417,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3144,6 +3429,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3155,6 +3441,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3166,6 +3453,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3177,6 +3465,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3188,6 +3477,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3199,6 +3489,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3210,6 +3501,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3221,6 +3513,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3232,6 +3525,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3243,6 +3537,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3254,6 +3549,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3265,6 +3561,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3276,6 +3573,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3287,6 +3585,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3298,6 +3597,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3309,6 +3609,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3320,6 +3621,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3331,6 +3633,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3342,6 +3645,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3353,6 +3657,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3364,6 +3669,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3375,6 +3681,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3386,6 +3693,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3397,6 +3705,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3408,6 +3717,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3419,6 +3729,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3430,6 +3741,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3441,6 +3753,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3452,6 +3765,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3463,6 +3777,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3474,6 +3789,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3485,6 +3801,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3496,6 +3813,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3507,6 +3825,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3518,6 +3837,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3529,6 +3849,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3540,6 +3861,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3551,6 +3873,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3562,6 +3885,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3573,6 +3897,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3584,6 +3909,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3595,6 +3921,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3606,6 +3933,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3617,6 +3945,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3628,6 +3957,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3639,6 +3969,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3650,6 +3981,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3661,6 +3993,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3672,6 +4005,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3683,6 +4017,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3694,6 +4029,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3705,6 +4041,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3716,6 +4053,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3727,6 +4065,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3738,6 +4077,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3749,6 +4089,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3760,6 +4101,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3771,6 +4113,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3782,6 +4125,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3793,6 +4137,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3804,6 +4149,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3815,6 +4161,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3826,6 +4173,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3837,6 +4185,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3848,6 +4197,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3859,6 +4209,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3870,6 +4221,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3881,6 +4233,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3892,6 +4245,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3903,6 +4257,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3914,6 +4269,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3925,6 +4281,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3936,6 +4293,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3947,6 +4305,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3958,6 +4317,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3969,6 +4329,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -3980,6 +4341,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -3991,6 +4353,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4002,6 +4365,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4013,6 +4377,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4024,6 +4389,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4035,6 +4401,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4046,6 +4413,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4057,6 +4425,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4068,6 +4437,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4079,6 +4449,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4090,6 +4461,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4101,6 +4473,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4112,6 +4485,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4123,6 +4497,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4134,6 +4509,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4145,6 +4521,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4156,6 +4533,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4167,6 +4545,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4178,6 +4557,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4189,6 +4569,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4200,6 +4581,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4211,6 +4593,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4222,6 +4605,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4233,6 +4617,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4244,6 +4629,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4255,6 +4641,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4266,6 +4653,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4277,6 +4665,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4288,6 +4677,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4299,6 +4689,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4310,6 +4701,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4321,6 +4713,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4332,6 +4725,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4343,6 +4737,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4354,6 +4749,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4365,6 +4761,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4376,6 +4773,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4387,6 +4785,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4398,6 +4797,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4409,6 +4809,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4420,6 +4821,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4431,6 +4833,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4442,6 +4845,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4453,6 +4857,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4464,6 +4869,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4475,6 +4881,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4486,6 +4893,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4497,6 +4905,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4508,6 +4917,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4519,6 +4929,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4530,6 +4941,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4541,6 +4953,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4552,6 +4965,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4563,6 +4977,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4574,6 +4989,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4585,6 +5001,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4596,6 +5013,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4607,6 +5025,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4618,6 +5037,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4629,6 +5049,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4640,6 +5061,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4651,6 +5073,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4662,6 +5085,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4673,6 +5097,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4684,6 +5109,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4695,6 +5121,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4706,6 +5133,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4717,6 +5145,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4728,6 +5157,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4739,6 +5169,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4750,6 +5181,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4761,6 +5193,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4772,6 +5205,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4783,6 +5217,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4794,6 +5229,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4805,6 +5241,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4816,6 +5253,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4827,6 +5265,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4838,6 +5277,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4849,6 +5289,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4860,6 +5301,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4871,6 +5313,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4882,6 +5325,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4893,6 +5337,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4904,6 +5349,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4915,6 +5361,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4926,6 +5373,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4937,6 +5385,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -4948,6 +5397,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4959,6 +5409,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4970,6 +5421,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4981,6 +5433,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -4992,6 +5445,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5003,6 +5457,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5014,6 +5469,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5025,6 +5481,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5036,6 +5493,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5047,6 +5505,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5058,6 +5517,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5069,6 +5529,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5080,6 +5541,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5091,6 +5553,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5102,6 +5565,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5113,6 +5577,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5124,6 +5589,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5135,6 +5601,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5146,6 +5613,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5157,6 +5625,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5168,6 +5637,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5179,6 +5649,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5190,6 +5661,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5201,6 +5673,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5212,6 +5685,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5223,6 +5697,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5234,6 +5709,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5245,6 +5721,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5256,6 +5733,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5267,6 +5745,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5278,6 +5757,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5289,6 +5769,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5300,6 +5781,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5311,6 +5793,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5322,6 +5805,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5333,6 +5817,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5344,6 +5829,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5355,6 +5841,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5366,6 +5853,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5377,6 +5865,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5388,6 +5877,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5399,6 +5889,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5410,6 +5901,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5421,6 +5913,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5432,6 +5925,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5443,6 +5937,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5454,6 +5949,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5465,6 +5961,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5476,6 +5973,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5487,6 +5985,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5498,6 +5997,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5509,6 +6009,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5520,6 +6021,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5531,6 +6033,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5542,6 +6045,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5553,6 +6057,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5564,6 +6069,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5575,6 +6081,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5586,6 +6093,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5597,6 +6105,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5608,6 +6117,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5619,6 +6129,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5630,6 +6141,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5641,6 +6153,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5652,6 +6165,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5663,6 +6177,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5674,6 +6189,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5685,6 +6201,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5696,6 +6213,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5707,6 +6225,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5718,6 +6237,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5729,6 +6249,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5740,6 +6261,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5751,6 +6273,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5762,6 +6285,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5773,6 +6297,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5784,6 +6309,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5795,6 +6321,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5806,6 +6333,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5817,6 +6345,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5828,6 +6357,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5839,6 +6369,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5850,6 +6381,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5861,6 +6393,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5872,6 +6405,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5883,6 +6417,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5894,6 +6429,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5905,6 +6441,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5916,6 +6453,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5927,6 +6465,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5938,6 +6477,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5949,6 +6489,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5960,6 +6501,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5971,6 +6513,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -5982,6 +6525,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -5993,6 +6537,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6004,6 +6549,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6015,6 +6561,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6026,6 +6573,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6037,6 +6585,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6048,6 +6597,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6059,6 +6609,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6070,6 +6621,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6081,6 +6633,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6092,6 +6645,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6103,6 +6657,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6114,6 +6669,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6125,6 +6681,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6136,6 +6693,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6147,6 +6705,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6158,6 +6717,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6169,6 +6729,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6180,6 +6741,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6191,6 +6753,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6202,6 +6765,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6213,6 +6777,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6224,6 +6789,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6235,6 +6801,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6246,6 +6813,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6257,6 +6825,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6268,6 +6837,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6279,6 +6849,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6290,6 +6861,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6301,6 +6873,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6312,6 +6885,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6323,6 +6897,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6334,6 +6909,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6345,6 +6921,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6356,6 +6933,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6367,6 +6945,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6378,6 +6957,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6389,6 +6969,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6400,6 +6981,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6411,6 +6993,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6422,6 +7005,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6433,6 +7017,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6444,6 +7029,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6455,6 +7041,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6466,6 +7053,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6477,6 +7065,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6488,6 +7077,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6499,6 +7089,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6510,6 +7101,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6521,6 +7113,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6532,6 +7125,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6543,6 +7137,7 @@ export const trapIndex =
 				"secondary": "minion",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6554,6 +7149,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6565,6 +7161,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6576,6 +7173,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6587,6 +7185,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6598,6 +7197,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6609,6 +7209,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6620,6 +7221,7 @@ export const trapIndex =
 				"secondary": "solo",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6631,6 +7233,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6642,6 +7245,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6653,6 +7257,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6664,6 +7269,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		},
 		{
@@ -6675,6 +7281,7 @@ export const trapIndex =
 				"secondary": "elite",
 				"leader": false
 			},
+			"hazard": false,
 			"legacy": false
 		},
 		{
@@ -6686,6 +7293,7 @@ export const trapIndex =
 				"secondary": "standard",
 				"leader": false
 			},
+			"hazard": true,
 			"legacy": false
 		}
-	]
+	];
