@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.36
+- Random encounter generator (DMG p. 193)
+- Added ritual categories
+
 ## Foundry 4e Compendium v1.35.21
 - Burble compatibility
 
