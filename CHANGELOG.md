@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.36.2
+- Include solo monster substitution
+
 ## Foundry 4e Compendium v1.36.1
 - Random encounter hotfix
 
