@@ -1,5 +1,5 @@
 import { DnD4ECompendium } from "../dnd-4e-compendium.js";
-import { randomChoice, countOccurences, capitalize, identity, range } from "./utility.js";
+import { randomChoice, countOccurences, capitalize, identity, range, union } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
 import { trapIndex } from "./trap_index.js";
 import { createPrivateMessage } from "./utility.js";
@@ -61,10 +61,10 @@ async function randomEncounterDialog() {
             ],
             difficulties: [
                 { id: "easy", name: "Easy" },
-                { id: "standard", name: "Standard" },
+                { id: "moderate", name: "Moderate" },
                 { id: "hard", name: "Hard" }
             ],
-            defaultDifficulty: "standard"
+            defaultDifficulty: "moderate"
         }),
         buttons: {
             generate: {
@@ -98,15 +98,46 @@ async function randomEncounterDialog() {
 /***********************************************************************/
 /* Encounter generation */
 
-export async function generateRandomEncounter(name, type, substitution, extraFeature, pcLevel, difficulty, includeLegacy, randomizeGroups, createFolder) {
+async function generateRandomEncounter(name, type, substitution, extraFeature, pcLevel, difficulty, includeLegacy, randomizeGroups, createFolder) {
     let encounter = randomEncounterFunction(type)(pcLevel, difficulty, includeLegacy, randomizeGroups);
     encounter = substituteEncounterFunction(substitution)(encounter, pcLevel, includeLegacy);
     encounter = extraFeatureFunction(extraFeature)(encounter, pcLevel, includeLegacy);
 
-    return makeEncounterMessage(encounter, pcLevel, difficulty);
+    makeEncounterMessage(encounter, pcLevel, difficulty);
+
+    if (createFolder) {
+        const compendiumMM3 = game.packs.get(DnD4ECompendium.ID + ".module-monsters-mm3");
+        const compendiumLegacy = game.packs.get(DnD4ECompendium.ID + ".module-monsters-legacy");
+        const compendiumTraps = game.packs.get(DnD4ECompendium.ID + ".module-traps");
+
+
+        const mm3 = [];
+        const legacy = [];
+        const traps = [];
+
+        for (const monster of union(encounter)) {
+            if (Object.hasOwn(monster, "hazard")) {
+                traps.push(monster);
+            } else if (monster.legacy) {
+                legacy.push(monster);
+            } else {
+                mm3.push(monster);
+            }
+        }
+
+        const mm3Documents = await compendiumMM3.getDocuments({ _id__in: mm3.map(x => x._id) });
+        const legacyDocuments = await compendiumLegacy.getDocuments({ _id__in: legacy.map(x => x._id) });
+        const trapsDocuments = await compendiumTraps.getDocuments({ _id__in: traps.map(x => x._id) });
+
+        const folder = await Folder.create({ name: name, type: "Actor" });
+        const data = [...mm3Documents, ...legacyDocuments, ...trapsDocuments].map(actor => game.actors.fromCompendium(actor));
+        data.forEach(actor => actor.folder = folder.id);
+
+        Actor.createDocuments(data);
+    }
 }
 
-export function randomEncounterFunction(type) {
+function randomEncounterFunction(type) {
     switch (type) {
         case "Random": return randomChoice([encounterBattlefieldControl, encounterCommanderAndTroops, encounterDoubleLine, encounterDragonsDen, encounterWolfPack]);
         case "Battlefield Control": return encounterBattlefieldControl;
@@ -117,17 +148,17 @@ export function randomEncounterFunction(type) {
     }
 }
 
-export function substituteEncounterFunction(substitution) {
+function substituteEncounterFunction(substitution) {
     switch (substitution) {
         case "none": return identity;
         case "random": return randomChoice([identity, substituteMinions, substituteElite, substituteTrap]);
-        case "minions": return substituteMinions;
+        case "minion": return substituteMinions;
         case "elite": return substituteElite;
         case "trap": return substituteTrap;
     }
 }
 
-export function extraFeatureFunction(extraFeature) {
+function extraFeatureFunction(extraFeature) {
     switch (extraFeature) {
         case "none": return identity;
         case "random": return randomChoice([
@@ -148,7 +179,7 @@ export function extraFeatureFunction(extraFeature) {
     }
 }
 
-export async function makeEncounterMessage(encounter, pcLevel, difficulty) {
+async function makeEncounterMessage(encounter, pcLevel, difficulty) {
     const counts = countOccurences(encounter.map(x => x.name));
     const byName = {};
 
@@ -170,7 +201,7 @@ export async function makeEncounterMessage(encounter, pcLevel, difficulty) {
 }
 
 function fetchRandomMonster(level, role, includeLegacy = false, index = monsterIndex, filterFunction = identity) {
-    let filtered = includeLegacy ? index.filter(x => x.level === Math.max(1, level)) : index.filter(x => x.level === Math.max(0, level) && x.legacy === false);
+    let filtered = includeLegacy ? index.filter(x => x.level === level) : index.filter(x => x.level === level && x.legacy === false);
     filtered = filterFunction(filtered);
 
     if (Object.keys(role).length > 0) {
@@ -196,13 +227,13 @@ function fetchRandomMonsters(specs, index = monsterIndex, filterFunction = ident
     for (const spec of specs) {
         if (spec.randomizeGroups) {
             for (let i = 0; i < spec.count; i++) {
-                const monster = fetchRandomMonster(spec.level, spec.role, spec.includeLegacy, index, filterFunction);
+                const monster = fetchRandomMonster(Math.max(1, spec.level), spec.role, spec.includeLegacy, index, filterFunction);
                 if (Object.keys(monster).length > 0) {
                     monsters.push(monster);
                 }
             }
         } else {
-            const monster = fetchRandomMonster(spec.level, spec.role, spec.includeLegacy, index, filterFunction);
+            const monster = fetchRandomMonster(Math.max(1, spec.level), spec.role, spec.includeLegacy, index, filterFunction);
             if (Object.keys(monster).length > 0) {
                 for (let i = 0; i < spec.count; i++) {
                     monsters.push(monster);
@@ -244,7 +275,7 @@ function encounterBattlefieldControl(pcLevel, difficulty, includeLegacy = false,
             includeLegacy: includeLegacy
         });
 
-    } else if (difficulty === "standard") {
+    } else if (difficulty === "moderate") {
         // Controller
         encounterSpecs.push({
             role: {
@@ -334,7 +365,7 @@ function encounterCommanderAndTroops(pcLevel, difficulty, includeLegacy = false,
             includeLegacy: includeLegacy
         });
 
-    } else if (difficulty === "standard") {
+    } else if (difficulty === "moderate") {
         // Commander
         encounterSpecs.push({
             role: {
@@ -425,7 +456,7 @@ function encounterDragonsDen(pcLevel, difficulty, includeLegacy = false, randomi
             includeLegacy: includeLegacy
         });
 
-    } else if (difficulty === "standard") {
+    } else if (difficulty === "moderate") {
         // Solo
         encounterSpecs.push({
             role: {
@@ -525,7 +556,7 @@ function encounterDoubleLine(pcLevel, difficulty, includeLegacy = false, randomi
             includeLegacy: includeLegacy
         });
 
-    } else if (difficulty === "standard") {
+    } else if (difficulty === "moderate") {
         const variant = randomChoice([1, 2]);
 
         switch (variant) {
@@ -715,7 +746,7 @@ function encounterWolfPack(pcLevel, difficulty, includeLegacy = false, randomize
             includeLegacy: includeLegacy
         });
 
-    } else if (difficulty === "standard") {
+    } else if (difficulty === "moderate") {
         const variant = randomChoice([1, 2]);
 
         switch (variant) {
@@ -813,7 +844,7 @@ function encounterWolfPack(pcLevel, difficulty, includeLegacy = false, randomize
     return encounter;
 }
 
-export function substituteMinions(monsters, pcLevel, includeLegacy = false) {
+function substituteMinions(monsters, pcLevel, includeLegacy = false) {
     const tier = Math.ceil(pcLevel / 10);
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
@@ -836,7 +867,7 @@ export function substituteMinions(monsters, pcLevel, includeLegacy = false) {
         let dropped = 0;
 
         for (const monster of monsters) {
-            if (dropped < 3 + tier && monster.name === target.name) {
+            if (dropped < 1 && monster.name === target.name) {
                 dropped++
             } else {
                 modifiedMonsters.push(monster);
@@ -855,7 +886,7 @@ export function substituteMinions(monsters, pcLevel, includeLegacy = false) {
     }
 }
 
-export function substituteElite(monsters, pcLevel, includeLegacy = false) {
+function substituteElite(monsters, pcLevel, includeLegacy = false) {
     const counts = countOccurences(monsters.map(x => x.name));
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 1);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
@@ -897,7 +928,7 @@ export function substituteElite(monsters, pcLevel, includeLegacy = false) {
     }
 }
 
-export function substituteSolo(monsters, pcLevel, includeLegacy = false) {
+function substituteSolo(monsters, pcLevel, includeLegacy = false) {
     const counts = countOccurences(monsters.map(x => x.name));
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 4);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
@@ -939,7 +970,7 @@ export function substituteSolo(monsters, pcLevel, includeLegacy = false) {
     }
 }
 
-export function substituteTrap(monsters, pcLevel, includeLegacy = false, filterFunction = identity) {
+function substituteTrap(monsters, pcLevel, includeLegacy = false, filterFunction = identity) {
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
 
