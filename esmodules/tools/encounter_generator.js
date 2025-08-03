@@ -2,7 +2,16 @@ import { randomChoice, countOccurences } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
 import { trapIndex } from "./trap_index.js";
 
-export function fetchRandomMonster(level, role, legacy, index = monsterIndex) {
+export function randomEncounter(type){
+    switch (type){
+        case "Battlefield Control": return encounterBattlefieldControl;
+        case "Commander and Troops": return encounterCommanderAndTroops;
+        case "Dragon's Den": return encounterDragonsDen;
+        case "Wolf Pack": return encounterWolfPack;
+    }
+}
+
+function fetchRandomMonster(level, role, legacy, index = monsterIndex) {
     let filtered = index.filter(x => x.level === level && x.legacy === legacy);
 
     if (Object.keys(role).length > 0) {
@@ -22,7 +31,7 @@ export function fetchRandomMonster(level, role, legacy, index = monsterIndex) {
     return filtered.length > 0 ? randomChoice(filtered) : {};
 }
 
-export function fetchRandomMonsters(specs, index = monsterIndex) {
+function fetchRandomMonsters(specs, index = monsterIndex) {
     const monsters = [];
 
     for (const spec of specs) {
@@ -46,7 +55,7 @@ export function fetchRandomMonsters(specs, index = monsterIndex) {
     return monsters;
 }
 
-export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) {
+function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -136,7 +145,7 @@ export function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch =
     return encounter;
 }
 
-export function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) {
+function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -240,7 +249,7 @@ export function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch =
     return encounter;
 }
 
-export function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
+function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -327,7 +336,7 @@ export function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
     return encounter;
 }
 
-export function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
+function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -530,7 +539,7 @@ export function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
     return encounter;
 }
 
-export function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
+function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {

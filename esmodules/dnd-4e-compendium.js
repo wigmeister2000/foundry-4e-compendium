@@ -6,7 +6,7 @@ import { createHPchangeMessage, createSurgeChangeMessage, createResourceChangeMe
 import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
 import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
 import { addActorContextMenuImportConfig, addActorContextMenuCopyID } from "./tools/actor-import-config.js";
-import { encounterBattlefieldControl, encounterCommanderAndTroops, encounterDoubleLine, encounterDragonsDen, encounterWolfPack, fetchRandomMonster, fetchRandomMonsters, substituteElite, substituteMinions, substituteSolo, substituteTrap } from "./tools/encounter_generator.js";
+import { randomEncounter } from "./tools/encounter_generator.js";
 
 Hooks.once("init", function () {
     DnD4ECompendium.initialize();
@@ -53,20 +53,10 @@ export class DnD4ECompendium {
         Hooks.on("combatRound", createEffectsMessageCombat);
         Hooks.on("combatTurn", createEffectsMessageCombat);
     }
-    
+
     static registerAPI() {
         game.modules.get(DnD4ECompendium.ID).api = {};
-        game.modules.get(DnD4ECompendium.ID).api.fetchRandomMonster = fetchRandomMonster;
-        game.modules.get(DnD4ECompendium.ID).api.fetchRandomMonsters = fetchRandomMonsters;
-        game.modules.get(DnD4ECompendium.ID).api.encounterBattlefieldControl = encounterBattlefieldControl;
-        game.modules.get(DnD4ECompendium.ID).api.encounterCommanderAndTroops = encounterCommanderAndTroops;
-        game.modules.get(DnD4ECompendium.ID).api.encounterDragonsDen = encounterDragonsDen;
-        game.modules.get(DnD4ECompendium.ID).api.encounterDoubleLine = encounterDoubleLine;
-        game.modules.get(DnD4ECompendium.ID).api.encounterWolfPack = encounterWolfPack;
-        game.modules.get(DnD4ECompendium.ID).api.substituteMinions = substituteMinions;
-        game.modules.get(DnD4ECompendium.ID).api.substituteElite = substituteElite;
-        game.modules.get(DnD4ECompendium.ID).api.substituteSolo = substituteSolo;
-        game.modules.get(DnD4ECompendium.ID).api.substituteTrap = substituteTrap;
+        game.modules.get(DnD4ECompendium.ID).api.randomEncounter = randomEncounter;
     }
 
     static registerHotKeys() {
