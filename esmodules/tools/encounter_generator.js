@@ -48,6 +48,7 @@ async function randomEncounterDialog() {
                 { id: "random", name: "Random" },
                 { id: "minion", name: "Standard -> Minions" },
                 { id: "elite", name: "Standard -> Elite" },
+                { id: "solo", name: "Standard -> Solo" },
                 { id: "trap", name: "Standard -> Trap" }
             ],
             extras: [
@@ -100,8 +101,8 @@ async function randomEncounterDialog() {
 /* Encounter generation */
 
 async function generateRandomEncounter(name, type, substitution, extraFeature, pcLevel, difficulty, includeLegacy, randomizeGroups, createFolder) {
-    let encounter = randomEncounterFunction(type)(pcLevel, difficulty, includeLegacy, randomizeGroups);
-    encounter = substituteEncounterFunction(substitution)(encounter, pcLevel, includeLegacy);
+    let encounter = randomTemplateFunction(type)(pcLevel, difficulty, includeLegacy, randomizeGroups);
+    encounter = substituteCreatureFunction(substitution)(encounter, pcLevel, includeLegacy);
     encounter = extraFeatureFunction(extraFeature)(encounter, pcLevel, includeLegacy);
 
     makeEncounterMessage(encounter, pcLevel, difficulty);
@@ -110,7 +111,6 @@ async function generateRandomEncounter(name, type, substitution, extraFeature, p
         const compendiumMM3 = game.packs.get(DnD4ECompendium.ID + ".module-monsters-mm3");
         const compendiumLegacy = game.packs.get(DnD4ECompendium.ID + ".module-monsters-legacy");
         const compendiumTraps = game.packs.get(DnD4ECompendium.ID + ".module-traps");
-
 
         const mm3 = [];
         const legacy = [];
@@ -138,7 +138,7 @@ async function generateRandomEncounter(name, type, substitution, extraFeature, p
     }
 }
 
-function randomEncounterFunction(type) {
+function randomTemplateFunction(type) {
     switch (type) {
         case "Random": return randomChoice([encounterBattlefieldControl, encounterCommanderAndTroops, encounterDoubleLine, encounterDragonsDen, encounterWolfPack]);
         case "Battlefield Control": return encounterBattlefieldControl;
@@ -149,12 +149,13 @@ function randomEncounterFunction(type) {
     }
 }
 
-function substituteEncounterFunction(substitution) {
+function substituteCreatureFunction(substitution) {
     switch (substitution) {
         case "none": return identity;
         case "random": return randomChoice([identity, substituteMinions, substituteElite, substituteTrap]);
         case "minion": return substituteMinions;
         case "elite": return substituteElite;
+        case "solo": return substituteSolo;
         case "trap": return substituteTrap;
     }
 }
@@ -854,7 +855,7 @@ function substituteMinions(monsters, pcLevel, includeLegacy = false) {
 
         const substituteSpecs = [{
             role: {
-                primary: target.legacy ? "any" : target.role.primary, // Account for legacy minions not having a primary role
+                primary: target.legacy ? "any" : target.role.primary, // Account for legacy minions without primary role
                 secondary: "minion",
                 leader: target.role.leader
             },
