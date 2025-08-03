@@ -1,14 +1,150 @@
-import { randomChoice, countOccurences, capitalize } from "./utility.js";
+import { DnD4ECompendium } from "../dnd-4e-compendium.js";
+import { randomChoice, countOccurences, capitalize, identity, range } from "./utility.js";
 import { monsterIndex } from "./monster_index.js";
 import { trapIndex } from "./trap_index.js";
 import { createPrivateMessage } from "./utility.js";
 
-export function randomEncounter(type) {
+/***********************************************************************/
+/* Buttons */
+
+export function addRandomEncounterButton(activeTab, html) {
+    if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.RANDOM_ENCOUNTER)) {
+        // Show the button only for users with actor creation rights
+        if (activeTab.options.classes[2] === "actors-sidebar" && game.user.hasPermission("ACTOR_CREATE")) {
+
+            const label = game.i18n.localize("4ECOMPENDIUM.buttons.random-encounter-button");
+            const button = $(`<div class="action-buttons flexrow cbimport"><button type='button' id="random-encounter-button" title=' ${label}'><i class="fas fa-random"></i>&nbsp;${label}</button></div>`);
+
+            // Find the header button element and add
+            const topBar = html.find(`[class="header-actions action-buttons flexrow"]`);
+            topBar.after(button);
+
+            html.on('click', '#random-encounter-button', (event) => {
+                randomEncounterDialog();
+            });
+        }
+    }
+}
+
+/***********************************************************************/
+/* Dialogs */
+
+async function randomEncounterDialog() {
+    new Dialog({
+        title: game.i18n.localize("4ECOMPENDIUM.random-encounter.title"),
+        content: await renderTemplate("modules/" + DnD4ECompendium.ID + "/templates/random-encounter.hbs", {
+            hint1: game.i18n.format("4ECOMPENDIUM.random-encounter.hint1"),
+            levels: range(1, 30),
+            templates: [
+                { id: "Random", name: "Random" },
+                { id: "Battlefield Control", name: "Battlefield Control" },
+                { id: "Double Line", name: "Double Line" },
+                { id: "Dragon's Den", name: "Dragon's Den" },
+                { id: "Wolf Pack", name: "Wolf Pack" }
+            ],
+            substitutions: [
+                { id: "none", name: "None" },
+                { id: "random", name: "Random" },
+                { id: "minion", name: "Standard -> Minions" },
+                { id: "elite", name: "Standard -> Elite" },
+                { id: "trap", name: "Standard -> Trap" }
+            ],
+            extras: [
+                { id: "none", name: "None" },
+                { id: "random", name: "Random" },
+                { id: "substituteTrap", name: "Standard -> Trap" },
+                { id: "substituteHazard", name: "Standard -> Hazard" },
+                { id: "substituteLurker", name: "Standard -> Lurker" },
+                { id: "addTrap", name: "Add trap" },
+                { id: "addHazard", name: "Add hazard" },
+                { id: "addLurker", name: "Add lurker" }
+            ],
+            difficulties: [
+                { id: "easy", name: "Easy" },
+                { id: "standard", name: "Standard" },
+                { id: "hard", name: "Hard" }
+            ],
+            defaultDifficulty: "standard"
+        }),
+        buttons: {
+            generate: {
+                icon: '<i class="fas fa-random"></i>',
+                label: "Generate",
+                callback: html => {
+                    const form = html.find("form")[0];
+                    const name = html.find("input[name='encounterName']").val();
+                    const template = html.find("select[name='template']").val();
+                    const substitution = html.find("select[name='substitution']").val();
+                    const extra = html.find("select[name='extra']").val();
+                    const pcLevel = Number(html.find("select[name='pcLevel']").val());
+                    const difficulty = html.find("select[name='difficulty']").val();
+                    const includeLegacy = html.find("input[name='includeLegacy']")[0].checked;
+                    const randomizeGroups = html.find("input[name='randomizeGroups']")[0].checked;
+                    const createFolder = html.find("input[name='createFolder']")[0].checked;
+                    generateRandomEncounter(name, template, substitution, extra, pcLevel, difficulty, includeLegacy, randomizeGroups, createFolder);
+                }
+            },
+            no: {
+                icon: '<i class="fas fa-times"></i>',
+                label: "Cancel"
+            }
+        },
+        default: "generate"
+    }, {
+        width: 400
+    }).render(true);
+}
+
+/***********************************************************************/
+/* Encounter generation */
+
+export async function generateRandomEncounter(name, type, substitution, extraFeature, pcLevel, difficulty, includeLegacy, randomizeGroups, createFolder) {
+    let encounter = randomEncounterFunction(type)(pcLevel, difficulty, includeLegacy, randomizeGroups);
+    encounter = substituteEncounterFunction(substitution)(encounter, pcLevel, includeLegacy);
+    encounter = extraFeatureFunction(extraFeature)(encounter, pcLevel, includeLegacy);
+
+    return makeEncounterMessage(encounter, pcLevel, difficulty);
+}
+
+export function randomEncounterFunction(type) {
     switch (type) {
+        case "Random": return randomChoice([encounterBattlefieldControl, encounterCommanderAndTroops, encounterDoubleLine, encounterDragonsDen, encounterWolfPack]);
         case "Battlefield Control": return encounterBattlefieldControl;
         case "Commander and Troops": return encounterCommanderAndTroops;
+        case "Double Line": return encounterDoubleLine;
         case "Dragon's Den": return encounterDragonsDen;
         case "Wolf Pack": return encounterWolfPack;
+    }
+}
+
+export function substituteEncounterFunction(substitution) {
+    switch (substitution) {
+        case "none": return identity;
+        case "random": return randomChoice([identity, substituteMinions, substituteElite, substituteTrap]);
+        case "minions": return substituteMinions;
+        case "elite": return substituteElite;
+        case "trap": return substituteTrap;
+    }
+}
+
+export function extraFeatureFunction(extraFeature) {
+    switch (extraFeature) {
+        case "none": return identity;
+        case "random": return randomChoice([
+            identity,
+            encounterExtraSubstituteTrap,
+            encounterExtraSubstituteHazard,
+            encounterExtraSubstituteLurker,
+            encounterExtraAddTrap,
+            encounterExtraAddHazard,
+            encounterExtraAddLurker
+        ]);
+        case "substituteTrap": return encounterExtraSubstituteTrap;
+        case "substituteHazard": return encounterExtraSubstituteHazard;
+        case "substituteLurker": return encounterExtraSubstituteLurker;
+        case "addTrap": return encounterExtraAddTrap;
+        case "addHazard": return encounterExtraAddHazard;
+        case "addLurker": return encounterExtraAddLurker;
     }
 }
 
@@ -33,8 +169,9 @@ export async function makeEncounterMessage(encounter, pcLevel, difficulty) {
     return createPrivateMessage(lines.join("<br>"));
 }
 
-function fetchRandomMonster(level, role, legacy, index = monsterIndex) {
-    let filtered = index.filter(x => x.level === level && x.legacy === legacy);
+function fetchRandomMonster(level, role, includeLegacy = false, index = monsterIndex, filterFunction = identity) {
+    let filtered = includeLegacy ? index.filter(x => x.level === Math.max(1, level)) : index.filter(x => x.level === Math.max(0, level) && x.legacy === false);
+    filtered = filterFunction(filtered);
 
     if (Object.keys(role).length > 0) {
         if (role.primary != "any") {
@@ -53,19 +190,19 @@ function fetchRandomMonster(level, role, legacy, index = monsterIndex) {
     return filtered.length > 0 ? randomChoice(filtered) : {};
 }
 
-function fetchRandomMonsters(specs, index = monsterIndex) {
+function fetchRandomMonsters(specs, index = monsterIndex, filterFunction = identity) {
     const monsters = [];
 
     for (const spec of specs) {
-        if (!spec.batch) {
+        if (spec.randomizeGroups) {
             for (let i = 0; i < spec.count; i++) {
-                const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy, index);
+                const monster = fetchRandomMonster(spec.level, spec.role, spec.includeLegacy, index, filterFunction);
                 if (Object.keys(monster).length > 0) {
                     monsters.push(monster);
                 }
             }
         } else {
-            const monster = fetchRandomMonster(spec.level, spec.role, spec.legacy, index);
+            const monster = fetchRandomMonster(spec.level, spec.role, spec.includeLegacy, index, filterFunction);
             if (Object.keys(monster).length > 0) {
                 for (let i = 0; i < spec.count; i++) {
                     monsters.push(monster);
@@ -77,7 +214,7 @@ function fetchRandomMonsters(specs, index = monsterIndex) {
     return monsters;
 }
 
-function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) {
+function encounterBattlefieldControl(pcLevel, difficulty, includeLegacy = false, randomizeGroups = false) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -90,8 +227,8 @@ function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel - 2,
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Skirmishers
@@ -103,8 +240,8 @@ function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel - 4,
             count: 6,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "standard") {
@@ -117,8 +254,8 @@ function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel + 1,
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Skirmishers
@@ -130,8 +267,8 @@ function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel - 2,
             count: 6,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "hard") {
@@ -144,8 +281,8 @@ function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel + 5,
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Skirmishers
@@ -157,8 +294,8 @@ function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel + 1,
             count: 5,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
     }
 
@@ -167,7 +304,7 @@ function encounterBattlefieldControl(pcLevel, difficulty, legacy, batch = true) 
     return encounter;
 }
 
-function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) {
+function encounterCommanderAndTroops(pcLevel, difficulty, includeLegacy = false, randomizeGroups = false) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -180,8 +317,8 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel,
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Troops
@@ -193,8 +330,8 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel - 3,
             count: 4,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "standard") {
@@ -207,8 +344,8 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel + 3,
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Troops
@@ -220,8 +357,8 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel - 2,
             count: 5,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "hard") {
@@ -234,8 +371,8 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel + 6,
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Troops
@@ -247,8 +384,8 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel + 1,
             count: 3,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Artillery
@@ -260,8 +397,8 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
             },
             level: pcLevel + 1,
             count: 2,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     }
@@ -271,7 +408,7 @@ function encounterCommanderAndTroops(pcLevel, difficulty, legacy, batch = true) 
     return encounter;
 }
 
-function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
+function encounterDragonsDen(pcLevel, difficulty, includeLegacy = false, randomizeGroups = false) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -284,8 +421,8 @@ function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
             },
             level: pcLevel - 2,
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "standard") {
@@ -298,8 +435,8 @@ function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
             },
             level: randomChoice([pcLevel, pcLevel + 1]),
             count: 1,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "hard") {
@@ -316,8 +453,8 @@ function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 3,
                     count: 1,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
                 break;
             }
@@ -331,8 +468,8 @@ function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 1,
                     count: 1,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Elite
@@ -344,8 +481,8 @@ function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel,
                     count: 1,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
                 break;
             }
@@ -358,7 +495,7 @@ function encounterDragonsDen(pcLevel, difficulty, legacy, batch = true) {
     return encounter;
 }
 
-function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
+function encounterDoubleLine(pcLevel, difficulty, includeLegacy = false, randomizeGroups = false) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -371,8 +508,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
             },
             level: pcLevel - 4,
             count: 3,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
         // Rear line
@@ -384,8 +521,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
             },
             level: pcLevel - 2,
             count: 2,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "standard") {
@@ -402,8 +539,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel,
                     count: 3,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Rear line
@@ -415,8 +552,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel,
                     count: 2,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -431,8 +568,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel - 2,
                     count: 3,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Rear line
@@ -444,8 +581,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 3,
                     count: 2,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -466,8 +603,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 2,
                     count: 3,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Controller
@@ -479,8 +616,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 4,
                     count: 1,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Artillery / Lurker
@@ -492,8 +629,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 4,
                     count: 1,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -508,8 +645,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel,
                     count: 3,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Artillery
@@ -521,8 +658,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 1,
                     count: 2,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Controller
@@ -534,8 +671,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 2,
                     count: 1,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 // Lurker
@@ -547,8 +684,8 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 2,
                     count: 1,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -561,7 +698,7 @@ function encounterDoubleLine(pcLevel, difficulty, legacy, batch = true) {
     return encounter;
 }
 
-function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
+function encounterWolfPack(pcLevel, difficulty, includeLegacy = false, randomizeGroups = false) {
     const encounterSpecs = [];
 
     if (difficulty === "easy") {
@@ -574,8 +711,8 @@ function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
             },
             level: pcLevel - 4,
             count: 7,
-            batch: batch,
-            legacy: legacy
+            randomizeGroups: randomizeGroups,
+            includeLegacy: includeLegacy
         });
 
     } else if (difficulty === "standard") {
@@ -592,8 +729,8 @@ function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel - 2,
                     count: 7,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -608,8 +745,8 @@ function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel,
                     count: 5,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -630,8 +767,8 @@ function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 7,
                     count: 3,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -646,8 +783,8 @@ function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 5,
                     count: 4,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -662,8 +799,8 @@ function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
                     },
                     level: pcLevel + 2,
                     count: 6,
-                    batch: batch,
-                    legacy: legacy
+                    randomizeGroups: randomizeGroups,
+                    includeLegacy: includeLegacy
                 });
 
                 break;
@@ -676,10 +813,9 @@ function encounterWolfPack(pcLevel, difficulty, legacy, batch = true) {
     return encounter;
 }
 
-export function substituteMinions(monsters, pcLevel) {
+export function substituteMinions(monsters, pcLevel, includeLegacy = false) {
     const tier = Math.ceil(pcLevel / 10);
-    const counts = countOccurences(monsters.map(x => x.name));
-    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 2 + tier);
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
 
     if (Object.keys(target).length > 0) {
@@ -692,8 +828,8 @@ export function substituteMinions(monsters, pcLevel) {
             },
             level: target.level,
             count: 3 + tier,
-            batch: true,
-            legacy: target.legacy
+            randomizeGroups: false,
+            includeLegacy: includeLegacy
         }];
 
         const modifiedMonsters = [];
@@ -719,7 +855,7 @@ export function substituteMinions(monsters, pcLevel) {
     }
 }
 
-export function substituteElite(monsters, pcLevel) {
+export function substituteElite(monsters, pcLevel, includeLegacy = false) {
     const counts = countOccurences(monsters.map(x => x.name));
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 1);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
@@ -734,8 +870,8 @@ export function substituteElite(monsters, pcLevel) {
             },
             level: target.level,
             count: 1,
-            batch: true,
-            legacy: target.legacy
+            randomizeGroups: true,
+            includeLegacy: includeLegacy
         }];
 
         const modifiedMonsters = [];
@@ -761,7 +897,7 @@ export function substituteElite(monsters, pcLevel) {
     }
 }
 
-export function substituteSolo(monsters, pcLevel) {
+export function substituteSolo(monsters, pcLevel, includeLegacy = false) {
     const counts = countOccurences(monsters.map(x => x.name));
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader && counts[x.name] > 4);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
@@ -776,8 +912,8 @@ export function substituteSolo(monsters, pcLevel) {
             },
             level: target.level,
             count: 1,
-            batch: true,
-            legacy: target.legacy
+            randomizeGroups: true,
+            includeLegacy: includeLegacy
         }];
 
         const modifiedMonsters = [];
@@ -803,8 +939,7 @@ export function substituteSolo(monsters, pcLevel) {
     }
 }
 
-export function substituteTrap(monsters, pcLevel) {
-    const counts = countOccurences(monsters.map(x => x.name));
+export function substituteTrap(monsters, pcLevel, includeLegacy = false, filterFunction = identity) {
     const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
     const target = filtered.length > 0 ? randomChoice(filtered) : {};
 
@@ -818,8 +953,8 @@ export function substituteTrap(monsters, pcLevel) {
             },
             level: target.level,
             count: 1,
-            batch: true,
-            legacy: false
+            randomizeGroups: true,
+            includeLegacy: includeLegacy
         }];
 
         const modifiedMonsters = [];
@@ -833,7 +968,164 @@ export function substituteTrap(monsters, pcLevel) {
             }
         }
 
-        const substitute = fetchRandomMonsters(substituteSpecs, trapIndex);
+        const substitute = fetchRandomMonsters(substituteSpecs, trapIndex, filterFunction);
+
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
+    }
+}
+
+function filterTraps(monsters) {
+    return monsters.filter(x => !x.hazard);
+}
+
+function filterHazards(monsters) {
+    return monsters.filter(x => x.hazard);
+}
+
+function encounterExtraSubstituteTrap(monsters, pcLevel, includeLegacy = false) {
+    return substituteTrap(monsters, pcLevel, filterTraps);
+}
+
+function encounterExtraSubstituteHazard(monsters, pcLevel, includeLegacy = false) {
+    return substituteTrap(monsters, pcLevel, filterHazards);
+}
+
+function encounterExtraSubstituteLurker(monsters, pcLevel, includeLegacy = false) {
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && x.role.primary != "lurker" && !x.role.leader);
+    const target = filtered.length > 0 ? filtered.sort((a, b) => a.level - b.level)[0] : {};
+
+    if (Object.keys(target).length > 0) {
+
+        const substituteSpecs = [{
+            role: {
+                primary: "lurker",
+                secondary: target.role.secondary,
+                leader: false
+            },
+            level: target.level,
+            count: 1,
+            randomizeGroups: true,
+            includeLegacy: includeLegacy
+        }];
+
+        const modifiedMonsters = [];
+
+        for (const monster of monsters) {
+            modifiedMonsters.push(monster);
+        }
+
+        const substitute = fetchRandomMonsters(substituteSpecs, monsterIndex);
+
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
+    }
+}
+
+function encounterExtraAddTrap(monsters, pcLevel, includeLegacy = false) {
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
+    const target = filtered.length > 0 ? filtered.sort((a, b) => a.level - b.level)[0] : {};
+
+    if (Object.keys(target).length > 0) {
+
+        const substituteSpecs = [{
+            role: {
+                primary: "any",
+                secondary: target.role.secondary,
+                leader: false
+            },
+            level: target.level,
+            count: 1,
+            randomizeGroups: true,
+            includeLegacy: includeLegacy
+        }];
+
+        const modifiedMonsters = [];
+        for (const monster of monsters) {
+            modifiedMonsters.push(monster);
+        }
+
+        const substitute = fetchRandomMonsters(substituteSpecs, trapIndex, filterTraps);
+
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
+    }
+}
+
+function encounterExtraAddHazard(monsters, pcLevel, includeLegacy = false) {
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
+    const target = filtered.length > 0 ? filtered.sort((a, b) => a.level - b.level)[0] : {};
+
+    if (Object.keys(target).length > 0) {
+
+        const substituteSpecs = [{
+            role: {
+                primary: "any",
+                secondary: target.role.secondary,
+                leader: false
+            },
+            level: target.level,
+            count: 1,
+            randomizeGroups: true,
+            includeLegacy: includeLegacy
+        }];
+
+        const modifiedMonsters = [];
+        for (const monster of monsters) {
+            modifiedMonsters.push(monster);
+        }
+
+        const substitute = fetchRandomMonsters(substituteSpecs, trapIndex, filterHazards);
+
+        if (substitute.length > 0) {
+            return modifiedMonsters.concat(substitute);
+        } else {
+            return monsters;
+        }
+    } else {
+        return monsters;
+    }
+}
+
+function encounterExtraAddLurker(monsters, pcLevel, includeLegacy = false) {
+    const filtered = monsters.filter(x => x.role.secondary === "standard" && !x.role.leader);
+    const target = filtered.length > 0 ? filtered.sort((a, b) => a.level - b.level)[0] : {};
+
+    if (Object.keys(target).length > 0) {
+
+        const substituteSpecs = [{
+            role: {
+                primary: "lurker",
+                secondary: target.role.secondary,
+                leader: false
+            },
+            level: target.level,
+            count: 1,
+            randomizeGroups: true,
+            includeLegacy: includeLegacy
+        }];
+
+        const modifiedMonsters = [];
+        for (const monster of monsters) {
+            modifiedMonsters.push(monster);
+        }
+
+        const substitute = fetchRandomMonsters(substituteSpecs, monsterIndex);
 
         if (substitute.length > 0) {
             return modifiedMonsters.concat(substitute);

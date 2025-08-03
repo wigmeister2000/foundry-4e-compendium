@@ -1,4 +1,4 @@
-export const trapsIndex =
+export const trapIndex =
 	[
 		{
 			"name": "Abyssal Breach",

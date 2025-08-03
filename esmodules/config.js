@@ -11,6 +11,16 @@ export function registerConfigurations() {
         onChange: foundry.utils.debouncedReload
     });
 
+    game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.RANDOM_ENCOUNTER, {
+        name: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.RANDOM_ENCOUNTER}.Name`,
+        default: true,
+        type: Boolean,
+        scope: 'world',
+        config: true,
+        hint: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.RANDOM_ENCOUNTER}.Hint`,
+        onChange: foundry.utils.debouncedReload
+    });
+
     game.settings.register(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.BUILD_MAGIC_ITEM, {
         name: `4ECOMPENDIUM.settings.${DnD4ECompendium.SETTINGS.BUILD_MAGIC_ITEM}.Name`,
         default: true,

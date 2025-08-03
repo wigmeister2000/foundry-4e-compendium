@@ -1,0 +1,59 @@
+<form autocomplete="off" onsubmit="event.preventDefault();">
+    <p class="notes">{{hint1}}</p>
+    <div class="form-group">
+        <label for="encounterName" name="name">Name:</label>
+        <input type="string" name="encounterName" value="Random Encounter">
+    </div>
+    <div class="form-group">
+        <label for="pcLevel">Character level:</label>
+        <select type="number" name="pcLevel">
+            {{#each levels}}
+            <option value={{this}}>{{this}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="difficulty">Difficulty:</label>
+        <select type="string" name="difficulty">
+            {{#each difficulties}}
+            <option value="{{this.id}}" {{#if (eq this.id ../defaultDifficulty)}}selected{{/if}}>{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="template">Encounter template:</label>
+        <select type="string" name="template">
+            {{#each templates}}
+            <option value="{{this.id}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="substitution">Substitution:</label>
+        <select type="string" name="substitution">
+            {{#each substitutions}}
+            <option value="{{this.id}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="extra">Extra feature:</label>
+        <select type="string" name="extra">
+            {{#each extras}}
+            <option value="{{this.id}}">{{this.name}}</option>
+            {{/each}}
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="includeLegacy">Include legacy monsters?</label>
+        <input type="checkbox" name="includeLegacy" data-dtype="Boolean">
+    </div>
+    <div class="form-group">
+        <label for="randomizeGroups">Randomise groups?</label>
+        <input type="checkbox" name="randomizeGroups" data-dtype="Boolean">
+    </div>
+    <div class="form-group">
+        <label for="createFolder">Create folder?</label>
+        <input type="checkbox" name="createFolder" data-dtype="Boolean" checked>
+    </div>
+</form>

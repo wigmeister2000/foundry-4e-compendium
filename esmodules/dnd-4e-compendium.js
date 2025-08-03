@@ -6,7 +6,7 @@ import { createHPchangeMessage, createSurgeChangeMessage, createResourceChangeMe
 import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tools/effect-chat-messages.js";
 import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
 import { addActorContextMenuImportConfig, addActorContextMenuCopyID } from "./tools/actor-import-config.js";
-import { makeEncounterMessage, randomEncounter, substituteElite, substituteMinions, substituteSolo, substituteTrap } from "./tools/encounter_generator.js";
+import { addRandomEncounterButton, makeEncounterMessage, randomEncounterFunction, substituteElite, substituteMinions, substituteSolo, substituteTrap } from "./tools/encounter_generator.js";
 
 Hooks.once("init", function () {
     DnD4ECompendium.initialize();
@@ -21,6 +21,7 @@ export class DnD4ECompendium {
 
     static SETTINGS = {
         CBUILDER_IMPORT: "cbuilder-import",
+        RANDOM_ENCOUNTER: "random-encounter",
         BUILD_MAGIC_ITEM: "build-magic-item",
         MONSTER_ADJUSTMENT: "monster-adjustment",
         FIND_AND_REPLACE: "actor-find-and-replace",
@@ -36,6 +37,7 @@ export class DnD4ECompendium {
     static initialize() {
         console.log(this.NAME + " | Initialising the DnD 4e compendium.");
         Hooks.on("renderSidebarTab", addCbuilderXMLImportButton);
+        Hooks.on("renderSidebarTab", addRandomEncounterButton);
         Hooks.on("renderSidebarTab", addBuildEquipmentButton);
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuCopyID);
         Hooks.on("getActorDirectoryEntryContext", addActorContextMenuImportConfig);
@@ -56,7 +58,7 @@ export class DnD4ECompendium {
 
     static registerAPI() {
         game.modules.get(DnD4ECompendium.ID).api = {};
-        game.modules.get(DnD4ECompendium.ID).api.randomEncounter = randomEncounter;
+        game.modules.get(DnD4ECompendium.ID).api.randomEncounter = randomEncounterFunction;
         game.modules.get(DnD4ECompendium.ID).api.substituteMinions = substituteMinions;
         game.modules.get(DnD4ECompendium.ID).api.substituteElite = substituteElite;
         game.modules.get(DnD4ECompendium.ID).api.substituteSolo = substituteSolo;
