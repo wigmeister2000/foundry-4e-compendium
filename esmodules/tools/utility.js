@@ -49,3 +49,10 @@ export async function createPrivateMessage(message) {
         whisper: [game.user]
     });
 }
+
+export function identity(x) { return x };
+
+export function range(start, end, step = 1) {
+    const length = Math.floor((end - start) / step) + 1;
+    return Array.from({ length }, (_, i) => start + i * step);
+};
