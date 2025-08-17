@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.36.3
+- Improved CBuilder item import
+
 ## Foundry 4e Compendium v1.36.2
 - Include solo monster substitution
 
