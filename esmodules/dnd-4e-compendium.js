@@ -8,6 +8,9 @@ import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
 import { addActorContextMenuImportConfig, addActorContextMenuCopyID } from "./tools/actor-import-config.js";
 import { addRandomEncounterButton } from "./tools/encounter_generator.js";
 import { rollOnTreasureTable } from "./tools/roll_treasure.js";
+import { lookup } from "./tools/lookup_tables.js";
+import { monsterIndex } from "./tools/monster_index.js";
+import { trapIndex } from "./tools/trap_index.js";
 
 Hooks.once("init", function () {
     DnD4ECompendium.initialize();
@@ -59,7 +62,10 @@ export class DnD4ECompendium {
 
     static registerAPI() {
         game.modules.get(DnD4ECompendium.ID).api = {
-            rollOnTreasureTable: rollOnTreasureTable
+            rollOnTreasureTable: rollOnTreasureTable,
+            lookup: lookup,
+            monsterIndex: monsterIndex,
+            trapIndex: trapIndex
         };
     }
 
