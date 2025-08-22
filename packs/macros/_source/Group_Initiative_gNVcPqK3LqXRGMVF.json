@@ -1,0 +1,13 @@
+{
+	"name":"Group Initiative",
+	"type":"script",
+	"_id":"gNVcPqK3LqXRGMVF",
+	"author":"bBvc0EaHunIoRXDu",
+	"img":"icons/svg/clockwork.svg",
+	"scope":"global",
+	"command":"// Partition combatants into initiative groups according to RC p. 192\n\nfunction groupBy(items, property) {\n  return items.reduce(function(results, item) {\n      const key = property instanceof Function ? property(item) : item[property];\n      (results[key] = results[key] || []).push(item);\n      return results;\n      }, {});\n};\n\nfunction randomChoice(array){\n    return array[Math.floor(Math.random() * array.length)];\n}\n\nfunction getCombatGroups(){\n    const combatants = game.combat.turns;\n    return Object.values(groupBy(combatants, \"actorId\"));\n}\n\nasync function groupInitiative(){\n    const groups = getCombatGroups();\n    \n    for (const g of groups){\n        const rando = randomChoice(g.filter(x => x.initiative));\n        const data = {\"initiative\": rando ? rando.initiative : null};\n        \n        for (const combatant of g){\n            await combatant.update(data);\n        }        \n    }\n}\n\nnew Dialog({\n  title: \"Group Initiative\",\n  content: \"Are you sure?\",\n  buttons: {\n    yes: {\n      label: \"Yes\",\n      callback: groupInitiative\n    },\n    close: {\n      label: \"No\"\n    },\n  },\n  default: \"close\",\n  close: () => {}\n}).render(true);",
+	"folder":null,
+	"sort":0,
+	"flags":{},
+	"_key":"!macros!gNVcPqK3LqXRGMVF"
+}
