@@ -10,7 +10,7 @@ export async function rollOnTreasureTable(level, type) {
     const r1 = new Roll("d20");
     await r1.evaluate();
 
-    if (game.modules.get("dice-so-nice")) {
+    if (game.modules.get("dice-so-nice")?.active) {
         game.dice3d.showForRoll(r1);
     }
 
@@ -22,7 +22,7 @@ export async function rollOnTreasureTable(level, type) {
             const r2 = new Roll(treasure[1]);
             await r2.evaluate();
 
-            if (game.modules.get("dice-so-nice")) {
+            if (game.modules.get("dice-so-nice")?.active) {
                 game.dice3d.showForRoll(r2);
             }
 
@@ -33,7 +33,7 @@ export async function rollOnTreasureTable(level, type) {
             const r2 = new Roll(treasure[2]);
             await r2.evaluate();
 
-            if (game.modules.get("dice-so-nice")) {
+            if (game.modules.get("dice-so-nice")?.active) {
                 game.dice3d.showForRoll(r2);
             }
 
