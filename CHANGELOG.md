@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37
+- Roll Treasure macro
+- Group Initiative macro
+
 ## Foundry 4e Compendium v1.36.3
 - Improved CBuilder item import
 
