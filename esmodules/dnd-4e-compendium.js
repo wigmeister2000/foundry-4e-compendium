@@ -7,6 +7,7 @@ import { createEffectsMessageCombat, createEffectsMessageSelected } from "./tool
 import { encounterDifficultyDialogue } from "./tools/encounter_difficulty.js";
 import { addActorContextMenuImportConfig, addActorContextMenuCopyID } from "./tools/actor-import-config.js";
 import { addRandomEncounterButton } from "./tools/encounter_generator.js";
+import { rollOnTreasureTable } from "./tools/roll_treasure.js";
 
 Hooks.once("init", function () {
     DnD4ECompendium.initialize();
@@ -57,7 +58,9 @@ export class DnD4ECompendium {
     }
 
     static registerAPI() {
-        game.modules.get(DnD4ECompendium.ID).api = {};
+        game.modules.get(DnD4ECompendium.ID).api = {
+            rollOnTreasureTable: rollOnTreasureTable
+        };
     }
 
     static registerHotKeys() {
