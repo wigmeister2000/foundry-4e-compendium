@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.1
+- Terrain traits update to recent dnd4e data model
+
 ## Foundry 4e Compendium v1.37
 - Roll Treasure macro
 - Group Initiative macro
