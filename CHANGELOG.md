@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.2
+- Simplification of proficiency lists upon character import
+
 ## Foundry 4e Compendium v1.37.1
 - Terrain traits update to recent dnd4e data model
 
