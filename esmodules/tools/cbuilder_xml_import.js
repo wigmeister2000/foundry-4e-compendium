@@ -199,6 +199,7 @@ async function parseCharacter(xml, core = false) {
                 "system.details.alignment": details.alignment,
                 "system.details.deity": details.deity,
                 "system.details.weaponProf.value": proficiencies.weapons,
+                "system.details.implementProf.value": proficiencies.implements,
                 "system.details.armourProf.value": proficiencies.armor,
                 "system.attributes.hp.autototal": true,
                 "system.abilities.str.value": abilities.str,
@@ -414,19 +415,68 @@ function parseClasses(str) {
 
     return classNamesCompendium;
 }
+function simplifyWeaponProficiencies(proficiencies){
+    const simpleM = Object.keys(CONFIG.DND4E.simpleM);
+    const militaryM = Object.keys(CONFIG.DND4E.militaryM);
+    const superiorM = Object.keys(CONFIG.DND4E.superiorM);
+    const simpleR = Object.keys(CONFIG.DND4E.simpleR);
+    const militaryR = Object.keys(CONFIG.DND4E.militaryR);
+    const superiorR = Object.keys(CONFIG.DND4E.superiorR);
+
+    let simpleProficiencies = proficiencies;
+
+    if(simpleM.every(x => proficiencies.includes(x))){
+        simpleProficiencies = simpleProficiencies.filter(x => !simpleM.includes(x));
+        simpleProficiencies.push("simpleM");
+    }
+
+    if(militaryM.every(x => proficiencies.includes(x))){
+        simpleProficiencies = simpleProficiencies.filter(x => !militaryM.includes(x));
+        simpleProficiencies.push("militaryM");
+    }
+
+    if(superiorM.every(x => proficiencies.includes(x))){
+        simpleProficiencies = simpleProficiencies.filter(x => !superiorM.includes(x));
+        simpleProficiencies.push("superiorM");
+    }
+
+    if(simpleR.every(x => proficiencies.includes(x))){
+        simpleProficiencies = simpleProficiencies.filter(x => !simpleR.includes(x));
+        simpleProficiencies.push("simpleR");
+    }
+
+    if(militaryR.every(x => proficiencies.includes(x))){
+        simpleProficiencies = simpleProficiencies.filter(x => !militaryR.includes(x));
+        simpleProficiencies.push("militaryR");
+    }
+
+    if(superiorR.every(x => proficiencies.includes(x))){
+        simpleProficiencies = simpleProficiencies.filter(x => !superiorR.includes(x));
+        simpleProficiencies.push("superiorR");
+    }
+
+    return simpleProficiencies;
+}
 
 function parseProficiencies(proficiencies) {
-    const weaponTypes = ["Weapon", "Implement"];
+    const weaponTypes = ["Weapon"];
+    const implementTypes = ["Implement"];
     const armorTypes = ["Armor", "Shield"];
     const weapons = [];
+    const implement = [];
     const armor = [];
     const result = {};
+
     proficiencies.map(p => {
         const match = p.match(/(?<type>.*) Proficiency \((?<item>.*)\)/);
         if (match) {
             if (weaponTypes.includes(match.groups.type)) {
                 const translated = lookup.proficiency[match.groups.item];
                 translated ? weapons.push(translated) : null;
+            }
+            else if (implementTypes.includes(match.groups.type)) {
+                const translated = lookup.proficiency[match.groups.item];
+                translated ? implement.push(translated) : null;
             }
             else if (armorTypes.includes(match.groups.type)) {
                 const translated = lookup.proficiency[match.groups.item];
@@ -435,7 +485,9 @@ function parseProficiencies(proficiencies) {
         }
     }
     );
-    result["weapons"] = weapons;
+
+    result["weapons"] = simplifyWeaponProficiencies(weapons);
+    result["implements"] = implement;
     result["armor"] = armor;
 
     return result;
