@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.3
+- Cloning of character config also copies biography
+
 ## Foundry 4e Compendium v1.37.2
 - Simplification of proficiency lists upon character import
 
