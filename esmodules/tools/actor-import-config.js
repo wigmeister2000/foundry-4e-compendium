@@ -143,8 +143,8 @@ async function cloneDescription(source, target) {
     await target.update({ "system.description": source.system.description });
 }
 
-async function importConfig(actor, targetID, config = {}) {
-    const sourceActor = Actor.get(targetID);
+async function importConfig(actor, sourceID, config = {}) {
+    const sourceActor = Actor.get(sourceID);
 
     if (!sourceActor || !["Player Character", "NPC"].includes(sourceActor.type)) {
         return ui.notifications.error("Actor with the specified ID does not exist.");
@@ -157,6 +157,8 @@ async function importConfig(actor, targetID, config = {}) {
     if (config.effects) {
         await cloneEffects(sourceActor, actor, config.overwrite);
     }
+
+    await actor.update({ "system.biography": sourceActor.system.biography });
 
     // Items
     const itemsSource = sourceActor.items.contents;
