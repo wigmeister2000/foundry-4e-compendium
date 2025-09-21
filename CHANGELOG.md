@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.4
+- Removed duplicate diseases
+
 ## Foundry 4e Compendium v1.37.3
 - Cloning of character config also copies biography
 
