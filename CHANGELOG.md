@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.5
+- Foundry V13 support
+
 ## Foundry 4e Compendium v1.37.4
 - Removed duplicate diseases
 
