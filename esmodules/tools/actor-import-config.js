@@ -3,18 +3,18 @@ import { DnD4ECompendium } from "../dnd-4e-compendium.js";
 /***********************************************************************/
 /* Context menu extensions */
 
-export function addActorContextMenuImportConfig(html, entryOptions) {
+export function addActorContextMenuImportConfig(app, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_CONFIG)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.actor-import-config"),
             condition: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && ["NPC", "Player Character"].includes(actor?.type);
             },
             icon: '<i class="fas fa-arrow-right-to-bracket"></i>',
             callback: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 importConfigDialog(actor);
             }
@@ -22,18 +22,18 @@ export function addActorContextMenuImportConfig(html, entryOptions) {
     }
 }
 
-export function addActorContextMenuCopyID(html, entryOptions) {
+export function addActorContextMenuCopyID(app, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.IMPORT_CONFIG)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.actor-copy-id"),
             condition: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && ["NPC", "Player Character"].includes(actor?.type);
             },
             icon: '<i class="fas fa-passport"></i>',
             callback: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 game.clipboard.copyPlainText(id);
             }
         })

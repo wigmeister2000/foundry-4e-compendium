@@ -40,18 +40,18 @@ export class DnD4ECompendium {
 
     static initialize() {
         console.log(this.NAME + " | Initialising the DnD 4e compendium.");
-        Hooks.on("renderSidebarTab", addCbuilderXMLImportButton);
-        Hooks.on("renderSidebarTab", addRandomEncounterButton);
-        Hooks.on("renderSidebarTab", addBuildEquipmentButton);
-        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuCopyID);
-        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuImportConfig);
-        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuAdjustMonster);
-        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuMM3Math);
-        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuMonsterKnowledge);
-        Hooks.on("getActorDirectoryEntryContext", addActorContextMenuFindAndReplace);
-        Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuAdjustMonster);
-        Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuMM3Math);
-        Hooks.on("getActorDirectoryFolderContext", addFolderContextMenuMonsterKnowledge);
+        Hooks.on("renderActorDirectory", addCbuilderXMLImportButton);
+        Hooks.on("renderActorDirectory", addRandomEncounterButton);
+        Hooks.on("renderItemDirectory", addBuildEquipmentButton);
+        Hooks.on("getActorContextOptions", addActorContextMenuCopyID);
+        Hooks.on("getActorContextOptions", addActorContextMenuImportConfig);
+        Hooks.on("getActorContextOptions", addActorContextMenuAdjustMonster);
+        Hooks.on("getActorContextOptions", addActorContextMenuMM3Math);
+        Hooks.on("getActorContextOptions", addActorContextMenuMonsterKnowledge);
+        Hooks.on("getActorContextOptions", addActorContextMenuFindAndReplace);
+        Hooks.on("getFolderContextOptions", addFolderContextMenuAdjustMonster);
+        Hooks.on("getFolderContextOptions", addFolderContextMenuMM3Math);
+        Hooks.on("getFolderContextOptions", addFolderContextMenuMonsterKnowledge);
         Hooks.on("preUpdateActor", createHPchangeMessage);
         Hooks.on("preUpdateActor", createSurgeChangeMessage);
         Hooks.on("preUpdateActor", createResourceChangeMessage);

@@ -5,18 +5,18 @@ import { escapeRegExp, capitalize, union } from "./utility.js";
 /***********************************************************************/
 /* Context menu extensions */
 
-export function addActorContextMenuAdjustMonster(html, entryOptions) {
+export function addActorContextMenuAdjustMonster(app, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.adjust-monster-level"),
             condition: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && actor?.type === "NPC";
             },
             icon: '<i class="fas fa-adjust"></i>',
             callback: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 adjustActorDialog(actor);
             }
@@ -24,18 +24,18 @@ export function addActorContextMenuAdjustMonster(html, entryOptions) {
     }
 }
 
-export function addActorContextMenuMM3Math(html, entryOptions) {
+export function addActorContextMenuMM3Math(app, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.mm3-math"),
             condition: target => {
-                const id = target.attr("data-document-id")
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && actor?.type === "NPC";
             },
             icon: '<i class="fas fa-arrow-right"></i>',
             callback: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 adjustActor(actor, actor.system.details.level, true, true, actor.name + " (MM3)");
             }
@@ -43,18 +43,18 @@ export function addActorContextMenuMM3Math(html, entryOptions) {
     }
 }
 
-export function addActorContextMenuFindAndReplace(html, entryOptions) {
+export function addActorContextMenuFindAndReplace(app, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.FIND_AND_REPLACE)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.actor-find-and-replace"),
             condition: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && actor?.type === "NPC";
             },
             icon: '<i class="fas fa-magnifying-glass-arrow-right"></i>',
             callback: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 actorFindAndReplaceDialog(actor);
             }
@@ -62,18 +62,18 @@ export function addActorContextMenuFindAndReplace(html, entryOptions) {
     }
 }
 
-export function addFolderContextMenuAdjustMonster(html, entryOptions) {
+export function addFolderContextMenuAdjustMonster(directory, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.adjust-monster-level-folder"),
             condition: target => {
-                const id = target.parent().attr("data-folder-id");
+                const id = target.parentElement.dataset.folderId;
                 const folder = game.folders.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && folder?.type === "Actor";
             },
             icon: '<i class="fas fa-list-ul"></i>',
             callback: target => {
-                const id = target.parent().attr("data-folder-id");
+                const id = target.parentElement.dataset.folderId;
                 const folder = game.folders.get(id);
                 adjustActorFolderDialog(folder);
             }
@@ -81,18 +81,18 @@ export function addFolderContextMenuAdjustMonster(html, entryOptions) {
     }
 }
 
-export function addFolderContextMenuMM3Math(html, entryOptions) {
+export function addFolderContextMenuMM3Math(directory, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.mm3-math-folder"),
             condition: target => {
-                const id = target.parent().attr("data-folder-id");
+                const id = target.parentElement.dataset.folderId;
                 const folder = game.folders.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && folder?.type === "Actor";
             },
             icon: '<i class="fas fa-list-ul"></i>',
             callback: target => {
-                const id = target.parent().attr("data-folder-id");
+                const id = target.parentElement.dataset.folderId;
                 const folder = game.folders.get(id);
                 mm3ifyActorFolder(folder);
             }
@@ -100,18 +100,18 @@ export function addFolderContextMenuMM3Math(html, entryOptions) {
     }
 }
 
-export function addActorContextMenuMonsterKnowledge(html, entryOptions) {
+export function addActorContextMenuMonsterKnowledge(app, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.monster-knowledge"),
             condition: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && actor?.type === "NPC";
             },
             icon: '<i class="fas fa-book"></i>',
             callback: target => {
-                const id = target.attr("data-document-id");
+                const id = target.dataset.entryId;
                 const actor = game.actors.get(id);
                 addMonsterKnowledge(actor);
             }
@@ -119,18 +119,18 @@ export function addActorContextMenuMonsterKnowledge(html, entryOptions) {
     }
 }
 
-export function addFolderContextMenuMonsterKnowledge(html, entryOptions) {
+export function addFolderContextMenuMonsterKnowledge(directory, menuItems) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.MONSTER_ADJUSTMENT)) {
-        entryOptions.push({
+        menuItems.push({
             name: game.i18n.localize("4ECOMPENDIUM.context.monster-knowledge-folder"),
             condition: target => {
-                const id = target.parent().attr("data-folder-id");
+                const id = target.parentElement.dataset.folderId;
                 const folder = game.folders.get(id);
                 return game.user.hasPermission("ACTOR_CREATE") && folder?.type === "Actor";
             },
             icon: '<i class="fas fa-list-ul"></i>',
             callback: target => {
-                const id = target.parent().attr("data-folder-id");
+                const id = target.parentElement.dataset.folderId;
                 const folder = game.folders.get(id);
                 addMonsterKnowledgeFolder(folder);
             }
@@ -953,7 +953,6 @@ async function adjustResistances(monster, level) {
     /* Loop through all resistances */
     for (const key in newResistances) {
         if (newResistances[key].bonus.length > 0 & Number(newResistances[key].bonus[0].value) > 0) { // Vulnerabilities don't seem to scale with level. Ignore.
-            console.log(key)
             const res = Number(newResistances[key].bonus[0].value);
 
             // Reset derived values

@@ -7,21 +7,24 @@ import { createPrivateMessage } from "./utility.js";
 /***********************************************************************/
 /* Buttons */
 
-export function addRandomEncounterButton(activeTab, html) {
+export function addRandomEncounterButton(app, html, data) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.RANDOM_ENCOUNTER)) {
-        // Show the button only for users with actor creation rights
-        if (activeTab.options.classes[2] === "actors-sidebar" && game.user.hasPermission("ACTOR_CREATE")) {
+        if (game.user.hasPermission("ACTOR_CREATE") && !html.querySelector(".random-encounter-button")) {
 
             const label = game.i18n.localize("4ECOMPENDIUM.buttons.random-encounter-button");
-            const button = $(`<div class="action-buttons flexrow cbimport"><button type='button' id="random-encounter-button" title=' ${label}'><i class="fas fa-random"></i>&nbsp;${label}</button></div>`);
+            const button = document.createElement("button");
+            button.className = "random-encounter-button";
+            button.innerHTML = `<i class="fas fa-random"></i> ${label}`;
+            button.style.flex = "1";
+            button.style.flexBasis = "100%";
 
-            // Find the header button element and add
-            const topBar = html.find(`[class="header-actions action-buttons flexrow"]`);
-            topBar.after(button);
+            button.addEventListener("click", (e) => randomEncounterDialog());
 
-            html.on('click', '#random-encounter-button', (event) => {
-                randomEncounterDialog();
-            });
+            // assuming `html` is a jQuery object, you’ll want its raw element:
+            const container = html.querySelector(".header-actions");
+            if (container) {
+                container.append(button);
+            }
         }
     }
 }

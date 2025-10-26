@@ -4,40 +4,46 @@ import { lookup, lookupMasterworkAC } from "./lookup_tables.js";
 /***********************************************************************/
 /* Buttons */
 
-export function addCbuilderXMLImportButton(activeTab, html) {
+export function addCbuilderXMLImportButton(app, html, data) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.CBUILDER_IMPORT)) {
-        // Show the button only for users with actor creation rights
-        if (activeTab.options.classes[2] === "actors-sidebar" && game.user.hasPermission("ACTOR_CREATE")) {
+        if (game.user.hasPermission("ACTOR_CREATE") && !html.querySelector(".cbuilder-import-button")) {
 
             const label = game.i18n.localize("4ECOMPENDIUM.buttons.importer-launch-button");
-            const button = $(`<div class="action-buttons flexrow cbimport"><button type='button' id="cb-import-button" title=' ${label}'><i class="fas fa-file-import"></i>&nbsp;${label}</button></div>`);
+            const button = document.createElement("button");
+            button.className = "cbuilder-import-button";
+            button.innerHTML = `<i class="fas fa-file-import"></i> ${label}`;
+            button.style.flex = "1";
+            button.style.flexBasis = "100%";
 
-            // Find the header button element and add
-            const topBar = html.find(`[class="header-actions action-buttons flexrow"]`);
-            topBar.after(button);
+            button.addEventListener("click", (e) => importXMLDialog());
 
-            html.on('click', '#cb-import-button', (event) => {
-                importXMLDialog();
-            });
+            // assuming `html` is a jQuery object, you’ll want its raw element:
+            const container = html.querySelector(".header-actions");
+            if (container) {
+                container.append(button);
+            }
         }
     }
 }
 
 export function addBuildEquipmentButton(activeTab, html) {
     if (game.settings.get(DnD4ECompendium.ID, DnD4ECompendium.SETTINGS.BUILD_MAGIC_ITEM)) {
-        // Show the button only for users with actor creation rights
-        if (activeTab.options.classes[2] === "items-sidebar" && game.user.hasPermission("ITEM_CREATE")) {
+        if (game.user.hasPermission("ITEM_CREATE") && !html.querySelector(".equipment-build-button")) {
 
             const label = game.i18n.localize("4ECOMPENDIUM.buttons.equipment-build-button");
-            const button = $(`<div class="action-buttons flexrow itembuild"><button type='button' id="equipment-build-button" title=' ${label}'><i class="fas fa-hammer"></i>&nbsp;${label}</button></div>`);
+            const button = document.createElement("button");
+            button.className = "equipment-build-button";
+            button.innerHTML = `<i class="fas fa-hammer"></i> ${label}`;
+            button.style.flex = "1";
+            button.style.flexBasis = "100%";
 
-            // Find the header button element and add
-            const topBar = html.find(`[class="header-actions action-buttons flexrow"]`);
-            topBar.after(button);
+            button.addEventListener("click", (e) => buildEquipmentDialog());
 
-            html.on('click', '#equipment-build-button', (event) => {
-                buildEquipmentDialog();
-            });
+            // assuming `html` is a jQuery object, you’ll want its raw element:
+            const container = html.querySelector(".header-actions");
+            if (container) {
+                container.append(button);
+            }
         }
     }
 }
@@ -415,7 +421,7 @@ function parseClasses(str) {
 
     return classNamesCompendium;
 }
-function simplifyWeaponProficiencies(proficiencies){
+function simplifyWeaponProficiencies(proficiencies) {
     const simpleM = Object.keys(CONFIG.DND4E.simpleM);
     const militaryM = Object.keys(CONFIG.DND4E.militaryM);
     const superiorM = Object.keys(CONFIG.DND4E.superiorM);
@@ -425,32 +431,32 @@ function simplifyWeaponProficiencies(proficiencies){
 
     let simpleProficiencies = proficiencies;
 
-    if(simpleM.every(x => proficiencies.includes(x))){
+    if (simpleM.every(x => proficiencies.includes(x))) {
         simpleProficiencies = simpleProficiencies.filter(x => !simpleM.includes(x));
         simpleProficiencies.push("simpleM");
     }
 
-    if(militaryM.every(x => proficiencies.includes(x))){
+    if (militaryM.every(x => proficiencies.includes(x))) {
         simpleProficiencies = simpleProficiencies.filter(x => !militaryM.includes(x));
         simpleProficiencies.push("militaryM");
     }
 
-    if(superiorM.every(x => proficiencies.includes(x))){
+    if (superiorM.every(x => proficiencies.includes(x))) {
         simpleProficiencies = simpleProficiencies.filter(x => !superiorM.includes(x));
         simpleProficiencies.push("superiorM");
     }
 
-    if(simpleR.every(x => proficiencies.includes(x))){
+    if (simpleR.every(x => proficiencies.includes(x))) {
         simpleProficiencies = simpleProficiencies.filter(x => !simpleR.includes(x));
         simpleProficiencies.push("simpleR");
     }
 
-    if(militaryR.every(x => proficiencies.includes(x))){
+    if (militaryR.every(x => proficiencies.includes(x))) {
         simpleProficiencies = simpleProficiencies.filter(x => !militaryR.includes(x));
         simpleProficiencies.push("militaryR");
     }
 
-    if(superiorR.every(x => proficiencies.includes(x))){
+    if (superiorR.every(x => proficiencies.includes(x))) {
         simpleProficiencies = simpleProficiencies.filter(x => !superiorR.includes(x));
         simpleProficiencies.push("superiorR");
     }
