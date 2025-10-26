@@ -1005,7 +1005,7 @@ async function addMonsterKnowledge(actor) {
         role.push("(Leader)");
     }
 
-    const keyWords = union(actor.items.contents.map(x => x.system.keyWords).flat().filter(x => x)).join(", ");
+    const keyWords = union(actor.items.contents.map(x => x.system.keyWords).filter(x => x).map(x => Array.from(x)).flat()).join(", ");
 
     // Resistances and vulnerabilities
     const resistances = actor.system.untypedResistances.resistances ?? [];
