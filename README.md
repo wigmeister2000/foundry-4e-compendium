@@ -13,7 +13,7 @@
 * _Foundry Setup_ -> _Add-On Modules_ -> _Install Module_
 * Paste the link below into the _Manifest URL_ box and press _Install_.
 
-[https://pastebin.com/raw/sWwNbhaT](https://pastebin.com/raw/sWwNbhaT)
+[https://github.com/wigmeister2000/foundry-4e-compendium/releases/latest/download/module.json](https://github.com/wigmeister2000/foundry-4e-compendium/releases/latest/download/module.json)
 
 ## Optional Modules
 * The data is optimized for display with [Fox's 4e Styling](https://github.com/FoxLee/fox-4e-styling/).
