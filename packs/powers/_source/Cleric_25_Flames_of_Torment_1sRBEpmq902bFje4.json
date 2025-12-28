@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. The target takes ongoing 5 fire damage and a -2 penalty to all defenses (save ends both).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

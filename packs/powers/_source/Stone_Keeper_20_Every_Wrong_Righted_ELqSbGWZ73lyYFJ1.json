@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and each ally adjacent to you gains a +3 power bonus to attack rolls against the target until the start of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You and each ally adjacent to you can spend a healing surge."

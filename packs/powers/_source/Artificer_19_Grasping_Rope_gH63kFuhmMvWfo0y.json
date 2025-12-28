@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone of grasping rope that lasts until the end of your next turn. The zone is difficult terrain to enemies, and each enemy that enters the zone or starts its turn there is slowed until the end of its next turn."

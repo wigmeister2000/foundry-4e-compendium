@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and until the end of your next turn, whenever the target hits or misses one of your allies, that ally gains combat advantage against the target until the start of the target's next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

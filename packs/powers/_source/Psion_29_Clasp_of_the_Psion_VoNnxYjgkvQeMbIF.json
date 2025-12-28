@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed (saved ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone that lasts until the end of the encounter. While within the zone, any enemy that is hit by a force power is also immobilized until the end of its next turn."

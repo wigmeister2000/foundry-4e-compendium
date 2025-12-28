@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target cannot shift until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"If the target is bloodied but still conscious after you use this power, you can spend a healing surge as a free action."

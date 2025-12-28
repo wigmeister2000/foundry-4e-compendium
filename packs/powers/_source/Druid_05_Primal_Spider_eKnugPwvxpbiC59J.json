@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the end of the encounter, while you are in beast form, whenever you hit an enemy with a melee attack, that enemy is slowed until the end of your next turn."

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The blast creates a zone of brambles that lasts until the end of your next turn. While within the zone, you and your allies gain cover. When any enemy enters the zone or starts its turn there, it takes 5 damage. An enemy can take this damage only once per turn. As a move action, you can move the zone 3 squares."

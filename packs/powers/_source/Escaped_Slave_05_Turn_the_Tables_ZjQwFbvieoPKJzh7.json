@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you do not gain the bonus to all defenses.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You shift 1 square. If you are prone, you instead stand up in an unoccupied adjacent square. The triggering enemy is pulled into the square you vacated and is knocked prone. You make the following attack."

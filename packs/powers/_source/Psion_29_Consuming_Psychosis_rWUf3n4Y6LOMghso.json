@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and ongoing 5 psychic damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"When the target takes ongoing psychic damage from this attack, it makes a melee basic attack against a random creature as a free action. If it cannot make a melee attack against any creature, it targets itself with a melee basic attack."

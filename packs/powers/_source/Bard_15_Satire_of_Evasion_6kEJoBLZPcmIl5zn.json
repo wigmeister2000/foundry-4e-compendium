@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. Until the end of your next turn, whenever an ally misses the target with an attack, you can roll a d20 and replace the ally's die roll with yours.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"The next time the target makes an attack before the end of its next turn, that attack automatically deals half damage to the target, in addition to whatever damage is dealt to the attack's intended targets. The target's resistances and immunities do not apply to this damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

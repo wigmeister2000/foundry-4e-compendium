@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed (save ends). Until the condition ends, any enemy that starts its turn adjacent to the target is slowed until the start of that enemy's next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

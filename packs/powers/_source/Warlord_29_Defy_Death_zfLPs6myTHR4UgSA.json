@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target's attack deals only half damage if it hits the ally.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You move up to twice your speed to a square where you can reach the triggering creature with your melee weapon. Your move doesn't provoke opportunity attacks. You then make the following attack."

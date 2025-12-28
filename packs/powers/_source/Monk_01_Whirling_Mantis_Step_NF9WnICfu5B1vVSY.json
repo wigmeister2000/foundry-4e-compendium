@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You shift your speed. If you enter a square adjacent to any enemy during this shift, you slide that enemy 1 square. You can slide each enemy only once during the shift. After the shift, make the following attack."

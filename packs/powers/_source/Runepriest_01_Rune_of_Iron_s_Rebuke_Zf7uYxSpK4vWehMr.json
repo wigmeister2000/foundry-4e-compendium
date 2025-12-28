@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed and cannot shift until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the end of the encounter, while the target is adjacent to you, it takes damage equal to your Strength modifier when any attack misses it and deals no damage on a miss."

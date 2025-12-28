@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. Until the end of your next turn, the target rolls twice when it makes an attack roll and must use the lower roll, and any attacker rolls twice when it makes an attack roll against the target and must use the higher roll.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and ongoing 5 psychic damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone of agony that lasts until the end of your next turn. Any creature that starts its turn within the zone is slowed and takes a -2 penalty to attack rolls until the end of your next turn."

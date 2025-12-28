@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target does not grant combat advantage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone of fire that lasts until the end of your next turn. Enemies that enter the zone or start their turns there take 1d10 fire damage and grant combat advantage to you and your allies. An enemy can take this damage only once per turn."

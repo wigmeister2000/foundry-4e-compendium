@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you slide the target 5 squares to a space that must be adjacent to an ally. That ally gains a +1 power bonus to attack rolls against the target until the end of the encounter. In addition, the target takes 5 psychic damage at the end of its turn if it is not adjacent to that ally (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

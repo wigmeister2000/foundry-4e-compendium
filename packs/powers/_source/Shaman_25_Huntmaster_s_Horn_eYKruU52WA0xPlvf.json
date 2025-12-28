@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Each ally in the blast gains a power bonus to damage rolls equal to your Intelligence modifier, and creatures that are slowed or immobilized grant combat advantage to them. These effects last until the end of the encounter."

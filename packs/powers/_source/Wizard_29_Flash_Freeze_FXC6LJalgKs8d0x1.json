@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is restrained until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The blast creates a zone that lasts until the end of your next turn. Squares in the zone are difficult terrain. Any creature knocked prone in the zone takes 10 extra cold damage."

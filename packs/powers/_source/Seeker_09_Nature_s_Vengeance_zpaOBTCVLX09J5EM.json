@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The attack creates a zone in a burst 1 centered on the target. The zone lasts until the end of your next turn. Whenever an enemy within the zone deals damage with an attack, that enemy is immobilized (save ends). If that enemy is already immobilized, it takes 5 damage, and it is restrained instead of immobilized (save ends)."

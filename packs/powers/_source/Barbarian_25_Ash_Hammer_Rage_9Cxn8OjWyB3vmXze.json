@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you push the target 1 square.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You enter the rage of the ash hammer. Until the rage ends, whenever you hit with an attack, you gain temporary hit points equal to 10 + your Charisma modifier. If that attack already grants temporary hit points to you, add your Charisma modifier to the number of temporary hit points you gain."

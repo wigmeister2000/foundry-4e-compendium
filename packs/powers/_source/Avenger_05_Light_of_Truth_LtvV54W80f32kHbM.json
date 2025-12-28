@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and ongoing 5 radiant damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"When the target rolls any saving throw before the ongoing damage ends, the target takes a penalty to the saving throw equal to the number of your allies adjacent to it."

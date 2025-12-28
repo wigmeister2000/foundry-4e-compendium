@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you mark the target until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until this power's mark ends on the target, it takes damage equal to your Strength modifier whenever it hits you."

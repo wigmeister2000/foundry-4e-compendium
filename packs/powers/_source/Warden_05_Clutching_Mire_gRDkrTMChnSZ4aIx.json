@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The blast creates a swampy zone that lasts until the end of your next turn. The zone is difficult terrain, and any creature that ends its turn within the zone is slowed (save ends)."

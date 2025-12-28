@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and ongoing 5 radiant damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Whenever the target fails a saving throw against the ongoing damage, each enemy within 5 squares of the target takes 5 radiant damage."

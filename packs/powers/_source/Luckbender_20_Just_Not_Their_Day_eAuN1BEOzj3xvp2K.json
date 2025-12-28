@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you slide the target 1 square.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Before making the following attack, choose 1-10 or 11-20. If the result on the die for the attack roll is within the range you chose, this attack deals 2d12 extra damage, even on a miss."

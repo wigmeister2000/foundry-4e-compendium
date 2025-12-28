@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target takes a -2 penalty to AC (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You conjure the spirit of the shield breaker in a square adjacent to the target. The spirit lasts until the end of the encounter. As a move action, you can move the spirit 5 squares. While adjacent to the spirit or in its space, you and your allies gain a +5 power bonus to damage rolls."

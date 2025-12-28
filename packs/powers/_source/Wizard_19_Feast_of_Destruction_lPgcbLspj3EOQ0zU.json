@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage and ongoing 5 fire damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone that lasts until the end of your next turn. Any creature that enters the zone or ends its turn there takes 5 fire damage. A creature can take this damage only once per turn. Creatures cannot make saving throws against ongoing fire damage while within the zone."

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target takes a penalty to attack rolls equal to half your Wisdom modifier (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the end of the encounter, whenever the target misses with a melee attack, you or one ally adjacent to you gains temporary hit points equal to 5 + one-half your level."

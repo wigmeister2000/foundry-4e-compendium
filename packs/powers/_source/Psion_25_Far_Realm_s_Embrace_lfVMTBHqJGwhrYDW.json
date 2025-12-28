@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the primary target is slowed and takes ongoing 10 psychic damage (save ends both).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone that lasts until the end of your next turn. Until the zone ends, you can use the Far Realm's Embrace Attack power with the zone."

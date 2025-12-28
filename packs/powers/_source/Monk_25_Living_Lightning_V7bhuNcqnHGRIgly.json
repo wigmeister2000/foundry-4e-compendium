@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target loses its standard action on its next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Before the attack, you can fly up to your speed. Any creature that hits you with an opportunity attack provoked by this movement takes 10 lightning damage."

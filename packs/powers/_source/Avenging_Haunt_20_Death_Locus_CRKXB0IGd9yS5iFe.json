@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and if the target attacks you before the end of your next turn, the target takes half the damage it deals you as necrotic damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

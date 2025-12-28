@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage and target is slowed and grants combat advantage to all creatures until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Before the attack, slide the target 3 squares to a square adjacent to you."

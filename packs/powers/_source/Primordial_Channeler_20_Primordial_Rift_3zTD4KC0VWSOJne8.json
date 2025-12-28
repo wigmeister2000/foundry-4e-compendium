@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is dazed until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Roll on the Wild Soul table. Until the end of the encounter, you gain the Wild Soul benefits of both your current Wild Soul damage type and the new type. (If you get the same result a second time, roll again.) If a later effect changes the damage type of your Wild Soul, you can choose to change either one."

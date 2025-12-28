@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, or slide the target up to 4 squares and it must end the slide outside the blast. If it cannot end the slide outside the blast, it instead takes half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"If you kill one or more creatures with this attack, all creatures in the blast take fire damage equal to 5 + your Constitution modifier. Apply this extra damage after attacking all the targets."

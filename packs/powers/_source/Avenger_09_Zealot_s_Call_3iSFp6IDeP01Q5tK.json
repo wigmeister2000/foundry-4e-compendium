@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you teleport the target to a square adjacent to you.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Whenever you hit the target with a melee attack before the end of the encounter, you can shift 1 square and then slide the target to a square adjacent to you as a free action."

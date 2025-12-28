@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The squares adjacent to the burst become a zone that lasts until the target drops to 0 hit points or until you leave the zone. Nothing can teleport into or out of the area enclosed by the zone. The target treats the zone as blocking terrain, and any creature other than you or the target that enters the zone or starts its turn there takes 10 psychic damage. A creature can take this damage only once per turn."

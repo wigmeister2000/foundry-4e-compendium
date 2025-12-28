@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. Whenever the target stands up, it takes 10 damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"At the start of the target's turn, it and any enemy within 3 squares of it are knocked prone (save ends)."

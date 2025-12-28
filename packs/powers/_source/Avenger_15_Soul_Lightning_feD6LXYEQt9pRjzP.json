@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and ongoing 5 lightning damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Whenever the target takes this ongoing damage, each enemy within 2 squares of the target takes the same amount of lightning damage."

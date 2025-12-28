@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target grants combat advantage when targeted by area attacks and ranged attacks until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the end of the encounter, enemies don't grant cover to the target against ranged attacks."

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. If the target is hit by an attack from an ally before the end of your next turn, you can use an immediate interrupt to make the attack a critical hit.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

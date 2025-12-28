@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you push the target 1 square.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You enter the rage of the iron hammer. Until the rage ends, whenever you hit a creature with a melee attack, you push that creature 2 squares. If the creature is adjacent to blocking terrain at the end of the push, the creature takes damage equal to your Strength modifier."

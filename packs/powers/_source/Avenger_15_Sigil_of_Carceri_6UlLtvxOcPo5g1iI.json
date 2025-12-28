@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. Until the end of your next turn, the target is immobilized, and its attacks against creatures more than 5 squares away from it automatically miss.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

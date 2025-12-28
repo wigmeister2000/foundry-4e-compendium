@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. Attacks against the target's AC or Reflex are against the lower of the two defenses (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

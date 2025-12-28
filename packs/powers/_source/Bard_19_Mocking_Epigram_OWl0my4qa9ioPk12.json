@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. Until the end of your next turn, the target is weakened, and whenever it hits an ally with an attack, that attack also hits one enemy of your choice within range of that attack, including the target itself. The target cannot hit a given enemy more than once with a single attack.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

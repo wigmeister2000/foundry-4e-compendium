@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and each enemy adjacent to the target takes 5 acid damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Any creature reduced to 0 hit points by this power dissolves into a puddle of corrosive slime that fills the creature's space. Until the end of the encounter, any creature that enters that space or starts its turn there takes 5 acid damage. A creature can take this damage only once per turn."

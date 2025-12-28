@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you push the target 2 squares.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone that lasts until the end of your next turn. When you move, the zone moves with you, remaining centered on you. Any enemy that enters the zone or starts its turn there takes 5 force damage and grants combat advantage until the end of its next turn. An enemy can take this damage only once per turn."

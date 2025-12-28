@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. Until the end of your next turn, whenever you or an ally rolls the maximum result on any damage die against the target, reroll the die and add that result as extra damage to the total damage dealt.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

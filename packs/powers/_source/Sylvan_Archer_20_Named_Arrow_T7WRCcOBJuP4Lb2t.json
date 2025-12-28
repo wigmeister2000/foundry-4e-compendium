@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is dazed until the end of its next turn. If you spoke the target's name, instead of being dazed, the target is stunned until the end of its next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"If you speak the target's name when you use this power, you designate the target as your quarry and take no penalties to the attack roll for cover, superior cover, concealment, or total concealment."

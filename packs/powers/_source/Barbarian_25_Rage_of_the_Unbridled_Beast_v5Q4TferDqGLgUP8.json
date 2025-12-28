@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target takes a penalty to AC equal to your Constitution modifier until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You enter the rage of the unbridled beast. Until the rage ends, when any enemy enters a square adjacent to you, you can make a melee basic attack against that enemy as an opportunity action."

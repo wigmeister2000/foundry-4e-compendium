@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target makes a melee basic attack against a random creature. If this attack targets one of your allies, the target takes a -2 penalty to the attack roll.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and ongoing 10 acid and poison damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"When the target first becomes bloodied or drops to 0 hit points, creatures in a close blast 3 from the target take 10 poison and acid damage. You determine the location of the blast."

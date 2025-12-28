@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The target is affected by linked fortunes (save ends). While it is affected by linked fortunes, as an immediate interrupt, when the target is missed by an ally's attack, you can roll a d20 and replace the ally's attack roll with yours. Whenever you do so, the target can roll a d20 once during its next turn and replace its attack roll with that roll."

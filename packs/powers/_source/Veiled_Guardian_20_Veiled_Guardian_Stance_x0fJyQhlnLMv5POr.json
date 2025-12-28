@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you mark the target until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You can assume the veiled guardian stance. Until the stance ends, when a target of this power marked by you leaves a square adjacent to you, you can make a melee basic attack against the target as an opportunity action. If your attack hits, the target cannot leave the square until the start of its next turn."

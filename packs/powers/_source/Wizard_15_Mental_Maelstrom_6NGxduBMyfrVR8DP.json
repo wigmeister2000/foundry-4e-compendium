@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you slide the target up to 2 squares.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone that lasts until the end of the encounter. Any enemy that ends its turn in the zone takes 5 psychic damage, and you can slide that enemy up to 4 squares as a free action."

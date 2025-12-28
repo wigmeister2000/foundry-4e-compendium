@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The target grants combat advantage and has ongoing 10 damage (save ends both). Until the target saves against this effect, once each turn when the target hits an ally, roll 1d6. The target takes a penalty to saving throws equal to the result of this roll until the end of your next turn."

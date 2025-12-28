@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is grabbed until it escapes; you can sustain the grab as long as the target is within your reach.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the target is no longer grabbed, you can slide the target 1 square as a minor action. When you sustain the grab, the target takes 1[W] damage."

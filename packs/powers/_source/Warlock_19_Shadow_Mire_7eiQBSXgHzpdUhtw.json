@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone that lasts until the end of the encounter. Any creature that tries to leave the zone must roll a d20. On a 10 or higher, it cannot leave the zone during its current turn and its movement ends. Any creature that ends its turn in the zone takes 10 necrotic damage."

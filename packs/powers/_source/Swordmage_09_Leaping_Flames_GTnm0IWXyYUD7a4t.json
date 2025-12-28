@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and no ongoing fire damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"When a creature saves against the ongoing damage from this power, place leaping flames in a square adjacent to that creature. When a creature is in the same square as leaping flames, that creature gains ongoing 5 fire damage (save ends) and you remove leaping flames from the board. This process continues until the end of the encounter, at which point the flames disappear. A creature can be affected by these flames only once in an encounter. If no creature is currently affected by the flames, move the flames 1 square at the start of your turn."

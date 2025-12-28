@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed and cannot shift until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The attack creates a zone in a close burst 2. The zone lasts until the end of your next turn. Any enemy that starts its turn within the zone is slowed until the end of its next turn. Any ally that starts his or her turn within the zone gains a +2 power bonus to speed until the end of his or her next turn."

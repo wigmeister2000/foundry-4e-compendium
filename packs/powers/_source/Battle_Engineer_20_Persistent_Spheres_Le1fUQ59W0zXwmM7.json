@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and if the target doesn't move at least 2 squares during its turn, it takes 5 damage at the end of its turn (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The attack creates a zone of painful motes in a burst 2 centered on the target. The zone lasts until the target saves against this power. When the target moves, the zone moves with it, remaining centered on it. Any enemy that starts its turn within the zone takes 5 damage, and it grants combat advantage while within the zone."

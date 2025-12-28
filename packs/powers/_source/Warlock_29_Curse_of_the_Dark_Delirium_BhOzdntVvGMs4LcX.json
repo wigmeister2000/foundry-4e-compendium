@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. At the start of the target's next turn, it must use a standard action to make a melee basic attack against its nearest ally.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

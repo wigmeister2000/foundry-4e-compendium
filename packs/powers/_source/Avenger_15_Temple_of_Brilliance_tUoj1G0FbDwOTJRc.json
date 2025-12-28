@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The attack creates a zone of radiant energy in a burst 2 centered on the target. The zone lasts until the end of your next turn. When the target moves, the zone moves with it, remaining centered on it. Any enemy other than the target that ends its turn within the zone is blinded until the end of its next turn."

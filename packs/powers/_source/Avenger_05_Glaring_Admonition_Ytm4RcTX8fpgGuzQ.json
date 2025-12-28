@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage and the target takes a -2 penalty to all defenses against divine attack powers until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the end of the encounter, when you use an avenger implement attack power against the target of your oath of enmity, you can benefit from your oath of enmity as though you were making a melee attack and the target were adjacent to you."

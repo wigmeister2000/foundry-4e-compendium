@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and ongoing 5 fire damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the end of the encounter, the target takes a -1 penalty to saving throws against ongoing damage. The penalty worsens by -1 for each creature taking ongoing damage within 10 squares of the target."

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you regain hit points equal to half the amount of damage dealt.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The target is subjected to the maw (save ends). Until the effect ends, starting on your next turn you can use a minor action once per round to deal 10 damage to the target, and you regain hit points equal to half that damage."

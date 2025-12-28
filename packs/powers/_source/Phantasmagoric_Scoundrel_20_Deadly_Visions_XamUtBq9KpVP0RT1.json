@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is dazed until the end of its next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Make an at-will attack against a single target. If the attack hits, it deals 2d10 extra damage and the target suffers debilitating hallucinations (save ends). Until the target saves, it grants combat advantage and chooses at the start of its turn each round whether to take 10 psychic damage or be dazed until the start of its next turn."

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage. You slide the target 5 squares either at the start of its turn or at the end of its next turn, and it cannot take move actions on its next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

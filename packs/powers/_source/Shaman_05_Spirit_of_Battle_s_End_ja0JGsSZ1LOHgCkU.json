@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"When any ally misses the target with a melee attack, the target takes 5 damage and makes a saving throw. If that saving throw is successful, this effect ends. Otherwise, it lasts until the end of the encounter."

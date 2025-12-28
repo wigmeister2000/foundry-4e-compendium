@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target takes ongoing 15 cold and necrotic damage (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"At the end of each of your turns, each enemy adjacent to at least one creature taking ongoing damage from this power takes ongoing 15 cold and necrotic damage (save ends)."

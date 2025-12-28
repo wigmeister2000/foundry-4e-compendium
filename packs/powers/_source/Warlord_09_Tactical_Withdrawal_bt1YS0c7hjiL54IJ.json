@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target cannot make opportunity attacks until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Each ally adjacent to the target can move his or her speed as a free action but must end in a space that is not adjacent to the target."

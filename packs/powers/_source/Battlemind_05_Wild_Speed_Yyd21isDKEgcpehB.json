@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"After the attack, you shift half your speed to a square adjacent to the target. You can assume the wild speed stance. Until the stance ends, you can move a number of squares equal to your speed + 1d4 as a move action. You roll a d4 each time you begin the movement. If the result is odd, the movement doesn't provoke opportunity attacks."

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is blinded until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone of birds that lasts until the end of the encounter. Creatures outside the zone have total concealment against creatures within the zone. Any enemy that starts its turn within the zone takes 10 + your Wisdom modifier damage."

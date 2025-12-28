@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is immobilized until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The attack creates a zone that is a burst 5 centered on the target. The zone lasts until the end of the encounter. While within the zone, any ally gains a +2 power bonus to AC and can negate being pulled, pushed, or slid."

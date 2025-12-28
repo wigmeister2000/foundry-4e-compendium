@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you knock the target prone. You must slide the target to the nearest unoccupied space outside the burst.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"A pit fills the area of the burst and is 10 feet deep. Any creature fully within the area of the pit descends 10 feet, taking no falling damage for descending that distance."

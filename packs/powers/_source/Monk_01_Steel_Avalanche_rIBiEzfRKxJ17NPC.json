@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target takes a -2 penalty to attack rolls until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You shift 4 squares to any square adjacent to the blast."

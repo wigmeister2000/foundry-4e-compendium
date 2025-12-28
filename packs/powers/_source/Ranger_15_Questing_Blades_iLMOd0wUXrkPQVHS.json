@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and until the end of your next turn, each time you attack the target with a power that normally targets AC, you instead attack the lowest of the target's AC, Reflex, or Fortitude.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

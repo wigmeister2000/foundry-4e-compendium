@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"If both attacks hit, you slide one of the targets 5 squares to a square adjacent to the other target, and each target is bound by vines (save ends). Until this effect ends on a target, that target can't move by any means to a square that isn't adjacent to the other target. When a target makes a saving throw against this effect, the target can take 10 damage to gain a +5 bonus to the saving throw."

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a zone that lasts until the end of the encounter. When an enemy within the zone is reduced to 0 hit points or fewer, allies adjacent to the enemy may immediately spend a healing surge as a free action, and enemies adjacent to the dying enemy grant combat advantage until the end of their next turn."

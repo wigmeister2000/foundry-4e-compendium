@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The attack creates a zone of radiant energy in a close burst 2. The zone lasts until the end of the encounter. The target takes 25 radiant damage whenever it leaves the zone. Any enemy other than the target takes 25 radiant damage when entering the zone or ending its turn there. An enemy that enters or leaves the zone as a result of forced movement does not take this damage."

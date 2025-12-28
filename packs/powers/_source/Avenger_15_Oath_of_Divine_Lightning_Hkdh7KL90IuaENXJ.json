@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target takes 5 lightning damage at the end of its next turn if it doesn't move at least 1 square during that turn. Shifting doesn't count toward this movement.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is immobilized until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"The burst creates a viny zone that lasts until the end of the encounter. Any creature within the zone that leaves it or attacks a creature outside it takes 5 + your Wisdom modifier damage."

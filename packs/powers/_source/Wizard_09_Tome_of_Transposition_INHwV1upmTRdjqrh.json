@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Choose another ranged daily spell of equal or lower level to this power from your spellbook. Immediately cast that spell. It must target your original target and it deals half damage.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

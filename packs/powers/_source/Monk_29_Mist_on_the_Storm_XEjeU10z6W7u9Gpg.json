@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is weakened until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You can assume the misty storm stance. Until the stance ends, you are phasing. When you are hit by an attack, as an immediate interrupt you can become insubstantial until the end of your next turn, and the stance ends."

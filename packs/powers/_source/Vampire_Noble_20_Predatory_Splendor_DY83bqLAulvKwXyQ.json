@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target is slowed and grants combat advantage (save ends both).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You activate an aura 2 that lasts until the end of your next turn. If an enemy willingly leaves the aura, you can use a free action either to deal 10 psychic damage to it or to knock it prone."

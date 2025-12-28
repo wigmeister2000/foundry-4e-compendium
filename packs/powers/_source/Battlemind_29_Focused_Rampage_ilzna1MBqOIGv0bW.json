@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you gain temporary hit points equal to 5 + your Constitution modifier.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You can assume the focused rampage stance. Until the stance ends, you can use any of your at-will unaugmented psionic attack powers in place of melee basic attacks."

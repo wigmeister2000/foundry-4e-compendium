@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you mark the target until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the mark imposed by this power ends, you are treated as if you are marked by the target, and whenever you or the target moves, the other can move the same number of squares as a free action or shift 1 square as a free action."

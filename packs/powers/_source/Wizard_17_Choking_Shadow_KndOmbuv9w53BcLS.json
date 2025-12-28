@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, the target is slowed until the end of your next turn, and you cannot sustain the shadow.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"You conjure your shadow in an unoccupied square adjacent to the target. The shadow lasts until the end of your next turn or until the target is not adjacent to it. The shadow then makes the following attack against the target."

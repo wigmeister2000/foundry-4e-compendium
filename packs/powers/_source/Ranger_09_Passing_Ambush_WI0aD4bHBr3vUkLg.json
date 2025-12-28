@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you can shift 1 square. If you were hidden from the target when you made the attack, you can make a Stealth check with a +2 bonus to remain hidden if you have any cover or concealment.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":""

@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target takes ongoing 10 force damage and is slowed (save ends both).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Whenever the target takes this power's ongoing damage, each enemy within 5 squares of it is pulled 1 square toward it, and then each enemy adjacent to it takes 10 force damage."

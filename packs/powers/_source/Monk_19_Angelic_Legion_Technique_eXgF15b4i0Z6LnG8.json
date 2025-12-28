@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and you mark the target until the end of your next turn.",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until this power's mark ends, you can use a free action to force the target to attack you with its ranged attacks and melee attacks as long as you are within those attacks' range. Each time the target attacks you, you gain a +4 power bonus to attack rolls against it until the end of your next turn."

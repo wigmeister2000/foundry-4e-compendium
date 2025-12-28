@@ -71,7 +71,7 @@
 		},
 		"miss":{
 			"detail":"Half damage, and the target gains vulnerable 5 psychic (save ends).",
-			"formula":"@{damageFormula}/2"
+			"formula":"floor(@damageFormula/2)"
 		},
 		"effect":{
 			"detail":"Until the vulnerability ends, the target takes 10 radiant damage whenever it uses a psychic power."
