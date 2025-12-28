@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.6
+- Fixed half-damage formulas
+
 ## Foundry 4e Compendium v1.37.5
 - Foundry V13 support
 
