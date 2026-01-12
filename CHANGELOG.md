@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.7
+- Fixed character tier import
+
 ## Foundry 4e Compendium v1.37.6
 - Fixed half-damage formulas
 
