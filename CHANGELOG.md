@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.8
+- Updated monster movement data schema
+
 ## Foundry 4e Compendium v1.37.7
 - Fixed character tier import
 
