@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.9
+- Moved Token Auras to Grid Aware Auras
+
 ## Foundry 4e Compendium v1.37.8
 - Updated monster movement data schema
 
