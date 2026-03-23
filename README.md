@@ -17,7 +17,7 @@
 
 ## Optional Modules
 * The data is optimized for display with [Fox's 4e Styling](https://github.com/FoxLee/fox-4e-styling/).
-* Auras can be shown with [Token Auras Expanded](https://github.com/draconas1/token-auras-expanded-drac/tree/main/).
+* Auras can be shown with [Grid Aware Auras](https://github.com/Wibble199/FoundryVTT-Grid-Aware-Auras).
 
 ## Building from Source
 
