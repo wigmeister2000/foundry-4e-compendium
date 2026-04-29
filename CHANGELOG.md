@@ -1,5 +1,8 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.10
+- Migrated system.chatFlavor to system.description.flavor
+
 ## Foundry 4e Compendium v1.37.9
 - Moved Token Auras to Grid Aware Auras
 
