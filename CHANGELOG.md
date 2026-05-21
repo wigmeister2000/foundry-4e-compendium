@@ -1,5 +1,9 @@
 # Changelog
 
+## Foundry 4e Compendium v1.37.11
+- Merge [PR#9](https://github.com/wigmeister2000/foundry-4e-compendium/pull/9) from mbutler
+- Fixed bug when importing character without currency
+
 ## Foundry 4e Compendium v1.37.10
 - Migrated system.chatFlavor to system.description.flavor
 
