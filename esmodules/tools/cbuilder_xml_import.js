@@ -908,11 +908,15 @@ async function setSkills(actor, skills) {
 // Read currency values
 function parseMoney(str, wealth = null) {
     const currencies = wealth ?? { "ad": 0, "pp": 0, "gp": 0, "sp": 0, "cp": 0 };
+    if (!str || !str.trim()) return currencies;
+
     const currencyArray = str.replaceAll(",", "").split(";");
 
     for (const x of currencyArray) {
         const currency = x.trim().split(" ");
-        currencies[currency[1]] += Number(currency[0]);
+        if (currency.length >= 2 && currency[1]) {
+            currencies[currency[1]] += Number(currency[0]);
+        }
     }
 
     return currencies;
